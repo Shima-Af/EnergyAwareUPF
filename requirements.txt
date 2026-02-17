@@ -75,3 +75,8 @@ mlflow
 pyan3 
 pydeps 
 graphviz
+pytest
+pytest-cov
+pytest-mock
+hydra-core
+optuna
