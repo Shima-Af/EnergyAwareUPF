@@ -1,0 +1,377 @@
+# ===================================================================
+# xRL UPF Selection Configuration
+# ===================================================================
+# Configuration file for explainable reinforcement learning-based
+# User Plane Function (UPF) selection system.
+
+# ===================================================================
+# 1. GLOBAL STRATEGY CONFIGURATION
+# ===================================================================
+
+# Model approximator configuration
+approximator_models:
+  dpdk:
+    type: "keras"  # "keras" or "polynomial"
+  oai:
+    type: "keras"       # "keras" or "polynomial"
+
+# Simulation mode configuration
+simulation_mode:
+  type: "precompute"    # "precompute" or "runtime" (1-vs-N  runtime)
+
+# ===================================================================
+# 2. FILE PATHS AND DIRECTORIES
+# ===================================================================
+
+paths:
+  # Data paths
+  traffic_data_csv: "data/processed/processed_traffic_normalized.csv"
+  
+  # Model paths
+  prediction_model_dir: "saved_models/prediction_models/"
+  traffic_predictor_model_path: "saved_models/prediction_models/traffic_predictor.keras"
+  
+  # Training paths
+  log_dir: "logs/ppo_tensorboard/"
+  best_model_save_path: "saved_models/best_recurrent_ppo/"
+  final_model_save_path: "saved_models/final_recurrent_ppo_model"
+  vec_normalize_stats_path: "saved_models/vec_normalize_stats.pkl"
+  
+  # Results paths
+  results_dir: "results/"
+  eval_csv: "results/evaluation_results_MlpLstmPolicy.csv"
+
+# ===================================================================
+# 3. DATA PREPROCESSING CONFIGURATION
+# ===================================================================
+traffic_preprocessing:
+  # Input and output paths
+  raw_csv_path: "data/raw/processed_traffic_sum_pivoted.csv"
+  processed_csv_path: "data/processed/processed_traffic_normalized.csv"
+  
+  # Column configuration
+  traffic_col_bps: "Traffic_bps"
+  timestamp_col: "timestamp"
+  
+  # Scaling configuration
+  scaling_method: "ratio"       # "ratio" or "minmax"
+  target_peak_mbps: 400.0       # Target peak throughput in Mbps
+
+# ===================================================================
+# 4. ENVIRONMENT CONFIGURATION
+# ===================================================================
+
+environment:
+  # Time window configuration
+  window_size: 95               # 24 hours (15-min intervals)
+  ema_short: 4
+  ema_long: 16
+  
+  # Traffic columns
+  traffic_column: Traffic_Mbps_scaled
+  forecast_column: Traffic_Predicted_Mbps   
+
+  # Observation schema: controls what the agent sees
+  observation_schema: "hybrid"  # "instant", "history", "forecast", "hybrid"
+                                # instant: traffic[t] (+ optional dynamics/calendar)
+                                # history: window traffic[t-W+1..t]
+                                # forecast: forecast[t+H]
+                                # hybrid: history + forecast
+
+  # Forecast horizon (used only for forecast/hybrid schemas)
+  forecast_horizon: 1
+
+  # Feature flags
+  use_dyn_features: true        # Dynamic features (ΔT, EMA, etc.)
+  use_capacity_features: false   # QoS margins per option
+  use_powergap_features: false   # Power deltas between options
+  use_calendar_features: true   # Time-of-day/week features
+  perf_system_level: false      # System-level performance calculation
+  
+  # Capacity configuration
+  usr_capacity_mbps: 700.0  # <-- set this to your calibrated USR (1x OAI) safe capacity
+  usr_capacity_safety_margin: 10.0  # Safety margin for USR capacity (in Mbps)
+  
+  # Timestamp processing
+  timestamp_column: "timestamp"
+  timestamp_format: null        # Auto-detect format
+  
+  # Performance and timing
+  performance_threshold: 0.90   # 90% performance threshold
+  cooldown_period: 4            # 1 hour cooldown (in steps)
+  
+  # Instance configuration
+  num_oai_instances: 1          # For 1-vs-N scenarios
+  
+  # Power configuration
+  max_power: 3.58
+  dpdk_idle_watts: 0.819272170995168
+  oai_idle_watts_per_instance: 0.0151818149467552
+
+# ===================================================================
+# 12. BASELINE STRATEGY CONFIGURATION
+# ===================================================================
+  baseline:
+    allow_multi_oai: False
+    margin_mbps: 23.0         # forecast MAE
+    alpha_perf: 0.30
+    beta_eff: 0.70
+    T_max_mbps: 1000.0
+    T_step_mbps: 1.0
+
+# ===================================================================
+# 5. REWARD FUNCTION CONFIGURATION
+# ===================================================================
+
+# -- Reward Function Weights --
+reward:
+  # SEC reward parameters
+  sec_scale: 100.0
+  sec_eps_mbps: 1.0e-6          # Epsilon to avoid division by zero
+  qos_lambda: 30.0              # QoS shortfall penalty weight
+  
+  # Switching and scaling costs
+  type_switch_cost: 0.5         # DPDK <-> OAI switching cost
+  scale_up_cost_per_inst: 0.2   # Cost per instance scale-up
+  scale_down_cost_per_inst: 0.05 # Cost per instance scale-down
+  
+
+# Pre-warming configuration
+prewarm:
+  enabled: true
+  warm_power_per_inst: 0.01     # Standby power per instance (W)
+  warm_capacity: 1              # Number of instances to keep warm
+  activation_delay_steps: 1     # Activation delay for non-prewarmed instances
+
+# ===================================================================
+# 6. RL AGENT CONFIGURATION
+# ===================================================================
+agent:
+  # Policy configuration
+  policy: "MlpPolicy" # "MlpLstmPolicy" or "MlpPolicy"
+  
+  # Training hyperparameters
+  n_steps: 1024
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.995
+  learning_rate: 0.0001
+  ent_coef: 0.15
+  clip_range: 0.2
+  gae_lambda: 0.90
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  target_kl: 0.03
+  
+  # LSTM configuration
+  lstm_hidden_size: 128
+  n_lstm_layers: 1
+  shared_lstm: true
+  enable_critic_lstm: false
+
+# ===================================================================
+# 7. TRAINING AND EVALUATION CONFIGURATION
+# ===================================================================
+
+training:
+  # Training parameters
+  total_timesteps: 300000
+  test_size: 0.25
+  num_cpu: 4
+  seed: 42
+  
+  # Evaluation parameters
+  eval_freq_denom: 2000
+  n_eval_episodes: 5
+  deterministic_eval: true
+  checkpoint_freq: 50000
+
+
+# Experiment tracking
+  folder_name: null              # Optional: fixed folder name for experiment
+  run_name: null                 # Optional: custom run name (defaults to timestamp)
+  experiment_notes: ""           # Optional: description of this run
+  tags: []                       # Optional: tags for organizing experiments
+
+  # Logging configuration
+  log_every_n_steps: 1000        # Resource usage callback frequency
+  verbose: 1                     # 0=silent, 1=info, 2=debug
+  progress_bar: true             # Show progress bar during training  
+
+  
+  # Training stability
+  normalize_advantage: true      # Normalize advantages (PPO standard)
+  use_sde: false                 # State-dependent exploration
+  sde_sample_freq: -1            # SDE sampling frequency
+  
+  # Reproducibility
+  torch_deterministic: false     # More reproducible but slower
+# ===================================================================
+# 8. PREDICTION MODELS CONFIGURATION
+# ===================================================================
+prediction_model_data:
+  # Data file paths
+  dpdk_csv: "data/processed/dpdk_processed.csv"
+  oai_csv: "data/processed/oai_processed.csv"
+  
+  # Column mappings
+  throughput_col: "Total_Throughput"
+  power_col: "power_consumption_watts"
+  performance_col: "QoS_w"
+  qos_col: "QoS_w"
+  
+  # Performance score features
+  perf_score_features:
+    achieved_ran: 'RAN_Rx_Mbits/s'
+    achieved_dn: 'DN_Rx_Mbits/s'
+    offered_ran: 'RAN_Tx_Mbits/s'
+    offered_dn: 'DN_Tx_Mbits/s'
+    ul_delay: 'UL_delay_ms'
+    dl_delay: 'DL_delay_ms'
+    ul_jitter: 'UL_jitter'
+    dl_jitter: 'DL_jitter'
+    dl_loss: 'RAN_PLR_interval'
+    ul_loss: 'DN_PLR_interval'
+    objective_throughput: 'Objective Throughput (DL/UL)'
+
+# ===================================================================
+# 9. POWER MODEL TRAINING CONFIGURATION
+# ===================================================================
+power_model_training:
+  # Default training configuration
+  default:
+    learning_rate: 0.0001
+    epochs: 300
+    batch_size: 32
+    test_size: 0.2
+    random_state: 42
+    early_stopping_patience: 20
+    lr_patience: 15
+    
+    # Default neural network architecture
+    architecture:
+      - type: "dense"
+        units: 64
+        activation: "relu"
+      - type: "batch_norm"
+      - type: "dropout"
+        rate: 0.15
+      - type: "dense"
+        units: 32
+        activation: "relu"
+      - type: "batch_norm"
+      - type: "dense"
+        units: 1
+        activation: "linear"
+  
+  # UPF-specific overrides
+  upf_specific:
+    dpdk:
+      # Simplified architecture for DPDK
+      architecture:
+        - type: "dense"
+          units: 16
+          activation: "relu"
+        - type: "dense"
+          units: 1
+          activation: "linear"
+    oai:
+      # Uses default configuration
+      {}
+
+# ===================================================================
+# 10. PERFORMANCE MODEL TRAINING CONFIGURATION
+# ===================================================================
+performance_model_training:
+  # Score weights for performance calculation
+  score_weights:
+    throughput: 0.4
+    delay: 0.2
+    jitter: 0.1
+    loss: 0.3
+  
+  # Neural network architecture
+  architecture:
+    - type: "dense"
+      units: 64
+      activation: "relu"
+    - type: "batch_norm"
+    - type: "dropout"
+      rate: 0.2
+    - type: "dense"
+      units: 32
+      activation: "relu"
+    - type: "batch_norm"
+    - type: "dense"
+      units: 16
+      activation: "relu"
+    - type: "dense"
+      units: 1
+      activation: "linear"
+  
+  # Training hyperparameters
+  learning_rate: 0.001
+  epochs: 300
+  batch_size: 8
+  test_size: 0.2
+  random_state: 42
+  early_stopping_patience: 25
+  lr_patience: 10
+
+# ===================================================================
+# 11. TRAFFIC PREDICTOR CONFIGURATION
+# ===================================================================
+
+traffic_predictor_training:
+  # Sequence configuration
+  sequence_length: 96          # Past traffic sequence length for prediction (24 hours)
+  use_calendar_features: false # Use calendar/temporal features (hour, day_of_week, etc.)
+  
+  # Calendar features to use (when use_calendar_features=true)
+  calendar_feature_columns:
+    - "hour_sin"
+    - "hour_cos"
+    - "dow_sin"
+    - "dow_cos"
+    - "is_weekend"
+    - "is_business_hours"
+  
+  # Neural network architecture
+  architecture:
+    - type: "spatial_dropout1d"
+      rate: 0.1
+      
+    - type: "lstm"
+      units: 128                # Increased from 64
+      return_sequences: true    # Changed to true for stacking
+      dropout: 0.2
+      recurrent_dropout: 0.2
+
+    - type: "lstm"              # NEW second LSTM layer
+      units: 64
+      return_sequences: false
+      dropout: 0.2
+      recurrent_dropout: 0.2
+
+    - type: "dropout"
+      rate: 0.2
+
+    - type: "dense"
+      units: 64                 # Increased from 32
+      activation: "relu"
+
+    - type: "dropout"
+      rate: 0.2 
+
+    - type: "dense"
+      units: 1
+      activation: "linear"
+  
+  # Training hyperparameters
+  learning_rate: 0.001
+  epochs: 150                   # Increased from 50
+  batch_size: 128               # Increased from 32 for better GPU utilization
+  test_size: 0.2
+  random_state: 42
+
+
