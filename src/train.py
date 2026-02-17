@@ -2,6 +2,7 @@
 from . import tf_config  # keep your TF quiet config
 
 import os, time, math, datetime
+import yaml
 from stable_baselines3.common.vec_env import VecMonitor
 from stable_baselines3.common.callbacks import EvalCallback, CheckpointCallback
 from . import utils, agent
@@ -36,6 +37,12 @@ def train():
     os.makedirs(exp_dir, exist_ok=True)
     print(f"→ Experiment dir: {exp_dir}")
     print(f"→ Run name: {run_name}")
+
+    # Save a snapshot of the exact run configuration for reproducibility
+    config_snapshot_path = os.path.join(exp_dir, "config.yaml")
+    with open(config_snapshot_path, "w", encoding="utf-8") as f:
+        yaml.safe_dump(config, f, sort_keys=False)
+    print(f"✓ Run config snapshot saved to: {config_snapshot_path}")
 
     # --- 3) Create agent ---
     model = agent.create_agent(train_env, config)

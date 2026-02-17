@@ -32,9 +32,9 @@ paths:
   traffic_predictor_model_path: "saved_models/prediction_models/traffic_predictor.keras"
   
   # Training paths
-  log_dir: "logs/ppo_tensorboard/"
-  best_model_save_path: "saved_models/best_recurrent_ppo/"
-  final_model_save_path: "saved_models/final_recurrent_ppo_model"
+  log_dir: "logs/rl_tensorboard/"
+  best_model_save_path: "saved_models/best_rl/"
+  final_model_save_path: "saved_models/final_rl_model"
   vec_normalize_stats_path: "saved_models/vec_normalize_stats.pkl"
   
   # Results paths
