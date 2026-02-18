@@ -1,0 +1,14 @@
+{
+  "run_id": "A1_policy/mlp/seed_1024",
+  "group": "A1_policy",
+  "config_name": "mlp",
+  "variable": "policy",
+  "seed": 1024,
+  "overrides": {
+    "policy": "MlpPolicy"
+  },
+  "started_at": "2026-02-17T19:09:01.763429",
+  "finished_at": "2026-02-17T19:16:28.476534",
+  "status": "success",
+  "train_time_s": 446.24
+}

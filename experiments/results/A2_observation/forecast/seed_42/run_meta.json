@@ -1,0 +1,14 @@
+{
+  "run_id": "A2_observation/forecast/seed_42",
+  "group": "A2_observation",
+  "config_name": "forecast",
+  "variable": "observation_schema",
+  "seed": 42,
+  "overrides": {
+    "observation_schema": "forecast"
+  },
+  "started_at": "2026-02-17T21:31:02.262971",
+  "finished_at": "2026-02-17T21:38:51.707446",
+  "status": "success",
+  "train_time_s": 468.91
+}

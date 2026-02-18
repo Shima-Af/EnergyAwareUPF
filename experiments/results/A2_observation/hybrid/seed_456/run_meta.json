@@ -1,0 +1,14 @@
+{
+  "run_id": "A2_observation/hybrid/seed_456",
+  "group": "A2_observation",
+  "config_name": "hybrid",
+  "variable": "observation_schema",
+  "seed": 456,
+  "overrides": {
+    "observation_schema": "hybrid"
+  },
+  "started_at": "2026-02-17T22:25:30.562317",
+  "finished_at": "2026-02-17T22:33:00.387194",
+  "status": "success",
+  "train_time_s": 449.34
+}

@@ -1,0 +1,113 @@
+# ===================================================================
+# Experiment Sweep Configuration
+# ===================================================================
+# Defines the ablation study: 11 configurations × 5 seeds = 55 runs
+#
+# Design principle: SINGLE-AXIS ABLATION
+#   - Pick a baseline config (the "default" below)
+#   - Each ablation group varies ONE axis while holding others at baseline
+#   - This makes results directly comparable
+# ===================================================================
+
+# --- Baseline Configuration ---
+# All ablations use these values unless explicitly overriding them.
+baseline:
+  policy: "MlpPolicy"
+  observation_schema: "hybrid"
+  qos_lambda: 30.0
+  type_switch_cost: 0.5
+  cooldown_period: 4
+  num_oai_instances: 1
+
+# --- Seeds (used for every configuration) ---
+seeds: [42, 123, 456, 789, 1024]
+
+# --- Training budget per run ---
+total_timesteps: 300000
+
+# ===================================================================
+# Ablation Groups
+# ===================================================================
+# Each entry overrides ONE axis from baseline.
+# The runner will merge each entry with baseline to produce a full config.
+
+ablations:
+
+  # -----------------------------------------------------------------
+  # A1: Policy Architecture (2 configs)
+  # Research question: Does recurrence (LSTM) help?
+  # -----------------------------------------------------------------
+  A1_policy:
+    description: "Policy architecture comparison"
+    variable: "policy"
+    configs:
+      - name: "mlp"
+        policy: "MlpPolicy"
+      - name: "lstm"
+        policy: "MlpLstmPolicy"
+
+  # -----------------------------------------------------------------
+  # A2: Observation Schema (4 configs)
+  # Research question: Which observation representation is most effective?
+  # -----------------------------------------------------------------
+  A2_observation:
+    description: "Observation schema comparison"
+    variable: "observation_schema"
+    configs:
+      - name: "instant"
+        observation_schema: "instant"
+      - name: "history"
+        observation_schema: "history"
+      - name: "forecast"
+        observation_schema: "forecast"
+      - name: "hybrid"
+        observation_schema: "hybrid"
+
+  # -----------------------------------------------------------------
+  # A3: Reward Shaping (4 configs)
+  # Research question: How do QoS penalty and switching cost affect behavior?
+  # -----------------------------------------------------------------
+  A3_reward:
+    description: "Reward shaping ablation"
+    variable: "reward"
+    configs:
+      - name: "no_qos_no_switch"
+        qos_lambda: 0.0
+        type_switch_cost: 0.0
+      - name: "no_qos_with_switch"
+        qos_lambda: 0.0
+        type_switch_cost: 0.5
+      - name: "with_qos_no_switch"
+        qos_lambda: 30.0
+        type_switch_cost: 0.0
+      - name: "with_qos_with_switch"
+        qos_lambda: 30.0
+        type_switch_cost: 0.5
+
+  # -----------------------------------------------------------------
+  # A4: Cooldown Period (3 configs)
+  # Research question: How does switching inertia affect energy/QoS tradeoff?
+  # -----------------------------------------------------------------
+  A4_cooldown:
+    description: "Cooldown period sensitivity"
+    variable: "cooldown_period"
+    configs:
+      - name: "cd0"
+        cooldown_period: 0
+      - name: "cd4"
+        cooldown_period: 4
+      - name: "cd8"
+        cooldown_period: 8
+
+  # -----------------------------------------------------------------
+  # A5: Number of OAI Instances (2 configs)
+  # Research question: Does multi-instance OAI improve energy efficiency?
+  # -----------------------------------------------------------------
+  A5_num_oai:
+    description: "OAI instance count scaling"
+    variable: "num_oai_instances"
+    configs:
+      - name: "k1"
+        num_oai_instances: 1
+      - name: "k2"
+        num_oai_instances: 2
