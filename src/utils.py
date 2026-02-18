@@ -339,12 +339,18 @@ def load_and_preprocess_data(config):
     if needs_forecast and forecast_traffic_data is None:
         raise ValueError("forecast_column is required for forecast or hybrid schemas.")
 
-    # Requirement A: have W-1 past points at decision index i (history/hybrid only)
-    i0_hist = (W - 1) if needs_history else 0
+    # ── Uniform trimming (schema-independent) ──────────────────────
+    # Always apply the MOST restrictive start_idx so that ALL schemas
+    # (instant, history, forecast, hybrid) train and evaluate on the
+    # exact same data slice.  This is critical for fair cross-schema
+    # comparisons in ablation studies.
+    #
+    # Requirement A: W-1 past points for history window
+    i0_hist = W - 1
 
-    # Requirement B: have a valid forecast at decision index i (forecast/hybrid only)
+    # Requirement B: first valid (non-NaN) forecast value
     i0_fore = 0
-    if needs_forecast and forecast_traffic_data is not None:
+    if forecast_traffic_data is not None:
         valid_fore_idx = np.flatnonzero(~np.isnan(forecast_traffic_data))
         if valid_fore_idx.size > 0:
             i0_fore = int(valid_fore_idx[0])
