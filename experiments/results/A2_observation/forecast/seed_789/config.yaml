@@ -1,0 +1,223 @@
+approximator_models:
+  dpdk:
+    type: keras
+  oai:
+    type: keras
+simulation_mode:
+  type: precompute
+paths:
+  traffic_data_csv: data/processed/processed_traffic_normalized.csv
+  prediction_model_dir: saved_models/prediction_models/
+  traffic_predictor_model_path: saved_models/prediction_models/traffic_predictor.keras
+  log_dir: experiments/results/A2_observation/forecast/seed_789/tb_logs
+  best_model_save_path: experiments/results/A2_observation/forecast/seed_789
+  final_model_save_path: saved_models/final_rl_model
+  vec_normalize_stats_path: saved_models/vec_normalize_stats.pkl
+  results_dir: experiments/results/A2_observation/forecast/seed_789/eval
+  eval_csv: results/evaluation_results_MlpLstmPolicy.csv
+traffic_preprocessing:
+  raw_csv_path: data/raw/processed_traffic_sum_pivoted.csv
+  processed_csv_path: data/processed/processed_traffic_normalized.csv
+  traffic_col_bps: Traffic_bps
+  timestamp_col: timestamp
+  scaling_method: ratio
+  target_peak_mbps: 400.0
+environment:
+  window_size: 95
+  ema_short: 4
+  ema_long: 16
+  traffic_column: Traffic_Mbps_scaled
+  forecast_column: Traffic_Predicted_Mbps
+  observation_schema: forecast
+  forecast_horizon: 1
+  use_dyn_features: true
+  use_capacity_features: false
+  use_powergap_features: false
+  use_calendar_features: true
+  perf_system_level: false
+  usr_capacity_mbps: 700.0
+  usr_capacity_safety_margin: 10.0
+  timestamp_column: timestamp
+  timestamp_format: null
+  performance_threshold: 0.9
+  cooldown_period: 4
+  num_oai_instances: 1
+  max_power: 3.58
+  dpdk_idle_watts: 0.819272170995168
+  oai_idle_watts_per_instance: 0.0151818149467552
+  baseline:
+    allow_multi_oai: false
+    margin_mbps: 23.0
+    alpha_perf: 0.3
+    beta_eff: 0.7
+    T_max_mbps: 1000.0
+    T_step_mbps: 1.0
+reward:
+  sec_scale: 100.0
+  sec_eps_mbps: 1.0e-06
+  qos_lambda: 30.0
+  type_switch_cost: 0.5
+  scale_up_cost_per_inst: 0.2
+  scale_down_cost_per_inst: 0.05
+prewarm:
+  enabled: true
+  warm_power_per_inst: 0.01
+  warm_capacity: 1
+  activation_delay_steps: 1
+agent:
+  policy: MlpPolicy
+  n_steps: 1024
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.995
+  learning_rate: 0.0001
+  ent_coef: 0.15
+  clip_range: 0.2
+  gae_lambda: 0.9
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  target_kl: 0.03
+  lstm_hidden_size: 128
+  n_lstm_layers: 1
+  shared_lstm: true
+  enable_critic_lstm: false
+training:
+  total_timesteps: 300000
+  test_size: 0.25
+  num_cpu: 4
+  seed: 789
+  eval_freq_denom: 2000
+  n_eval_episodes: 5
+  deterministic_eval: true
+  checkpoint_freq: 50000
+  folder_name: null
+  run_name: null
+  experiment_notes: ''
+  tags: []
+  log_every_n_steps: 1000
+  verbose: 1
+  progress_bar: true
+  normalize_advantage: true
+  use_sde: false
+  sde_sample_freq: -1
+  torch_deterministic: false
+prediction_model_data:
+  dpdk_csv: data/processed/dpdk_processed.csv
+  oai_csv: data/processed/oai_processed.csv
+  throughput_col: Total_Throughput
+  power_col: power_consumption_watts
+  performance_col: QoS_w
+  qos_col: QoS_w
+  perf_score_features:
+    achieved_ran: RAN_Rx_Mbits/s
+    achieved_dn: DN_Rx_Mbits/s
+    offered_ran: RAN_Tx_Mbits/s
+    offered_dn: DN_Tx_Mbits/s
+    ul_delay: UL_delay_ms
+    dl_delay: DL_delay_ms
+    ul_jitter: UL_jitter
+    dl_jitter: DL_jitter
+    dl_loss: RAN_PLR_interval
+    ul_loss: DN_PLR_interval
+    objective_throughput: Objective Throughput (DL/UL)
+power_model_training:
+  default:
+    learning_rate: 0.0001
+    epochs: 300
+    batch_size: 32
+    test_size: 0.2
+    random_state: 42
+    early_stopping_patience: 20
+    lr_patience: 15
+    architecture:
+    - type: dense
+      units: 64
+      activation: relu
+    - type: batch_norm
+    - type: dropout
+      rate: 0.15
+    - type: dense
+      units: 32
+      activation: relu
+    - type: batch_norm
+    - type: dense
+      units: 1
+      activation: linear
+  upf_specific:
+    dpdk:
+      architecture:
+      - type: dense
+        units: 16
+        activation: relu
+      - type: dense
+        units: 1
+        activation: linear
+    oai: {}
+performance_model_training:
+  score_weights:
+    throughput: 0.4
+    delay: 0.2
+    jitter: 0.1
+    loss: 0.3
+  architecture:
+  - type: dense
+    units: 64
+    activation: relu
+  - type: batch_norm
+  - type: dropout
+    rate: 0.2
+  - type: dense
+    units: 32
+    activation: relu
+  - type: batch_norm
+  - type: dense
+    units: 16
+    activation: relu
+  - type: dense
+    units: 1
+    activation: linear
+  learning_rate: 0.001
+  epochs: 300
+  batch_size: 8
+  test_size: 0.2
+  random_state: 42
+  early_stopping_patience: 25
+  lr_patience: 10
+traffic_predictor_training:
+  sequence_length: 96
+  use_calendar_features: false
+  calendar_feature_columns:
+  - hour_sin
+  - hour_cos
+  - dow_sin
+  - dow_cos
+  - is_weekend
+  - is_business_hours
+  architecture:
+  - type: spatial_dropout1d
+    rate: 0.1
+  - type: lstm
+    units: 128
+    return_sequences: true
+    dropout: 0.2
+    recurrent_dropout: 0.2
+  - type: lstm
+    units: 64
+    return_sequences: false
+    dropout: 0.2
+    recurrent_dropout: 0.2
+  - type: dropout
+    rate: 0.2
+  - type: dense
+    units: 64
+    activation: relu
+  - type: dropout
+    rate: 0.2
+  - type: dense
+    units: 1
+    activation: linear
+  learning_rate: 0.001
+  epochs: 150
+  batch_size: 128
+  test_size: 0.2
+  random_state: 42

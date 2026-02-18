@@ -1,0 +1,15 @@
+{
+  "run_id": "A3_reward/no_qos_with_switch/seed_789",
+  "group": "A3_reward",
+  "config_name": "no_qos_with_switch",
+  "variable": "reward",
+  "seed": 789,
+  "overrides": {
+    "qos_lambda": 0.0,
+    "type_switch_cost": 0.5
+  },
+  "started_at": "2026-02-17T23:47:46.479779",
+  "finished_at": "2026-02-17T23:55:11.463003",
+  "status": "success",
+  "train_time_s": 444.51
+}

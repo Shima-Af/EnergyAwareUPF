@@ -1,0 +1,19 @@
+{
+  "n_steps": 721,
+  "mean_power": 0.6796,
+  "mean_sec": 0.00756,
+  "mean_performance": 0.9565,
+  "qos_violations": 1,
+  "qos_violation_rate": 0.0014,
+  "type_switches": 14,
+  "scale_events": 0,
+  "total_energy_wh": 122.4921,
+  "total_reward": -552.1604,
+  "baseline_dpdk_mean_sec": 0.013528,
+  "baseline_dpdk_energy_wh": 147.7925,
+  "energy_saved_vs_dpdk_pct": 17.12,
+  "baseline_1xoai_energy_wh": 178.9289,
+  "energy_saved_vs_1xoai_pct": 31.54,
+  "train_time_s": 449.29,
+  "status": "success"
+}

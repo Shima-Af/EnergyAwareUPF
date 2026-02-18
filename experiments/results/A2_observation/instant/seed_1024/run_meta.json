@@ -1,0 +1,14 @@
+{
+  "run_id": "A2_observation/instant/seed_1024",
+  "group": "A2_observation",
+  "config_name": "instant",
+  "variable": "observation_schema",
+  "seed": 1024,
+  "overrides": {
+    "observation_schema": "instant"
+  },
+  "started_at": "2026-02-17T20:45:42.426817",
+  "finished_at": "2026-02-17T20:53:46.967254",
+  "status": "success",
+  "train_time_s": 483.98
+}

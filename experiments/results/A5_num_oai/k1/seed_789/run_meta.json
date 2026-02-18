@@ -1,0 +1,14 @@
+{
+  "run_id": "A5_num_oai/k1/seed_789",
+  "group": "A5_num_oai",
+  "config_name": "k1",
+  "variable": "num_oai_instances",
+  "seed": 789,
+  "overrides": {
+    "num_oai_instances": 1
+  },
+  "started_at": "2026-02-18T03:32:43.200854",
+  "finished_at": "2026-02-18T03:40:08.009595",
+  "status": "success",
+  "train_time_s": 444.31
+}

@@ -1,0 +1,14 @@
+{
+  "run_id": "A1_policy/lstm/seed_456",
+  "group": "A1_policy",
+  "config_name": "lstm",
+  "variable": "policy",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpLstmPolicy"
+  },
+  "started_at": "2026-02-17T19:39:11.773486",
+  "finished_at": "2026-02-17T19:50:18.423101",
+  "status": "success",
+  "train_time_s": 665.96
+}

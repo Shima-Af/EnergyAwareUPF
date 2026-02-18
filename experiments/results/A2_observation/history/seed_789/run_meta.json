@@ -1,0 +1,14 @@
+{
+  "run_id": "A2_observation/history/seed_789",
+  "group": "A2_observation",
+  "config_name": "history",
+  "variable": "observation_schema",
+  "seed": 789,
+  "overrides": {
+    "observation_schema": "history"
+  },
+  "started_at": "2026-02-17T21:16:13.113815",
+  "finished_at": "2026-02-17T21:23:38.861347",
+  "status": "success",
+  "train_time_s": 445.27
+}

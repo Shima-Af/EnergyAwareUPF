@@ -1,0 +1,14 @@
+{
+  "run_id": "A4_cooldown/cd8/seed_789",
+  "group": "A4_cooldown",
+  "config_name": "cd8",
+  "variable": "cooldown_period",
+  "seed": 789,
+  "overrides": {
+    "cooldown_period": 8
+  },
+  "started_at": "2026-02-18T02:54:46.939856",
+  "finished_at": "2026-02-18T03:02:32.897546",
+  "status": "success",
+  "train_time_s": 465.46
+}
