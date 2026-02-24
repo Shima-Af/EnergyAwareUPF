@@ -62,6 +62,7 @@ def apply_overrides(config, overrides, baseline):
         "type_switch_cost":    ("reward", "type_switch_cost"),
         "cooldown_period":     ("environment", "cooldown_period"),
         "num_oai_instances":   ("environment", "num_oai_instances"),
+        "performance_threshold": ("environment", "performance_threshold"),
     }
 
     for key, value in merged.items():
