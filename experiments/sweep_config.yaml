@@ -12,15 +12,19 @@
 # --- Baseline Configuration ---
 # All ablations use these values unless explicitly overriding them.
 baseline:
-  policy: "MlpPolicy"
+  policy: "MlpLstmPolicy"
   observation_schema: "hybrid"
   qos_lambda: 30.0
-  type_switch_cost: 0.5
+  type_switch_cost: 0.03         # DPDK <-> OAI switching cost
+  scale_up_cost_per_inst: 0.012   # Cost per instance scale-up
+  scale_down_cost_per_inst: 0.003 # Cost per instance scale-down
   cooldown_period: 4
-  num_oai_instances: 1
+  num_oai_instances: 2
+  performance_threshold: 0.95  
 
 # --- Seeds (used for every configuration) ---
-seeds: [42, 123, 456, 789, 1024]
+# seeds: [42, 123, 456, 789, 1024]
+seeds: [456]
 
 # --- Training budget per run ---
 total_timesteps: 300000
@@ -34,61 +38,167 @@ total_timesteps: 300000
 ablations:
 
   # -----------------------------------------------------------------
-  # A1: Policy Architecture (2 configs)
-  # Research question: Does recurrence (LSTM) help?
+  # A1: Policy × Observation (8 configs = 2 policies × 4 schemas)
+  # Research question: Which policy-observation combination is best?
   # -----------------------------------------------------------------
-  A1_policy:
-    description: "Policy architecture comparison"
-    variable: "policy"
+  A1_policy_observation:
+    description: "Policy and observation schema comparison"
+    variable: "policy_observation"
     configs:
-      - name: "mlp"
+      # MLP variants
+      - name: "mlp_instant"
         policy: "MlpPolicy"
-      - name: "lstm"
-        policy: "MlpLstmPolicy"
-
-  # -----------------------------------------------------------------
-  # A2: Observation Schema (4 configs)
-  # Research question: Which observation representation is most effective?
-  # -----------------------------------------------------------------
-  A2_observation:
-    description: "Observation schema comparison"
-    variable: "observation_schema"
-    configs:
-      - name: "instant"
         observation_schema: "instant"
-      - name: "history"
+      - name: "mlp_history"
+        policy: "MlpPolicy"
         observation_schema: "history"
-      - name: "forecast"
+      - name: "mlp_forecast"
+        policy: "MlpPolicy"
         observation_schema: "forecast"
-      - name: "hybrid"
+      - name: "mlp_hybrid"
+        policy: "MlpPolicy"
+        observation_schema: "hybrid"
+      # LSTM variants
+      - name: "lstm_instant"
+        policy: "MlpLstmPolicy"
+        observation_schema: "instant"
+      - name: "lstm_history"
+        policy: "MlpLstmPolicy"
+        observation_schema: "history"
+      - name: "lstm_forecast"
+        policy: "MlpLstmPolicy"
+        observation_schema: "forecast"
+      - name: "lstm_hybrid"
+        policy: "MlpLstmPolicy"
         observation_schema: "hybrid"
 
   # -----------------------------------------------------------------
-  # A3: Reward Shaping (4 configs)
-  # Research question: How do QoS penalty and switching cost affect behavior?
+  # A2: Reward & QoS Shaping (27 configs)
+  # Research question: How do QoS penalty, switching cost, and
+  #                    performance threshold affect behavior?
+  # Variables: qos_lambda × type_switch_cost × performance_threshold
   # -----------------------------------------------------------------
-  A3_reward:
-    description: "Reward shaping ablation"
+  A2_reward:
+    description: "Reward and QoS shaping ablation"
     variable: "reward"
     configs:
-      - name: "no_qos_no_switch"
+      # qos_lambda=0
+      - name: "qos0_sw0_thr85"
         qos_lambda: 0.0
         type_switch_cost: 0.0
-      - name: "no_qos_with_switch"
+        performance_threshold: 0.85
+      - name: "qos0_sw0_thr90"
+        qos_lambda: 0.0
+        type_switch_cost: 0.0
+        performance_threshold: 0.90
+      - name: "qos0_sw0_thr95"
+        qos_lambda: 0.0
+        type_switch_cost: 0.0
+        performance_threshold: 0.95
+      - name: "qos0_sw05_thr85"
         qos_lambda: 0.0
         type_switch_cost: 0.5
-      - name: "with_qos_no_switch"
+        performance_threshold: 0.85
+      - name: "qos0_sw05_thr90"
+        qos_lambda: 0.0
+        type_switch_cost: 0.5
+        performance_threshold: 0.90
+      - name: "qos0_sw05_thr95"
+        qos_lambda: 0.0
+        type_switch_cost: 0.5
+        performance_threshold: 0.95
+      - name: "qos0_sw1_thr85"
+        qos_lambda: 0.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.85
+      - name: "qos0_sw1_thr90"
+        qos_lambda: 0.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.90
+      - name: "qos0_sw1_thr95"
+        qos_lambda: 0.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.95
+      # qos_lambda=30
+      - name: "qos30_sw0_thr85"
         qos_lambda: 30.0
         type_switch_cost: 0.0
-      - name: "with_qos_with_switch"
+        performance_threshold: 0.85
+      - name: "qos30_sw0_thr90"
+        qos_lambda: 30.0
+        type_switch_cost: 0.0
+        performance_threshold: 0.90
+      - name: "qos30_sw0_thr95"
+        qos_lambda: 30.0
+        type_switch_cost: 0.0
+        performance_threshold: 0.95
+      - name: "qos30_sw05_thr85"
         qos_lambda: 30.0
         type_switch_cost: 0.5
+        performance_threshold: 0.85
+      - name: "qos30_sw05_thr90"
+        qos_lambda: 30.0
+        type_switch_cost: 0.5
+        performance_threshold: 0.90
+      - name: "qos30_sw05_thr95"
+        qos_lambda: 30.0
+        type_switch_cost: 0.5
+        performance_threshold: 0.95
+      - name: "qos30_sw1_thr85"
+        qos_lambda: 30.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.85
+      - name: "qos30_sw1_thr90"
+        qos_lambda: 30.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.90
+      - name: "qos30_sw1_thr95"
+        qos_lambda: 30.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.95
+      # qos_lambda=70
+      - name: "qos70_sw0_thr85"
+        qos_lambda: 70.0
+        type_switch_cost: 0.0
+        performance_threshold: 0.85
+      - name: "qos70_sw0_thr90"
+        qos_lambda: 70.0
+        type_switch_cost: 0.0
+        performance_threshold: 0.90
+      - name: "qos70_sw0_thr95"
+        qos_lambda: 70.0
+        type_switch_cost: 0.0
+        performance_threshold: 0.95
+      - name: "qos70_sw05_thr85"
+        qos_lambda: 70.0
+        type_switch_cost: 0.5
+        performance_threshold: 0.85
+      - name: "qos70_sw05_thr90"
+        qos_lambda: 70.0
+        type_switch_cost: 0.5
+        performance_threshold: 0.90
+      - name: "qos70_sw05_thr95"
+        qos_lambda: 70.0
+        type_switch_cost: 0.5
+        performance_threshold: 0.95
+      - name: "qos70_sw1_thr85"
+        qos_lambda: 70.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.85
+      - name: "qos70_sw1_thr90"
+        qos_lambda: 70.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.90
+      - name: "qos70_sw1_thr95"
+        qos_lambda: 70.0
+        type_switch_cost: 1.0
+        performance_threshold: 0.95
 
   # -----------------------------------------------------------------
-  # A4: Cooldown Period (3 configs)
+  # A3: Cooldown Period (3 configs)
   # Research question: How does switching inertia affect energy/QoS tradeoff?
   # -----------------------------------------------------------------
-  A4_cooldown:
+  A3_cooldown:
     description: "Cooldown period sensitivity"
     variable: "cooldown_period"
     configs:
@@ -100,10 +210,10 @@ ablations:
         cooldown_period: 8
 
   # -----------------------------------------------------------------
-  # A5: Number of OAI Instances (2 configs)
+  # A4: Number of OAI Instances (2 configs)
   # Research question: Does multi-instance OAI improve energy efficiency?
   # -----------------------------------------------------------------
-  A5_num_oai:
+  A4_num_oai:
     description: "OAI instance count scaling"
     variable: "num_oai_instances"
     configs:

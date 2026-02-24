@@ -7,8 +7,8 @@
   "overrides": {
     "observation_schema": "hybrid"
   },
-  "started_at": "2026-02-17T22:25:30.562317",
-  "finished_at": "2026-02-17T22:33:00.387194",
+  "started_at": "2026-02-19T18:09:47.168261",
+  "finished_at": "2026-02-19T18:20:55.571888",
   "status": "success",
-  "train_time_s": 449.34
+  "train_time_s": 667.71
 }

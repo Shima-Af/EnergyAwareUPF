@@ -7,8 +7,8 @@
   "overrides": {
     "policy": "MlpPolicy"
   },
-  "started_at": "2026-02-17T19:09:01.763429",
-  "finished_at": "2026-02-17T19:16:28.476534",
+  "started_at": "2026-02-18T13:56:48.292517",
+  "finished_at": "2026-02-18T14:04:16.035363",
   "status": "success",
-  "train_time_s": 446.24
+  "train_time_s": 447.27
 }
