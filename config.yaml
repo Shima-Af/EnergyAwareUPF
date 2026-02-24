@@ -101,7 +101,7 @@ environment:
   cooldown_period: 4            # 1 hour cooldown (in steps)
   
   # Instance configuration
-  num_oai_instances: 1          # For 1-vs-N scenarios
+  num_oai_instances: 2          # For 1-vs-N scenarios
   
   # Power configuration
   max_power: 3.58
@@ -131,9 +131,9 @@ reward:
   qos_lambda: 30.0              # QoS shortfall penalty weight
   
   # Switching and scaling costs
-  type_switch_cost: 0.5         # DPDK <-> OAI switching cost
-  scale_up_cost_per_inst: 0.2   # Cost per instance scale-up
-  scale_down_cost_per_inst: 0.05 # Cost per instance scale-down
+  type_switch_cost: 0.03         # DPDK <-> OAI switching cost
+  scale_up_cost_per_inst: 0.012   # Cost per instance scale-up
+  scale_down_cost_per_inst: 0.003 # Cost per instance scale-down
   
 
 # Pre-warming configuration
@@ -148,7 +148,7 @@ prewarm:
 # ===================================================================
 agent:
   # Policy configuration
-  policy: "MlpPolicy" # "MlpLstmPolicy" or "MlpPolicy"
+  policy: "MlpLstmPolicy" # "MlpLstmPolicy" or "MlpPolicy"
   
   # Training hyperparameters
   n_steps: 1024
@@ -178,7 +178,7 @@ training:
   total_timesteps: 300000
   test_size: 0.25
   num_cpu: 4
-  seed: 42
+  seed: 456
   
   # Evaluation parameters
   eval_freq_denom: 2000

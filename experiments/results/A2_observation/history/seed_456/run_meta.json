@@ -7,8 +7,8 @@
   "overrides": {
     "observation_schema": "history"
   },
-  "started_at": "2026-02-17T21:08:45.748800",
-  "finished_at": "2026-02-17T21:16:13.106619",
+  "started_at": "2026-02-19T17:45:34.464297",
+  "finished_at": "2026-02-19T17:56:55.952681",
   "status": "success",
-  "train_time_s": 446.88
+  "train_time_s": 680.8
 }

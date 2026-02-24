@@ -14,6 +14,6 @@
   "energy_saved_vs_dpdk_pct": 16.45,
   "baseline_1xoai_energy_wh": 178.9289,
   "energy_saved_vs_1xoai_pct": 30.99,
-  "train_time_s": 688.18,
+  "train_time_s": 693.45,
   "status": "success"
 }
