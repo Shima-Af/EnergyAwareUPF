@@ -1,0 +1,1 @@
+Inference latency is not explicitly logged in current D1 eval/resource files. Recommendation: add per-step decision-time logging (ms) inside the policy inference path.

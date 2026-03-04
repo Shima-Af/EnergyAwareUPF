@@ -1,0 +1,15 @@
+{
+  "run_id": "A1_policy_observation/lstm_instant/seed_456",
+  "group": "A1_policy_observation",
+  "config_name": "lstm_instant",
+  "variable": "policy_observation",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpLstmPolicy",
+    "observation_schema": "instant"
+  },
+  "started_at": "2026-02-25T00:10:21.752866",
+  "finished_at": "2026-02-25T00:21:55.171175",
+  "status": "success",
+  "train_time_s": 692.73
+}

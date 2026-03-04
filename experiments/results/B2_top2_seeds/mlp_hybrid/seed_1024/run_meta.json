@@ -1,0 +1,15 @@
+{
+  "run_id": "B2_top2_seeds/mlp_hybrid/seed_1024",
+  "group": "B2_top2_seeds",
+  "config_name": "mlp_hybrid",
+  "variable": "seed_robustness",
+  "seed": 1024,
+  "overrides": {
+    "policy": "MlpPolicy",
+    "observation_schema": "hybrid"
+  },
+  "started_at": "2026-02-25T17:01:25.472902",
+  "finished_at": "2026-02-25T17:08:49.848300",
+  "status": "success",
+  "train_time_s": 443.9
+}

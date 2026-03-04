@@ -1,0 +1,15 @@
+{
+  "run_id": "C1_cooldown_instances/cd4_k2/seed_456",
+  "group": "C1_cooldown_instances",
+  "config_name": "cd4_k2",
+  "variable": "cooldown_and_instances",
+  "seed": 456,
+  "overrides": {
+    "cooldown_period": 4,
+    "num_oai_instances": 2
+  },
+  "started_at": "2026-02-25T21:03:31.424919",
+  "finished_at": "2026-02-25T21:10:57.454859",
+  "status": "success",
+  "train_time_s": 445.54
+}

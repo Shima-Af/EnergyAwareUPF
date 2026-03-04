@@ -1,0 +1,38 @@
+# ===================================================================
+# B2: Seed Robustness for Top-2 Models
+# ===================================================================
+# Purpose:
+#   Re-run only the two selected models across multiple random seeds.
+#   Models: mlp_hybrid and lstm_history
+#
+# Usage:
+#   python -m scripts.run_experiments --sweep experiments/sweep_config_b2_top2_seeds.yaml --group B2_top2_seeds
+# ===================================================================
+
+baseline:
+  policy: "MlpLstmPolicy"
+  observation_schema: "hybrid"
+  qos_lambda: 30.0
+  type_switch_cost: 0.03
+  scale_up_cost_per_inst: 0.012
+  scale_down_cost_per_inst: 0.003
+  cooldown_period: 4
+  num_oai_instances: 2
+  performance_threshold: 0.95
+
+# Seed sweep for robustness analysis
+seeds: [42, 123, 456, 789, 1024]
+
+total_timesteps: 300000
+
+ablations:
+  B2_top2_seeds:
+    description: "Seed robustness for selected best models"
+    variable: "seed_robustness"
+    configs:
+      - name: "mlp_hybrid"
+        policy: "MlpPolicy"
+        observation_schema: "hybrid"
+      - name: "lstm_history"
+        policy: "MlpLstmPolicy"
+        observation_schema: "history"

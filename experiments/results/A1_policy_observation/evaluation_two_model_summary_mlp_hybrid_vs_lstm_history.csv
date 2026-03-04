@@ -1,0 +1,3 @@
+model,number_of_reconfigurations,number_of_scaling_events,total_energy_wh,average_sec,qos_violation_rate
+lstm_history,16,0,125.7436438202858,0.007640882364529731,0.0013869625520110957
+mlp_hybrid,17,7,120.79000866413116,0.0073498766556066505,0.0013869625520110957

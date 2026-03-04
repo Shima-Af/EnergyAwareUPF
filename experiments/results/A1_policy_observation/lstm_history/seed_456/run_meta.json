@@ -1,0 +1,15 @@
+{
+  "run_id": "A1_policy_observation/lstm_history/seed_456",
+  "group": "A1_policy_observation",
+  "config_name": "lstm_history",
+  "variable": "policy_observation",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpLstmPolicy",
+    "observation_schema": "history"
+  },
+  "started_at": "2026-02-25T00:21:55.177626",
+  "finished_at": "2026-02-25T00:33:28.579705",
+  "status": "success",
+  "train_time_s": 692.71
+}

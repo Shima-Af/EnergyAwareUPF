@@ -1,0 +1,18 @@
+{
+  "run_id": "D1_mlp_lstm_cd4_k_threshold/lstm_history_cd4_k1_t90/seed_456",
+  "group": "D1_mlp_lstm_cd4_k_threshold",
+  "config_name": "lstm_history_cd4_k1_t90",
+  "variable": "policy_instances_threshold",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpLstmPolicy",
+    "observation_schema": "history",
+    "cooldown_period": 4,
+    "num_oai_instances": 1,
+    "performance_threshold": 0.9
+  },
+  "started_at": "2026-02-25T23:07:48.993382",
+  "finished_at": "2026-02-25T23:19:25.921707",
+  "status": "success",
+  "train_time_s": 696.25
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "A1_policy_observation/lstm_hybrid/seed_456",
+  "group": "A1_policy_observation",
+  "config_name": "lstm_hybrid",
+  "variable": "policy_observation",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpLstmPolicy",
+    "observation_schema": "hybrid"
+  },
+  "started_at": "2026-02-25T00:45:10.068395",
+  "finished_at": "2026-02-25T00:56:42.946710",
+  "status": "success",
+  "train_time_s": 692.19
+}
