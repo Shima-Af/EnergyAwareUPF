@@ -1,0 +1,15 @@
+{
+  "run_id": "A1_policy_observation/mlp_hybrid/seed_456",
+  "group": "A1_policy_observation",
+  "config_name": "mlp_hybrid",
+  "variable": "policy_observation",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpPolicy",
+    "observation_schema": "hybrid"
+  },
+  "started_at": "2026-02-25T00:02:58.015851",
+  "finished_at": "2026-02-25T00:10:21.746986",
+  "status": "success",
+  "train_time_s": 443.25
+}

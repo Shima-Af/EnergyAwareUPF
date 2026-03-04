@@ -1,0 +1,304 @@
+t,qos,model,source_file
+400,0.9749334454536438,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+401,0.974751353263855,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+402,0.9747934937477112,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+403,0.974942147731781,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+404,0.974952220916748,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+405,0.974778950214386,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+406,0.9747838377952576,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+407,0.9748269319534302,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+408,0.9746716022491456,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+409,0.9747835397720336,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+410,0.9749979972839355,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+411,0.9748697280883788,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+412,0.974773645401001,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+413,0.9748697280883788,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+414,0.9749045968055724,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+415,0.975000500679016,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+416,0.9750110507011414,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+417,0.974997878074646,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+418,0.975138783454895,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+419,0.9752350449562072,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+420,0.9752550721168518,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+421,0.9752660393714904,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+422,0.9752644896507264,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+423,0.9752575159072876,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+424,0.9752945303916932,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+425,0.975271463394165,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+426,0.9752560257911682,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+427,0.9752700924873352,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+428,0.975242555141449,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+429,0.9752534627914428,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+430,0.9752418994903564,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+431,0.9749975204467772,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+432,0.9744911193847656,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+433,0.9752438068389891,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+434,0.9752452969551086,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+435,0.9752484560012816,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+436,0.9752105474472046,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+437,0.9742358326911926,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+438,0.9732420444488524,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+439,0.9346787333488464,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+440,0.9357784986495972,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+441,0.9310795664787292,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+442,0.9333584308624268,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+443,0.9264535307884216,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+444,0.9274011254310608,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+445,0.9316577911376952,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+446,0.9230750203132628,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+447,0.9209598898887634,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+448,0.9197282791137696,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+449,0.9159497022628784,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+450,0.9144802689552308,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+451,0.9174029231071472,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+452,0.9138138294219972,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+453,0.9244621396064758,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+454,0.9076939821243286,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+455,0.8971626162528992,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+456,0.9085866212844848,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+457,0.9209736585617064,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+458,0.920975923538208,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+459,0.918675661087036,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+460,0.9247705936431884,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+461,0.9345951080322266,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+462,0.9339202642440796,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+463,0.92476224899292,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+464,0.9210643768310548,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+465,0.9289766550064088,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+466,0.921361804008484,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+467,0.9226073026657104,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+468,0.9222553968429564,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+469,0.9212931990623474,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+470,0.9207812547683716,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+471,0.923141360282898,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+472,0.920872151851654,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+473,0.9240809679031372,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+474,0.921045422554016,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+475,0.921704649925232,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+476,0.9223825931549072,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+477,0.9218903183937072,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+478,0.9254044890403748,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+479,0.9264996647834778,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+480,0.9287706017494202,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+481,0.9335689544677734,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+482,0.9339360594749452,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+483,0.9748586416244508,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+484,0.9749959707260132,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+485,0.9749980568885804,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+486,0.9748063683509828,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+487,0.97497296333313,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+488,0.9749955534934998,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+489,0.9752488136291504,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+490,0.9748013019561768,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+491,0.9749972820281982,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+492,0.974731147289276,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+493,0.9749997854232788,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+494,0.9748064875602722,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+495,0.9748815298080444,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+496,0.9749969840049744,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+497,0.9749577045440674,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+498,0.9748928546905518,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+499,0.974780261516571,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+500,0.9748337864875792,Feed-forward PPO,../finalModels/mlp_hybrid/seed_456/eval/evaluation_results_MlpPolicy_20260225-153005.csv
+400,0.974751353263855,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+401,0.974793553352356,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+402,0.974942147731781,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+403,0.9749522805213928,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+404,0.974778950214386,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+405,0.9747838973999025,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+406,0.9748269319534302,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+407,0.9746716618537904,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+408,0.9747835397720336,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+409,0.9749979972839355,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+410,0.9748697280883788,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+411,0.974773645401001,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+412,0.9748697280883788,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+413,0.9749045968055724,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+414,0.9750005602836608,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+415,0.975011110305786,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+416,0.974997878074646,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+417,0.9751388430595398,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+418,0.9752350449562072,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+419,0.9752550721168518,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+420,0.9752660393714904,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+421,0.9752645492553712,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+422,0.9752575755119324,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+423,0.9752945303916932,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+424,0.9752715229988098,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+425,0.9752560257911682,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+426,0.9752700924873352,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+427,0.975242555141449,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+428,0.9752534627914428,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+429,0.9752418994903564,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+430,0.974997580051422,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+431,0.9744911193847656,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+432,0.9752435088157654,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+433,0.9752452969551086,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+434,0.9752485156059264,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+435,0.9752106070518494,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+436,0.9742358922958374,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+437,0.9732420444488524,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+438,0.9741501808166504,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+439,0.973838746547699,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+440,0.9310795664787292,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+441,0.9333584308624268,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+442,0.9264535307884216,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+443,0.9274011254310608,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+444,0.9316577911376952,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+445,0.9230750203132628,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+446,0.9209598898887634,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+447,0.9197282791137696,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+448,0.9159497022628784,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+449,0.9144802689552308,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+450,0.9174029231071472,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+451,0.9138138890266418,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+452,0.9244621396064758,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+453,0.9076939821243286,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+454,0.8971626162528992,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+455,0.9085866212844848,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+456,0.9209736585617064,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+457,0.920975923538208,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+458,0.9186756014823914,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+459,0.9247705936431884,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+460,0.9345951080322266,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+461,0.9339202642440796,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+462,0.9351287484169006,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+463,0.9318197965621948,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+464,0.9353266954421996,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+465,0.9340940117836,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+466,0.9722753763198853,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+467,0.9721880555152892,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+468,0.971939504146576,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+469,0.971306324005127,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+470,0.972415030002594,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+471,0.9710218906402588,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+472,0.972717583179474,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+473,0.9718761444091796,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+474,0.9342073798179626,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+475,0.934429168701172,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+476,0.934267282485962,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+477,0.9352957606315612,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+478,0.9355525374412536,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+479,0.935501217842102,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+480,0.9747364521026612,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+481,0.9747939705848694,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+482,0.9748586416244508,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+483,0.9749959707260132,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+484,0.9749981164932252,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+485,0.9748053550720216,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+486,0.97497296333313,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+487,0.9749955534934998,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+488,0.9752488732337952,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+489,0.9748013019561768,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+490,0.9749972820281982,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+491,0.974731147289276,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+492,0.9749997854232788,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+493,0.9748064875602722,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+494,0.9748815894126892,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+495,0.9749969840049744,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+496,0.9749577641487122,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+497,0.9748928546905518,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+498,0.974780261516571,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+499,0.9748337864875792,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+500,0.9749464392662048,Rule-based baseline,../experiments/results/Baselines/baseline_rule_results.csv
+400,0.9297550916671752,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+401,0.9288969039916992,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+402,0.926235556602478,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+403,0.9260817766189576,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+404,0.929143726825714,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+405,0.929107666015625,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+406,0.9282658100128174,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+407,0.9314419627189636,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+408,0.9291214942932128,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+409,0.9239801168441772,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+410,0.9274734258651732,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+411,0.92935311794281,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+412,0.9274734258651732,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+413,0.92687326669693,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+414,0.922282338142395,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+415,0.9219654202461244,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+416,0.9249125719070436,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+417,0.9207644462585448,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+418,0.9201209545135498,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+419,0.9191210865974426,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+420,0.9184916019439696,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+421,0.9185022711753844,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+422,0.918881058692932,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+423,0.9106189012527466,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+424,0.9169011116027832,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+425,0.9189276099205016,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+426,0.9181151986122132,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+427,0.919784128665924,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+428,0.9191071391105652,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+429,0.9198335409164428,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+430,0.9251831769943236,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+431,0.9326560497283936,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+432,0.9197092056274414,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+433,0.9194879531860352,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+434,0.9194079637527466,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+435,0.9202317595481871,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+436,0.934126317501068,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+437,0.9353281855583192,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+438,0.9346787333488464,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+439,0.935778558254242,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+440,0.9310795664787292,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+441,0.9333584308624268,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+442,0.9264535307884216,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+443,0.9274011254310608,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+444,0.9316577911376952,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+445,0.9230750203132628,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+446,0.9209598898887634,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+447,0.9197282791137696,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+448,0.9159497022628784,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+449,0.9144802689552308,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+450,0.9174029231071472,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+451,0.9138138890266418,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+452,0.9244621396064758,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+453,0.9076939821243286,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+454,0.8971626162528992,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+455,0.9085866212844848,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+456,0.9209736585617064,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+457,0.920975923538208,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+458,0.9186756014823914,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+459,0.9247705936431884,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+460,0.9345951080322266,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+461,0.9339202642440796,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+462,0.9351287484169006,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+463,0.9318197965621948,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+464,0.9353266954421996,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+465,0.9340940117836,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+466,0.9344839453697203,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+467,0.934377908706665,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+468,0.934074342250824,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+469,0.9333441257476808,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+470,0.9346585273742676,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+471,0.9331087470054626,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+472,0.9349498152732848,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+473,0.9339908361434937,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+474,0.9342073798179626,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+475,0.934429168701172,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+476,0.934267282485962,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+477,0.9352957606315612,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+478,0.9355525374412536,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+479,0.935501217842102,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+480,0.930026113986969,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+481,0.9288899302482604,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+482,0.9277176856994628,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+483,0.9232407212257384,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+484,0.9248285889625548,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+485,0.9286741018295288,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+486,0.9256892800331116,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+487,0.924469232559204,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+488,0.9195102453231812,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+489,0.9287335872650146,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+490,0.9245962500572203,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+491,0.930127739906311,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+492,0.9234190583229064,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+493,0.9285977482795716,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+494,0.9273225665092468,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+495,0.9233576655387878,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+496,0.9259637594223022,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+497,0.9270620942115784,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+498,0.9291521310806274,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+499,0.9281203746795654,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv
+500,0.9261727333068848,Static USR (k=1),../experiments/results/Baselines/baseline_static_oai1x_results.csv

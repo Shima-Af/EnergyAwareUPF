@@ -1,0 +1,9 @@
+config,seed,policy,k,tau,steps_valid,dpdk_share,oai_share,avg_oai_instances_when_oai,n_reconf,eval_csv
+lstm_history_cd4_k1_t90,seed_456,lstm,1,0.9,720,0.6458333333333334,0.3541666666666667,1.0,14,../experiments/results/D1_mlp_lstm_cd4_k_threshold/lstm_history_cd4_k1_t90/seed_456/eval/evaluation_results_MlpLstmPolicy.csv
+lstm_history_cd4_k1_t95,seed_456,lstm,1,0.95,720,0.7916666666666666,0.20833333333333334,1.0,14,../experiments/results/D1_mlp_lstm_cd4_k_threshold/lstm_history_cd4_k1_t95/seed_456/eval/evaluation_results_MlpLstmPolicy.csv
+lstm_history_cd4_k2_t90,seed_456,lstm,2,0.9,720,0.5791666666666667,0.42083333333333334,1.0,16,../experiments/results/D1_mlp_lstm_cd4_k_threshold/lstm_history_cd4_k2_t90/seed_456/eval/evaluation_results_MlpLstmPolicy.csv
+lstm_history_cd4_k2_t95,seed_456,lstm,2,0.95,720,0.7027777777777777,0.2972222222222222,1.0,16,../experiments/results/D1_mlp_lstm_cd4_k_threshold/lstm_history_cd4_k2_t95/seed_456/eval/evaluation_results_MlpLstmPolicy.csv
+mlp_hybrid_cd4_k1_t90,seed_456,mlp,1,0.9,720,0.5444444444444444,0.45555555555555555,1.0,20,../experiments/results/D1_mlp_lstm_cd4_k_threshold/mlp_hybrid_cd4_k1_t90/seed_456/eval/evaluation_results_MlpPolicy.csv
+mlp_hybrid_cd4_k1_t95,seed_456,mlp,1,0.95,720,0.7972222222222223,0.20277777777777778,1.0,12,../experiments/results/D1_mlp_lstm_cd4_k_threshold/mlp_hybrid_cd4_k1_t95/seed_456/eval/evaluation_results_MlpPolicy.csv
+mlp_hybrid_cd4_k2_t90,seed_456,mlp,2,0.9,720,0.5666666666666667,0.43333333333333335,1.4262820512820513,24,../experiments/results/D1_mlp_lstm_cd4_k_threshold/mlp_hybrid_cd4_k2_t90/seed_456/eval/evaluation_results_MlpPolicy.csv
+mlp_hybrid_cd4_k2_t95,seed_456,mlp,2,0.95,720,0.6305555555555555,0.36944444444444446,1.0827067669172932,19,../experiments/results/D1_mlp_lstm_cd4_k_threshold/mlp_hybrid_cd4_k2_t95/seed_456/eval/evaluation_results_MlpPolicy.csv

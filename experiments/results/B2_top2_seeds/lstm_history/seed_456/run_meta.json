@@ -1,0 +1,15 @@
+{
+  "run_id": "B2_top2_seeds/lstm_history/seed_456",
+  "group": "B2_top2_seeds",
+  "config_name": "lstm_history",
+  "variable": "seed_robustness",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpLstmPolicy",
+    "observation_schema": "history"
+  },
+  "started_at": "2026-02-25T17:31:51.867772",
+  "finished_at": "2026-02-25T17:43:23.228851",
+  "status": "success",
+  "train_time_s": 690.68
+}

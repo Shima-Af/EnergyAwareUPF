@@ -60,6 +60,8 @@ def apply_overrides(config, overrides, baseline):
         "observation_schema":  ("environment", "observation_schema"),
         "qos_lambda":          ("reward", "qos_lambda"),
         "type_switch_cost":    ("reward", "type_switch_cost"),
+        "scale_up_cost_per_inst":   ("reward", "scale_up_cost_per_inst"),
+        "scale_down_cost_per_inst": ("reward", "scale_down_cost_per_inst"),
         "cooldown_period":     ("environment", "cooldown_period"),
         "num_oai_instances":   ("environment", "num_oai_instances"),
         "performance_threshold": ("environment", "performance_threshold"),
@@ -202,10 +204,23 @@ def run_single_experiment(run_info, base_config, sweep_cfg, output_root):
             render=False,
         )
 
+        sec_cb = SecLoggingCallback(
+            log_dir=exp_dir,
+            tb_prefix="train",
+            verbose=traincf.get("verbose", 1),
+        )
+
+        res_cb = ResourceUsageCallback(
+            log_dir=exp_dir,
+            tb_prefix="sys",
+            log_every_n_steps=traincf.get("log_every_n_steps", 1000),
+            verbose=traincf.get("verbose", 1),
+        )
+
         # 4. Train
         model.learn(
             total_timesteps=traincf["total_timesteps"],
-            callback=[eval_cb],
+            callback=[sec_cb, eval_cb, res_cb],
             progress_bar=False,  # disable per-run progress bar in batch mode
         )
 

@@ -1,0 +1,9 @@
+config,mean_sec_mean,mean_sec_std,mean_sec_str,n_seeds,mean_power_mean,mean_power_std,mean_power_str,total_energy_wh_mean,total_energy_wh_std,total_energy_wh_str,qos_violation_rate_mean,qos_violation_rate_std,qos_violation_rate_str,type_switches_mean,type_switches_std,type_switches_str,total_reward_mean,total_reward_std,total_reward_str,energy_saved_vs_dpdk_pct_mean,energy_saved_vs_dpdk_pct_std,energy_saved_vs_dpdk_pct_str,train_time_s_mean,train_time_s_std,train_time_s_str
+lstm_forecast,0.013528,,0.0135 ± nan,1,0.8199,,0.820 ± nan,147.7925,,147.79 ± nan,0.0,,0.000 ± nan,0.0,,0 ± nan,-975.4015,,-975.4 ± nan,0.0,,0.0 ± nan,700.79,,701 ± nan
+lstm_history,0.007914,,0.0079 ± nan,1,0.6935,,0.694 ± nan,125.0078,,125.01 ± nan,0.0014,,0.001 ± nan,30.0,,30 ± nan,-571.6465,,-571.6 ± nan,15.42,,15.4 ± nan,692.71,,693 ± nan
+lstm_hybrid,0.00892,,0.0089 ± nan,1,0.716,,0.716 ± nan,129.0628,,129.06 ± nan,0.0069,,0.007 ± nan,20.0,,20 ± nan,-644.0705,,-644.1 ± nan,12.67,,12.7 ± nan,692.19,,692 ± nan
+lstm_instant,0.013528,,0.0135 ± nan,1,0.8199,,0.820 ± nan,147.7925,,147.79 ± nan,0.0,,0.000 ± nan,0.0,,0 ± nan,-975.4015,,-975.4 ± nan,0.0,,0.0 ± nan,692.73,,693 ± nan
+mlp_forecast,0.007547,,0.0075 ± nan,1,0.7089,,0.709 ± nan,127.7802,,127.78 ± nan,0.0042,,0.004 ± nan,30.0,,30 ± nan,-545.6716,,-545.7 ± nan,13.54,,13.5 ± nan,441.49,,441 ± nan
+mlp_history,0.013528,,0.0135 ± nan,1,0.8199,,0.820 ± nan,147.7925,,147.79 ± nan,0.0,,0.000 ± nan,0.0,,0 ± nan,-975.4015,,-975.4 ± nan,0.0,,0.0 ± nan,443.85,,444 ± nan
+mlp_hybrid,0.013528,,0.0135 ± nan,1,0.8199,,0.820 ± nan,147.7925,,147.79 ± nan,0.0,,0.000 ± nan,0.0,,0 ± nan,-975.4015,,-975.4 ± nan,0.0,,0.0 ± nan,443.25,,443 ± nan
+mlp_instant,0.008323,,0.0083 ± nan,1,0.718,,0.718 ± nan,129.4151,,129.42 ± nan,0.0014,,0.001 ± nan,42.0,,42 ± nan,-601.5374,,-601.5 ± nan,12.43,,12.4 ± nan,444.06,,444 ± nan

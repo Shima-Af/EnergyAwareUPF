@@ -350,10 +350,9 @@ class ManualCooldownEnv(gym.Env):
     # --- Gym Methods ---
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
-        if self.observation_schema in {"history", "hybrid"}:
-            self.current_step = self.window_size - 1
-        else:
-            self.current_step = 0
+        # ALWAYS start at W-1 for fair cross-schema comparison
+        # All schemas evaluate on the same episode length (data[W-1:end])
+        self.current_step = self.window_size - 1
         self.current_upf_type = 0 # Start with DPDK
         self.num_active_oai = 0
         self.steps_since_last_switch = self.cooldown_period

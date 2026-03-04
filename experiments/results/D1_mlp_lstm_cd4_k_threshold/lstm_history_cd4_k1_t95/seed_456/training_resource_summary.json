@@ -1,0 +1,11 @@
+{
+  "total_duration_s": 683.4909427165985,
+  "total_timesteps": 303104,
+  "num_measurements": 303,
+  "cumulative_energy_wh": 0.0,
+  "cumulative_energy_kwh": 0.0,
+  "cpu_pct_mean": 3.372937293729373,
+  "cpu_pct_max": 4.1,
+  "ram_gb_mean": 9.843809536974815,
+  "ram_gb_max": 9.891178131103516
+}

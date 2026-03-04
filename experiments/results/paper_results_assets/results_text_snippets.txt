@@ -1,0 +1,3 @@
+Overall, PPO (feed-forward) achieves E_tot=120.79 Wh, average SEC=0.00735, v=0.0014, and n_reconf=17.
+Compared with the rule-based baseline, this corresponds to 2.53% lower total energy and 5.17% lower average SEC at comparable violation rate.
+The recurrent PPO variant reaches E_tot=125.74 Wh with n_reconf=16, indicating a slightly more stable actuation profile.

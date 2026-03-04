@@ -1,0 +1,48 @@
+# ===================================================================
+# C1: Cooldown + Instance Sensitivity (fixed winning model/seed)
+# ===================================================================
+# Purpose:
+#   Use winning setup (mlp_hybrid, seed=456) and test:
+#   1) multiple cooldown values (with num_oai_instances=2)
+#   2) one variant with cooldown=4 and num_oai_instances=1
+#
+# Usage:
+#   python -m scripts.run_experiments --sweep experiments/sweep_config_c1_mlp_hybrid_cooldown_instances.yaml --group C1_cooldown_instances
+# ===================================================================
+
+baseline:
+  policy: "MlpPolicy"
+  observation_schema: "hybrid"
+  qos_lambda: 30.0
+  type_switch_cost: 0.03
+  scale_up_cost_per_inst: 0.012
+  scale_down_cost_per_inst: 0.003
+  cooldown_period: 4
+  num_oai_instances: 2
+  performance_threshold: 0.95
+
+# Winning seed from B2
+seeds: [456]
+
+total_timesteps: 300000
+
+ablations:
+  C1_cooldown_instances:
+    description: "Cooldown sweep + one k=1 check for mlp_hybrid at seed 456"
+    variable: "cooldown_and_instances"
+    configs:
+      - name: "cd0_k2"
+        cooldown_period: 0
+        num_oai_instances: 2
+      - name: "cd2_k2"
+        cooldown_period: 2
+        num_oai_instances: 2
+      - name: "cd4_k2"
+        cooldown_period: 4
+        num_oai_instances: 2
+      - name: "cd8_k2"
+        cooldown_period: 8
+        num_oai_instances: 2
+      - name: "cd4_k1"
+        cooldown_period: 4
+        num_oai_instances: 1

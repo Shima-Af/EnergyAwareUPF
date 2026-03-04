@@ -1,0 +1,92 @@
+# ===================================================================
+# D1: MLP vs LSTM under fixed cooldown with instance/threshold sweep
+# ===================================================================
+# Requested setup:
+#   - Compare MLP vs LSTM
+#   - cooldown_period = 4 (fixed)
+#   - num_oai_instances in {1, 2}
+#   - seed fixed to winner seed (456)
+#   - performance_threshold in {0.90, 0.95}
+#
+# Usage:
+#   python -m scripts.run_experiments \
+#     --sweep experiments/sweep_config_d1_mlp_lstm_cd4_k_threshold.yaml \
+#     --group D1_mlp_lstm_cd4_k_threshold
+# ===================================================================
+
+baseline:
+  policy: "MlpPolicy"
+  observation_schema: "hybrid"
+  qos_lambda: 30.0
+  type_switch_cost: 0.03
+  scale_up_cost_per_inst: 0.012
+  scale_down_cost_per_inst: 0.003
+  cooldown_period: 4
+  num_oai_instances: 2
+  performance_threshold: 0.95
+
+# Winner seed from prior runs
+seeds: [456]
+
+total_timesteps: 300000
+
+ablations:
+  D1_mlp_lstm_cd4_k_threshold:
+    description: "MLP vs LSTM with cooldown=4, k={1,2}, threshold={0.90,0.95}"
+    variable: "policy_instances_threshold"
+    configs:
+      - name: "mlp_hybrid_cd4_k1_t90"
+        policy: "MlpPolicy"
+        observation_schema: "hybrid"
+        cooldown_period: 4
+        num_oai_instances: 1
+        performance_threshold: 0.90
+
+      - name: "mlp_hybrid_cd4_k1_t95"
+        policy: "MlpPolicy"
+        observation_schema: "hybrid"
+        cooldown_period: 4
+        num_oai_instances: 1
+        performance_threshold: 0.95
+
+      - name: "mlp_hybrid_cd4_k2_t90"
+        policy: "MlpPolicy"
+        observation_schema: "hybrid"
+        cooldown_period: 4
+        num_oai_instances: 2
+        performance_threshold: 0.90
+
+      - name: "mlp_hybrid_cd4_k2_t95"
+        policy: "MlpPolicy"
+        observation_schema: "hybrid"
+        cooldown_period: 4
+        num_oai_instances: 2
+        performance_threshold: 0.95
+
+      - name: "lstm_history_cd4_k1_t90"
+        policy: "MlpLstmPolicy"
+        observation_schema: "history"
+        cooldown_period: 4
+        num_oai_instances: 1
+        performance_threshold: 0.90
+
+      - name: "lstm_history_cd4_k1_t95"
+        policy: "MlpLstmPolicy"
+        observation_schema: "history"
+        cooldown_period: 4
+        num_oai_instances: 1
+        performance_threshold: 0.95
+
+      - name: "lstm_history_cd4_k2_t90"
+        policy: "MlpLstmPolicy"
+        observation_schema: "history"
+        cooldown_period: 4
+        num_oai_instances: 2
+        performance_threshold: 0.90
+
+      - name: "lstm_history_cd4_k2_t95"
+        policy: "MlpLstmPolicy"
+        observation_schema: "history"
+        cooldown_period: 4
+        num_oai_instances: 2
+        performance_threshold: 0.95

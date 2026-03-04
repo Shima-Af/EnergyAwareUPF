@@ -1,0 +1,16 @@
+\begin{tabular}{lllrrrrrrrrrr}
+\toprule
+Experiment & Variant & Seed & steps & QoS_Threshold & avg_qos & violation_rate & avg_sec & total_power_wh & switch_dpdk_to_oai & switch_oai_to_dpdk & n_reconf & cooldown_blocked \\
+\midrule
+A1_policy_observation & lstm_history & seed_456 & 721 & 0.9 & 0.955212 & 0.00138696 & 0.00764088 & 125.744 & 8 & 8 & 16 & 7 \\
+B2_top2_seeds & lstm_history & seed_1024 & 721 & 0.9 & 0.955835 & 0.00970874 & 0.00739817 & 121.905 & 7 & 7 & 14 & 5 \\
+B2_top2_seeds & lstm_history & seed_123 & 721 & 0.9 & 0.965666 & 0.00138696 & 0.0102571 & 133.999 & 9 & 9 & 18 & 27 \\
+B2_top2_seeds & lstm_history & seed_42 & 721 & 0.9 & 0.954189 & 0.00832178 & 0.0074093 & 122.109 & 19 & 19 & 38 & 54 \\
+B2_top2_seeds & lstm_history & seed_456 & 721 & 0.9 & 0.955212 & 0.00138696 & 0.00764088 & 125.744 & 8 & 8 & 16 & 7 \\
+B2_top2_seeds & lstm_history & seed_789 & 721 & 0.9 & 0.956767 & 0.00970874 & 0.00748867 & 122.711 & 7 & 7 & 14 & 21 \\
+D1_mlp_lstm_cd4_k_threshold & lstm_history_cd4_k1_t90 & seed_456 & 721 & NaN & 0.958711 & 0.00138696 & 0.00746897 & 121.803 & 7 & 7 & 14 & 2 \\
+D1_mlp_lstm_cd4_k_threshold & lstm_history_cd4_k1_t95 & seed_456 & 721 & NaN & 0.964649 & 0.208044 & 0.00820793 & 127.939 & 7 & 7 & 14 & 0 \\
+D1_mlp_lstm_cd4_k_threshold & lstm_history_cd4_k2_t90 & seed_456 & 721 & NaN & 0.955212 & 0.00138696 & 0.00764088 & 125.744 & 8 & 8 & 16 & 7 \\
+D1_mlp_lstm_cd4_k_threshold & lstm_history_cd4_k2_t95 & seed_456 & 721 & NaN & 0.961033 & 0.29681 & 0.0077038 & 123.912 & 8 & 8 & 16 & 7 \\
+\bottomrule
+\end{tabular}

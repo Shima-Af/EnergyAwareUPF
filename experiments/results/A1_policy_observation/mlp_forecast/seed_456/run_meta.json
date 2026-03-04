@@ -1,0 +1,15 @@
+{
+  "run_id": "A1_policy_observation/mlp_forecast/seed_456",
+  "group": "A1_policy_observation",
+  "config_name": "mlp_forecast",
+  "variable": "policy_observation",
+  "seed": 456,
+  "overrides": {
+    "policy": "MlpPolicy",
+    "observation_schema": "forecast"
+  },
+  "started_at": "2026-02-24T23:55:36.041578",
+  "finished_at": "2026-02-25T00:02:58.010131",
+  "status": "success",
+  "train_time_s": 441.49
+}
