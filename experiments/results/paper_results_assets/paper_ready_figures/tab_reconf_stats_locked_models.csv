@@ -1,0 +1,4 @@
+controller,n_sw,n_sc,n_total,n_bl
+Feed-forward PPO,17,7,24,3
+Recurrent PPO,16,0,16,7
+Rule-based baseline,24,0,24,0

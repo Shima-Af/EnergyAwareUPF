@@ -1,0 +1,6 @@
+{
+  "cooldown_zero_matches_bruteforce": true,
+  "single_action_constant_sequence": true,
+  "identical_configs_avoid_switching": true,
+  "all_passed": true
+}
