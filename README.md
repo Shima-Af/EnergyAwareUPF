@@ -37,6 +37,14 @@ python -m scripts.run_offline_optimal_baseline \
 	--tag d1_mlp_hybrid_cd4_k2_t90
 ```
 
+By default, the offline planner optimizes **discounted cumulative reward** (`--objective-mode discounted`) using `agent.gamma` from the run config (or `0.995` if missing). You can switch to the legacy plain-sum objective with:
+
+```bash
+python -m scripts.run_offline_optimal_baseline \
+	--run-dir experiments/results/D1_mlp_lstm_cd4_k_threshold/mlp_hybrid_cd4_k2_t90/seed_456 \
+	--objective-mode undiscounted
+```
+
 The script writes artifacts under `experiments/results/Baselines/`, including:
 
 - `offline_optimal_eval_<tag>.csv` (full per-step replay under env semantics)

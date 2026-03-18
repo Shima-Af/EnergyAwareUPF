@@ -96,7 +96,7 @@ def _attach_gap_columns(df: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
-def _sanity_checks() -> dict[str, Any]:
+def _sanity_checks(objective_mode: str = "discounted", gamma: float = 0.995) -> dict[str, Any]:
     checks: dict[str, Any] = {}
 
     rng = np.random.default_rng(42)
@@ -122,6 +122,8 @@ def _sanity_checks() -> dict[str, Any]:
         reward_config=rew_cfg,
         initial_config=0,
         initial_counter=0,
+        objective_mode=objective_mode,
+        gamma=gamma,
     )
     brute_cd0 = brute_force_best_objective(
         traffic_steps=traffic,
@@ -131,6 +133,8 @@ def _sanity_checks() -> dict[str, Any]:
         reward_config=rew_cfg,
         initial_config=0,
         initial_counter=0,
+        objective_mode=objective_mode,
+        gamma=gamma,
     )
     checks["cooldown_zero_matches_bruteforce"] = bool(np.isclose(solved_cd0["objective_value"], brute_cd0, atol=1e-8))
 
@@ -146,6 +150,8 @@ def _sanity_checks() -> dict[str, Any]:
         reward_config=rew_cfg,
         initial_config=0,
         initial_counter=4,
+        objective_mode=objective_mode,
+        gamma=gamma,
     )
     checks["single_action_constant_sequence"] = bool(np.all(np.asarray(solved_single["executed_actions"], dtype=int) == 0))
 
@@ -167,6 +173,8 @@ def _sanity_checks() -> dict[str, Any]:
         reward_config=rew_cfg2,
         initial_config=0,
         initial_counter=2,
+        objective_mode=objective_mode,
+        gamma=gamma,
     )
     checks["identical_configs_avoid_switching"] = bool(np.all(np.asarray(solved_ident["executed_actions"], dtype=int) == 0))
 
@@ -189,6 +197,18 @@ def main() -> int:
         help="Output directory for offline-optimal artifacts",
     )
     parser.add_argument("--tag", default=None, help="Optional suffix tag for output file names")
+    parser.add_argument(
+        "--objective-mode",
+        choices=["discounted", "undiscounted"],
+        default="discounted",
+        help="DP objective type. 'discounted' matches PPO-style discounted return; 'undiscounted' uses plain sum of rewards.",
+    )
+    parser.add_argument(
+        "--gamma",
+        type=float,
+        default=None,
+        help="Discount factor for discounted objective (defaults to config agent.gamma, then 0.995).",
+    )
     args = parser.parse_args()
 
     run_dir = _resolve_path(args.run_dir)
@@ -200,6 +220,11 @@ def main() -> int:
         raise FileNotFoundError(f"Missing config.yaml in run directory: {config_path}")
 
     config = utils.load_config(str(config_path))
+    objective_mode = str(args.objective_mode).strip().lower()
+    gamma = float(args.gamma) if args.gamma is not None else float(config.get("agent", {}).get("gamma", 0.995))
+    if objective_mode == "discounted" and not 0.0 <= gamma <= 1.0:
+        raise ValueError(f"For discounted objective mode, gamma must be in [0, 1], got {gamma}.")
+
     data_for_env = utils.load_and_preprocess_data(config)
     test_payload = data_for_env["test"]
 
@@ -207,6 +232,8 @@ def main() -> int:
         env_payload=test_payload,
         env_config=config["environment"],
         reward_config=config["reward"],
+        objective_mode=objective_mode,
+        gamma=gamma,
     )
 
     tag = _run_tag(run_dir, args.tag)
@@ -239,6 +266,8 @@ def main() -> int:
             "system": "offline_optimal",
             "source": "DP exact planner",
             "objective_value": float(offline.objective_value),
+            "objective_mode": objective_mode,
+            "objective_gamma": float(gamma) if objective_mode == "discounted" else np.nan,
             "run_dir": str(run_dir),
             "config_path": str(config_path),
             "qos_threshold": float(config["environment"]["performance_threshold"]),
@@ -291,7 +320,9 @@ def main() -> int:
     comparison_path = output_dir / f"offline_optimal_vs_baselines_{tag}.csv"
     comparison_df.to_csv(comparison_path, index=False)
 
-    sanity = _sanity_checks()
+    sanity = _sanity_checks(objective_mode=objective_mode, gamma=gamma)
+    sanity["objective_mode"] = objective_mode
+    sanity["objective_gamma"] = float(gamma) if objective_mode == "discounted" else None
     sanity_path = output_dir / f"offline_optimal_sanity_checks_{tag}.json"
     with open(sanity_path, "w", encoding="utf-8") as f:
         json.dump(sanity, f, indent=2)
@@ -301,6 +332,9 @@ def main() -> int:
     print("=" * 72)
     print(f"Run dir:                 {run_dir}")
     print(f"PPO eval CSV:            {ppo_eval_csv}")
+    print(f"Objective mode:          {objective_mode}")
+    if objective_mode == "discounted":
+        print(f"Objective gamma:         {gamma:.6f}")
     print(f"Offline objective value: {offline.objective_value:.6f}")
     print(f"Offline total reward:    {offline.summary['total_reward']:.6f}")
     print(f"Offline total energy Wh: {offline.summary['total_energy_wh']:.6f}")

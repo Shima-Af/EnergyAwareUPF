@@ -20,6 +20,32 @@ class OfflineOptimalResult:
     summary: dict[str, Any]
 
 
+def _normalize_objective_mode(objective_mode: str) -> str:
+    mode = str(objective_mode).strip().lower()
+    if mode not in {"discounted", "undiscounted"}:
+        raise ValueError(
+            f"Unsupported objective_mode='{objective_mode}'. "
+            "Expected one of: discounted, undiscounted."
+        )
+    return mode
+
+
+def _objective_from_rewards(rewards: np.ndarray, objective_mode: str, gamma: float) -> float:
+    rew = np.asarray(rewards, dtype=np.float64)
+    mode = _normalize_objective_mode(objective_mode)
+    if mode == "undiscounted":
+        return float(rew.sum())
+
+    gamma_value = float(gamma)
+    if not 0.0 <= gamma_value <= 1.0:
+        raise ValueError(f"For discounted objective, gamma must be in [0, 1], got {gamma_value}.")
+
+    if rew.size == 0:
+        return 0.0
+    discounts = np.power(gamma_value, np.arange(rew.size, dtype=np.float64))
+    return float(np.dot(discounts, rew))
+
+
 def _action_series_from_eval(df: pd.DataFrame) -> pd.Series:
     if "executed_action" in df.columns:
         return pd.to_numeric(df["executed_action"], errors="coerce").fillna(0).astype(int)
@@ -92,6 +118,8 @@ def solve_offline_optimal_actions(
     reward_config: dict[str, Any],
     initial_config: int = 0,
     initial_counter: int | None = None,
+    objective_mode: str = "discounted",
+    gamma: float = 0.995,
 ) -> dict[str, Any]:
     if power_table.shape != perf_table.shape:
         raise ValueError("power_table and perf_table must have identical shape.")
@@ -123,6 +151,12 @@ def solve_offline_optimal_actions(
     init_ctr = cooldown_period if initial_counter is None else int(initial_counter)
     init_ctr = max(0, min(init_ctr, n_ctr - 1))
 
+    mode = _normalize_objective_mode(objective_mode)
+    gamma_value = float(gamma)
+    if mode == "discounted" and not (0.0 <= gamma_value <= 1.0):
+        raise ValueError(f"For discounted objective, gamma must be in [0, 1], got {gamma_value}.")
+    future_weight = gamma_value if mode == "discounted" else 1.0
+
     dp = np.full((horizon + 1, num_actions, n_ctr), -np.inf, dtype=np.float64)
     policy = np.zeros((horizon, num_actions, n_ctr), dtype=np.int16)
     dp[horizon, :, :] = 0.0
@@ -145,7 +179,7 @@ def solve_offline_optimal_actions(
                         - float(transitions["type_penalty"][old_cfg, old_ctr, req])
                         - float(transitions["scale_penalty"][old_cfg, old_ctr, req])
                     )
-                    cand = step_reward + float(dp[t + 1, exe, nxt_ctr])
+                    cand = step_reward + future_weight * float(dp[t + 1, exe, nxt_ctr])
                     pref = 1 if req == old_cfg else 0
                     if cand > best_value + 1e-12:
                         best_value = cand
@@ -192,6 +226,8 @@ def simulate_requested_actions_from_tables(
     reward_config: dict[str, Any],
     initial_config: int = 0,
     initial_counter: int | None = None,
+    objective_mode: str = "discounted",
+    gamma: float = 0.995,
 ) -> dict[str, Any]:
     requested_actions = np.asarray(requested_actions, dtype=int)
     horizon, num_actions = power_table.shape
@@ -255,7 +291,7 @@ def simulate_requested_actions_from_tables(
         "executed_actions": executed.astype(int),
         "cooldown_blocked": blocked,
         "rewards": rewards,
-        "objective_value": float(rewards.sum()),
+        "objective_value": _objective_from_rewards(rewards, objective_mode=objective_mode, gamma=gamma),
     }
 
 
@@ -462,6 +498,8 @@ def compute_offline_optimal(
     env_config: dict[str, Any],
     reward_config: dict[str, Any],
     objective_tolerance: float = 1e-5,
+    objective_mode: str = "discounted",
+    gamma: float = 0.995,
 ) -> OfflineOptimalResult:
     env_for_tables = ManualCooldownEnv(
         **env_payload,
@@ -481,6 +519,8 @@ def compute_offline_optimal(
         reward_config=reward_config,
         initial_config=0,
         initial_counter=int(env_for_tables.cooldown_period),
+        objective_mode=objective_mode,
+        gamma=gamma,
     )
 
     replay_df = replay_requested_actions(
@@ -495,12 +535,17 @@ def compute_offline_optimal(
         performance_threshold=float(env_config["performance_threshold"]),
     )
 
-    replay_reward = float(replay_summary["total_reward"])
+    replay_rewards = pd.to_numeric(replay_df.get("reward"), errors="coerce").fillna(0.0).to_numpy(dtype=np.float64)
+    replay_objective = _objective_from_rewards(replay_rewards, objective_mode=objective_mode, gamma=gamma)
     obj = float(solved["objective_value"])
-    if not np.isclose(replay_reward, obj, atol=objective_tolerance, rtol=0.0):
+    if not np.isclose(replay_objective, obj, atol=objective_tolerance, rtol=0.0):
         raise ValueError(
-            f"Offline-optimal objective mismatch: DP={obj:.10f}, replay={replay_reward:.10f}."
+            f"Offline-optimal objective mismatch ({_normalize_objective_mode(objective_mode)}): "
+            f"DP={obj:.10f}, replay={replay_objective:.10f}."
         )
+
+    replay_summary["objective_mode"] = _normalize_objective_mode(objective_mode)
+    replay_summary["objective_gamma"] = float(gamma) if replay_summary["objective_mode"] == "discounted" else np.nan
 
     replay_exec = _action_series_from_eval(replay_df).to_numpy(dtype=int)
     if len(replay_exec) != len(solved["executed_actions"]):
@@ -525,6 +570,8 @@ def brute_force_best_objective(
     reward_config: dict[str, Any],
     initial_config: int = 0,
     initial_counter: int | None = None,
+    objective_mode: str = "discounted",
+    gamma: float = 0.995,
 ) -> float:
     horizon, num_actions = power_table.shape
     best = -np.inf
@@ -538,6 +585,8 @@ def brute_force_best_objective(
             reward_config=reward_config,
             initial_config=initial_config,
             initial_counter=initial_counter,
+            objective_mode=objective_mode,
+            gamma=gamma,
         )
         best = max(best, float(sim["objective_value"]))
     return float(best)
