@@ -1,0 +1,85 @@
+{
+  "approaches": [
+    {
+      "name": "baseline_abs_nocal_mse",
+      "description": "Leak-free scaling + temporal split + absolute target",
+      "seq_len": 96,
+      "use_calendar": false,
+      "target_mode": "absolute",
+      "loss": "mse",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "epochs": 120,
+      "early_stopping_patience": 15,
+      "reduce_lr_patience": 7
+    },
+    {
+      "name": "delta_nocal_huber",
+      "description": "Residual/delta target + Huber loss",
+      "seq_len": 96,
+      "use_calendar": false,
+      "target_mode": "delta",
+      "loss": "huber",
+      "learning_rate": 0.0005,
+      "batch_size": 128,
+      "epochs": 120,
+      "early_stopping_patience": 15,
+      "reduce_lr_patience": 7
+    },
+    {
+      "name": "abs_calendar_mse",
+      "description": "Calendar features enabled (copy only) + absolute target",
+      "seq_len": 96,
+      "use_calendar": true,
+      "target_mode": "absolute",
+      "loss": "mse",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "epochs": 120,
+      "early_stopping_patience": 15,
+      "reduce_lr_patience": 7
+    },
+    {
+      "name": "delta_calendar_huber",
+      "description": "Calendar features + residual target + Huber loss",
+      "seq_len": 96,
+      "use_calendar": true,
+      "target_mode": "delta",
+      "loss": "huber",
+      "learning_rate": 0.0005,
+      "batch_size": 128,
+      "epochs": 120,
+      "early_stopping_patience": 15,
+      "reduce_lr_patience": 7
+    }
+  ],
+  "best_model": {
+    "model_name": "delta_calendar_huber",
+    "description": "Calendar features + residual target + Huber loss",
+    "seq_len": 96,
+    "use_calendar": true,
+    "target_mode": "delta",
+    "loss": "huber",
+    "learning_rate": 0.0005,
+    "batch_size": 128,
+    "epochs_config": 120,
+    "epochs_ran": 29,
+    "n_train": 2088,
+    "n_val": 504,
+    "n_test": 672,
+    "rmse": 19.119999250467835,
+    "mae": 13.835484504699707,
+    "r2": 0.897952675819397,
+    "mape_safe": 17.42497444152832,
+    "smape": 16.642335891723633,
+    "wape": 13.75246810913086
+  },
+  "data_copy": "/home/ubuntu/EnergyAwareUPF/traffic_predictor/data/processed_traffic_normalized_copy_with_calendar.csv",
+  "result_files": {
+    "comparison_csv": "/home/ubuntu/EnergyAwareUPF/traffic_predictor/results/model_accuracy_comparison.csv",
+    "baseline_csv": "/home/ubuntu/EnergyAwareUPF/traffic_predictor/results/baseline_accuracy_comparison.csv",
+    "best_predictions_csv": "/home/ubuntu/EnergyAwareUPF/traffic_predictor/results/best_model_predictions.csv",
+    "plot_png": "/home/ubuntu/EnergyAwareUPF/traffic_predictor/results/best_model_actual_vs_predicted.png",
+    "summary_md": "/home/ubuntu/EnergyAwareUPF/traffic_predictor/README_RESULTS.md"
+  }
+}

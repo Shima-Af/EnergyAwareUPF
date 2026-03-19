@@ -1,0 +1,5 @@
+model_name,description,seq_len,use_calendar,target_mode,loss,learning_rate,batch_size,epochs_config,epochs_ran,n_train,n_val,n_test,rmse,mae,r2,mape_safe,smape,wape
+delta_calendar_huber,Calendar features + residual target + Huber loss,96,True,delta,huber,0.0005,128,120,29,2088,504,672,19.119999250467835,13.835484504699707,0.897952675819397,17.42497444152832,16.642335891723633,13.75246810913086
+delta_nocal_huber,Residual/delta target + Huber loss,96,False,delta,huber,0.0005,128,120,27,2088,504,672,19.25297226191241,13.956461906433105,0.8965283036231995,17.833478927612305,16.751066207885742,13.872720718383789
+baseline_abs_nocal_mse,Leak-free scaling + temporal split + absolute target,96,False,absolute,mse,0.001,128,120,52,2088,504,672,36.6437432042037,28.89035415649414,0.6251776218414307,55.56488037109375,33.982025146484375,28.717004776000977
+abs_calendar_mse,Calendar features enabled (copy only) + absolute target,96,True,absolute,mse,0.001,128,120,41,2088,504,672,41.75591889415574,36.06736755371094,0.513299286365509,78.82209014892578,42.72153854370117,35.850955963134766

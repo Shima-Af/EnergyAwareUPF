@@ -1,0 +1,2 @@
+model_name,horizon,split_name,n_samples,rmse,mape,mae,r2,unit
+delta_calendar_huber,t+1 (one-step ahead),temporal_holdout_seq96_train0.65_val0.15_test0.20,672,19.11999963331708,17.424973697652458,13.835484728125001,0.8979526695497035,Traffic_Mbps_scaled (project load-scaled units; train-fitted MinMax inverse applied)

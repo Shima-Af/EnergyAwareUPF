@@ -1,0 +1,2 @@
+model_name,target,split_name,n_samples,rmse,mape,r2,mae
+traffic_predictor.keras,Traffic_Mbps_scaled (MinMax inverse only; load-scaling preserved),holdout_test_seq96_testsize0.2_rs42_shuffleFalse,653,36.14566916539328,54.943817138671875,0.6376105546951294,28.294836044311523
