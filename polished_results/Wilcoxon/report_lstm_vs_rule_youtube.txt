@@ -1,0 +1,96 @@
+================================================================================
+Rec-PPO vs Rule-based
+Trace: YouTube   |   A: Rec-PPO   |   B (reference): Rule-based
+================================================================================
+
+──────────────────────────────────────────────────────────────────────
+METRIC: Total Energy (Wh)
+──────────────────────────────────────────────────────────────────────
+  Reference (Rule-based): 123.570000
+
+  Rec-PPO per seed:
+    seed_1024      123.837000   diff +0.267000  ▲ WORSE 
+    seed_123       136.379000   diff +12.809000  ▲ WORSE 
+    seed_42        121.794000   diff -1.776000  ▼ BETTER
+    seed_456       127.455000   diff +3.885000  ▲ WORSE 
+    seed_789       124.371000   diff +0.801000  ▲ WORSE 
+
+  Summary of Rec-PPO:
+    Mean   : 126.767200  ±5.742829
+    Median : 124.371000
+    95% CI : [119.636536, 133.897864]
+
+  Difference (Rec-PPO − Rule-based):
+    Mean   : +3.197200  (+2.59%)
+    Median : +0.801000
+    n_better (A < B): 1   n_worse (A > B): 4
+
+  Wilcoxon signed-rank (H₀: median diff = 0, two-tailed):
+    W statistic : 3.0
+    p-value     : 0.3125
+    Significant (α=0.05): NO
+    Note: min achievable p with n=5 is 0.0625
+
+──────────────────────────────────────────────────────────────────────
+METRIC: Mean SEC (W/Mbps)
+──────────────────────────────────────────────────────────────────────
+  Reference (Rule-based): 0.007974
+
+  Rec-PPO per seed:
+    seed_1024        0.007575   diff -0.000399  ▼ BETTER
+    seed_123         0.012781   diff +0.004807  ▲ WORSE 
+    seed_42          0.007479   diff -0.000495  ▼ BETTER
+    seed_456         0.007935   diff -0.000039  ▼ BETTER
+    seed_789         0.007606   diff -0.000368  ▼ BETTER
+
+  Summary of Rec-PPO:
+    Mean   : 0.008675  ±0.002302
+    Median : 0.007606
+    95% CI : [0.005817, 0.011533]
+
+  Difference (Rec-PPO − Rule-based):
+    Mean   : +0.000701  (+8.79%)
+    Median : -0.000368
+    n_better (A < B): 4   n_worse (A > B): 1
+
+  Wilcoxon signed-rank (H₀: median diff = 0, two-tailed):
+    W statistic : 5.0
+    p-value     : 0.6250
+    Significant (α=0.05): NO
+    Note: min achievable p with n=5 is 0.0625
+
+──────────────────────────────────────────────────────────────────────
+METRIC: QoS Violation Rate
+──────────────────────────────────────────────────────────────────────
+  Reference (Rule-based): 0.000000
+
+  Rec-PPO per seed:
+    seed_1024        0.016600   diff +0.016600  ▲ WORSE 
+    seed_123         0.000000   diff +0.000000  ▲ WORSE 
+    seed_42          0.016600   diff +0.016600  ▲ WORSE 
+    seed_456         0.000000   diff +0.000000  ▲ WORSE 
+    seed_789         0.016600   diff +0.016600  ▲ WORSE 
+
+  Summary of Rec-PPO:
+    Mean   : 0.009960  ±0.009092
+    Median : 0.016600
+    95% CI : [-0.001329, 0.021249]
+
+  Difference (Rec-PPO − Rule-based):
+    Mean   : +0.009960  (+nan%)
+    Median : +0.016600
+    n_better (A < B): 0   n_worse (A > B): 3
+
+  Wilcoxon signed-rank (H₀: median diff = 0, two-tailed):
+    W statistic : 0.0
+    p-value     : 0.2500
+    Significant (α=0.05): NO
+    Note: min achievable p with n=5 is 0.0625
+
+================================================================================
+QUICK-REFERENCE TABLE
+================================================================================
+            Metric Rec-PPO mean Rec-PPO std Rule-based            Δ mean   W      p Sig α=0.05
+ Total Energy (Wh)    126.76720     5.74283  123.57000 +3.19720 (+2.59%) 3.0 0.3125         No
+ Mean SEC (W/Mbps)      0.00868     0.00230    0.00797 +0.00070 (+8.79%) 5.0 0.6250         No
+QoS Violation Rate      0.00996     0.00909    0.00000  +0.00996 (+nan%) 0.0 0.2500         No

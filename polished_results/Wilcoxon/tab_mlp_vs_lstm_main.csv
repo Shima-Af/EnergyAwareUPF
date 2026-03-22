@@ -1,0 +1,4 @@
+comparison,trace,metric,n_seeds,FF-PPO_mean,FF-PPO_std,FF-PPO_median,ci_lo,ci_hi,Rec-PPO_ref,mean_diff,median_diff,pct_diff,n_better,n_worse,W,p_value,sig_a05
+FF-PPO vs Rec-PPO,Main,Total Energy (Wh),5,122.5786,1.500249,122.321,120.715795,124.441405,125.2936,-2.715,-0.733,-2.1669,3,2,5.0,0.625,False
+FF-PPO vs Rec-PPO,Main,Mean SEC (W/Mbps),5,0.00748,0.000152,0.00756,0.007292,0.007668,0.008039,-0.000559,-0.000205,-6.9513,3,2,3.5,0.375,False
+FF-PPO vs Rec-PPO,Main,QoS Violation Rate,5,0.00334,0.003607,0.0014,-0.001138,0.007818,0.0061,-0.00276,0.0,-45.2459,2,0,0.0,0.5,False

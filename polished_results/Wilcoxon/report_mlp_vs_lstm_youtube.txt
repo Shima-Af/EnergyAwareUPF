@@ -1,0 +1,96 @@
+================================================================================
+FF-PPO vs Rec-PPO
+Trace: YouTube   |   A: FF-PPO   |   B (reference): Rec-PPO
+================================================================================
+
+──────────────────────────────────────────────────────────────────────
+METRIC: Total Energy (Wh)
+──────────────────────────────────────────────────────────────────────
+  Reference (Rec-PPO): 126.767200
+
+  FF-PPO per seed:
+    seed_1024      124.670000   diff -2.097200  ▼ BETTER
+    seed_123       126.311000   diff -0.456200  ▼ BETTER
+    seed_42        125.424000   diff -1.343200  ▼ BETTER
+    seed_456       123.826000   diff -2.941200  ▼ BETTER
+    seed_789       122.117000   diff -4.650200  ▼ BETTER
+
+  Summary of FF-PPO:
+    Mean   : 124.469600  ±1.603959
+    Median : 124.670000
+    95% CI : [122.478022, 126.461178]
+
+  Difference (FF-PPO − Rec-PPO):
+    Mean   : -2.297600  (-1.81%)
+    Median : -2.254000
+    n_better (A < B): 3   n_worse (A > B): 2
+
+  Wilcoxon signed-rank (H₀: median diff = 0, two-tailed):
+    W statistic : 5.0
+    p-value     : 0.6250
+    Significant (α=0.05): NO
+    Note: min achievable p with n=5 is 0.0625
+
+──────────────────────────────────────────────────────────────────────
+METRIC: Mean SEC (W/Mbps)
+──────────────────────────────────────────────────────────────────────
+  Reference (Rec-PPO): 0.008675
+
+  FF-PPO per seed:
+    seed_1024        0.007809   diff -0.000866  ▼ BETTER
+    seed_123         0.008087   diff -0.000588  ▼ BETTER
+    seed_42          0.007974   diff -0.000701  ▼ BETTER
+    seed_456         0.007803   diff -0.000872  ▼ BETTER
+    seed_789         0.007432   diff -0.001243  ▼ BETTER
+
+  Summary of FF-PPO:
+    Mean   : 0.007821  ±0.000248
+    Median : 0.007809
+    95% CI : [0.007513, 0.008129]
+
+  Difference (FF-PPO − Rec-PPO):
+    Mean   : -0.000854  (-9.85%)
+    Median : -0.000132
+    n_better (A < B): 3   n_worse (A > B): 2
+
+  Wilcoxon signed-rank (H₀: median diff = 0, two-tailed):
+    W statistic : 7.0
+    p-value     : 1.0000
+    Significant (α=0.05): NO
+    Note: min achievable p with n=5 is 0.0625
+
+──────────────────────────────────────────────────────────────────────
+METRIC: QoS Violation Rate
+──────────────────────────────────────────────────────────────────────
+  Reference (Rec-PPO): 0.009960
+
+  FF-PPO per seed:
+    seed_1024        0.000000   diff -0.009960  ▼ BETTER
+    seed_123         0.000000   diff -0.009960  ▼ BETTER
+    seed_42          0.005500   diff -0.004460  ▼ BETTER
+    seed_456         0.000000   diff -0.009960  ▼ BETTER
+    seed_789         0.016600   diff +0.006640  ▲ WORSE 
+
+  Summary of FF-PPO:
+    Mean   : 0.004420  ±0.007213
+    Median : 0.000000
+    95% CI : [-0.004537, 0.013377]
+
+  Difference (FF-PPO − Rec-PPO):
+    Mean   : -0.005540  (-55.62%)
+    Median : +0.000000
+    n_better (A < B): 2   n_worse (A > B): 0
+
+  Wilcoxon signed-rank (H₀: median diff = 0, two-tailed):
+    W statistic : 0.0
+    p-value     : 0.5000
+    Significant (α=0.05): NO
+    Note: min achievable p with n=5 is 0.0625
+
+================================================================================
+QUICK-REFERENCE TABLE
+================================================================================
+            Metric FF-PPO mean FF-PPO std   Rec-PPO             Δ mean   W      p Sig α=0.05
+ Total Energy (Wh)   124.46960    1.60396 126.76720  -2.29760 (-1.81%) 5.0 0.6250         No
+ Mean SEC (W/Mbps)     0.00782    0.00025   0.00868  -0.00085 (-9.85%) 7.0 1.0000         No
+QoS Violation Rate     0.00442    0.00721   0.00996 -0.00554 (-55.62%) 0.0 0.5000         No

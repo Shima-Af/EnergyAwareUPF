@@ -1,0 +1,4 @@
+comparison,trace,metric,n_seeds,Rec-PPO_mean,Rec-PPO_std,Rec-PPO_median,ci_lo,ci_hi,Rule-based_ref,mean_diff,median_diff,pct_diff,n_better,n_worse,W,p_value,sig_a05
+Rec-PPO vs Rule-based,YouTube,Total Energy (Wh),5,126.7672,5.742829,124.371,119.636536,133.897864,123.57,3.1972,0.801,2.5874,1,4,3.0,0.3125,False
+Rec-PPO vs Rule-based,YouTube,Mean SEC (W/Mbps),5,0.008675,0.002302,0.007606,0.005817,0.011533,0.007974,0.000701,-0.000368,8.7936,4,1,5.0,0.625,False
+Rec-PPO vs Rule-based,YouTube,QoS Violation Rate,5,0.00996,0.009092,0.0166,-0.001329,0.021249,0.0,0.00996,0.0166,,0,3,0.0,0.25,False

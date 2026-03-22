@@ -1,0 +1,296 @@
+\begin{thebibliography}{28}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Techreport
+\bibitem[{{3GPP}(2022)}]{3gpp23501}
+\bibinfo{author}{{3GPP}}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Technical Specification 23.501: System Architecture
+  for the {5G} System ({5GS})}.
+\newblock \bibinfo{type}{Technical Report}. {3rd Generation Partnership
+  Project}.
+\newblock \bibinfo{note}{Release~17}.
+%Type = Article
+\bibitem[{Akbari et~al.(2025)Akbari, Bolla, Bruschi, Lombardo, Martinelli and
+  Siccardi}]{AKBARI2025111487}
+\bibinfo{author}{Akbari, M.}, \bibinfo{author}{Bolla, R.},
+  \bibinfo{author}{Bruschi, R.}, \bibinfo{author}{Lombardo, C.},
+  \bibinfo{author}{Martinelli, N.S.}, \bibinfo{author}{Siccardi, B.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{A management data analytics function for ethical {6G}
+  networks}.
+\newblock \bibinfo{journal}{Computer Networks} \bibinfo{volume}{270},
+  \bibinfo{pages}{111487}.
+\newblock \DOIprefix\doi{10.1016/j.comnet.2025.111487}.
+%Type = Inproceedings
+\bibitem[{Bellin et~al.(2023)Bellin, Centenaro and
+  Granelli}]{bellin2023netsoft}
+\bibinfo{author}{Bellin, A.}, \bibinfo{author}{Centenaro, M.},
+  \bibinfo{author}{Granelli, F.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{A preliminary study on the power consumption of
+  virtualized edge {5G} core networks}, in: \bibinfo{booktitle}{Proc. IEEE 9th
+  Int. Conf. Network Softwarization (NetSoft)}, pp. \bibinfo{pages}{420--425}.
+\newblock \DOIprefix\doi{10.1109/NetSoft57336.2023.10175489}.
+%Type = Article
+\bibitem[{Bellin et~al.(2024)Bellin, Granelli and Munaretto}]{bellin2024comnet}
+\bibinfo{author}{Bellin, A.}, \bibinfo{author}{Granelli, F.},
+  \bibinfo{author}{Munaretto, D.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{A measurement-based approach to analyze the power
+  consumption of the softwarized {5G} core}.
+\newblock \bibinfo{journal}{Computer Networks} \bibinfo{volume}{244},
+  \bibinfo{pages}{110312}.
+\newblock \DOIprefix\doi{10.1016/j.comnet.2024.110312}.
+%Type = Inproceedings
+\bibitem[{Bolla et~al.(2017)Bolla, Bruschi, Davoli, Lombardo, Pajo and
+  Sanchez}]{bolla2017icc}
+\bibinfo{author}{Bolla, R.}, \bibinfo{author}{Bruschi, R.},
+  \bibinfo{author}{Davoli, F.}, \bibinfo{author}{Lombardo, C.},
+  \bibinfo{author}{Pajo, J.F.}, \bibinfo{author}{Sanchez, O.R.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{The dark side of network functions virtualization: A
+  perspective on the technological sustainability}, in:
+  \bibinfo{booktitle}{Proc. IEEE Int. Conf. Communications (ICC)}, pp.
+  \bibinfo{pages}{1--7}.
+\newblock \DOIprefix\doi{10.1109/ICC.2017.7997281}.
+%Type = Inproceedings
+\bibitem[{Bolla et~al.(2024)Bolla, Ghiorzo, Bruschi, Ivaldi, Davoli, Lombardo
+  and Siccardi}]{bolla2024greencom}
+\bibinfo{author}{Bolla, R.}, \bibinfo{author}{Ghiorzo, P.},
+  \bibinfo{author}{Bruschi, R.}, \bibinfo{author}{Ivaldi, L.},
+  \bibinfo{author}{Davoli, F.}, \bibinfo{author}{Lombardo, C.},
+  \bibinfo{author}{Siccardi, B.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Comparison of the performance and energy efficiency
+  evaluation of {5G} user-plane functions}, in: \bibinfo{booktitle}{Proc. IEEE
+  GreenCom}, pp. \bibinfo{pages}{361--367}.
+\newblock
+  \DOIprefix\doi{10.1109/iThings-GreenCom-CPSCom-SmartData-Cybermatics62450.2024.00076}.
+%Type = Inproceedings
+\bibitem[{Bolla et~al.(2023)Bolla, Lombardo, Bono, Martinelli, Bruschi and
+  Siccardi}]{bolla10465014}
+\bibinfo{author}{Bolla, R.}, \bibinfo{author}{Lombardo, C.},
+  \bibinfo{author}{Bono, P.}, \bibinfo{author}{Martinelli, N.S.},
+  \bibinfo{author}{Bruschi, R.}, \bibinfo{author}{Siccardi, B.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{An open-source prototype of network data analytics
+  function for next-generation 5/6g environments}, in: \bibinfo{booktitle}{2023
+  IEEE Globecom Workshops (GC Wkshps)}, pp. \bibinfo{pages}{720--725}.
+\newblock \DOIprefix\doi{10.1109/GCWkshps58843.2023.10465014}.
+%Type = Misc
+\bibitem[{Borji et~al.(2024)Borji, Bruschi, Costa and
+  Lombardo}]{BorjiDynamicEU}
+\bibinfo{author}{Borji, S.A.}, \bibinfo{author}{Bruschi, R.},
+  \bibinfo{author}{Costa, C.E.}, \bibinfo{author}{Lombardo, C.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Dynamic energy-efficient user plane function
+  selection in {5G} networks}.
+\newblock \DOIprefix\doi{https://doi.org/10.5281/zenodo.18484420}.
+%Type = Article
+\bibitem[{Chen et~al.(2024)Chen, Chen and Li}]{chen2024comcom}
+\bibinfo{author}{Chen, S.}, \bibinfo{author}{Chen, J.}, \bibinfo{author}{Li,
+  H.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Joint optimization of {UPF} placement and traffic
+  routing for {5G} core network user plane}.
+\newblock \bibinfo{journal}{Computer Communications} \bibinfo{volume}{216},
+  \bibinfo{pages}{1--15}.
+\newblock \DOIprefix\doi{10.1016/j.comcom.2023.12.029}.
+%Type = Article
+\bibitem[{Chen et~al.(2022)Chen, Yin, Zhu, Li, Tao and Zhang}]{chen2022tcomm}
+\bibinfo{author}{Chen, Z.}, \bibinfo{author}{Yin, B.}, \bibinfo{author}{Zhu,
+  H.}, \bibinfo{author}{Li, Y.}, \bibinfo{author}{Tao, M.},
+  \bibinfo{author}{Zhang, W.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Mobile communications, computing, and caching
+  resources allocation for diverse services via multi-objective proximal policy
+  optimization}.
+\newblock \bibinfo{journal}{IEEE Trans. Communications} \bibinfo{volume}{70},
+  \bibinfo{pages}{4498--4512}.
+\newblock \DOIprefix\doi{10.1109/TCOMM.2022.3173005}.
+%Type = Inproceedings
+\bibitem[{Christakis et~al.(2024)Christakis, Tsourdinis, Makris, Korakis and
+  Fdida}]{christakis2024infocom}
+\bibinfo{author}{Christakis, S.}, \bibinfo{author}{Tsourdinis, T.},
+  \bibinfo{author}{Makris, N.}, \bibinfo{author}{Korakis, T.},
+  \bibinfo{author}{Fdida, S.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Evaluation of user plane function implementations in
+  real-world {5G} networks}, in: \bibinfo{booktitle}{Proc. IEEE INFOCOM
+  Workshops (CNERT)}, pp. \bibinfo{pages}{1--6}.
+\newblock \DOIprefix\doi{10.1109/INFOCOMWKSHPS61880.2024.10620666}.
+%Type = Article
+\bibitem[{Freitag et~al.(2021)Freitag, Berners-Lee, Widdicks, Knowles, Blair
+  and Friday}]{freitag2021patterns}
+\bibinfo{author}{Freitag, C.}, \bibinfo{author}{Berners-Lee, M.},
+  \bibinfo{author}{Widdicks, K.}, \bibinfo{author}{Knowles, B.},
+  \bibinfo{author}{Blair, G.S.}, \bibinfo{author}{Friday, A.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{The real climate and transformative impact of {ICT}:
+  A critique of estimates, trends, and regulations}.
+\newblock \bibinfo{journal}{Patterns} \bibinfo{volume}{2},
+  \bibinfo{pages}{100340}.
+\newblock \DOIprefix\doi{10.1016/j.patter.2021.100340}.
+%Type = Inproceedings
+\bibitem[{Gausseran et~al.(2020)Gausseran, Giroire, Jaumard and
+  Moulierac}]{gausseran2020icc}
+\bibinfo{author}{Gausseran, A.}, \bibinfo{author}{Giroire, F.},
+  \bibinfo{author}{Jaumard, B.}, \bibinfo{author}{Moulierac, J.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Be scalable and rescue my slices during
+  reconfiguration}, in: \bibinfo{booktitle}{Proc. IEEE Int. Conf.
+  Communications (ICC)}, pp. \bibinfo{pages}{1--6}.
+\newblock \DOIprefix\doi{10.1109/ICC40277.2020.9148871}.
+%Type = Article
+\bibitem[{Kuai et~al.(2023)Kuai, Luo, Wang, Lin, Cheng and Xu}]{kuai2022tcomm}
+\bibinfo{author}{Kuai, Z.}, \bibinfo{author}{Luo, G.}, \bibinfo{author}{Wang,
+  J.}, \bibinfo{author}{Lin, T.}, \bibinfo{author}{Cheng, Y.},
+  \bibinfo{author}{Xu, Y.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Fair virtual network function mapping and scheduling
+  using proximal policy optimization}.
+\newblock \bibinfo{journal}{IEEE Trans. Communications} \bibinfo{volume}{71},
+  \bibinfo{pages}{471--485}.
+\newblock \DOIprefix\doi{10.1109/TCOMM.2022.3211071}.
+%Type = Article
+\bibitem[{Lin et~al.(2023)Lin, He, Luo and Zukerman}]{lin2023tsc}
+\bibinfo{author}{Lin, R.}, \bibinfo{author}{He, L.}, \bibinfo{author}{Luo, S.},
+  \bibinfo{author}{Zukerman, M.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Energy-aware service function chaining embedding in
+  {NFV} networks}.
+\newblock \bibinfo{journal}{IEEE Trans. Services Computing}
+  \bibinfo{volume}{16}, \bibinfo{pages}{1158--1171}.
+\newblock \DOIprefix\doi{10.1109/TSC.2022.3162328}.
+%Type = Article
+\bibitem[{Luong et~al.(2019)Luong, Hoang, Gong, Niyato, Wang, Liang and
+  Kim}]{luong2019comst}
+\bibinfo{author}{Luong, N.C.}, \bibinfo{author}{Hoang, D.T.},
+  \bibinfo{author}{Gong, S.}, \bibinfo{author}{Niyato, D.},
+  \bibinfo{author}{Wang, P.}, \bibinfo{author}{Liang, Y.C.},
+  \bibinfo{author}{Kim, D.I.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Applications of deep reinforcement learning in
+  communications and networking: A survey}.
+\newblock \bibinfo{journal}{IEEE Communications Surveys \& Tutorials}
+  \bibinfo{volume}{21}, \bibinfo{pages}{3133--3174}.
+\newblock \DOIprefix\doi{10.1109/COMST.2019.2916583}.
+%Type = Misc
+\bibitem[{{NetMob}(2023)}]{netmob2023}
+\bibinfo{author}{{NetMob}}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{{NetMob} 2023 dataset: Mobile traffic demand
+  records}.
+\newblock \bibinfo{note}{Available: \url{https://netmob.org}}.
+%Type = Article
+\bibitem[{Pei et~al.(2020)Pei, Hong, Pan, Liu and Zhou}]{pei2020jsac}
+\bibinfo{author}{Pei, J.}, \bibinfo{author}{Hong, P.}, \bibinfo{author}{Pan,
+  M.}, \bibinfo{author}{Liu, J.}, \bibinfo{author}{Zhou, J.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Optimal {VNF} placement via deep reinforcement
+  learning in {SDN/NFV}-enabled networks}.
+\newblock \bibinfo{journal}{IEEE J. Selected Areas in Communications}
+  \bibinfo{volume}{38}, \bibinfo{pages}{263--278}.
+\newblock \DOIprefix\doi{10.1109/JSAC.2019.2959181}.
+%Type = Article
+\bibitem[{Pham et~al.(2020)Pham, Tran, Ren, Saad and Hong}]{pham2020tsc}
+\bibinfo{author}{Pham, C.}, \bibinfo{author}{Tran, N.H.}, \bibinfo{author}{Ren,
+  S.}, \bibinfo{author}{Saad, W.}, \bibinfo{author}{Hong, C.S.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Traffic-aware and energy-efficient {vNF} placement
+  for service chaining: Joint sampling and matching approach}.
+\newblock \bibinfo{journal}{IEEE Trans. Services Computing}
+  \bibinfo{volume}{13}, \bibinfo{pages}{172--185}.
+\newblock \DOIprefix\doi{10.1109/TSC.2017.2671867}.
+%Type = Inproceedings
+\bibitem[{Rischke et~al.(2022)Rischke, Vielhaus, Sossalla, Wang and
+  Fitzek}]{rischke2022nfvsdn}
+\bibinfo{author}{Rischke, J.}, \bibinfo{author}{Vielhaus, C.},
+  \bibinfo{author}{Sossalla, P.}, \bibinfo{author}{Wang, J.},
+  \bibinfo{author}{Fitzek, F.H.P.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Comparison of {UPF} acceleration technologies and
+  their tail-latency for {URLLC}}, in: \bibinfo{booktitle}{Proc. IEEE Conf.
+  Network Function Virtualization and Software Defined Networks (NFV-SDN)}, pp.
+  \bibinfo{pages}{19--25}.
+\newblock \DOIprefix\doi{10.1109/NFV-SDN56302.2022.9974798}.
+%Type = Article
+\bibitem[{Santos et~al.(2022)Santos, Endo, Lynn, Sadok and
+  Kelner}]{santos2022fgcs}
+\bibinfo{author}{Santos, G.L.}, \bibinfo{author}{Endo, P.T.},
+  \bibinfo{author}{Lynn, T.}, \bibinfo{author}{Sadok, D.},
+  \bibinfo{author}{Kelner, J.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A reinforcement learning-based approach for
+  availability-aware service function chain placement in large-scale networks}.
+\newblock \bibinfo{journal}{Future Generation Computer Systems}
+  \bibinfo{volume}{136}, \bibinfo{pages}{93--109}.
+\newblock \DOIprefix\doi{10.1016/j.future.2022.05.021}.
+%Type = Article
+\bibitem[{Schulman et~al.(2017)Schulman, Wolski, Dhariwal, Radford and
+  Klimov}]{schulman2017ppo}
+\bibinfo{author}{Schulman, J.}, \bibinfo{author}{Wolski, F.},
+  \bibinfo{author}{Dhariwal, P.}, \bibinfo{author}{Radford, A.},
+  \bibinfo{author}{Klimov, O.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Proximal policy optimization algorithms}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1707.06347} .
+%Type = Article
+\bibitem[{Solozabal et~al.(2020)Solozabal, Ceberio, Sanchoyerto, Zabala, Blanco
+  and Liberal}]{solozabal2020jsac}
+\bibinfo{author}{Solozabal, R.}, \bibinfo{author}{Ceberio, J.},
+  \bibinfo{author}{Sanchoyerto, A.}, \bibinfo{author}{Zabala, L.},
+  \bibinfo{author}{Blanco, B.}, \bibinfo{author}{Liberal, F.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Virtual network function placement optimization with
+  deep reinforcement learning}.
+\newblock \bibinfo{journal}{IEEE J. Selected Areas in Communications}
+  \bibinfo{volume}{38}, \bibinfo{pages}{292--303}.
+\newblock \DOIprefix\doi{10.1109/JSAC.2019.2959183}.
+%Type = Inproceedings
+\bibitem[{Soto et~al.(2021)Soto, Vleeschauwer, Camelo, Bock, Schepper, Chang,
+  Hellinckx, Botero and Latr{\'e}}]{soto2021sds}
+\bibinfo{author}{Soto, P.}, \bibinfo{author}{Vleeschauwer, D.D.},
+  \bibinfo{author}{Camelo, M.}, \bibinfo{author}{Bock, Y.D.},
+  \bibinfo{author}{Schepper, K.D.}, \bibinfo{author}{Chang, C.Y.},
+  \bibinfo{author}{Hellinckx, P.}, \bibinfo{author}{Botero, J.F.},
+  \bibinfo{author}{Latr{\'e}, S.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Towards autonomous {VNF} auto-scaling using deep
+  reinforcement learning}, in: \bibinfo{booktitle}{Proc. IEEE Int. Conf. Smart
+  Data Services (SDS)}.
+\newblock \DOIprefix\doi{10.1109/SDS54264.2021.9731854}.
+%Type = Article
+\bibitem[{Tao et~al.(2025)Tao, Xu and You}]{tao2025tcomm}
+\bibinfo{author}{Tao, Z.}, \bibinfo{author}{Xu, W.}, \bibinfo{author}{You, X.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Digital twin-accelerated online deep reinforcement
+  learning for admission control in sliced communication networks}.
+\newblock \bibinfo{journal}{IEEE Trans. Communications} \bibinfo{volume}{73},
+  \bibinfo{pages}{2490--2504}.
+\newblock \DOIprefix\doi{10.1109/TCOMM.2024.3476430}.
+%Type = Inproceedings
+\bibitem[{Tournaire et~al.(2019)Tournaire, Castel-Taleb, Hyon and
+  Hoch{\'e}}]{tournaire2019mascots}
+\bibinfo{author}{Tournaire, T.}, \bibinfo{author}{Castel-Taleb, H.},
+  \bibinfo{author}{Hyon, E.}, \bibinfo{author}{Hoch{\'e}, T.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Generating optimal thresholds in a hysteresis queue:
+  Application to a cloud model}, in: \bibinfo{booktitle}{Proc. IEEE 27th Int.
+  Symp. Modeling, Analysis, and Simulation of Computer and Telecommunication
+  Systems (MASCOTS)}, pp. \bibinfo{pages}{283--294}.
+\newblock \DOIprefix\doi{10.1109/MASCOTS.2019.00040}.
+%Type = Article
+\bibitem[{Wang et~al.(2022)Wang, Wu, Min and Miao}]{wang2022tii}
+\bibinfo{author}{Wang, H.}, \bibinfo{author}{Wu, Y.}, \bibinfo{author}{Min,
+  G.}, \bibinfo{author}{Miao, W.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A graph neural network-based digital twin for network
+  slicing management}.
+\newblock \bibinfo{journal}{IEEE Trans. Industrial Informatics}
+  \bibinfo{volume}{18}, \bibinfo{pages}{1367--1376}.
+\newblock \DOIprefix\doi{10.1109/TII.2020.3047843}.
+%Type = Article
+\bibitem[{Wilcoxon(1945)}]{wilcoxon1945individual}
+\bibinfo{author}{Wilcoxon, F.}, \bibinfo{year}{1945}.
+\newblock \bibinfo{title}{Individual comparisons by ranking methods}.
+\newblock \bibinfo{journal}{Biometrics Bulletin} \bibinfo{volume}{1},
+  \bibinfo{pages}{80--83}.
+\newblock \DOIprefix\doi{10.2307/3001968}.
+
+\end{thebibliography}

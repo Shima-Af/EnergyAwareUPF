@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: manuscript_energyawareupf.aux
+The style file: cas-model2-names.bst
+Database file #1: references.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty pages in soto2021sds
+You've used 28 entries,
+            2990 wiz_defined-function locations,
+            912 strings with 13115 characters,
+and the built_in function-call counts, 22361 in all, are:
+= -- 1688
+> -- 1096
+< -- 11
++ -- 434
+- -- 390
+* -- 2575
+:= -- 3235
+add.period$ -- 100
+call.type$ -- 28
+change.case$ -- 272
+chr.to.int$ -- 28
+cite$ -- 29
+duplicate$ -- 1557
+empty$ -- 1461
+format.name$ -- 468
+if$ -- 4135
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 319
+newline$ -- 171
+num.names$ -- 112
+pop$ -- 546
+preamble$ -- 1
+purify$ -- 242
+quote$ -- 0
+skip$ -- 493
+stack$ -- 0
+substring$ -- 894
+swap$ -- 1235
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 252
+warning$ -- 1
+while$ -- 135
+width$ -- 0
+write$ -- 443
+(There was 1 warning)

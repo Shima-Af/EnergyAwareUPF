@@ -1,0 +1,9 @@
+Trace,Controller,E_tot,SEC,v,n_sw,n_sc,n_bl
+Main,Rule-based,124.321,0.00778,0.0014,24,0,0
+Main,Static-DPDK,147.792,0.013534,0.0,0,0,0
+Main,Static-OAI-1x,178.76,0.009075,0.0014,0,0,0
+Main,Offline-Optimal,116.206,0.006807,0.0097,24,23,0
+YouTube,Rule-based,123.57,0.007974,0.0,16,0,1
+YouTube,Static-DPDK,147.779,0.015214,0.0,0,0,0
+YouTube,Static-OAI-1x,165.328,0.009168,0.0,0,0,0
+YouTube,Offline-Optimal,116.697,0.006981,0.0166,31,18,0

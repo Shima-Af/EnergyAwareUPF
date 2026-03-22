@@ -1,0 +1,4 @@
+comparison,trace,metric,n_seeds,FF-PPO_mean,FF-PPO_std,FF-PPO_median,ci_lo,ci_hi,Rule-based_ref,mean_diff,median_diff,pct_diff,n_better,n_worse,W,p_value,sig_a05
+FF-PPO vs Rule-based,Main,Total Energy (Wh),5,122.5786,1.500249,122.321,120.715795,124.441405,124.321,-1.7424,-2.0,-1.4015,4,1,1.0,0.125,False
+FF-PPO vs Rule-based,Main,Mean SEC (W/Mbps),5,0.00748,0.000152,0.00756,0.007292,0.007668,0.00778,-0.0003,-0.00022,-3.856,5,0,0.0,0.0625,False
+FF-PPO vs Rule-based,Main,QoS Violation Rate,5,0.00334,0.003607,0.0014,-0.001138,0.007818,0.0014,0.00194,0.0,138.5714,0,2,0.0,0.5,False

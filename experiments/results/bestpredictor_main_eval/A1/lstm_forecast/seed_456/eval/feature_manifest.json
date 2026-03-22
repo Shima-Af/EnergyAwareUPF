@@ -1,0 +1,34 @@
+{
+  "observation_len": 7,
+  "window_size": 95,
+  "observation_schema": "forecast",
+  "forecast_horizon": 1,
+  "banks_enabled": {
+    "use_dyn_features": false,
+    "use_capacity_features": false,
+    "use_powergap_features": false,
+    "use_calendar_features": true
+  },
+  "feature_names": {
+    "traffic_window": [
+      "forecast_traffic[t+1]"
+    ],
+    "config_code": "index 1",
+    "cooldown": "index 2",
+    "dyn_names": [
+      "dT",
+      "mov_mean_W",
+      "mov_std_W",
+      "ema_short",
+      "ema_long"
+    ],
+    "cap_names": [],
+    "gap_names": [],
+    "cal_names": [
+      "sin_hour",
+      "cos_hour",
+      "sin_dow",
+      "cos_dow"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+comparison,trace,metric,n_seeds,FF-PPO_mean,FF-PPO_std,FF-PPO_median,ci_lo,ci_hi,Rec-PPO_ref,mean_diff,median_diff,pct_diff,n_better,n_worse,W,p_value,sig_a05
+FF-PPO vs Rec-PPO,YouTube,Total Energy (Wh),5,124.4696,1.603959,124.67,122.478022,126.461178,126.7672,-2.2976,-2.254,-1.8125,3,2,5.0,0.625,False
+FF-PPO vs Rec-PPO,YouTube,Mean SEC (W/Mbps),5,0.007821,0.000248,0.007809,0.007513,0.008129,0.008675,-0.000854,-0.000132,-9.8465,3,2,7.0,1.0,False
+FF-PPO vs Rec-PPO,YouTube,QoS Violation Rate,5,0.00442,0.007213,0.0,-0.004537,0.013377,0.00996,-0.00554,0.0,-55.6225,2,0,0.0,0.5,False
