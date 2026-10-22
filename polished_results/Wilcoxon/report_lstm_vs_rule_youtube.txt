@@ -4,7 +4,7 @@ Trace: YouTube   |   A: Rec-PPO   |   B (reference): Rule-based
 ================================================================================
 
 ──────────────────────────────────────────────────────────────────────
-METRIC: Total Energy (Wh)
+METRIC: Total Energy [Wh]
 ──────────────────────────────────────────────────────────────────────
   Reference (Rule-based): 123.570000
 
@@ -32,7 +32,7 @@ METRIC: Total Energy (Wh)
     Note: min achievable p with n=5 is 0.0625
 
 ──────────────────────────────────────────────────────────────────────
-METRIC: Mean SEC (W/Mbps)
+METRIC: Mean SEC [W/Mbps]
 ──────────────────────────────────────────────────────────────────────
   Reference (Rule-based): 0.007974
 
@@ -91,6 +91,6 @@ METRIC: QoS Violation Rate
 QUICK-REFERENCE TABLE
 ================================================================================
             Metric Rec-PPO mean Rec-PPO std Rule-based            Δ mean   W      p Sig α=0.05
- Total Energy (Wh)    126.76720     5.74283  123.57000 +3.19720 (+2.59%) 3.0 0.3125         No
- Mean SEC (W/Mbps)      0.00868     0.00230    0.00797 +0.00070 (+8.79%) 5.0 0.6250         No
+ Total Energy [Wh]    126.76720     5.74283  123.57000 +3.19720 (+2.59%) 3.0 0.3125         No
+ Mean SEC [W/Mbps]      0.00868     0.00230    0.00797 +0.00070 (+8.79%) 5.0 0.6250         No
 QoS Violation Rate      0.00996     0.00909    0.00000  +0.00996 (+nan%) 0.0 0.2500         No

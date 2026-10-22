@@ -116,7 +116,7 @@ In this paper, we formulate UPF orchestration as a constrained sequential decisi
     \item \textbf{Comparative evaluation of PPO-based control.} We compare feed-forward and recurrent PPO controllers against static and rule-based baselines on two distinct real mobile-traffic traces derived from the same measurement campaign. The results show that the feed-forward PPO controller improves attributed energy over the baselines while maintaining the same QoS violation rate as the rule-based selector under identical guard semantics. Cross-trace generalization is validated on a second workload, and statistical robustness is assessed through Wilcoxon signed-rank tests.
 \end{enumerate}
 
-The remainder of the paper is organized as follows. Section~\ref{related} reviews the relevant literature. Sections~\ref{sys} and~\ref{method} present the system model and learning formulation. Sections~\ref{testbed_hw} and~\ref{testbed} describe the testbed, profiling procedure, digital twin, and experimental protocol. Section~\ref{result} reports the results, including cross-trace generalization and statistical significance analysis. Section~\ref{conclusion} concludes the paper.
+The remainder of the paper is organized as follows. Section~\ref{related} reviews the relevant literature. Sections~\ref{sys} and~\ref{method} present the system model and learning formulation. Sections~\ref{testbed_hw} and~\ref{testbed} describe the testbed, profiling procedure, digital twin, and experimental protocol. Section~\ref{result} reports the results, including training convergence diagnostics, cross-trace generalization, and statistical significance analysis. Section~\ref{conclusion} concludes the paper.
 
 \section{Background \& Related Work}
 \label{related}
@@ -160,7 +160,7 @@ The proposed framework is organized as a closed control loop in which four funct
 
 \begin{figure}
 \centering
-\includegraphics[width=.9\textwidth]{closed_loop.pdf}
+\includegraphics[width=.9\textwidth]{fig_closed_loop_architecture.pdf}
 \caption{Target online closed-loop UPF orchestration architecture. The present paper validates the decision logic offline in a measurement-grounded digital twin before any live deployment.}
 \label{fig:closedloop}
 \end{figure}
@@ -297,7 +297,7 @@ where $\alpha$ scales the SEC contribution. Using SEC rather than raw power in t
 
 The policy $\pi_\theta$ is learned using Proximal Policy Optimization (PPO), an on-policy actor--critic method that supports discrete action spaces and delayed-consequence control. PPO learns a stochastic policy over configuration commands together with a value function that estimates the expected return. Training optimizes the objective in~\eqref{eq:return} from trajectories generated under the guarded actuation semantics defined in Section~\ref{subsec:actuation}.
 
-We consider two PPO parameterizations. In the feed-forward variant, temporal context is supplied through the observation construction. In the recurrent variant, the policy includes an internal memory state that integrates information across decision epochs. We do not claim PPO is the only suitable method for a small configuration space; rather, it provides a consistent policy-gradient baseline for a constrained sequential-control setting and a natural path toward larger future configuration spaces. The specific variant and training hyperparameters used in each experiment are reported in Section~\ref{testbed}.
+We consider two PPO parameterizations. In the feed-forward variant, temporal context is supplied through the observation construction. In the recurrent variant, the policy includes an internal memory state that integrates information across decision epochs. We do not claim PPO is the only suitable method for a small configuration space; rather, it provides a consistent policy-gradient baseline for a constrained sequential-control setting and a natural path toward larger future configuration spaces. Training convergence and entropy dynamics for both variants are analyzed in Section~\ref{subsec:training_diagnostics}. The specific variant and training hyperparameters used in each experiment are reported in Section~\ref{testbed}.
 
 
 
@@ -326,7 +326,7 @@ The testbed consists of a commodity server running both UPF instances and the tr
 
 \begin{figure}
 \centering
-\includegraphics[width=.75\textwidth]{2_3_system.pdf}
+\includegraphics[width=.75\textwidth]{fig_testbed_architecture.pdf}
 \caption{Physical testbed architecture used for UPF profiling and metric collection. The Keysight LoadCore platform simulates UE/RAN (N3) and data-network (N6) endpoints. The 5G control plane (AMF, SMF) manages sessions via N4. Scaphandre monitors power attributed to the UPF processes via RAPL-derived estimates and exports metrics to Prometheus.}
 \label{fig:testbed_system}
 \end{figure}
@@ -357,14 +357,14 @@ Figure~\ref{fig:power_model} shows the measured attributed-power distributions a
 
 \begin{figure}
 \centering
-\includegraphics[width=.75\textwidth]{power_model_learned_curves.png}
+\includegraphics[width=.75\textwidth]{fig_power_profiling_model.png}
 \caption{Process-attributed power-consumption distributions and MLP profiling-model predictions for the DPDK (blue, solid) and USR (red, dashed) realizations as a function of offered throughput. Box plots show empirical variability across profiling runs.}
 \label{fig:power_model}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=.75\textwidth]{performance_model_learned_curves.png}
+\includegraphics[width=.75\textwidth]{fig_qos_profiling_model.png}
 \caption{QoS-compliance score distributions and MLP profiling-model predictions for both UPF realizations. The dashed line marks the compliance target $\tau=0.9$. The USR score degrades sharply above approximately 400~Mbps per instance.}
 \label{fig:qos_model}
 \end{figure}
@@ -572,7 +572,7 @@ The learning-based controller reduces total attributed energy by adapting the ex
 
 \begin{figure}
 \centering
-\includegraphics[width=.9\textwidth]{fig_power_timeline_locked_models.png}
+\includegraphics[width=.9\textwidth]{fig_power_timeline.pdf}
 \caption{Interval-averaged attributed power $P_t$ over the test horizon for the evaluated controllers.}
 \label{fig:energy_time}
 \end{figure}
@@ -581,7 +581,7 @@ To clarify where savings are realized, Figure~\ref{fig:sec_by_load} reports $\ma
 
 \begin{figure}
 \centering
-\includegraphics[width=.9\textwidth]{fig_sec_by_offered_load_bin_5models.pdf}
+\includegraphics[width=.9\textwidth]{fig_sec_by_load_bin.pdf}
 \caption{Specific energy consumption $\mathrm{SEC}_t$ by offered-load bins.}
 \label{fig:sec_by_load}
 \end{figure}
@@ -595,7 +595,7 @@ The feed-forward PPO controller maintains compliance by allocating sufficient ca
 
 \begin{figure}
 \centering
-\includegraphics[width=.9\textwidth]{fig_qos_timeline_locked_models.pdf}
+\includegraphics[width=.9\textwidth]{fig_qos_timeline.pdf}
 \caption{QoS-compliance indicator $Q_t$ over the test horizon. The dashed line marks the target $\tau$.}
 \label{fig:qos_time}
 \end{figure}
@@ -609,7 +609,7 @@ Table~\ref{tab:overall_results} disaggregates reconfigurations into type-switch 
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{fig_configs_time_locked_models.pdf}
+\includegraphics[width=\textwidth]{fig_config_sequence.pdf}
 \caption{Executed configuration sequence $\{c_t\}$ over the test horizon.}
 \label{fig:configs_time}
 \end{figure}
@@ -621,7 +621,7 @@ This subsection isolates the impact of temporal context in the observation and i
 
 Table~\ref{tab:ablation_obs} reports energy, QoS, and stability metrics for all considered combinations, disaggregated into type-switch ($n_{\mathrm{sw}}$) and scaling ($n_{\mathrm{sc}}$) events. For feed-forward PPO, only the hybrid schema activates horizontal scaling (7 scaling events), while all other schemas produce exclusively type switches. In our experiments, the combination of traffic history and forecast therefore provided the clearest context for exploiting the intermediate USR scaling level rather than oscillating between single-instance USR and DPDK. The instantaneous schema triggers the most type switches ($n_{\mathrm{sw}}=24$) despite comparable energy, indicating less stable actuation. The forecast-only schema is the most switch-conservative ($n_{\mathrm{sw}}=15$), but it yields slightly higher energy because it does not exploit scaling.
 
-For recurrent PPO, the instantaneous and forecast-only schemas collapse to a fixed DPDK configuration ($n_{\mathrm{sw}}=0$, $E_{\mathrm{tot}}=147.79$~Wh), matching the static DPDK baseline. This suggests that, within the available training budget, those recurrent settings fail to learn a useful switching strategy. The history-augmented schema unlocks effective switching ($n_{\mathrm{sw}}=16$, $E_{\mathrm{tot}}=125.74$~Wh) with no scaling events, indicating a more conservative two-mode strategy. The hybrid recurrent schema produces only 4 type switches with no scaling, but occupies a weaker energy position ($E_{\mathrm{tot}}=132.38$~Wh). Overall, feed-forward PPO is more robust to schema choice and is the only controller that clearly exploits the full configuration space in the reported experiments.
+For recurrent PPO, the instantaneous and forecast-only schemas collapse to a fixed DPDK configuration ($n_{\mathrm{sw}}=0$, $E_{\mathrm{tot}}=147.79$~Wh), matching the static DPDK baseline. This suggests that, within the available training budget, those recurrent settings fail to learn a useful switching strategy; the underlying cause---entropy collapse---is examined in Section~\ref{subsec:training_diagnostics}. The history-augmented schema unlocks effective switching ($n_{\mathrm{sw}}=16$, $E_{\mathrm{tot}}=125.74$~Wh) with no scaling events, indicating a more conservative two-mode strategy. The hybrid recurrent schema produces only 4 type switches with no scaling, but occupies a weaker energy position ($E_{\mathrm{tot}}=132.38$~Wh). Overall, feed-forward PPO is more robust to schema choice and is the only controller that clearly exploits the full configuration space in the reported experiments.
 
 \begin{table}[width=.9\linewidth,cols=6,pos=h]
 \centering
@@ -644,6 +644,43 @@ PPO (recurrent) & hybrid              & 132.38 & 0.0042 & 4 & 0 \\
 \end{tabular}
 \end{table}
 
+\subsection{Training Convergence Diagnostics}
+\label{subsec:training_diagnostics}
+
+To understand the training dynamics behind the ablation and seed-robustness results, we examine learning curves, policy entropy evolution, and multi-seed convergence behavior. Figure~\ref{fig:training_diagnostics} presents these diagnostics across all observation schemas and both policy parameterizations.
+
+Panel~(a) shows evaluation return over training. For feed-forward PPO, all four observation schemas converge to high evaluation returns within approximately 30k training steps, after which the policy collapses sharply (returns drop to approximately $-975$). This late-stage collapse does not affect deployment: best-model checkpointing selects the pre-collapse policy for evaluation. For recurrent PPO, only the history-augmented schema converges to a competitive return; the instantaneous and forecast-only schemas fail to learn a useful switching policy, consistent with their collapse to static DPDK in Table~\ref{tab:ablation_obs}.
+
+Panel~(b) reveals the underlying cause. The instantaneous and forecast-only recurrent schemas exhibit entropy collapse, with policy entropy falling below $0.5$ within the first 50k steps. This premature commitment to a single action prevents meaningful exploration of the switching strategy and explains the fixed-configuration behavior observed in the ablation. In contrast, the history-augmented recurrent schema and all feed-forward schemas maintain sufficient entropy throughout training, enabling effective policy learning.
+
+Panel~(c) shows convergence across five independently seeded training runs for the two best-performing configurations identified in the ablation: feed-forward PPO with the hybrid observation schema and recurrent PPO with the history schema. Both controllers reach comparable peak returns (mean best return approximately $-545$), but feed-forward PPO converges faster and exhibits tighter seed-to-seed variation, consistent with the aggregate statistics in Section~\ref{subsec:seed_robustness}. The shaded bands indicate $\pm 1$ standard deviation across seeds.
+
+\begin{figure}
+\centering
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{fig_training_learning_curves.pdf}
+  \caption{Evaluation return.}
+  \label{fig:training_learning_curves}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{fig_training_entropy.pdf}
+  \caption{Policy entropy.}
+  \label{fig:training_entropy}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{fig_training_multiseed.pdf}
+  \caption{Multi-seed robustness.}
+  \label{fig:training_multiseed}
+\end{subfigure}
+\caption{Training convergence diagnostics. (a)~Evaluation return over training for all observation schemas and both policy parameterizations (single seed). The arrow highlights late-stage policy collapse in feed-forward PPO, which does not affect deployment due to best-model checkpointing. (b)~Policy entropy evolution. Recurrent PPO with instantaneous and forecast-only schemas exhibits entropy collapse below the shaded zone, explaining the fixed-configuration behavior in Table~\ref{tab:ablation_obs}. (c)~Evaluation return across five independent seeds for the two best-performing configurations, with $\pm 1$ standard deviation bands.}
+\label{fig:training_diagnostics}
+\end{figure}
+
 \subsection{Sensitivity Analysis}
 \label{subsec:sensitivity}
 
@@ -665,14 +702,14 @@ At $\tau=0.95$, the feed-forward PPO controller allocates DPDK in 71.4\% of time
 \centering
 \begin{subfigure}[!t]{0.48\textwidth}
   \centering
-  \includegraphics[width=.9\textwidth]{fig_threshold_dpdk_stickiness.png}
+  \includegraphics[width=.9\textwidth]{fig_sensitivity_dpdk_share.png}
   \caption{DPDK utilization share.}
   \label{fig:sensitivity_tau_dpdk}
 \end{subfigure}
 \hfill
 \begin{subfigure}[!t]{0.48\textwidth}
   \centering
-  \includegraphics[width=.9\textwidth]{fig_threshold_violation_rate.png}
+  \includegraphics[width=.9\textwidth]{fig_sensitivity_violation_rate.png}
   \caption{QoS violation rate.}
   \label{fig:sensitivity_tau_viol}
 \end{subfigure}
@@ -797,7 +834,7 @@ Figure~\ref{fig:wilcoxon_main} visualizes the paired per-seed differences and th
 
 \begin{figure}
 \centering
-\includegraphics[width=.9\textwidth]{plot_mlp_vs_rule_main.png}
+\includegraphics[width=.9\textwidth]{fig_wilcoxon_ff_vs_rule_main.png}
 \caption{Wilcoxon signed-rank test visualization for feed-forward PPO vs.\ rule-based baseline on the Main trace. Each point represents one training seed; the dashed line marks zero difference.}
 \label{fig:wilcoxon_main}
 \end{figure}
@@ -807,7 +844,7 @@ These results confirm that the SEC improvement is consistent across all five see
 \subsection{Summary of Findings}
 \label{subsec:results_summary}
 
-The feed-forward PPO controller with the hybrid observation schema is the strongest causal controller in the reported setting. Its key advantage over the rule-based baseline is not a large energy margin but a qualitative difference in actuation strategy: it combines fewer type switches with effective use of horizontal scaling, replacing some disruptive mode changes with lower-cost scaling actions. Relative to the offline-optimal reference, it closes a larger share of the remaining performance gap than the rule-based controller, even though the exact planner operates with full future knowledge. The ablation study shows that this behavior emerges only with the hybrid observation schema, and the multi-seed analysis confirms that feed-forward PPO is more robust than recurrent PPO under the available training budget.
+The feed-forward PPO controller with the hybrid observation schema is the strongest causal controller in the reported setting. Its key advantage over the rule-based baseline is not a large energy margin but a qualitative difference in actuation strategy: it combines fewer type switches with effective use of horizontal scaling, replacing some disruptive mode changes with lower-cost scaling actions. Relative to the offline-optimal reference, it closes a larger share of the remaining performance gap than the rule-based controller, even though the exact planner operates with full future knowledge. The ablation study shows that this behavior emerges only with the hybrid observation schema. Training convergence diagnostics reveal that recurrent PPO failures with the instantaneous and forecast-only schemas are caused by entropy collapse rather than insufficient training budget, while feed-forward PPO maintains healthy entropy dynamics across all schemas despite exhibiting late-stage policy collapse that is mitigated by best-model checkpointing. The multi-seed analysis confirms that feed-forward PPO is more robust than recurrent PPO, with tighter seed-to-seed variation and faster convergence.
 
 Cross-trace evaluation on the YouTube workload confirms that the energy-efficiency gains over static provisioning are preserved (15.8\% reduction vs.\ Static~DPDK), while the margin over the rule-based baseline is workload-dependent and narrows on a less demanding trace. Wilcoxon signed-rank tests on the Main trace show that the SEC improvement over the rule-based baseline is consistent across all five seeds, reaching the minimum achievable $p$-value ($p=0.0625$) for the available sample size.
 

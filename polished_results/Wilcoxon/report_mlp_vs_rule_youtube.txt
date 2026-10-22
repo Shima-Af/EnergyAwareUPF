@@ -4,7 +4,7 @@ Trace: YouTube   |   A: FF-PPO   |   B (reference): Rule-based
 ================================================================================
 
 ──────────────────────────────────────────────────────────────────────
-METRIC: Total Energy (Wh)
+METRIC: Total Energy [Wh]
 ──────────────────────────────────────────────────────────────────────
   Reference (Rule-based): 123.570000
 
@@ -32,7 +32,7 @@ METRIC: Total Energy (Wh)
     Note: min achievable p with n=5 is 0.0625
 
 ──────────────────────────────────────────────────────────────────────
-METRIC: Mean SEC (W/Mbps)
+METRIC: Mean SEC [W/Mbps]
 ──────────────────────────────────────────────────────────────────────
   Reference (Rule-based): 0.007974
 
@@ -91,6 +91,6 @@ METRIC: QoS Violation Rate
 QUICK-REFERENCE TABLE
 ================================================================================
             Metric FF-PPO mean FF-PPO std Rule-based            Δ mean   W      p Sig α=0.05
- Total Energy (Wh)   124.46960    1.60396  123.57000 +0.89960 (+0.73%) 3.0 0.3125         No
- Mean SEC (W/Mbps)     0.00782    0.00025    0.00797 -0.00015 (-1.92%) 1.0 0.2500         No
+ Total Energy [Wh]   124.46960    1.60396  123.57000 +0.89960 (+0.73%) 3.0 0.3125         No
+ Mean SEC [W/Mbps]     0.00782    0.00025    0.00797 -0.00015 (-1.92%) 1.0 0.2500         No
 QoS Violation Rate     0.00442    0.00721    0.00000  +0.00442 (+nan%) 0.0 0.5000         No
