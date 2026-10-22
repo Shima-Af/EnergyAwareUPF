@@ -1,0 +1,148 @@
+{
+  "main": {
+    "compiler_721": {
+      "rule": {
+        "E_tot": 124.309506,
+        "SEC": 0.007778325423023579,
+        "v": 0.0013869625520110957,
+        "n_sw": 24,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "dpdk": {
+        "E_tot": 147.79219,
+        "SEC": 0.013534330998613037,
+        "v": 0.0,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "usr1": {
+        "E_tot": 178.71985500000002,
+        "SEC": 0.009072423689320389,
+        "v": 0.0013869625520110957,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      }
+    },
+    "archive_720_reconstruction": {
+      "rule": {
+        "E_tot": 124.104299,
+        "SEC": 0.007782639638888889,
+        "v": 0.001388888888888889,
+        "n_sw": 24,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "dpdk": {
+        "E_tot": 147.58698300000003,
+        "SEC": 0.013546639666666666,
+        "v": 0.0,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "usr1": {
+        "E_tot": 178.318018,
+        "SEC": 0.009072317486111111,
+        "v": 0.001388888888888889,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      }
+    },
+    "offline": {
+      "steps": 721,
+      "switch_dpdk_to_oai": 12,
+      "switch_oai_to_dpdk": 12,
+      "scale_up": 12,
+      "scale_down": 11,
+      "cooldown_blocked": 0,
+      "switching_count": 47,
+      "scaling_count": 23,
+      "avg_sec": 0.006805059400899917,
+      "total_power": 464.73752731084824,
+      "avg_qos": 0.9534584574825059,
+      "violation_rate": 0.009708737864077669,
+      "avg_power_w": 0.6445735468943804,
+      "total_energy_wh": 116.18438182771206,
+      "total_reward": -492.8458985835314,
+      "objective_mode": "discounted",
+      "objective_gamma": 0.995
+    }
+  },
+  "youtube": {
+    "compiler_721": {
+      "rule": {
+        "E_tot": 123.482963,
+        "SEC": 0.007966766588072122,
+        "v": 0.0,
+        "n_sw": 16,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "dpdk": {
+        "E_tot": 147.779274,
+        "SEC": 0.015213808085991678,
+        "v": 0.0,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "usr1": {
+        "E_tot": 165.289049,
+        "SEC": 0.009165047933425798,
+        "v": 0.0,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      }
+    },
+    "archive_720_reconstruction": {
+      "rule": {
+        "E_tot": 123.277759,
+        "SEC": 0.007971284736111112,
+        "v": 0.0,
+        "n_sw": 16,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "dpdk": {
+        "E_tot": 147.57407,
+        "SEC": 0.015228391569444446,
+        "v": 0.0,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      },
+      "usr1": {
+        "E_tot": 164.890702,
+        "SEC": 0.009165068375,
+        "v": 0.0,
+        "n_sw": 0,
+        "n_sc": 0,
+        "n_bl": 0
+      }
+    },
+    "offline": {
+      "steps": 721,
+      "switch_dpdk_to_oai": 16,
+      "switch_oai_to_dpdk": 15,
+      "scale_up": 10,
+      "scale_down": 8,
+      "cooldown_blocked": 0,
+      "switching_count": 49,
+      "scaling_count": 18,
+      "avg_sec": 0.006978993903265571,
+      "total_power": 466.73259472846985,
+      "avg_qos": 0.9519863604837913,
+      "violation_rate": 0.016643550624133148,
+      "avg_power_w": 0.647340630691359,
+      "total_energy_wh": 116.68314868211746,
+      "total_reward": -505.9274555146694,
+      "objective_mode": "discounted",
+      "objective_gamma": 0.995
+    }
+  }
+}

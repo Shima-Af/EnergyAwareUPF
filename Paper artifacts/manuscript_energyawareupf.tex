@@ -71,20 +71,20 @@
 % ---- Abstract ----
 
 \begin{abstract}
-The User Plane Function (UPF) is a major contributor to the energy footprint of the 5G Core, yet practical orchestration must balance energy efficiency, Quality of Service (QoS), and actuation stability. We present an AI-driven, closed-loop framework for energy-aware UPF orchestration that selects between a DPDK-based dataplane and a cloud-native user-space dataplane, while supporting horizontal scaling when multiple user-space instances are available. The control problem is formulated as a sequential decision process with an explicit cooldown guard and reconfiguration costs. The controller is trained and evaluated offline in a measurement-grounded digital twin that emulates UPF-attributed power and QoS compliance for each configuration, with the resulting policy intended for subsequent online deployment. The reward balances specific energy consumption, soft QoS penalties, and orchestration costs. Across five independently trained seeds on a held-out traffic split, the feed-forward PPO controller reduces mean total attributed energy by 16.9\% relative to static DPDK provisioning and by 1.1\% relative to a rule-based threshold baseline, while maintaining a low QoS violation rate under identical guard semantics. Cross-trace generalization is validated on a second, independently derived YouTube-based workload, where the controller preserves consistent energy-efficiency gains over static provisioning. Statistical robustness is assessed through Wilcoxon signed-rank tests, which confirm that the specific energy consumption improvement over the rule-based baseline reaches the minimum achievable $p$-value for the available sample size. These results indicate that constraint-aware reinforcement learning can improve the energy--QoS--stability trade-off in a measurement-grounded 5GC user-plane setting.
+The User Plane Function (UPF) is a major contributor to the energy footprint of the 5G Core, yet practical orchestration must balance energy efficiency, Quality of Service (QoS), and actuation stability. We present an AI-driven, closed-loop framework for energy-aware UPF orchestration that selects between a DPDK-based dataplane and a cloud-native user-space dataplane, while supporting horizontal scaling when multiple user-space instances are available. The control problem is formulated as a sequential decision process with an explicit cooldown guard and reconfiguration costs. The controller is trained and evaluated offline in a measurement-grounded digital twin that emulates UPF-attributed power and QoS compliance for each configuration, with the resulting policy intended for subsequent online deployment. The reward balances specific energy consumption, soft QoS penalties, and orchestration costs. On a held-out traffic split, the feed-forward PPO controller reduces mean total attributed energy by 16.9\% relative to static DPDK provisioning and by 1.1\% relative to a carefully engineered rule-based baseline, without increasing QoS violations, consistently across independent training seeds. Rather than switching aggressively between modes, the learned policy replaces disruptive mode changes with lower-cost horizontal scaling actions. These results support the viability of constraint-aware reinforcement learning as a decision mechanism for energy-efficient dataplane reconfiguration in softwarized 5G Core deployments.
 \end{abstract}
 
 % ---- Highlights ----
 
-\begin{highlights}
-\item AI-driven UPF orchestration balancing energy, QoS, and stability
-\item PPO controller trained in measurement-grounded digital twin
-\item 16.9\% energy reduction vs.\ static DPDK provisioning
-\item Explicit cooldown guard and reconfiguration costs in control loop
-\item Feed-forward PPO outperforms recurrent variant across five seeds
-\item Cross-trace generalization validated on a second YouTube-derived workload
-\item Statistical robustness assessed via Wilcoxon signed-rank tests
-\end{highlights}
+% \begin{highlights}
+% \item AI-driven UPF orchestration balancing energy, QoS, and stability
+% \item PPO controller trained in measurement-grounded digital twin
+% \item 16.9\% energy reduction vs.\ static DPDK provisioning
+% \item Explicit cooldown guard and reconfiguration costs in control loop
+% \item Feed-forward PPO outperforms recurrent variant across five seeds
+% \item Cross-trace generalization validated on a second YouTube-derived workload
+% \item Statistical robustness assessed via Wilcoxon signed-rank tests
+% \end{highlights}
 
 % ---- Keywords ----
 
@@ -103,11 +103,11 @@ The User Plane Function (UPF) is a major contributor to the energy footprint of 
 
 The fifth generation (5G) of mobile networks has restructured telecommunications infrastructure around a service-based architecture (SBA) in which discrete Network Functions (NFs) communicate through standardized interfaces and can be instantiated, scaled, and terminated independently. Within this architecture, the User Plane Function (UPF) occupies a uniquely demanding position. As the NF responsible for forwarding user traffic, it is one of the most computationally intensive components of the 5G Core (5GC) and a major contributor to its energy footprint~\cite{bellin2024comnet,chen2024comcom}. As 5G deployments densify and traffic volumes grow, energy-aware management of the user plane has become an important operational and environmental concern. The information and communication technology sector already accounts for approximately 2--3\% of global greenhouse gas emissions~\cite{freitag2021patterns}, and softwarized mobile-core functions contribute to that footprint.
 
-The cloudification of the 5GC has also created a heterogeneous ecosystem of UPF implementations spanning a wide performance--energy spectrum. Kernel-bypass dataplanes can provide high throughput and low forwarding latency, but often sustain a near-constant resource footprint regardless of offered load. Cloud-native user-space implementations typically offer better energy proportionality and support horizontal scaling, but may face throughput limits and QoS degradation under sustained demand. Dynamically choosing between these realization classes, while also selecting the appropriate scale level when multiple instances are available, can reduce user-plane energy consumption without unnecessarily sacrificing service quality. Despite growing interest in UPF placement and routing optimization~\cite{chen2024comcom}, the problem of runtime switching between heterogeneous UPF realization classes based on their energy--performance trade-offs remains underexplored from a learning perspective.
+The cloudification of the 5GC has also created a heterogeneous ecosystem of UPF implementations spanning a wide performance--energy spectrum. Kernel-bypass dataplanes can provide high throughput and low forwarding latency, but often sustain a near-constant resource footprint regardless of offered load. Cloud-native user-space implementations typically offer better energy proportionality, but may face throughput limits and QoS degradation under sustained demand. Dynamically choosing between these realization classes, while also selecting the appropriate scale level when multiple instances are available, can reduce user-plane energy consumption without unnecessarily sacrificing service quality. Despite growing interest in UPF placement and routing optimization~\cite{chen2024comcom}, the problem of runtime switching between heterogeneous UPF realization classes based on their energy--performance trade-offs remains underexplored from a learning perspective.
 
-Under static provisioning, the most common deployment pattern, a single UPF implementation is kept active regardless of load, either over-provisioning resources to guarantee QoS or under-provisioning and risking Service Level Agreement (SLA) violations at peak demand. Rule-based threshold policies are a natural next step, but they require manual threshold engineering, are brittle near load boundaries, and become increasingly awkward when multiple admissible configurations must be compared under switching delays and cooldown constraints. Practical deployment factors such as reconfiguration cost, delayed actuation, and oscillation risk are also frequently simplified or ignored in theoretical formulations~\cite{soto2021sds,tournaire2019mascots}. Deep reinforcement learning (DRL) is therefore attractive not because it is the only possible solution, but because it can optimize sequential decisions directly from interaction data while internalizing delayed consequences and explicit operational constraints~\cite{pei2020jsac,luong2019comst}.
+Under static provisioning, the most common deployment pattern, a single UPF implementation is kept active regardless of load, either over-provisioning resources to guarantee QoS or under-provisioning and risking Service Level Agreement (SLA) violations at peak demand. Rule-based  policies are a natural next step, but they require manual threshold engineering, are brittle near load boundaries, and become increasingly awkward when multiple admissible configurations must be compared under switching delays and cooldown constraints. Practical deployment factors such as reconfiguration cost, delayed actuation, and oscillation risk are also frequently simplified or ignored in theoretical formulations~\cite{soto2021sds,tournaire2019mascots}. Deep reinforcement learning (DRL) is therefore attractive not because it is the only possible solution, but because it can optimize sequential decisions directly from interaction data while internalizing delayed consequences and explicit operational constraints~\cite{pei2020jsac,luong2019comst}.
 
-In this paper, we formulate UPF orchestration as a constrained sequential decision problem and solve it with a Proximal Policy Optimization (PPO) controller trained in a data-driven digital twin. The target use case is an online closed-loop orchestrator aligned with standard 5G/NFV functions---including NWDAF, MDAF, and a virtualized orchestration layer---but the present study validates the decision logic offline in a measurement-grounded twin rather than through live closed-loop deployment on the testbed. By integrating network-level analytics (NWDAF), infrastructure-level telemetry (MDAF/IDAF), and a learning-based decision module, the framework instantiates the broader vision of intelligence-driven service orchestration in next-generation mobile networks. The controller reasons over traffic context, a scalar QoS-compliance signal, and an attributed power signal derived from profiling measurements. The environment also embeds a cooldown guard and asymmetric reconfiguration costs so that actuation stability is modeled within the decision process rather than appended as an external fix.
+In this paper, we formulate UPF orchestration as a constrained sequential decision problem and solve it with a Proximal Policy Optimization (PPO) controller trained in a data-driven digital twin. The target use case is an online closed-loop orchestrator aligned with standard 5G/NFV functions, including NWDAF, MDAF, and a virtualized orchestration layer, but the present study validates the decision logic offline in a measurement-grounded twin rather than through live closed-loop deployment on the testbed. By integrating network-level analytics (NWDAF), infrastructure-level telemetry (MDAF/IDAF), and a learning-based decision module, the framework instantiates the broader vision of intelligence-driven service orchestration in next-generation mobile networks. The controller reasons over traffic context, a scalar QoS-compliance signal, and an attributed power signal derived from profiling measurements. The environment also embeds a cooldown guard and asymmetric reconfiguration costs so that actuation stability is modeled within the decision process.
 
 \textbf{Contributions.} The main contributions of this paper are as follows:
 \begin{enumerate}
@@ -124,7 +124,7 @@ The remainder of the paper is organized as follows. Section~\ref{related} review
 \subsection{Energy Footprint of the 5G User Plane}
 \label{subsec:rel_energy}
 
-The energy consumption of 5G infrastructure has grown alongside deployment scale, with the information and communication technology sector already responsible for approximately 2--3\% of global greenhouse gas emissions~\cite{freitag2021patterns}. Within the 5GC, the UPF is a major consumer at the per-NF level. Bellin et al.~\cite{bellin2023netsoft,bellin2024comnet} profile open-source 5GC stacks across bare-metal, container, and VM deployments and show that the virtualization layer and the software implementation materially affect the resulting energy footprint, with the UPF contributing a large share of the per-NF power draw. Bolla et al.~\cite{bolla2017icc} further highlight that uncontrolled NFV deployment can increase operational carbon footprint relative to dedicated hardware. Together, these results motivate energy-aware user-plane management rather than assuming that softwarization alone improves efficiency.
+The energy consumption of 5G infrastructure has grown alongside deployment scale, with the information and communication technology sector already responsible for approximately 2--3\% of global greenhouse gas emissions~\cite{freitag2021patterns}. Within the 5GC, the UPF is a major consumer at the per-NF level. Bellin et al.~\cite{bellin2023netsoft,bellin2024comnet} profile open-source 5GC stacks across bare-metal, container, and VM deployments and show that the virtualization layer and the software implementation materially affect the resulting energy footprint, with the UPF contributing a large share of the per-NF power draw. These results motivate energy-aware user-plane management rather than assuming that softwarization alone improves efficiency.
 
 \subsection{UPF Implementation Diversity and Energy--Performance Trade-offs}
 \label{subsec:rel_upf_impl}
@@ -136,12 +136,12 @@ Dynamic UPF selection is meaningful only if the available implementations expose
 
 A common response to the above trade-off is threshold-based control. Our prior work~\cite{BorjiDynamicEU} explored binary DPDK/USR switching with rule-based logic and showed that dynamic selection can reduce energy relative to static DPDK provisioning. More broadly, Chen et al.~\cite{chen2024comcom} formulate UPF placement and traffic routing as a mixed-integer program, demonstrating that deployment choices materially affect 5GC energy expenditure. Related work on service-function chaining and VNF placement also addresses joint energy and traffic cost optimization through integer programming and heuristics~\cite{pham2020tsc,lin2023tsc}. These approaches are valuable, but they target static or slowly updated placement decisions rather than runtime switching among heterogeneous realizations.
 
-Threshold-based autoscaling has also been studied analytically. Tournaire et al.~\cite{tournaire2019mascots} model hysteresis queues and show that dead-band design is important for suppressing oscillation. Soto et al.~\cite{soto2021sds} compare DRL, PID control, and threshold-based autoscaling for VNFs, finding that threshold logic can be outperformed in steady-state efficiency and often needs additional oscillation-control mechanisms. In our setting, the limitation is not that thresholds are always poor, but that they become harder to engineer and less expressive as the controller must compare multiple configurations under shared cooldown constraints. Gausseran et al.~\cite{gausseran2020icc} further address reconfiguration continuity through make-before-break mechanisms, but not the control logic that decides when and how to reconfigure.
+Threshold-based autoscaling has also been studied analytically. Tournaire et al.~\cite{tournaire2019mascots} model hysteresis queues and show that dead-band design is important for suppressing oscillation. Soto et al.~\cite{soto2021sds} compare DRL, PID control, and threshold-based autoscaling for VNFs, finding that threshold logic can be outperformed in steady-state efficiency and often needs additional oscillation-control mechanisms. In our setting, the limitation is not that thresholds are always poor, but that they become harder to engineer and less expressive as the controller must compare multiple configurations under shared cooldown constraints. Gausseran et al.~\cite{gausseran2020icc} further address reconfiguration continuity through make-before-break mechanisms, but not the control logic that decides when and how to reconfigure. Leyva-Pupo and Cervelló-Pastor~\cite{leyva2023comnet} use supervised ML to predict QoS degradation and schedule UPF placement reconfigurations proactively, reducing unnecessary reconfiguration events by over 50\% compared to periodic and threshold-based baselines. Their work focuses on mobility-driven placement updates rather than runtime switching between heterogeneous UPF realization classes.
 
 \subsection{Deep Reinforcement Learning for VNF and Network Resource Management}
 \label{subsec:rel_drl}
 
-DRL addresses some of the above limitations by optimizing a sequential control policy from interaction data. Pei et al.~\cite{pei2020jsac} apply Double DQN to VNF placement in SDN/NFV environments and report near-optimal policies under resource constraints. Solozabal et al.~\cite{solozabal2020jsac} use policy-gradient methods for constrained VNF placement. These works do not model cooldown guards or switching costs, and they focus on placement rather than time-series control. PPO~\cite{schulman2017ppo} has become a common choice in networking because its clipped surrogate objective tends to stabilize policy updates in non-stationary reward settings. Chen et al.~\cite{chen2022tcomm}, Kuai et al.~\cite{kuai2022tcomm}, and Santos et al.~\cite{santos2022fgcs} report encouraging results for PPO-based communications and VNF orchestration tasks. In our case, the action space is small ($|\mathcal{C}|=3$), so PPO is not presented as the only viable method; rather, it is used as a stable policy-gradient baseline for a sequential control problem with delayed consequences induced by cooldown and switching costs.
+DRL addresses some of the above limitations by optimizing a sequential control policy from interaction data. Pei et al.~\cite{pei2020jsac} apply Double DQN to VNF placement in SDN/NFV environments and report near-optimal policies under resource constraints. Solozabal et al.~\cite{solozabal2020jsac} use policy-gradient methods for constrained VNF placement. These works do not model cooldown guards or switching costs, and they focus on placement rather than time-series control. PPO~\cite{schulman2017ppo} has become a common choice in networking because its clipped surrogate objective tends to stabilize policy updates in non-stationary reward settings. Chen et al.~\cite{chen2022tcomm}, Kuai et al.~\cite{kuai2022tcomm}, and Santos et al.~\cite{santos2022fgcs} report encouraging results for PPO-based communications and VNF orchestration tasks. Bellin et al.~\cite{bellin2024nfvsdn} apply PPO to energy-aware UPF selection in a distributed edge-cloud deployment, using real-time power consumption metrics to guide session-level assignment across heterogeneous hosts. In our case, the action space is small ($|\mathcal{C}|=3$), so PPO serves as a stable policy-gradient baseline for a sequential control problem with delayed consequences induced by cooldown and switching costs.
 
 \subsection{Digital Twins for Safe RL Policy Training}
 \label{subsec:rel_dt}
@@ -151,7 +151,9 @@ Training RL agents directly on operational networks is impractical because explo
 \subsection{Positioning of This Work}
 \label{subsec:rel_position}
 
-The literature establishes that UPF realizations expose markedly different energy--performance profiles, that threshold logic becomes harder to engineer as the configuration space grows, and that digital twins enable safe RL training. What remains underexplored is measurement-grounded, learning-based UPF orchestration that jointly addresses heterogeneous realization modes, explicit cooldown guards, asymmetric reconfiguration costs, and limited horizontal scaling within a single control formulation. This paper fills that gap using a physically profiled digital twin, a constraint-aware PPO controller, and a comparative evaluation against static and rule-based baselines.
+The existing literature shows that different UPF realizations exhibit distinct energy--performance trade-offs, that threshold-based control becomes increasingly difficult to design as the configuration space grows, and that digital twins provide a practical way to train RL policies safely. However, measurement-grounded approaches to UPF orchestration that combine these aspects in a single framework remain limited.
+
+In particular, the joint treatment of heterogeneous realization modes, explicit cooldown constraints, asymmetric reconfiguration costs, and horizontal scaling within a unified control formulation has received relatively little attention. This work addresses this gap by combining a physically profiled digital twin with a constraint-aware PPO controller and a systematic comparison against static and rule-based baselines.
 
 \section{System Architecture}
 \label{sys}
@@ -283,14 +285,23 @@ QoS compliance is enforced through a soft penalty based on the scalar compliance
 \end{equation}
 where $\lambda_{\mathrm{QoS}}$ controls the penalty strength.
 
-Orchestration stability is encouraged by penalizing executed reconfigurations. Let $c_{t-1}$ and $c_t$ be the executed configurations before and after the actuation guard. A switching penalty is applied when the realization mode changes between $c_{t-1}$ and $c_t$, and a scaling penalty is applied when the realization mode is unchanged but the instance count changes. These contributions are combined into a single orchestration cost $\mathcal{L}^{\mathrm{ORCH}}_t$.
+Orchestration stability is encouraged by penalizing executed reconfigurations. Let $c_{t-1}$ and $c_t$ be the executed configurations before and after the actuation guard. The orchestration cost distinguishes three event types:
+\begin{equation}
+\mathcal{L}^{\mathrm{ORCH}}_t = c_{\mathrm{DPDK}}\,\mathbb{I}\{\text{switch to DPDK}\}
+  \;+\; c_{\mathrm{USR}}\cdot n^{+}_t
+  \;+\; c_{\mathrm{dn}}\,\mathbb{I}\{\text{scale-down within USR}\},
+\label{eq:orch_cost}
+\end{equation}
+where $n^{+}_t$ is the number of USR instances launched at epoch $t$ (equal to $k_t$ on a mode switch to USR, or to the number of added replicas on a scale-up within USR mode, and zero otherwise). Scale-down is penalized as a fixed event because it always removes exactly one instance in the current configuration space.
+
+The cost $c_{\mathrm{DPDK}}$ reflects the overhead of activating the DPDK-based UPF, whose startup takes approximately 24~s (mean over 100 repetitions on the physical testbed). The cost $c_{\mathrm{USR}}$ is charged per USR instance launched; each container starts in approximately 3.3~s. The scale-down cost $c_{\mathrm{dn}}$ is the smallest because draining a replica does not interrupt service on the remaining instance. The concrete values ($c_{\mathrm{DPDK}}=0.03$, $c_{\mathrm{USR}}=0.012$, $c_{\mathrm{dn}}=0.003$) are reported in Table~\ref{tab:testbed_params}.
 
 The resulting reward is
 \begin{equation}
 r_t=-\alpha\,\mathrm{SEC}_t-\mathcal{L}^{\mathrm{QoS}}_t-\mathcal{L}^{\mathrm{ORCH}}_t,
 \label{eq:reward}
 \end{equation}
-where $\alpha$ scales the SEC contribution. Using SEC rather than raw power in the energy term discourages trivially low-power but low-throughput operating points. The asymmetric weighting of switching and scaling penalties encourages the learned controller to prefer lower-cost horizontal scaling operations over more disruptive mode changes when possible. The weights and cost parameters used in the experiments are reported in Section~\ref{testbed}.
+where $\alpha$ scales the SEC contribution. Using SEC rather than raw power in the energy term discourages trivially low-power but low-throughput operating points. The weights and cost parameters used in the experiments are reported in Section~\ref{testbed}.
 
 \subsection{Learning Algorithm}
 \label{subsec:rl_algo}
@@ -322,7 +333,7 @@ This section describes the physical infrastructure used to characterize UPF beha
 \subsection{Infrastructure and UPF Configurations}
 \label{subsec:hw_infra}
 
-The testbed consists of a commodity server running both UPF instances and the traffic generator on the same physical host, with power measurements obtained at the process level. The DPDK-based UPF is realized using the SD-Core user plane, which provides a kernel-bypass, polling-driven packet-processing pipeline. The cloud-native UPF is realized using the Open Air Interface (OAI) UPF, hereafter referred to as the USR UPF, and is deployed as containerized instances managed by a Kubernetes orchestrator that supports horizontal scaling through replica control. Figure~\ref{fig:testbed_system} should therefore be read as the profiling and measurement setup used to characterize UPF behavior; the PPO controller is not trained or evaluated in live closed loop on this physical setup in the current paper.
+The testbed consists of a commodity server running both UPF instances and the traffic generator on the same physical host, with power measurements obtained at the process level. The DPDK-based UPF is realized using the SD-Core user plane~\cite{sd_core}, which provides a kernel-bypass, polling-driven packet-processing pipeline. The cloud-native UPF is realized using the Open Air Interface (OAI) UPF~\cite{openairinterface}, hereafter referred to as the USR UPF, and is deployed as containerized instances managed by a Kubernetes orchestrator that supports horizontal scaling through replica control. Figure~\ref{fig:testbed_system} should therefore be read as the profiling and measurement setup used to characterize UPF behavior; the PPO controller is not trained or evaluated in live closed loop on this physical setup in the current paper.
 
 \begin{figure}
 \centering
@@ -333,7 +344,7 @@ The testbed consists of a commodity server running both UPF instances and the tr
 
 The concrete configuration space instantiated on this testbed is $\mathcal{M}=\{\mathrm{DPDK},\mathrm{USR}\}$ with $\mathcal{K}_{\mathrm{DPDK}}=\{1\}$ and $\mathcal{K}_{\mathrm{USR}}=\{1,2\}$, yielding a total of $|\mathcal{C}|=3$ admissible configurations: one DPDK instance, one USR instance, and two USR instances. A single DPDK instance is sufficient to serve the full load range considered in the evaluation without performance degradation, so no horizontal scaling is defined for that mode. The USR mode supports up to two instances, reflecting the capacity limit of a single USR instance under the traffic conditions of this work.
 
-Power consumption is measured with Scaphandre, an open-source monitoring tool that estimates per-process energy draw from hardware counters exposed by the RAPL interface. Infrastructure-level metrics including CPU utilization and memory are collected via Prometheus. Traffic is generated using stateless UDP flows with a fixed packet size of 1250 bytes, produced by Keysight LoadCore.
+Power consumption is measured with Scaphandre, an open-source monitoring tool that estimates per-process energy draw from hardware counters exposed by the RAPL interface. Infrastructure-level metrics including CPU utilization and memory are collected via Prometheus. Traffic is generated using stateless UDP flows with a fixed packet size of 1250 bytes, produced by Keysight LoadCore~\cite{keysight_loadcore}.
 
 Because the power signal is process-attributed rather than a full server power trace, the watt and watt-hour quantities reported in this paper should be interpreted as \emph{UPF-attributed estimates} used consistently for profiling, reward construction, and controller comparison within this testbed.
 
@@ -420,7 +431,7 @@ USR  & Attributed power & 0.3038 & 0.960 \\
 \end{tabular}
 \end{table}
 
-The profiling models introduce a controlled approximation: the twin captures the mean load--response relationship but does not reproduce measurement noise or transient effects. This provides a deterministic evaluation environment that removes one source of variance from the controller comparison, while the profiling variability shown in Figures~\ref{fig:power_model} and~\ref{fig:qos_model} gives a qualitative indication of the uncertainty present in the underlying system.
+The profiling models introduce a controlled approximation: the twin captures the mean load--response relationship but does not reproduce measurement noise or transient effects. The low $R^2$ values for the DPDK models in Table~\ref{tab:profiling_acc} reflect near-zero target variance rather than poor model fit: when the response is approximately constant across the load range, $R^2$ is uninformative as a goodness-of-fit metric, while the corresponding RMSE of 0.0039~W confirms accurate prediction. This provides a deterministic evaluation environment that removes one source of variance from the controller comparison, while the profiling variability shown in Figures~\ref{fig:power_model} and~\ref{fig:qos_model} gives a qualitative indication of the uncertainty present in the underlying system.
 
 \section{Experimental Setup}
 \label{testbed}
@@ -470,9 +481,9 @@ Cooldown length & $I_c=4$ \\
 QoS target threshold & $\tau=0.9$ \\
 SEC scaling in reward & $\alpha=100$ \\
 QoS penalty weight & $\lambda_{\mathrm{QoS}}=30$ \\
-Type switch cost & $0.5$ \\
-Scale-up cost per instance & $0.2$ \\
-Scale-down cost per instance & $0.05$ \\
+Switch-to-DPDK cost $c_{\mathrm{DPDK}}$ & $0.03$ \\
+Per-instance USR launch cost $c_{\mathrm{USR}}$ & $0.012$ \\
+Per-instance scale-down cost $c_{\mathrm{dn}}$ & $0.003$ \\
 Discount factor & $\gamma=0.995$ \\
 PPO rollout steps & $n_{\mathrm{steps}}=1024$ \\
 Batch size & $64$ \\
@@ -528,12 +539,12 @@ capture mode changes between DPDK and USR. Horizontal scaling events, counted as
 n_{\mathrm{sc}}=\sum_{t=1}^{N_{\mathrm{te}}-1}\mathbb{I}\{m_t= m_{t-1},\, k_t\neq k_{t-1}\},
 \label{eq:nsc}
 \end{equation}
-capture changes in the number of active USR instances under a fixed mode. We also report $n_{\mathrm{bl}}$, the number of change requests absorbed by the cooldown guard without actuation, and dwell-time statistics defined as the empirical distribution of consecutive intervals spent in the same executed configuration.
+capture changes in the number of active USR instances under a fixed mode. We also report $n_{\mathrm{bl}}$, the number of change requests absorbed by the cooldown guard without actuation.
 
 \subsection{Overall Comparison Across Controllers}
 \label{subsec:overall}
 
-Table~\ref{tab:overall_results} provides a consolidated comparison of the controllers on energy, QoS, and stability metrics. Because the static and rule-based baselines are deterministic, their results are single values; the PPO rows report mean $\pm$ standard deviation over five independently trained seeds on the main held-out evaluation split. The rule-based controller uses the same configuration space $\mathcal{C}$ and the same cooldown guard, so differences are attributable to decision logic rather than to actuation semantics.
+Table~\ref{tab:overall_results} compares the controllers in terms of energy, QoS, and orchestration behavior. Since the static and rule-based baselines are deterministic, they are reported as single values. The PPO results are given as mean $\pm$ standard deviation over five independently trained seeds on the held-out evaluation split. The rule-based controller uses the same configuration space $\mathcal{C}$ and the same cooldown guard, so the differences reflect the decision policy rather than different actuation semantics.
 
 \begin{table}[width=.9\linewidth,cols=7,pos=h]
 \centering
@@ -557,11 +568,13 @@ Static USR($k=1$)           & 178.36          & 0.00908          & 0.0014       
 
 \end{table}
 
-Several observations stand out. First, the offline-optimal reference reaches the lowest attributed energy in this deterministic setting, but it does so through a much more aggressive sequence with more reconfiguration events and a higher QoS violation rate. Because the exact planner optimizes the same discounted reward objective as PPO while having full knowledge of the future traffic trajectory, its higher violation rate should be interpreted as a more aggressive exploitation of the modeled SEC--QoS--reconfiguration trade-off rather than as a planning inconsistency. It should therefore be interpreted as an upper bound with respect to the modeled control problem, not as a deployable operating policy. Second, among the causal guarded controllers, the feed-forward PPO controller remains the strongest on average, achieving lower mean attributed energy, lower mean SEC, lower mean violation rate, fewer mean type switches, and substantially fewer blocked requests than recurrent PPO across five seeds. Relative to the rule-based baseline, the mean feed-forward PPO energy is still modestly lower (122.58 vs.~123.92~Wh, about 1.1\%), while the difference in average SEC is clearer (0.00748 vs.~0.00775~Wh/Mbit, about 3.5\%). Relative to the offline-optimal reference, the mean feed-forward PPO remains 6.37~Wh (5.48\%) higher, whereas the rule-based baseline is 7.72~Wh (6.64\%) higher, indicating that PPO still captures a larger fraction of the achievable improvement in the modeled setting. Third, the seed-averaged results show that the recurrent variant is both less energy-efficient and substantially less stable across seeds than the feed-forward controller, with wider variance in every reported metric. Fourth, static USR($k=1$) performs poorly over this workload despite the user-space realization being more load-proportional, because a single USR instance spends many intervals close to its stressed operating region and cannot scale out.
+The offline-optimal reference achieves the lowest attributed energy, but it does so with full knowledge of the future load trajectory and with a substantially more aggressive actuation sequence, including 47 type switches and a QoS violation rate of 0.97\%. It is therefore best interpreted as a reference bound for the modeled problem rather than as a deployable policy.
 
-The remainder of this section examines where the energy improvement arises, how QoS is maintained, and what actuation patterns distinguish the learned controller from the baselines.
+Among the causal controllers, feed-forward PPO performs best on average. It achieves lower mean attributed energy, lower mean SEC, and a lower violation rate than recurrent PPO, while also showing tighter variance across seeds. Compared with the rule-based baseline, the reduction in total attributed energy is modest (122.58 vs.\ 123.92~Wh, about 1.1\%), whereas the difference in average SEC is somewhat clearer (0.00748 vs.\ 0.00775~Wh/Mbit, about 3.5\%). Feed-forward PPO also remains closer to the offline-optimal reference than the rule-based controller (5.48\% vs.\ 6.64\% above the planner), despite operating without future information.
 
-It is worth noting that the margin over the rule-based baseline is modest in total attributed energy. This is an important part of the story rather than a weakness to hide: the reported gain is not that PPO dramatically outperforms any heuristic, but that it improves over a carefully designed rule-based controller while using the same actuation guard and without increasing QoS violations. The offline-optimal reference helps interpret this margin by showing that PPO closes more of the remaining gap to the exact planner than the rule-based controller does, even though the exact planner achieves its lower energy through a more aggressive and less deployable behavior under the same discounted reward trade-off. The main qualitative difference among the causal controllers remains the learned policy's ability to substitute some disruptive mode switches with scaling actions.
+The comparison with the rule-based baseline is important mainly because the gain is modest but consistent and does not come at the expense of QoS. The more interesting difference appears in the control behavior: the learned policy replaces some disruptive mode switches with horizontal scaling actions, whereas the rule-based controller does not exploit that option.
+
+The recurrent PPO variant is less energy-efficient and less stable across seeds, with wider variance in every reported metric. Static USR($k=1$) also performs poorly overall. Although the user-space realization is more load-proportional, a single instance operates too close to its saturation region and cannot scale out when demand increases.
 
 \subsection{Energy Efficiency}
 \label{subsec:energy_results}
@@ -603,9 +616,13 @@ The feed-forward PPO controller maintains compliance by allocating sufficient ca
 \subsection{Orchestration Behavior and Stability}
 \label{subsec:stability_results}
 
-Figure~\ref{fig:configs_time} reports the executed configuration sequence $\{c_t\}$ over time together with the offered load. The sequence illustrates how the learned policy partitions the load range into regions associated with different UPF modes and scale levels. Compared with the reactive heuristic, the feed-forward PPO controller produces stable actuation patterns with relatively long dwell times and limited oscillation around regime boundaries.
+Figure~\ref{fig:configs_time} reports the executed configuration sequence $\{c_t\}$ over time together with the offered load. The sequence illustrates how the learned policy partitions the load range into regions associated with different UPF modes and scale levels. Compared with the reactive heuristic, the feed-forward PPO controller produces stable actuation patterns with limited oscillation around regime boundaries.
 
 Table~\ref{tab:overall_results} disaggregates reconfigurations into type-switch events ($n_{\mathrm{sw}}$) and horizontal scaling events ($n_{\mathrm{sc}}$). This distinction is operationally relevant because a type switch is more disruptive than adding or removing a USR replica. The feed-forward PPO controller issues 17 type switches and 7 scaling events (24 total), while the rule-based baseline issues 24 type switches and no scaling events. The total number of actuations is therefore the same, but the learned controller substitutes some disruptive mode changes with lower-cost scaling operations. The recurrent PPO controller is the most conservative, issuing only 16 type switches and no scaling events, with 7 requests absorbed by the cooldown guard.
+
+The configuration sequences in Figure~\ref{fig:configs_time} reveal qualitatively different strategies. During intermediate-load periods, the feed-forward PPO controller frequently selects the $2\times$USR configuration, exploiting horizontal scaling to serve moderate demand at lower attributed power than DPDK while avoiding single-instance USR saturation. In contrast, the rule-based baseline oscillates between DPDK and $1\times$USR in similar intervals because it cannot exploit the intermediate scaling level. The recurrent PPO controller tends to remain in DPDK for extended periods, forgoing the energy savings available at lower loads.
+
+The rule-based baseline does not exploit horizontal scaling because the profiling-derived thresholds for mode switching and scale selection fall too close together: the DPDK$\to$USR switching threshold is 90.47~Mbps and the $1\times$USR$\to$$2\times$USR scaling threshold is 87.13~Mbps, while the hysteresis dead-band width is approximately 23~Mbps. As a result, the dead-bands overlap and no traffic region triggers a scaling action without also triggering a mode switch. The recurrent PPO variant does not exploit horizontal scaling within the available training budget, as the entropy-collapse behavior documented in Section~\ref{subsec:training_diagnostics} causes the agent to commit to a conservative two-mode strategy before exploring the intermediate configuration.
 
 \begin{figure}
 \centering
@@ -621,7 +638,7 @@ This subsection isolates the impact of temporal context in the observation and i
 
 Table~\ref{tab:ablation_obs} reports energy, QoS, and stability metrics for all considered combinations, disaggregated into type-switch ($n_{\mathrm{sw}}$) and scaling ($n_{\mathrm{sc}}$) events. For feed-forward PPO, only the hybrid schema activates horizontal scaling (7 scaling events), while all other schemas produce exclusively type switches. In our experiments, the combination of traffic history and forecast therefore provided the clearest context for exploiting the intermediate USR scaling level rather than oscillating between single-instance USR and DPDK. The instantaneous schema triggers the most type switches ($n_{\mathrm{sw}}=24$) despite comparable energy, indicating less stable actuation. The forecast-only schema is the most switch-conservative ($n_{\mathrm{sw}}=15$), but it yields slightly higher energy because it does not exploit scaling.
 
-For recurrent PPO, the instantaneous and forecast-only schemas collapse to a fixed DPDK configuration ($n_{\mathrm{sw}}=0$, $E_{\mathrm{tot}}=147.79$~Wh), matching the static DPDK baseline. This suggests that, within the available training budget, those recurrent settings fail to learn a useful switching strategy; the underlying cause---entropy collapse---is examined in Section~\ref{subsec:training_diagnostics}. The history-augmented schema unlocks effective switching ($n_{\mathrm{sw}}=16$, $E_{\mathrm{tot}}=125.74$~Wh) with no scaling events, indicating a more conservative two-mode strategy. The hybrid recurrent schema produces only 4 type switches with no scaling, but occupies a weaker energy position ($E_{\mathrm{tot}}=132.38$~Wh). Overall, feed-forward PPO is more robust to schema choice and is the only controller that clearly exploits the full configuration space in the reported experiments.
+For recurrent PPO, the instantaneous and forecast-only schemas collapse to a fixed DPDK configuration ($n_{\mathrm{sw}}=0$, $E_{\mathrm{tot}}=147.79$~Wh), matching the static DPDK baseline. This suggests that, within the available training budget, those recurrent settings fail to learn a useful switching strategy; the underlying cause(entropy collapse) is examined in Section~\ref{subsec:training_diagnostics}. The history-augmented schema unlocks effective switching ($n_{\mathrm{sw}}=16$, $E_{\mathrm{tot}}=125.74$~Wh) with no scaling events, indicating a more conservative two-mode strategy. The hybrid recurrent schema produces only 4 type switches with no scaling, but occupies a weaker energy position ($E_{\mathrm{tot}}=132.38$~Wh). Overall, feed-forward PPO is more robust to schema choice and is the only controller that clearly exploits the full configuration space in the reported experiments.
 
 \begin{table}[width=.9\linewidth,cols=6,pos=h]
 \centering
@@ -841,25 +858,17 @@ Figure~\ref{fig:wilcoxon_main} visualizes the paired per-seed differences and th
 
 These results confirm that the SEC improvement is consistent across all five seeds, and the inability to reach $\alpha=0.05$ is a limitation of the sample size rather than of the effect magnitude. Increasing the number of independently trained seeds in future work would allow conventional significance testing.
 
-\subsection{Summary of Findings}
-\label{subsec:results_summary}
-
-The feed-forward PPO controller with the hybrid observation schema is the strongest causal controller in the reported setting. Its key advantage over the rule-based baseline is not a large energy margin but a qualitative difference in actuation strategy: it combines fewer type switches with effective use of horizontal scaling, replacing some disruptive mode changes with lower-cost scaling actions. Relative to the offline-optimal reference, it closes a larger share of the remaining performance gap than the rule-based controller, even though the exact planner operates with full future knowledge. The ablation study shows that this behavior emerges only with the hybrid observation schema. Training convergence diagnostics reveal that recurrent PPO failures with the instantaneous and forecast-only schemas are caused by entropy collapse rather than insufficient training budget, while feed-forward PPO maintains healthy entropy dynamics across all schemas despite exhibiting late-stage policy collapse that is mitigated by best-model checkpointing. The multi-seed analysis confirms that feed-forward PPO is more robust than recurrent PPO, with tighter seed-to-seed variation and faster convergence.
-
-Cross-trace evaluation on the YouTube workload confirms that the energy-efficiency gains over static provisioning are preserved (15.8\% reduction vs.\ Static~DPDK), while the margin over the rule-based baseline is workload-dependent and narrows on a less demanding trace. Wilcoxon signed-rank tests on the Main trace show that the SEC improvement over the rule-based baseline is consistent across all five seeds, reaching the minimum achievable $p$-value ($p=0.0625$) for the available sample size.
-
 
 \section{Conclusion}
 \label{conclusion}
 
-This paper presented an AI-driven framework for energy-aware orchestration of User Plane Functions in 5G Core networks. The framework models UPF orchestration as a constrained sequential decision problem with an explicit cooldown guard, asymmetric reconfiguration costs, and a multi-objective reward balancing energy efficiency, QoS compliance, and actuation stability. A Proximal Policy Optimization controller is trained and evaluated in a measurement-grounded digital twin constructed from profiling data collected on a physical testbed.
+This work framed UPF orchestration in the 5G Core as a sequential decision problem under practical deployment constraints, including cooldown guards, asymmetric reconfiguration costs, and the need to balance energy efficiency against QoS. A PPO-based controller was trained offline in a measurement-grounded digital twin and evaluated on both held-out traffic and a second, unseen workload.
 
-On the main held-out evaluation split, the feed-forward PPO controller remains the strongest causal controller across five seeds, achieving $122.58 \pm 1.50$~Wh total attributed energy and $0.00748 \pm 0.00015$~Wh/Mbit average SEC. This corresponds to roughly a 16.9\% reduction in mean total attributed energy relative to static DPDK provisioning and a more modest 1.1\% reduction relative to the deterministic rule-based threshold baseline, while preserving a low mean QoS violation rate of $0.00333 \pm 0.00362$. Relative to a non-causal offline-optimal reference computed by exact planning under the same discounted reward objective and cooldown constraints, the mean feed-forward PPO controller remains 5.48\% above the attainable optimum in the deterministic twin, whereas the rule-based baseline remains 6.64\% above it. The learned policy achieves its improvement by dynamically choosing between a DPDK-based and a cloud-native UPF realization and, in the best-performing observation setting, exploiting horizontal scaling to replace some disruptive mode switches with lower-cost scaling actions.
+Across five training seeds, the feed-forward PPO controller reduced total attributed energy to $122.58 \pm 1.50$~Wh, corresponding to a 16.9\% improvement over static DPDK provisioning and a 1.1\% reduction compared to a carefully tuned rule-based baseline, while maintaining a low QoS violation rate ($0.00333 \pm 0.00362$). On the YouTube trace, the reduction over static DPDK remained at 15.8\% without retraining, indicating that the learned policy transfers across workloads with different temporal characteristics. Although the gain over the rule-based controller is modest, it is consistent across seeds, with all runs achieving lower SEC. The corresponding Wilcoxon signed-rank test reaches $p=0.0625$, which reflects the limited sample size rather than the absence of a systematic effect.
 
-Cross-trace generalization was validated on a second, independently derived YouTube-based workload. Without retraining, the feed-forward PPO controller reduces mean total attributed energy by 15.8\% relative to static DPDK provisioning on the YouTube trace, confirming that the energy-efficiency gains are preserved across workloads. The margin over the rule-based baseline is workload-dependent and narrows on the less demanding YouTube trace, where the rule-based controller already achieves zero QoS violations. Wilcoxon signed-rank tests on the Main trace confirm that the SEC improvement over the rule-based baseline is consistent across all five seeds, reaching the minimum achievable $p$-value ($p=0.0625$) for the available sample size.
+More importantly, the learned policy exhibits a different control behavior. Instead of relying primarily on mode switching, it makes use of horizontal scaling to handle intermediate load regimes, reducing the need for disruptive transitions. This option is effectively unavailable to the threshold-based controller, where overlapping dead-bands prevent scaling from being selected independently.
 
-These results support the use of constraint-aware reinforcement learning for improving the energy--QoS--stability trade-off in a measurement-grounded 5GC user-plane setting under offline digital-twin validation. More broadly, the framework's modular integration of analytics functions (NWDAF, MDAF) with a learning-based decision module provides a template for intelligence-driven orchestration of other network functions in next-generation mobile networks. Future work will extend the framework to larger configuration spaces, an increased number of training seeds to strengthen statistical conclusions, stochastic digital twins, and live closed-loop validation.
-
+The proposed framework is compatible with the NWDAF/MDAF analytics architecture defined in 5G systems and is designed to extend naturally to larger configuration spaces, including multiple UPF realizations and scalable instance deployments. In the present work, evaluation is conducted in a deterministic digital twin, which captures the mean system behavior but does not reproduce transient effects or runtime variability. The most immediate next step is deployment in a live closed-loop setting on the physical testbed. This requires completion of the runtime UPF reconfiguration mechanism and its integration with the relevant control-plane procedures needed to support service continuity during reconfiguration.
 
 % ===========================================================================
 % APPENDIX
@@ -901,6 +910,7 @@ $r_t$ & Reward at slot $t$ \\
 $\gamma$ & Discount factor \\
 $\alpha$ & SEC scaling weight in reward \\
 $\lambda_{\mathrm{QoS}}$ & QoS penalty weight in reward \\
+$c_{\mathrm{DPDK}},\,c_{\mathrm{USR}},\,c_{\mathrm{dn}}$ & Switch-to-DPDK, per-instance USR launch, scale-down costs \\
 $\mathcal{T}(\cdot)$ & Digital-twin transition function \\
 $p_m(\rho),\,q_m(\rho)$ & Profiling models for power and QoS \\
 $n_{\mathrm{sw}}$ & Number of type-switch events \\
@@ -915,19 +925,21 @@ $n_{\mathrm{bl}}$ & Number of cooldown-blocked requests \\
 % END MATTER
 % ===========================================================================
 
-% CRediT author contributions (printed automatically from \credit{} above)
+% CRediT author contributions
 \printcredits
 
-% \section*{Data availability}
-% The evaluation workload is derived from the publicly available NetMob 2023 dataset. Code and trained models will be made available upon reasonable request.
+\section*{Declaration of generative AI and AI-assisted technologies in the writing process}
+During the preparation of this work the author(s) used Claude (Anthropic) for improving language clarity, \LaTeX{} formatting assistance, and editorial proofreading. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the published article.
+\section*{Data availability}
+The evaluation workload is derived from the publicly available NetMob 2023 
+dataset. Data for the profiling campaign, code, and trained models will be made available upon reasonable request.
 \section*{Acknowledgements}
 This work was supported in part by the European Union's Horizon Europe programme under the SUNRISE-6G project (Grant Agreement No.\ 101139075) and in part by the European Union under the Italian National Recovery and Resilience Plan (NRRP) of NextGenerationEU, Mission 4, Component 2, Investment 1.3, CUP F83C22001690001, partnership on ``Telecommunications of the Future'' (PE00000001 -- program ``RESTART'').
 
-%\section*{Acknowledgements}
-% Add funding acknowledgements here if applicable.
 
 %% Loading bibliography style file
-\bibliographystyle{cas-model2-names}
+% \bibliographystyle{cas-model2-names}
+\bibliographystyle{elsarticle-num}
 
 % Loading bibliography database
 \bibliography{references}

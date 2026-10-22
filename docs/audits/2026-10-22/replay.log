@@ -1,0 +1,93 @@
+2026-10-22 11:21:41.826554: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792660902.304998   80242 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+[1;91m✓ TensorFlow configuration applied: warnings suppressed[0m
+[94m
+--- 1. Loading Data & Preparing Environment Payload ---[0m
+✓ Loaded 3360 traffic samples.
+✓ Loaded 3360 forecast traffic samples.
+-> Loading Keras models for DPDK UPF from saved_models/prediction_models/...
+✓ Successfully loaded and cached models for DPDK UPF.
+-> Loading Keras models for OAI UPF from saved_models/prediction_models/...
+✓ Successfully loaded and cached models for OAI UPF.
+[95m✓ Aligned arrays from index 96; N=3264 samples after trim.[0m
+-> Pre-computation mode selected. Creating lookup tables...
+✓ Pre-computed 4896 values for OAI (up to 2 instances).
+AUDIT main mlp_hybrid_42 {'n': 721, 'energy_wh': 122.91528107225895, 'sec': 0.007600889056252546, 'violation': 0.0027739251040221915, 'switches': 18, 'scales': 4, 'blocked': 9, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 122.934401, 'max_power_delta': 0.0005906154479980441, 'action_mismatches': 0}
+AUDIT main mlp_hybrid_123 {'n': 721, 'energy_wh': 122.30203579366207, 'sec': 0.007557512856774477, 'violation': 0.0013869625520110957, 'switches': 14, 'scales': 11, 'blocked': 4, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 122.320753, 'max_power_delta': 0.0006541733245849501, 'action_mismatches': 0}
+AUDIT main mlp_hybrid_456 {'n': 721, 'energy_wh': 120.76805421710014, 'sec': 0.007347318761363295, 'violation': 0.0013869625520110957, 'switches': 18, 'scales': 7, 'blocked': 3, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 120.790018, 'max_power_delta': 0.000665030456542981, 'action_mismatches': 0}
+AUDIT main mlp_hybrid_789 {'n': 721, 'energy_wh': 121.95104241371155, 'sec': 0.007281221872732953, 'violation': 0.009708737864077669, 'switches': 22, 'scales': 8, 'blocked': 20, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 121.97849500000001, 'max_power_delta': 0.000665030456542981, 'action_mismatches': 0}
+AUDIT main mlp_hybrid_1024 {'n': 721, 'energy_wh': 124.84254421293736, 'sec': 0.007600259263489535, 'violation': 0.0013869625520110957, 'switches': 12, 'scales': 23, 'blocked': 24, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 124.869608, 'max_power_delta': 0.000665030456542981, 'action_mismatches': 0}
+AUDIT main lstm_history_42 {'n': 721, 'energy_wh': 122.085614413023, 'sec': 0.007406967779832676, 'violation': 0.008321775312066574, 'switches': 38, 'scales': 10, 'blocked': 54, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 122.10854900000001, 'max_power_delta': 0.000665030456542981, 'action_mismatches': 0}
+AUDIT main lstm_history_123 {'n': 721, 'energy_wh': 133.99125482141972, 'sec': 0.010256057582219518, 'violation': 0.0013869625520110957, 'switches': 18, 'scales': 6, 'blocked': 27, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 133.99913200000003, 'max_power_delta': 0.0005906154479980441, 'action_mismatches': 0}
+AUDIT main lstm_history_456 {'n': 721, 'energy_wh': 125.72817549109459, 'sec': 0.007638928429100885, 'violation': 0.0013869625520110957, 'switches': 16, 'scales': 0, 'blocked': 7, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 125.743643, 'max_power_delta': 0.0003239721527099615, 'action_mismatches': 0}
+AUDIT main lstm_history_789 {'n': 721, 'energy_wh': 122.69408506155014, 'sec': 0.007486800686746898, 'violation': 0.009708737864077669, 'switches': 14, 'scales': 7, 'blocked': 21, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 122.71118, 'max_power_delta': 0.0006152261199950937, 'action_mismatches': 0}
+AUDIT main lstm_history_1024 {'n': 721, 'energy_wh': 121.8853512108326, 'sec': 0.007396038975269532, 'violation': 0.009708737864077669, 'switches': 14, 'scales': 6, 'blocked': 5, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 121.90513299999999, 'max_power_delta': 0.0006541733245849501, 'action_mismatches': 0}
+[94m
+--- 1. Loading Data & Preparing Environment Payload ---[0m
+✓ Loaded 3360 traffic samples.
+✓ Loaded 3360 forecast traffic samples.
+✓ Loaded DPDK UPF models (keras) from cache.
+✓ Loaded OAI UPF models (keras) from cache.
+[95m✓ Aligned arrays from index 96; N=3264 samples after trim.[0m
+-> Pre-computation mode selected. Creating lookup tables...
+✓ Pre-computed 4896 values for OAI (up to 2 instances).
+AUDIT youtube mlp_hybrid_42 {'n': 721, 'energy_wh': 125.409543171525, 'sec': 0.007971721609935537, 'violation': 0.005547850208044383, 'switches': 16, 'scales': 8, 'blocked': 8, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 125.42443399999999, 'max_power_delta': 0.0006571033325195597, 'action_mismatches': 0}
+AUDIT youtube mlp_hybrid_123 {'n': 721, 'energy_wh': 126.293805539608, 'sec': 0.008084432309462422, 'violation': 0.0, 'switches': 14, 'scales': 8, 'blocked': 6, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 126.31125899999999, 'max_power_delta': 0.0006369884796142422, 'action_mismatches': 0}
+AUDIT youtube mlp_hybrid_456 {'n': 721, 'energy_wh': 123.80389592051506, 'sec': 0.007800455627854443, 'violation': 0.0, 'switches': 17, 'scales': 7, 'blocked': 1, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 123.82603700000001, 'max_power_delta': 0.0006369884796142422, 'action_mismatches': 0}
+AUDIT youtube mlp_hybrid_789 {'n': 721, 'energy_wh': 122.0935899913311, 'sec': 0.007429630388234498, 'violation': 0.016643550624133148, 'switches': 22, 'scales': 8, 'blocked': 28, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 122.11668399999999, 'max_power_delta': 0.0006369884796142422, 'action_mismatches': 0}
+AUDIT youtube mlp_hybrid_1024 {'n': 721, 'energy_wh': 124.63869988918304, 'sec': 0.00780595051177652, 'violation': 0.0, 'switches': 13, 'scales': 23, 'blocked': 31, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 124.67027300000001, 'max_power_delta': 0.0006571033325195597, 'action_mismatches': 0}
+AUDIT youtube lstm_history_42 {'n': 721, 'energy_wh': 121.77131535112858, 'sec': 0.00747703525109214, 'violation': 0.016643550624133148, 'switches': 41, 'scales': 8, 'blocked': 69, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 121.793575, 'max_power_delta': 0.0006571033325195597, 'action_mismatches': 0}
+AUDIT youtube lstm_history_123 {'n': 721, 'energy_wh': 136.37383465468884, 'sec': 0.012779748579099692, 'violation': 0.0, 'switches': 8, 'scales': 3, 'blocked': 13, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 136.37883300000001, 'max_power_delta': 0.0005011726074218847, 'action_mismatches': 0}
+AUDIT youtube lstm_history_456 {'n': 721, 'energy_wh': 127.43550936877728, 'sec': 0.007933074541276272, 'violation': 0.0, 'switches': 25, 'scales': 0, 'blocked': 27, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 127.45465400000002, 'max_power_delta': 0.00032965938949580664, 'action_mismatches': 0}
+AUDIT youtube lstm_history_789 {'n': 721, 'energy_wh': 124.35580891370773, 'sec': 0.0076048873116594225, 'violation': 0.016643550624133148, 'switches': 14, 'scales': 7, 'blocked': 15, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 124.371315, 'max_power_delta': 0.0006571033325195597, 'action_mismatches': 0}
+AUDIT youtube lstm_history_1024 {'n': 721, 'energy_wh': 123.81912039220333, 'sec': 0.007573665252592203, 'violation': 0.016643550624133148, 'switches': 14, 'scales': 4, 'blocked': 4, 'evaluator_recurrent_flag': False, 'archived_energy_sum': 123.83666499999998, 'max_power_delta': 0.0006571033325195597, 'action_mismatches': 0}
+AUDIT_STATIC {
+  "main": {
+    "train_len": 2448,
+    "test_len": 816,
+    "static_dpdk": {
+      "n": 721,
+      "energy_wh": 147.79245980083942,
+      "sec": 0.013528453227166143,
+      "violation": 0.0,
+      "switches": 0,
+      "scales": 0,
+      "blocked": 0
+    },
+    "static_usr1": {
+      "n": 721,
+      "energy_wh": 178.88888682425022,
+      "sec": 0.009072559425186226,
+      "violation": 0.0013869625520110957,
+      "switches": 1,
+      "scales": 0,
+      "blocked": 0
+    }
+  },
+  "youtube": {
+    "train_len": 2448,
+    "test_len": 816,
+    "static_dpdk": {
+      "n": 721,
+      "energy_wh": 147.77957370877266,
+      "sec": 0.01520536836700439,
+      "violation": 0.0,
+      "switches": 0,
+      "scales": 0,
+      "blocked": 0
+    },
+    "static_usr1": {
+      "n": 721,
+      "energy_wh": 165.48452727496624,
+      "sec": 0.00916516101801569,
+      "violation": 0.0,
+      "switches": 1,
+      "scales": 0,
+      "blocked": 0
+    }
+  }
+}

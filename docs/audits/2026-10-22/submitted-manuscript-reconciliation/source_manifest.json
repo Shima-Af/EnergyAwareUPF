@@ -1,0 +1,26 @@
+{
+  "authority": "User identifies attached TeX as the submitted manuscript; it supersedes the repository manuscript for submission claims.",
+  "sources": [
+    {
+      "role": "submitted_attachment",
+      "path": "/home/ubuntu/.codex/attachments/9a61031a-5f61-4cd7-a421-375e0a21748b/Pasted text.txt",
+      "sha256": "848d907f645476ee0500f48e8a3c8afcd327a67c6c2c406cb4142a5154500c9d"
+    },
+    {
+      "role": "submitted_snapshot",
+      "path": "/tmp/upf-scientific-audit/submitted-manuscript-reconciliation/submitted_reference.tex",
+      "sha256": "848d907f645476ee0500f48e8a3c8afcd327a67c6c2c406cb4142a5154500c9d"
+    },
+    {
+      "role": "repository_manuscript",
+      "path": "/home/ubuntu/EnergyAwareUPF/Paper artifacts/manuscript_energyawareupf.tex",
+      "sha256": "53d928e84b57684cb53a5fc92cc9f0ea4b7d0e8765aa9480f16343ee9ca3e7fd"
+    },
+    {
+      "role": "original_audit_preserved",
+      "path": "/tmp/upf-scientific-audit/SCIENTIFIC_REPOSITORY_AUDIT.md",
+      "sha256": "a4cc09f92a6b8a9531add93bb5557fad906ff834bbfbbac798a72e1c21d70d19"
+    }
+  ],
+  "new_experiments_run": false
+}

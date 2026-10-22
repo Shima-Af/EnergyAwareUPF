@@ -1,0 +1,440 @@
+{
+  "commit": "a23e7f7de6c6e07fddad8411dde542b38123e785",
+  "files": [
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/environment.py",
+      "bytes": 25464,
+      "sha256": "2abb13893c4b5541fca7aed64034c613176dfffaea0ab3a7de95d4046ca99ef9"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/utils.py",
+      "bytes": 26661,
+      "sha256": "5fdc0616c8973981460036f682c9b184355c7c6164e1fbebf405267b83bd576c"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/callbacks.py",
+      "bytes": 12700,
+      "sha256": "9db4829ff002452da5c68dd29f42b2c62e50beae36a41cb5992c386f5d0b8f7b"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/tf_config.py",
+      "bytes": 626,
+      "sha256": "7a609c2f174492710a3bb6ef0987f9f7db128c8735f01e61f9c46ad22ba8b54b"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/evaluate.py",
+      "bytes": 28381,
+      "sha256": "c31483f6968a9456fec31bacc70ae3bf4bdf861f23d37f1c49b2dfe564000094"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/train.py",
+      "bytes": 4140,
+      "sha256": "e13bf6a9a37a6f8494d06af44a43c9558d48372a884454f76a19cff0fe54df6e"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/offline_optimal.py",
+      "bytes": 23192,
+      "sha256": "dc32caa2d96eb2460ee4e1c44e4f31e3c19b03d47e37441a39035d72bdb8acc1"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/agent.py",
+      "bytes": 4525,
+      "sha256": "62a8862e1c62f83b256120bd29ce3bb50c422bcacca44a13d56feae83b2e3198"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/src/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_scaler_X.pkl",
+      "bytes": 623,
+      "sha256": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_perf_scaler_y.pkl",
+      "bytes": 623,
+      "sha256": "e0b3aa30b33b050cc0469176bb27ddcd5017d783163175d7c7f43792b58cc7e2"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_performance_model.pkl",
+      "bytes": 939,
+      "sha256": "f3fc881eb1e5a408cac2d03d33dfc6c168585870c035ccf51efdf3cb4569ae87"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/traffic_predictor_metadata.pkl",
+      "bytes": 107,
+      "sha256": "cfab5a7e0dc58da3c34f450553dbe846cdf3fb015df61009897546fa943a0ec1"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_upf_performance_model.keras",
+      "bytes": 80378,
+      "sha256": "c92b3d9741feb9cd240b8a1e2e72a9c332958cde619d27867b80935ede06f092"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/traffic_predictor_scaler.pkl",
+      "bytes": 522,
+      "sha256": "2501e440b4315d66c4724b44081e6f3fd61c136b4568676cc91d55abdce4da46"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_upf_power_model.keras",
+      "bytes": 69376,
+      "sha256": "8ea0bdf2461d8a27f2c1613500ea8d22487c6b0c27ca4f9f1b9a0afade64720a"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_scaler_y.pkl",
+      "bytes": 623,
+      "sha256": "62522eb7a5459f4ad25136cd92a0c44e147e8c04b4ab6c26e1d49c2dcf85d105"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/traffic_predictor_calendar_scaler.pkl",
+      "bytes": 722,
+      "sha256": "78fe268d70e1c9b2464fc74aa6203c85dc6f56e9e4f63607bd2db9d3e6fb60bf"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_perf_scaler_y.pkl",
+      "bytes": 623,
+      "sha256": "2d872d2b130eda5f3339a4fbed4eba973ce8c360ff2dd219caf5a955dbab1cbc"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_power_model.pkl",
+      "bytes": 577,
+      "sha256": "2ca5d445d6d2f0070066b0809c2af7e2299976b00ce447ce8cdc0a8f6d07ce25"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_upf_performance_model.keras",
+      "bytes": 80369,
+      "sha256": "932f690117d10b433346a25f619194e94b1db663173702e2b0565845012367d1"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/traffic_predictor.keras",
+      "bytes": 1486240,
+      "sha256": "0a341013c77316566e83b4dc4a29dbb88e1871d1bcee767237fc0df786e5d61e"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_perf_scaler_X.pkl",
+      "bytes": 623,
+      "sha256": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_scaler_X.pkl",
+      "bytes": 623,
+      "sha256": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_perf_scaler_X.pkl",
+      "bytes": 623,
+      "sha256": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_upf_power_model.keras",
+      "bytes": 21457,
+      "sha256": "eec63019f99daffedce84cbaf4fb261a35a734ac1c1e801ca3f6290fc67d0d7b"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_scaler_y.pkl",
+      "bytes": 623,
+      "sha256": "1bdb218dafa423eebd40e669c444174d8dec7e878b25a039289139063e9e130c"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/data/processed/processed_traffic_main_bestpredictor.csv",
+      "bytes": 344881,
+      "sha256": "7880227e36341f1c4f3a95d3e0c0f03340d523ee46157e212e0b29f51898e92b"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/data/processed/processed_traffic_youtube_bestpredictor.csv",
+      "bytes": 309828,
+      "sha256": "fef4223c51b23644458a9838038bb8d9820ca34ad165f8bdde3790a6cdb325ad"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/data/processed/processed_traffic_youtube_with_forecast.csv",
+      "bytes": 311606,
+      "sha256": "ad8d23d3612e3f5e7c1199ecefcb11dc798d7956aa3d1c67fb1ab31b551ec5a3"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/data/processed/processed_traffic_youtube_aggregated_scaled.csv",
+      "bytes": 311606,
+      "sha256": "ad8d23d3612e3f5e7c1199ecefcb11dc798d7956aa3d1c67fb1ab31b551ec5a3"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/data/processed/processed_traffic_normalized.csv",
+      "bytes": 346006,
+      "sha256": "8cf3fcda525c9bd6e3672e4728aaf664c7954c94068c7fae8ffc5d5278f31ffb"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_42/best_model.zip",
+      "bytes": 309801,
+      "sha256": "e1637858dc6d1ae5615c4391da2e82901b95030fbf7d27fb0bcac9f04dc71cb3"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_42/final_model.zip",
+      "bytes": 316078,
+      "sha256": "c5371f704b16efa9da55561567926f28a7217a8e92628d95d375337c4d0ee980"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_42/vec_normalize_stats.pkl",
+      "bytes": 7769,
+      "sha256": "3f756e6809d00126199fb46bedf1d86ae6c1447b7c819d0e916d25b8d1808c20"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_42/config.yaml",
+      "bytes": 5220,
+      "sha256": "3bf086a4f2ecc4238147a573e6107ce167423616e129e1bc398e19900faa0c5e"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_42/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "69b052515a203bd310f381feb7002070208fd85757eff7b5612d97a6b4980719"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_1024/best_model.zip",
+      "bytes": 310323,
+      "sha256": "a12bd6971206ecabac60ffcef5d8559ff49d498fbee84fca72994beaced5b3d2"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_1024/final_model.zip",
+      "bytes": 316080,
+      "sha256": "00c63d5d525823c093201fa06cd2c68f486e8ce19fb6f57495d59058eb35fec9"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_1024/vec_normalize_stats.pkl",
+      "bytes": 7768,
+      "sha256": "16794325360ce0f6fc72d6f6edbb4fb66f45098a49eb3531ef3bdee6a629a7bf"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_1024/config.yaml",
+      "bytes": 5228,
+      "sha256": "21f0885a4e75af3b6aed4b9c73253bf0b5edaaf7e6a9500500e23cf8b9f248d9"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_1024/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "bfa10089007d6504338791eefd9067d7c5cd569ba10acd527687770b9b7392fb"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_123/best_model.zip",
+      "bytes": 309369,
+      "sha256": "706956e57aa689e636d88239e328c5eb7845f868de14b12842461c46130333e1"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_123/final_model.zip",
+      "bytes": 316079,
+      "sha256": "5088d9c58b0ac18bc853d0391222e0eb958148886ec90fc678d2347c71531d33"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_123/vec_normalize_stats.pkl",
+      "bytes": 7767,
+      "sha256": "bf3bb1b0b560b63ee675ca954defee81272c493d03f571b05a405c7e9966c973"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_123/config.yaml",
+      "bytes": 5224,
+      "sha256": "522f7d1a16f072c1bf98c79e0d98962fb9147aa25996c7e136204dde173d5360"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_123/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "96552f41bdc0d9dc02d4f321a32fc12f56bd7283b5f2300f782f5ec0b2dfb4b7"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_789/best_model.zip",
+      "bytes": 310062,
+      "sha256": "ccf13ce5e83a6df20817ed9ff55406bb8deb0472fb605255ac31bc94b485f742"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_789/final_model.zip",
+      "bytes": 316079,
+      "sha256": "5b112c47e0da5d6bf48c3af89e16997ada18e562f1bdf0491b0148a758633c95"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_789/vec_normalize_stats.pkl",
+      "bytes": 7769,
+      "sha256": "54d94a73c302be872e80e32eedc62ed14d0d15d71c727922bb7d64fe634281e1"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_789/config.yaml",
+      "bytes": 5224,
+      "sha256": "6df7d73ea8e9bbbd030e61dde1115e236e4149b6505a52e6a9f303ddcf997e02"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_789/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "f4a5438b7ad3f26ff9f3f7a0448d847b48e1a648b663a732eb3634279f682ad7"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_456/best_model.zip",
+      "bytes": 310326,
+      "sha256": "2e8e63baacd1618b57f8bda92835b6355515a747de2975eadc877e9a45d2fa36"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_456/final_model.zip",
+      "bytes": 316083,
+      "sha256": "9156eaaaeac03fa86e81c4e4c640738957b6411f464e5b762d5683fe869bd79e"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_456/vec_normalize_stats.pkl",
+      "bytes": 7770,
+      "sha256": "c4fed0a25699d102c41bf81f0e26966684ab9bf12327c60e7775953b783ea9a7"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_456/config.yaml",
+      "bytes": 5224,
+      "sha256": "c3997573ac3670c8871c766593c8c8c4b3ae1e267fd2d0376a05f4c25103591d"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/mlp_hybrid/seed_456/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "aff0345a4a555bf91ec1e0f218e2ceef6779d52db7bd8158a982a83472bc9d3c"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_42/best_model.zip",
+      "bytes": 1800407,
+      "sha256": "e7b3f7a6ac2cc9ec693d90f550a1c082f83a1d9ba2db0725329adcbcbb31547c"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_42/final_model.zip",
+      "bytes": 1800409,
+      "sha256": "75ecb6e33b46830ab896842181989b368f0f14174c553e083473c62f1fd8e115"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_42/vec_normalize_stats.pkl",
+      "bytes": 7713,
+      "sha256": "86ca850f887abfe1db9c4faad4324695b3fc4e5f287be0c24d96e530713436d1"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_42/config.yaml",
+      "bytes": 5231,
+      "sha256": "307b945dd9068c14362f6cf05bd4971c347278277fc2025f16d593a9da7ad842"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_42/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "cdba58270eb370ad8633738440c37df2d57d55138a374943ce12da7730135314"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_1024/best_model.zip",
+      "bytes": 1794134,
+      "sha256": "c1ebed997846f477afe0c7f3c5b3cc99253ed52d11c8800d24670c7c6bbdc888"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_1024/final_model.zip",
+      "bytes": 1800411,
+      "sha256": "2dfcf9b0e3f9710fd86aff2e431c82e84213bd87402b3a6af89d0329175f79ee"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_1024/vec_normalize_stats.pkl",
+      "bytes": 7712,
+      "sha256": "6993ace84ef68605e6493eea0e307d6ea259e84a5c4c750921a7127f207a2e5d"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_1024/config.yaml",
+      "bytes": 5239,
+      "sha256": "3efcf557c68d896b036ebd87a54aa1d9a5b97c43e2f602412b096ec6528f7db4"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_1024/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "d2d1c8a8c0f1a8ee1e7b8cef9a221c0fccc09d646224d0f4ea54c815c70cbaec"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_123/best_model.zip",
+      "bytes": 1799884,
+      "sha256": "ef7ae93ddb133f5d4d6fee0c625717b079eb6ffe42b33a12552a7c1a6dc51324"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_123/final_model.zip",
+      "bytes": 1800410,
+      "sha256": "37e3b478f078ffc9cfcded770de9c0d7fc45d56fbe8bde2ddb9796bf90d2b83b"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_123/vec_normalize_stats.pkl",
+      "bytes": 7711,
+      "sha256": "a76d45a0b32ef008308528d4d128df7b3112e4de3fd9936dddbf8ee8d5644501"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_123/config.yaml",
+      "bytes": 5235,
+      "sha256": "dc41d0cf80d8cee9f865b2c5f41576d64a74cd10dca9650081a8a23fb3153dd8"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_123/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "2e03b3ca7746f9010c6a1859e9205b5c7b92d1d5a29f469b2af7dd41e8b22e39"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_789/best_model.zip",
+      "bytes": 1794133,
+      "sha256": "f676e5075901a5cc65679f5435ac721b4c3613d9efe68d6a3e07aba9669d6d9a"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_789/final_model.zip",
+      "bytes": 1800410,
+      "sha256": "1deded9090db0fe20c76613b50bd9ed0436f3fb356315e5870dfbd0f0f141256"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_789/vec_normalize_stats.pkl",
+      "bytes": 7713,
+      "sha256": "3838c81b06b2e200ad3c49a0c9dbd9311947a9382ddd322eb51dbb5ac103cb5b"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_789/config.yaml",
+      "bytes": 5235,
+      "sha256": "6deffc4e03ff9c7bb2f1f2d74ad94164e1d9201c0cf38ea1cfbdc96fb4f98da1"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_789/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "9da7c3bbdafb61eac232899335d888e29a3dbc5f58e795d3d863abd3f04d3a8e"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_456/best_model.zip",
+      "bytes": 1793704,
+      "sha256": "38ebeb54e55c3bb7c264922ece47fe8b75df659f76d1945d9cc56115131d4f18"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_456/final_model.zip",
+      "bytes": 1800414,
+      "sha256": "0c0bd913f707baffad1d4d6f5db7acc1bf7deb41294dfdb9e806414ff6375c9e"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_456/vec_normalize_stats.pkl",
+      "bytes": 7714,
+      "sha256": "7e3680e9ac08d6da92b2153ea026f91c195ec877322b9aef31ccb75d466e5ecb"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_456/config.yaml",
+      "bytes": 5235,
+      "sha256": "2b679f323e5942ae108777f12ed10b50d3b2ef219d7237ba202b52f86c151775"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/experiments/results/B1_top2_seeds/lstm_history/seed_456/evaluations.npz",
+      "bytes": 8018,
+      "sha256": "298eef3d262625a73971ccb6d0fdbaf6a588f3482df51ec37e0cd19cd7c15adc"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/config.yaml",
+      "bytes": 11533,
+      "sha256": "474c5c212c4166f30f003a183f4cc09f98eaf8187b87345cf6e70172f8985206"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/requirements.txt",
+      "bytes": 780,
+      "sha256": "c62261a475f9727409c3f9660885587e04e06783fc71fd5ceea50830ec99cb7f"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/Paper artifacts/manuscript_energyawareupf.tex",
+      "bytes": 90319,
+      "sha256": "53d928e84b57684cb53a5fc92cc9f0ea4b7d0e8765aa9480f16343ee9ca3e7fd"
+    },
+    {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/dpdk_processed.csv",
+      "bytes": 1038786,
+      "sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484"
+    },
+    {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/oai_processed.csv",
+      "bytes": 1088997,
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20"
+    }
+  ]
+}

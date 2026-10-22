@@ -1,0 +1,16 @@
+2026-10-22 11:23:40.630462: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792661020.856656   81880 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+[1;91m✓ TensorFlow configuration applied: warnings suppressed[0m
+-> Loading Keras models for DPDK UPF from saved_models/prediction_models...
+✓ Successfully loaded and cached models for DPDK UPF.
+DPDK {'metrics': [{'mode': 'DPDK', 'target': 'attributed power', 'split_name': 'holdout_test_testsize0.2_rs42_shuffleTrue', 'n_samples': 919, 'rmse': 0.0038616898976455865, 'mape': 0.3789063705216252, 'r2': 0.23929525034052568, 'mae': 0.0031096417704137027}, {'mode': 'DPDK', 'target': 'QoS score', 'split_name': 'holdout_test_testsize0.2_rs42_shuffleTrue', 'n_samples': 919, 'rmse': 0.08465652761302596, 'mape': 5.569601126934684, 'r2': 0.15285175705415333, 'mae': 0.042231288840903033}], 'threshold_diagnostic': {'actual_below': 103, 'predicted_below': 119, 'false_safe': 41, 'false_unsafe': 57, 'near_threshold_n': 91, 'near_threshold_rmse': 0.0367838314963221, 'train_mean_baseline_rmse': 0.09198810237888377, 'min_pred': 0.859373927116394, 'max_pred': 0.9752845764160156}}
+/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+-> Loading Keras models for OAI UPF from saved_models/prediction_models...
+✓ Successfully loaded and cached models for OAI UPF.
+USR {'metrics': [{'mode': 'USR', 'target': 'attributed power', 'split_name': 'holdout_test_testsize0.2_rs42_shuffleTrue', 'n_samples': 913, 'rmse': 0.30383960367742757, 'mape': 481.1087432885204, 'r2': 0.9604666285949103, 'mae': 0.12174732677244784}, {'mode': 'USR', 'target': 'QoS score', 'split_name': 'holdout_test_testsize0.2_rs42_shuffleTrue', 'n_samples': 913, 'rmse': 0.07847765260064306, 'mape': 186.40428578152398, 'r2': 0.9068101468722062, 'mae': 0.043053227991910255}], 'threshold_diagnostic': {'actual_below': 515, 'predicted_below': 517, 'false_safe': 52, 'false_unsafe': 54, 'near_threshold_n': 358, 'near_threshold_rmse': 0.03169595713872453, 'train_mean_baseline_rmse': 0.257121243679042, 'min_pred': 0.2111336588859558, 'max_pred': 0.9357309341430664}}
