@@ -1,0 +1,40 @@
+2026-10-22 15:19:08.012761: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Workload census: netflix train 2016 rows per action
+Workload census: netflix validation 504 rows per action
+Workload census: youtube train 2016 rows per action
+Workload census: youtube validation 504 rows per action
+{
+  "DPDK": {
+    "original_energy_wh": 103.34402079880238,
+    "replacement_energy_wh": 103.34402079880238,
+    "energy_change_wh": 0.0,
+    "energy_change_percent": 0.0,
+    "original_mean_sec_j_per_mbit": 0.010287006517525827,
+    "replacement_mean_sec_j_per_mbit": 0.010287006517525827,
+    "original_qos_violation_rate": 0.0,
+    "replacement_qos_violation_rate": 0.0,
+    "qos_values_identical_all_slots": true
+  },
+  "USR(1)": {
+    "original_energy_wh": 150.06034864485264,
+    "replacement_energy_wh": 145.25759119615452,
+    "energy_change_wh": -4.802757448698117,
+    "energy_change_percent": -3.200550639839434,
+    "original_mean_sec_j_per_mbit": 0.009011175137346717,
+    "replacement_mean_sec_j_per_mbit": 0.008799014256236198,
+    "original_qos_violation_rate": 0.0,
+    "replacement_qos_violation_rate": 0.0,
+    "qos_values_identical_all_slots": true
+  },
+  "USR(2)": {
+    "original_energy_wh": 151.08522433042526,
+    "replacement_energy_wh": 149.92483138350283,
+    "energy_change_wh": -1.1603929469224283,
+    "energy_change_percent": -0.7680386696085082,
+    "original_mean_sec_j_per_mbit": 0.009198829862316597,
+    "replacement_mean_sec_j_per_mbit": 0.008869875074560392,
+    "original_qos_violation_rate": 0.0,
+    "replacement_qos_violation_rate": 0.0,
+    "qos_values_identical_all_slots": true
+  }
+}

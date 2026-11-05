@@ -1,0 +1,10 @@
+2026-10-22 14:46:40.444794: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Measured data inspected: dpdk 4594 rows
+/home/ubuntu/EnergyAwareUPF/revision/diagnostics/profiling_validity.py:70: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  t = pd.to_datetime(frame.timestamp)
+Measured data inspected: usr 4564 rows
+Workload census: netflix train 2016 rows per action
+Workload census: netflix validation 504 rows per action
+Workload census: youtube train 2016 rows per action
+Workload census: youtube validation 504 rows per action
+Validity audit diagnostics complete; no models fitted or corrected.

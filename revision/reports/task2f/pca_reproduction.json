@@ -1,0 +1,86 @@
+{
+  "DPDK": {
+    "standardizer_mean": [
+      0.9559368446723476,
+      0.9857298595994776,
+      0.87457553330431,
+      0.9897523425663434
+    ],
+    "standardizer_scale": [
+      0.1987725053381935,
+      0.09902785011235112,
+      0.16612987133882423,
+      0.10003035214155749
+    ],
+    "components_before_sign_correction": [
+      [
+        0.006341290221830352,
+        0.7057083258852566,
+        0.0727121231199785,
+        0.7047329238555093
+      ]
+    ],
+    "explained_variance_ratio": [
+      0.4209032444881797
+    ],
+    "correlation_pc1_with_throughput_score": 0.008228084865212853,
+    "minmax_min": [
+      0.9839058256984883
+    ],
+    "minmax_scale": [
+      0.06991609679849255
+    ],
+    "comparison_to_stored_QoS_dd": {
+      "comparable_rows": 4594,
+      "bitwise_equal_float_values": 2298,
+      "matches_at_1e-10": 4594,
+      "mae": 6.281644127530887e-17,
+      "maximum_absolute_difference": 6.106226635438361e-16,
+      "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+    },
+    "new_surrogate_training": false,
+    "historical_PCA_artifact_recovered": false
+  },
+  "USR": {
+    "standardizer_mean": [
+      0.8970533176009761,
+      0.7751224474145486,
+      0.37320333041191933,
+      0.721686846129134
+    ],
+    "standardizer_scale": [
+      0.22669205713020757,
+      0.39383836868032174,
+      0.33334045076335006,
+      0.44664946365643715
+    ],
+    "components_before_sign_correction": [
+      [
+        0.3809657873018053,
+        0.5562510636638869,
+        0.5141773973753724,
+        0.5301616990188919
+      ]
+    ],
+    "explained_variance_ratio": [
+      0.6586500093491447
+    ],
+    "correlation_pc1_with_throughput_score": 0.6183627534781488,
+    "minmax_min": [
+      0.6929438876324453
+    ],
+    "minmax_scale": [
+      0.17175043815611907
+    ],
+    "comparison_to_stored_QoS_dd": {
+      "comparable_rows": 4564,
+      "bitwise_equal_float_values": 750,
+      "matches_at_1e-10": 4564,
+      "mae": 1.6867145096642237e-16,
+      "maximum_absolute_difference": 8.326672684688674e-16,
+      "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+    },
+    "new_surrogate_training": false,
+    "historical_PCA_artifact_recovered": false
+  }
+}

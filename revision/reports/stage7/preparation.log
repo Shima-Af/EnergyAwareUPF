@@ -1,0 +1,5 @@
+2026-10-23 17:23:59.948169: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Verified real frozen-twin inputs 0 / 3923
+Verified real frozen-twin inputs 1000 / 3923
+Verified real frozen-twin inputs 2000 / 3923
+Verified real frozen-twin inputs 3000 / 3923

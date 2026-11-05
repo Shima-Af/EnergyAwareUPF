@@ -1,0 +1,584 @@
+{
+  "selected_checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_172032",
+  "validation_scores": [
+    {
+      "timesteps": 24576,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_24576",
+      "total_reward": -323.056423917545,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.89205970643876,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006402944918998909,
+        "aggregate_sec_j_per_mbit": 0.005336454304154454,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -323.056423917545,
+        "discounted_return": -122.62387035231143,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 11,
+        "action_counts": [
+          347,
+          0,
+          157
+        ],
+        "requested_action_counts": [
+          338,
+          0,
+          166
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9656384942077455,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 322.70842391754485,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 32768,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_32768",
+      "total_reward": -334.06300174106497,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 90.44499915969043,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006621329399624305,
+        "aggregate_sec_j_per_mbit": 0.005429681870899606,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -334.06300174106497,
+        "discounted_return": -125.69489669406471,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 15,
+        "action_counts": [
+          369,
+          0,
+          135
+        ],
+        "requested_action_counts": [
+          354,
+          0,
+          150
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9676584738587576,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 333.71500174106484,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 49152,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_49152",
+      "total_reward": -344.7828906693153,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 91.65834109418432,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.00683402560851816,
+        "aggregate_sec_j_per_mbit": 0.005502522390177979,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -344.7828906693153,
+        "discounted_return": -131.4857336153621,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 18,
+        "action_counts": [
+          395,
+          0,
+          109
+        ],
+        "requested_action_counts": [
+          377,
+          0,
+          127
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9699640892564304,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 344.4348906693152,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 73728,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_73728",
+      "total_reward": -324.72516688154695,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 89.20567835220605,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006436054898443392,
+        "aggregate_sec_j_per_mbit": 0.005355281762732813,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -324.72516688154695,
+        "discounted_return": -123.04318957633004,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 15,
+        "action_counts": [
+          356,
+          0,
+          148
+        ],
+        "requested_action_counts": [
+          341,
+          0,
+          163
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9664282000490597,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 324.3771668815469,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 98304,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_98304",
+      "total_reward": -323.249550895429,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.94815207343554,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006406776803480734,
+        "aggregate_sec_j_per_mbit": 0.005339821695508402,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -323.249550895429,
+        "discounted_return": -122.75637073726816,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 26,
+        "action_counts": [
+          348,
+          0,
+          156
+        ],
+        "requested_action_counts": [
+          346,
+          0,
+          158
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.965731668212111,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 322.9015508954289,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 122880,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_122880",
+      "total_reward": -321.6693711371877,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.72170733304306,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006375424030499755,
+        "aggregate_sec_j_per_mbit": 0.0053262275453277086,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -321.6693711371877,
+        "discounted_return": -121.98050808867465,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 24,
+        "action_counts": [
+          328,
+          0,
+          176
+        ],
+        "requested_action_counts": [
+          326,
+          0,
+          178
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9640326698621114,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 321.32137113718755,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 147456,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_147456",
+      "total_reward": -321.94431914286884,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.76402619275004,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006380879348072794,
+        "aggregate_sec_j_per_mbit": 0.005328768072139395,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -321.94431914286884,
+        "discounted_return": -122.37890383085114,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 25,
+        "action_counts": [
+          333,
+          0,
+          171
+        ],
+        "requested_action_counts": [
+          323,
+          11,
+          170
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9644526452535674,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 321.59631914286865,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 172032,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_172032",
+      "total_reward": -320.00401328047553,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.02785612012825,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.00634345264445388,
+        "aggregate_sec_j_per_mbit": 0.00528457359666424,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -320.00401328047553,
+        "discounted_return": -120.62996172985707,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 12,
+        "blocked_requests": 13,
+        "action_counts": [
+          343,
+          0,
+          161
+        ],
+        "requested_action_counts": [
+          330,
+          0,
+          174
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9652801409127221,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 319.7100132804754,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.294,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 196608,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_196608",
+      "total_reward": -324.3456768253197,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 89.22172648863365,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006428525333835708,
+        "aggregate_sec_j_per_mbit": 0.005356245180016601,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -324.3456768253197,
+        "discounted_return": -122.9612033517069,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 20,
+        "action_counts": [
+          352,
+          0,
+          152
+        ],
+        "requested_action_counts": [
+          340,
+          0,
+          164
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9660808703019506,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 323.9976768253196,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 221184,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_221184",
+      "total_reward": -324.198232416843,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 89.16541202827125,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006424528420969107,
+        "aggregate_sec_j_per_mbit": 0.005352864455738421,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -324.198232416843,
+        "discounted_return": -123.07439938997454,
+        "type_switches": 15,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 15,
+        "usr_instances_launched": 16,
+        "blocked_requests": 25,
+        "action_counts": [
+          355,
+          0,
+          149
+        ],
+        "requested_action_counts": [
+          346,
+          6,
+          152
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9663208310329725,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 323.7962324168428,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.402,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 245760,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_245760",
+      "total_reward": -322.4354448679887,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.87823880675076,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006389552477539458,
+        "aggregate_sec_j_per_mbit": 0.0053356245945057985,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -322.4354448679887,
+        "discounted_return": -122.65065975397899,
+        "type_switches": 15,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 15,
+        "usr_instances_launched": 16,
+        "blocked_requests": 20,
+        "action_counts": [
+          329,
+          0,
+          175
+        ],
+        "requested_action_counts": [
+          321,
+          6,
+          177
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9641369766895733,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 322.0334448679886,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.402,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 270336,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_270336",
+      "total_reward": -322.1061545799941,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.79669224169425,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006384090368650677,
+        "aggregate_sec_j_per_mbit": 0.005330729112057512,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -322.1061545799941,
+        "discounted_return": -122.4807756434699,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 22,
+        "action_counts": [
+          335,
+          0,
+          169
+        ],
+        "requested_action_counts": [
+          325,
+          13,
+          166
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9646228148587166,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 321.75815457999397,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 294912,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_294912",
+      "total_reward": -322.3822405001351,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.90730056803834,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.00638956826389157,
+        "aggregate_sec_j_per_mbit": 0.005337369258333159,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -322.3822405001351,
+        "discounted_return": -122.48076741913538,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 23,
+        "action_counts": [
+          319,
+          0,
+          185
+        ],
+        "requested_action_counts": [
+          317,
+          4,
+          183
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9633143626981311,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 322.034240500135,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.348,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    },
+    {
+      "timesteps": 300000,
+      "checkpoint": "revision/models/stage7/recurrent_ppo/forecast/seed_789/checkpoint_300000",
+      "total_reward": -320.4674206869173,
+      "metrics": {
+        "slots": 504,
+        "energy_wh": 88.19138204368844,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006352647235851535,
+        "aggregate_sec_j_per_mbit": 0.0052943905434366,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -320.4674206869173,
+        "discounted_return": -120.74247043585116,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 12,
+        "blocked_requests": 17,
+        "action_counts": [
+          325,
+          0,
+          179
+        ],
+        "requested_action_counts": [
+          323,
+          2,
+          179
+        ],
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9638124903043112,
+        "violation_shortfall_mean_conditional": null,
+        "violation_shortfall_max": 0.0,
+        "energy_reward_magnitude": 320.1734206869172,
+        "qos_reward_magnitude": 0.0,
+        "orchestration_reward_magnitude": 0.294,
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "normalizer_updated_by_validation": false
+    }
+  ],
+  "selection_objective": "netflix_validation_total_reward",
+  "selection_workload": "netflix",
+  "youtube_used": false,
+  "final_test_used": false,
+  "actual_timesteps": 300000
+}

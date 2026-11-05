@@ -1,0 +1,93 @@
+{
+  "selected_name": "dpdk_softplus_seed_123",
+  "artifact_path": "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/neural_seed_123/manifest.json",
+  "artifact_sha256": "f8776d3dfa57846ae3da58d98a2c387d38b0f48836cf3be40d63f290057b551c",
+  "kind": "neural_power",
+  "validation_scores": {
+    "nonnegative_training_constant": {
+      "n": 916,
+      "rmse_w": 0.005585879198268604,
+      "mae_w": 0.004671987791040463,
+      "bias_w": 0.0008439407934609467,
+      "r2": -0.023359806262480687,
+      "low_load_n": 376,
+      "low_load_rmse_w": 0.006169942656880135,
+      "low_load_mae_w": 0.005361086802805865,
+      "low_load_bias_w": 0.004835670658625893,
+      "negative_predictions": 0
+    },
+    "nonnegative_affine": {
+      "n": 916,
+      "rmse_w": 0.004660931899712936,
+      "mae_w": 0.003828987889130836,
+      "bias_w": 0.0008320637811057656,
+      "r2": 0.2874902821311208,
+      "low_load_n": 376,
+      "low_load_rmse_w": 0.005323577982102904,
+      "low_load_mae_w": 0.004555504336307346,
+      "low_load_bias_w": 0.0036946096537054927,
+      "negative_predictions": 0
+    },
+    "nonnegative_pwl_7": {
+      "n": 916,
+      "rmse_w": 0.004492465759415594,
+      "mae_w": 0.003668066310455815,
+      "bias_w": 0.0008307523036967167,
+      "r2": 0.33806578772780427,
+      "low_load_n": 376,
+      "low_load_rmse_w": 0.005167954751800679,
+      "low_load_mae_w": 0.0044074368366266055,
+      "low_load_bias_w": 0.0033877352104282484,
+      "negative_predictions": 0
+    },
+    "dpdk_softplus_seed_42": {
+      "n": 916,
+      "rmse_w": 0.004189392119768353,
+      "mae_w": 0.0033986989820149888,
+      "bias_w": 0.0004417794957664497,
+      "r2": 0.424364857342438,
+      "low_load_n": 376,
+      "low_load_rmse_w": 0.004551957942845479,
+      "low_load_mae_w": 0.0038151956927938253,
+      "low_load_bias_w": 0.0023103617995092916,
+      "negative_predictions": 0
+    },
+    "dpdk_softplus_seed_123": {
+      "n": 916,
+      "rmse_w": 0.004153441807225292,
+      "mae_w": 0.003364336056555452,
+      "bias_w": 0.0005144186222109373,
+      "r2": 0.4342018318490123,
+      "low_load_n": 376,
+      "low_load_rmse_w": 0.004607344633726919,
+      "low_load_mae_w": 0.0038662152062220647,
+      "low_load_bias_w": 0.002339922215812074,
+      "negative_predictions": 0
+    }
+  },
+  "candidate_artifacts": {
+    "nonnegative_training_constant": {
+      "path": "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/nonnegative_training_constant.json",
+      "sha256": "cc694fd5f366e6301053f84007a9f9cc8b5e7898c96ed9154c7e803748c26289"
+    },
+    "nonnegative_affine": {
+      "path": "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/nonnegative_affine.json",
+      "sha256": "6dfdb3627f51431d2e200b9523a8103401b0341898af810519bb545a47633572"
+    },
+    "nonnegative_pwl_7": {
+      "path": "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/nonnegative_pwl_7.json",
+      "sha256": "95b7586ca0c726a1aa76705cdc9cd414502d50f22fed9967128fd200af1b5648"
+    },
+    "dpdk_softplus_seed_42": {
+      "path": "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/neural_seed_42/manifest.json",
+      "sha256": "9ef25ac06078e0f8875443cbf528ddd188ab03bcd6a808842fbe164b3e5cfa80"
+    },
+    "dpdk_softplus_seed_123": {
+      "path": "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/neural_seed_123/manifest.json",
+      "sha256": "f8776d3dfa57846ae3da58d98a2c387d38b0f48836cf3be40d63f290057b551c"
+    }
+  },
+  "internal_test_scored_before_selection": false,
+  "controller_results_used": false,
+  "search_expanded": false
+}

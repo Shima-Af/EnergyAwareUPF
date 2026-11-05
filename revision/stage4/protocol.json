@@ -1,0 +1,106 @@
+{
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "algorithms": [
+    "ppo",
+    "recurrent_ppo"
+  ],
+  "n_envs": 4,
+  "n_steps": 1024,
+  "batch_size": 64,
+  "n_epochs": 10,
+  "learning_rate": 0.0001,
+  "gamma": 0.995,
+  "gae_lambda": 0.9,
+  "ent_coef": 0.15,
+  "clip_range": 0.2,
+  "target_kl": 0.03,
+  "checkpoint_selection": "validation_total_reward",
+  "schema": "hybrid",
+  "recurrent_hidden": 128,
+  "shared_lstm": true,
+  "rule": {
+    "selection": "forecast_score_feasibility_then_minimum_power",
+    "target": 0.9,
+    "fallback": "maximum_predicted_qos_then_minimum_power",
+    "relative_power_deadband": 0.02
+  },
+  "sensitivity": "frozen_policy_replay_with_changed_outcomes_and_previous_telemetry_no_retraining",
+  "final_test_allowed": false,
+  "risk_acceptance_threshold": null,
+  "no_search_expansion": true,
+  "id": "comcom.full-training-convergence.v1",
+  "requested_timesteps": 300000,
+  "checkpoint_timesteps": [
+    24576,
+    32768,
+    49152,
+    73728,
+    98304,
+    122880,
+    147456,
+    172032,
+    196608,
+    221184,
+    245760,
+    270336,
+    294912,
+    300000
+  ],
+  "exact_budget": "Regular 1024-step rollouts; last rollout 248 steps/environment, 992 interactions, trained normally. No discarded samples or 303104-step overshoot.",
+  "forecast": {
+    "seed": 42,
+    "max_epochs": 100,
+    "patience": 15,
+    "min_delta_scaled_mse": 1e-06,
+    "lr_patience": 6,
+    "lr_factor": 0.5,
+    "min_lr": 1e-05,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "candidates": [
+      "lstm_load",
+      "lstm_calendar"
+    ],
+    "prefix_boundaries": [
+      192,
+      608,
+      1024,
+      1440,
+      1856,
+      2016
+    ],
+    "prefix_internal_training_fraction": 0.8,
+    "cold_start_indices_half_open": [
+      96,
+      192
+    ],
+    "units": [
+      128,
+      64
+    ],
+    "window": 96,
+    "output": "softplus_scaled_load",
+    "recurrent_dropout": 0.0,
+    "dropout": 0.2,
+    "selection": "validation_rmse; prefix early stopping uses only earlier prefix internal validation"
+  },
+  "interpretation": {
+    "late_curve_points": 3,
+    "matched_training_budget": 32768,
+    "forecast_sensitivity": "selected Stage4 policies replayed with Stage3 and persistence forecasts; Stage3 selected policies replayed with Stage4 forecasts; no retraining or reselection",
+    "scaling": "observed transitions plus decision-level counterfactual accounting, not causal policy ablation"
+  },
+  "restrictions": [
+    "validation_only",
+    "no_twin_reward_rule_contract_changes",
+    "no_final_test",
+    "no_new_hyperparameter_search",
+    "no_manuscript_commit_push"
+  ]
+}

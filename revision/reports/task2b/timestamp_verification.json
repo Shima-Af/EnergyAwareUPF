@@ -1,0 +1,14 @@
+{
+  "dpdk": {
+    "all_timestamps_strictly_iso_parsed": true,
+    "rows": 4594,
+    "strict_iso_median_nearest_training_time_seconds": 3.0,
+    "matches_saved_analysis": true
+  },
+  "usr": {
+    "all_timestamps_strictly_iso_parsed": true,
+    "rows": 4564,
+    "strict_iso_median_nearest_training_time_seconds": 3.0,
+    "matches_saved_analysis": true
+  }
+}

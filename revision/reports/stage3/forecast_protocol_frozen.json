@@ -1,0 +1,36 @@
+{
+  "config": {
+    "seed": 42,
+    "epochs": 8,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "candidates": [
+      "lstm_load",
+      "lstm_calendar"
+    ],
+    "units": [
+      128,
+      64
+    ],
+    "dense_units": 64,
+    "dropout": 0.2,
+    "recurrent_dropout": 0.0,
+    "output": "softplus_scaled_load",
+    "prefix_boundaries": [
+      192,
+      608,
+      1024,
+      1440,
+      1856,
+      2016
+    ],
+    "cold_start": "persistence_for_training_indices_96_to_191_only",
+    "selection": "validation_rmse",
+    "window": 96
+  },
+  "train_horizon": "63a9079e884dfaa84cd4494bc7d95b1103cbfe4ea817b0d32d4d7f41cfeecb66",
+  "validation_horizon": "1d0955ec0c78322db213461b94c8bc4a17d38cfb10679a98994ea3200a0ce0c4",
+  "implementation_sha256": "97b60d575b2cbd40da29dd3745bdcd7a6790af269abb09cd0e542c2ead59eb0e",
+  "historical_script_sha256": "19ae4010db673d48c61b6476753805a3f408f3261808af1a3d2f0eec85f62414",
+  "historical_model_sha256": "0a341013c77316566e83b4dc4a29dbb88e1871d1bcee767237fc0df786e5d61e"
+}

@@ -1,0 +1,380 @@
+{
+  "version": "comcom.baselines.v1",
+  "configuration": {
+    "version": "comcom.baselines.v1",
+    "frozen_twin": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+    "profile_domain_mbps": [
+      0.02,
+      400.0
+    ],
+    "profile_grid_step_mbps": 0.25,
+    "root_xtol_mbps": 1e-05,
+    "profile_domain_rationale": "Common three-action measured interpolation lower bound and previously approved training-peak study upper bound; not selected from validation outcomes.",
+    "slices_extended_manual": {
+      "actions": [
+        0,
+        1,
+        2
+      ],
+      "performance_weight": 0.2,
+      "energy_weight": 0.8,
+      "performance_score": "100 times frozen composite QoS; explicit substitution for the paper's different polynomial KPI performance score",
+      "energy_score": "100*(profile_global_max_power-power)/(profile_global_max_power-profile_global_min_power), bounded to [0,100] as specified for this utility only; physical predictions unchanged",
+      "normalization": "Global across all three actions on the fixed profiling grid, computed before workload evaluation",
+      "margin_mbps": 26.0,
+      "tie_break": "Lowest action integer, DPDK then USR1 then USR2",
+      "regions": "Upper envelope of three utilities; refine adjacent winning-action changes by bracketed root finding. Never force a USR2 region or order thresholds.",
+      "hysteresis": "Hold the executed action unless forecast is strictly more than 26 Mbps inside each finite boundary of the winning region; domain endpoints are not crossover boundaries. Jumping across multiple regions is allowed. Overlapping bands retain executed action.",
+      "hold_down": "Shared actuator only: change at t permits next at t+4; no duplicate internal timer",
+      "selection": "No fitted/tuned control parameters, no workload or PPO outcomes used"
+    },
+    "strong_rule_stage4": {
+      "implementation": "revision.stage3.pipeline.RuleController, reused unchanged",
+      "actions": [
+        0,
+        1,
+        2
+      ],
+      "point_qos_target": 0.9,
+      "relative_power_deadband": 0.02,
+      "improved_variant": "Not selected or executed. A reward-aligned one-step proposal is documented separately; no unapproved development selection criterion is invented."
+    },
+    "comcom_historical": {
+      "actions": [
+        0,
+        1
+      ],
+      "performance_weight": 0.3,
+      "energy_weight": 0.7,
+      "utility": "0.3*Q + 0.7*100*(3.58-P_W)/3.58",
+      "max_power_w": 3.58,
+      "tie_break": "DPDK",
+      "active_margin_mbps": 0.0,
+      "documented_plot_margin_mbps": 23.0,
+      "reported_historical_thresholds_mbps": [
+        90.47,
+        87.13
+      ],
+      "canonical_source": "main:scripts/evaluation_baseline-rule.py inline ranking, also present in publication compiler; not RuleBasedSelector.decide",
+      "adaptation": "Replace historical lookup outcomes with exact frozen revision inference. Keep mixed utility scales, binary choices and no hysteresis. Common actuator replaces equivalent loop cooldown, with blocked requests explicitly counted."
+    },
+    "forecasts": "revision/reports/stage4_rng_isolated/forecasts.csv",
+    "policy_selections": "revision/models/stage4_rng_isolated/controllers/{algorithm}/seed_{seed}/selection.json",
+    "algorithms": [
+      "ppo",
+      "recurrent_ppo"
+    ],
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "evaluation_role": "validation",
+    "validation_slots": 504,
+    "final_test_allowed": false,
+    "model_training_allowed": false,
+    "checkpoint_reselection_allowed": false,
+    "development_selection": "No baseline improvement search or training-only tuning performed; three primary definitions frozen before evaluation"
+  },
+  "twin_id": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+  "twin_manifest": {
+    "version": "comcom.revised_twin.v1",
+    "twin_id": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+    "config": {
+      "version": "comcom.revised_twin.v1",
+      "models": {
+        "dpdk_power": {
+          "path": "revision/models/final_dpdk_power/neural_seed_123/manifest.json",
+          "kind": "neural_power",
+          "artifacts": [
+            {
+              "path": "revision/models/final_dpdk_power/neural_seed_123/manifest.json",
+              "sha256": "f8776d3dfa57846ae3da58d98a2c387d38b0f48836cf3be40d63f290057b551c"
+            },
+            {
+              "path": "revision/models/final_dpdk_power/neural_seed_123/model.keras",
+              "sha256": "bbd3283332716c3e7fee6448539c0ce6a022a6d9e90bd3d5a138e6861ad63825"
+            }
+          ],
+          "choice_reason": "Minimum grouped profiling validation RMSE across prespecified constant/affine/PWL/two constrained neural candidates"
+        },
+        "usr_power": {
+          "path": "revision/models/task2c/selected_usr_power.json",
+          "kind": "simple_power",
+          "artifacts": [
+            {
+              "path": "revision/models/task2c/selected_usr_power.json",
+              "sha256": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8"
+            }
+          ],
+          "choice_reason": "Frozen seven-knot fit: continuous nonnegativity and much better low-load accuracy than the Task 2D validation-selected NN; no controller-based selection"
+        },
+        "dpdk_qos": {
+          "path": "revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/manifest.json",
+          "kind": "bounded_qos",
+          "artifacts": [
+            {
+              "path": "revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/manifest.json",
+              "sha256": "76e1e0ea4f086f0e2504164f9d7a4e4cf97f097bc9367d190c7ed39fe8eae759"
+            },
+            {
+              "path": "revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/model.keras",
+              "sha256": "61c0c4d8d8e93955f2f30f15aa64472e4552329d582329775d0afd36ee731091"
+            }
+          ],
+          "choice_reason": "Task 2H validation-selected bounded conditional-mean predictor, not a QoS safety guarantee"
+        },
+        "usr_qos": {
+          "path": "revision/models/task2h/usr/original_hidden_sigmoid_seed_42/manifest.json",
+          "kind": "bounded_qos",
+          "artifacts": [
+            {
+              "path": "revision/models/task2h/usr/original_hidden_sigmoid_seed_42/manifest.json",
+              "sha256": "78dd56a681ccdd264e7a23cdf08b8e0da8b3eb5a8ec24469b0e9047cb1151f7e"
+            },
+            {
+              "path": "revision/models/task2h/usr/original_hidden_sigmoid_seed_42/model.keras",
+              "sha256": "8a29326e9ceb33ac93c9ac50e64fede9bf34f8afa7c6f34a00a6e312921a6eba"
+            }
+          ],
+          "choice_reason": "Task 2H validation-selected bounded conditional-mean predictor, not a QoS safety guarantee"
+        }
+      },
+      "per_instance_domain_mbps": [
+        0.01,
+        5000.0
+      ],
+      "joint_three_action_total_domain_mbps": [
+        0.02,
+        5000.0
+      ],
+      "historical_default_changed": false,
+      "qos_specification": {
+        "path": "revision/specifications/qos_score_v1.json",
+        "sha256": "4a54e006f89f9aab47b3f663e71ff16b9325d237c4a21a4a1541dd298374778a"
+      },
+      "implementations": [
+        {
+          "path": "revision/evaluation/revised_twin.py",
+          "sha256": "8ae9c1d888e246ef4efd7bf10ab5136e9173eb4d78547c9d9b5ea1c37fb03b4d"
+        },
+        {
+          "path": "revision/evaluation/twin.py",
+          "sha256": "6523970c158a5a8d2b6655a1792dcb361a2e73140f36bfb6fd9d2a0e2eb6a891"
+        },
+        {
+          "path": "revision/profiling/neural_qos.py",
+          "sha256": "574441b0074d7afa44a07bb48cf413790abc7d5cbbf853a2451628f38748b84e"
+        },
+        {
+          "path": "revision/profiling/neural_power.py",
+          "sha256": "a8aa63d31408bd59398eb997beaa82877248ebfe6d48f4e0e83770014f2002a1"
+        },
+        {
+          "path": "revision/profiling/power_model.py",
+          "sha256": "5a5d15ba80e8eea0778d4269321094923a548da390aa1534a5f34338ee235a51"
+        }
+      ],
+      "selection_precedes_workload_diagnostics": true,
+      "controller_results_used_for_selection": false,
+      "intended_scope": "exploratory offline model-conditional comparison; no physical/5QI certification"
+    },
+    "pinned_paths_and_hashes": {
+      "/home/ubuntu/EnergyAwareUPF/revision/configs/revised_twin_v1.json": "2debe17debb01f2742030f5565eac97227d8d1bae26c9e9a789e52d6faaf1cc0",
+      "/home/ubuntu/EnergyAwareUPF/revision/specifications/qos_score_v1.json": "4a54e006f89f9aab47b3f663e71ff16b9325d237c4a21a4a1541dd298374778a",
+      "/home/ubuntu/EnergyAwareUPF/revision/evaluation/revised_twin.py": "8ae9c1d888e246ef4efd7bf10ab5136e9173eb4d78547c9d9b5ea1c37fb03b4d",
+      "/home/ubuntu/EnergyAwareUPF/revision/evaluation/twin.py": "6523970c158a5a8d2b6655a1792dcb361a2e73140f36bfb6fd9d2a0e2eb6a891",
+      "/home/ubuntu/EnergyAwareUPF/revision/profiling/neural_qos.py": "574441b0074d7afa44a07bb48cf413790abc7d5cbbf853a2451628f38748b84e",
+      "/home/ubuntu/EnergyAwareUPF/revision/profiling/neural_power.py": "a8aa63d31408bd59398eb997beaa82877248ebfe6d48f4e0e83770014f2002a1",
+      "/home/ubuntu/EnergyAwareUPF/revision/profiling/power_model.py": "5a5d15ba80e8eea0778d4269321094923a548da390aa1534a5f34338ee235a51",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/neural_seed_123/manifest.json": "f8776d3dfa57846ae3da58d98a2c387d38b0f48836cf3be40d63f290057b551c",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/neural_seed_123/model.keras": "bbd3283332716c3e7fee6448539c0ce6a022a6d9e90bd3d5a138e6861ad63825",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2c/selected_usr_power.json": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/manifest.json": "76e1e0ea4f086f0e2504164f9d7a4e4cf97f097bc9367d190c7ed39fe8eae759",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/model.keras": "61c0c4d8d8e93955f2f30f15aa64472e4552329d582329775d0afd36ee731091",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/original_hidden_sigmoid_seed_42/manifest.json": "78dd56a681ccdd264e7a23cdf08b8e0da8b3eb5a8ec24469b0e9047cb1151f7e",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/original_hidden_sigmoid_seed_42/model.keras": "8a29326e9ceb33ac93c9ac50e64fede9bf34f8afa7c6f34a00a6e312921a6eba"
+    },
+    "units": {
+      "power": "process-attributed W",
+      "energy": "W multiplied by slot hours = Wh",
+      "qos": "composite QoS_w score"
+    },
+    "semantics": "balanced equal load; summed power; per-instance QoS unchanged; no transient energy or interference",
+    "legacy_float32_model_load_field": "float32 representation for compatibility; actual transforms are pinned in each model manifest",
+    "inference_profile": "CPU, deterministic, one instance-load per model call; no output clipping",
+    "dependency_versions": {
+      "numpy": "2.4.2",
+      "tensorflow": "2.20.0",
+      "keras": "3.13.2",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0"
+    },
+    "default_historical_twin_changed": false,
+    "operational_safety_guarantee": false
+  },
+  "normalization_min_power_w": 0.0002677603302985089,
+  "normalization_max_power_w": 3.4332560492964608,
+  "slices_regions": [
+    {
+      "left": 0.02,
+      "right": 15.781867362113358,
+      "action": 1
+    },
+    {
+      "left": 15.781867362113358,
+      "right": 87.37003738279041,
+      "action": 2
+    },
+    {
+      "left": 87.37003738279041,
+      "right": 400.0,
+      "action": 0
+    }
+  ],
+  "comcom_utility_regions": [
+    {
+      "left": 0.02,
+      "right": 89.11195633363653,
+      "action": 1
+    },
+    {
+      "left": 89.11195633363653,
+      "right": 400.0,
+      "action": 0
+    }
+  ],
+  "profiling_grid_points": 1601,
+  "profiling_grid_sha256": "b021ff1b5400cc31be2ac61ed43c1501c824ac3992a139229a2380fd0c729277",
+  "construction_uses_workload_outcomes": false,
+  "validation_used_for_rule_selection": false,
+  "improved_strong_rule_selected": false,
+  "existing_policy_selections": {
+    "ppo_42": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/selection.json",
+      "selection_sha256": "73f987e5cb5486e478b8a7635f4de331c9ce54d7d9cc9cf2d4a1b63f29076266",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304/bundle.json": "4d13ddfde41991c5835692559c3e8a0e9aa0f7cfa242d208c966e416a20297a3",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304/policy.zip": "4cf7d202805ecc1d8d64fcc0ff734d1e2df90f86f5ea174b91f5d6229155437e",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304/normalizer.pkl": "be19c2b3872ee0e7e959182d1a32e22ed7561d562dd6a88d4a3ad70f62c6dab2"
+      }
+    },
+    "ppo_123": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/selection.json",
+      "selection_sha256": "0143ebf0d507582ffed0f5e447c3a19727ea9e15652e74e9abc1f1d6d68d878b",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608/bundle.json": "fd8be630c15a6077e1d0896615fd4d8b67f0962fa968b57bd1090da2890d8789",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608/policy.zip": "c681bf3446e8174798357dfb97e5d13e5c69d255b54003d87b700ecc7446ab70",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608/normalizer.pkl": "a65327fcb12e4a0a8316773e7c8cd92bb6991c1b4f78ae0601d4b8f10c577dd1"
+      }
+    },
+    "ppo_456": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/selection.json",
+      "selection_sha256": "37f54beefb04205898e0d3c785d329d2ff7febf0210e63d05e1c5de093c44d2b",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576/bundle.json": "096eb597a194aea7993d322378e9d6b2b51911ecf236a2ff3630c1f9fb6d9452",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576/policy.zip": "48878982f06752b90197f842e8261f698b9c1132dc7254974102595e9f56cac5",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576/normalizer.pkl": "56377aba8dbe7f59dd5f10bf5407ebda9715d527fac153ae45ffaaddde82f30b"
+      }
+    },
+    "ppo_789": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/selection.json",
+      "selection_sha256": "64d753b05734ae65af5ed13f4c33c2bb2f47383affd42e7e41a4d0af12a5ffa5",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576/bundle.json": "80fec136b8c928f8b927c4065807f76844fa7591889da018eb263a8260f09448",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576/policy.zip": "c0cea3fb91c4fc8f243a56dc74bf7f721e6e1faaa3c85b20f4ad2d70c5fe625d",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576/normalizer.pkl": "5cb010a8f716fe417c5e6d084315ab580c4de38b343649f5ce0234abd65d1eb2"
+      }
+    },
+    "ppo_1024": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/selection.json",
+      "selection_sha256": "8518b089faad78136a5816dead685567dda1978829cb11377bc46e1e8ebc17db",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768/bundle.json": "f3124247e03f485562382c6dba7b57f1425f9d48d2c4505d733f345187b97803",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768/policy.zip": "7c6fa4c69feb9e6e5b49343b60bb8ad007e6039a0d70eb2a70a4da2f256c66b8",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768/normalizer.pkl": "42803f2b60cbca26bf9bc851057f21bc4853bd9b9c60e65f4dcb0400581c839e"
+      }
+    },
+    "recurrent_ppo_42": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/selection.json",
+      "selection_sha256": "2aec5a9248545a54cddfe8620ee36c6b9fa6f1a035dec78eaed3fbee93537e8a",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912/bundle.json": "e63d25293ca5c102e3eab7f78b1275a6fcefc9097340b94558b8494ebf285ac6",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912/policy.zip": "c8da81012e73388b724cbd9012630a69b6843d67a0564639e1bfaa8d04ebb277",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912/normalizer.pkl": "210ffd12db9e795e21fa0180dde244a81c3f52bf290c90dbe0d019b28f9963f8"
+      }
+    },
+    "recurrent_ppo_123": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/selection.json",
+      "selection_sha256": "e1d8b177c592bdc6289a18c4cec70d4afcd22ecc2f6954f77217cae82e8e9f23",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000/bundle.json": "fe788ddb067fac290fd8555e683e4317b312388b2dd556daf25b11e4e99b7cab",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000/policy.zip": "5584e1b421090d8f1b7292c3b04587f7380e0c8a0974d0ec3dbcd67f2b40d883",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000/normalizer.pkl": "1096d3df2cd0eb3fdadea824418981b7b34448e607b10015a18cdbf118c53cea"
+      }
+    },
+    "recurrent_ppo_456": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/selection.json",
+      "selection_sha256": "d424ddad0563bc3c2c3667b9b9dcc37d1330155578588f954649db2e4046d4ce",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576/bundle.json": "418992195e207a18fa3414e8bdd1ae3dc9c6900a9e6ca97724b67f9727ff24de",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576/policy.zip": "c5cfa5f5222f79892efca350cf3b7646a9e92ea51771c93ea0dd331066f43653",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576/normalizer.pkl": "679ec6f48d3c24c78081b7231146675abb2b0f5dfd7655a2806c0f0d2bc6ac82"
+      }
+    },
+    "recurrent_ppo_789": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/selection.json",
+      "selection_sha256": "5f30428353ec84cf5ff0d4e80652801b69c8f57bba63fedfeb76f41306de65a0",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336/bundle.json": "c159ad44aca22d2292376bee31498f4ca086f3ee71b8efeb6d045931e6447539",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336/policy.zip": "9ec8f5f6d50cd6c7a6cfc4958f30bb7b10b699acb4afd5fe4d8599e6d8762506",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336/normalizer.pkl": "4d90e487be30ed968c2c7f82723ab95c6c1d1df5d79bc976ed47f9929b3f76aa"
+      }
+    },
+    "recurrent_ppo_1024": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/selection.json",
+      "selection_sha256": "0b15d010fbe7fca634b507bd9b7ba4ae2efb7cf6d86ace0b7eefe6472a3b0ed5",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184/bundle.json": "38901195744dbddd07b89f3b30feb30008bb9686834176a6eec67eea3f7bd66c",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184/policy.zip": "a021ed066303ef85673e5e983520919e50d8b6dd8b9b5f05f6f6206e312ba782",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184/normalizer.pkl": "6b24f89a8d3eb28c0c130b1b3ceebc2233afe8dad907f9504026a3ec7999e338"
+      }
+    }
+  },
+  "source_hashes": {
+    "revision/stage5/protocol.json": "96b032e670f342d70573a212c77df4029265d2be18fb7dc2ac0e4a031be3bf43",
+    "revision/stage5/plots.py": "24173778b1b39b6b6bfc0d12d456b947d0ad7fb65542149c3bfc1f229a4a6d3c",
+    "revision/stage5/baselines.py": "bc28d8cda4e5720bbe7fa4b304783fcd8e42b94ef32dedeba16dce9e4c93f5d5",
+    "revision/stage5/freeze.py": "4919bbd5dcca3b21662feeb1b256f0a2be2381e31af80c75b4e79c655eaff244",
+    "revision/stage5/evaluate.py": "7e184531ba6a8025240be0e2015b8fdb737c9dddaa7e126d0f2bff5f0afa59d9",
+    "revision/stage5/__init__.py": "27cb6f9c3064c876dadd142cb24d3650e9c4c2eb5852a92a574cd983b46507ca",
+    "revision/reports/stage4_rng_isolated/forecasts.csv": "f8092889f30879176b9814ddc7fc4a0dcdc6c61cf5e9eea27437d462a9a12178",
+    "revision/stage3/pipeline.py": "5666633f659b6d397e20a2a84f49d251a4a2aaf96b5c824ed9d997dec23b6d2b",
+    "revision/stage3/protocol.json": "d9fecbe62616b2ed743ea2dda2a4e69daac8bd99dcb03d725b8925bed52cbfeb",
+    "revision/stage4/train.py": "36ce8a863300278b1e101dab0efd15400c83baaec8828dea8e5affe8d6a1c397",
+    "revision/evaluation/contract.py": "608378645c801db135ca3de9bbeb6b3fe1a37daa107818a1412fb92108c3132e",
+    "revision/reports/stage5/sources/main_evaluation_baseline-rule.py": "7ac600bbf329aac5e9000d41a665c5bf779abd01a95ad8414e6f9580e1be3dc2",
+    "revision/reports/stage5/sources/main_manuscript_energyawareupf.tex": "848d907f645476ee0500f48e8a3c8afcd327a67c6c2c406cb4142a5154500c9d",
+    "revision/reports/stage5/sources/main_config.yaml": "474c5c212c4166f30f003a183f4cc09f98eaf8187b87345cf6e70172f8985206",
+    "revision/reports/stage5/sources/main_baseline_rule.py": "ce360ad2c11c4861c5a78b51436d4fe8b29cd35651027f2ff44fe073b2e748cc",
+    "revision/reports/stage5/sources/Dynamic_UPF_IFIP_2025.pdf": "8bd93dbfaa6106abbe5770a255bd51d050dafcbd60dc21d33f7322361dd61da0",
+    "revision/reports/stage5/sources/slices_published.txt": "8e820fbc7fe41e69cb20148e8dd01033c8fc08f763df8c12c4eacb85440c6a2b",
+    "revision/reports/stage5/sources/main_compile_baselines_table.py": "cbde2e71c824e68ee2f0cae4f72cdb6376326f363a46938117f2e8cb63fc9c0a"
+  },
+  "git_head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "main_head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "paper_url": "https://networking.ifip.org/2025/images/Net25_papers/1571142002.pdf",
+  "root_precision_note": "Finite .25 Mbps scan, bracket refinement to 1e-5 Mbps; not proof that narrower unsampled regions are absent"
+}

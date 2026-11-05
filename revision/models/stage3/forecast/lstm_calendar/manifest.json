@@ -1,0 +1,100 @@
+{
+  "fit_source_rows_half_open": [
+    0,
+    2016
+  ],
+  "target_rows_half_open": [
+    96,
+    2016
+  ],
+  "last_training_timestamp": "2019-04-21T23:45:00",
+  "scale_training_max_mbps": 400.0,
+  "calendar": true,
+  "history": [
+    {
+      "epoch": 1,
+      "training_mse_scaled": 0.05670766569674015
+    },
+    {
+      "epoch": 2,
+      "training_mse_scaled": 0.025011919314662616
+    },
+    {
+      "epoch": 3,
+      "training_mse_scaled": 0.021414370959003767
+    },
+    {
+      "epoch": 4,
+      "training_mse_scaled": 0.01985310222953558
+    },
+    {
+      "epoch": 5,
+      "training_mse_scaled": 0.01844967088351647
+    },
+    {
+      "epoch": 6,
+      "training_mse_scaled": 0.017687810709079106
+    },
+    {
+      "epoch": 7,
+      "training_mse_scaled": 0.016490431688725948
+    },
+    {
+      "epoch": 8,
+      "training_mse_scaled": 0.015743659685055415
+    }
+  ],
+  "model_sha256": "d3a12ec72fb5fb8d7453e00d348d62dd5f52579853f1bc22628f2cc012af213a",
+  "protocol_sha256": "d9fecbe62616b2ed743ea2dda2a4e69daac8bd99dcb03d725b8925bed52cbfeb",
+  "code_sha256": "97b60d575b2cbd40da29dd3745bdcd7a6790af269abb09cd0e542c2ead59eb0e",
+  "runtime": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "dependencies": {
+      "numpy": "2.4.2",
+      "tensorflow": "2.20.0",
+      "keras": "3.13.2",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3",
+      "h5py": "3.15.1"
+    },
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "TF_ENABLE_ONEDNN_OPTS": "0",
+      "TF_DETERMINISTIC_OPS": "1",
+      "TF_NUM_INTEROP_THREADS": "1",
+      "TF_NUM_INTRAOP_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "TF_CPP_MIN_LOG_LEVEL": "2"
+    },
+    "tensorflow_build": {
+      "cpu_compiler": "clang 18",
+      "cuda_compute_capabilities": [
+        "sm_60",
+        "sm_70",
+        "sm_80",
+        "sm_89",
+        "compute_90"
+      ],
+      "cuda_version": "12.5.1",
+      "cudnn_version": "9",
+      "is_cuda_build": true,
+      "is_rocm_build": false,
+      "is_tensorrt_build": false
+    },
+    "visible_devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ],
+    "intra_op_threads": 1,
+    "inter_op_threads": 1,
+    "tensor_float_32_enabled": false,
+    "model_call": "model(one_float32_sample, training=False); compile=False on load",
+    "batch_policy": "one sample per forward pass, independent of caller batching",
+    "input_pipeline": "float32(load/k) -> float32 log1p -> saved input scaler",
+    "output_pipeline": "float32 model output -> saved target inverse scaler; no clipping",
+    "serialized_tensorflow_version": null,
+    "serialized_tensorflow_version_note": "Not recorded in the .keras metadata; not inferred from Keras version"
+  },
+  "seed": 42,
+  "uses_validation_labels": false
+}

@@ -1,0 +1,30 @@
+{"status": "started", "family": "lstm", "fit_stop": 672, "role": "development"}
+{"status": "completed", "family": "lstm", "fit_stop": 672, "role": "development", "manifest_sha256": "a959e96eadd1da629c9154b949ddddad206bf851a3fee7c0381198d41fda59ac"}
+{"status": "started", "family": "gru", "fit_stop": 672, "role": "development"}
+{"status": "completed", "family": "gru", "fit_stop": 672, "role": "development", "manifest_sha256": "e16f9dc0b4c9e3edd5c2367d4b73f73299b7b8550ebdd5a5b4a9b3f5a3088bd1"}
+{"status": "started", "family": "boosted_poisson", "fit_stop": 672, "role": "development"}
+{"status": "completed", "family": "boosted_poisson", "fit_stop": 672, "role": "development", "manifest_sha256": "fdbdee55a91b320a33b26b087ba7179b7c8842b5faca00b35f2617a1118ec14f"}
+{"status": "started", "family": "lstm", "fit_stop": 1008, "role": "development"}
+{"status": "completed", "family": "lstm", "fit_stop": 1008, "role": "development", "manifest_sha256": "70b242cba199a8fa16354a8d92d40232568716e89ebe0b92056446a28780d131"}
+{"status": "started", "family": "gru", "fit_stop": 1008, "role": "development"}
+{"status": "completed", "family": "gru", "fit_stop": 1008, "role": "development", "manifest_sha256": "26c7c63feef3a0a3add4aa089056faf235abbc8cd39d58818e0194b6c5c93486"}
+{"status": "started", "family": "boosted_poisson", "fit_stop": 1008, "role": "development"}
+{"status": "completed", "family": "boosted_poisson", "fit_stop": 1008, "role": "development", "manifest_sha256": "272facbf2520c6d6a2c4fff65448b13bca72b4f83431f4548d9dc9b4d02e3990"}
+{"status": "started", "family": "lstm", "fit_stop": 1344, "role": "development"}
+{"status": "completed", "family": "lstm", "fit_stop": 1344, "role": "development", "manifest_sha256": "507a0ce28a931e79bacaf31f8b943e4030dd934939971664c2f152bb813a695c"}
+{"status": "started", "family": "gru", "fit_stop": 1344, "role": "development"}
+{"status": "completed", "family": "gru", "fit_stop": 1344, "role": "development", "manifest_sha256": "cb7e0abf3b620bcb2ef234f8d3f4a6023d3654f2d9ae1a4078adfe9231ea4ecb"}
+{"status": "started", "family": "boosted_poisson", "fit_stop": 1344, "role": "development"}
+{"status": "completed", "family": "boosted_poisson", "fit_stop": 1344, "role": "development", "manifest_sha256": "f63f55d109f142fa50f2e9a484c8c64aa5cb6dbc5b064418f3b8d681174de327"}
+{"status": "started", "family": "lstm", "fit_stop": 1680, "role": "calibration"}
+{"status": "completed", "family": "lstm", "fit_stop": 1680, "role": "calibration", "manifest_sha256": "7a471132141c8548dafd3cdca7b44cb0792a98bc26980631db729bcbb510c3e5"}
+{"status": "started", "family": "gru", "fit_stop": 1680, "role": "calibration"}
+{"status": "completed", "family": "gru", "fit_stop": 1680, "role": "calibration", "manifest_sha256": "10f48ad9b8ca00320286cc44eafc08b4f11869001d329a1eafc3383c7d4cad26"}
+{"status": "started", "family": "boosted_poisson", "fit_stop": 1680, "role": "calibration"}
+{"status": "completed", "family": "boosted_poisson", "fit_stop": 1680, "role": "calibration", "manifest_sha256": "fab8907b84c0e01a6a805a16f887d5bf1065916951d21051e9bdf1a55aa4f7fb"}
+{"status": "started", "family": "lstm", "fit_stop": 2016, "role": "full_training_prefix"}
+{"status": "completed", "family": "lstm", "fit_stop": 2016, "role": "full_training_prefix", "manifest_sha256": "e9b23783fafe1ae72e2054ad77b1eddd00412c39cb7aa4b6a92e3d559048b948"}
+{"status": "started", "family": "gru", "fit_stop": 2016, "role": "full_training_prefix"}
+{"status": "completed", "family": "gru", "fit_stop": 2016, "role": "full_training_prefix", "manifest_sha256": "e5e2282e02c5555de0143fa5a43c55df69492791d16dd8f7fdcecee7f10df086"}
+{"status": "started", "family": "boosted_poisson", "fit_stop": 2016, "role": "full_training_prefix"}
+{"status": "completed", "family": "boosted_poisson", "fit_stop": 2016, "role": "full_training_prefix", "manifest_sha256": "cf43b491f42568fe60cd33fc959905cbe1d6eef27ae112a174cfcfadcdfbaade"}

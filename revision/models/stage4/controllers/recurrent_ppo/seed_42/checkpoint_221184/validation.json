@@ -1,0 +1,41 @@
+{
+  "timesteps": 221184,
+  "checkpoint": "revision/models/stage4/controllers/recurrent_ppo/seed_42/checkpoint_221184",
+  "total_reward": -324.35537740055145,
+  "metrics": {
+    "slots": 504,
+    "energy_wh": 89.10139728189598,
+    "offered_mbit": 59967048.66263901,
+    "mean_sec_j_per_mbit": 0.006427586853185545,
+    "aggregate_sec_j_per_mbit": 0.00534902146042532,
+    "qos_violation_rate": 0.0,
+    "mean_qos_shortfall": 0.0,
+    "total_reward": -324.35537740055145,
+    "discounted_return": -121.20928964014209,
+    "type_switches": 13,
+    "scale_up_events": 4,
+    "scale_down_events": 7,
+    "reconfigurations": 24,
+    "usr_instances_launched": 17,
+    "blocked_requests": 39,
+    "action_counts": [
+      344,
+      40,
+      120
+    ],
+    "requested_action_counts": [
+      349,
+      45,
+      110
+    ],
+    "min_predicted_qos": 0.9078869819641113,
+    "mean_predicted_qos": 0.965974839315528,
+    "violation_shortfall_mean_conditional": null,
+    "violation_shortfall_max": 0.0,
+    "energy_reward_magnitude": 323.9503774005514,
+    "qos_reward_magnitude": 0.0,
+    "orchestration_reward_magnitude": 0.40499999999999997,
+    "horizon_identity": "1d0955ec0c78322db213461b94c8bc4a17d38cfb10679a98994ea3200a0ce0c4"
+  },
+  "normalizer_updated_by_validation": false
+}

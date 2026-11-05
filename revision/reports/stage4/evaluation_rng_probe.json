@@ -1,0 +1,7 @@
+{
+  "saved_model_load_changes_python_rng": true,
+  "saved_model_load_changes_numpy_rng": true,
+  "saved_model_load_changes_torch_rng": true,
+  "cause": "SB3 load calls _setup_model -> set_random_seed and constructs policy layers; checkpoint evaluation therefore perturbs training RNG without an isolation context",
+  "initial_runs_preserved": true
+}

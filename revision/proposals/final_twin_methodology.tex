@@ -1,0 +1,106 @@
+% Proposed revision text only. Not included in the manuscript automatically.
+\paragraph{Revised digital twin and profiling validation.}
+We model process-attributed power and a dimensionless composite QoS score as
+functions of the recorded offered load. The revised twin comprises three neural
+networks and one nonnegative piecewise-linear regression. DPDK power uses a
+16-unit ReLU hidden layer and a softplus output in watts. The two QoS networks
+retain the original 64/32/16-unit hidden architecture, with a sigmoid output in
+the original score units. USR power uses linear interpolation between seven
+nonnegative fitted knot powers. This replaces the historical unconstrained USR
+power network, which produced negative predictions at measured-range loads.
+All original artifacts are retained for historical comparison.
+
+Complete profiling sweeps 1--3 are used for parameter learning and input-scaler
+fitting, sweep 4 for checkpoint and candidate selection, and sweep 5 for
+internal evaluation. No sweep is divided between these roles. The five sweeps
+come from the same campaign for each implementation and have been inspected
+previously; the internal evaluation is therefore neither a new physical campaign
+nor a fully blind confirmatory test. Model choices are frozen before workload
+diagnostics and do not use controller outcomes. The USR power choice additionally
+reflects the substantially smaller low-load errors of the preserved regression
+relative to the constrained neural alternative; this is a documented scientific
+tradeoff, not a prespecified equivalence test.
+
+\paragraph{Recovered composite score.}
+The experiments used four components, including received throughput. The earlier
+three-component description was a reporting discrepancy; the historical labels
+are preserved. Define $\operatorname{clip}_{[a,b]}(x)=\min(b,\max(a,x))$.
+For recorded offered load $L$ in Mbit/s, DN-side received throughput $R$ in
+Mbit/s, stored downlink delay $d$ in milliseconds, RAN jitter $j$ in microseconds,
+and stored interval packet-loss fraction $\ell$, the score is
+\begin{align}
+ T &= \operatorname{clip}_{[0,1]}\!\left(\frac{R}{L+10^{-9}}\right), &
+ D &= 1-\frac{\operatorname{clip}_{[0,40]}(d)}{40},\\
+ J &= 1-\frac{\operatorname{clip}_{[0,10]}(j)}{10}, &
+ B &= 1-\frac{\operatorname{clip}_{[0,5]}(100\ell)}{5},\\
+ Q &= 0.40T+0.20D+0.20J+0.20B.
+\end{align}
+The mappings are respectively \texttt{DN\_Rx\_Mbits/s},
+\texttt{Objective Throughput (DL/UL)}, \texttt{downlink\_delay\_ms},
+\texttt{RAN\_jitter}, and \texttt{RAN\_PLR\_interval}.
+The value $Q\geq0.90$ is a composite optimization target. It does not establish
+formal 5QI compliance, full throughput delivery, or a per-packet delay guarantee.
+The original received-traffic direction and loss-denominator construction retain
+the qualifications stated below; no new physical interpretation is inferred
+merely from numerical reproduction of the labels.
+
+\paragraph{Actions, outcomes and units.}
+The available actions are DPDK, USR(1), and USR(2). For USR with $k$ instances,
+we query the USR surrogates at $L/k$, set total attributed power to $kP(L/k)$,
+and retain the per-instance score $Q(L/k)$. This is a balanced-load approximation,
+without measured multi-instance interference or imbalance. The fitted
+interpolation domain is 0.01--5,000 Mbit/s per instance; unmeasured zero load
+and out-of-domain inputs are rejected. All three actions share a total-load
+domain of 0.02--5,000 Mbit/s, which contains every audited training/validation
+workload input. Nonnegative power and bounded QoS follow from the output
+parameterizations, without post-hoc prediction clipping. These constraints do
+not establish accuracy between measured load levels.
+
+For quarter-hour intervals, modeled energy is
+$E=\sum_t P_t\times0.25$ Wh. Slot-specific power divided by offered load has
+units W/(Mbit/s), equivalently J/Mbit. Its arithmetic mean differs from aggregate
+energy per offered Mbit. Reconfiguration penalties are reward preferences and
+are not added to energy as measured startup electricity. Decisions at interval
+start may use only previously completed telemetry and causal forecasts; the
+realized interval load is used to score the resulting action afterwards.
+
+\paragraph{Limitations and scope of controller comparisons.}
+Power targets are Scaphandre process-attributed estimates, not whole-server
+electrical measurements. DPDK targets numerically match the sum of the catalogued
+process exports, while USR targets match individual process exports. The exact
+historical joins, metering uncertainty and idle behavior are not authenticated.
+The offered-load objective is labelled per direction; its mapping to aggregate
+workload traffic and the physical DN/RAN flow direction are not fully established.
+The loss numerator is supported by counter differences, but the interval-loss
+denominator and reset/aggregation handling remain unresolved.
+
+QoS networks estimate a conditional point value from offered load. Severe
+measured outcomes below 0.90 remain among their predicted-safe observations.
+Most DPDK score variation occurs between measurements at identical load, so
+larger load-only networks cannot be assumed to recover the omitted state.
+Empirical sweep tails and residual sensitivity scenarios are descriptive; they
+are not calibrated operational probabilities, confidence intervals or safety
+guards. The fixed packet size, exposed same-campaign samples and balanced
+USR(2) approximation limit physical generalization. Controller experiments using
+this twin compare algorithms conditional on these models and assumptions. They
+cannot establish deployed QoS guarantees, service-continuous switching or
+whole-server energy savings.
+
+% Suggested table caption:
+% Grouped profiling prediction errors of the four frozen revision surrogates.
+% V denotes sweep 4; T denotes the exposed same-campaign internal sweep 5.
+% Power errors are watts per instance; QoS errors are dimensionless composite
+% score units. Bias is prediction minus measurement. These are descriptive
+% within-campaign estimates, not independent physical certification.
+%
+% Suggested figure captions:
+% (1) Predictions versus profiling measurements, separately for validation and
+% internal evaluation. The diagonal indicates equality; overlap hides repeated
+% observations at identical load.
+% (2) Mean residual and empirical 5th--95th residual percentiles by offered load.
+% Shading describes correlated measurements and is not a confidence interval.
+% (3) Empirical below-target fractions and lower score tails across five complete
+% sweeps. These are observed same-campaign frequencies, not calibrated future risk.
+% (4) Synthetic-load power rankings under frozen and retained alternative USR
+% power models. Differences are pointwise surrogate sensitivity, not controller
+% energy savings or physical configuration-ranking validation.

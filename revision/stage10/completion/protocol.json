@@ -1,0 +1,143 @@
+{
+  "id": "comcom.stage10.independent_components.v1",
+  "status": "partial_implementation_without_physical_loss_labels",
+  "policy": "revision/stage10/policy_v1.json",
+  "kpi_family": {
+    "name": "RandomForestRegressor",
+    "n_estimators": 64,
+    "max_depth": 6,
+    "min_samples_leaf": 10,
+    "random_state": 42,
+    "n_jobs": 1,
+    "criterion": "squared_error"
+  },
+  "kpi_targets_now": {
+    "delay_ms": {
+      "column": "downlink_delay_ms",
+      "budget": 4.0
+    },
+    "jitter_us": {
+      "column": "RAN_jitter",
+      "budget": 1.0
+    }
+  },
+  "kpi_targets_pending": [
+    "throughput_satisfaction",
+    "physical_loss_fraction"
+  ],
+  "group_split": {
+    "train": [
+      1,
+      2,
+      3
+    ],
+    "validation": [
+      4
+    ],
+    "internal_test": [
+      5
+    ]
+  },
+  "forecast_family": {
+    "name": "HistGradientBoostingRegressor",
+    "loss": "poisson",
+    "max_iter": 100,
+    "max_depth": 3,
+    "max_leaf_nodes": 7,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "forecast_prefixes": [
+    672,
+    1008,
+    1344,
+    1680,
+    2016
+  ],
+  "forecast_cold_start": "persistence through target671",
+  "forecast_information": "96 completed loads plus known decision calendar; prefix-only scaler",
+  "scenarios": {
+    "original": {
+      "kind": "scale",
+      "factor": 1.0
+    },
+    "low": {
+      "kind": "scale",
+      "factor": 0.1
+    },
+    "moderate_overload": {
+      "kind": "scale",
+      "factor": 2.0
+    },
+    "mixed": {
+      "kind": "mixed",
+      "factors": [
+        0.1,
+        1.0,
+        4.0
+      ],
+      "block_slots": 96
+    }
+  },
+  "workload_protocol": {
+    "netflix_train": [
+      96,
+      2016
+    ],
+    "netflix_validation": [
+      2016,
+      2520
+    ],
+    "youtube_validation": [
+      2016,
+      2520
+    ],
+    "youtube_model_fits": 0,
+    "final_test_access": false,
+    "reuse_old_forecast_outputs": false
+  },
+  "controller_protocol_prepared": {
+    "algorithms": [
+      "ppo",
+      "recurrent_ppo"
+    ],
+    "schemas": [
+      "instant",
+      "history",
+      "forecast",
+      "hybrid"
+    ],
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "budget": 300000,
+    "collectors": 4,
+    "one_scenario_per_collector": true,
+    "checkpoint_selection": "Netflix validation total reward summed across the four equal-length scenarios; preserve separate scenario metrics",
+    "scientific_training_gate": "authenticated four-KPI target and validated models; reward energy scale from training; full pipeline preflight before any policy fits"
+  },
+  "dynamics_conventions": {
+    "startup": "sequential USR instance launches, outgoing configuration serves until incoming is ready",
+    "scale_down": "instantaneous removal at decision boundary with immediate balanced redistribution; declared unmeasured assumption",
+    "drain_seconds": 0.0,
+    "idle_w": {
+      "dpdk": 0.82,
+      "usr": 0.015
+    },
+    "idle_status": "thesis values used only as explicitly portable modeling parameters, not COMCOM idle measurements"
+  },
+  "reward_formula_prepared": "-(E_Wh/Emax_train + 3*strict_violation + severity/(1+severity) + .01*executed_change); energy scale remains unset until complete authenticated training outcomes exist",
+  "no_model_selection": true,
+  "scientific_fits": {
+    "kpi": 4,
+    "forecast": 20
+  },
+  "no_controller_fits": true
+}

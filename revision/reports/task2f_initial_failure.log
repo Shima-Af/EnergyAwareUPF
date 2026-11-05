@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/reconstruct_qos.py", line 273, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/reconstruct_qos.py", line 270, in main
+    run(args.output_dir)
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/reconstruct_qos.py", line 144, in run
+    item['image_path']=str(path.relative_to(ROOT))
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'revision/reports/task2f/notebook_outputs/cell_5_output_0.png' is not in the subpath of '/home/ubuntu/EnergyAwareUPF'

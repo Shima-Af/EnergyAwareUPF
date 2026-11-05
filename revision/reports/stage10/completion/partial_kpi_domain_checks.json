@@ -1,0 +1,50 @@
+[
+  {
+    "mode": "dpdk",
+    "target": "delay_ms",
+    "n": 3000,
+    "min": 0.013558700740337111,
+    "max": 24.329575551231294,
+    "finite_nonnegative": true
+  },
+  {
+    "mode": "dpdk",
+    "target": "jitter_us",
+    "n": 3000,
+    "min": 0.25240994814141854,
+    "max": 8.220790539425144,
+    "finite_nonnegative": true
+  },
+  {
+    "mode": "dpdk",
+    "target": "throughput_fraction",
+    "n": 3000,
+    "min": 0.9271573201801069,
+    "max": 0.9767060252100108,
+    "finite_nonnegative": true
+  },
+  {
+    "mode": "usr",
+    "target": "delay_ms",
+    "n": 3000,
+    "min": 0.04910429870424564,
+    "max": 2878.45050009957,
+    "finite_nonnegative": true
+  },
+  {
+    "mode": "usr",
+    "target": "jitter_us",
+    "n": 3000,
+    "min": 3.7519471642939655,
+    "max": 13596.007942249164,
+    "finite_nonnegative": true
+  },
+  {
+    "mode": "usr",
+    "target": "throughput_fraction",
+    "n": 3000,
+    "min": 0.43205080763105,
+    "max": 0.9731495324035686,
+    "finite_nonnegative": true
+  }
+]

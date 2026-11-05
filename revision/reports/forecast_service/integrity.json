@@ -1,0 +1,35 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "tracked_changes": "",
+  "prior_scientific_files_checked": 2063,
+  "prior_changed_files": [],
+  "preservation_snapshot_sha256": "9c0fcb628d12d4df718eed46c4140826cbedcd48005f53c55f29a3ef6a9221f5",
+  "forecast_artifact_fits_started": 30,
+  "forecast_artifact_fits_completed": 30,
+  "neural_training_stages": 40,
+  "boosted_fits": 10,
+  "rl_training": false,
+  "controller_or_baseline_replay": false,
+  "baseline_or_twin_or_reward_change": false,
+  "real_final_test_rows_parsed": 0,
+  "manuscript_changes": false,
+  "commit_or_push": false,
+  "all_families_retained": true,
+  "test_result": "81 passed in5.31s; no model optimization in tests",
+  "tests_sha256": "4a7a7911e581cb1f20941207cea9f1522db0e4cdc21b8798ea73fffc35e5846f",
+  "selected_services": {
+    "netflix": {
+      "family": "boosted_poisson",
+      "manifest_sha256": "cf43b491f42568fe60cd33fc959905cbe1d6eef27ae112a174cfcfadcdfbaade",
+      "selection_sha256": "56671948b0f6e6144aa5ee1078276e743ab5be488ecb3ddcd1b445abdc750fb5",
+      "service_sha256": "2d681c0328a782cbb6f5838a1791108fae229ff22fd78ad3246da08b2929f2c6"
+    },
+    "youtube": {
+      "family": "boosted_poisson",
+      "manifest_sha256": "8c63cd0b674cce10e90803f417281c23045e78f1f4f477c044a5ee77b160ee99",
+      "selection_sha256": "c108375d753e5dde63e18e781f1b281a356f06478386d7adafeff57a901756f9",
+      "service_sha256": "394556f2f20cf8fedad3ef9865d1fd1e877f8bac2af57d6c5bd81d546165271b"
+    }
+  }
+}

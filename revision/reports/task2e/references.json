@@ -1,0 +1,13 @@
+{
+  "purpose": "Primary-source context for proposed grouped validation and uncertainty; no external source used as evidence of this repository model accuracy",
+  "sources": [
+    {
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+      "claim": "Correlated observations require group-aware evaluation"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v238/plassier24a.html",
+      "claim": "Standard conformal prediction relies on exchangeability; heterogeneity complicates guarantees"
+    }
+  ]
+}

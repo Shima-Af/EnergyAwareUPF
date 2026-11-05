@@ -1,0 +1,8 @@
+COMCOM Task 1 focused tests — 2026-10-22
+Branch: revision/comcom-clean-evaluation
+Base commit: c0734715418d3f6d10785e5174aebb4bac24d0da
+Command: .venv/bin/python -m pytest revision/tests -q -p no:cacheprovider
+Exit code: 0
+
+..................................................................       [100%]
+66 passed in 0.17s

@@ -1,0 +1,19 @@
+{
+  "prior_scientific_files_checked": 2000,
+  "preservation_failures": [],
+  "preservation_snapshot_sha256": "6873f0a58a9dbd814f9ddd9769ad233240d3957b4d06a55cc4a90c7a78e2716b",
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "tracked_changes": "",
+  "baseline_definition_sha256": "7b4701ab7792d8c0126221b064cbbe6d752b9c66354657da8a9e91bac08d316f",
+  "twin_identity": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+  "selected_policy_bundles_unchanged": true,
+  "uploaded_reference_sha256": "e26ef6eebf3ad96ba01f8bac619f69c96da2dc9bbc1b44ff76586ea6c0ef50ea",
+  "scientific_or_fixture_neural_rl_training_performed": false,
+  "default_twin_changed": false,
+  "new_controller_comparisons": 16,
+  "tests_log_sha256": "43c1827b03a174bb8701a22093c2fc71aea831040c5ee6bf866e7a1fddaba405",
+  "test_result": "272 passed, 3 training-fixture cases deselected",
+  "final_test_evaluation": false,
+  "commit_or_push": false
+}

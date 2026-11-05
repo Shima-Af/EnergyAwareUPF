@@ -1,0 +1,18 @@
+2026-10-23 15:48:36.436241: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+netflix lstm prefix 672 epoch 10 seconds 24.72
+netflix gru prefix 672 epoch 59 seconds 20.82
+netflix boosted_poisson prefix 672 epoch None seconds 0.13
+netflix lstm prefix 1008 epoch 39 seconds 97.99
+netflix gru prefix 1008 epoch 60 seconds 26.95
+netflix boosted_poisson prefix 1008 epoch None seconds 0.17
+netflix lstm prefix 1344 epoch 18 seconds 68.64
+netflix gru prefix 1344 epoch 29 seconds 20.0
+netflix boosted_poisson prefix 1344 epoch None seconds 0.15
+netflix FAMILY FROZEN boosted_poisson {'persistence': {'n': 1008, 'mae_mbps': 15.713092576854027, 'rmse_mbps': 21.807951847481142, 'bias_mbps': 0.08018784485922278, 'r2': 0.9170749437917453}, 'seasonal_daily': {'n': 1008, 'mae_mbps': 27.9312532931518, 'rmse_mbps': 40.17876707835634, 'bias_mbps': 4.284252307620958, 'r2': 0.718518907965938}, 'lstm': {'n': 1008, 'mae_mbps': 30.052274643886385, 'rmse_mbps': 38.82324543930519, 'bias_mbps': 13.8717076849721, 'r2': 0.7371913287258034}, 'gru': {'n': 1008, 'mae_mbps': 22.247202311926532, 'rmse_mbps': 29.361833849757815, 'bias_mbps': 6.91097562988327, 'r2': 0.8496780610213359}, 'boosted_poisson': {'n': 1008, 'mae_mbps': 14.87729741955837, 'rmse_mbps': 19.919237993490828, 'bias_mbps': 1.9931199813512261, 'r2': 0.9308166708776843}}
+netflix lstm prefix 1680 epoch 8 seconds 49.8
+netflix gru prefix 1680 epoch 59 seconds 38.2
+netflix boosted_poisson prefix 1680 epoch None seconds 0.17
+netflix lstm prefix 2016 epoch 3 seconds 37.76
+netflix gru prefix 2016 epoch 57 seconds 44.09
+netflix boosted_poisson prefix 2016 epoch None seconds 0.18
+netflix COMPLETE boosted_poisson {'n': 1920, 'mae_mbps': 15.426802224816553, 'rmse_mbps': 20.794659241404613, 'bias_mbps': 1.5347001986839524, 'r2': 0.9232294317071936} margin 14.268830938789403

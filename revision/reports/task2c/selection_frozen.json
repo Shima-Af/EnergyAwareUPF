@@ -1,0 +1,59 @@
+{
+  "selected_name": "nonnegative_pwl_7",
+  "selected_model_path": "/home/ubuntu/EnergyAwareUPF/revision/models/task2c/selected_usr_power.json",
+  "selected_model_sha256": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8",
+  "validation_scores": {
+    "nonnegative_affine": {
+      "n": 915,
+      "rmse_w": 1.078556523440624,
+      "mae_w": 0.8992876167392945,
+      "bias_w": 0.005635946001309002,
+      "r2": 0.4972771816476792,
+      "low_load_n": 372,
+      "low_load_rmse_w": 0.782680393387469,
+      "low_load_mae_w": 0.7811498632336576,
+      "low_load_bias_w": 0.7811498632336576,
+      "negative_predictions": 0
+    },
+    "nonnegative_pwl_7": {
+      "n": 915,
+      "rmse_w": 0.26646150393167606,
+      "mae_w": 0.07924016744567505,
+      "bias_w": 0.009570891974275231,
+      "r2": 0.9693160174009465,
+      "low_load_n": 372,
+      "low_load_rmse_w": 0.009085997713523631,
+      "low_load_mae_w": 0.005952885524364599,
+      "low_load_bias_w": -0.003069289670699833,
+      "negative_predictions": 0
+    },
+    "nonnegative_pwl_training_levels": {
+      "n": 915,
+      "rmse_w": 0.27091909161950667,
+      "mae_w": 0.08019065765391749,
+      "bias_w": 0.009129480600593086,
+      "r2": 0.9682808164702896,
+      "low_load_n": 372,
+      "low_load_rmse_w": 0.00762567032834156,
+      "low_load_mae_w": 0.0035057051882641057,
+      "low_load_bias_w": -0.0006549021421465943,
+      "negative_predictions": 0
+    }
+  },
+  "objective": "validation_row_rmse_w",
+  "training_sweeps": [
+    1,
+    2,
+    3
+  ],
+  "validation_sweeps": [
+    4
+  ],
+  "internal_test_sweeps": [
+    5
+  ],
+  "internal_test_scored_before_selection": false,
+  "traffic_used_for_selection": false,
+  "refit_on_train_plus_validation": false,
+  "config_sha256": "bfec19aad03ec88dd255013962c8f70b0d90b8ea8d2f8ba69dec17932cae735a"
+}

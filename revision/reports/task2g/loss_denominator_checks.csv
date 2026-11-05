@@ -1,0 +1,17 @@
+mode,side,denominator,numerator,zero_denominator_behavior,output_behavior,rows,comparable_rows,matches_at_1e-10,mae,max_abs_difference
+dpdk,RAN,delta_raw_tx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4593,4544,0.00157632855197841,0.7463688105198247
+dpdk,RAN,delta_raw_tx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4593,4544,0.001861908475608781,0.7976827701731442
+dpdk,RAN,delta_raw_rx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4593,4544,0.00113333178151286,0.710224784355542
+dpdk,RAN,delta_raw_rx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4593,4544,0.0015837620108390634,0.7753289006257832
+dpdk,DN,delta_raw_tx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4564,4564,0.0,0.0
+dpdk,DN,delta_raw_tx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4564,4564,0.0,0.0
+dpdk,DN,delta_raw_rx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4564,4564,0.0,0.0
+dpdk,DN,delta_raw_rx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4594,4564,4564,0.0,0.0
+usr,RAN,delta_raw_tx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4564,3195,0.04215270716941048,0.9992596367412478
+usr,RAN,delta_raw_tx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4564,3180,0.06220832099537914,0.999260184473482
+usr,RAN,delta_raw_rx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4564,3205,0.08637633215142525,0.9998925126297661
+usr,RAN,delta_raw_rx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4564,3180,0.06527744108520195,0.9990605578840873
+usr,DN,delta_raw_tx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4545,3107,0.052686349294560224,0.9999666663888865
+usr,DN,delta_raw_tx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4545,3107,0.07054794596289846,0.9999666674999792
+usr,DN,delta_raw_rx,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4545,3113,0.03776074947181884,0.9997555908590982
+usr,DN,delta_raw_rx_plus_lost,nonnegative casewise delta lost; first row zero,zero,"clip ratio to [0,1]",4564,4545,3107,0.05155750771896169,0.9997556505803299

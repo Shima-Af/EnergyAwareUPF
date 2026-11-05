@@ -1,0 +1,50 @@
+{
+  "selected_family": "boosted_poisson",
+  "selection_cutoff_exclusive": 1680,
+  "selection_cutoff_timestamp": "2019-04-18T12:00:00",
+  "development_half_open": [
+    672,
+    1680
+  ],
+  "development_metrics": {
+    "persistence": {
+      "n": 1008,
+      "mae_mbps": 10.762814854447155,
+      "rmse_mbps": 14.30381339092731,
+      "bias_mbps": 0.02020952848520115,
+      "r2": 0.9516433921369886
+    },
+    "seasonal_daily": {
+      "n": 1008,
+      "mae_mbps": 21.356673924574288,
+      "rmse_mbps": 33.222767771680715,
+      "bias_mbps": 1.1393974826275246,
+      "r2": 0.7391302164287739
+    },
+    "lstm": {
+      "n": 1008,
+      "mae_mbps": 21.83303170010631,
+      "rmse_mbps": 29.280468465479693,
+      "bias_mbps": 7.7451143640178195,
+      "r2": 0.7973679217991826
+    },
+    "gru": {
+      "n": 1008,
+      "mae_mbps": 16.62641271359666,
+      "rmse_mbps": 24.72285245572081,
+      "bias_mbps": 6.818213104898272,
+      "r2": 0.8555394343698617
+    },
+    "boosted_poisson": {
+      "n": 1008,
+      "mae_mbps": 10.159851579262583,
+      "rmse_mbps": 14.191888112923953,
+      "bias_mbps": 1.7971054300120635,
+      "r2": 0.9523971983133663
+    }
+  },
+  "calibration_results_seen": false,
+  "external_validation_seen": false,
+  "tie_break": "persistence, seasonal_daily, boosted_poisson, gru, lstm",
+  "no_search_expansion": true
+}

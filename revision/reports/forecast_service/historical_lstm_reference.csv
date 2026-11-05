@@ -1,0 +1,3 @@
+workload,reference,role,workload_specific_training,n,mae_mbps,rmse_mbps,bias_mbps,r2
+netflix,"old Stage4 Netflix-trained, validation-selected calendar LSTM",secondary_validation_descriptive_only,True,504,20.506870539163533,25.690383914959238,7.062607810452368,0.8802202950772433
+youtube,"old Stage4 Netflix-trained, validation-selected calendar LSTM",secondary_validation_descriptive_only,False,504,26.871425170763445,34.27589539160706,10.989490925908314,0.6826940833039072

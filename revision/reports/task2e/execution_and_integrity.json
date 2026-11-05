@@ -1,0 +1,23 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "prior_revision_files_checked": 145,
+  "prior_revision_files_changed": [],
+  "original_profiling_artifacts_verified": 12,
+  "all_recorded_input_hashes_verified": true,
+  "representative_raw_export_hashes_verified": true,
+  "tracked_and_staged_changes": [],
+  "profiling_model_fits": 0,
+  "power_searches": 0,
+  "rl_training": false,
+  "default_twin_changed": false,
+  "traffic_data_read": false,
+  "commit_or_push": false,
+  "tests": "11 passed in 0.90s; new diagnostic tests only",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.qos_reliability --output-dir revision/reports/task2e",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.qos_label_checks",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest revision/tests/test_qos_reliability.py -q -p no:cacheprovider",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.plot_qos_reliability"
+  ]
+}

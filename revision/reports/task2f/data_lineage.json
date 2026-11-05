@@ -1,0 +1,350 @@
+{
+  "exact_file_search_roots": [
+    "/home/ubuntu",
+    "/tmp"
+  ],
+  "exact_named_files_found": [],
+  "filesystem_search_returncode": 2,
+  "filesystem_search_diagnostics": [
+    "rg: /tmp/snap-private-tmp: Permission denied (os error 13)",
+    "rg: /tmp/systemd-private-6b815e257f664c7c9353b76a1e8b99d8-systemd-logind.service-tu7Nej: Permission denied (os error 13)",
+    "rg: /tmp/systemd-private-6b815e257f664c7c9353b76a1e8b99d8-ModemManager.service-1eLjs7: Permission denied (os error 13)",
+    "rg: /tmp/systemd-private-6b815e257f664c7c9353b76a1e8b99d8-systemd-resolved.service-Ayzf6V: Permission denied (os error 13)",
+    "rg: /tmp/systemd-private-6b815e257f664c7c9353b76a1e8b99d8-upower.service-tZgf1J: Permission denied (os error 13)",
+    "rg: /tmp/systemd-private-6b815e257f664c7c9353b76a1e8b99d8-systemd-timesyncd.service-NJr99w: Permission denied (os error 13)",
+    "rg: /tmp/systemd-private-6b815e257f664c7c9353b76a1e8b99d8-polkit.service-Mfg1BZ: Permission denied (os error 13)"
+  ],
+  "filesystem_search_complete": false,
+  "local_git_histories": [
+    {
+      "repository": "/home/ubuntu/EnergyAwareUPF",
+      "path": "data/processed/dpdk_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/EnergyAwareUPF",
+      "path": "data/processed/oai_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/EnergyAwareUPF",
+      "path": "data/processed/dpdk_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/EnergyAwareUPF",
+      "path": "data/processed/oai_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/xRL_UpfSelection",
+      "path": "data/processed/dpdk_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/xRL_UpfSelection",
+      "path": "data/processed/oai_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/xRL_UpfSelection",
+      "path": "data/processed/dpdk_processed.csv",
+      "local_history_entries": [
+        "ae378138784556f5f2370d0e0d86c3709d0f9106|2025-09-30T12:07:20+02:00|Initial commit for clean project"
+      ],
+      "earliest_available_blob_sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+      "rows": 4594,
+      "columns": [
+        "timestamp",
+        "RAN_Tx_pks",
+        "RAN_Rx_pks",
+        "DN_Rx_pks",
+        "DN_Tx_pks",
+        "DN_pks_lost",
+        "RAN_pks_lost",
+        "DN_jitter",
+        "RAN_jitter",
+        "Test Case",
+        "cpu_usage_percentage",
+        "DN_Tx_Mbits/s",
+        "DN_Rx_Mbits/s",
+        "RAN_Tx_Mbits/s",
+        "RAN_Rx_Mbits/s",
+        "uplink_delay_ms",
+        "downlink_delay_ms",
+        "power_consumption_watts",
+        "Test Set",
+        "Objective Throughput (DL/UL)",
+        "Packet Size",
+        "Packet Rate",
+        "total_throughput_mbps",
+        "total_packets_per_second",
+        "DN_pks_lost_interval",
+        "RAN_pks_lost_interval",
+        "DN_PLR_interval",
+        "RAN_PLR_interval",
+        "QoS_w",
+        "QoS_dd"
+      ],
+      "qos_w_present": true,
+      "qos_dd_present": true
+    },
+    {
+      "repository": "/home/ubuntu/xRL_UpfSelection",
+      "path": "data/processed/oai_processed.csv",
+      "local_history_entries": [
+        "ae378138784556f5f2370d0e0d86c3709d0f9106|2025-09-30T12:07:20+02:00|Initial commit for clean project"
+      ],
+      "earliest_available_blob_sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+      "rows": 4564,
+      "columns": [
+        "timestamp",
+        "RAN_Tx_pks",
+        "RAN_Rx_pks",
+        "DN_Rx_pks",
+        "DN_Tx_pks",
+        "DN_pks_lost",
+        "RAN_pks_lost",
+        "DN_jitter",
+        "RAN_jitter",
+        "Test Case",
+        "cpu_usage_percentage",
+        "DN_Tx_Mbits/s",
+        "DN_Rx_Mbits/s",
+        "RAN_Tx_Mbits/s",
+        "RAN_Rx_Mbits/s",
+        "uplink_delay_ms",
+        "downlink_delay_ms",
+        "power_consumption_watts",
+        "Test Set",
+        "Objective Throughput (DL/UL)",
+        "Packet Size",
+        "Packet Rate",
+        "total_packets_per_second",
+        "total_throughput_mbps",
+        "DN_pks_lost_interval",
+        "RAN_pks_lost_interval",
+        "DN_PLR_interval",
+        "RAN_PLR_interval",
+        "QoS_w",
+        "QoS_dd"
+      ],
+      "qos_w_present": true,
+      "qos_dd_present": true
+    },
+    {
+      "repository": "/home/ubuntu/DDT_UPF_Selection_DRL",
+      "path": "data/processed/dpdk_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/DDT_UPF_Selection_DRL",
+      "path": "data/processed/oai_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/DDT_UPF_Selection_DRL",
+      "path": "data/processed/dpdk_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/DDT_UPF_Selection_DRL",
+      "path": "data/processed/oai_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/dynamic-upf-selection-rl",
+      "path": "data/processed/dpdk_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/dynamic-upf-selection-rl",
+      "path": "data/processed/oai_df_processed.csv",
+      "local_history_entries": []
+    },
+    {
+      "repository": "/home/ubuntu/dynamic-upf-selection-rl",
+      "path": "data/processed/dpdk_processed.csv",
+      "local_history_entries": [
+        "f256620dc027263a84960518501fe8e1dc75ef27|2025-08-28T21:24:33+02:00|finalizing the functions for the power and QoS approximation"
+      ],
+      "earliest_available_blob_sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+      "rows": 4594,
+      "columns": [
+        "timestamp",
+        "RAN_Tx_pks",
+        "RAN_Rx_pks",
+        "DN_Rx_pks",
+        "DN_Tx_pks",
+        "DN_pks_lost",
+        "RAN_pks_lost",
+        "DN_jitter",
+        "RAN_jitter",
+        "Test Case",
+        "cpu_usage_percentage",
+        "DN_Tx_Mbits/s",
+        "DN_Rx_Mbits/s",
+        "RAN_Tx_Mbits/s",
+        "RAN_Rx_Mbits/s",
+        "uplink_delay_ms",
+        "downlink_delay_ms",
+        "power_consumption_watts",
+        "Test Set",
+        "Objective Throughput (DL/UL)",
+        "Packet Size",
+        "Packet Rate",
+        "total_throughput_mbps",
+        "total_packets_per_second",
+        "DN_pks_lost_interval",
+        "RAN_pks_lost_interval",
+        "DN_PLR_interval",
+        "RAN_PLR_interval",
+        "QoS_w",
+        "QoS_dd"
+      ],
+      "qos_w_present": true,
+      "qos_dd_present": true
+    },
+    {
+      "repository": "/home/ubuntu/dynamic-upf-selection-rl",
+      "path": "data/processed/oai_processed.csv",
+      "local_history_entries": [
+        "f256620dc027263a84960518501fe8e1dc75ef27|2025-08-28T21:24:33+02:00|finalizing the functions for the power and QoS approximation"
+      ],
+      "earliest_available_blob_sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+      "rows": 4564,
+      "columns": [
+        "timestamp",
+        "RAN_Tx_pks",
+        "RAN_Rx_pks",
+        "DN_Rx_pks",
+        "DN_Tx_pks",
+        "DN_pks_lost",
+        "RAN_pks_lost",
+        "DN_jitter",
+        "RAN_jitter",
+        "Test Case",
+        "cpu_usage_percentage",
+        "DN_Tx_Mbits/s",
+        "DN_Rx_Mbits/s",
+        "RAN_Tx_Mbits/s",
+        "RAN_Rx_Mbits/s",
+        "uplink_delay_ms",
+        "downlink_delay_ms",
+        "power_consumption_watts",
+        "Test Set",
+        "Objective Throughput (DL/UL)",
+        "Packet Size",
+        "Packet Rate",
+        "total_packets_per_second",
+        "total_throughput_mbps",
+        "DN_pks_lost_interval",
+        "RAN_pks_lost_interval",
+        "DN_PLR_interval",
+        "RAN_PLR_interval",
+        "QoS_w",
+        "QoS_dd"
+      ],
+      "qos_w_present": true,
+      "qos_dd_present": true
+    }
+  ],
+  "remote_fetch_performed": false,
+  "limitation": "Earliest locally recoverable occurrence is not proof of original creation time",
+  "training_copy_checks": [
+    {
+      "mode": "DPDK",
+      "path": "/home/ubuntu/xRL_UpfSelection/data/processed/dpdk_processed.csv",
+      "sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+      "matched_keys": 4594,
+      "all_rows_and_values_byte_identical": true
+    },
+    {
+      "mode": "DPDK",
+      "path": "/home/ubuntu/dynamic-upf-selection-rl/data/processed/dpdk_processed.csv",
+      "sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+      "matched_keys": 4594,
+      "all_rows_and_values_byte_identical": true
+    },
+    {
+      "mode": "USR",
+      "path": "/home/ubuntu/xRL_UpfSelection/data/processed/oai_processed.csv",
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+      "matched_keys": 4564,
+      "all_rows_and_values_byte_identical": true
+    },
+    {
+      "mode": "USR",
+      "path": "/home/ubuntu/dynamic-upf-selection-rl/data/processed/oai_processed.csv",
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+      "matched_keys": 4564,
+      "all_rows_and_values_byte_identical": true
+    }
+  ],
+  "saved_notebook_columns": [
+    [
+      "timestamp",
+      "RAN_Tx_pks",
+      "RAN_Rx_pks",
+      "DN_Rx_pks",
+      "DN_Tx_pks",
+      "DN_pks_lost",
+      "RAN_pks_lost",
+      "DN_jitter",
+      "RAN_jitter",
+      "Test Case",
+      "cpu_usage_percentage",
+      "DN_Tx_Mbits/s",
+      "DN_Rx_Mbits/s",
+      "RAN_Tx_Mbits/s",
+      "RAN_Rx_Mbits/s",
+      "uplink_delay_ms",
+      "downlink_delay_ms",
+      "power_consumption_watts",
+      "Test Set",
+      "Objective Throughput (DL/UL)",
+      "Packet Size",
+      "Packet Rate",
+      "total_throughput_mbps",
+      "total_packets_per_second",
+      "DN_pks_lost_interval",
+      "RAN_pks_lost_interval",
+      "DN_PLR_interval",
+      "RAN_PLR_interval"
+    ],
+    [
+      "timestamp",
+      "RAN_Tx_pks",
+      "RAN_Rx_pks",
+      "DN_Rx_pks",
+      "DN_Tx_pks",
+      "DN_pks_lost",
+      "RAN_pks_lost",
+      "DN_jitter",
+      "RAN_jitter",
+      "Test Case",
+      "cpu_usage_percentage",
+      "DN_Tx_Mbits/s",
+      "DN_Rx_Mbits/s",
+      "RAN_Tx_Mbits/s",
+      "RAN_Rx_Mbits/s",
+      "uplink_delay_ms",
+      "downlink_delay_ms",
+      "power_consumption_watts",
+      "Test Set",
+      "Objective Throughput (DL/UL)",
+      "Packet Size",
+      "Packet Rate",
+      "total_packets_per_second",
+      "total_throughput_mbps",
+      "DN_pks_lost_interval",
+      "RAN_pks_lost_interval",
+      "DN_PLR_interval",
+      "RAN_PLR_interval"
+    ]
+  ],
+  "later_training_columns_equal_saved_columns_plus_QoS_w_and_QoS_dd": true,
+  "saved_head_checks": "Visible cells match later training rows 0..4 to their displayed precision",
+  "prelabel_files_not_recovered": true,
+  "full_prelabel_to_training_row_join_available": false
+}

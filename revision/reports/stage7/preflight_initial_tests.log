@@ -1,0 +1,65 @@
+....FFFF................................................................ [ 75%]
+........................                                                 [100%]
+=================================== FAILURES ===================================
+______ test_reset_step_last_slot_and_missing_previous_telemetry[instant] _______
+
+schema = 'instant'
+
+    @pytest.mark.parametrize('schema',['instant','history','forecast','hybrid'])
+    def test_reset_step_last_slot_and_missing_previous_telemetry(schema):
+        h=fixture_horizon();env=ControlEnv(h,Twin(),FakeLedger(),Contract(),schema)
+        x,_=env.reset(seed=42);assert x[1:5].tolist()==[0,0,0,0]
+        assert x[5:9].tolist()==[1,0,0,1]
+        obs,reward,end,trunc,info=env.step(2)
+>       assert info['index']==96 and info['outcome']['power_w']==3.97
+E       assert (96 == 96 and 3.9699999999999998 == 3.97)
+
+revision/tests/test_stage7.py:53: AssertionError
+______ test_reset_step_last_slot_and_missing_previous_telemetry[history] _______
+
+schema = 'history'
+
+    @pytest.mark.parametrize('schema',['instant','history','forecast','hybrid'])
+    def test_reset_step_last_slot_and_missing_previous_telemetry(schema):
+        h=fixture_horizon();env=ControlEnv(h,Twin(),FakeLedger(),Contract(),schema)
+        x,_=env.reset(seed=42);assert x[1:5].tolist()==[0,0,0,0]
+        assert x[5:9].tolist()==[1,0,0,1]
+        obs,reward,end,trunc,info=env.step(2)
+>       assert info['index']==96 and info['outcome']['power_w']==3.97
+E       assert (96 == 96 and 3.9699999999999998 == 3.97)
+
+revision/tests/test_stage7.py:53: AssertionError
+______ test_reset_step_last_slot_and_missing_previous_telemetry[forecast] ______
+
+schema = 'forecast'
+
+    @pytest.mark.parametrize('schema',['instant','history','forecast','hybrid'])
+    def test_reset_step_last_slot_and_missing_previous_telemetry(schema):
+        h=fixture_horizon();env=ControlEnv(h,Twin(),FakeLedger(),Contract(),schema)
+        x,_=env.reset(seed=42);assert x[1:5].tolist()==[0,0,0,0]
+        assert x[5:9].tolist()==[1,0,0,1]
+        obs,reward,end,trunc,info=env.step(2)
+>       assert info['index']==96 and info['outcome']['power_w']==3.97
+E       assert (96 == 96 and 3.9699999999999998 == 3.97)
+
+revision/tests/test_stage7.py:53: AssertionError
+_______ test_reset_step_last_slot_and_missing_previous_telemetry[hybrid] _______
+
+schema = 'hybrid'
+
+    @pytest.mark.parametrize('schema',['instant','history','forecast','hybrid'])
+    def test_reset_step_last_slot_and_missing_previous_telemetry(schema):
+        h=fixture_horizon();env=ControlEnv(h,Twin(),FakeLedger(),Contract(),schema)
+        x,_=env.reset(seed=42);assert x[1:5].tolist()==[0,0,0,0]
+        assert x[5:9].tolist()==[1,0,0,1]
+        obs,reward,end,trunc,info=env.step(2)
+>       assert info['index']==96 and info['outcome']['power_w']==3.97
+E       assert (96 == 96 and 3.9699999999999998 == 3.97)
+
+revision/tests/test_stage7.py:53: AssertionError
+=========================== short test summary info ============================
+FAILED revision/tests/test_stage7.py::test_reset_step_last_slot_and_missing_previous_telemetry[instant]
+FAILED revision/tests/test_stage7.py::test_reset_step_last_slot_and_missing_previous_telemetry[history]
+FAILED revision/tests/test_stage7.py::test_reset_step_last_slot_and_missing_previous_telemetry[forecast]
+FAILED revision/tests/test_stage7.py::test_reset_step_last_slot_and_missing_previous_telemetry[hybrid]
+4 failed, 92 passed in 7.48s

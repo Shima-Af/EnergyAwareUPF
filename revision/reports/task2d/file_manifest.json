@@ -1,0 +1,292 @@
+{
+  "scope": "New Task 2D additions only; all prior revision files unchanged",
+  "self_excluded": "revision/reports/task2d/file_manifest.json",
+  "files": [
+    {
+      "path": "revision/TASK2D_REPORT.md",
+      "bytes": 12459,
+      "sha256": "74e5720a8b299e85d7d0af61508fead18adeac5e75859a55262ac2cd96ed95c3"
+    },
+    {
+      "path": "revision/configs/usr_power_nn_v1.json",
+      "bytes": 1475,
+      "sha256": "6e8f19e42740623589e90e5e4a1aa453d64a35c91555e884f47455aacd453340"
+    },
+    {
+      "path": "revision/diagnostics/neural_power_comparisons.py",
+      "bytes": 6287,
+      "sha256": "849522a4dce72790cbba7bf6633119271bbbf2505102d9de05310835e053d315"
+    },
+    {
+      "path": "revision/diagnostics/plot_neural_power.py",
+      "bytes": 2384,
+      "sha256": "05f721b149c346f000c101dadf7a06c0ba158dbedde1456ff742fb8f70cc75cc"
+    },
+    {
+      "path": "revision/models/task2d/original_hidden_softplus_seed_123/history.csv",
+      "bytes": 20307,
+      "sha256": "2c33d72025dd0740710491544d17c3aef4fa3b9028592ff2a4ab5c5f1d05b53e"
+    },
+    {
+      "path": "revision/models/task2d/original_hidden_softplus_seed_123/manifest.json",
+      "bytes": 27928,
+      "sha256": "47ba1e4f57dc56a0aa06cce7b03c45f5dff61a28c13adcbc31c5be954fd84242"
+    },
+    {
+      "path": "revision/models/task2d/original_hidden_softplus_seed_123/model.keras",
+      "bytes": 39756,
+      "sha256": "a19ee6d0e8e64f11493449edecba00562b4e5fdcadf4a3219645707fd5e220d1"
+    },
+    {
+      "path": "revision/models/task2d/original_hidden_softplus_seed_42/history.csv",
+      "bytes": 16320,
+      "sha256": "ed64069eb85ca84b47af0f0b739d406149add75a82783ad07d0bb7d6957797aa"
+    },
+    {
+      "path": "revision/models/task2d/original_hidden_softplus_seed_42/manifest.json",
+      "bytes": 27926,
+      "sha256": "eaae6a49398590dcc86da0caaab2c1ec4c69b7b74d5edd5345a8cbaca5c367b8"
+    },
+    {
+      "path": "revision/models/task2d/original_hidden_softplus_seed_42/model.keras",
+      "bytes": 39745,
+      "sha256": "8a666dd38652bfe7d9c6c2ee39a44623892c6052ee01836523c6ed65ed8d17c6"
+    },
+    {
+      "path": "revision/models/task2d/plain_hidden_softplus_seed_123/history.csv",
+      "bytes": 15066,
+      "sha256": "5a5f91eda8283c6b6e67a6f7827b07acf061afa7d8ed192d17a16ef873d9b91c"
+    },
+    {
+      "path": "revision/models/task2d/plain_hidden_softplus_seed_123/manifest.json",
+      "bytes": 27922,
+      "sha256": "e1c7cea241a12b0d4741f27877f688befbce6cf5c17515d0b7939b0ba12c11a3"
+    },
+    {
+      "path": "revision/models/task2d/plain_hidden_softplus_seed_123/model.keras",
+      "bytes": 27394,
+      "sha256": "4d6aaf5fd815da73b93abf0344d12cc77b0ffbfd835fa9381c70d4dc38f334d2"
+    },
+    {
+      "path": "revision/models/task2d/plain_hidden_softplus_seed_42/history.csv",
+      "bytes": 5625,
+      "sha256": "35cf2a7935e9212e4ade01f146009bed4b34ad0c70f0c2e22895edb2040159c3"
+    },
+    {
+      "path": "revision/models/task2d/plain_hidden_softplus_seed_42/manifest.json",
+      "bytes": 27919,
+      "sha256": "dbf432985f61c284bc7ab8defff3e983df7c297f8f0ee5cbeb0e24d47ceafa03"
+    },
+    {
+      "path": "revision/models/task2d/plain_hidden_softplus_seed_42/model.keras",
+      "bytes": 27392,
+      "sha256": "690775ec7cce0ff519fbb1e74bd1cdebc75b7969174886559b69e3c00e27c293"
+    },
+    {
+      "path": "revision/profiling/neural_power.py",
+      "bytes": 3228,
+      "sha256": "a8aa63d31408bd59398eb997beaa82877248ebfe6d48f4e0e83770014f2002a1"
+    },
+    {
+      "path": "revision/profiling/train_neural_power.py",
+      "bytes": 11567,
+      "sha256": "422e33ffa56b848934bfb1593a36f56a333e2e81bfa2446ad442208f87d6936b"
+    },
+    {
+      "path": "revision/reports/task2d/comparisons/configuration_comparison_summary.json",
+      "bytes": 1319,
+      "sha256": "0831722ce1de8cdccb4f9297cbb61623f7ade46e12150b8f3dc777bc1a14b3ad"
+    },
+    {
+      "path": "revision/reports/task2d/comparisons/configuration_power_comparisons.csv",
+      "bytes": 381833,
+      "sha256": "a9584bee5c1bb9e056e7235f273ff1a71dcb6bd90c616e241e76386206411522"
+    },
+    {
+      "path": "revision/reports/task2d/domain_predictions.csv",
+      "bytes": 2069602,
+      "sha256": "f4d2aae6a9fe4f750c23bfb44daf8f662a6bb99e52ddcdf8a394fb9e493975fc"
+    },
+    {
+      "path": "revision/reports/task2d/errors_by_load.csv",
+      "bytes": 21285,
+      "sha256": "0af8098c3b251f2da148a587b9cb733c0020ea9a60d8aff868abc18ee497868f"
+    },
+    {
+      "path": "revision/reports/task2d/errors_by_sweep.csv",
+      "bytes": 2011,
+      "sha256": "253e3d749edb39ebef43bac061abad09d0a9bc56d5e1e3f8051214969c372491"
+    },
+    {
+      "path": "revision/reports/task2d/execution_and_integrity.json",
+      "bytes": 1415,
+      "sha256": "74742840018a959bae146fd9016ef14be1f6e9dc44b2f5705b330fec82a289bb"
+    },
+    {
+      "path": "revision/reports/task2d/metrics.json",
+      "bytes": 5419,
+      "sha256": "671123506b44a4f1efb4f2756de4a52dec81a4b2b9313448dcaf9d6d12fc4f06"
+    },
+    {
+      "path": "revision/reports/task2d/neural_power_comparison.pdf",
+      "bytes": 523987,
+      "sha256": "19fd006ceabed5d6a5aa01073c5d720f4049808043d9783bec54535abb48a97b"
+    },
+    {
+      "path": "revision/reports/task2d/neural_power_comparison.png",
+      "bytes": 182824,
+      "sha256": "c3c67f0ac46ca153c842ae5d882eaab3d56f57bb1c5c50ca4fed417a5f73eda8"
+    },
+    {
+      "path": "revision/reports/task2d/original_architecture.json",
+      "bytes": 10157,
+      "sha256": "feab2084cc48a553ff48b7b507ffc39d954101fc5fa03415937d0d87201ea66d"
+    },
+    {
+      "path": "revision/reports/task2d/predictions.csv",
+      "bytes": 959222,
+      "sha256": "852efb73ba71978f900bae1161b5fa50169b26ce12cbc65ee1d09f46f9368468"
+    },
+    {
+      "path": "revision/reports/task2d/prespecified_protocol.json",
+      "bytes": 57534,
+      "sha256": "01488a8476d4f95c5f957e4e87cf21348bb4b9f358e600b548d7298fab949f7f"
+    },
+    {
+      "path": "revision/reports/task2d/selection_frozen.json",
+      "bytes": 2257,
+      "sha256": "188576da57482f7dc5df3eee1c394c0e36caac5669af2c0d5384a52dfeefeb93"
+    },
+    {
+      "path": "revision/reports/task2d_comparisons.log",
+      "bytes": 1539,
+      "sha256": "f0d13aeb21fa2759f071a403fc4837cc17f56c059ada0e03bb432c2439840030"
+    },
+    {
+      "path": "revision/reports/task2d_tests.log",
+      "bytes": 832,
+      "sha256": "4ec17a77ff41029ddb2cdaba1eb2d24f859076e10d63095ce88cc418da7b40fb"
+    },
+    {
+      "path": "revision/reports/task2d_training.log",
+      "bytes": 1420,
+      "sha256": "9206f23d1057b8131a1d73f376903dce282a201b81ff3fa2ba1d3eb063b7c619"
+    },
+    {
+      "path": "revision/tests/test_neural_power.py",
+      "bytes": 6615,
+      "sha256": "6baa7e8cdc9ae0e496042e9735a7ecc22ef89744e820ce7ed31b2e91db8850f5"
+    }
+  ],
+  "unchanged_prior_files": {
+    "revision/TASK2C_REPORT.md": "276e5ed7dcaa5d8b95a2ff24c7c9e8da8d8df41bf46446ba95a6219de6218d95",
+    "revision/TASK2B_VALIDITY_REPORT.md": "a010a50f4ea489c0185d3a6a2e5ad9742ad3784f24016c484431cc391f03ad5b",
+    "revision/TASK2A_REPORT.md": "4668c390c5ce5706546dee55fd236236df5d8fafa6520d1fe4568987a557a167",
+    "revision/PROTOCOL.md": "0b846f839757d67fac0b3e91e6fdbe4f9ee46eff42c59076cb3868cd8952fbd7",
+    "revision/__init__.py": "dcf9dce7aab798dfe733f24726ca7ed5acc50bec69f0e465636984ca0153da35",
+    "revision/tests/test_contract.py": "feafbcb6de70f3ab51cd225413122063d9c83ba8dfe8831d9b1613c0aeb4512f",
+    "revision/tests/test_selection.py": "fbf77936e32dff52bf075663673da005ac4f32e214c318e013157e50ae132855",
+    "revision/tests/conftest.py": "e74785ce23b9b30b3040444142b3dfc689009d6178e6f622ad62b4fc7f48f0c2",
+    "revision/tests/test_data.py": "ba0208316eba648928af17eeb26d05220dc32709690e14084db2d1e7d59b8986",
+    "revision/tests/test_power_refit.py": "b5427b76cca00743a91906e95b3b17061533923683dc98098cda5634a203b695",
+    "revision/tests/test_real_twin.py": "7346fab11374207cdea8af0539156215cd7fa9c15361d1170e17ec98a1eaf12c",
+    "revision/tests/test_profiling_validity.py": "2b426975acebfe07c8b53ff669e58fd241812950858fc6a8ddbb863c94d6d99e",
+    "revision/evaluation/contract.py": "608378645c801db135ca3de9bbeb6b3fe1a37daa107818a1412fb92108c3132e",
+    "revision/evaluation/inspect_timeline.py": "58d384ad7006d96698e52b8a2d0aea261286eafbc3ec20a1e6895633ed25b7e4",
+    "revision/evaluation/summarize_numerics.py": "5f5607e48dbbb161db18d754848fca7869c58663ba2d5eb9bc626badb973eab6",
+    "revision/evaluation/twin.py": "6523970c158a5a8d2b6655a1792dcb361a2e73140f36bfb6fd9d2a0e2eb6a891",
+    "revision/evaluation/selection.py": "62eef4ca6601cf9b16f4110cd8353c2295fd72c79d84e7d63cacbaeff0656e7b",
+    "revision/evaluation/diagnostic_power_twin.py": "f110ceb221e1308a11402759569b14a8b765e137b68c486b12c9b9179007a22e",
+    "revision/evaluation/numerical_probe.py": "7729d8f80ab366f6a5ded7a0c9e914a79f2db714f0a0277f686fe91243411475",
+    "revision/evaluation/validate_static.py": "3ff2a601b4b78ea96de490ae4125bf79317c72fbd1a9944fc8929c8caa9bd3b6",
+    "revision/evaluation/static.py": "19a382fe2d92852538c6ed6cebd710c13a4ba1f1ce0c871d07142cf3018cc6ba",
+    "revision/evaluation/data.py": "edb0ec016fb3bd6421485708c466e9498140afb57f7db62b9db6d545d24ce7ee",
+    "revision/evaluation/__init__.py": "d482d056e44aaec8253101db56bdb15466f00f555add09b8bd0a5db3b98e1866",
+    "revision/diagnostics/compare_power_replacement.py": "92b3fc038ec1c7fce46a89a810b4237bfa78b350a9aae972effd348fb0fa0e0f",
+    "revision/diagnostics/profiling_validity.py": "26d976cc3ba5f5bf28f05ad8114743fad417464b06fafd4c7675e3a88da7088c",
+    "revision/diagnostics/plot_power_refit.py": "1adcbdfada292e9aea8c394ac34971c4e10b6afae99fea4bfa818bdde67d82ce",
+    "revision/diagnostics/__init__.py": "cf26252c1734fc38cd013338a6f04ba9b6a75a2aa9bce906a0f6135e6d30269a",
+    "revision/profiling/power_model.py": "5a5d15ba80e8eea0778d4269321094923a548da390aa1534a5f34338ee235a51",
+    "revision/profiling/refit_usr_power.py": "8409071958d72183b745c65c3db12096bf7766493531e593396611672002b0fd",
+    "revision/profiling/__init__.py": "e0429ba1931c3857ed0c3c8c37d5f9e44c58a77f562a0e4bd124e6c58567d6ab",
+    "revision/reports/task2c_tests.log": "6283c81c6961a9029f97820752b9ecdcd03cddd80a2a6124f1649c6d424bf80a",
+    "revision/reports/test_results.txt": "79be91596dfb8e0914baee90d3dd2bb2adbc8b359a0e089c42837345e3554761",
+    "revision/reports/timeline_manifest.json": "a646d401ceb4d2fdd95c936800ab68584efa13c2de666cd773d8bc7620f9e29b",
+    "revision/reports/task2c_diagnostic.log": "87bbad386a0c721590c61dc8d647c68b8d56be7c75da1beb3c70ec98db6ab71e",
+    "revision/reports/task2b_execution.log": "da87d550b0303280612458afd067a73e9c0dc25f075712097a85afd2b9e82f6e",
+    "revision/reports/task2c_refit.log": "965c696a9fe072912dde1dfa0f1baf3caae438b188ce7ee06b7853c4d48edb27",
+    "revision/configs/twin_artifacts_v1.json": "fdad8e3739bbde611f802da6e00fea6d826ef00919f5dc93c10c4bb06eca21d9",
+    "revision/configs/evaluation_v1.json": "a7212588b505238a1ff997b88f47d1211e9f6bb0691d6773b5d7b72993176b88",
+    "revision/configs/usr_power_refit_v1.json": "bfec19aad03ec88dd255013962c8f70b0d90b8ea8d2f8ba69dec17932cae735a",
+    "revision/models/task2c/selected_usr_power.json": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8",
+    "revision/models/task2c/nonnegative_pwl_7.json": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8",
+    "revision/models/task2c/nonnegative_affine.json": "3d17bc8ef1f6ea74310ca8076d97c33b48514e6b18514621850aa6ca04b3b25a",
+    "revision/models/task2c/nonnegative_pwl_training_levels.json": "024ef00f2a05e12f4064a446a6b9ffbfc5d17bd7219fcf5501212977685fd2db",
+    "revision/reports/task2c/training_uncertainty.csv": "637c2b2aa8e1d219659a103403abb539978ad01c044b442a60f2d5e442fededf",
+    "revision/reports/task2c/errors_by_sweep.csv": "3ef4edbc866f9f2fa88901ce8d284f0a7a5bba3b114eedab9e2f8945509bdcad",
+    "revision/reports/task2c/original_artifact_manifest.json": "79833cf0ccc46e0b5adc6f1112d83f5bab6110cc6ccb6cf3c2e9f81c9bcaa7fe",
+    "revision/reports/task2c/selection_frozen.json": "92b6b6909874a2bf1992a3b6048a7059abf67708a8709a3b430de81531fcc759",
+    "revision/reports/task2c/profiling_predictions.csv": "17f6d2b9134cbb7ca892b0a84ec6e3d450e233cc8d7d47bf7eea88f78ce90050",
+    "revision/reports/task2c/execution_and_integrity.json": "2cb2ecd262a6b6f0935dc2bcb413d5a21845c7e69f4a80bc363f68973ea769a4",
+    "revision/reports/task2c/measurement_provenance.json": "2c61049b5dc6ccea377507da1483cc438c1f8bfc346a745820afbb6ffeeecfc7",
+    "revision/reports/task2c/power_label_raw_matches.csv": "cb5dc7723119686f8100aefe3102f7c0d976ff8a7a718220632e07b3831176bc",
+    "revision/reports/task2c/profiling_protocol.json": "6b41bbe99682d177a5736ae17624825920afb51bc560899b65e02342357f4190",
+    "revision/reports/task2c/metrics.json": "37a78c15b51915266c50f5fd865e0cbcfd5953ea5afa4f1e9b1babaf07e55f81",
+    "revision/reports/task2c/power_refit_comparison.png": "a0b84614b10055e3e7b756ba1a8815d3b44b9cbe76679d19733aacf6b627a4a1",
+    "revision/reports/task2c/low_load_comparison.csv": "4947b38fa74be1df58b9d5d628cbe291e83ba6d61e92f534e73c77c373e63d6d",
+    "revision/reports/task2c/profiling_split.csv": "10c3b8e88431272466901de3d949022a429882c333de29873ce8c4774658f261",
+    "revision/reports/task2c/file_manifest.json": "dc8bc63407a99c28ff8d60dd1ed0692d6945b2c40342bf658136c7eb0627e219",
+    "revision/reports/task2c/power_refit_comparison.pdf": "b4c44646263ae82360d9c6f83874b2a1b254ac0c3e73712913d22081e7b20db7",
+    "revision/reports/task2c/errors_by_load.csv": "bc34f4be35f2a470c4501032b85a8b9af4a4d1d98d0e75ab1b23ad3154a12578",
+    "revision/reports/task2a/test_results.txt": "f5e55373661ec50d58ca944d131f161de4174f30e96faeaf3401c4328441a25d",
+    "revision/reports/task2a/inference_host.json": "6b074d0fc141a25ae6ec8bdbf2da2558576a55d1e454d5c779642c61a98e9596",
+    "revision/reports/task2a/environment_packages.json": "63f30ecb6455fbfc27e76a705564181c5c12c2e327ac5bf6fb7454d8fdcfcc16",
+    "revision/reports/task2a/file_manifest.json": "d24343eb2436210e6c3d07c9ef63555b2b4c39126226a5c51491d2365919638e",
+    "revision/reports/task2b/usr_power_low_load.png": "7c5337ee8d52f2cdd6e90e6d93d020b40063d36823427a8f3ed2bba5d4333e01",
+    "revision/reports/task2b/validity_summary.json": "4df0af5eb117b8675476c2ca998205f39d37ccea3c6944a9d89844732c2e5e38",
+    "revision/reports/task2b/power_inference_stages.csv": "fd919c8f70e0f223574d170fcca7145e5f69fcfd99e3274b8008006631c852ad",
+    "revision/reports/task2b/timestamp_verification.json": "c438ca5deff4764c108dbf200e4f871149c3825adbc704270713c5ca89c5d153",
+    "revision/reports/task2b/diagnostic_test_results.txt": "2e8afb51d3e0e056b92b58a3c6fa97b95381e85dfbbc569775e15f242282fd10",
+    "revision/reports/task2b/measurement_by_load.csv": "081c13c56123b4e758e2b76eac3314c078d7b5ebbf68c3dbaac0e4bcdd7018c6",
+    "revision/reports/task2b/artifact_manifest.json": "79833cf0ccc46e0b5adc6f1112d83f5bab6110cc6ccb6cf3c2e9f81c9bcaa7fe",
+    "revision/reports/task2b/usr_low_load_grid.csv": "46268e73bc95ab3e8fe0a5b70bc9c7db57529752bdd19dbf81d364117407f8ba",
+    "revision/reports/task2b/workload_prediction_census.csv": "3fb876bfcd9592f1dc99f4ca3d5eaf1dc7d94b52ef5dd91c7a469f849e33c6e8",
+    "revision/reports/task2b/usr_power_low_load.pdf": "888fc7e29e065a91d689d772150e453bf0a64dcc55d2ed760dae0550479f136e",
+    "revision/reports/task2b/invalid_workload_predictions.csv": "9e34d5725add167007f6cf0429227ef8d961aa0fac79e086f671cda4e0afb726",
+    "revision/reports/task2b/file_manifest.json": "05f9f2749020dfa4b571bc0a0de2d18c31c24f818a83fc8a84403e4fb0ec9ce4",
+    "revision/reports/task2b/measurement_by_block.csv": "9e8daa256c441af4fe20d11f289bfbac9a7ac2b13a2dab215decafe35f92ff94",
+    "revision/reports/task2c/diagnostic/workload_prediction_census.csv": "7d151063d12312029df5b093fd977af0ad50ef612bb1579861ef91524d9635fd",
+    "revision/reports/task2c/diagnostic/static_validation_steps.csv": "c0923673f63a54a0146380a450f0e699828482ffae8d51f7f5442935b565a849",
+    "revision/reports/task2c/diagnostic/static_validation_summary.json": "c297d51ca9f6c7cd811e2173a53e626f3bcaf0eb19c28d5875b595b3ac2896f3",
+    "revision/reports/task2c/diagnostic/diagnostic_twin_manifest.json": "32255e1ab868ebd8762fe26eb49195a4cca81e9c8795baa8ba2adbd59370b6e5",
+    "revision/reports/task2c/diagnostic/input_validity_census.json": "a93bf54d7c4f8f37af12b3375dc7c2548e1eb044201af74bc6bbc3cc3a2d55d9",
+    "revision/reports/task2c/diagnostic/static_validation_predictions.csv": "7ebafd453d981b19cbf3fcb4e0ab350ab0b6aace2d8f294a32f27d3c51d82041",
+    "revision/reports/task2c/diagnostic/invalid_workload_predictions.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "revision/reports/task2a/numerics/controlled_comparisons.json": "dcc82b78749f1d5813da96485a127ee653c276aae3288f2125f2ae1a6092cd2b",
+    "revision/reports/task2a/numerics/compat_keras3113.log": "28d5e60216b5f80045e9cdbda140bb68df570cf5ef3e7cffcd78ea489c11148b",
+    "revision/reports/task2a/numerics/compat_sklearn172.log": "a7c8a897f1e2bff6a3776725be8ac1ed9942a4737360fe3eed2864d55c8e1da0",
+    "revision/reports/task2a/numerics/numerical_findings.json": "5ad4dfa8532378ec10e762653b190e9e7c42749c9684a8132f43684cd4a27df2",
+    "revision/reports/task2a/numerics/cpu_predict32.log": "99a35b880e0817145e9f1e7b6f657bb3909be2ecdd5e3eef686c88f34abd682b",
+    "revision/reports/task2a/numerics/cpu_onednn_predict32.log": "63b4e821a0adb383041325c873625e46594d6d7faf1efb304ea69f7d2ac49c25",
+    "revision/reports/task2a/numerics/compatibility_wheels.json": "5162bebf875213f64fd3b8430ab972c35ff6225cb8f6e011a9fd5062c59a5410",
+    "revision/reports/task2a/numerics/cpu_scalar.log": "bad5c9038afd943030b267908066bfb444d87a22cab4c5ef145c1dc3b1a7ece3",
+    "revision/reports/task2a/numerics/compat_both.log": "09f18cb87779a47c49a51470fd3d4dff5e993405eab2bd682aa13687e2c06bdb",
+    "revision/reports/task2a/numerics/gpu_predict32_tf32_on.log": "23d0d8939e72384ff5d183914276e4e7fa895bfbdbf13fd991bceda633111f02",
+    "revision/reports/task2a/validation/summary.json": "c1a9c9c009edcec2f5e5c0e12b15f7e496643f6344df7651fedfb396bb759371",
+    "revision/reports/task2a/validation/steps.csv": "6842b11d9bab84060ca9d29e158f72ad7cf03e5f202154786fa239b94d96e9e7",
+    "revision/reports/task2a/validation/artifact_manifest.json": "79833cf0ccc46e0b5adc6f1112d83f5bab6110cc6ccb6cf3c2e9f81c9bcaa7fe",
+    "revision/reports/task2a/validation/predictions.csv": "77aade50a471112cde5b7d05d4e408da5ac84e029d08c8f8a80fc428e05cc733",
+    "revision/reports/task2a/numerics/compat_keras3113/summary.json": "0d99e2f1e3f9414f6dd5a782df3490d0b4e4e943cc880f477ab64f868b18d610",
+    "revision/reports/task2a/numerics/compat_keras3113/predictions.csv": "bd83c5dac4d03b7dd8a10d84d47fc1d823f63a9673f43d0c3ae93b0742cbc66a",
+    "revision/reports/task2a/numerics/cpu_predict32/summary.json": "1f8d618e612f8dfa5a92462c02b69101c9a3d1785e550ac6d05f37fdf1104194",
+    "revision/reports/task2a/numerics/cpu_predict32/predictions.csv": "bd83c5dac4d03b7dd8a10d84d47fc1d823f63a9673f43d0c3ae93b0742cbc66a",
+    "revision/reports/task2a/numerics/compat_both/summary.json": "773856968f6622c21d77485da6f854e5939dc6628b48c9022b460439b493b108",
+    "revision/reports/task2a/numerics/compat_both/predictions.csv": "97ad2749dcf00c774bb8a34a26392e16e0add084e81e10d088248ee091ee2d22",
+    "revision/reports/task2a/numerics/compat_sklearn172/summary.json": "48182c13c315f6fdc90c1a0b50038e6b7399625d24f68d1056202ff5105f81b7",
+    "revision/reports/task2a/numerics/compat_sklearn172/predictions.csv": "97ad2749dcf00c774bb8a34a26392e16e0add084e81e10d088248ee091ee2d22",
+    "revision/reports/task2a/numerics/cpu_onednn_predict32/summary.json": "c7f1e916c63f079a5c2b0ca9d81c3752280810dbb74d0c56cffce03c4b548852",
+    "revision/reports/task2a/numerics/cpu_onednn_predict32/predictions.csv": "e238ca48552f8e0fc46ea52776ff7463701897864ea1ac5ffcb3f173223e35bc",
+    "revision/reports/task2a/numerics/cpu_scalar/summary.json": "97ac631c9bf2281c84cc447b15490d1e4b807466378e5e15e26eba5b1983009d",
+    "revision/reports/task2a/numerics/cpu_scalar/predictions.csv": "d6452e5b88e68736bdf0ba0f7cf87fcdac5559c326cffa30227dce3974129255"
+  }
+}

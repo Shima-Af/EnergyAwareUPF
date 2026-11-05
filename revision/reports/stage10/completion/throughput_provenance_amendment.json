@@ -1,0 +1,17 @@
+{
+  "reason": "Active flow and offered packet-population evidence now examined; not a response to model performance",
+  "family": {
+    "name": "RandomForestRegressor",
+    "n_estimators": 64,
+    "max_depth": 6,
+    "min_samples_leaf": 10,
+    "random_state": 42,
+    "n_jobs": 1,
+    "criterion": "squared_error"
+  },
+  "fits": 2,
+  "search": false,
+  "definition": "DN receive-side uplink throughput / per-direction configured offered Mbps; not delivered downlink or application goodput",
+  "row_policy": "Use exact raw receive-counter matches only; no fill or zero substitution",
+  "implementation_sha256": "85aed763b00c005e73a020600492132f4d319dd956f990e7e26958095788b30b"
+}

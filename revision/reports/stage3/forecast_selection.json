@@ -1,0 +1,22 @@
+{
+  "selected": "lstm_calendar",
+  "validation_metrics": {
+    "lstm_load": {
+      "n": 504,
+      "mae_mbps": 34.74467186318176,
+      "rmse_mbps": 45.53398813390595,
+      "bias_mbps": -4.800617384690589,
+      "r2": 0.6237180117168746
+    },
+    "lstm_calendar": {
+      "n": 504,
+      "mae_mbps": 23.105853134886242,
+      "rmse_mbps": 28.508475404922333,
+      "bias_mbps": 9.134475844088554,
+      "r2": 0.8525006742729483
+    }
+  },
+  "selection_uses_validation_only": true,
+  "no_final_test": true,
+  "no_search_expansion": true
+}

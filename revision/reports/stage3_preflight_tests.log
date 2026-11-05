@@ -1,0 +1,1862 @@
+............................................................EEEEEEEEEE.. [ 30%]
+F....EFFEEEEEEEFF....................................................... [ 61%]
+........EEEEEEEEEEEEEEEEEEE.E...EEEEEEEEEEEEEEEEEEEEEEEEEEEE.E.......... [ 91%]
+...F...........F...                                                      [100%]
+==================================== ERRORS ====================================
+_____ ERROR at setup of test_preprocessing_uses_only_training_sweeps[DPDK] _____
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[DPDK]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_inference_and_reload_are_exactly_repeatable_and_bounded[DPDK] _
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[DPDK]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_domain_is_rejected_without_clipping[DPDK] _
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[DPDK]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+___ ERROR at setup of test_artifact_tampering_rejected_before_loading[DPDK] ____
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[DPDK]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_already_loaded_artifact_identity_detects_manifest_changes[DPDK] _
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[DPDK]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_____ ERROR at setup of test_preprocessing_uses_only_training_sweeps[USR] ______
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[USR]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_inference_and_reload_are_exactly_repeatable_and_bounded[USR] _
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[USR]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_domain_is_rejected_without_clipping[USR] _
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[USR]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____ ERROR at setup of test_artifact_tampering_rejected_before_loading[USR] ____
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[USR]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_already_loaded_artifact_identity_detects_manifest_changes[USR] _
+
+request = <SubRequest 'selected' for <Function test_preprocessing_uses_only_training_sweeps[USR]>>
+
+    @pytest.fixture(scope='module',params=['DPDK','USR'])
+    def selected(request):
+        info=json.loads((REPORT/'selection_frozen.json').read_text())['modes'][request.param]
+>       return BoundedQoSModel(info['selected_manifest'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_qos.py:41: in __init__
+    _,tf,_,_=_runtime()
+             ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_______ ERROR at setup of test_training_only_scaler_matches_measurements _______
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+______ ERROR at setup of test_invalid_neural_domain_is_not_repaired[0.0] _______
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+______ ERROR at setup of test_invalid_neural_domain_is_not_repaired[-1.0] ______
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_____ ERROR at setup of test_invalid_neural_domain_is_not_repaired[5001.0] _____
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+______ ERROR at setup of test_invalid_neural_domain_is_not_repaired[nan] _______
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+______ ERROR at setup of test_invalid_neural_domain_is_not_repaired[inf] _______
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_reload_repeated_outputs_and_between_measurement_loads _
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+________ ERROR at setup of test_neural_artifact_hash_tampering_rejected ________
+
+    @pytest.fixture(scope='module')
+    def selected_nn():
+        selection = json.loads((ROOT / 'revision/reports/task2d/selection_frozen.json').read_text())
+>       return NeuralPowerModel(Path(selection['selected_manifest_path']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+revision/tests/test_neural_power.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_inference_runtime_is_explicit_cpu_and_records_compatibility_warnings _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_balanced_load_scales_power_and_keeps_per_instance_qos[40.0] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_balanced_load_scales_power_and_keeps_per_instance_qos[100.0] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_balanced_load_scales_power_and_keeps_per_instance_qos[200.0] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_balanced_load_scales_power_and_keeps_per_instance_qos[400.0] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_outputs_match_independently_applied_original_transform_chain[0] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_outputs_match_independently_applied_original_transform_chain[1] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_outputs_match_independently_applied_original_transform_chain[2] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_uncached_repeats_and_reloading_are_bitwise_consistent _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+______ ERROR at setup of test_fresh_process_prediction_and_identity_match ______
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_known_negative_power_is_reported_and_rejected_without_repair[1-2.0] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_known_negative_power_is_reported_and_rejected_without_repair[2-10.0] _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_____ ERROR at setup of test_invalid_raw_outputs_are_not_clipped[nan-0.9] ______
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_____ ERROR at setup of test_invalid_raw_outputs_are_not_clipped[1.0-1.01] _____
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____ ERROR at setup of test_invalid_raw_outputs_are_not_clipped[1.0--0.01] _____
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+___________ ERROR at setup of test_invalid_model_inputs_fail[3-100] ____________
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+__________ ERROR at setup of test_invalid_model_inputs_fail[True-100] __________
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____________ ERROR at setup of test_invalid_model_inputs_fail[1--1] ____________
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+___________ ERROR at setup of test_invalid_model_inputs_fail[1-nan] ____________
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_real_validation_horizons_energy_events_and_repeated_evaluation _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_invalid_validation_never_produces_partial_energy_totals _
+
+    @pytest.fixture(scope="module")
+    def real_twin():
+>       return FittedUPFTwin()
+               ^^^^^^^^^^^^^^^
+
+revision/tests/test_real_twin.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/twin.py:151: in __init__
+    self._np, self._tf, joblib, runtime = _runtime()
+                                          ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_____ ERROR at setup of test_four_models_code_score_and_weights_are_pinned _____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____ ERROR at setup of test_all_actions_are_finite_physical_outcomes[0.02] _____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_____ ERROR at setup of test_all_actions_are_finite_physical_outcomes[1.0] _____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____ ERROR at setup of test_all_actions_are_finite_physical_outcomes[8.72] _____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____ ERROR at setup of test_all_actions_are_finite_physical_outcomes[20.0] _____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____ ERROR at setup of test_all_actions_are_finite_physical_outcomes[100.0] ____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+____ ERROR at setup of test_all_actions_are_finite_physical_outcomes[400.0] ____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+___ ERROR at setup of test_all_actions_are_finite_physical_outcomes[5000.0] ____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+__ ERROR at setup of test_balanced_load_sum_power_and_per_instance_qos[0.02] ___
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+__ ERROR at setup of test_balanced_load_sum_power_and_per_instance_qos[10.0] ___
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+__ ERROR at setup of test_balanced_load_sum_power_and_per_instance_qos[40.0] ___
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+__ ERROR at setup of test_balanced_load_sum_power_and_per_instance_qos[100.0] __
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+__ ERROR at setup of test_balanced_load_sum_power_and_per_instance_qos[400.0] __
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+___ ERROR at setup of test_repeated_and_reloaded_scalar_inference_identical ____
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+______________ ERROR at setup of test_bad_actions_rejected[True] _______________
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+______________ ERROR at setup of test_bad_actions_rejected[False] ______________
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_______________ ERROR at setup of test_bad_actions_rejected[-1] ________________
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+________________ ERROR at setup of test_bad_actions_rejected[3] ________________
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_______________ ERROR at setup of test_bad_actions_rejected[1.5] _______________
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+________________ ERROR at setup of test_bad_actions_rejected[1] ________________
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_inputs_fail_without_repair[0-0.0] _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_inputs_fail_without_repair[1-0.0] _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_inputs_fail_without_repair[2-0.01] _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_inputs_fail_without_repair[0-5001.0] _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_inputs_fail_without_repair[0-nan] _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_inputs_fail_without_repair[1-inf] _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_unmeasured_or_invalid_inputs_fail_without_repair[2--1.0] _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_ ERROR at setup of test_static_validation_contract_horizon_energy_events_and_repeat _
+
+    @pytest.fixture(scope='module')
+>   def frozen_twin():return RevisionTwin()
+                             ^^^^^^^^^^^^^^
+
+revision/tests/test_revised_twin.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+revision/evaluation/revised_twin.py:44: in __init__
+    elif kind=='neural_power':model=NeuralPowerModel(path)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+revision/profiling/neural_power.py:44: in __init__
+    _, tf, _, _ = _runtime()
+                  ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+=================================== FAILURES ===================================
+_ test_learning_and_checkpoint_interfaces_reject_internal_test_without_training _
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-11/test_learning_and_checkpoint_i0')
+
+    def test_learning_and_checkpoint_interfaces_reject_internal_test_without_training(tmp_path):
+>       _,tf,_,_=_runtime();config=json.loads(CONFIG.read_text())
+                 ^^^^^^^^^^
+
+revision/tests/test_grouped_qos.py:122: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+________ test_minimal_architecture_and_physical_output_head[spec0-2-1] _________
+
+spec = {'batch_norm': True, 'dropout': 0.15}, bn = 2, dropout = 1
+
+    @pytest.mark.parametrize('spec,bn,dropout', [
+        ({'batch_norm': True, 'dropout': .15}, 2, 1),
+        ({'batch_norm': False, 'dropout': 0.}, 0, 0),
+    ])
+    def test_minimal_architecture_and_physical_output_head(spec, bn, dropout):
+>       _, tf, _, _ = _runtime()
+                      ^^^^^^^^^^
+
+revision/tests/test_neural_power.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+________ test_minimal_architecture_and_physical_output_head[spec1-0-0] _________
+
+spec = {'batch_norm': False, 'dropout': 0.0}, bn = 0, dropout = 0
+
+    @pytest.mark.parametrize('spec,bn,dropout', [
+        ({'batch_norm': True, 'dropout': .15}, 2, 1),
+        ({'batch_norm': False, 'dropout': 0.}, 0, 0),
+    ])
+    def test_minimal_architecture_and_physical_output_head(spec, bn, dropout):
+>       _, tf, _, _ = _runtime()
+                      ^^^^^^^^^^
+
+revision/tests/test_neural_power.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+_________ test_training_rejects_internal_test_as_learning_or_selection _________
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-11/test_training_rejects_internal0')
+
+    def test_training_rejects_internal_test_as_learning_or_selection(tmp_path):
+>       _, tf, _, _ = _runtime()
+                      ^^^^^^^^^^
+
+revision/tests/test_neural_power.py:111: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+________________ test_small_same_seed_training_is_reproducible _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-11/test_small_same_seed_training_0')
+
+    def test_small_same_seed_training_is_reproducible(tmp_path):
+>       _, tf, _, _ = _runtime()
+                      ^^^^^^^^^^
+
+revision/tests/test_neural_power.py:122: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+___________ test_vector_causal_completed_telemetry_and_initial_mask ____________
+
+    def test_vector_causal_completed_telemetry_and_initial_mask():
+        train,_,contract=inputs();c=train.context(96)
+        f=Forecast(c.decision_at,c.completed_interval_at,c.decision_at,123.)
+        o=observe(c,'hybrid',State(0,4),None,f);v=vector(o)
+        assert v.shape==(109,) and len(feature_names())==109
+        assert v[0]==np.float32(c.history_mbps[-1]/400)
+>       assert np.array_equal(v[13:108],np.asarray(c.history_mbps,np.float32)/400)
+E       AssertionError: assert False
+E        +  where False = <function array_equal at 0x7af119f026b0>(array([0.40678245, 0.39509857, 0.33873138, 0.42285493, 0.3305274 ,\n       0.2536209 , 0.25354245, 0.23506945, 0.220692...68174, 0.8347359 , 0.8610272 ,\n       0.78026557, 0.74120003, 0.85350335, 0.62749195, 0.53593445],\n      dtype=float32), (array([162.71298 , 158.03943 , 135.49255 , 169.14197 , 132.21097 ,\n       101.44836 , 101.41698 ,  94.02778 ,  88.2771...727  , 333.89435 , 344.4109  ,\n       312.10623 , 296.48    , 341.40134 , 250.99678 , 214.37378 ],\n      dtype=float32) / 400))
+E        +    where <function array_equal at 0x7af119f026b0> = np.array_equal
+E        +    and   array([162.71298 , 158.03943 , 135.49255 , 169.14197 , 132.21097 ,\n       101.44836 , 101.41698 ,  94.02778 ,  88.2771...727  , 333.89435 , 344.4109  ,\n       312.10623 , 296.48    , 341.40134 , 250.99678 , 214.37378 ],\n      dtype=float32) = <built-in function asarray>((162.71297937957667, 158.03943170119666, 135.49255350175093, 169.14197529157175, 132.210962058104, 101.44835719838942, ...), <class 'numpy.float32'>)
+E        +      where <built-in function asarray> = np.asarray
+E        +      and   (162.71297937957667, 158.03943170119666, 135.49255350175093, 169.14197529157175, 132.210962058104, 101.44835719838942, ...) = DecisionContext(decision_at=datetime.datetime(2019, 4, 2, 0, 0), completed_interval_at=datetime.datetime(2019, 4, 1, 2...time(2019, 4, 1, 23, 45), time_sin=-0.0654031292301428, time_cos=0.9978589232386035, weekday_sin=0.0, weekday_cos=1.0)).history_mbps
+E        +      and   <class 'numpy.float32'> = np.float32
+
+revision/tests/test_stage3.py:34: AssertionError
+_____________ test_forecast_reloaded_selected_model_matches_ledger _____________
+
+    def test_forecast_reloaded_selected_model_matches_ledger():
+        from revision.evaluation.twin import _runtime
+>       _,tf,_,_=_runtime();train,val,_=inputs()
+                 ^^^^^^^^^^
+
+revision/tests/test_stage3.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _runtime():
+        global _RUNTIME
+        if _RUNTIME is not None:
+            return _RUNTIME
+        if "tensorflow" in sys.modules:
+>           raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E           RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+
+revision/evaluation/twin.py:82: RuntimeError
+=========================== short test summary info ============================
+FAILED revision/tests/test_grouped_qos.py::test_learning_and_checkpoint_interfaces_reject_internal_test_without_training
+FAILED revision/tests/test_neural_power.py::test_minimal_architecture_and_physical_output_head[spec0-2-1]
+FAILED revision/tests/test_neural_power.py::test_minimal_architecture_and_physical_output_head[spec1-0-0]
+FAILED revision/tests/test_neural_power.py::test_training_rejects_internal_test_as_learning_or_selection
+FAILED revision/tests/test_neural_power.py::test_small_same_seed_training_is_reproducible
+FAILED revision/tests/test_stage3.py::test_vector_causal_completed_telemetry_and_initial_mask
+FAILED revision/tests/test_stage3.py::test_forecast_reloaded_selected_model_matches_ledger
+ERROR revision/tests/test_grouped_qos.py::test_preprocessing_uses_only_training_sweeps[DPDK]
+ERROR revision/tests/test_grouped_qos.py::test_inference_and_reload_are_exactly_repeatable_and_bounded[DPDK]
+ERROR revision/tests/test_grouped_qos.py::test_unmeasured_or_invalid_domain_is_rejected_without_clipping[DPDK]
+ERROR revision/tests/test_grouped_qos.py::test_artifact_tampering_rejected_before_loading[DPDK]
+ERROR revision/tests/test_grouped_qos.py::test_already_loaded_artifact_identity_detects_manifest_changes[DPDK]
+ERROR revision/tests/test_grouped_qos.py::test_preprocessing_uses_only_training_sweeps[USR]
+ERROR revision/tests/test_grouped_qos.py::test_inference_and_reload_are_exactly_repeatable_and_bounded[USR]
+ERROR revision/tests/test_grouped_qos.py::test_unmeasured_or_invalid_domain_is_rejected_without_clipping[USR]
+ERROR revision/tests/test_grouped_qos.py::test_artifact_tampering_rejected_before_loading[USR]
+ERROR revision/tests/test_grouped_qos.py::test_already_loaded_artifact_identity_detects_manifest_changes[USR]
+ERROR revision/tests/test_neural_power.py::test_training_only_scaler_matches_measurements
+ERROR revision/tests/test_neural_power.py::test_invalid_neural_domain_is_not_repaired[0.0]
+ERROR revision/tests/test_neural_power.py::test_invalid_neural_domain_is_not_repaired[-1.0]
+ERROR revision/tests/test_neural_power.py::test_invalid_neural_domain_is_not_repaired[5001.0]
+ERROR revision/tests/test_neural_power.py::test_invalid_neural_domain_is_not_repaired[nan]
+ERROR revision/tests/test_neural_power.py::test_invalid_neural_domain_is_not_repaired[inf]
+ERROR revision/tests/test_neural_power.py::test_reload_repeated_outputs_and_between_measurement_loads
+ERROR revision/tests/test_neural_power.py::test_neural_artifact_hash_tampering_rejected
+ERROR revision/tests/test_real_twin.py::test_inference_runtime_is_explicit_cpu_and_records_compatibility_warnings
+ERROR revision/tests/test_real_twin.py::test_balanced_load_scales_power_and_keeps_per_instance_qos[40.0]
+ERROR revision/tests/test_real_twin.py::test_balanced_load_scales_power_and_keeps_per_instance_qos[100.0]
+ERROR revision/tests/test_real_twin.py::test_balanced_load_scales_power_and_keeps_per_instance_qos[200.0]
+ERROR revision/tests/test_real_twin.py::test_balanced_load_scales_power_and_keeps_per_instance_qos[400.0]
+ERROR revision/tests/test_real_twin.py::test_outputs_match_independently_applied_original_transform_chain[0]
+ERROR revision/tests/test_real_twin.py::test_outputs_match_independently_applied_original_transform_chain[1]
+ERROR revision/tests/test_real_twin.py::test_outputs_match_independently_applied_original_transform_chain[2]
+ERROR revision/tests/test_real_twin.py::test_uncached_repeats_and_reloading_are_bitwise_consistent
+ERROR revision/tests/test_real_twin.py::test_fresh_process_prediction_and_identity_match
+ERROR revision/tests/test_real_twin.py::test_known_negative_power_is_reported_and_rejected_without_repair[1-2.0]
+ERROR revision/tests/test_real_twin.py::test_known_negative_power_is_reported_and_rejected_without_repair[2-10.0]
+ERROR revision/tests/test_real_twin.py::test_invalid_raw_outputs_are_not_clipped[nan-0.9]
+ERROR revision/tests/test_real_twin.py::test_invalid_raw_outputs_are_not_clipped[1.0-1.01]
+ERROR revision/tests/test_real_twin.py::test_invalid_raw_outputs_are_not_clipped[1.0--0.01]
+ERROR revision/tests/test_real_twin.py::test_invalid_model_inputs_fail[3-100]
+ERROR revision/tests/test_real_twin.py::test_invalid_model_inputs_fail[True-100]
+ERROR revision/tests/test_real_twin.py::test_invalid_model_inputs_fail[1--1]
+ERROR revision/tests/test_real_twin.py::test_invalid_model_inputs_fail[1-nan]
+ERROR revision/tests/test_real_twin.py::test_real_validation_horizons_energy_events_and_repeated_evaluation
+ERROR revision/tests/test_real_twin.py::test_invalid_validation_never_produces_partial_energy_totals
+ERROR revision/tests/test_revised_twin.py::test_four_models_code_score_and_weights_are_pinned
+ERROR revision/tests/test_revised_twin.py::test_all_actions_are_finite_physical_outcomes[0.02]
+ERROR revision/tests/test_revised_twin.py::test_all_actions_are_finite_physical_outcomes[1.0]
+ERROR revision/tests/test_revised_twin.py::test_all_actions_are_finite_physical_outcomes[8.72]
+ERROR revision/tests/test_revised_twin.py::test_all_actions_are_finite_physical_outcomes[20.0]
+ERROR revision/tests/test_revised_twin.py::test_all_actions_are_finite_physical_outcomes[100.0]
+ERROR revision/tests/test_revised_twin.py::test_all_actions_are_finite_physical_outcomes[400.0]
+ERROR revision/tests/test_revised_twin.py::test_all_actions_are_finite_physical_outcomes[5000.0]
+ERROR revision/tests/test_revised_twin.py::test_balanced_load_sum_power_and_per_instance_qos[0.02]
+ERROR revision/tests/test_revised_twin.py::test_balanced_load_sum_power_and_per_instance_qos[10.0]
+ERROR revision/tests/test_revised_twin.py::test_balanced_load_sum_power_and_per_instance_qos[40.0]
+ERROR revision/tests/test_revised_twin.py::test_balanced_load_sum_power_and_per_instance_qos[100.0]
+ERROR revision/tests/test_revised_twin.py::test_balanced_load_sum_power_and_per_instance_qos[400.0]
+ERROR revision/tests/test_revised_twin.py::test_repeated_and_reloaded_scalar_inference_identical
+ERROR revision/tests/test_revised_twin.py::test_bad_actions_rejected[True] - ...
+ERROR revision/tests/test_revised_twin.py::test_bad_actions_rejected[False]
+ERROR revision/tests/test_revised_twin.py::test_bad_actions_rejected[-1] - Ru...
+ERROR revision/tests/test_revised_twin.py::test_bad_actions_rejected[3] - Run...
+ERROR revision/tests/test_revised_twin.py::test_bad_actions_rejected[1.5] - R...
+ERROR revision/tests/test_revised_twin.py::test_bad_actions_rejected[1] - Run...
+ERROR revision/tests/test_revised_twin.py::test_unmeasured_or_invalid_inputs_fail_without_repair[0-0.0]
+ERROR revision/tests/test_revised_twin.py::test_unmeasured_or_invalid_inputs_fail_without_repair[1-0.0]
+ERROR revision/tests/test_revised_twin.py::test_unmeasured_or_invalid_inputs_fail_without_repair[2-0.01]
+ERROR revision/tests/test_revised_twin.py::test_unmeasured_or_invalid_inputs_fail_without_repair[0-5001.0]
+ERROR revision/tests/test_revised_twin.py::test_unmeasured_or_invalid_inputs_fail_without_repair[0-nan]
+ERROR revision/tests/test_revised_twin.py::test_unmeasured_or_invalid_inputs_fail_without_repair[1-inf]
+ERROR revision/tests/test_revised_twin.py::test_unmeasured_or_invalid_inputs_fail_without_repair[2--1.0]
+ERROR revision/tests/test_revised_twin.py::test_static_validation_contract_horizon_energy_events_and_repeat
+7 failed, 161 passed, 67 errors in 5.48s

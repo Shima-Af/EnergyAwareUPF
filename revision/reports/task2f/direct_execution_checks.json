@@ -1,0 +1,24 @@
+{
+  "DPDK": {
+    "status": "missing_columns_as_written",
+    "first_error": "'Avg DL Throughput (Mbps)'",
+    "missing_expected_columns": [
+      "Avg DL Throughput (Mbps)",
+      "Avg Objective Throughput (Mbps)",
+      "Avg DL Delay (ms)",
+      "Avg DL Jitter (us)",
+      "Total Packet Loss (%)"
+    ]
+  },
+  "USR": {
+    "status": "missing_columns_as_written",
+    "first_error": "'Avg DL Throughput (Mbps)'",
+    "missing_expected_columns": [
+      "Avg DL Throughput (Mbps)",
+      "Avg Objective Throughput (Mbps)",
+      "Avg DL Delay (ms)",
+      "Avg DL Jitter (us)",
+      "Total Packet Loss (%)"
+    ]
+  }
+}

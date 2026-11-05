@@ -1,0 +1,12 @@
+{
+  "thresholds_mbps": {
+    "Th_1": 90.47900059943467
+  },
+  "config": {
+    "allow_multi_oai": false,
+    "num_oai_instances": 2,
+    "effective_instances": 1,
+    "alpha_perf": 0.3,
+    "beta_eff": 0.7
+  }
+}

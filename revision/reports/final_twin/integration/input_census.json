@@ -1,0 +1,420 @@
+{
+  "netflix": {
+    "source": "data/processed/processed_traffic_normalized.csv",
+    "source_sha256": "8cf3fcda525c9bd6e3672e4728aaf664c7954c94068c7fae8ffc5d5278f31ffb",
+    "usage": "policy_development",
+    "partitions": {
+      "train": {
+        "source_indices_half_open": [
+          0,
+          2016
+        ],
+        "first_timestamp": "2019-04-01T00:00:00",
+        "last_timestamp": "2019-04-21T23:45:00",
+        "any_action_invalid_all_rows": 0,
+        "actions": {
+          "0": {
+            "all_source_rows": {
+              "n": 2016,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 8.720404732921057,
+              "max_total_load_mbps": 400.0,
+              "min_per_instance_load_mbps": 8.720404732921057,
+              "max_per_instance_load_mbps": 400.0,
+              "minimum_predicted_power_w": 0.8170992136001587
+            },
+            "scored_rows": {
+              "n": 1920,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 8.720404732921057,
+              "max_total_load_mbps": 400.0,
+              "min_per_instance_load_mbps": 8.720404732921057,
+              "max_per_instance_load_mbps": 400.0,
+              "minimum_predicted_power_w": 0.8170992136001587
+            }
+          },
+          "1": {
+            "all_source_rows": {
+              "n": 2016,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 8.720404732921057,
+              "max_total_load_mbps": 400.0,
+              "min_per_instance_load_mbps": 8.720404732921057,
+              "max_per_instance_load_mbps": 400.0,
+              "minimum_predicted_power_w": 0.06608101094837998
+            },
+            "scored_rows": {
+              "n": 1920,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 8.720404732921057,
+              "max_total_load_mbps": 400.0,
+              "min_per_instance_load_mbps": 8.720404732921057,
+              "max_per_instance_load_mbps": 400.0,
+              "minimum_predicted_power_w": 0.06608101094837998
+            }
+          },
+          "2": {
+            "all_source_rows": {
+              "n": 2016,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 8.720404732921057,
+              "max_total_load_mbps": 400.0,
+              "min_per_instance_load_mbps": 4.360202366460529,
+              "max_per_instance_load_mbps": 200.0,
+              "minimum_predicted_power_w": 0.0711960502013086
+            },
+            "scored_rows": {
+              "n": 1920,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 8.720404732921057,
+              "max_total_load_mbps": 400.0,
+              "min_per_instance_load_mbps": 4.360202366460529,
+              "max_per_instance_load_mbps": 200.0,
+              "minimum_predicted_power_w": 0.0711960502013086
+            }
+          }
+        }
+      },
+      "validation": {
+        "source_indices_half_open": [
+          2016,
+          2520
+        ],
+        "first_timestamp": "2019-04-22T00:00:00",
+        "last_timestamp": "2019-04-27T05:45:00",
+        "any_action_invalid_all_rows": 0,
+        "actions": {
+          "0": {
+            "all_source_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 14.434169247572534,
+              "max_total_load_mbps": 326.9892785939576,
+              "min_per_instance_load_mbps": 14.434169247572534,
+              "max_per_instance_load_mbps": 326.9892785939576,
+              "minimum_predicted_power_w": 0.8171193599700928
+            },
+            "scored_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 14.434169247572534,
+              "max_total_load_mbps": 326.9892785939576,
+              "min_per_instance_load_mbps": 14.434169247572534,
+              "max_per_instance_load_mbps": 326.9892785939576,
+              "minimum_predicted_power_w": 0.8171193599700928
+            }
+          },
+          "1": {
+            "all_source_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 14.434169247572534,
+              "max_total_load_mbps": 326.9892785939576,
+              "min_per_instance_load_mbps": 14.434169247572534,
+              "max_per_instance_load_mbps": 326.9892785939576,
+              "minimum_predicted_power_w": 0.11659729933297397
+            },
+            "scored_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 14.434169247572534,
+              "max_total_load_mbps": 326.9892785939576,
+              "min_per_instance_load_mbps": 14.434169247572534,
+              "max_per_instance_load_mbps": 326.9892785939576,
+              "minimum_predicted_power_w": 0.11659729933297397
+            }
+          },
+          "2": {
+            "all_source_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 14.434169247572534,
+              "max_total_load_mbps": 326.9892785939576,
+              "min_per_instance_load_mbps": 7.217084623786267,
+              "max_per_instance_load_mbps": 163.4946392969788,
+              "minimum_predicted_power_w": 0.11114204082255259
+            },
+            "scored_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 14.434169247572534,
+              "max_total_load_mbps": 326.9892785939576,
+              "min_per_instance_load_mbps": 7.217084623786267,
+              "max_per_instance_load_mbps": 163.4946392969788,
+              "minimum_predicted_power_w": 0.11114204082255259
+            }
+          }
+        }
+      }
+    }
+  },
+  "youtube": {
+    "source": "data/processed/processed_traffic_youtube_aggregated_scaled.csv",
+    "source_sha256": "ad8d23d3612e3f5e7c1199ecefcb11dc798d7956aa3d1c67fb1ab31b551ec5a3",
+    "usage": "transfer_context_validity_only_no_fitting",
+    "partitions": {
+      "train": {
+        "source_indices_half_open": [
+          0,
+          2016
+        ],
+        "first_timestamp": "2019-04-01T00:00:00",
+        "last_timestamp": "2019-04-21T23:45:00",
+        "any_action_invalid_all_rows": 0,
+        "actions": {
+          "0": {
+            "all_source_rows": {
+              "n": 2016,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 6.921086061037732,
+              "max_total_load_mbps": 295.39541701064746,
+              "min_per_instance_load_mbps": 6.921086061037732,
+              "max_per_instance_load_mbps": 295.39541701064746,
+              "minimum_predicted_power_w": 0.8170998096466064
+            },
+            "scored_rows": {
+              "n": 1920,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 6.921086061037732,
+              "max_total_load_mbps": 295.39541701064746,
+              "min_per_instance_load_mbps": 6.921086061037732,
+              "max_per_instance_load_mbps": 295.39541701064746,
+              "minimum_predicted_power_w": 0.8170998096466064
+            }
+          },
+          "1": {
+            "all_source_rows": {
+              "n": 2016,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 6.921086061037732,
+              "max_total_load_mbps": 295.39541701064746,
+              "min_per_instance_load_mbps": 6.921086061037732,
+              "max_per_instance_load_mbps": 295.39541701064746,
+              "minimum_predicted_power_w": 0.0535016393961618
+            },
+            "scored_rows": {
+              "n": 1920,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 6.921086061037732,
+              "max_total_load_mbps": 295.39541701064746,
+              "min_per_instance_load_mbps": 6.921086061037732,
+              "max_per_instance_load_mbps": 295.39541701064746,
+              "minimum_predicted_power_w": 0.0535016393961618
+            }
+          },
+          "2": {
+            "all_source_rows": {
+              "n": 2016,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 6.921086061037732,
+              "max_total_load_mbps": 295.39541701064746,
+              "min_per_instance_load_mbps": 3.460543030518866,
+              "max_per_instance_load_mbps": 147.69770850532373,
+              "minimum_predicted_power_w": 0.05861667864909044
+            },
+            "scored_rows": {
+              "n": 1920,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 6.921086061037732,
+              "max_total_load_mbps": 295.39541701064746,
+              "min_per_instance_load_mbps": 3.460543030518866,
+              "max_per_instance_load_mbps": 147.69770850532373,
+              "minimum_predicted_power_w": 0.05861667864909044
+            }
+          }
+        }
+      },
+      "validation": {
+        "source_indices_half_open": [
+          2016,
+          2520
+        ],
+        "first_timestamp": "2019-04-22T00:00:00",
+        "last_timestamp": "2019-04-27T05:45:00",
+        "any_action_invalid_all_rows": 0,
+        "actions": {
+          "0": {
+            "all_source_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 13.60569628932123,
+              "max_total_load_mbps": 223.68522102182627,
+              "min_per_instance_load_mbps": 13.60569628932123,
+              "max_per_instance_load_mbps": 223.68522102182627,
+              "minimum_predicted_power_w": 0.8171193599700928
+            },
+            "scored_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 13.60569628932123,
+              "max_total_load_mbps": 223.68522102182627,
+              "min_per_instance_load_mbps": 13.60569628932123,
+              "max_per_instance_load_mbps": 223.68522102182627,
+              "minimum_predicted_power_w": 0.8171193599700928
+            }
+          },
+          "1": {
+            "all_source_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 13.60569628932123,
+              "max_total_load_mbps": 223.68522102182627,
+              "min_per_instance_load_mbps": 13.60569628932123,
+              "max_per_instance_load_mbps": 223.68522102182627,
+              "minimum_predicted_power_w": 0.10883035355228528
+            },
+            "scored_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 13.60569628932123,
+              "max_total_load_mbps": 223.68522102182627,
+              "min_per_instance_load_mbps": 13.60569628932123,
+              "max_per_instance_load_mbps": 223.68522102182627,
+              "minimum_predicted_power_w": 0.10883035355228528
+            }
+          },
+          "2": {
+            "all_source_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 13.60569628932123,
+              "max_total_load_mbps": 223.68522102182627,
+              "min_per_instance_load_mbps": 6.802848144660615,
+              "max_per_instance_load_mbps": 111.84261051091313,
+              "minimum_predicted_power_w": 0.10535003225527627
+            },
+            "scored_rows": {
+              "n": 504,
+              "invalid": 0,
+              "invalid_fraction": 0.0,
+              "negative_power": 0,
+              "nonfinite_power": 0,
+              "qos_out_of_range": 0,
+              "nonfinite_qos": 0,
+              "min_total_load_mbps": 13.60569628932123,
+              "max_total_load_mbps": 223.68522102182627,
+              "min_per_instance_load_mbps": 6.802848144660615,
+              "max_per_instance_load_mbps": 111.84261051091313,
+              "minimum_predicted_power_w": 0.10535003225527627
+            }
+          }
+        }
+      }
+    }
+  }
+}

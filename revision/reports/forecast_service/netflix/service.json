@@ -1,0 +1,13 @@
+{
+  "version": "comcom.forecasting-service.v1",
+  "workload": "netflix",
+  "selected_family": "boosted_poisson",
+  "provider_manifest": "revision/models/forecast_service/netflix/full/boosted_poisson/manifest.json",
+  "provider_manifest_sha256": "cf43b491f42568fe60cd33fc959905cbe1d6eef27ae112a174cfcfadcdfbaade",
+  "selection_manifest": "revision/reports/forecast_service/netflix/selection_frozen.json",
+  "selection_sha256": "56671948b0f6e6144aa5ee1078276e743ab5be488ecb3ddcd1b445abdc750fb5",
+  "input_contract": "96 completed quarter-hour loads in common workload Mbps and known decision timestamp",
+  "output_contract": "revision.evaluation.contract.Forecast; current target interval, observed-through previous completed interval",
+  "serving_role": "Diagnostic only, no automatic controller or baseline promotion",
+  "final_test_evaluation": false
+}

@@ -1,0 +1,437 @@
+     Evaluating Centralized Value Learning in
+ Shared-Policy MARL for Energy-Aware Multi-Site
+                5G UPF Selection
+                  Shima Afshar Borji∗ , Roberto Bruschi∗† , Chiara Lombardo∗† , and Raffaele Bolla∗†
+                ∗ DITEN, University of Genoa, Genoa, Italy           † CNIT – S2N National Laboratory, Genoa, Italy
+
+                  shima.afshar.borji@edu.unige.it; {roberto.bruschi, chiara.lombardo, raffaele.bolla}@unige.it
+
+
+   Abstract—Energy-aware User Plane Function (UPF) selection at        UPF from local observations. Under centralized training with
+the 5G edge must balance low-load energy savings against quality-      decentralized execution (CTDE), a critic can use observations
+of-service (QoS) degradation as traffic changes. We compare            from all sites to estimate future returns during training, although
+shared-policy controllers trained with centralized and local value
+estimation across heterogeneous edge sites. A measurement-             the deployed actor requires only local information. Whether
+calibrated simulator driven by real mobile-traffic traces models       this additional training structure improves the energy–QoS
+DPDK and user-space UPF energy, QoS, and activation costs.             trade-off beyond policy sharing itself remains an empirical
+We train MAPPO with a fleet-state critic and compare it with           question.
+Shared-PPO using a local critic under common actor and training           We investigate this question through a simulation environ-
+settings, alongside independent PPO, centralized PPO, optimized
+hysteresis, and always-DPDK. MAPPO achieves the lowest mean            ment calibrated from physical UPF profiling and driven by
+combined cost, reducing it by 10.2% relative to hysteresis and         real mobile-traffic traces. The profiles provide the power and
+21.9% relative to always-DPDK, with energy reductions of 1.4%          performance response of each implementation, allowing con-
+and 5.0%, respectively. Against Shared-PPO, MAPPO lowers               trollers to experience different traffic and switching sequences
+mean combined cost by 1.45% and reduces seed-to-seed variability.      without repeating a physical measurement for every policy. Our
+Despite 98.5% decision agreement, MAPPO more often avoids
+user-space assignments that are currently safe but become costly       study compares MAPPO with a shared-actor PPO controller
+after a demand rise during transition. Calibration and reward-         using a local critic, alongside independent PPO, centralized
+sensitivity analyses show robust gains over independent learning       PPO, and an optimized hysteresis baseline. The shared-actor
+and hysteresis, while the smaller shared-policy gap depends on         comparison fixes the actor and common PPO settings, while
+the modeled user-space QoS boundary.                                   critic information, capacity, and output structure differ.
+   Index Terms—5G Core, User Plane Function, energy-aware
+orchestration, multi-agent reinforcement learning, centralized            The contributions are threefold. First, we formulate multi-site
+training with decentralized execution.                                 UPF selection with explicit QoS, activation-energy, and anti-
+                                                                       oscillation costs. Second, an eight-seed comparison and analysis
+                      I. I NTRODUCTION                                 of saved decisions explain how the learned policies balance
+                                                                       energy savings against QoS. Third, ten alternative calibrations
+   Distributing the User Plane Function (UPF) toward the               and 81 reward-weight combinations establish which conclusions
+5G network edge enables local traffic steering and reduces             remain stable when the fitted profiles and operating priorities
+the distance between users and services, but also increases            change. Together, these analyses connect aggregate performance
+the number of continuously provisioned packet-processing               to the conditions under which shared-policy control is useful.
+instances. Their energy efficiency depends on both the offered
+traffic and the implementation used to process it. A DPDK data                          II. R ELATED W ORK
+plane sustains high loads through polling and kernel bypass,        UPF optimization operates at several decision levels. Leyva-
+whereas a user-space implementation can consume less power Pupo and Cervelló-Pastor [3] formulate placement and chaining
+during light traffic but reach its performance limits earlier as a multi-objective integer program that balances provisioning
+[1], [2]. Consequently, using one implementation throughout expenditure and QoS, and develop heuristics for larger instances.
+the day sacrifices either low-load efficiency or service quality, Their decision concerns where UPFs and service chains should
+while switching between implementations introduces activation be deployed. Our deployment locations are fixed, while the
+costs that a controller must weigh against the expected saving. controller repeatedly selects the active implementation at each
+   This decision becomes more difficult across sites with site as its traffic changes. Measurement studies by Christakis
+heterogeneous traffic patterns, because the value of a low-power et al. [1] and Bolla et al. [2] characterize the performance and
+assignment depends on how long the favorable conditions energy profiles that motivate such selection, but do not address
+persist. Independent policies learn this trade-off from their how a policy should learn its temporal trade-off.
+own sites, even when relevant switching conditions occur            Bellin et al. [4] apply deep reinforcement learning to assign
+infrequently. A shared policy can instead learn from the new sessions to distributed edge or cloud UPFs using power,
+collective experience of the fleet while selecting each site’s latency, and bandwidth information. Their orchestrator selects
+          site 1                                                                                          and 10.5 days. The saved forecasts come from a cluster-first
+                                           Shared actor
+             ⋮                                                                                            Graph WaveNet model [13], which combines graph convolution
+                                 Applied locally; identical weights at every site
+          site
+
+
+
+
+                                                                                    Advantage estimates
+           clusters,
+                                                                                                          over the inter-cluster graph with dilated temporal convolu-
+                                    Measurement-calibrated environment
+                                                                                                          tions to capture spatial and temporal traffic dependencies.
+                                  Surrogate power and QoS, activation, costs                              These predictions provide the forecast feature used by all
+                                                                                                          controllers. Each decentralized actor receives a 14-dimensional
+                                                                                                          local observation comprising current load, eight past loads,
+                                     Critic : global             (MAPPO)
+                                       or local            (Shared-PPO)                                   forecast, previous UPF, previous QoS score, previous specific
+                              Training only
+                                                                                                          energy, and cooldown progress. Mean test loads range from
+                                                                                                          approximately 0.1 to 1.7 Gbps, covering sites with frequent
+Fig. 1. Shared-actor control loop. Solid arrows show local execution at each of                           low-load opportunities and sites operating predominantly above
+ten sites; dashed arrows show training through a global-state critic (MAPPO)                              the user-space QoS range.
+or a shared local critic (Shared-PPO).
+                                                                                                          B. Profiling-based simulation environment
+
+an anchor when a connection is established, whereas we study          The simulation environment is calibrated from 220 constant-
+repeated implementation changes at existing sites, for which       load  profiling runs, organized as five chronological sweeps of
+the previous UPF and activation overhead affect the next           22  offered-load      levels for each UPF. Each sweep repeats the
+decision. Our earlier work [5] combines measured UPF profiles      same   levels,   spanning     approximately 0–5 Gbps, so the dataset
+with LSTM traffic predictions, a utility-based selection rule,     captures     both   repeated      measurements at a given operating
+and hysteresis and hold-down mechanisms. The present work          point  and    differences     across  traffic loads. Keysight LoadCore
+extends the control setting to heterogeneous sites and learned     [14]  supplies    throughput,     delay,   and packet-loss measurements,
+shared policies, using an optimized version of the threshold-      which   are   aligned     with   process-attributed         power series from
+based strategy as a reference.                                     Scaphandre      [15],    using   RAPL     measurements          [16].
+   The learning architectures build on PPO [6] and its multi-         The   fitted   models     form   two    layers   for   each     UPF. Layer 1
+agent extensions. Yu et al. [7] show that MAPPO can be             predicts    throughput,       CPU    utilization,      delay,     and  loss from
+effective in cooperative tasks through CTDE, while Schroeder       offered  traffic,  using    ridge  regression,     gradient-boosted       trees, or
+de Witt et al. [8] demonstrate that locally estimated value        random     forests  according     to the   selected    target    model.   Layer 2
+functions can also support competitive PPO policies on the         predicts    power    from     offered   traffic   and   the   Layer     1  outputs
+StarCraft multi-agent benchmark. Thus, a centralized critic        using  a  random     forest.  DPDK     loss    uses  a constant     model    where
+is not automatically preferable, and the value of additional       no  loss  was    observed     in  profiling.    This   structure    links   energy
+training information must be distinguished from that of sharing consumption to the predicted operating condition rather than
+experience across different traffic distributions. We compare the assigning a fixed power value to each UPF.
+critics with the same shared actor and common training settings,      The simulator combines these predictors with traffic traces
+without isolating global information from critic capacity and      and   measured activation parameters. At each decision, it
+output structure, and assess their energy–QoS behavior and         evaluates   the selected implementation, accounts for the previous
+calibration sensitivity.                                           UPF    during    a transition, and returns the resulting reward and
+                                                                   observation. The repeated-sweep and load-level structure also
+              III. S YSTEM AND C ONTROL M ODEL                     supports the calibration tests in Sec. IV-C, which refit the
+                                                                   models after withholding complete measurement groups.
+A. Fleet, traffic, and decision loop
+   We consider K = 10 multi-access edge computing (MEC) C. QoS score and specific energy
+clusters. At each 15-minute step, cluster i selects ai,t ∈ {0, 1},    Let di,t and ℓi,t be the predicted delay and lost-packet
+where 0 denotes the SD-Core DPDK UPF [9] and 1 the count for the selected realization. With [x]+ = max(0, x),
+OpenAirInterface user-space UPF [10]. The Session Manage- the normalized scores are
+ment Function (SMF) and the remaining 5G Core control-                                           [︃                           ]︃
+                                                                                          d             [di,t − dmax ]+
+plane functions remain centralized; only the active data-plane                          qi,t = 1 −                                 ,               (1)
+realization changes. The environment follows the PettingZoo                                                    dmax             +
+                                                                                                 [︃                          ]︃
+parallel interface [11]. There is no fleet-wide power or capacity                         ℓ             [ℓi,t − ℓmax ]+
+                                                                                        qi,t  = 1−                                ,                (2)
+constraint, and one site’s action does not affect another site’s                                               ℓmax            +
+traffic or costs. Sites therefore couple only through shared                           Qi,t = min{qi,t   d      ℓ
+                                                                                                            , qi,t }.                              (3)
+training.
+   Traffic comes from the NetMob23 Lyon dataset [12]. Grid Here dmax = 200 µs and ℓmax = 5 packets per 3-s
+demand is mapped to radio-site service areas and aggregated measurement interval. Each score equals one within its budget
+into ten clusters with different load distributions. The chrono- and decreases with relative excess, reaching zero at twice
+logical train, validation, and test slices contain 5073, 1009, the budget. Taking the minimum prevents good delay from
+and 1009 steps, corresponding to approximately 53, 10.5, compensating for excessive loss, or vice versa. The reward
+target τ = 0.9 penalizes score shortfall; the reported QoS-                                    TABLE I
+violation rate instead counts any budget exceedance. One             A RCHITECTURE AND COMMON TRAINING SETTINGS . N ETWORK ENTRIES
+                                                                                          GIVE LAYER WIDTHS .
+cluster-step is one site’s 15-minute decision, so QoSV% is
+the percentage of decisions violating a budget, not a packet-            Setting                             MAPPO            Shared-PPO
+loss percentage. Score shortfall and budget exceedance need              Shared actor                      14–64–64–2 (5250 parameters)
+not coincide for small excesses.                                         Critic                           140–128–128–10 14–128–128–1
+   Specific energy consumption (SEC) normalizes steady-state             Actor initialization             Same seed; actor constructed first
+                                                                         Training budget                     200,000 environment steps
+operating power by demand,                                               Rollout / minibatch                  1024 steps / 256 samples
+                                 op                                      Epochs / PPO clip                             10 / 0.2
+                                Pi,t
+                    SECi,t =               .                   (4)       Discount / GAE decay                   γ = 0.995 / λ = 0.9
+                             max(λi,t , ϵ)                               Learning rate / entropy                  3 × 10−4 / 0.05
+                                                                         Joint actor–critic gradient clip          0.5 (norm limit)
+Power is in watts, offered load λi,t in Mbps, and ϵ > 0 guards           Checkpoint / test action          Best validation reward / argmax
+against division by zero. Thus SEC has units J/Mbit; it is energy
+per offered traffic volume, not per successfully delivered bit. A
+nearly constant DPDK power draw gives a large SEC at light           energy measurement nor a hard action prohibition. Cooldown
+load, making low-load realization selection valuable even when       progress and the previous realization are included in the
+its contribution to total fleet watt-hours is small. The objective   local observation. Reported switches per cluster-day count
+sums site costs without traffic weighting, so minimizing SEC         consecutive-step changes; a first-step change from the initial
+and minimizing fleet energy are distinct criteria.                   DPDK state incurs transition cost but is not included in that
+                                                                     switching count.
+D. Objective and transition costs                                       The                     training objective is J(θ)         =
+                                                                           ∑︁ cooperative
+                                                                                  ∑︁K
+  The per-site reward is the negative of the combined cost,          Eπθ [ t γ t i=1 ri,t ]. Fig. 1 shows the shared actor
+comprising four non-negative terms,                                  πθ (ai,t | oi,t ) executed locally. MAPPO’s critic predicts site
+           [︁                               s     c
+                                                      ]︁             returns from the concatenated fleet state; Shared-PPO uses
+  ri,t = − αSECi,t + λq [τ − Qi,t ]+ + λs Ei,t + Ci,t    , (5)
+                                                                     a shared local critic. Training pools site–time generalized-
+where α = 100, λq = 30, τ = 0.9, and λs = 4. Reward                  advantage estimates for actor updates. Execution requires no
+is summed over sites and test steps; higher is better. Energy,       critic, global state, or inter-site communication.
+QoS violations, user-space share, and switching rate are also             IV. C ONTROLLERS AND E VALUATION P ROTOCOL
+reported separately.
+   Let χi,t indicate a realized change and eact (ai,t ) denote the   A. Controller architectures
+activation energy of the new realization. The switching term is         MAPPO’s critic has 35,850 parameters and one output
+  s
+Ei,t = χi,t eact (ai,t ). Activation takes 24 s and 0.009476 Wh      per cluster; Shared-PPO’s shared local critic has 18,561
+for DPDK, versus 3.3 s and 5.15 × 10−6 Wh for the user-              parameters and one output without a cluster identifier. Thus
+space UPF. The energy report uses sub-step accounting. During        the comparison changes information, capacity, and value-head
+activation the old UPF serves traffic; the new UPF serves the        structure together.
+remainder of the ∆ = 900 s step. Writing ui,t = χi,t tact (ai,t ),      IPPO trains one Stable-Baselines3 PPO policy per site [17].
+the step energy in Wh is                                             Centralized PPO maps the 140-dimensional fleet state to a
+                         old               new
+                                                                     MultiDiscrete([2]K ) joint action. These are practical system
+                   ui,t Pi,t + (∆ − ui,t )Pi,t     s                 baselines, whereas the MAPPO–Shared-PPO pair compares
+          Ei,t =                                + Ei,t .     (6)
+                               3600                                  value architectures within a common shared-actor design. In
+Fleet energy sums Ei,t , counting activation energy once,            particular, IPPO retains its independent trainer and centralized
+               s                                                     PPO retains its load-weighted joint training signal. Every
+whereas λs Ei,t  is its weighted reward charge. SEC uses steady-
+state power. Switching-step QoS uses the larger predicted loss       controller is evaluated with (5).
+of the old and new UPFs at the current load, rather than a
+                                                                     B. Training and reference controllers
+duration-weighted loss. A switch to DPDK can therefore incur
+a QoS penalty if the old user-space UPF is unsafe during                Table I summarizes the architecture and training settings,
+activation.                                                          including the common PPO and generalized-advantage parame-
+   The four-step anti-oscillation window adds a soft dwell cost.     ters [6], [18]. All learned controllers use the same environment
+If hi,t is the number of steps remaining in that window before       version and eight seeds {1, 7, 13, 23, 42, 64, 77, 99}, with the
+a change, then                                                       best-validation checkpoint evaluated deterministically on the
+                                                                     complete test slice.
+             c            hi,t                                          Always-DPDK provides a static reference, while fixed
+            Ci,t = 0.5 χi,t    ,   0 ≤ hi,t ≤ 4.         (7)
+                           4                                         hysteresis is an optimized adaptation of our earlier forecast-
+The charge decreases as the window expires and is zero after         driven threshold strategy [5]. It switches to DPDK above
+four steps (one hour). It discourages rapid reversals while          81 Mbps and returns to user space below 31 Mbps, retaining the
+allowing a QoS-driven switch; it is neither an additional            current UPF between these thresholds to suppress oscillation.
+The 50-Mbps band is selected on the saved test trace, making                                          TABLE II
+this an optimistic rather than held-out reference; it remains        T EST RESULTS OVER TEN SITES AND 1009 STEPS . R EWARD GIVES MEAN ±
+                                                                         STANDARD DEVIATION AND MEDIAN ACROSS EIGHT SEEDS . OTHER
+fixed during calibration tests.                                            COLUMNS GIVE MEAN ENERGY ( WHOLE W H ), Q O S- VIOLATING
+   Results retain all seeds and report mean reward, sample             CLUSTER - STEPS , USER - SPACE USE , AND SWITCHES PER CLUSTER - DAY.
+standard deviation, and median. Paired differences use 10,000
+bootstrap resamples for 95% confidence intervals (CIs) and an          Controller                  Reward Median       Wh QoSV% USR% Sw./d
+exact two-sided sign-flip test. Percentages are calculated from        MAPPO         −5624 ± 22 −5626 1967                      0.52      7.8    2.88
+unrounded means.                                                       Shared-PPO     −5707 ± 77 −5704 1963                     0.57      8.5    3.00
+                                                                       IPPO         −8236 ± 6912 −5794 2026                     1.47      8.9    2.03
+                                                                       Central PPO −15025 ± 6931 −13365 2132                    4.03     11.1    1.66
+C. Sensitivity to simulator calibration                                Hysteresis         −6262      — 1995                     0.68      7.5    1.06
+   Since the environment is fitted from a finite profiling             Always-DPDK        −7201      — 2071                     0.38      0.0    0.00
+campaign, the controller comparison could in principle reflect
+the surrogate fit rather than the policies; we therefore refit the                                    Seed         Mean        Fixed policy
+models after withholding complete measurement groups. Leave-
+                                                                               MAPPO
+one-sweep-out (LOSO) omits one of the five sweeps and refits                                                           IPPO seed 99
+                                                                           Shared-PPO
+on the other four, testing measurement repetition while retaining
+                                                                                    IPPO
+every load level. Leave-one-load-group-out (LOLO) sorts the
+                                                                          Central PPO
+22 levels into five interleaved groups by rank modulo five and              Hysteresis
+omits one group across all sweeps, testing predictions across            Always-DPDK
+gaps in measured load coverage. The resulting ten environments
+                                                                                           5         10           15      20           25
+retain the model configuration, controller weights, traffic, and
+                                                                                               Combined test cost (×103; lower is better)
+forecasts.
+   In closed-policy evaluation, the saved policy interacts with      Fig. 2. Combined test cost (negative reward) across training seeds. Dots show
+each refit, allowing changed observations to affect decisions.       all eight seeds, diamonds their means, and squares fixed policies.
+Fixed-action replay instead imposes its original action sequence
+and recomputes the outcomes. Comparing these modes sep-                                          TABLE III
+arates changes in decisions from changes in their assessed                 PAIRED DIFFERENCES ACROSS EIGHT SEEDS , MAPPO MINUS
+                                                                                               S HARED -PPO.
+cost. The safe-range endpoint in Fig. 4(b) is the last load on a
+1-Mbps grid before the fitted model first predicts a delay or                Metric             Mean difference           95% CI       Exact p
+loss budget violation, a property of the surrogate rather than a
+                                                                             Reward                     +82.9   [31.0, 150.9]            0.023
+measured capacity.                                                           QoS cost                  −106.9 [−203.4, −9.4]             0.102
+                                                                             Energy (Wh)                 +4.2    [−2.7, 10.3]            0.289
+                          V. R ESULTS
+A. Overall performance and consistency
+   MAPPO achieves the lowest mean combined cost while accepts additional energy cost to reduce QoS penalties.
+preserving most of the energy benefit of dynamic UPF selection MAPPO’s mean combined cost is 1.45% lower, with positive
+(Table II). Relative to fixed hysteresis, it reduces combined reward differences in seven of eight pairs and standard deviation
+cost by 10.2% and energy by 1.4%. Against always-DPDK, the reduced from 77 to 22 (Table III). The evidence is strongest
+corresponding reductions are 21.9% and 5.0%, with the rounded for combined reward, since the energy CI includes zero and
+table totals showing a 104-Wh saving over the test period. the exact QoS-cost test gives p = 0.102.
+Always-DPDK has fewer QoS violations, whereas Shared-              The load-dependent choices in Fig. 3(a) locate this trade-off.
+PPO uses slightly less energy than MAPPO but incurs more Below 25 Mbps both policies almost always select user space,
+violations. MAPPO therefore offers the best balance under where its energy advantage is pronounced. In the 50–81 Mbps
+the stated objective, rather than minimizing energy or QoS band, Shared-PPO selects it in 27.3% of steps compared with
+violations in isolation.                                        MAPPO’s 18.4%, despite agreement on 98.5% of all cluster-
+   The shared policies also perform more consistently across steps. All 876 additional user-space assignments made only
+seeds (Fig. 2). IPPO’s mean is affected by seed 99’s reward of by Shared-PPO are safe at that moment, so their consequence
+−25341, whereas its median of −5794 shows that most runs cannot be understood from current-load feasibility alone. The
+are much closer to the shared policies. Centralized PPO varies saved sequences show that a rise in demand can expose the old
+widely and remains worse than always-DPDK in every seed, user-space UPF to unsafe load while DPDK starts. MAPPO’s
+indicating that access to the fleet state alone does not ensure more conservative choices reduce this exposure at the expense
+effective control.                                              of some immediate savings, with 14.1 penalized transitions per
+                                                                test episode against Shared-PPO’s 19.1. Overall, its QoS cost
+B. How the shared policies balance energy and QoS               is 106.9 units lower, offset by 25.4 additional SEC-cost units,
+   Under identical reward weights, Shared-PPO favors greater while activation and cooldown contribute a further 1.4 units to
+user-space use and lower energy consumption, whereas MAPPO its net gain (Fig. 3(b)).
+   (a) User-space selection                             (b) Energy–QoS trade-off                                        (c) Where gains appear
+                            MAPPO    Shared-PPO
+
+
+
+
+                                                                                                                     Median reward gain
+                                                              QoS                     +106.9
+                     100
+                                                                                                                                          40
+User-space use (%)
+
+
+
+
+                     75                                       SEC       -25.4
+                                                                                                                                          20                                37
+                     50                                                                                                                                   29
+                                                          Sw.+CD        +1.4                                                                                           17
+
+                     25                                                                                                                   0
+                                                              Net                  +82.9
+                      0                                                                                                                                         -2.7             -0.4
+
+                           <25   25–50   50–81 81–149                  0    50     100                                                          c0 c6 c7 c4 c1 c8 c5 c2 c3 c9
+                             Offered load (Mbps)                    Reward contribution                                                                Cluster (increasing load)
+
+
+Fig. 3. Energy–QoS behavior of the shared policies. (a) User-space use by load band, with individual seeds and means. (b) QoS and SEC contributions,
+combined activation/cooldown contribution (Sw.+CD), and net reward gain. (c) Median reward gain by cluster, ordered by mean load, with whiskers spanning
+the middle 50% of seed results. Orange marks negative medians.
+
+
+
+   The cluster comparison distinguishes sustained heavy traffic                                                  IPPO                     Hysteresis     DPDK    Shared-PPO
+from mixed-load operation. At c3 and c9, user-space oppor-                                              3000
+tunities are rare, leaving little scope for the policies to differ.
+
+
+
+
+                                                                                    advantage
+                                                                                     Reward
+At c5, c7, and c8, low-load intervals recur within otherwise                                            1500
+
+higher-load operation, and avoiding assignments before a load
+                                                                                                          0
+increase produces the largest gains (Fig. 3(c)). Cluster c1 also                                               (a)
+has low-load opportunities, but fewer direct jumps from below
+81 to above 149 Mbps per opportunity than c5, c7, and c8.
+                                                                                      endpoint (Mbps)
+                                                                                      USR safe range
+MAPPO’s caution therefore recovers too little QoS cost to                                               160
+
+offset the saving lost, yielding a median gain of −2.74; c2                                             120
+is also slightly negative (−0.44). The sequence of operating
+conditions, rather than mean load alone, determines the benefit.                                         80    (b) Reference 149 Mbps
+
+
+C. What calibration changes reveal                                                                       0.2
+                                                                                       actions (%)
+
+
+
+
+                                                                                                               (c)
+                                                                                        Changed
+
+
+
+
+   MAPPO beats IPPO and hysteresis in all ten refits, ranking
+                                                                               0.1
+first among all six controllers in eight (Fig. 4). All five LOSO
+refits favor MAPPO, whereas LOLO groups L2 and L3 favor                        0.0
+always-DPDK and Shared-PPO, respectively. The comparison                             S0 S1 S2 S3 S4 L0 L1 L2 L3 L4
+is therefore less sensitive to repeated sweeps than to missing                                    Alternative calibration
+
+loads near the user-space performance transition.
+   L2 omits 1, 10, 100, and 1000 Mbps, removing the measured Fig.     4. Calibration sensitivity across five omitted sweeps (S0–S4) and five
+                                                                  omitted load groups (L0–L4). (a) MAPPO’s mean reward advantage. (b)
+100-Mbps operating point near the user-space QoS transition. Predicted onset of user-space QoS violations, expressed as offered load. (c)
+All 200 withheld user-space samples at that level satisfy the MAPPO actions differing from the reference calibration. Policies act in each
+QoS budgets, but the refitted model predicts them unsafe. refitted environment without retraining.
+Its first predicted violation therefore occurs at a lower load,
+with the safe-range endpoint shifting from 149 to 81 Mbps. over IPPO and hysteresis survives these changes, whereas
+MAPPO still uses less energy than always-DPDK (1982 versus the closer energy–QoS choice between the shared policies
+2068 Wh), but its QoS cost rises to 3329 against 1024, depends on accurately representing the user-space performance
+outweighing that saving. The reversal reflects a pessimistic transition.
+prediction of user-space performance, not a physical change
+in the UPF.                                                       D. Sensitivity to reward priorities
+   L3 omits 2, 20, 200, and 2000 Mbps and shifts the endpoint       Rescoring the saved decisions with each of the four cost
+upward to 170 Mbps, making user-space operation less costly weights multiplied by 0.5, 1, or 2 gives 34 = 81 combinations.
+and giving Shared-PPO a 27.3-unit reward advantage. Yet MAPPO ranks first among all six controllers throughout, with
+MAPPO’s actions change by at most 0.019% under LOSO mean reward margins of 3.3–203.6 units (Fig. 5). The smallest
+and 0.171% under LOLO, and the winning controller is margin occurs when SEC receives twice its original weight
+unchanged between closed-policy evaluation and fixed-action and the other costs receive half, making Shared-PPO’s energy-
+replay in every refit. Recalibration therefore mainly changes the saving behavior more attractive. Thus MAPPO’s advantage is
+estimated consequences of similar decisions. The advantage not confined to the original weighting, although it narrows when
+                                             SEC x0.5   SEC x1        SEC x2                                        R EFERENCES
+    Reward advantage                                                  203.6             [1] S. Christakis, T. Tsourdinis, N. Makris, T. Korakis, and S. Fdida,
+                       200       81/81 settings favor MAPPO
+                                                                                            “Evaluation of user plane function implementations in real-world 5G
+                                                                                            networks,” in Proc. IEEE INFOCOM Workshops (CNERT), 2024, pp.
+                       100                                                                  1–6.
+                                                                                        [2] R. Bolla, P. Ghiorzo, R. Bruschi, L. Ivaldi, F. Davoli, C. Lombardo,
+                                                                                            and B. Siccardi, “Comparison of the performance and energy efficiency
+                                       3.3
+                        0                                                                   evaluation of 5G user-plane functions,” in Proc. IEEE GreenCom, 2024,
+                             1                  9                18               27        pp. 361–367.
+                                                                                        [3] I. Leyva-Pupo and C. Cervelló-Pastor, “Efficient solutions to the
+                                  Weight setting (sorted within each SEC scale)
+                                                                                            placement and chaining problem of user plane functions in 5G networks,”
+                                                                                            J. Netw. Comput. Appl., vol. 197, p. 103269, 2022.
+Fig. 5. Ranking sensitivity using saved decisions from all six controllers.             [4] A. Bellin, N. Di Cicco, D. Munaretto, and F. Granelli, “Power
+Each curve independently sorts the 27 QoS, switching, and cooldown weight                   consumption-aware 5G edge UPF selection using deep reinforcement
+combinations for one SEC multiplier. All 81 reward margins are positive.                    learning,” in Proc. IEEE Conf. Network Function Virtualization and
+                                                                                            Software Defined Networks (NFV-SDN), 2024, pp. 1–6.
+                                                                                        [5] S. Afshar Borji, R. Bruschi, C. E. Costa, and C. Lombardo, “Dynamic
+                                                                                            energy-efficient user plane function selection in 5G networks,” in
+energy efficiency takes greater priority. This is a sensitivity test                        Proc. IFIP SLICES Workshop, 2025, pp. 91–96. [Online]. Available:
+of the recorded policies, not an evaluation of policies retrained                           https://networking.ifip.org/2025/images/Net25_papers/1571142002.pdf
+under different objectives.                                                             [6] J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, “Prox-
+                                                                                            imal policy optimization algorithms,” arXiv preprint arXiv:1707.06347,
+                                             VI. D ISCUSSION                                2017.
+                                                                                        [7] C. Yu, A. Velu, E. Vinitsky, J. Gao, Y. Wang, A. Bayen, and Y. Wu,
+   The results favor shared local control that values low-load                              “The surprising effectiveness of PPO in cooperative multi-agent games,”
+energy opportunities over their expected duration. Capturing                                in Adv. Neural Inf. Process. Syst. (NeurIPS), vol. 35, 2022.
+                                                                                        [8] C. Schroeder de Witt, T. Gupta, D. Makoviichuk, V. Makoviychuk, P. H. S.
+every immediate saving can increase later costs when demand                                 Torr, M. Sun, and S. Whiteson, “Is independent learning all you need in
+changes, while excessive caution forfeits savings where those                               the StarCraft multi-agent challenge?” arXiv preprint arXiv:2011.09533,
+changes are less consequential. This explains the different                                 2020.
+                                                                                        [9] OMEC Project, “SD-Core 4G/5G user plane function,” https://github.
+energy–QoS balances and the concentration of MAPPO’s gains                                  com/omec-project/upf.
+at mixed-load sites.                                                                   [10] OpenAirInterface Software Alliance, “OAI core network,” https://
+   The centralized critic uses fleet context and separate site                              openairinterface.org/core-network/.
+                                                                                       [11] J. K. Terry et al., “PettingZoo: Gym for multi-agent reinforcement
+returns, whereas the local critic fits one value function across                            learning,” arXiv preprint arXiv:2009.14471, 2021.
+sites. Critic capacity, output structure, and checkpoint timing                        [12] O. E. Martínez-Durive, S. Mishra, C. Ziemlicki, S. Rubrichi, Z. Smoreda,
+also differ, preventing attribution to global information alone.                            and M. Fiore, “The NetMob23 dataset: A high-resolution multi-
+                                                                                            region service-level mobile data traffic cartography,” arXiv preprint
+SEC divides power by load, so the 684 validation cluster-                                   arXiv:2305.06933, 2023.
+steps below 1 Mbps, versus four in training and none in test,                          [13] Z. Wu, S. Pan, G. Long, J. Jiang, and C. Zhang, “Graph WaveNet for
+dominate checkpoint selection; the small MAPPO–Shared-PPO                                   deep spatial-temporal graph modeling,” in Proc. Int. Joint Conf. Artif.
+                                                                                            Intell. (IJCAI), 2019, pp. 1907–1913.
+gap may therefore partly reflect validation mismatch.                                  [14] Keysight Technologies, “LoadCore—5G core testing,” https:
+   For transfer, calibration should cover the user-space perfor-                            //www.keysight.com/us/en/assets/3120-1180/data-sheets/LoadCore-5G-
+mance transition. The simulator uses conservative, non-duration-                            Core-Testing.pdf.
+                                                                                       [15] Hubblo, “Scaphandre: Energy consumption metrology agent,” https://
+weighted activation loss, so transition-related QoS gains depend                            github.com/hubblo-org/scaphandre.
+on this modeling choice; energy profiles are process-attributed.                       [16] K. N. Khan, M. Hirki, T. Niemi, J. K. Nurminen, and Z. Ou, “RAPL
+These refits vary the fit of one campaign, not the hardware                                 in action: Experiences in using RAPL for power measurements,” ACM
+                                                                                            Trans. Model. Perform. Eval. Comput. Syst., vol. 3, no. 2, 2018.
+or traffic region. The centralized critic adds value-estimation                        [17] A. Raffin, A. Hill, A. Gleave, A. Kanervisto, M. Ernestus, and
+complexity only during training, leaving the deployed shared                                N. Dormann, “Stable-Baselines3: Reliable reinforcement learning imple-
+actor and its local execution unchanged.                                                    mentations,” J. Mach. Learn. Res., vol. 22, no. 268, pp. 1–8, 2021.
+                                                                                       [18] J. Schulman, P. Moritz, S. Levine, M. Jordan, and P. Abbeel, “High-
+                                         VII. C ONCLUSION                                   dimensional continuous control using generalized advantage estimation,”
+                                                                                            in Proc. Int. Conf. Learn. Represent. (ICLR), 2016.
+    Shared-policy learning combines experience from heteroge-
+neous UPF sites while preserving local execution. MAPPO’s
+observed advantage is associated with a learned energy–QoS
+trade-off, but cannot be attributed to global critic information
+alone because critic capacity and output structure also differ.
+Because this balance depends on subsequent traffic and the
+fitted UPF profiles, deployment should prioritize validation
+around the user-space performance transition.
+                                         ACKNOWLEDGMENT
+  This work was supported in part by the European Union’s
+Horizon Europe programme under the SUNRISE-6G project
+(Grant Agreement No. 101139075).
+

@@ -1,0 +1,4 @@
+left,right,action,request_interior_lower_mbps,request_interior_upper_mbps,empty_request_interior,boundary_policy
+0.02,15.781867362113358,1,0.02,-10.218132637886642,True,Strict beyond crossover margin; domain endpoints inclusive
+15.781867362113358,87.37003738279041,2,41.78186736211336,61.370037382790414,False,Strict beyond crossover margin; domain endpoints inclusive
+87.37003738279041,400.0,0,113.37003738279041,400.0,False,Strict beyond crossover margin; domain endpoints inclusive

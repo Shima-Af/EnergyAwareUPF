@@ -1,0 +1,85 @@
+{
+  "results/baseline/rule_thresholds.json": {
+    "git_source": "main:results/baseline/rule_thresholds.json",
+    "sha256": "4e826749c763cb836e465c0197217e4714ab2dd23d347967d8814cf9f69441ba",
+    "content": {
+      "thresholds_mbps": {
+        "Th_1": 90.47900059943467
+      },
+      "config": {
+        "allow_multi_oai": false,
+        "num_oai_instances": 2,
+        "effective_instances": 1,
+        "alpha_perf": 0.3,
+        "beta_eff": 0.7
+      }
+    }
+  },
+  "experiments/results/Baselines/rule_thresholds.json": {
+    "git_source": "main:experiments/results/Baselines/rule_thresholds.json",
+    "sha256": "b577de862cab079257e37c947a78bc282a0f7661fe332fead296b9bdca2135a6",
+    "content": {
+      "thresholds_mbps": {
+        "Th_1": 90.33934997591328
+      },
+      "config": {
+        "allow_multi_oai": false,
+        "num_oai_instances": 1,
+        "effective_instances": 1,
+        "alpha_perf": 0.3,
+        "beta_eff": 0.7
+      }
+    }
+  },
+  "results/baseline/baseline_rule_results.csv": {
+    "git_source": "main:results/baseline/baseline_rule_results.csv",
+    "sha256": "9d87a38f019a4b87c67db24cecd817e38af0ed003de0e90d313d29651c78ff1d",
+    "columns": [
+      "Actual_Traffic",
+      "Predicted_Traffic",
+      "UPF_Config",
+      "Energy_Wh_Expected",
+      "Energy_Wh_Actual",
+      "Power_W_Expected",
+      "Power_W_Actual",
+      "QoS_Score_Expected",
+      "QoS_Score_Actual"
+    ],
+    "row_count": 721,
+    "values_not_used_for_baseline_selection": true
+  },
+  "experiments/results/Baselines/baseline_rule_results.csv": {
+    "git_source": "main:experiments/results/Baselines/baseline_rule_results.csv",
+    "sha256": "a5ab97c98e0079e45701f343fe1e1e278be314f959fd342e05eab43a22935b41",
+    "columns": [
+      "Actual_Traffic",
+      "Predicted_Traffic",
+      "UPF_Config",
+      "Energy_Wh_Expected",
+      "Energy_Wh_Actual",
+      "Power_W_Expected",
+      "Power_W_Actual",
+      "QoS_Score_Expected",
+      "QoS_Score_Actual"
+    ],
+    "row_count": 720,
+    "values_not_used_for_baseline_selection": true
+  },
+  "experiments/results/paper_results_assets/tab_overall_results.csv": {
+    "git_source": "main:experiments/results/paper_results_assets/tab_overall_results.csv",
+    "sha256": "493254bd0d21258c611b39f2d22de8487b3fde79509969a31f3e3a20063d9307",
+    "columns": [
+      "Controller",
+      "E_tot",
+      "avg_SEC",
+      "v",
+      "n_reconf"
+    ],
+    "row_count": 5,
+    "values_not_used_for_baseline_selection": true
+  },
+  "src/utils.py": {
+    "git_source": "main:src/utils.py",
+    "sha256": "5fdc0616c8973981460036f682c9b184355c7c6164e1fbebf405267b83bd576c"
+  }
+}

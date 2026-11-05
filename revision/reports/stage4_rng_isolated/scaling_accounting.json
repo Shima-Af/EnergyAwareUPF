@@ -1,0 +1,431 @@
+{
+  "ppo_42": {
+    "events": 4,
+    "local_energy_difference_sum_wh": -0.006672131149101597,
+    "events_lower_executed_power": 1,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": [
+      {
+        "index": 2229,
+        "timestamp": "2019-04-24T05:15:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.1264686075793224,
+        "hold_power_w": 0.11850332588201981,
+        "local_energy_saved_wh": -0.001991320424325649,
+        "executed_qos": 0.9185876846313477,
+        "hold_qos": 0.9085720181465149
+      },
+      {
+        "index": 2233,
+        "timestamp": "2019-04-24T06:15:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.40498933653071106,
+        "hold_power_w": 0.4237125794298151,
+        "local_energy_saved_wh": 0.004680810724776011,
+        "executed_qos": 0.9261121153831482,
+        "hold_qos": 0.9407892227172852
+      },
+      {
+        "index": 2344,
+        "timestamp": "2019-04-25T10:00:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.7454056953858583,
+        "hold_power_w": 0.7266824524867544,
+        "local_energy_saved_wh": -0.004680810724775969,
+        "executed_qos": 0.9412510395050049,
+        "hold_qos": 0.9384816884994507
+      },
+      {
+        "index": 2518,
+        "timestamp": "2019-04-27T05:30:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.2673115216657277,
+        "hold_power_w": 0.24858827876662373,
+        "local_energy_saved_wh": -0.00468081072477599,
+        "executed_qos": 0.9321277737617493,
+        "hold_qos": 0.9183927178382874
+      }
+    ]
+  },
+  "ppo_123": {
+    "events": 0,
+    "local_energy_difference_sum_wh": 0.0,
+    "events_lower_executed_power": 0,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": []
+  },
+  "ppo_456": {
+    "events": 2,
+    "local_energy_difference_sum_wh": 0.009361621449551966,
+    "events_lower_executed_power": 2,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": [
+      {
+        "index": 2027,
+        "timestamp": "2019-04-22T02:45:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.5656074422228534,
+        "hold_power_w": 0.5843306851219574,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.933349609375,
+        "hold_qos": 0.9433993101119995
+      },
+      {
+        "index": 2411,
+        "timestamp": "2019-04-26T02:45:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.6446721598703643,
+        "hold_power_w": 0.6633954027694682,
+        "local_energy_saved_wh": 0.004680810724775969,
+        "executed_qos": 0.9361312985420227,
+        "hold_qos": 0.9426323771476746
+      }
+    ]
+  },
+  "ppo_789": {
+    "events": 6,
+    "local_energy_difference_sum_wh": 0.020248550239447757,
+    "events_lower_executed_power": 5,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": [
+      {
+        "index": 2126,
+        "timestamp": "2019-04-23T03:30:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.2783502189101041,
+        "hold_power_w": 0.2970734618092081,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.9191310405731201,
+        "hold_qos": 0.9344054460525513
+      },
+      {
+        "index": 2221,
+        "timestamp": "2019-04-24T03:15:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.4254569974721076,
+        "hold_power_w": 0.4441802403712115,
+        "local_energy_saved_wh": 0.004680810724775983,
+        "executed_qos": 0.9272394180297852,
+        "hold_qos": 0.941392719745636
+      },
+      {
+        "index": 2316,
+        "timestamp": "2019-04-25T03:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.3382175108336208,
+        "hold_power_w": 0.3569407537327247,
+        "local_energy_saved_wh": 0.004680810724775983,
+        "executed_qos": 0.9222304821014404,
+        "hold_qos": 0.9381706118583679
+      },
+      {
+        "index": 2412,
+        "timestamp": "2019-04-26T03:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.4699365529962803,
+        "hold_power_w": 0.4886597958953842,
+        "local_energy_saved_wh": 0.004680810724775983,
+        "executed_qos": 0.9293892979621887,
+        "hold_qos": 0.9425116181373596
+      },
+      {
+        "index": 2435,
+        "timestamp": "2019-04-26T08:45:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.9536353941218514,
+        "hold_power_w": 0.9410133805841226,
+        "local_energy_saved_wh": -0.0031555033844321845,
+        "executed_qos": 0.9376220703125,
+        "hold_qos": 0.9420695304870605
+      },
+      {
+        "index": 2507,
+        "timestamp": "2019-04-27T02:45:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.7255491728521334,
+        "hold_power_w": 0.7442724157512374,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.938454270362854,
+        "hold_qos": 0.9412685632705688
+      }
+    ]
+  },
+  "ppo_1024": {
+    "events": 4,
+    "local_energy_difference_sum_wh": 0.01872324289910396,
+    "events_lower_executed_power": 4,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": [
+      {
+        "index": 2028,
+        "timestamp": "2019-04-22T03:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.5281080352424199,
+        "hold_power_w": 0.5468312781415239,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.9318599700927734,
+        "hold_qos": 0.9434195756912231
+      },
+      {
+        "index": 2316,
+        "timestamp": "2019-04-25T03:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.3382175108336208,
+        "hold_power_w": 0.3569407537327247,
+        "local_energy_saved_wh": 0.004680810724775983,
+        "executed_qos": 0.9222304821014404,
+        "hold_qos": 0.9381706118583679
+      },
+      {
+        "index": 2412,
+        "timestamp": "2019-04-26T03:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.4699365529962803,
+        "hold_power_w": 0.4886597958953842,
+        "local_energy_saved_wh": 0.004680810724775983,
+        "executed_qos": 0.9293892979621887,
+        "hold_qos": 0.9425116181373596
+      },
+      {
+        "index": 2507,
+        "timestamp": "2019-04-27T02:45:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.7255491728521334,
+        "hold_power_w": 0.7442724157512374,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.938454270362854,
+        "hold_qos": 0.9412685632705688
+      }
+    ]
+  },
+  "recurrent_ppo_42": {
+    "events": 0,
+    "local_energy_difference_sum_wh": 0.0,
+    "events_lower_executed_power": 0,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": []
+  },
+  "recurrent_ppo_123": {
+    "events": 1,
+    "local_energy_difference_sum_wh": -0.004680810724775969,
+    "events_lower_executed_power": 0,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": [
+      {
+        "index": 2058,
+        "timestamp": "2019-04-22T10:30:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.7390695119451691,
+        "hold_power_w": 0.7203462690460652,
+        "local_energy_saved_wh": -0.004680810724775969,
+        "executed_qos": 0.9413493871688843,
+        "hold_qos": 0.9383284449577332
+      }
+    ]
+  },
+  "recurrent_ppo_456": {
+    "events": 0,
+    "local_energy_difference_sum_wh": 0.0,
+    "events_lower_executed_power": 0,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": []
+  },
+  "recurrent_ppo_789": {
+    "events": 11,
+    "local_energy_difference_sum_wh": 0.011897747791432958,
+    "events_lower_executed_power": 7,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": [
+      {
+        "index": 2028,
+        "timestamp": "2019-04-22T03:00:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.5468312781415239,
+        "hold_power_w": 0.5281080352424199,
+        "local_energy_saved_wh": -0.004680810724775997,
+        "executed_qos": 0.9434195756912231,
+        "hold_qos": 0.9318599700927734
+      },
+      {
+        "index": 2032,
+        "timestamp": "2019-04-22T04:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.4135248655066495,
+        "hold_power_w": 0.4322481084057535,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.9265937209129333,
+        "hold_qos": 0.941066563129425
+      },
+      {
+        "index": 2125,
+        "timestamp": "2019-04-23T03:15:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.3560271848368107,
+        "hold_power_w": 0.37475042773591466,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.923298180103302,
+        "hold_qos": 0.9390000700950623
+      },
+      {
+        "index": 2129,
+        "timestamp": "2019-04-23T04:15:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.3478606619333236,
+        "hold_power_w": 0.32913741903421967,
+        "local_energy_saved_wh": -0.004680810724775983,
+        "executed_qos": 0.9377143979072571,
+        "hold_qos": 0.921661913394928
+      },
+      {
+        "index": 2133,
+        "timestamp": "2019-04-23T05:15:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.12489445674036499,
+        "hold_power_w": 0.13503896210788907,
+        "local_energy_saved_wh": 0.0025361263418810197,
+        "executed_qos": 0.9086884260177612,
+        "hold_qos": 0.9189592003822327
+      },
+      {
+        "index": 2220,
+        "timestamp": "2019-04-24T03:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.6105394086990908,
+        "hold_power_w": 0.6292626515981947,
+        "local_energy_saved_wh": 0.004680810724775969,
+        "executed_qos": 0.9349843859672546,
+        "hold_qos": 0.9431596994400024
+      },
+      {
+        "index": 2239,
+        "timestamp": "2019-04-24T07:45:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.7049310747841943,
+        "hold_power_w": 0.6862078318850903,
+        "local_energy_saved_wh": -0.004680810724775997,
+        "executed_qos": 0.9418910145759583,
+        "hold_qos": 0.9374304413795471
+      },
+      {
+        "index": 2243,
+        "timestamp": "2019-04-24T08:45:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.7674395286649336,
+        "hold_power_w": 0.7861627715640375,
+        "local_energy_saved_wh": 0.004680810724775969,
+        "executed_qos": 0.9393824934959412,
+        "hold_qos": 0.9404582977294922
+      },
+      {
+        "index": 2316,
+        "timestamp": "2019-04-25T03:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.3382175108336208,
+        "hold_power_w": 0.3569407537327247,
+        "local_energy_saved_wh": 0.004680810724775983,
+        "executed_qos": 0.9222304821014404,
+        "hold_qos": 0.9381706118583679
+      },
+      {
+        "index": 2336,
+        "timestamp": "2019-04-25T08:00:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.6937974532307684,
+        "hold_power_w": 0.6750742103316644,
+        "local_energy_saved_wh": -0.004680810724775997,
+        "executed_qos": 0.9420785307884216,
+        "hold_qos": 0.9370918869972229
+      },
+      {
+        "index": 2340,
+        "timestamp": "2019-04-25T09:00:00",
+        "before": 1,
+        "after": 2,
+        "executed_power_w": 0.5230944714451614,
+        "hold_power_w": 0.5418177143442654,
+        "local_energy_saved_wh": 0.004680810724775997,
+        "executed_qos": 0.9316511750221252,
+        "hold_qos": 0.9434224367141724
+      }
+    ]
+  },
+  "recurrent_ppo_1024": {
+    "events": 4,
+    "local_energy_difference_sum_wh": -0.01684314747893126,
+    "events_lower_executed_power": 0,
+    "interpretation": "One-slot accounting comparison holding previous USR level at the same realized load; excludes later state, cooldown, policy response and reoptimization; not a causal policy ablation",
+    "records": [
+      {
+        "index": 2050,
+        "timestamp": "2019-04-22T08:30:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.4391846510527289,
+        "hold_power_w": 0.4204614081536249,
+        "local_energy_saved_wh": -0.004680810724775997,
+        "executed_qos": 0.9412592053413391,
+        "hold_qos": 0.9269817471504211
+      },
+      {
+        "index": 2144,
+        "timestamp": "2019-04-23T08:00:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.9617432182729158,
+        "hold_power_w": 0.9505403570545028,
+        "local_energy_saved_wh": -0.0028007153046032407,
+        "executed_qos": 0.937468409538269,
+        "hold_qos": 0.9421873688697815
+      },
+      {
+        "index": 2240,
+        "timestamp": "2019-04-24T08:00:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.6884782597738479,
+        "hold_power_w": 0.6697550168747439,
+        "local_energy_saved_wh": -0.004680810724775997,
+        "executed_qos": 0.9421740770339966,
+        "hold_qos": 0.9369276762008667
+      },
+      {
+        "index": 2338,
+        "timestamp": "2019-04-25T08:30:00",
+        "before": 2,
+        "after": 1,
+        "executed_power_w": 0.6268226542166531,
+        "hold_power_w": 0.608099411317549,
+        "local_energy_saved_wh": -0.0046808107247760244,
+        "executed_qos": 0.943179190158844,
+        "hold_qos": 0.9348994493484497
+      }
+    ]
+  }
+}

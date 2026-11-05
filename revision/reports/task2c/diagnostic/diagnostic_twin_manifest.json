@@ -1,0 +1,286 @@
+{
+  "diagnostic_only": true,
+  "default_twin_replaced": false,
+  "twin_id": "5e33b6ffb1f13eb0a3c5cded38ee43999e834d437b88f5234a13bde355dad331",
+  "original_twin_id": "ebb6224620b66c921a49624718e39d015799adadd971a52a46bdfbc13d9ef7ff",
+  "original_bundle": {
+    "twin_id": "ebb6224620b66c921a49624718e39d015799adadd971a52a46bdfbc13d9ef7ff",
+    "artifact_config_sha256": "fdad8e3739bbde611f802da6e00fea6d826ef00919f5dc93c10c4bb06eca21d9",
+    "adapter_path": "/home/ubuntu/EnergyAwareUPF/revision/evaluation/twin.py",
+    "adapter_sha256": "6523970c158a5a8d2b6655a1792dcb361a2e73140f36bfb6fd9d2a0e2eb6a891",
+    "artifacts": [
+      {
+        "mode": "dpdk",
+        "target": "qos",
+        "role": "model",
+        "path": "saved_models/prediction_models/dpdk_upf_performance_model.keras",
+        "sha256": "932f690117d10b433346a25f619194e94b1db663173702e2b0565845012367d1",
+        "serialization": {
+          "keras_version": "3.11.3",
+          "date_saved": "2025-09-30@12:35:51"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_upf_performance_model.keras",
+        "bytes": 80369
+      },
+      {
+        "mode": "dpdk",
+        "target": "qos",
+        "role": "input_scaler",
+        "path": "saved_models/prediction_models/dpdk_perf_scaler_X.pkl",
+        "sha256": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_perf_scaler_X.pkl",
+        "bytes": 623
+      },
+      {
+        "mode": "dpdk",
+        "target": "qos",
+        "role": "target_scaler",
+        "path": "saved_models/prediction_models/dpdk_perf_scaler_y.pkl",
+        "sha256": "2d872d2b130eda5f3339a4fbed4eba973ce8c360ff2dd219caf5a955dbab1cbc",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_perf_scaler_y.pkl",
+        "bytes": 623
+      },
+      {
+        "mode": "dpdk",
+        "target": "power",
+        "role": "model",
+        "path": "saved_models/prediction_models/dpdk_upf_power_model.keras",
+        "sha256": "eec63019f99daffedce84cbaf4fb261a35a734ac1c1e801ca3f6290fc67d0d7b",
+        "serialization": {
+          "keras_version": "3.11.3",
+          "date_saved": "2025-09-30@12:33:27"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_upf_power_model.keras",
+        "bytes": 21457
+      },
+      {
+        "mode": "dpdk",
+        "target": "power",
+        "role": "input_scaler",
+        "path": "saved_models/prediction_models/dpdk_scaler_X.pkl",
+        "sha256": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_scaler_X.pkl",
+        "bytes": 623
+      },
+      {
+        "mode": "dpdk",
+        "target": "power",
+        "role": "target_scaler",
+        "path": "saved_models/prediction_models/dpdk_scaler_y.pkl",
+        "sha256": "1bdb218dafa423eebd40e669c444174d8dec7e878b25a039289139063e9e130c",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/dpdk_scaler_y.pkl",
+        "bytes": 623
+      },
+      {
+        "mode": "usr",
+        "target": "qos",
+        "role": "model",
+        "path": "saved_models/prediction_models/oai_upf_performance_model.keras",
+        "sha256": "c92b3d9741feb9cd240b8a1e2e72a9c332958cde619d27867b80935ede06f092",
+        "serialization": {
+          "keras_version": "3.11.3",
+          "date_saved": "2025-09-30@12:36:50"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_upf_performance_model.keras",
+        "bytes": 80378
+      },
+      {
+        "mode": "usr",
+        "target": "qos",
+        "role": "input_scaler",
+        "path": "saved_models/prediction_models/oai_perf_scaler_X.pkl",
+        "sha256": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_perf_scaler_X.pkl",
+        "bytes": 623
+      },
+      {
+        "mode": "usr",
+        "target": "qos",
+        "role": "target_scaler",
+        "path": "saved_models/prediction_models/oai_perf_scaler_y.pkl",
+        "sha256": "e0b3aa30b33b050cc0469176bb27ddcd5017d783163175d7c7f43792b58cc7e2",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_perf_scaler_y.pkl",
+        "bytes": 623
+      },
+      {
+        "mode": "usr",
+        "target": "power",
+        "role": "model",
+        "path": "saved_models/prediction_models/oai_upf_power_model.keras",
+        "sha256": "8ea0bdf2461d8a27f2c1613500ea8d22487c6b0c27ca4f9f1b9a0afade64720a",
+        "serialization": {
+          "keras_version": "3.11.3",
+          "date_saved": "2025-09-30@12:33:55"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_upf_power_model.keras",
+        "bytes": 69376
+      },
+      {
+        "mode": "usr",
+        "target": "power",
+        "role": "input_scaler",
+        "path": "saved_models/prediction_models/oai_scaler_X.pkl",
+        "sha256": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_scaler_X.pkl",
+        "bytes": 623
+      },
+      {
+        "mode": "usr",
+        "target": "power",
+        "role": "target_scaler",
+        "path": "saved_models/prediction_models/oai_scaler_y.pkl",
+        "sha256": "62522eb7a5459f4ad25136cd92a0c44e147e8c04b4ab6c26e1d49c2dcf85d105",
+        "serialization": {
+          "sklearn_version": "1.7.2"
+        },
+        "absolute_path": "/home/ubuntu/EnergyAwareUPF/saved_models/prediction_models/oai_scaler_y.pkl",
+        "bytes": 623
+      }
+    ],
+    "runtime": {
+      "python": "3.12.3",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+      "dependencies": {
+        "numpy": "2.4.2",
+        "tensorflow": "2.20.0",
+        "keras": "3.13.2",
+        "scikit-learn": "1.8.0",
+        "joblib": "1.5.3",
+        "h5py": "3.15.1"
+      },
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "-1",
+        "TF_ENABLE_ONEDNN_OPTS": "0",
+        "TF_DETERMINISTIC_OPS": "1",
+        "TF_NUM_INTEROP_THREADS": "1",
+        "TF_NUM_INTRAOP_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "TF_CPP_MIN_LOG_LEVEL": "2"
+      },
+      "tensorflow_build": {
+        "cpu_compiler": "clang 18",
+        "cuda_compute_capabilities": [
+          "sm_60",
+          "sm_70",
+          "sm_80",
+          "sm_89",
+          "compute_90"
+        ],
+        "cuda_version": "12.5.1",
+        "cudnn_version": "9",
+        "is_cuda_build": true,
+        "is_rocm_build": false,
+        "is_tensorrt_build": false
+      },
+      "visible_devices": [
+        "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+      ],
+      "intra_op_threads": 1,
+      "inter_op_threads": 1,
+      "tensor_float_32_enabled": false,
+      "model_call": "model(one_float32_sample, training=False); compile=False on load",
+      "batch_policy": "one sample per forward pass, independent of caller batching",
+      "input_pipeline": "float32(load/k) -> float32 log1p -> saved input scaler",
+      "output_pipeline": "float32 model output -> saved target inverse scaler; no clipping",
+      "serialized_tensorflow_version": null,
+      "serialized_tensorflow_version_note": "Not recorded in the .keras metadata; not inferred from Keras version"
+    },
+    "load_warnings": [
+      {
+        "artifact": "saved_models/prediction_models/dpdk_perf_scaler_X.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      },
+      {
+        "artifact": "saved_models/prediction_models/dpdk_perf_scaler_y.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      },
+      {
+        "artifact": "saved_models/prediction_models/dpdk_scaler_X.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      },
+      {
+        "artifact": "saved_models/prediction_models/dpdk_scaler_y.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      },
+      {
+        "artifact": "saved_models/prediction_models/oai_perf_scaler_X.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      },
+      {
+        "artifact": "saved_models/prediction_models/oai_perf_scaler_y.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      },
+      {
+        "artifact": "saved_models/prediction_models/oai_scaler_X.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      },
+      {
+        "artifact": "saved_models/prediction_models/oai_scaler_y.pkl",
+        "category": "InconsistentVersionWarning",
+        "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+      }
+    ],
+    "invalid_prediction_policy": "retain raw diagnostics; raise before evaluation accounting"
+  },
+  "selected_model_path": "/home/ubuntu/EnergyAwareUPF/revision/models/task2c/selected_usr_power.json",
+  "selected_model_sha256": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8",
+  "selection_path": "/home/ubuntu/EnergyAwareUPF/revision/reports/task2c/selection_frozen.json",
+  "selection_sha256": "92b6b6909874a2bf1992a3b6048a7059abf67708a8709a3b430de81531fcc759",
+  "replacement": "USR power only; DPDK and all QoS outputs unchanged",
+  "legacy_float32_model_load_field_scope": "Unchanged QoS input; USR power uses explicit float64 power_model_input_mbps",
+  "power_model": {
+    "name": "nonnegative_pwl_7",
+    "family": "piecewise_linear",
+    "domain_mbps": [
+      0.01,
+      5000.0
+    ],
+    "coefficients_w": [
+      0.00014695966757424756,
+      0.012106225277276117,
+      0.07502689949640347,
+      0.9187781810559703,
+      3.3123277118327508,
+      3.316654551442241,
+      3.4566568598446614
+    ],
+    "knots_mbps": [
+      0.01,
+      1.0,
+      10.0,
+      100.0,
+      400.0,
+      1000.0,
+      5000.0
+    ],
+    "input_scale_mbps": 5000.0
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "task": "Task 2B read-only profiling validity audit",
+  "branch": "revision/comcom-clean-evaluation",
+  "base_commit": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "protected_task1_task2a_files_verified_unchanged": 52,
+  "tracked_files_changed": [],
+  "external_diagnostic_sources_verified_unchanged": true,
+  "model_refitting": false,
+  "correction_implemented": false,
+  "controller_training": false,
+  "controller_rollouts": false,
+  "final_test_inference": false,
+  "committed": false,
+  "pushed": false,
+  "files": [
+    {
+      "path": "revision/TASK2B_VALIDITY_REPORT.md",
+      "bytes": 12488,
+      "sha256": "a010a50f4ea489c0185d3a6a2e5ad9742ad3784f24016c484431cc391f03ad5b"
+    },
+    {
+      "path": "revision/diagnostics/__init__.py",
+      "bytes": 80,
+      "sha256": "cf26252c1734fc38cd013338a6f04ba9b6a75a2aa9bce906a0f6135e6d30269a"
+    },
+    {
+      "path": "revision/diagnostics/profiling_validity.py",
+      "bytes": 19145,
+      "sha256": "26d976cc3ba5f5bf28f05ad8114743fad417464b06fafd4c7675e3a88da7088c"
+    },
+    {
+      "path": "revision/reports/task2b/artifact_manifest.json",
+      "bytes": 11058,
+      "sha256": "79833cf0ccc46e0b5adc6f1112d83f5bab6110cc6ccb6cf3c2e9f81c9bcaa7fe"
+    },
+    {
+      "path": "revision/reports/task2b/diagnostic_test_results.txt",
+      "bytes": 267,
+      "sha256": "2e8afb51d3e0e056b92b58a3c6fa97b95381e85dfbbc569775e15f242282fd10"
+    },
+    {
+      "path": "revision/reports/task2b/invalid_workload_predictions.csv",
+      "bytes": 802,
+      "sha256": "9e34d5725add167007f6cf0429227ef8d961aa0fac79e086f671cda4e0afb726"
+    },
+    {
+      "path": "revision/reports/task2b/measurement_by_block.csv",
+      "bytes": 18916,
+      "sha256": "9e8daa256c441af4fe20d11f289bfbac9a7ac2b13a2dab215decafe35f92ff94"
+    },
+    {
+      "path": "revision/reports/task2b/measurement_by_load.csv",
+      "bytes": 9843,
+      "sha256": "081c13c56123b4e758e2b76eac3314c078d7b5ebbf68c3dbaac0e4bcdd7018c6"
+    },
+    {
+      "path": "revision/reports/task2b/power_inference_stages.csv",
+      "bytes": 6650,
+      "sha256": "fd919c8f70e0f223574d170fcca7145e5f69fcfd99e3274b8008006631c852ad"
+    },
+    {
+      "path": "revision/reports/task2b/timestamp_verification.json",
+      "bytes": 358,
+      "sha256": "c438ca5deff4764c108dbf200e4f871149c3825adbc704270713c5ca89c5d153"
+    },
+    {
+      "path": "revision/reports/task2b/usr_low_load_grid.csv",
+      "bytes": 107978,
+      "sha256": "46268e73bc95ab3e8fe0a5b70bc9c7db57529752bdd19dbf81d364117407f8ba"
+    },
+    {
+      "path": "revision/reports/task2b/usr_power_low_load.pdf",
+      "bytes": 18171,
+      "sha256": "888fc7e29e065a91d689d772150e453bf0a64dcc55d2ed760dae0550479f136e"
+    },
+    {
+      "path": "revision/reports/task2b/usr_power_low_load.png",
+      "bytes": 102056,
+      "sha256": "7c5337ee8d52f2cdd6e90e6d93d020b40063d36823427a8f3ed2bba5d4333e01"
+    },
+    {
+      "path": "revision/reports/task2b/validity_summary.json",
+      "bytes": 23983,
+      "sha256": "4df0af5eb117b8675476c2ca998205f39d37ccea3c6944a9d89844732c2e5e38"
+    },
+    {
+      "path": "revision/reports/task2b/workload_prediction_census.csv",
+      "bytes": 2459316,
+      "sha256": "3fb876bfcd9592f1dc99f4ca3d5eaf1dc7d94b52ef5dd91c7a469f849e33c6e8"
+    },
+    {
+      "path": "revision/reports/task2b_execution.log",
+      "bytes": 880,
+      "sha256": "da87d550b0303280612458afd067a73e9c0dc25f075712097a85afd2b9e82f6e"
+    },
+    {
+      "path": "revision/tests/test_profiling_validity.py",
+      "bytes": 1336,
+      "sha256": "2b426975acebfe07c8b53ff669e58fd241812950858fc6a8ddbb863c94d6d99e"
+    }
+  ],
+  "self_excluded": "revision/reports/task2b/file_manifest.json"
+}

@@ -1,0 +1,237 @@
+{
+  "config": {
+    "id": "comcom.controller-pilot.v1",
+    "seeds": [
+      42,
+      123
+    ],
+    "algorithms": [
+      "ppo",
+      "recurrent_ppo"
+    ],
+    "requested_timesteps": 32768,
+    "n_envs": 4,
+    "n_steps": 1024,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "learning_rate": 0.0001,
+    "gamma": 0.995,
+    "gae_lambda": 0.9,
+    "ent_coef": 0.15,
+    "clip_range": 0.2,
+    "target_kl": 0.03,
+    "eval_every_timesteps": 8192,
+    "checkpoint_selection": "validation_total_reward",
+    "schema": "hybrid",
+    "recurrent_hidden": 128,
+    "shared_lstm": true,
+    "forecast": {
+      "seed": 42,
+      "epochs": 8,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "candidates": [
+        "lstm_load",
+        "lstm_calendar"
+      ],
+      "units": [
+        128,
+        64
+      ],
+      "dense_units": 64,
+      "dropout": 0.2,
+      "recurrent_dropout": 0.0,
+      "output": "softplus_scaled_load",
+      "prefix_boundaries": [
+        192,
+        608,
+        1024,
+        1440,
+        1856,
+        2016
+      ],
+      "cold_start": "persistence_for_training_indices_96_to_191_only",
+      "selection": "validation_rmse",
+      "window": 96
+    },
+    "rule": {
+      "selection": "forecast_score_feasibility_then_minimum_power",
+      "target": 0.9,
+      "fallback": "maximum_predicted_qos_then_minimum_power",
+      "relative_power_deadband": 0.02
+    },
+    "sensitivity": "frozen_policy_replay_with_changed_outcomes_and_previous_telemetry_no_retraining",
+    "final_test_allowed": false,
+    "risk_acceptance_threshold": null,
+    "no_search_expansion": true
+  },
+  "contract": {
+    "cooldown_slots": 4,
+    "initial_action": 0,
+    "qos_target": 0.9,
+    "sec_epsilon_mbps": 1e-06,
+    "sec_weight": 100.0,
+    "qos_weight": 30.0,
+    "switch_to_dpdk_cost": 0.03,
+    "usr_launch_cost": 0.012,
+    "usr_scale_down_cost": 0.003,
+    "gamma": 0.995
+  },
+  "train_horizon": "63a9079e884dfaa84cd4494bc7d95b1103cbfe4ea817b0d32d4d7f41cfeecb66",
+  "validation_horizon": "1d0955ec0c78322db213461b94c8bc4a17d38cfb10679a98994ea3200a0ce0c4",
+  "frozen_twin": {
+    "version": "comcom.revised_twin.v1",
+    "twin_id": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+    "config": {
+      "version": "comcom.revised_twin.v1",
+      "models": {
+        "dpdk_power": {
+          "path": "revision/models/final_dpdk_power/neural_seed_123/manifest.json",
+          "kind": "neural_power",
+          "artifacts": [
+            {
+              "path": "revision/models/final_dpdk_power/neural_seed_123/manifest.json",
+              "sha256": "f8776d3dfa57846ae3da58d98a2c387d38b0f48836cf3be40d63f290057b551c"
+            },
+            {
+              "path": "revision/models/final_dpdk_power/neural_seed_123/model.keras",
+              "sha256": "bbd3283332716c3e7fee6448539c0ce6a022a6d9e90bd3d5a138e6861ad63825"
+            }
+          ],
+          "choice_reason": "Minimum grouped profiling validation RMSE across prespecified constant/affine/PWL/two constrained neural candidates"
+        },
+        "usr_power": {
+          "path": "revision/models/task2c/selected_usr_power.json",
+          "kind": "simple_power",
+          "artifacts": [
+            {
+              "path": "revision/models/task2c/selected_usr_power.json",
+              "sha256": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8"
+            }
+          ],
+          "choice_reason": "Frozen seven-knot fit: continuous nonnegativity and much better low-load accuracy than the Task 2D validation-selected NN; no controller-based selection"
+        },
+        "dpdk_qos": {
+          "path": "revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/manifest.json",
+          "kind": "bounded_qos",
+          "artifacts": [
+            {
+              "path": "revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/manifest.json",
+              "sha256": "76e1e0ea4f086f0e2504164f9d7a4e4cf97f097bc9367d190c7ed39fe8eae759"
+            },
+            {
+              "path": "revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/model.keras",
+              "sha256": "61c0c4d8d8e93955f2f30f15aa64472e4552329d582329775d0afd36ee731091"
+            }
+          ],
+          "choice_reason": "Task 2H validation-selected bounded conditional-mean predictor, not a QoS safety guarantee"
+        },
+        "usr_qos": {
+          "path": "revision/models/task2h/usr/original_hidden_sigmoid_seed_42/manifest.json",
+          "kind": "bounded_qos",
+          "artifacts": [
+            {
+              "path": "revision/models/task2h/usr/original_hidden_sigmoid_seed_42/manifest.json",
+              "sha256": "78dd56a681ccdd264e7a23cdf08b8e0da8b3eb5a8ec24469b0e9047cb1151f7e"
+            },
+            {
+              "path": "revision/models/task2h/usr/original_hidden_sigmoid_seed_42/model.keras",
+              "sha256": "8a29326e9ceb33ac93c9ac50e64fede9bf34f8afa7c6f34a00a6e312921a6eba"
+            }
+          ],
+          "choice_reason": "Task 2H validation-selected bounded conditional-mean predictor, not a QoS safety guarantee"
+        }
+      },
+      "per_instance_domain_mbps": [
+        0.01,
+        5000.0
+      ],
+      "joint_three_action_total_domain_mbps": [
+        0.02,
+        5000.0
+      ],
+      "historical_default_changed": false,
+      "qos_specification": {
+        "path": "revision/specifications/qos_score_v1.json",
+        "sha256": "4a54e006f89f9aab47b3f663e71ff16b9325d237c4a21a4a1541dd298374778a"
+      },
+      "implementations": [
+        {
+          "path": "revision/evaluation/revised_twin.py",
+          "sha256": "8ae9c1d888e246ef4efd7bf10ab5136e9173eb4d78547c9d9b5ea1c37fb03b4d"
+        },
+        {
+          "path": "revision/evaluation/twin.py",
+          "sha256": "6523970c158a5a8d2b6655a1792dcb361a2e73140f36bfb6fd9d2a0e2eb6a891"
+        },
+        {
+          "path": "revision/profiling/neural_qos.py",
+          "sha256": "574441b0074d7afa44a07bb48cf413790abc7d5cbbf853a2451628f38748b84e"
+        },
+        {
+          "path": "revision/profiling/neural_power.py",
+          "sha256": "a8aa63d31408bd59398eb997beaa82877248ebfe6d48f4e0e83770014f2002a1"
+        },
+        {
+          "path": "revision/profiling/power_model.py",
+          "sha256": "5a5d15ba80e8eea0778d4269321094923a548da390aa1534a5f34338ee235a51"
+        }
+      ],
+      "selection_precedes_workload_diagnostics": true,
+      "controller_results_used_for_selection": false,
+      "intended_scope": "exploratory offline model-conditional comparison; no physical/5QI certification"
+    },
+    "pinned_paths_and_hashes": {
+      "/home/ubuntu/EnergyAwareUPF/revision/configs/revised_twin_v1.json": "2debe17debb01f2742030f5565eac97227d8d1bae26c9e9a789e52d6faaf1cc0",
+      "/home/ubuntu/EnergyAwareUPF/revision/specifications/qos_score_v1.json": "4a54e006f89f9aab47b3f663e71ff16b9325d237c4a21a4a1541dd298374778a",
+      "/home/ubuntu/EnergyAwareUPF/revision/evaluation/revised_twin.py": "8ae9c1d888e246ef4efd7bf10ab5136e9173eb4d78547c9d9b5ea1c37fb03b4d",
+      "/home/ubuntu/EnergyAwareUPF/revision/evaluation/twin.py": "6523970c158a5a8d2b6655a1792dcb361a2e73140f36bfb6fd9d2a0e2eb6a891",
+      "/home/ubuntu/EnergyAwareUPF/revision/profiling/neural_qos.py": "574441b0074d7afa44a07bb48cf413790abc7d5cbbf853a2451628f38748b84e",
+      "/home/ubuntu/EnergyAwareUPF/revision/profiling/neural_power.py": "a8aa63d31408bd59398eb997beaa82877248ebfe6d48f4e0e83770014f2002a1",
+      "/home/ubuntu/EnergyAwareUPF/revision/profiling/power_model.py": "5a5d15ba80e8eea0778d4269321094923a548da390aa1534a5f34338ee235a51",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/neural_seed_123/manifest.json": "f8776d3dfa57846ae3da58d98a2c387d38b0f48836cf3be40d63f290057b551c",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/final_dpdk_power/neural_seed_123/model.keras": "bbd3283332716c3e7fee6448539c0ce6a022a6d9e90bd3d5a138e6861ad63825",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2c/selected_usr_power.json": "3fc2b6b3b9cedb0c8abd17ea0740a6f721628c93c607e4397bb5fb1155f5c7f8",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/manifest.json": "76e1e0ea4f086f0e2504164f9d7a4e4cf97f097bc9367d190c7ed39fe8eae759",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/model.keras": "61c0c4d8d8e93955f2f30f15aa64472e4552329d582329775d0afd36ee731091",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/original_hidden_sigmoid_seed_42/manifest.json": "78dd56a681ccdd264e7a23cdf08b8e0da8b3eb5a8ec24469b0e9047cb1151f7e",
+      "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/original_hidden_sigmoid_seed_42/model.keras": "8a29326e9ceb33ac93c9ac50e64fede9bf34f8afa7c6f34a00a6e312921a6eba"
+    },
+    "units": {
+      "power": "process-attributed W",
+      "energy": "W multiplied by slot hours = Wh",
+      "qos": "composite QoS_w score"
+    },
+    "semantics": "balanced equal load; summed power; per-instance QoS unchanged; no transient energy or interference",
+    "legacy_float32_model_load_field": "float32 representation for compatibility; actual transforms are pinned in each model manifest",
+    "inference_profile": "CPU, deterministic, one instance-load per model call; no output clipping",
+    "dependency_versions": {
+      "numpy": "2.4.2",
+      "tensorflow": "2.20.0",
+      "keras": "3.13.2",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0"
+    },
+    "default_historical_twin_changed": false,
+    "operational_safety_guarantee": false
+  },
+  "forecast_sha256": "b12350c930d9aedfe3376203efc4943e5a9025632febc8215eab5d191649c0ce",
+  "cache_sha256": "953d44717fd18b87788e7ea8442278b4799041af98d6b4c7ee47da270d5a8cdc",
+  "final_test_allowed": false,
+  "code_hashes": {
+    "pilot.py": "544e77c54ea995843bf0cd19e2c4dd851ceb5c5e7b1b6aa9fe6bf1ae2582ea3d",
+    "pipeline.py": "5666633f659b6d397e20a2a84f49d251a4a2aaf96b5c824ed9d997dec23b6d2b",
+    "common.py": "5f46cb8e04b681deff1fc6e82899daac9039b742ff736867976ab31d4fbc6a7f",
+    "forecast.py": "97b60d575b2cbd40da29dd3745bdcd7a6790af269abb09cd0e542c2ead59eb0e",
+    "sensitivity.py": "2c30957306bbe604d5baaec903aadbe5a69c9941ede266aa9b4b1ceeb70c1b04",
+    "__init__.py": "34c0e239bb5e7e7a58a5ccbcbbf388d7f106778b7dbb2bb5dc3864f849023b12"
+  },
+  "runtime": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.4.2",
+    "device": "cpu",
+    "torch_threads": 1,
+    "stable_baselines3": "2.7.1",
+    "sb3_contrib": "2.7.1"
+  }
+}

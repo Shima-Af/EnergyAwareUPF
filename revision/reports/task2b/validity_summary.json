@@ -1,0 +1,600 @@
+{
+  "task": "2B",
+  "analysis_kind": "read_only_original_model_validity_audit",
+  "measurements": {
+    "dpdk": {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/dpdk_processed.csv",
+      "sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+      "rows": 4594,
+      "minimum_measured_power_w": 0.807147461269903,
+      "negative_measurements": 0,
+      "zero_measurements": 0,
+      "minimum_offered_load_mbps": 0.01,
+      "maximum_offered_load_mbps": 5000.0,
+      "measured_zero_load_rows": 0,
+      "load_levels": 22,
+      "test_sets": 5,
+      "test_cases": 110,
+      "packet_sizes": [
+        1250
+      ],
+      "first_measurement_timestamp": "2025-01-03 16:25:39",
+      "last_measurement_timestamp": "2025-01-04 01:50:21",
+      "low_load_rows_0_to_20_mbps": 1878,
+      "low_load_levels": 9,
+      "low_load_blocks": 45,
+      "all_row_descriptive_rmse_w": 0.0039652872165025,
+      "low_load_descriptive_rmse_w": 0.0040152181666293215,
+      "all_row_error_share_from_low_loads": 0.41915397825566986,
+      "candidate_historical_split": {
+        "test_size": 0.2,
+        "random_state": 42,
+        "shuffle": true,
+        "training_rows": 3675,
+        "early_stopping_validation_rows": 919,
+        "training_case_groups": 110,
+        "validation_case_groups": 110,
+        "case_groups_shared_between_train_and_validation": 110,
+        "test_sets_shared_between_train_and_validation": 5,
+        "validation_rows_with_adjacent_training_row_same_case": 887,
+        "median_nearest_same_case_training_time_seconds": 3.0,
+        "saved_scaler_sufficient_statistics": {
+          "stored_input_mean": 4.258845927554699,
+          "reconstructed_input_mean": 4.258845927554699,
+          "stored_input_scale": 2.7113484563038193,
+          "reconstructed_input_scale": 2.7113484563038193,
+          "stored_target_mean": 0.8206328843148235,
+          "reconstructed_target_mean": 0.8206328843148235,
+          "stored_target_scale": 0.0046218190766715815,
+          "reconstructed_target_scale": 0.0046218190766715815,
+          "stored_training_samples": 3675,
+          "reconstructed_training_samples": 3675
+        },
+        "power_target_roundtrip_max_error_w": 0.0,
+        "independent_final_profiling_holdout": false
+      }
+    },
+    "usr": {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/oai_processed.csv",
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+      "rows": 4564,
+      "minimum_measured_power_w": 0.0,
+      "negative_measurements": 0,
+      "zero_measurements": 352,
+      "minimum_offered_load_mbps": 0.01,
+      "maximum_offered_load_mbps": 5000.0,
+      "measured_zero_load_rows": 0,
+      "load_levels": 22,
+      "test_sets": 5,
+      "test_cases": 110,
+      "packet_sizes": [
+        1250
+      ],
+      "first_measurement_timestamp": "2025-01-13 13:09:06",
+      "last_measurement_timestamp": "2025-01-13 21:03:42",
+      "low_load_rows_0_to_20_mbps": 1865,
+      "low_load_levels": 9,
+      "low_load_blocks": 45,
+      "all_row_descriptive_rmse_w": 0.2869626688479317,
+      "low_load_descriptive_rmse_w": 0.04513919516718538,
+      "all_row_error_share_from_low_loads": 0.010110904712618895,
+      "candidate_historical_split": {
+        "test_size": 0.2,
+        "random_state": 42,
+        "shuffle": true,
+        "training_rows": 3651,
+        "early_stopping_validation_rows": 913,
+        "training_case_groups": 110,
+        "validation_case_groups": 110,
+        "case_groups_shared_between_train_and_validation": 110,
+        "test_sets_shared_between_train_and_validation": 5,
+        "validation_rows_with_adjacent_training_row_same_case": 865,
+        "median_nearest_same_case_training_time_seconds": 3.0,
+        "saved_scaler_sufficient_statistics": {
+          "stored_input_mean": 4.262505723966488,
+          "reconstructed_input_mean": 4.262505723966488,
+          "stored_input_scale": 2.7073397756212576,
+          "reconstructed_input_scale": 2.7073397756212576,
+          "stored_target_mean": 1.4193139894645865,
+          "reconstructed_target_mean": 1.4193139894645865,
+          "stored_target_scale": 1.5199246405953089,
+          "reconstructed_target_scale": 1.5199246405953089,
+          "stored_training_samples": 3651,
+          "reconstructed_training_samples": 3651
+        },
+        "power_target_roundtrip_max_error_w": 4.440892098500626e-16,
+        "independent_final_profiling_holdout": false
+      }
+    }
+  },
+  "grouped_export_checks": {
+    "dpdk": {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/raw/dpdk_grouped_limited.csv",
+      "sha256": "b16b683a783112896eaf8c5a6e9ab56f192ebf7780f55c17def2907ab1ab8af6",
+      "rows": 100,
+      "negative_power_rows": 0,
+      "matched_load_set_groups": 100,
+      "max_abs_difference_from_processed_group_mean_w": 0.001018481230918633
+    },
+    "usr": {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/raw/oai_grouped_limited.csv",
+      "sha256": "402594282e5749c2415e578cd3210dfe4ff8e2936a930496145e1f43d313ce82",
+      "rows": 100,
+      "negative_power_rows": 0,
+      "matched_load_set_groups": 100,
+      "max_abs_difference_from_processed_group_mean_w": 0.8345808684238762
+    }
+  },
+  "workloads": {
+    "netflix": {
+      "source": "data/processed/processed_traffic_normalized.csv",
+      "source_sha256": "8cf3fcda525c9bd6e3672e4728aaf664c7954c94068c7fae8ffc5d5278f31ffb",
+      "usage": "policy_development",
+      "partitions": {
+        "train": {
+          "source_indices_half_open": [
+            0,
+            2016
+          ],
+          "first_timestamp": "2019-04-01T00:00:00",
+          "last_timestamp": "2019-04-21T23:45:00",
+          "any_action_invalid_all_rows": 1,
+          "actions": {
+            "0": {
+              "all_source_rows": {
+                "n": 2016,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 8.720404732921057,
+                "max_total_load_mbps": 400.0,
+                "min_per_instance_load_mbps": 8.720404732921057,
+                "max_per_instance_load_mbps": 400.0,
+                "minimum_predicted_power_w": 0.8187847137451172
+              },
+              "scored_rows": {
+                "n": 1920,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 8.720404732921057,
+                "max_total_load_mbps": 400.0,
+                "min_per_instance_load_mbps": 8.720404732921057,
+                "max_per_instance_load_mbps": 400.0,
+                "minimum_predicted_power_w": 0.8187847137451172
+              }
+            },
+            "1": {
+              "all_source_rows": {
+                "n": 2016,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 8.720404732921057,
+                "max_total_load_mbps": 400.0,
+                "min_per_instance_load_mbps": 8.720404732921057,
+                "max_per_instance_load_mbps": 400.0,
+                "minimum_predicted_power_w": 0.08390426635742188
+              },
+              "scored_rows": {
+                "n": 1920,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 8.720404732921057,
+                "max_total_load_mbps": 400.0,
+                "min_per_instance_load_mbps": 8.720404732921057,
+                "max_per_instance_load_mbps": 400.0,
+                "minimum_predicted_power_w": 0.08390426635742188
+              }
+            },
+            "2": {
+              "all_source_rows": {
+                "n": 2016,
+                "invalid": 1,
+                "invalid_fraction": 0.000496031746031746,
+                "negative_power": 1,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 8.720404732921057,
+                "max_total_load_mbps": 400.0,
+                "min_per_instance_load_mbps": 4.360202366460529,
+                "max_per_instance_load_mbps": 200.0,
+                "minimum_predicted_power_w": -0.07847189903259277
+              },
+              "scored_rows": {
+                "n": 1920,
+                "invalid": 1,
+                "invalid_fraction": 0.0005208333333333333,
+                "negative_power": 1,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 8.720404732921057,
+                "max_total_load_mbps": 400.0,
+                "min_per_instance_load_mbps": 4.360202366460529,
+                "max_per_instance_load_mbps": 200.0,
+                "minimum_predicted_power_w": -0.07847189903259277
+              }
+            }
+          }
+        },
+        "validation": {
+          "source_indices_half_open": [
+            2016,
+            2520
+          ],
+          "first_timestamp": "2019-04-22T00:00:00",
+          "last_timestamp": "2019-04-27T05:45:00",
+          "any_action_invalid_all_rows": 0,
+          "actions": {
+            "0": {
+              "all_source_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 14.434169247572534,
+                "max_total_load_mbps": 326.9892785939576,
+                "min_per_instance_load_mbps": 14.434169247572534,
+                "max_per_instance_load_mbps": 326.9892785939576,
+                "minimum_predicted_power_w": 0.8188452124595642
+              },
+              "scored_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 14.434169247572534,
+                "max_total_load_mbps": 326.9892785939576,
+                "min_per_instance_load_mbps": 14.434169247572534,
+                "max_per_instance_load_mbps": 326.9892785939576,
+                "minimum_predicted_power_w": 0.8188452124595642
+              }
+            },
+            "1": {
+              "all_source_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 14.434169247572534,
+                "max_total_load_mbps": 326.9892785939576,
+                "min_per_instance_load_mbps": 14.434169247572534,
+                "max_per_instance_load_mbps": 326.9892785939576,
+                "minimum_predicted_power_w": 0.15672063827514648
+              },
+              "scored_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 14.434169247572534,
+                "max_total_load_mbps": 326.9892785939576,
+                "min_per_instance_load_mbps": 14.434169247572534,
+                "max_per_instance_load_mbps": 326.9892785939576,
+                "minimum_predicted_power_w": 0.15672063827514648
+              }
+            },
+            "2": {
+              "all_source_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 14.434169247572534,
+                "max_total_load_mbps": 326.9892785939576,
+                "min_per_instance_load_mbps": 7.217084623786267,
+                "max_per_instance_load_mbps": 163.4946392969788,
+                "minimum_predicted_power_w": 0.1679675579071045
+              },
+              "scored_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 14.434169247572534,
+                "max_total_load_mbps": 326.9892785939576,
+                "min_per_instance_load_mbps": 7.217084623786267,
+                "max_per_instance_load_mbps": 163.4946392969788,
+                "minimum_predicted_power_w": 0.1679675579071045
+              }
+            }
+          }
+        }
+      }
+    },
+    "youtube": {
+      "source": "data/processed/processed_traffic_youtube_aggregated_scaled.csv",
+      "source_sha256": "ad8d23d3612e3f5e7c1199ecefcb11dc798d7956aa3d1c67fb1ab31b551ec5a3",
+      "usage": "transfer_context_validity_only_no_fitting",
+      "partitions": {
+        "train": {
+          "source_indices_half_open": [
+            0,
+            2016
+          ],
+          "first_timestamp": "2019-04-01T00:00:00",
+          "last_timestamp": "2019-04-21T23:45:00",
+          "any_action_invalid_all_rows": 2,
+          "actions": {
+            "0": {
+              "all_source_rows": {
+                "n": 2016,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 6.921086061037732,
+                "max_total_load_mbps": 295.39541701064746,
+                "min_per_instance_load_mbps": 6.921086061037732,
+                "max_per_instance_load_mbps": 295.39541701064746,
+                "minimum_predicted_power_w": 0.8187572956085205
+              },
+              "scored_rows": {
+                "n": 1920,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 6.921086061037732,
+                "max_total_load_mbps": 295.39541701064746,
+                "min_per_instance_load_mbps": 6.921086061037732,
+                "max_per_instance_load_mbps": 295.39541701064746,
+                "minimum_predicted_power_w": 0.8187572956085205
+              }
+            },
+            "1": {
+              "all_source_rows": {
+                "n": 2016,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 6.921086061037732,
+                "max_total_load_mbps": 295.39541701064746,
+                "min_per_instance_load_mbps": 6.921086061037732,
+                "max_per_instance_load_mbps": 295.39541701064746,
+                "minimum_predicted_power_w": 0.08689713478088379
+              },
+              "scored_rows": {
+                "n": 1920,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 6.921086061037732,
+                "max_total_load_mbps": 295.39541701064746,
+                "min_per_instance_load_mbps": 6.921086061037732,
+                "max_per_instance_load_mbps": 295.39541701064746,
+                "minimum_predicted_power_w": 0.08689713478088379
+              }
+            },
+            "2": {
+              "all_source_rows": {
+                "n": 2016,
+                "invalid": 2,
+                "invalid_fraction": 0.000992063492063492,
+                "negative_power": 2,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 6.921086061037732,
+                "max_total_load_mbps": 295.39541701064746,
+                "min_per_instance_load_mbps": 3.460543030518866,
+                "max_per_instance_load_mbps": 147.69770850532373,
+                "minimum_predicted_power_w": -0.09415960311889648
+              },
+              "scored_rows": {
+                "n": 1920,
+                "invalid": 2,
+                "invalid_fraction": 0.0010416666666666667,
+                "negative_power": 2,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 6.921086061037732,
+                "max_total_load_mbps": 295.39541701064746,
+                "min_per_instance_load_mbps": 3.460543030518866,
+                "max_per_instance_load_mbps": 147.69770850532373,
+                "minimum_predicted_power_w": -0.09415960311889648
+              }
+            }
+          }
+        },
+        "validation": {
+          "source_indices_half_open": [
+            2016,
+            2520
+          ],
+          "first_timestamp": "2019-04-22T00:00:00",
+          "last_timestamp": "2019-04-27T05:45:00",
+          "any_action_invalid_all_rows": 0,
+          "actions": {
+            "0": {
+              "all_source_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 13.60569628932123,
+                "max_total_load_mbps": 223.68522102182627,
+                "min_per_instance_load_mbps": 13.60569628932123,
+                "max_per_instance_load_mbps": 223.68522102182627,
+                "minimum_predicted_power_w": 0.8188381195068359
+              },
+              "scored_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 13.60569628932123,
+                "max_total_load_mbps": 223.68522102182627,
+                "min_per_instance_load_mbps": 13.60569628932123,
+                "max_per_instance_load_mbps": 223.68522102182627,
+                "minimum_predicted_power_w": 0.8188381195068359
+              }
+            },
+            "1": {
+              "all_source_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 13.60569628932123,
+                "max_total_load_mbps": 223.68522102182627,
+                "min_per_instance_load_mbps": 13.60569628932123,
+                "max_per_instance_load_mbps": 223.68522102182627,
+                "minimum_predicted_power_w": 0.14718115329742432
+              },
+              "scored_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 13.60569628932123,
+                "max_total_load_mbps": 223.68522102182627,
+                "min_per_instance_load_mbps": 13.60569628932123,
+                "max_per_instance_load_mbps": 223.68522102182627,
+                "minimum_predicted_power_w": 0.14718115329742432
+              }
+            },
+            "2": {
+              "all_source_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 13.60569628932123,
+                "max_total_load_mbps": 223.68522102182627,
+                "min_per_instance_load_mbps": 6.802848144660615,
+                "max_per_instance_load_mbps": 111.84261051091313,
+                "minimum_predicted_power_w": 0.15992426872253418
+              },
+              "scored_rows": {
+                "n": 504,
+                "invalid": 0,
+                "invalid_fraction": 0.0,
+                "negative_power": 0,
+                "nonfinite_power": 0,
+                "qos_out_of_range": 0,
+                "nonfinite_qos": 0,
+                "min_total_load_mbps": 13.60569628932123,
+                "max_total_load_mbps": 223.68522102182627,
+                "min_per_instance_load_mbps": 6.802848144660615,
+                "max_per_instance_load_mbps": 111.84261051091313,
+                "minimum_predicted_power_w": 0.15992426872253418
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "low_load_grid": {
+    "range_mbps": [
+      0,
+      20
+    ],
+    "step_mbps": 0.01,
+    "samples": 2001,
+    "negative_samples": 392,
+    "first_negative_sample_mbps": 1.18,
+    "last_negative_sample_mbps": 5.09,
+    "minimum_predicted_power_w": -0.05454051494598389,
+    "zero_load_is_extrapolated": true
+  },
+  "protocol_sha256": "a7212588b505238a1ff997b88f47d1211e9f6bb0691d6773b5d7b72993176b88",
+  "twin_id": "ebb6224620b66c921a49624718e39d015799adadd971a52a46bdfbc13d9ef7ff",
+  "source_files": [
+    {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/dpdk_processed.csv",
+      "sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484"
+    },
+    {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/oai_processed.csv",
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20"
+    },
+    {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/raw/dpdk_grouped_limited.csv",
+      "sha256": "b16b683a783112896eaf8c5a6e9ab56f192ebf7780f55c17def2907ab1ab8af6"
+    },
+    {
+      "path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/raw/oai_grouped_limited.csv",
+      "sha256": "402594282e5749c2415e578cd3210dfe4ff8e2936a930496145e1f43d313ce82"
+    },
+    {
+      "path": "/home/ubuntu/xRL_UpfSelection/scripts/PowerPerformance/train_power_models.py",
+      "sha256": "319168e855f4eb51920dd460130e754f676ff9487adee23fb7f2e0b4ca4b59c7"
+    },
+    {
+      "path": "/home/ubuntu/xRL_UpfSelection/scripts/PowerPerformance/train_performance_models.py",
+      "sha256": "1356f5804e1ee28484afe5514afe46378bed74feef946eb3c25ddd95d09b5bdb"
+    },
+    {
+      "path": "/home/ubuntu/xRL_UpfSelection/config.yaml",
+      "sha256": "f7cd9f510f9561a0f1b442f8d8876738ed91d243e8f1f7e4869cea465006163b"
+    },
+    {
+      "path": "/home/ubuntu/EnergyAwareUPF/config.yaml",
+      "sha256": "474c5c212c4166f30f003a183f4cc09f98eaf8187b87345cf6e70172f8985206"
+    }
+  ],
+  "no_refitting": true,
+  "no_controller_rollouts": true,
+  "no_final_test_inference": true
+}

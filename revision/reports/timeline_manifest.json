@@ -1,0 +1,197 @@
+{
+  "protocol_id": "comcom-corrected-foundation-v1-proposal",
+  "artifact_kind": "data_timeline_inspection_not_experimental_results",
+  "config_sha256": "a7212588b505238a1ff997b88f47d1211e9f6bb0691d6773b5d7b72993176b88",
+  "base_commit": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "python": "3.12.3",
+  "timestamp_semantics": "interval_start_source_clock_timezone_unverified",
+  "warmup_completed_slots": 96,
+  "load_scale_multiplier": 0.19358590710547752,
+  "scale_fitted_through": "2019-04-21T23:45:00",
+  "normalizer": {
+    "minimum_mbps": 8.720404732921057,
+    "span_mbps": 391.27959526707895,
+    "fitted_through": "2019-04-21T23:45:00"
+  },
+  "contract": {
+    "cooldown_slots": 4,
+    "initial_action": 0,
+    "qos_target": 0.9,
+    "sec_epsilon_mbps": 1e-06,
+    "sec_weight": 100.0,
+    "qos_weight": 30.0,
+    "switch_to_dpdk_cost": 0.03,
+    "usr_launch_cost": 0.012,
+    "usr_scale_down_cost": 0.003,
+    "gamma": 0.995
+  },
+  "selection_objective": "total_reward",
+  "datasets": {
+    "netflix": {
+      "source": "data/processed/processed_traffic_normalized.csv",
+      "source_sha256": "8cf3fcda525c9bd6e3672e4728aaf664c7954c94068c7fae8ffc5d5278f31ffb",
+      "rows": 3360,
+      "first_timestamp": "2019-04-01T00:00:00",
+      "last_timestamp": "2019-05-05T23:45:00",
+      "end_exclusive": "2019-05-06T00:00:00",
+      "raw_aggregate_peak_mbps": 2066.266114,
+      "role": "development_and_reporting",
+      "partitions": {
+        "train": {
+          "source_indices_half_open": [
+            0,
+            2016
+          ],
+          "label_rows": 2016,
+          "label_start": "2019-04-01T00:00:00",
+          "label_last": "2019-04-21T23:45:00",
+          "evaluation_rows": 1920,
+          "evaluation_start": "2019-04-02T00:00:00",
+          "evaluation_last": "2019-04-21T23:45:00",
+          "horizon_sha256": "63a9079e884dfaa84cd4494bc7d95b1103cbfe4ea817b0d32d4d7f41cfeecb66",
+          "scaled_peak_mbps": 400.0,
+          "above_reference_400_mbps": 0
+        },
+        "validation": {
+          "source_indices_half_open": [
+            2016,
+            2520
+          ],
+          "label_rows": 504,
+          "label_start": "2019-04-22T00:00:00",
+          "label_last": "2019-04-27T05:45:00",
+          "evaluation_rows": 504,
+          "evaluation_start": "2019-04-22T00:00:00",
+          "evaluation_last": "2019-04-27T05:45:00",
+          "horizon_sha256": "1d0955ec0c78322db213461b94c8bc4a17d38cfb10679a98994ea3200a0ce0c4",
+          "scaled_peak_mbps": 326.9892785939576,
+          "above_reference_400_mbps": 0
+        },
+        "final_test": {
+          "source_indices_half_open": [
+            2520,
+            3360
+          ],
+          "label_rows": 840,
+          "label_start": "2019-04-27T06:00:00",
+          "label_last": "2019-05-05T23:45:00",
+          "evaluation_rows": 840,
+          "evaluation_start": "2019-04-27T06:00:00",
+          "evaluation_last": "2019-05-05T23:45:00",
+          "horizon_sha256": "44030a42ef0da53ae78ded585a5e39b3b40f7384b3fb3fef59f8c3105cf76c49",
+          "scaled_peak_mbps": 365.72553538958147,
+          "above_reference_400_mbps": 0
+        }
+      }
+    },
+    "youtube": {
+      "source": "data/processed/processed_traffic_youtube_aggregated_scaled.csv",
+      "source_sha256": "ad8d23d3612e3f5e7c1199ecefcb11dc798d7956aa3d1c67fb1ab31b551ec5a3",
+      "rows": 3360,
+      "first_timestamp": "2019-04-01T00:00:00",
+      "last_timestamp": "2019-05-05T23:45:00",
+      "end_exclusive": "2019-05-06T00:00:00",
+      "raw_aggregate_peak_mbps": 1525.913851,
+      "role": "transfer_reporting_only",
+      "partitions": {
+        "train": {
+          "source_indices_half_open": [
+            0,
+            2016
+          ],
+          "label_rows": 2016,
+          "label_start": "2019-04-01T00:00:00",
+          "label_last": "2019-04-21T23:45:00",
+          "evaluation_rows": 1920,
+          "evaluation_start": "2019-04-02T00:00:00",
+          "evaluation_last": "2019-04-21T23:45:00",
+          "horizon_sha256": "9f55ab72ee692da39e39a613c7841ac9f67a6be8ddd4c78e91389a1712e60f53",
+          "scaled_peak_mbps": 295.39541701064746,
+          "above_reference_400_mbps": 0
+        },
+        "validation": {
+          "source_indices_half_open": [
+            2016,
+            2520
+          ],
+          "label_rows": 504,
+          "label_start": "2019-04-22T00:00:00",
+          "label_last": "2019-04-27T05:45:00",
+          "evaluation_rows": 504,
+          "evaluation_start": "2019-04-22T00:00:00",
+          "evaluation_last": "2019-04-27T05:45:00",
+          "horizon_sha256": "e486f36dec17901d883bfb36b16503b236eadf5aeb2c424a6186e7f503ead90d",
+          "scaled_peak_mbps": 223.68522102182627,
+          "above_reference_400_mbps": 0
+        },
+        "final_test": {
+          "source_indices_half_open": [
+            2520,
+            3360
+          ],
+          "label_rows": 840,
+          "label_start": "2019-04-27T06:00:00",
+          "label_last": "2019-05-05T23:45:00",
+          "evaluation_rows": 840,
+          "evaluation_start": "2019-04-27T06:00:00",
+          "evaluation_last": "2019-05-05T23:45:00",
+          "horizon_sha256": "b3ccb31e2ee4510c927b90b2cdd980cbaffd0bb6761c0e8a90aeb4065f659256",
+          "scaled_peak_mbps": 235.44453596938774,
+          "above_reference_400_mbps": 0
+        }
+      }
+    }
+  },
+  "archived_csv_inventory": [
+    {
+      "path": "data/processed/processed_traffic_main_bestpredictor.csv",
+      "sha256": "7880227e36341f1c4f3a95d3e0c0f03340d523ee46157e212e0b29f51898e92b",
+      "rows": 3360,
+      "first_timestamp": "2019-04-01T00:00:00",
+      "last_timestamp": "2019-05-05T23:45:00",
+      "raw_workload_sha256": "4edfc8facad55d221177f57d258e3a9906d3cfe8623fbeb7a02f12a70bf4c533",
+      "first_archived_forecast_row": 96,
+      "archived_forecast_used": false
+    },
+    {
+      "path": "data/processed/processed_traffic_normalized.csv",
+      "sha256": "8cf3fcda525c9bd6e3672e4728aaf664c7954c94068c7fae8ffc5d5278f31ffb",
+      "rows": 3360,
+      "first_timestamp": "2019-04-01T00:00:00",
+      "last_timestamp": "2019-05-05T23:45:00",
+      "raw_workload_sha256": "4edfc8facad55d221177f57d258e3a9906d3cfe8623fbeb7a02f12a70bf4c533",
+      "first_archived_forecast_row": 96,
+      "archived_forecast_used": false
+    },
+    {
+      "path": "data/processed/processed_traffic_youtube_aggregated_scaled.csv",
+      "sha256": "ad8d23d3612e3f5e7c1199ecefcb11dc798d7956aa3d1c67fb1ab31b551ec5a3",
+      "rows": 3360,
+      "first_timestamp": "2019-04-01T00:00:00",
+      "last_timestamp": "2019-05-05T23:45:00",
+      "raw_workload_sha256": "80cd7bfd7b5547fcfe32d65827dff17d9c2e55c24dc78b8e93f8490919eda122",
+      "first_archived_forecast_row": 96,
+      "archived_forecast_used": false
+    },
+    {
+      "path": "data/processed/processed_traffic_youtube_bestpredictor.csv",
+      "sha256": "fef4223c51b23644458a9838038bb8d9820ca34ad165f8bdde3790a6cdb325ad",
+      "rows": 3360,
+      "first_timestamp": "2019-04-01T00:00:00",
+      "last_timestamp": "2019-05-05T23:45:00",
+      "raw_workload_sha256": "80cd7bfd7b5547fcfe32d65827dff17d9c2e55c24dc78b8e93f8490919eda122",
+      "first_archived_forecast_row": 96,
+      "archived_forecast_used": false
+    },
+    {
+      "path": "data/processed/processed_traffic_youtube_with_forecast.csv",
+      "sha256": "ad8d23d3612e3f5e7c1199ecefcb11dc798d7956aa3d1c67fb1ab31b551ec5a3",
+      "rows": 3360,
+      "first_timestamp": "2019-04-01T00:00:00",
+      "last_timestamp": "2019-05-05T23:45:00",
+      "raw_workload_sha256": "80cd7bfd7b5547fcfe32d65827dff17d9c2e55c24dc78b8e93f8490919eda122",
+      "first_archived_forecast_row": 96,
+      "archived_forecast_used": false
+    }
+  ]
+}

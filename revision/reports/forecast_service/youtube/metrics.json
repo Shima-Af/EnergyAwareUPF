@@ -1,0 +1,147 @@
+{
+  "candidate_metrics": {
+    "persistence": {
+      "secondary_validation": {
+        "n": 504,
+        "mae_mbps": 10.172133009793964,
+        "rmse_mbps": 13.068219957254417,
+        "bias_mbps": 0.22686273187211808,
+        "r2": 0.9538753138319893
+      },
+      "training_in_sample_descriptive": {
+        "n": 1920,
+        "mae_mbps": 10.485017386596413,
+        "rmse_mbps": 13.767248136081202,
+        "bias_mbps": 0.0019340721319757207,
+        "r2": 0.9539807151887771
+      },
+      "training_seconds": 0.0,
+      "artifact_bytes": 426,
+      "exact_ordered_reload": true
+    },
+    "seasonal_daily": {
+      "secondary_validation": {
+        "n": 504,
+        "mae_mbps": 13.43943739790137,
+        "rmse_mbps": 17.796631960904485,
+        "bias_mbps": -3.837023673917612,
+        "r2": 0.91445863200454
+      },
+      "training_in_sample_descriptive": {
+        "n": 1920,
+        "mae_mbps": 18.78944861965716,
+        "rmse_mbps": 28.048558750280076,
+        "bias_mbps": 1.5090382846454924,
+        "r2": 0.8089853462580344
+      },
+      "training_seconds": 0.0,
+      "artifact_bytes": 429,
+      "exact_ordered_reload": true
+    },
+    "lstm": {
+      "secondary_validation": {
+        "n": 504,
+        "mae_mbps": 15.681077639792223,
+        "rmse_mbps": 19.09875463552345,
+        "bias_mbps": 5.204207277129794,
+        "r2": 0.901483119522367
+      },
+      "training_in_sample_descriptive": {
+        "n": 1920,
+        "mae_mbps": 21.49191296555507,
+        "rmse_mbps": 27.496725437190097,
+        "bias_mbps": -2.7560104100952807,
+        "r2": 0.8164275352125744
+      },
+      "training_seconds": 33.39572226902237,
+      "artifact_bytes": 530458,
+      "exact_ordered_reload": true
+    },
+    "gru": {
+      "secondary_validation": {
+        "n": 504,
+        "mae_mbps": 10.735204086709658,
+        "rmse_mbps": 13.786500683207917,
+        "bias_mbps": 1.8899819932497115,
+        "r2": 0.9486655815690763
+      },
+      "training_in_sample_descriptive": {
+        "n": 1920,
+        "mae_mbps": 10.295204748921886,
+        "rmse_mbps": 13.633158927173431,
+        "bias_mbps": -0.9813202698081993,
+        "r2": 0.9548727800408388
+      },
+      "training_seconds": 25.579897161980625,
+      "artifact_bytes": 45331,
+      "exact_ordered_reload": true
+    },
+    "boosted_poisson": {
+      "secondary_validation": {
+        "n": 504,
+        "mae_mbps": 8.331513373133442,
+        "rmse_mbps": 10.895034009892075,
+        "bias_mbps": 0.24583223504288157,
+        "r2": 0.967940427019716
+      },
+      "training_in_sample_descriptive": {
+        "n": 1920,
+        "mae_mbps": 7.812197153256019,
+        "rmse_mbps": 10.578507450226681,
+        "bias_mbps": 0.008041908238704742,
+        "r2": 0.9728297035227169
+      },
+      "training_seconds": 0.17411613301374018,
+      "artifact_bytes": 308263,
+      "exact_ordered_reload": true
+    }
+  },
+  "latency": {
+    "persistence": {
+      "single_prediction_p50_ms": 0.050745002226904035,
+      "single_prediction_p95_ms": 0.058103070477955036,
+      "samples": 40,
+      "warmups": 3,
+      "includes_window_validation_and_feature_construction": true
+    },
+    "seasonal_daily": {
+      "single_prediction_p50_ms": 0.05003550904802978,
+      "single_prediction_p95_ms": 0.05787948612123727,
+      "samples": 40,
+      "warmups": 3,
+      "includes_window_validation_and_feature_construction": true
+    },
+    "lstm": {
+      "single_prediction_p50_ms": 218.58437397168018,
+      "single_prediction_p95_ms": 219.47789852274582,
+      "samples": 40,
+      "warmups": 3,
+      "includes_window_validation_and_feature_construction": true
+    },
+    "gru": {
+      "single_prediction_p50_ms": 149.31331702973694,
+      "single_prediction_p95_ms": 153.44176554353908,
+      "samples": 40,
+      "warmups": 3,
+      "includes_window_validation_and_feature_construction": true
+    },
+    "boosted_poisson": {
+      "single_prediction_p50_ms": 0.7192155171651393,
+      "single_prediction_p95_ms": 0.772268942091614,
+      "samples": 40,
+      "warmups": 3,
+      "includes_window_validation_and_feature_construction": true
+    }
+  },
+  "selected_family": "boosted_poisson",
+  "prequential_training": {
+    "n": 1920,
+    "mae_mbps": 10.404698588947886,
+    "rmse_mbps": 13.661970681001318,
+    "bias_mbps": 0.26453022391128106,
+    "r2": 0.954681838491955
+  },
+  "minimum_history_cold_start_slots": 576,
+  "first_comparative_block_persistence_slots": 336,
+  "selection_frozen_before_calibration": true
+}

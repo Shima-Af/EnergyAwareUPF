@@ -1,0 +1,52 @@
+{
+  "version": "comcom.baselines.v1",
+  "frozen_twin": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+  "profile_domain_mbps": [0.02, 400.0],
+  "profile_grid_step_mbps": 0.25,
+  "root_xtol_mbps": 0.00001,
+  "profile_domain_rationale": "Common three-action measured interpolation lower bound and previously approved training-peak study upper bound; not selected from validation outcomes.",
+  "slices_extended_manual": {
+    "actions": [0, 1, 2],
+    "performance_weight": 0.2,
+    "energy_weight": 0.8,
+    "performance_score": "100 times frozen composite QoS; explicit substitution for the paper's different polynomial KPI performance score",
+    "energy_score": "100*(profile_global_max_power-power)/(profile_global_max_power-profile_global_min_power), bounded to [0,100] as specified for this utility only; physical predictions unchanged",
+    "normalization": "Global across all three actions on the fixed profiling grid, computed before workload evaluation",
+    "margin_mbps": 26.0,
+    "tie_break": "Lowest action integer, DPDK then USR1 then USR2",
+    "regions": "Upper envelope of three utilities; refine adjacent winning-action changes by bracketed root finding. Never force a USR2 region or order thresholds.",
+    "hysteresis": "Hold the executed action unless forecast is strictly more than 26 Mbps inside each finite boundary of the winning region; domain endpoints are not crossover boundaries. Jumping across multiple regions is allowed. Overlapping bands retain executed action.",
+    "hold_down": "Shared actuator only: change at t permits next at t+4; no duplicate internal timer",
+    "selection": "No fitted/tuned control parameters, no workload or PPO outcomes used"
+  },
+  "strong_rule_stage4": {
+    "implementation": "revision.stage3.pipeline.RuleController, reused unchanged",
+    "actions": [0, 1, 2],
+    "point_qos_target": 0.9,
+    "relative_power_deadband": 0.02,
+    "improved_variant": "Not selected or executed. A reward-aligned one-step proposal is documented separately; no unapproved development selection criterion is invented."
+  },
+  "comcom_historical": {
+    "actions": [0, 1],
+    "performance_weight": 0.3,
+    "energy_weight": 0.7,
+    "utility": "0.3*Q + 0.7*100*(3.58-P_W)/3.58",
+    "max_power_w": 3.58,
+    "tie_break": "DPDK",
+    "active_margin_mbps": 0.0,
+    "documented_plot_margin_mbps": 23.0,
+    "reported_historical_thresholds_mbps": [90.47, 87.13],
+    "canonical_source": "main:scripts/evaluation_baseline-rule.py inline ranking, also present in publication compiler; not RuleBasedSelector.decide",
+    "adaptation": "Replace historical lookup outcomes with exact frozen revision inference. Keep mixed utility scales, binary choices and no hysteresis. Common actuator replaces equivalent loop cooldown, with blocked requests explicitly counted."
+  },
+  "forecasts": "revision/reports/stage4_rng_isolated/forecasts.csv",
+  "policy_selections": "revision/models/stage4_rng_isolated/controllers/{algorithm}/seed_{seed}/selection.json",
+  "algorithms": ["ppo", "recurrent_ppo"],
+  "seeds": [42, 123, 456, 789, 1024],
+  "evaluation_role": "validation",
+  "validation_slots": 504,
+  "final_test_allowed": false,
+  "model_training_allowed": false,
+  "checkpoint_reselection_allowed": false,
+  "development_selection": "No baseline improvement search or training-only tuning performed; three primary definitions frozen before evaluation"
+}

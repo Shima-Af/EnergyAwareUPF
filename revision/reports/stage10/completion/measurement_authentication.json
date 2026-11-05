@@ -1,0 +1,26 @@
+{
+  "throughput_direction_verified": true,
+  "throughput_offered_mapping_verified": true,
+  "throughput_scope": "Uplink received at DN endpoint, matched enabled UE StatelessUDP flow; not delivered downlink/application goodput",
+  "loss_numerator_verified": false,
+  "loss_denominator_verified": false,
+  "loss_timebase_verified": false,
+  "loss_direction_verified": false,
+  "raw_counter_snapshot_cadence_seconds": 3,
+  "raw_counter_units_verified": true,
+  "loss_population_definition_missing": "Definition of NG-RAN Lost Packets: sequence/cohort membership, reordering/late arrivals, reset epochs, and corresponding expected/received packet counter population",
+  "valid_physical_loss_labels_released": 0,
+  "all_eight_kpi_models_validated": false,
+  "full_preflight_passed": false,
+  "partial_kernel_tests_passed": 53,
+  "controller_training_ready": false,
+  "code_fits_completed": {
+    "delay_jitter": 4,
+    "throughput": 2,
+    "forecasts": 20,
+    "PPO": 0,
+    "RecurrentPPO": 0
+  },
+  "reference_materials": "Submitted MAPPO PDF and thesis PDFs identified in reconciliation_v2/authoritative_pdf_manifest.json",
+  "counter_gaps_handled_as_unknown": true
+}

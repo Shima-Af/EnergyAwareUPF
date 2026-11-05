@@ -1,0 +1,7 @@
+2026-10-22 18:13:29.249243: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Frozen profiling evidence exported; beginning train/validation input census
+Workload census: netflix train 2016 rows per action
+Workload census: netflix validation 504 rows per action
+Workload census: youtube train 2016 rows per action
+Workload census: youtube validation 504 rows per action
+Integration complete; no controller training or final-test traffic outcomes

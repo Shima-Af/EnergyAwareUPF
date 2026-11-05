@@ -1,0 +1,35 @@
+{
+  "files": {
+    "revision/ORACLE_COMPARISON.md": "2997dc6b9e1b438bdcac6fdc16ce3c71d0d4f788215bfd3da3c248d8274bd824",
+    "revision/oracles/__init__.py": "fc5ddaa375249e75a9dd9c12f41f7336ccd06660dfb1f17b3b48ec257c42238f",
+    "revision/oracles/report.py": "3614e32f097397845f7c891ff45096e55ebf330aa5a157fe8bb69710e36aeb89",
+    "revision/oracles/run.py": "cf1f53635d741fe88fc9fbedf4b1ed6c8bb5afc6ba5408945ce6fd9ccb180f25",
+    "revision/oracles/solver.py": "57128f9e1796772e075a3be4ea3c85eaf1d814afcdfe1e40ee98edef020b1ac8",
+    "revision/reports/oracle_prior_sha256.json": "36afb0abf8fb261da745cf99f97081e72d4ad42a48c552d0032a5551ad3e6b81",
+    "revision/reports/oracles/comparison.json": "48b9a7172832fef094ed56f48cf308438e049e08994e6474d188b39f62030d2a",
+    "revision/reports/oracles/controller_gaps.csv": "270e78dc98069805ba0a2866a8cb8ba054dbe59a4746b1c194ce6b866574dd69",
+    "revision/reports/oracles/execution.log": "aca60ce7c93d723279834557d52c6c3e1bf038a04583b4f3e2bbb3531a231216",
+    "revision/reports/oracles/integrity.json": "1748b67edbaad94afd6e673f416d0cc6d2ada2927b504ca242a936450878b97a",
+    "revision/reports/oracles/netflix_binary_energy_optimal_oracle_steps.csv": "884761ec3e9e5be7054174901fe18a0d547b1973cd23630af490daab9e24e519",
+    "revision/reports/oracles/netflix_binary_qos_constrained_energy_oracle_steps.csv": "884761ec3e9e5be7054174901fe18a0d547b1973cd23630af490daab9e24e519",
+    "revision/reports/oracles/netflix_binary_reward_optimal_oracle_steps.csv": "8bd5ef1ee867c0ca1feb5f5164a25b2e43a27c7f42c4ed54055c0b47700dd940",
+    "revision/reports/oracles/netflix_ternary_energy_optimal_oracle_steps.csv": "dbcffeca7ede5ed05aae1b10daca6030ba56998262883e097c2fda3a935b6628",
+    "revision/reports/oracles/netflix_ternary_qos_constrained_energy_oracle_steps.csv": "dbcffeca7ede5ed05aae1b10daca6030ba56998262883e097c2fda3a935b6628",
+    "revision/reports/oracles/netflix_ternary_reward_optimal_oracle_steps.csv": "7415bd7f10e9295427c539b44a9ffda7c6d587b174786c677777f47266661390",
+    "revision/reports/oracles/provenance.json": "cc860e0d09a5086252da07c237c28f3f00e0d47199a7172b85099b1574d09c4f",
+    "revision/reports/oracles/tests.log": "b3b6c6e17d8ac462b4e9fb01d014b3bc4e4f2e169f6828ddbc53c778d5aede50",
+    "revision/reports/oracles/youtube_binary_energy_optimal_oracle_steps.csv": "c59e5dc61cf33c0ef77e869ffcacc9a6868f614a63f5973a1dbea24a1bf4f05d",
+    "revision/reports/oracles/youtube_binary_qos_constrained_energy_oracle_steps.csv": "c59e5dc61cf33c0ef77e869ffcacc9a6868f614a63f5973a1dbea24a1bf4f05d",
+    "revision/reports/oracles/youtube_binary_reward_optimal_oracle_steps.csv": "c59e5dc61cf33c0ef77e869ffcacc9a6868f614a63f5973a1dbea24a1bf4f05d",
+    "revision/reports/oracles/youtube_ternary_energy_optimal_oracle_steps.csv": "9ec191b3862a90d34c98580f847eda97e9b9562594d589773c01b47b007a0bac",
+    "revision/reports/oracles/youtube_ternary_qos_constrained_energy_oracle_steps.csv": "9ec191b3862a90d34c98580f847eda97e9b9562594d589773c01b47b007a0bac",
+    "revision/reports/oracles/youtube_ternary_reward_optimal_oracle_steps.csv": "9ec191b3862a90d34c98580f847eda97e9b9562594d589773c01b47b007a0bac",
+    "revision/tests/test_oracle_artifacts.py": "c4d179bb5d082b1aba5a6cbff6da6a0589dbd362794f3b75ceb2741187385dce",
+    "revision/tests/test_oracles.py": "0fa2b7293ed5ed714420cfd3482db549aa8aa719ba168e4bd5e3f19345dc009f"
+  },
+  "excludes": [
+    "this manifest",
+    "incidental bytecode"
+  ],
+  "new_file_count_including_manifest": 27
+}

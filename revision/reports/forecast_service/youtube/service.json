@@ -1,0 +1,13 @@
+{
+  "version": "comcom.forecasting-service.v1",
+  "workload": "youtube",
+  "selected_family": "boosted_poisson",
+  "provider_manifest": "revision/models/forecast_service/youtube/full/boosted_poisson/manifest.json",
+  "provider_manifest_sha256": "8c63cd0b674cce10e90803f417281c23045e78f1f4f477c044a5ee77b160ee99",
+  "selection_manifest": "revision/reports/forecast_service/youtube/selection_frozen.json",
+  "selection_sha256": "c108375d753e5dde63e18e781f1b281a356f06478386d7adafeff57a901756f9",
+  "input_contract": "96 completed quarter-hour loads in common workload Mbps and known decision timestamp",
+  "output_contract": "revision.evaluation.contract.Forecast; current target interval, observed-through previous completed interval",
+  "serving_role": "Diagnostic only, no automatic controller or baseline promotion",
+  "final_test_evaluation": false
+}

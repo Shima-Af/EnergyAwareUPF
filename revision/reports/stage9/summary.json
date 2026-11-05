@@ -1,0 +1,13 @@
+{
+  "twin_id": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+  "scenarios": 32,
+  "scored_source_rows": 34320,
+  "independent_measurement_campaign": false,
+  "model_refits": 0,
+  "controller_evaluations": 0,
+  "final_test_used": false,
+  "maximum_checked_qos_profile_difference": 1.1920928955078125e-07,
+  "maximum_checked_power_profile_difference_w": 1.7881393432617188e-07,
+  "total_checked_loads": 404,
+  "recommendation": "Conditional workload stress diagnostics only; no operational safety or automatic RL authorization"
+}

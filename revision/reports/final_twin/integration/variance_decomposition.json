@@ -1,0 +1,98 @@
+[
+  {
+    "component": "dpdk_power",
+    "role": "train",
+    "within_load_fraction_target_variation": 0.7391143551554233,
+    "in_sample_load_mean_r2": 0.26088564484457666,
+    "measured_sd": 0.00441190655959735,
+    "model_prediction_range": 0.008887052536010742
+  },
+  {
+    "component": "dpdk_power",
+    "role": "validation",
+    "within_load_fraction_target_variation": 0.36346818929830366,
+    "in_sample_load_mean_r2": 0.6365318107016964,
+    "measured_sd": 0.005521757904398055,
+    "model_prediction_range": 0.008887052536010742
+  },
+  {
+    "component": "dpdk_power",
+    "role": "internal_test",
+    "within_load_fraction_target_variation": 0.7663348167645262,
+    "in_sample_load_mean_r2": 0.2336651832354738,
+    "measured_sd": 0.0039460168853292675,
+    "model_prediction_range": 0.008887052536010742
+  },
+  {
+    "component": "dpdk_qos",
+    "role": "train",
+    "within_load_fraction_target_variation": 0.8038214901214286,
+    "in_sample_load_mean_r2": 0.19617850987857144,
+    "measured_sd": 0.09980832689854323,
+    "model_prediction_range": 0.1346774697303772
+  },
+  {
+    "component": "dpdk_qos",
+    "role": "validation",
+    "within_load_fraction_target_variation": 0.806923913304122,
+    "in_sample_load_mean_r2": 0.19307608669587795,
+    "measured_sd": 0.0870992282997263,
+    "model_prediction_range": 0.1346774697303772
+  },
+  {
+    "component": "dpdk_qos",
+    "role": "internal_test",
+    "within_load_fraction_target_variation": 0.8947756048094992,
+    "in_sample_load_mean_r2": 0.10522439519050075,
+    "measured_sd": 0.08530743299275927,
+    "model_prediction_range": 0.1346774697303772
+  },
+  {
+    "component": "usr_power",
+    "role": "train",
+    "within_load_fraction_target_variation": 0.03351075557707112,
+    "in_sample_load_mean_r2": 0.9664892444229288,
+    "measured_sd": 1.5319496445970036,
+    "model_prediction_range": 3.456509900177087
+  },
+  {
+    "component": "usr_power",
+    "role": "validation",
+    "within_load_fraction_target_variation": 0.029523475376238614,
+    "in_sample_load_mean_r2": 0.9704765246237614,
+    "measured_sd": 1.5211730089389905,
+    "model_prediction_range": 3.456509900177087
+  },
+  {
+    "component": "usr_power",
+    "role": "internal_test",
+    "within_load_fraction_target_variation": 0.03086531823606717,
+    "in_sample_load_mean_r2": 0.9691346817639328,
+    "measured_sd": 1.4903806145563276,
+    "model_prediction_range": 3.456509900177087
+  },
+  {
+    "component": "usr_qos",
+    "role": "train",
+    "within_load_fraction_target_variation": 0.10260159042715312,
+    "in_sample_load_mean_r2": 0.8973984095728469,
+    "measured_sd": 0.2594741838510935,
+    "model_prediction_range": 0.6959747970104218
+  },
+  {
+    "component": "usr_qos",
+    "role": "validation",
+    "within_load_fraction_target_variation": 0.0871258390154851,
+    "in_sample_load_mean_r2": 0.9128741609845149,
+    "measured_sd": 0.25730845903320865,
+    "model_prediction_range": 0.6959747970104218
+  },
+  {
+    "component": "usr_qos",
+    "role": "internal_test",
+    "within_load_fraction_target_variation": 0.07980942349513284,
+    "in_sample_load_mean_r2": 0.9201905765048671,
+    "measured_sd": 0.2696243931814714,
+    "model_prediction_range": 0.6959747970104218
+  }
+]

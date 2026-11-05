@@ -1,0 +1,70 @@
+{
+  "status": "Single prepared reward calibrated without any controller outcome; full four-KPI execution remains gated",
+  "energy_scale_wh": 1.6576061357862053,
+  "role": "train",
+  "training_identity": "bc851e421bfb42af25aedeaefe5ba78a42146ae7120e68a8193410cdb9e34d37",
+  "selected_scenarios": [
+    "original",
+    "low",
+    "moderate_overload",
+    "mixed"
+  ],
+  "source": "Stage9 frozen power columns ONLY: Netflix training rows96..2015",
+  "consulted_source_fields": [
+    "workload",
+    "role",
+    "scenario",
+    "power_0_w",
+    "power_1_w",
+    "power_2_w"
+  ],
+  "calibration_transitions": 69120,
+  "dynamics": {
+    "dpdk_idle_w": 0.82,
+    "usr_idle_w": 0.015,
+    "drain_seconds": 0.0,
+    "dpdk_seconds": 24.0,
+    "usr_seconds_per_instance": 3.3,
+    "dpdk_burst_ratio": 1.73,
+    "usr_burst_ratio": 0.37,
+    "slot_seconds": 900.0
+  },
+  "protocol": "-(E_Wh/Emax_train + 3*strict_violation + severity/(1+severity) + .01*executed_change); energy scale remains unset until complete authenticated training outcomes exist",
+  "coefficients": {
+    "energy": 1.0,
+    "strict": 3.0,
+    "bounded_severity": 1.0,
+    "stability": 0.01
+  },
+  "strict_weight_derivation": "ceil(energy_bound(1)+bounded_severity_bound(1)+stability_bound(.01))=3; minimum strict-unsafe cost3 exceeds maximum safe immediate cost1.01 inside training energy bound",
+  "no_sec": true,
+  "activation_energy_included_once": true,
+  "old_launch_reward_penalties_used": false,
+  "stability_units": "dimensionless preference cost per executed reconfiguration, 1% of maximum training slot energy cost; not measured Wh",
+  "full_reward_diagnostics_complete": false,
+  "unknown_component": "Physical loss-ratio predictions",
+  "training_energy": {
+    "original": {
+      "n": 17280,
+      "max_wh": 0.8583140123241153,
+      "mean_wh": 0.2715432007950272
+    },
+    "low": {
+      "n": 17280,
+      "max_wh": 0.21177659236356555,
+      "mean_wh": 0.08785123889328589
+    },
+    "moderate_overload": {
+      "n": 17280,
+      "max_wh": 1.6561638559163754,
+      "mean_wh": 0.4470020954762065
+    },
+    "mixed": {
+      "n": 17280,
+      "max_wh": 1.6576061357862053,
+      "mean_wh": 0.35427517990072743
+    }
+  },
+  "operational_guarantee": false,
+  "scope": "Point-model immediate priority within calibrated training bound, not whole-horizon feasibility or unseen-load assurance"
+}

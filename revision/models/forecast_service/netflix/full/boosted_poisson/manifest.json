@@ -1,0 +1,81 @@
+{
+  "version": "comcom.forecasting-service.v1",
+  "workload": "netflix",
+  "family": "boosted_poisson",
+  "fit_stop_exclusive": 2016,
+  "parameter_targets_half_open": [
+    96,
+    2016
+  ],
+  "inner_stopping_targets_half_open": null,
+  "best_epoch": null,
+  "full_refit_after_epoch_selection": false,
+  "scale": 400.0,
+  "scaler_fit_stop_exclusive": 2016,
+  "training_prefix_sha256": "08e5ab22259941fbb07637a52a45a52b2da13186be45bd082c592842a551337c",
+  "last_training_timestamp": "2019-04-21T23:45:00",
+  "model_file": "model.joblib",
+  "model_sha256": "7444b0ba85f9611a1b64f9e970ef421a60ef44b56f32fd4bf9f64bb372bfc38d",
+  "training_seconds": 0.18004797503817827,
+  "seed": 42,
+  "history_slots": 96,
+  "selection_stop_exclusive": 2016,
+  "selection_cutoff_timestamp": "2019-04-22T00:00:00",
+  "protocol_sha256": "c70366f947621b12fab6e72b4e659b9ca52164d7774a7c73c12942e7d3004a6f",
+  "implementation_sha256": "66c148df77abecdbfbcbbbe947debf2be548de83a0d81f72e51b70782004960c",
+  "uses_validation_or_final_test_for_fit": false,
+  "runtime": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "dependencies": {
+      "numpy": "2.4.2",
+      "tensorflow": "2.20.0",
+      "keras": "3.13.2",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3",
+      "h5py": "3.15.1"
+    },
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "TF_ENABLE_ONEDNN_OPTS": "0",
+      "TF_DETERMINISTIC_OPS": "1",
+      "TF_NUM_INTEROP_THREADS": "1",
+      "TF_NUM_INTRAOP_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "TF_CPP_MIN_LOG_LEVEL": "2"
+    },
+    "tensorflow_build": {
+      "cpu_compiler": "clang 18",
+      "cuda_compute_capabilities": [
+        "sm_60",
+        "sm_70",
+        "sm_80",
+        "sm_89",
+        "compute_90"
+      ],
+      "cuda_version": "12.5.1",
+      "cudnn_version": "9",
+      "is_cuda_build": true,
+      "is_rocm_build": false,
+      "is_tensorrt_build": false
+    },
+    "visible_devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ],
+    "intra_op_threads": 1,
+    "inter_op_threads": 1,
+    "tensor_float_32_enabled": false,
+    "model_call": "model(one_float32_sample, training=False); compile=False on load",
+    "batch_policy": "one sample per forward pass, independent of caller batching",
+    "input_pipeline": "float32(load/k) -> float32 log1p -> saved input scaler",
+    "output_pipeline": "float32 model output -> saved target inverse scaler; no clipping",
+    "serialized_tensorflow_version": null,
+    "serialized_tensorflow_version_note": "Not recorded in the .keras metadata; not inferred from Keras version"
+  },
+  "versions": {
+    "numpy": "2.4.2",
+    "sklearn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "nonnegative_output": "Poisson loss with exponential inverse link"
+}

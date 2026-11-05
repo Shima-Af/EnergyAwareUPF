@@ -1,0 +1,61 @@
+{
+  "selected_name": "original_hidden_softplus_seed_42",
+  "selected_manifest_path": "/home/ubuntu/EnergyAwareUPF/revision/models/task2d/original_hidden_softplus_seed_42/manifest.json",
+  "selected_manifest_sha256": "eaae6a49398590dcc86da0caaab2c1ec4c69b7b74d5edd5345a8cbaca5c367b8",
+  "model_sha256": "8a666dd38652bfe7d9c6c2ee39a44623892c6052ee01836523c6ed65ed8d17c6",
+  "validation_scores": {
+    "original_hidden_softplus_seed_42": {
+      "n": 915,
+      "rmse_w": 0.2635033290598396,
+      "mae_w": 0.08095791015091904,
+      "bias_w": 0.010838122779108016,
+      "r2": 0.969993524224939,
+      "low_load_n": 372,
+      "low_load_rmse_w": 0.02096592340552695,
+      "low_load_mae_w": 0.01881980318674371,
+      "low_load_bias_w": 0.01881980318674371,
+      "negative_predictions": 0
+    },
+    "original_hidden_softplus_seed_123": {
+      "n": 915,
+      "rmse_w": 0.2643752242318319,
+      "mae_w": 0.08695935476617787,
+      "bias_w": 0.017128564988615615,
+      "r2": 0.9697946213461413,
+      "low_load_n": 372,
+      "low_load_rmse_w": 0.03457941766648396,
+      "low_load_mae_w": 0.03225841893938856,
+      "low_load_bias_w": 0.032256340788238046,
+      "negative_predictions": 0
+    },
+    "plain_hidden_softplus_seed_42": {
+      "n": 915,
+      "rmse_w": 0.2647627998908783,
+      "mae_w": 0.0836301140597523,
+      "bias_w": -0.003909096331725963,
+      "r2": 0.9697059938982182,
+      "low_load_n": 372,
+      "low_load_rmse_w": 0.009645745143987243,
+      "low_load_mae_w": 0.006965238291855223,
+      "low_load_bias_w": -0.00245800055440141,
+      "negative_predictions": 0
+    },
+    "plain_hidden_softplus_seed_123": {
+      "n": 915,
+      "rmse_w": 0.2638549787593204,
+      "mae_w": 0.07948526296558557,
+      "bias_w": -1.6630151638359965e-05,
+      "r2": 0.9699133824750491,
+      "low_load_n": 372,
+      "low_load_rmse_w": 0.009771023355952538,
+      "low_load_mae_w": 0.006920592246772128,
+      "low_load_bias_w": -0.001078272240896001,
+      "negative_predictions": 0
+    }
+  },
+  "config_sha256": "6e8f19e42740623589e90e5e4a1aa453d64a35c91555e884f47455aacd453340",
+  "internal_test_scored_before_selection": false,
+  "traffic_used_for_selection": false,
+  "search_expanded": false,
+  "refit_on_train_plus_validation": false
+}

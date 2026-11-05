@@ -1,0 +1,20 @@
+{
+  "source_csv": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/dpdk_processed.csv",
+  "source_sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+  "input_units": "Mbps_per_direction_as_recorded_in_original_campaign",
+  "split": {"train": [1,2,3], "validation": [4], "internal_test": [5]},
+  "domain_mbps": [0.01,5000.0],
+  "fit_objective": "unweighted_training_row_squared_error_in_watts",
+  "solver": "scipy.optimize.nnls for linear candidates; Adam for neural candidates",
+  "simple_candidates": ["nonnegative_training_constant", "nonnegative_affine", "nonnegative_pwl_7"],
+  "knots_mbps": [0.01,1,10,100,400,1000,5000],
+  "neural_architecture": "Dense(16,relu), Dense(1,softplus in watts)",
+  "seeds": [42,123], "batch_size": 64, "max_epochs": 400,
+  "learning_rate": 0.001, "early_stopping_patience": 60,
+  "lr_patience": 20, "lr_factor": 0.5, "minimum_learning_rate": 0.00001,
+  "selection": "minimum validation RMSE across all five candidates; exact ties fewer fitted parameters then name",
+  "target_transform": "identity_watts",
+  "input_transform": "neural: log1p and training-only mean/std; simple: raw Mbps",
+  "test_scoring": "after frozen selection, selected candidate and historical reference only",
+  "no_search_expansion": true, "no_controller_selection": true
+}

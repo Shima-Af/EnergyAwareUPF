@@ -1,0 +1,30 @@
+/home/ubuntu/EnergyAwareUPF/revision/stage10/completion/counter_audit.py:45: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  frame['time']=pd.to_datetime(frame.timestamp,utc=True)
+/home/ubuntu/EnergyAwareUPF/revision/stage10/completion/counter_audit.py:45: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  frame['time']=pd.to_datetime(frame.timestamp,utc=True)
+{
+  "dpdk": {
+    "processed_source_sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+    "processed_rows": 4594,
+    "matched_processed_rows": 4594,
+    "valid_numeric_receiver_candidates": 4507,
+    "valid_numeric_sender_candidates": 4559,
+    "nonzero_conservation_residuals": 2268,
+    "conservation_comparable": 4548,
+    "max_abs_conservation_residual": 1360274.0,
+    "physical_labels_released": 0,
+    "interpretation": "Numerically aligned candidate denominators are not authenticated packet cohorts; sender/receiver counters are not conservative at arbitrary sample boundaries"
+  },
+  "usr": {
+    "processed_source_sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+    "processed_rows": 4564,
+    "matched_processed_rows": 4564,
+    "valid_numeric_receiver_candidates": 4507,
+    "valid_numeric_sender_candidates": 4169,
+    "nonzero_conservation_residuals": 2372,
+    "conservation_comparable": 4531,
+    "max_abs_conservation_residual": 4772309.0,
+    "physical_labels_released": 0,
+    "interpretation": "Numerically aligned candidate denominators are not authenticated packet cohorts; sender/receiver counters are not conservative at arbitrary sample boundaries"
+  }
+}

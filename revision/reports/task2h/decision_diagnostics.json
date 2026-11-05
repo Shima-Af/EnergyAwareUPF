@@ -1,0 +1,42 @@
+{
+  "DPDK": {
+    "validation": {
+      "rmse_reduction_relative_to_constant_percent": 8.176055151029626,
+      "mse_reduction_relative_to_constant_percent": 15.683631523732478,
+      "safety_classification_changes_from_original_saved_network": 41,
+      "loads_with_changed_classification_mbps": [
+        5000.0
+      ],
+      "unexplained_fraction_target_variance": 0.8522055794659799,
+      "no_approved_false_safe_risk_threshold": true
+    },
+    "internal_test": {
+      "rmse_reduction_relative_to_constant_percent": 3.5583397463051614,
+      "mse_reduction_relative_to_constant_percent": 6.990061675108972,
+      "safety_classification_changes_from_original_saved_network": 42,
+      "loads_with_changed_classification_mbps": [
+        5000.0
+      ],
+      "unexplained_fraction_target_variance": 0.943919867583925,
+      "no_approved_false_safe_risk_threshold": true
+    }
+  },
+  "USR": {
+    "validation": {
+      "rmse_reduction_relative_to_constant_percent": 69.68232832781172,
+      "mse_reduction_relative_to_constant_percent": 90.80838784377391,
+      "safety_classification_changes_from_original_saved_network": 0,
+      "loads_with_changed_classification_mbps": [],
+      "unexplained_fraction_target_variance": 0.09191671016542124,
+      "no_approved_false_safe_risk_threshold": true
+    },
+    "internal_test": {
+      "rmse_reduction_relative_to_constant_percent": 69.10290650582769,
+      "mse_reduction_relative_to_constant_percent": 90.45369613612375,
+      "safety_classification_changes_from_original_saved_network": 0,
+      "loads_with_changed_classification_mbps": [],
+      "unexplained_fraction_target_variance": 0.09554599427054822,
+      "no_approved_false_safe_risk_threshold": true
+    }
+  }
+}

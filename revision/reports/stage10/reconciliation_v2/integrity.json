@@ -1,0 +1,24 @@
+{
+  "status": "selected_policy_implemented_physical_loss_target_blocked",
+  "prior_file_count": 5282,
+  "unchanged_prior_file_count": 5281,
+  "modified": [
+    "revision/FINAL_COMCOM_CORRECTED_CAMPAIGN.md"
+  ],
+  "old_report_preserved": "report_before_budget_decision.md",
+  "historical_stage2_to9_files_unchanged": true,
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "tracked_status": "",
+  "model_training": false,
+  "controller_training": false,
+  "final_test_target_access": false,
+  "final_test_evaluation": false,
+  "committed": false,
+  "pushed": false,
+  "tests": {
+    "passed": 24,
+    "seconds": 0.03
+  },
+  "old_stage10_integrity_note": "Earlier report SHA remains verifiable through its preserved copy; earlier evidence manifests are historical snapshots, not rewritten"
+}

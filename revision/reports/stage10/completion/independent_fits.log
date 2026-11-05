@@ -1,0 +1,9 @@
+2026-10-23 21:29:25.539858: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+fitted KPI dpdk delay_ms
+fitted KPI dpdk jitter_us
+fitted KPI usr delay_ms
+fitted KPI usr jitter_us
+fitted forecasting original 5 prefix models
+fitted forecasting low 5 prefix models
+fitted forecasting moderate_overload 5 prefix models
+fitted forecasting mixed 5 prefix models

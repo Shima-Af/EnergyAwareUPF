@@ -1,0 +1,76 @@
+{
+  "partial_episodes_not_independent": [
+    {
+      "length": 120,
+      "reward": -88.01775726268512,
+      "energy_wh": 23.382655453571385,
+      "qos_shortfall_slots": 0,
+      "energy_term": 87.72675726268511,
+      "qos_term": 0.0,
+      "orchestration_term": 0.29100000000000004,
+      "type_switches": 11,
+      "scale_up": 5,
+      "scale_down": 3,
+      "blocked": 45,
+      "occupancy": [
+        52,
+        46,
+        22
+      ]
+    },
+    {
+      "length": 120,
+      "reward": -89.85675420352821,
+      "energy_wh": 24.672538378322308,
+      "qos_shortfall_slots": 0,
+      "energy_term": 89.52675420352823,
+      "qos_term": 0.0,
+      "orchestration_term": 0.33000000000000007,
+      "type_switches": 11,
+      "scale_up": 6,
+      "scale_down": 4,
+      "blocked": 38,
+      "occupancy": [
+        49,
+        33,
+        38
+      ]
+    },
+    {
+      "length": 120,
+      "reward": -87.99404884808419,
+      "energy_wh": 23.617140414473564,
+      "qos_shortfall_slots": 0,
+      "energy_term": 87.6370488480842,
+      "qos_term": 0.0,
+      "orchestration_term": 0.3570000000000001,
+      "type_switches": 13,
+      "scale_up": 4,
+      "scale_down": 3,
+      "blocked": 33,
+      "occupancy": [
+        54,
+        36,
+        30
+      ]
+    },
+    {
+      "length": 120,
+      "reward": -93.92882341213229,
+      "energy_wh": 27.7077686869478,
+      "qos_shortfall_slots": 0,
+      "energy_term": 93.62282341213229,
+      "qos_term": 0.0,
+      "orchestration_term": 0.30600000000000005,
+      "type_switches": 9,
+      "scale_up": 7,
+      "scale_down": 6,
+      "blocked": 43,
+      "occupancy": [
+        42,
+        39,
+        39
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "processed_path": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/dpdk_processed.csv",
+  "processed_sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+  "raw_path": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/scaphandre/dpdk/scaph_process_power_consumption_microwatts.csv",
+  "raw_sha256": "074a9d6f757584276d555ca40a1a62f528d89780b1022db21adbfcf8b400e183",
+  "pid_file": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/scaphandre/dpdk/upf_PIDs.txt",
+  "pid_sha256": "e20503167c48e6c140ae2682daac5b6462b8d7dc99dd152003dcc3675d8833ff",
+  "catalog_pids": [
+    1043174,
+    1043099,
+    1043042,
+    1042549
+  ],
+  "retained_raw_rows": 45024,
+  "raw_executables": [
+    "/bin/pfcpiface",
+    "/usr/bin/bessd",
+    "/usr/bin/python3.12"
+  ],
+  "labels": 4594,
+  "individual_process_value_matches": 0,
+  "conversion": "raw microwatts / 1e6",
+  "value_tolerance_w": 1e-12,
+  "time_window_seconds": 6,
+  "interpretation": "Numerical label provenance only; not metering accuracy or authentication of historical join/aggregation",
+  "measurement_summary_by_sweep": [
+    {
+      "sweep": 1,
+      "n": 917,
+      "mean_w": 0.8213991299139111,
+      "sd_w": 0.004209940079676119,
+      "min_w": 0.8107426250406784,
+      "max_w": 0.8589676154918148
+    },
+    {
+      "sweep": 2,
+      "n": 920,
+      "mean_w": 0.8214007827638627,
+      "sd_w": 0.004425754744035781,
+      "min_w": 0.810321616964086,
+      "max_w": 0.8367866994827268
+    },
+    {
+      "sweep": 3,
+      "n": 923,
+      "mean_w": 0.8195715322394331,
+      "sd_w": 0.0043484156405048805,
+      "min_w": 0.8083583607679056,
+      "max_w": 0.8383894327074928
+    },
+    {
+      "sweep": 4,
+      "n": 916,
+      "mean_w": 0.8199445543263965,
+      "sd_w": 0.005524774434480692,
+      "min_w": 0.807147461269903,
+      "max_w": 0.8383231607824404
+    },
+    {
+      "sweep": 5,
+      "n": 918,
+      "mean_w": 0.8209199141497647,
+      "sd_w": 0.003948167889514812,
+      "min_w": 0.8079594535218036,
+      "max_w": 0.8335880856426017
+    }
+  ]
+}

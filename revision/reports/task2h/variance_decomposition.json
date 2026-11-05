@@ -1,0 +1,96 @@
+{
+  "DPDK": {
+    "train": {
+      "n": 2760,
+      "total_target_sst": 27.49429784647065,
+      "model_sse": 23.02726219216769,
+      "within_load_sse": 22.100507464792422,
+      "load_mean_misfit_sse": 0.926754727375268,
+      "within_load_case_sse": 18.8167728406648,
+      "between_sweeps_given_load_sse": 3.2837346241276224,
+      "within_load_fraction_target_variation": 0.8038214901214286,
+      "within_load_fraction_model_sse": 0.9597540202720892,
+      "squared_global_bias_fraction_model_sse": 8.553210903390638e-05,
+      "in_sample_load_mean_r2_ceiling": 0.19617850987857144,
+      "within_load_case_fraction_within_load_sse": 0.8514181346578205,
+      "interpretation": "In-sample same-load variability is not identified as measurement noise; no independent ceiling claim"
+    },
+    "validation": {
+      "n": 916,
+      "total_target_sst": 6.949028422493584,
+      "model_sse": 6.0708748186738095,
+      "within_load_sse": 5.607337208340093,
+      "load_mean_misfit_sse": 0.4635376103337151,
+      "within_load_case_sse": 5.607337208340093,
+      "between_sweeps_given_load_sse": 0.0,
+      "within_load_fraction_target_variation": 0.806923913304122,
+      "within_load_fraction_model_sse": 0.923645664887062,
+      "squared_global_bias_fraction_model_sse": 0.009863505995332164,
+      "in_sample_load_mean_r2_ceiling": 0.19307608669587795,
+      "within_load_case_fraction_within_load_sse": 1.0,
+      "interpretation": "In-sample same-load variability is not identified as measurement noise; no independent ceiling claim"
+    },
+    "internal_test": {
+      "n": 918,
+      "total_target_sst": 6.680614757661355,
+      "model_sse": 6.3510113613993475,
+      "within_load_sse": 5.977651110285706,
+      "load_mean_misfit_sse": 0.3733602511136416,
+      "within_load_case_sse": 5.977651110285706,
+      "between_sweeps_given_load_sse": 0.0,
+      "within_load_fraction_target_variation": 0.8947756048094992,
+      "within_load_fraction_model_sse": 0.9412124731215443,
+      "squared_global_bias_fraction_model_sse": 0.012898561050334299,
+      "in_sample_load_mean_r2_ceiling": 0.10522439519050075,
+      "within_load_case_fraction_within_load_sse": 1.0,
+      "interpretation": "In-sample same-load variability is not identified as measurement noise; no independent ceiling claim"
+    }
+  },
+  "USR": {
+    "train": {
+      "n": 2736,
+      "total_target_sst": 184.2062673050828,
+      "model_sse": 20.003178645105315,
+      "within_load_sse": 18.899855992150794,
+      "load_mean_misfit_sse": 1.103322652954526,
+      "within_load_case_sse": 16.33905593201768,
+      "between_sweeps_given_load_sse": 2.56080006013311,
+      "within_load_fraction_target_variation": 0.10260159042715312,
+      "within_load_fraction_model_sse": 0.9448426336369046,
+      "squared_global_bias_fraction_model_sse": 0.002966306011013878,
+      "in_sample_load_mean_r2_ceiling": 0.8973984095728469,
+      "within_load_case_fraction_within_load_sse": 0.864506900941646,
+      "interpretation": "In-sample same-load variability is not identified as measurement noise; no independent ceiling claim"
+    },
+    "validation": {
+      "n": 915,
+      "total_target_sst": 60.579993427390626,
+      "model_sse": 5.66689961966078,
+      "within_load_sse": 5.278082754913981,
+      "load_mean_misfit_sse": 0.38881686474679955,
+      "within_load_case_sse": 5.278082754913981,
+      "between_sweeps_given_load_sse": 0.0,
+      "within_load_fraction_target_variation": 0.0871258390154851,
+      "within_load_fraction_model_sse": 0.9313880797539036,
+      "squared_global_bias_fraction_model_sse": 0.004490827350284178,
+      "in_sample_load_mean_r2_ceiling": 0.9128741609845149,
+      "within_load_case_fraction_within_load_sse": 1.0,
+      "interpretation": "In-sample same-load variability is not identified as measurement noise; no independent ceiling claim"
+    },
+    "internal_test": {
+      "n": 913,
+      "total_target_sst": 66.3726471328092,
+      "model_sse": 5.909012289375427,
+      "within_load_sse": 5.297162703515385,
+      "load_mean_misfit_sse": 0.6118495858600418,
+      "within_load_case_sse": 5.297162703515385,
+      "between_sweeps_given_load_sse": 0.0,
+      "within_load_fraction_target_variation": 0.07980942349513284,
+      "within_load_fraction_model_sse": 0.8964548462760578,
+      "squared_global_bias_fraction_model_sse": 0.0010573831864401336,
+      "in_sample_load_mean_r2_ceiling": 0.9201905765048671,
+      "within_load_case_fraction_within_load_sse": 1.0,
+      "interpretation": "In-sample same-load variability is not identified as measurement noise; no independent ceiling claim"
+    }
+  }
+}

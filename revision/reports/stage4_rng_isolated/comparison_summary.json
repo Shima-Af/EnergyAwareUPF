@@ -1,0 +1,156 @@
+{
+  "validation_exploratory": true,
+  "not_sufficient_reviewer_replication": true,
+  "algorithms": {
+    "ppo": {
+      "n": 5,
+      "metrics": {
+        "energy_wh": {
+          "mean": 88.25082121972007,
+          "sample_sd": 0.31424255746844526,
+          "minimum": 87.9407900573443,
+          "maximum": 88.75998432446272
+        },
+        "mean_sec_j_per_mbit": {
+          "mean": 0.006358752922731442,
+          "sample_sd": 1.9672205631899486e-05,
+          "minimum": 0.006337298340516524,
+          "maximum": 0.00639021271333046
+        },
+        "aggregate_sec_j_per_mbit": {
+          "mean": 0.005297958853675073,
+          "sample_sd": 1.8864913850449883e-05,
+          "minimum": 0.005279346762377538,
+          "maximum": 0.005328525426784007
+        },
+        "total_reward": {
+          "mean": -320.7907473056647,
+          "sample_sd": 1.010704137667039,
+          "minimum": -322.41472075185516,
+          "maximum": -319.69383636203276
+        },
+        "qos_violation_rate": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "mean_qos_shortfall": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "type_switches": {
+          "mean": 11.4,
+          "sample_sd": 0.8944271909999159,
+          "minimum": 11.0,
+          "maximum": 13.0
+        },
+        "scale_up_events": {
+          "mean": 2.4,
+          "sample_sd": 2.0736441353327724,
+          "minimum": 0.0,
+          "maximum": 5.0
+        },
+        "scale_down_events": {
+          "mean": 0.8,
+          "sample_sd": 1.3038404810405297,
+          "minimum": 0.0,
+          "maximum": 3.0
+        },
+        "blocked_requests": {
+          "mean": 11.4,
+          "sample_sd": 4.8270073544588685,
+          "minimum": 7.0,
+          "maximum": 18.0
+        },
+        "min_predicted_qos": {
+          "mean": 0.9078869819641113,
+          "sample_sd": 0.0,
+          "minimum": 0.9078869819641113,
+          "maximum": 0.9078869819641113
+        }
+      },
+      "lower_energy_than_rule": 3,
+      "higher_reward_than_rule": 4,
+      "mean_energy_percent_over_rule": -0.029861518931917352,
+      "endpoint_improves_reward_over_32k": 2
+    },
+    "recurrent_ppo": {
+      "n": 5,
+      "metrics": {
+        "energy_wh": {
+          "mean": 88.17023144784841,
+          "sample_sd": 0.11693284413073933,
+          "minimum": 88.0175813332515,
+          "maximum": 88.33364360036191
+        },
+        "mean_sec_j_per_mbit": {
+          "mean": 0.006356133811588635,
+          "sample_sd": 1.4931006045712918e-05,
+          "minimum": 0.006335111808825006,
+          "maximum": 0.006373338420553198
+        },
+        "aggregate_sec_j_per_mbit": {
+          "mean": 0.005293120810362817,
+          "sample_sd": 7.019825858679167e-06,
+          "minimum": 0.005283956770697626,
+          "maximum": 0.005302930927121408
+        },
+        "total_reward": {
+          "mean": -320.69054410406727,
+          "sample_sd": 0.8093579376031345,
+          "minimum": -321.6782563958812,
+          "maximum": -319.5866351647803
+        },
+        "qos_violation_rate": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "mean_qos_shortfall": {
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "type_switches": {
+          "mean": 12.2,
+          "sample_sd": 1.7888543819998317,
+          "minimum": 11.0,
+          "maximum": 15.0
+        },
+        "scale_up_events": {
+          "mean": 1.4,
+          "sample_sd": 3.1304951684997055,
+          "minimum": 0.0,
+          "maximum": 7.0
+        },
+        "scale_down_events": {
+          "mean": 1.8,
+          "sample_sd": 2.04939015319192,
+          "minimum": 0.0,
+          "maximum": 4.0
+        },
+        "blocked_requests": {
+          "mean": 20.4,
+          "sample_sd": 17.30028901492689,
+          "minimum": 0.0,
+          "maximum": 47.0
+        },
+        "min_predicted_qos": {
+          "mean": 0.9078869819641113,
+          "sample_sd": 0.0,
+          "minimum": 0.9078869819641113,
+          "maximum": 0.9078869819641113
+        }
+      },
+      "lower_energy_than_rule": 4,
+      "higher_reward_than_rule": 4,
+      "mean_energy_percent_over_rule": -0.12115325472333849,
+      "endpoint_improves_reward_over_32k": 5
+    }
+  }
+}

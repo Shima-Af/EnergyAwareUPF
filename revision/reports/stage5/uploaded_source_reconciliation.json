@@ -1,0 +1,19 @@
+{
+  "uploaded_path": "revision/reference/Dynamic_UPF_Cyprus_2025_SLICES.pdf",
+  "uploaded_sha256": "e26ef6eebf3ad96ba01f8bac619f69c96da2dc9bbc1b44ff76586ea6c0ef50ea",
+  "published_path": "revision/reports/stage5/sources/Dynamic_UPF_IFIP_2025.pdf",
+  "published_sha256": "8bd93dbfaa6106abbe5770a255bd51d050dafcbd60dc21d33f7322361dd61da0",
+  "byte_identical": false,
+  "uploaded_during_stage5_by_user": true,
+  "matching_sections_manually_checked": [
+    "III-B score range and metric normalization",
+    "III-C global min/max power energy score and clipping",
+    "III-D utility equation",
+    "III-G forecast/hold-down/hysteresis rules",
+    "IV-C weights .2/.8 and historical 95.6 crossover",
+    "IV-D 26 Mbps margin and four interval hold-down"
+  ],
+  "differences_observed": "Publisher headers/page stamps, layout, metadata and PDF packaging differ. Both inspected copies give the same baseline-defining equations/parameters. No claim of whole-document byte or semantic identity.",
+  "baseline_definition_changed": false,
+  "reevaluation_needed": false
+}

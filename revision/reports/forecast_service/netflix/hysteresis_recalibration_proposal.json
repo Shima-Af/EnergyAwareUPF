@@ -1,0 +1,17 @@
+{
+  "status": "proposal_only_no_baseline_changed",
+  "workload": "netflix",
+  "k": 1.0,
+  "k_source": "Declared a priori unit error multiplier, not fitted to control performance",
+  "calibration_half_open": [
+    1680,
+    2016
+  ],
+  "calibration_rows": 336,
+  "oof_mae_mbps": 14.268830938789403,
+  "proposed_margin_mbps": 14.268830938789403,
+  "literal_in_sample_margin_mbps": 12.250528296565252,
+  "approximate_paper_ratio_26_over_24_70": 1.0526315789473684,
+  "historical_26_automatically_reused": false,
+  "limitation": "Empirical same-workload calibration under a preceding-prefix model; neither coverage guarantee nor identical to the final refitted model. Affects three-region entry interiors and needs a new baseline version before future comparison."
+}

@@ -1,0 +1,22 @@
+2026-10-22 17:41:33.072040: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+DPDK original_hidden_sigmoid 42 epoch 100 best val RMSE 0.08046303667543572
+Completed DPDK original_hidden_sigmoid_seed_42 epochs 111 best 31 RMSE 0.08046303667543572
+DPDK original_hidden_sigmoid 123 epoch 100 best val RMSE 0.08040563642225601
+Completed DPDK original_hidden_sigmoid_seed_123 epochs 165 best 85 RMSE 0.08040563642225601
+DPDK plain_hidden_sigmoid 42 epoch 100 best val RMSE 0.08041115777250622
+Completed DPDK plain_hidden_sigmoid_seed_42 epochs 133 best 53 RMSE 0.08041115777250622
+DPDK plain_hidden_sigmoid 123 epoch 100 best val RMSE 0.08045621061901731
+Completed DPDK plain_hidden_sigmoid_seed_123 epochs 137 best 57 RMSE 0.08045621061901731
+USR original_hidden_sigmoid 42 epoch 100 best val RMSE 0.07801018357011642
+Completed USR original_hidden_sigmoid_seed_42 epochs 121 best 41 RMSE 0.07801018357011642
+USR original_hidden_sigmoid 123 epoch 100 best val RMSE 0.07808148341019001
+Completed USR original_hidden_sigmoid_seed_123 epochs 167 best 87 RMSE 0.07808148341019001
+USR plain_hidden_sigmoid 42 epoch 100 best val RMSE 0.07840180515162024
+USR plain_hidden_sigmoid 42 epoch 200 best val RMSE 0.07814300242314072
+USR plain_hidden_sigmoid 42 epoch 300 best val RMSE 0.07811413523787672
+Completed USR plain_hidden_sigmoid_seed_42 epochs 309 best 229 RMSE 0.07811413523787672
+USR plain_hidden_sigmoid 123 epoch 100 best val RMSE 0.0783705604805364
+USR plain_hidden_sigmoid 123 epoch 200 best val RMSE 0.07817135962872306
+Completed USR plain_hidden_sigmoid_seed_123 epochs 287 best 207 RMSE 0.07817090186556061
+FROZEN BOTH NEURAL SELECTIONS {"DPDK": "original_hidden_sigmoid_seed_123", "USR": "original_hidden_sigmoid_seed_42"}
+Internal scoring complete. No traffic data, controller fits, or automatic promotion.

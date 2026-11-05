@@ -1,0 +1,32 @@
+{
+  "nonnegative_training_constant": {
+    "minimum_w": 0.8207884951198574,
+    "maximum_w": 0.8207884951198574,
+    "finite_nonnegative": true
+  },
+  "nonnegative_affine": {
+    "minimum_w": 0.8196391739915165,
+    "maximum_w": 0.8269067537141678,
+    "finite_nonnegative": true
+  },
+  "nonnegative_pwl_7": {
+    "minimum_w": 0.818790345927574,
+    "maximum_w": 0.8261315793492399,
+    "finite_nonnegative": true
+  },
+  "dpdk_softplus_seed_42": {
+    "minimum_w": 0.814436674118042,
+    "maximum_w": 0.8258421421051025,
+    "finite_nonnegative": true
+  },
+  "dpdk_softplus_seed_123": {
+    "minimum_w": 0.8171008229255676,
+    "maximum_w": 0.8262293338775635,
+    "finite_nonnegative": true
+  },
+  "historical_nonindependent": {
+    "minimum_w": 0.8184815049171448,
+    "maximum_w": 0.8249708414077759,
+    "finite_nonnegative": true
+  }
+}

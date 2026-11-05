@@ -1,0 +1,3742 @@
+[
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-174 - baremetal _SD-Core_DPDK (copy from Jan  3 16-25-29)-2025-01-03-16-25-35-UTC.zip",
+    "nested_entry": "174 - baremetal _SD-Core_DPDK (copy from Jan  3 16:25:29).zip",
+    "config_sha256": "6069be326a71e0ce81f8220b97b0841a6048cbf532ae740533d3a57ecec24d8e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-175 - baremetal _SD-Core_DPDK (copy from Jan  3 16-29-09)-2025-01-03-16-29-15-UTC.zip",
+    "nested_entry": "175 - baremetal _SD-Core_DPDK (copy from Jan  3 16:29:09).zip",
+    "config_sha256": "62b545d78601e49dda650956ff979c8b1bc46b66f1eaace4cf9dbd701df9a3f6",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-176 - baremetal _SD-Core_DPDK (copy from Jan  3 16-32-49)-2025-01-03-16-32-55-UTC.zip",
+    "nested_entry": "176 - baremetal _SD-Core_DPDK (copy from Jan  3 16:32:49).zip",
+    "config_sha256": "9ac04437cbdbde1782b0f042651717266e79de48bfbbbfddaa165b09f6b335bd",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-177 - baremetal _SD-Core_DPDK (copy from Jan  3 16-36-30)-2025-01-03-16-36-36-UTC.zip",
+    "nested_entry": "177 - baremetal _SD-Core_DPDK (copy from Jan  3 16:36:30).zip",
+    "config_sha256": "843ff856e7c2266a17eef8faca6928feff312260923485e8a1e508a0968b9327",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-178 - baremetal _SD-Core_DPDK (copy from Jan  3 16-40-10)-2025-01-03-16-40-16-UTC.zip",
+    "nested_entry": "178 - baremetal _SD-Core_DPDK (copy from Jan  3 16:40:10).zip",
+    "config_sha256": "9a3a985efca48d4936a938c39eb48227cfbeb7c1187d55faa7c20aca8bfa0087",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-179 - baremetal _SD-Core_DPDK (copy from Jan  3 16-43-50)-2025-01-03-16-43-56-UTC.zip",
+    "nested_entry": "179 - baremetal _SD-Core_DPDK (copy from Jan  3 16:43:50).zip",
+    "config_sha256": "d467c5bdd7acaa2d0bfd093704a1de2904b3a8da7891f4e7b1b5cb3b40df1f38",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-180 - baremetal _SD-Core_DPDK (copy from Jan  3 16-47-31)-2025-01-03-16-47-37-UTC.zip",
+    "nested_entry": "180 - baremetal _SD-Core_DPDK (copy from Jan  3 16:47:31).zip",
+    "config_sha256": "54289b46cb779d845d70d50f7c94d17fd002a4b58dbd72fe53f126bdadd335aa",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-181 - baremetal _SD-Core_DPDK (copy from Jan  3 16-51-11)-2025-01-03-16-51-17-UTC.zip",
+    "nested_entry": "181 - baremetal _SD-Core_DPDK (copy from Jan  3 16:51:11).zip",
+    "config_sha256": "b0cb3a5b4c346d3e0a1979a0b1ecbd4bbe390dd2cbae3aa94aa0861074dd0ba2",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-182 - baremetal _SD-Core_DPDK (copy from Jan  3 16-54-51)-2025-01-03-16-54-57-UTC.zip",
+    "nested_entry": "182 - baremetal _SD-Core_DPDK (copy from Jan  3 16:54:51).zip",
+    "config_sha256": "cce273c1fc8acecb5c74b7cb7f83e811f232d4474785ebffe9c6ccbf23d78283",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-183 - baremetal _SD-Core_DPDK (copy from Jan  3 16-58-31)-2025-01-03-16-58-37-UTC.zip",
+    "nested_entry": "183 - baremetal _SD-Core_DPDK (copy from Jan  3 16:58:31).zip",
+    "config_sha256": "cbe6465eb38ae691fcbe8383f4db518f2b1d89e296aca1db9d520687bee3d4ea",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-184 - baremetal _SD-Core_DPDK (copy from Jan  3 17-02-11)-2025-01-03-17-02-17-UTC.zip",
+    "nested_entry": "184 - baremetal _SD-Core_DPDK (copy from Jan  3 17:02:11).zip",
+    "config_sha256": "85f434bb287f33f89652a2784dfdfad53b3dbead7085577400a1d9bc44130bdc",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-185 - baremetal _SD-Core_DPDK (copy from Jan  3 17-05-51)-2025-01-03-17-05-57-UTC.zip",
+    "nested_entry": "185 - baremetal _SD-Core_DPDK (copy from Jan  3 17:05:51).zip",
+    "config_sha256": "28e1404a98c42cc5b027e65267044833ac9a924b6f902fef0a4ffc2fa2ea7804",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-186 - baremetal _SD-Core_DPDK (copy from Jan  3 17-09-32)-2025-01-03-17-09-37-UTC.zip",
+    "nested_entry": "186 - baremetal _SD-Core_DPDK (copy from Jan  3 17:09:32).zip",
+    "config_sha256": "cfcc066cd34d189c8961a763cfd3dd6e5b64d6fbd8100b76b3b6a73535d26cf6",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-187 - baremetal _SD-Core_DPDK (copy from Jan  3 17-13-14)-2025-01-03-17-13-20-UTC.zip",
+    "nested_entry": "187 - baremetal _SD-Core_DPDK (copy from Jan  3 17:13:14).zip",
+    "config_sha256": "1e8630b466a0ac156548c6290b1dbeeff13833601b6ef6d2a14218739a7e962b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-188 - baremetal _SD-Core_DPDK (copy from Jan  3 17-16-54)-2025-01-03-17-17-00-UTC.zip",
+    "nested_entry": "188 - baremetal _SD-Core_DPDK (copy from Jan  3 17:16:54).zip",
+    "config_sha256": "e3d3a49be1e1ae09a484c86dc5d2045ab4498556908251684ba1bd9326d35a55",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-189 - baremetal _SD-Core_DPDK (copy from Jan  3 17-20-35)-2025-01-03-17-20-40-UTC.zip",
+    "nested_entry": "189 - baremetal _SD-Core_DPDK (copy from Jan  3 17:20:35).zip",
+    "config_sha256": "9ac588bb40f9944b562e7b2083d34625c7d39e3efbcd3f2763d31c24c2622397",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-190 - baremetal _SD-Core_DPDK (copy from Jan  3 17-24-15)-2025-01-03-17-24-21-UTC.zip",
+    "nested_entry": "190 - baremetal _SD-Core_DPDK (copy from Jan  3 17:24:15).zip",
+    "config_sha256": "2536fa276df189c2ac090db3f4ccec75c9180ecfe0c61fa25b4d46138672014f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-191 - baremetal _SD-Core_DPDK (copy from Jan  3 17-27-55)-2025-01-03-17-28-01-UTC.zip",
+    "nested_entry": "191 - baremetal _SD-Core_DPDK (copy from Jan  3 17:27:55).zip",
+    "config_sha256": "f191aa6535f0c786f47874405c7d9211405f6194cd7cf786eb6de199f4078fe3",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-192 - baremetal _SD-Core_DPDK (copy from Jan  3 17-31-35)-2025-01-03-17-31-41-UTC.zip",
+    "nested_entry": "192 - baremetal _SD-Core_DPDK (copy from Jan  3 17:31:35).zip",
+    "config_sha256": "41a6e13625010132a0ce4f3977dbe64cd448125fb649421eba65269febf2d963",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-193 - baremetal _SD-Core_DPDK (copy from Jan  3 17-35-16)-2025-01-03-17-35-21-UTC.zip",
+    "nested_entry": "193 - baremetal _SD-Core_DPDK (copy from Jan  3 17:35:16).zip",
+    "config_sha256": "ded3aaf260f72f5566d4dcd281d39f8c084b5fab24edc88e364c3d917c3a027a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-194 - baremetal _SD-Core_DPDK (copy from Jan  3 17-38-56)-2025-01-03-17-39-02-UTC.zip",
+    "nested_entry": "194 - baremetal _SD-Core_DPDK (copy from Jan  3 17:38:56).zip",
+    "config_sha256": "a7a34ef1671a83a756f729c2421807ec84da9a313d077519bee9e573a76b3768",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-195 - baremetal _SD-Core_DPDK (copy from Jan  3 17-42-37)-2025-01-03-17-42-43-UTC.zip",
+    "nested_entry": "195 - baremetal _SD-Core_DPDK (copy from Jan  3 17:42:37).zip",
+    "config_sha256": "04c6e8e949f6aaae473b34b7c49e4040d480560d1fb66fdc87accb3b379405c7",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-196 - baremetal _SD-Core_DPDK (copy from Jan  3 18-10-34)-2025-01-03-18-10-40-UTC.zip",
+    "nested_entry": "196 - baremetal _SD-Core_DPDK (copy from Jan  3 18:10:34).zip",
+    "config_sha256": "52170fb7a4f1549020cbe5bba98dfdfd1b3f28156f870409f134e02e03abde2c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-197 - baremetal _SD-Core_DPDK (copy from Jan  3 18-14-14)-2025-01-03-18-14-20-UTC.zip",
+    "nested_entry": "197 - baremetal _SD-Core_DPDK (copy from Jan  3 18:14:14).zip",
+    "config_sha256": "5976002631d2fd49ea5b1251a5c15751dbcaf27cbd51f30d274e4457991cd9ad",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-198 - baremetal _SD-Core_DPDK (copy from Jan  3 18-17-55)-2025-01-03-18-18-01-UTC.zip",
+    "nested_entry": "198 - baremetal _SD-Core_DPDK (copy from Jan  3 18:17:55).zip",
+    "config_sha256": "eb188e0045cb3c22aed9a1584808cdc0a8dd1e9c85ba49520abb9d33946c37e4",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-199 - baremetal _SD-Core_DPDK (copy from Jan  3 18-21-36)-2025-01-03-18-21-42-UTC.zip",
+    "nested_entry": "199 - baremetal _SD-Core_DPDK (copy from Jan  3 18:21:36).zip",
+    "config_sha256": "9838af4aac35f4ef4039c2c175b2a902b4ef4db6dde8867d963969d39fa73caf",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-200 - baremetal _SD-Core_DPDK (copy from Jan  3 18-25-17)-2025-01-03-18-25-23-UTC.zip",
+    "nested_entry": "200 - baremetal _SD-Core_DPDK (copy from Jan  3 18:25:17).zip",
+    "config_sha256": "905ee361cbb17dc27154663fb43fee201550236d5d5660278f246728373e20d9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-201 - baremetal _SD-Core_DPDK (copy from Jan  3 18-28-59)-2025-01-03-18-29-04-UTC.zip",
+    "nested_entry": "201 - baremetal _SD-Core_DPDK (copy from Jan  3 18:28:59).zip",
+    "config_sha256": "c18a9b5cc63fc5a28342ace77dc8760b8847f789e79b7964dcc00aa956ef14a8",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-202 - baremetal _SD-Core_DPDK (copy from Jan  3 18-32-39)-2025-01-03-18-32-45-UTC.zip",
+    "nested_entry": "202 - baremetal _SD-Core_DPDK (copy from Jan  3 18:32:39).zip",
+    "config_sha256": "21d5e6eb24ba288199d5e821bacf2052d2e205d44b6cbf9962d8c72ab9de5538",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-203 - baremetal _SD-Core_DPDK (copy from Jan  3 18-36-20)-2025-01-03-18-36-26-UTC.zip",
+    "nested_entry": "203 - baremetal _SD-Core_DPDK (copy from Jan  3 18:36:20).zip",
+    "config_sha256": "0839caaa9fc97340ab999eab3a2cc2fdd19d86e719797221e38fdedc13e97d7d",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-204 - baremetal _SD-Core_DPDK (copy from Jan  3 18-40-01)-2025-01-03-18-40-07-UTC.zip",
+    "nested_entry": "204 - baremetal _SD-Core_DPDK (copy from Jan  3 18:40:01).zip",
+    "config_sha256": "64d4161086eccc8c67145d53b8868b65548d11a305ad347df2e19f6f6d20d720",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-205 - baremetal _SD-Core_DPDK (copy from Jan  3 18-43-42)-2025-01-03-18-43-48-UTC.zip",
+    "nested_entry": "205 - baremetal _SD-Core_DPDK (copy from Jan  3 18:43:42).zip",
+    "config_sha256": "2f098286321acfc5892b049919c040a4c6b98dbfd5aee88f05e86998df506d85",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-206 - baremetal _SD-Core_DPDK (copy from Jan  3 18-47-25)-2025-01-03-18-47-31-UTC.zip",
+    "nested_entry": "206 - baremetal _SD-Core_DPDK (copy from Jan  3 18:47:25).zip",
+    "config_sha256": "58bedf848e684af328dc5930e68037eeb984f67a6b95b65e0ed093f25e9a7063",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-207 - baremetal _SD-Core_DPDK (copy from Jan  3 18-51-06)-2025-01-03-18-51-12-UTC.zip",
+    "nested_entry": "207 - baremetal _SD-Core_DPDK (copy from Jan  3 18:51:06).zip",
+    "config_sha256": "9f640c71446d8bc0d804a5e3e89d2cd9492126e90470d7ddc0cc0068ac4d7d75",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-208 - baremetal _SD-Core_DPDK (copy from Jan  3 18-54-46)-2025-01-03-18-54-52-UTC.zip",
+    "nested_entry": "208 - baremetal _SD-Core_DPDK (copy from Jan  3 18:54:46).zip",
+    "config_sha256": "20fb2c83c012261f7c9950c368006eaa2dde8270e88d69745e048f90dac21977",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-209 - baremetal _SD-Core_DPDK (copy from Jan  3 18-58-26)-2025-01-03-18-58-32-UTC.zip",
+    "nested_entry": "209 - baremetal _SD-Core_DPDK (copy from Jan  3 18:58:26).zip",
+    "config_sha256": "4d6091af47ce2355358cbe83040836b74f1f1fa35906263a14796594b3908fa0",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-210 - baremetal _SD-Core_DPDK (copy from Jan  3 19-02-07)-2025-01-03-19-02-13-UTC.zip",
+    "nested_entry": "210 - baremetal _SD-Core_DPDK (copy from Jan  3 19:02:07).zip",
+    "config_sha256": "ecf065224f550ac6b404ede2e70359017bbac3c2521965c2d9d8e7d1674e8766",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-211 - baremetal _SD-Core_DPDK (copy from Jan  3 19-05-47)-2025-01-03-19-05-53-UTC.zip",
+    "nested_entry": "211 - baremetal _SD-Core_DPDK (copy from Jan  3 19:05:47).zip",
+    "config_sha256": "45b3dc99c82878167a849316127b7ef3fb27dfaedeb986f9d266826512a1e3da",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-212 - baremetal _SD-Core_DPDK (copy from Jan  3 19-09-27)-2025-01-03-19-09-33-UTC.zip",
+    "nested_entry": "212 - baremetal _SD-Core_DPDK (copy from Jan  3 19:09:27).zip",
+    "config_sha256": "48db85b4bea88de5e5b72f4101e3dc0117c975fd9d01e32e26845524ee8f560c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-213 - baremetal _SD-Core_DPDK (copy from Jan  3 19-13-08)-2025-01-03-19-13-14-UTC.zip",
+    "nested_entry": "213 - baremetal _SD-Core_DPDK (copy from Jan  3 19:13:08).zip",
+    "config_sha256": "7331c623738de19ab87a8959507d74d17d09b805300929ca86048c2c1454b5d4",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-214 - baremetal _SD-Core_DPDK (copy from Jan  3 19-16-48)-2025-01-03-19-16-54-UTC.zip",
+    "nested_entry": "214 - baremetal _SD-Core_DPDK (copy from Jan  3 19:16:48).zip",
+    "config_sha256": "25018a1a7ad7b33506897e3ca37023c070463983c1d1d73d7388a494be7e5f57",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-215 - baremetal _SD-Core_DPDK (copy from Jan  3 19-20-28)-2025-01-03-19-20-34-UTC.zip",
+    "nested_entry": "215 - baremetal _SD-Core_DPDK (copy from Jan  3 19:20:28).zip",
+    "config_sha256": "f026586fec5f18d42c5d9bd21ba522b3871a3e4606a406dc664c2fcc2775d68c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-216 - baremetal _SD-Core_DPDK (copy from Jan  3 19-24-09)-2025-01-03-19-24-14-UTC.zip",
+    "nested_entry": "216 - baremetal _SD-Core_DPDK (copy from Jan  3 19:24:09).zip",
+    "config_sha256": "1607a676515645042061b3a6bb515f72e5532c1bf872cddd8a7beb9e527465e3",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-217 - baremetal _SD-Core_DPDK (copy from Jan  3 19-27-49)-2025-01-03-19-27-55-UTC.zip",
+    "nested_entry": "217 - baremetal _SD-Core_DPDK (copy from Jan  3 19:27:49).zip",
+    "config_sha256": "b748e2035cc3256d36e08f8a7bb4632894f2d9292ee02a7f5687a4809549d50e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-218 - baremetal _SD-Core_DPDK (copy from Jan  3 20-05-41)-2025-01-03-20-05-47-UTC.zip",
+    "nested_entry": "218 - baremetal _SD-Core_DPDK (copy from Jan  3 20:05:41).zip",
+    "config_sha256": "536037177355290fb2b6ba018505bb79d6245ce3833f21bd4ed3a41f38885867",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-219 - baremetal _SD-Core_DPDK (copy from Jan  3 20-09-21)-2025-01-03-20-09-27-UTC.zip",
+    "nested_entry": "219 - baremetal _SD-Core_DPDK (copy from Jan  3 20:09:21).zip",
+    "config_sha256": "e7099d1be063eaae340e0db5d6167aad8910f1641643a48960b83abd6148a9fe",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-220 - baremetal _SD-Core_DPDK (copy from Jan  3 20-13-02)-2025-01-03-20-13-07-UTC.zip",
+    "nested_entry": "220 - baremetal _SD-Core_DPDK (copy from Jan  3 20:13:02).zip",
+    "config_sha256": "d68bcc597e2af4da8da1f4837db83df2f41c4aec0d48de6f5f70f29589746358",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-221 - baremetal _SD-Core_DPDK (copy from Jan  3 20-16-42)-2025-01-03-20-16-48-UTC.zip",
+    "nested_entry": "221 - baremetal _SD-Core_DPDK (copy from Jan  3 20:16:42).zip",
+    "config_sha256": "913b20fd0fb64ae8e04b1e12d884acf15d7c8047946783701d50931d79f16f86",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-222 - baremetal _SD-Core_DPDK (copy from Jan  3 20-20-22)-2025-01-03-20-20-28-UTC.zip",
+    "nested_entry": "222 - baremetal _SD-Core_DPDK (copy from Jan  3 20:20:22).zip",
+    "config_sha256": "32a83fee9d13cb434e8c97e0f609694e8e88b1e3701cdc86ae7e0156a9cd26d9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-223 - baremetal _SD-Core_DPDK (copy from Jan  3 20-24-03)-2025-01-03-20-24-09-UTC.zip",
+    "nested_entry": "223 - baremetal _SD-Core_DPDK (copy from Jan  3 20:24:03).zip",
+    "config_sha256": "928d4df96e6317ac15fbbd1cde11a547c47cdbb480a7c0ffcb25990ed801112e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-224 - baremetal _SD-Core_DPDK (copy from Jan  3 20-27-43)-2025-01-03-20-27-49-UTC.zip",
+    "nested_entry": "224 - baremetal _SD-Core_DPDK (copy from Jan  3 20:27:43).zip",
+    "config_sha256": "7af0ec6e3fee3c45c3b38720b51f5d5c4b12fdd99c5b27b8de5a5e25483a9cc5",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-225 - baremetal _SD-Core_DPDK (copy from Jan  3 20-31-24)-2025-01-03-20-31-29-UTC.zip",
+    "nested_entry": "225 - baremetal _SD-Core_DPDK (copy from Jan  3 20:31:24).zip",
+    "config_sha256": "9e947dc2f87081c21a206b4c393f3fd6ffa25c2bbe7eafee1f0605cab97fd49a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-226 - baremetal _SD-Core_DPDK (copy from Jan  3 20-35-06)-2025-01-03-20-35-12-UTC.zip",
+    "nested_entry": "226 - baremetal _SD-Core_DPDK (copy from Jan  3 20:35:06).zip",
+    "config_sha256": "4f47361bf55f77e97ac8e4718016d7b34666c0567804b7bcb6ff09b7a7e9cb5c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-227 - baremetal _SD-Core_DPDK (copy from Jan  3 20-38-47)-2025-01-03-20-38-53-UTC.zip",
+    "nested_entry": "227 - baremetal _SD-Core_DPDK (copy from Jan  3 20:38:47).zip",
+    "config_sha256": "b659e898efcb40fd19bc135885ecc59ebe23963048b67ce041645a01d49fd2b9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-228 - baremetal _SD-Core_DPDK (copy from Jan  3 20-42-29)-2025-01-03-20-42-35-UTC.zip",
+    "nested_entry": "228 - baremetal _SD-Core_DPDK (copy from Jan  3 20:42:29).zip",
+    "config_sha256": "ac879875585a57eca5599dc01c9369ed302ea5d9b36bc028993a4622ddead043",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-229 - baremetal _SD-Core_DPDK (copy from Jan  3 20-46-10)-2025-01-03-20-46-16-UTC.zip",
+    "nested_entry": "229 - baremetal _SD-Core_DPDK (copy from Jan  3 20:46:10).zip",
+    "config_sha256": "a6ea0c7e05ba5786f6117b24007b51467f1c1fbaed40594ff6b7d01a66b3619f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-230 - baremetal _SD-Core_DPDK (copy from Jan  3 20-49-52)-2025-01-03-20-49-58-UTC.zip",
+    "nested_entry": "230 - baremetal _SD-Core_DPDK (copy from Jan  3 20:49:52).zip",
+    "config_sha256": "ade78ec176c68bf473d895856e35b9cfed8f65b0b9bc82738fe6eb486aa951fe",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-231 - baremetal _SD-Core_DPDK (copy from Jan  3 20-53-35)-2025-01-03-20-53-41-UTC.zip",
+    "nested_entry": "231 - baremetal _SD-Core_DPDK (copy from Jan  3 20:53:35).zip",
+    "config_sha256": "a8172732da3098ededf5bb5de22e9003d45780795440dabeee08c00322eb3123",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-232 - baremetal _SD-Core_DPDK (copy from Jan  3 20-57-15)-2025-01-03-20-57-21-UTC.zip",
+    "nested_entry": "232 - baremetal _SD-Core_DPDK (copy from Jan  3 20:57:15).zip",
+    "config_sha256": "3f00d3c3d8ba9259c50001b8dc4912ad350afcbd7de1c929aba93d928bd2004e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-233 - baremetal _SD-Core_DPDK (copy from Jan  3 21-00-56)-2025-01-03-21-01-02-UTC.zip",
+    "nested_entry": "233 - baremetal _SD-Core_DPDK (copy from Jan  3 21:00:56).zip",
+    "config_sha256": "576965c545cb55ffdc6c354390979c209d6c015d0df41fc8c8101973927c42a3",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-234 - baremetal _SD-Core_DPDK (copy from Jan  3 21-04-36)-2025-01-03-21-04-42-UTC.zip",
+    "nested_entry": "234 - baremetal _SD-Core_DPDK (copy from Jan  3 21:04:36).zip",
+    "config_sha256": "327335288ee21489724b7405ceface8af89b3fb4709ec58ac506087019411931",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-235 - baremetal _SD-Core_DPDK (copy from Jan  3 21-08-17)-2025-01-03-21-08-22-UTC.zip",
+    "nested_entry": "235 - baremetal _SD-Core_DPDK (copy from Jan  3 21:08:17).zip",
+    "config_sha256": "17dc882013afacf27f0d2509cf721283cf3d9bb38f7ed75cff1bd85d59e94750",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-236 - baremetal _SD-Core_DPDK (copy from Jan  3 21-11-57)-2025-01-03-21-12-02-UTC.zip",
+    "nested_entry": "236 - baremetal _SD-Core_DPDK (copy from Jan  3 21:11:57).zip",
+    "config_sha256": "5f93e931d8ad80abe8d826fbbf7d1c5f565d7d88169bb9e45fe2e82df126345e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-237 - baremetal _SD-Core_DPDK (copy from Jan  3 21-15-39)-2025-01-03-21-15-45-UTC.zip",
+    "nested_entry": "237 - baremetal _SD-Core_DPDK (copy from Jan  3 21:15:39).zip",
+    "config_sha256": "269edbf7991575b8f80b780ce82e60c2758f98fa8d3d3928b44c94ef70ee50b7",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-238 - baremetal _SD-Core_DPDK (copy from Jan  3 21-19-19)-2025-01-03-21-19-25-UTC.zip",
+    "nested_entry": "238 - baremetal _SD-Core_DPDK (copy from Jan  3 21:19:19).zip",
+    "config_sha256": "5488f915f3b28917e4fd4fd6485de9741d0967acfbd83d1f7fd02c966f8da965",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-239 - baremetal _SD-Core_DPDK (copy from Jan  3 21-23-00)-2025-01-03-21-23-05-UTC.zip",
+    "nested_entry": "239 - baremetal _SD-Core_DPDK (copy from Jan  3 21:23:00).zip",
+    "config_sha256": "8afb52eb96a4d5e15d33827027550ba18c92462efa8266f3455531082c4262f8",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-240 - baremetal _SD-Core_DPDK (copy from Jan  3 23-06-18)-2025-01-03-23-06-24-UTC.zip",
+    "nested_entry": "240 - baremetal _SD-Core_DPDK (copy from Jan  3 23:06:18).zip",
+    "config_sha256": "1f37ce758286ce28124f0a3a99c6bf02c40da61640c73e4da5e52599f002cc1d",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-241 - baremetal _SD-Core_DPDK (copy from Jan  3 23-09-58)-2025-01-03-23-10-04-UTC.zip",
+    "nested_entry": "241 - baremetal _SD-Core_DPDK (copy from Jan  3 23:09:58).zip",
+    "config_sha256": "e715875ec79906b1d37edc7fd8f86e24a1a51416e28aec1f7a0c47a963eea112",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-242 - baremetal _SD-Core_DPDK (copy from Jan  3 23-13-39)-2025-01-03-23-13-45-UTC.zip",
+    "nested_entry": "242 - baremetal _SD-Core_DPDK (copy from Jan  3 23:13:39).zip",
+    "config_sha256": "04860b51a6558c5e757ebd450c42bfabcf60f330865a3ad2d5617caa3cc19c68",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-243 - baremetal _SD-Core_DPDK (copy from Jan  3 23-17-19)-2025-01-03-23-17-25-UTC.zip",
+    "nested_entry": "243 - baremetal _SD-Core_DPDK (copy from Jan  3 23:17:19).zip",
+    "config_sha256": "b2330fded143a46054919daa43f386a5946bb30baf27f009f3c4a2aa77a504b0",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-244 - baremetal _SD-Core_DPDK (copy from Jan  3 23-21-00)-2025-01-03-23-21-06-UTC.zip",
+    "nested_entry": "244 - baremetal _SD-Core_DPDK (copy from Jan  3 23:21:00).zip",
+    "config_sha256": "36bd59063c26d5da90f14504818159a78797162a02b80cce7fd93701d573b5c0",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-245 - baremetal _SD-Core_DPDK (copy from Jan  3 23-24-40)-2025-01-03-23-24-46-UTC.zip",
+    "nested_entry": "245 - baremetal _SD-Core_DPDK (copy from Jan  3 23:24:40).zip",
+    "config_sha256": "c6c07391e0403ebf1afba1e1463b29594edacb6ee9b29a3b0fb819ee824d5aa4",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-246 - baremetal _SD-Core_DPDK (copy from Jan  3 23-28-23)-2025-01-03-23-28-29-UTC.zip",
+    "nested_entry": "246 - baremetal _SD-Core_DPDK (copy from Jan  3 23:28:23).zip",
+    "config_sha256": "cffc59d0ce6f766e51149f289497d6bb897571af648b97d4bc68cb15b0d67571",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-247 - baremetal _SD-Core_DPDK (copy from Jan  3 23-32-04)-2025-01-03-23-32-10-UTC.zip",
+    "nested_entry": "247 - baremetal _SD-Core_DPDK (copy from Jan  3 23:32:04).zip",
+    "config_sha256": "09664bb668df3cc11b7e503fa54d719ebd49ba149685fca115959abc12bfc67c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-248 - baremetal _SD-Core_DPDK (copy from Jan  3 23-35-44)-2025-01-03-23-35-50-UTC.zip",
+    "nested_entry": "248 - baremetal _SD-Core_DPDK (copy from Jan  3 23:35:44).zip",
+    "config_sha256": "d852f05a97a396ee8bec122bbd13eddf97bac15cb50a7480aa71a380fc3ba6e2",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-249 - baremetal _SD-Core_DPDK (copy from Jan  3 23-39-25)-2025-01-03-23-39-31-UTC.zip",
+    "nested_entry": "249 - baremetal _SD-Core_DPDK (copy from Jan  3 23:39:25).zip",
+    "config_sha256": "a46e4797a9aabad75e2793f234bcfad2a39e1d35b3ad7481fce886d905c12871",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-250 - baremetal _SD-Core_DPDK (copy from Jan  3 23-43-07)-2025-01-03-23-43-13-UTC.zip",
+    "nested_entry": "250 - baremetal _SD-Core_DPDK (copy from Jan  3 23:43:07).zip",
+    "config_sha256": "69a0ab6d15e4902e70d3449832738c60dee6d0e027509edfd3c8a68e9136d639",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-251 - baremetal _SD-Core_DPDK (copy from Jan  3 23-46-48)-2025-01-03-23-46-54-UTC.zip",
+    "nested_entry": "251 - baremetal _SD-Core_DPDK (copy from Jan  3 23:46:48).zip",
+    "config_sha256": "c1ce8b2ba7dcbec81318d44947019362eb5b47418f77fc89bb470c8b052d168f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-252 - baremetal _SD-Core_DPDK (copy from Jan  3 23-50-28)-2025-01-03-23-50-34-UTC.zip",
+    "nested_entry": "252 - baremetal _SD-Core_DPDK (copy from Jan  3 23:50:28).zip",
+    "config_sha256": "22afe79af6ac600a39bae5c5672d066caee21770b5e005b0d030e1fff44621fb",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-253 - baremetal _SD-Core_DPDK (copy from Jan  3 23-54-09)-2025-01-03-23-54-15-UTC.zip",
+    "nested_entry": "253 - baremetal _SD-Core_DPDK (copy from Jan  3 23:54:09).zip",
+    "config_sha256": "a06a039117183264c40aca138162f79144ad4cd6d1d7405ded0f8361d0a4810c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-254 - baremetal _SD-Core_DPDK (copy from Jan  3 23-57-49)-2025-01-03-23-57-55-UTC.zip",
+    "nested_entry": "254 - baremetal _SD-Core_DPDK (copy from Jan  3 23:57:49).zip",
+    "config_sha256": "0ad345fd463afafc7a7517a3e5d6576d68abc06397891669b2af091c667368e8",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-255 - baremetal _SD-Core_DPDK (copy from Jan  4 00-01-30)-2025-01-04-00-01-36-UTC.zip",
+    "nested_entry": "255 - baremetal _SD-Core_DPDK (copy from Jan  4 00:01:30).zip",
+    "config_sha256": "9f6ecced2781e47317a5aaade975e17b16746afe651dba9bc8ec576e1acd905d",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-256 - baremetal _SD-Core_DPDK (copy from Jan  4 00-05-10)-2025-01-04-00-05-16-UTC.zip",
+    "nested_entry": "256 - baremetal _SD-Core_DPDK (copy from Jan  4 00:05:10).zip",
+    "config_sha256": "df052ee65fd37e5345b8c3095258aa2f01c20e6466642c673ddcc89cd33e0cd1",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-257 - baremetal _SD-Core_DPDK (copy from Jan  4 00-08-51)-2025-01-04-00-08-56-UTC.zip",
+    "nested_entry": "257 - baremetal _SD-Core_DPDK (copy from Jan  4 00:08:51).zip",
+    "config_sha256": "0d3e7172ee39a4d103e32b12b2a2675f85f013b5a821a5f0900e95b2e582f3ec",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-258 - baremetal _SD-Core_DPDK (copy from Jan  4 00-12-31)-2025-01-04-00-12-37-UTC.zip",
+    "nested_entry": "258 - baremetal _SD-Core_DPDK (copy from Jan  4 00:12:31).zip",
+    "config_sha256": "aa86761ddc02cdf3416622e35aaab1d583636177ba9d1c24c5fa0458155fcfad",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-259 - baremetal _SD-Core_DPDK (copy from Jan  4 00-16-11)-2025-01-04-00-16-17-UTC.zip",
+    "nested_entry": "259 - baremetal _SD-Core_DPDK (copy from Jan  4 00:16:11).zip",
+    "config_sha256": "21595d03dc6e2624d02b117016c41c2c5ec2f93f0c55e463b41641b233840799",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-260 - baremetal _SD-Core_DPDK (copy from Jan  4 00-19-52)-2025-01-04-00-19-57-UTC.zip",
+    "nested_entry": "260 - baremetal _SD-Core_DPDK (copy from Jan  4 00:19:52).zip",
+    "config_sha256": "8d895f31e6d28d02b777bb09fd31e0383a90d3fb1d68e7c7a3d0854b4ab7a7f5",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-261 - baremetal _SD-Core_DPDK (copy from Jan  4 00-23-32)-2025-01-04-00-23-38-UTC.zip",
+    "nested_entry": "261 - baremetal _SD-Core_DPDK (copy from Jan  4 00:23:32).zip",
+    "config_sha256": "c9c0fa4171a188ffb74e5bda6d8a0fd8d23cf839bdb561eb21dff8fcda2c4233",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-262 - baremetal _SD-Core_DPDK (copy from Jan  4 00-30-52)-2025-01-04-00-30-58-UTC.zip",
+    "nested_entry": "262 - baremetal _SD-Core_DPDK (copy from Jan  4 00:30:52).zip",
+    "config_sha256": "8a46980b15169c0139d2dd78dc7fe91276f55e27265b4aa96c8c3bb665add8cd",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-263 - baremetal _SD-Core_DPDK (copy from Jan  4 00-34-33)-2025-01-04-00-34-38-UTC.zip",
+    "nested_entry": "263 - baremetal _SD-Core_DPDK (copy from Jan  4 00:34:33).zip",
+    "config_sha256": "391b4e6165eb75ca39b527c58323e928170dffa181a39c8da4ab689515be8129",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-264 - baremetal _SD-Core_DPDK (copy from Jan  4 00-38-13)-2025-01-04-00-38-19-UTC.zip",
+    "nested_entry": "264 - baremetal _SD-Core_DPDK (copy from Jan  4 00:38:13).zip",
+    "config_sha256": "34282ddd0a22ce78c11d12d58c48aa33c458ac1cc3141f35af308220a4a14d3e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-265 - baremetal _SD-Core_DPDK (copy from Jan  4 00-41-53)-2025-01-04-00-41-59-UTC.zip",
+    "nested_entry": "265 - baremetal _SD-Core_DPDK (copy from Jan  4 00:41:53).zip",
+    "config_sha256": "3619ad4ce46009716f5bc1f7592e4c4797ef6f6b48337ab16f48e2c0208d8d59",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-266 - baremetal _SD-Core_DPDK (copy from Jan  4 00-45-34)-2025-01-04-00-45-40-UTC.zip",
+    "nested_entry": "266 - baremetal _SD-Core_DPDK (copy from Jan  4 00:45:34).zip",
+    "config_sha256": "4eef113ffbb33d0d1c664748380d87e0f1c131ccbdbc07dfa0ee0ecd0cb09199",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-267 - baremetal _SD-Core_DPDK (copy from Jan  4 00-49-14)-2025-01-04-00-49-20-UTC.zip",
+    "nested_entry": "267 - baremetal _SD-Core_DPDK (copy from Jan  4 00:49:14).zip",
+    "config_sha256": "e89eb8cc538766f90c1c13082b05e680f7af07fa6a9b7d0d52c9a92eeaf55161",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-268 - baremetal _SD-Core_DPDK (copy from Jan  4 00-52-55)-2025-01-04-00-53-01-UTC.zip",
+    "nested_entry": "268 - baremetal _SD-Core_DPDK (copy from Jan  4 00:52:55).zip",
+    "config_sha256": "28d808926944b17e7b8f5d47a1e1ba851a394782a2ab0a0102909dee5f196758",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-269 - baremetal _SD-Core_DPDK (copy from Jan  4 00-56-35)-2025-01-04-00-56-41-UTC.zip",
+    "nested_entry": "269 - baremetal _SD-Core_DPDK (copy from Jan  4 00:56:35).zip",
+    "config_sha256": "639cb78dc5d339566e3ea2665ec3c242c6a873b94b608e7b522639f17f5d0d02",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-270 - baremetal _SD-Core_DPDK (copy from Jan  4 01-00-16)-2025-01-04-01-00-22-UTC.zip",
+    "nested_entry": "270 - baremetal _SD-Core_DPDK (copy from Jan  4 01:00:16).zip",
+    "config_sha256": "df1181200e401f19400567e64f7bab6718da3477f2116e0175253919cf2bd7e9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-271 - baremetal _SD-Core_DPDK (copy from Jan  4 01-03-56)-2025-01-04-01-04-02-UTC.zip",
+    "nested_entry": "271 - baremetal _SD-Core_DPDK (copy from Jan  4 01:03:56).zip",
+    "config_sha256": "6d51d211717fbaf02a769ae7696b7623dc846e7f4b18e3919097edf1fdc5df79",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-272 - baremetal _SD-Core_DPDK (copy from Jan  4 01-07-37)-2025-01-04-01-07-43-UTC.zip",
+    "nested_entry": "272 - baremetal _SD-Core_DPDK (copy from Jan  4 01:07:37).zip",
+    "config_sha256": "98882be3b9f26abe4f96be654497bf9a847e3f1acb468e666d647013214c4770",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-273 - baremetal _SD-Core_DPDK (copy from Jan  4 01-11-17)-2025-01-04-01-11-23-UTC.zip",
+    "nested_entry": "273 - baremetal _SD-Core_DPDK (copy from Jan  4 01:11:17).zip",
+    "config_sha256": "e587dfe6ce4192f5a41a4d104a4dd7084b60c867bcbda2d7e9621c7879b8e8cd",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-274 - baremetal _SD-Core_DPDK (copy from Jan  4 01-15-00)-2025-01-04-01-15-06-UTC.zip",
+    "nested_entry": "274 - baremetal _SD-Core_DPDK (copy from Jan  4 01:15:00).zip",
+    "config_sha256": "fed831e46cff232e6b6620908ccfa942441566eaf0edeac1d35b3abcfffdff4a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-275 - baremetal _SD-Core_DPDK (copy from Jan  4 01-18-42)-2025-01-04-01-18-48-UTC.zip",
+    "nested_entry": "275 - baremetal _SD-Core_DPDK (copy from Jan  4 01:18:42).zip",
+    "config_sha256": "4aab4335fbf17be58040317ccab3738305717879dc53d0491e885860267cd826",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-276 - baremetal _SD-Core_DPDK (copy from Jan  4 01-22-23)-2025-01-04-01-22-28-UTC.zip",
+    "nested_entry": "276 - baremetal _SD-Core_DPDK (copy from Jan  4 01:22:23).zip",
+    "config_sha256": "ceb8129356b10ad2d9a9fa86beb45ba4aead52a0a0d4b58c97f9f08a9a9a69b9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-277 - baremetal _SD-Core_DPDK (copy from Jan  4 01-26-03)-2025-01-04-01-26-09-UTC.zip",
+    "nested_entry": "277 - baremetal _SD-Core_DPDK (copy from Jan  4 01:26:03).zip",
+    "config_sha256": "91b3e1c63b8843ffc9efde78baf6afca7b013376214ca02c758a9ac561ec7403",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-278 - baremetal _SD-Core_DPDK (copy from Jan  4 01-29-46)-2025-01-04-01-29-52-UTC.zip",
+    "nested_entry": "278 - baremetal _SD-Core_DPDK (copy from Jan  4 01:29:46).zip",
+    "config_sha256": "cc28359f67ff6d2bb2df9d4ad7ce3e92bef3a6c24fe667d5142aa3b33cdbd047",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-279 - baremetal _SD-Core_DPDK (copy from Jan  4 01-33-26)-2025-01-04-01-33-32-UTC.zip",
+    "nested_entry": "279 - baremetal _SD-Core_DPDK (copy from Jan  4 01:33:26).zip",
+    "config_sha256": "2427ebbb5a26226f513928f0f388854bd694ac79d309b795eaf8845755e1878b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-280 - baremetal _SD-Core_DPDK (copy from Jan  4 01-37-07)-2025-01-04-01-37-13-UTC.zip",
+    "nested_entry": "280 - baremetal _SD-Core_DPDK (copy from Jan  4 01:37:07).zip",
+    "config_sha256": "71254d0c1814dd9323bed0f64b3e400c427cad4306be61ce6ebd901d5f0d782c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-281 - baremetal _SD-Core_DPDK (copy from Jan  4 01-40-47)-2025-01-04-01-40-53-UTC.zip",
+    "nested_entry": "281 - baremetal _SD-Core_DPDK (copy from Jan  4 01:40:47).zip",
+    "config_sha256": "fb061fe734d8e927e30a29774537766177a92839234bb26c9d164fba8d56bd90",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-282 - baremetal _SD-Core_DPDK (copy from Jan  4 01-44-28)-2025-01-04-01-44-33-UTC.zip",
+    "nested_entry": "282 - baremetal _SD-Core_DPDK (copy from Jan  4 01:44:28).zip",
+    "config_sha256": "84ca3d9c2685f069b3c0c6fad75d8abb0827ffde05557a8b2bad86f6d2555cc2",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "dpdk",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-283 - baremetal _SD-Core_DPDK (copy from Jan  4 01-48-08)-2025-01-04-01-48-14-UTC.zip",
+    "nested_entry": "283 - baremetal _SD-Core_DPDK (copy from Jan  4 01:48:08).zip",
+    "config_sha256": "da37e8c50631f769ada693957a45ef29d36f047856dec4e3d37c7df30f8d5113",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-288 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-08-48)-2025-01-13-13-08-54-UTC.zip",
+    "nested_entry": "288 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:08:48).zip",
+    "config_sha256": "3b8f2cdac9d2caa6653e88fa637b55a1ef25b7c9de01786ad9196f12cd7ee459",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-289 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-12-34)-2025-01-13-13-12-39-UTC.zip",
+    "nested_entry": "289 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:12:34).zip",
+    "config_sha256": "c388d0e36761f7d6cb43346be65ad2cb61e94ff894c9cefed8c587f8d4665ae3",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-290 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-16-16)-2025-01-13-13-16-22-UTC.zip",
+    "nested_entry": "290 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:16:16).zip",
+    "config_sha256": "31dcff584d106b9229003ea1c7c4104637b6bc4431a973a356fa3191fe0cd2c9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-291 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-19-54)-2025-01-13-13-19-59-UTC.zip",
+    "nested_entry": "291 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:19:54).zip",
+    "config_sha256": "601259169b9bb66b68f8d14967d64433fe7225dfb983ed08dc0b4e381144e3a9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-292 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-23-37)-2025-01-13-13-23-42-UTC.zip",
+    "nested_entry": "292 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:23:37).zip",
+    "config_sha256": "1e93e52423f21cd7eb1381d8e5f64084b7846791a6208594b1f7cfd9c8dfb748",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-293 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-27-16)-2025-01-13-13-27-21-UTC.zip",
+    "nested_entry": "293 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:27:16).zip",
+    "config_sha256": "ce09a7fca1b55779d4223a1def58f049715964fabcec6cd6046a1b65c8464086",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-294 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-30-57)-2025-01-13-13-31-02-UTC.zip",
+    "nested_entry": "294 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:30:57).zip",
+    "config_sha256": "354f17a8ad18b95b3ad7f4c082ca4c0b259f1ffcdca50940b3c707d7514c8f45",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-295 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-34-37)-2025-01-13-13-34-42-UTC.zip",
+    "nested_entry": "295 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:34:37).zip",
+    "config_sha256": "44b05872178850c8a8b370457e2719f2b98823e88b2e8749f71c36b617799293",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-296 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-38-16)-2025-01-13-13-38-21-UTC.zip",
+    "nested_entry": "296 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:38:16).zip",
+    "config_sha256": "87bdba0bfbd773dc77a0649215d04031b893158ea5593aa7544af1dbeff3ef89",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-297 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-41-57)-2025-01-13-13-42-05-UTC.zip",
+    "nested_entry": "297 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:41:57).zip",
+    "config_sha256": "fb182ca5aa162ac268d04f970bc1274dc9b3b6f838674225eef9029e7e72640e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-298 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-45-41)-2025-01-13-13-45-47-UTC.zip",
+    "nested_entry": "298 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:45:41).zip",
+    "config_sha256": "9985c3ab5b84335992b426cccd389dcc5ee3da6c094d9f0bc6231bdf29d4f826",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-299 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-49-24)-2025-01-13-13-49-30-UTC.zip",
+    "nested_entry": "299 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:49:24).zip",
+    "config_sha256": "0ca97ee0071ed85c7da0fcdca8c2dd3c5a8a858158147d4e0e4e8714a231c913",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-300 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-53-10)-2025-01-13-13-53-17-UTC.zip",
+    "nested_entry": "300 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:53:10).zip",
+    "config_sha256": "fe9dfd188091c577f57d1969c89cc7b81f1d413b2830e17d97466a0cb6a67c5b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-301 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-56-51)-2025-01-13-13-56-57-UTC.zip",
+    "nested_entry": "301 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13:56:51).zip",
+    "config_sha256": "e2d6ec049a63c2d1ba3bb8c8de3fc8679e70bed5ec73401178c2651f641a50b2",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-302 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-00-31)-2025-01-13-14-00-37-UTC.zip",
+    "nested_entry": "302 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:00:31).zip",
+    "config_sha256": "0bed2fce7dd23df9a18d750ad3aaa90c04d72819025ba4fa0ecc68366c51abc0",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-303 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-04-13)-2025-01-13-14-04-19-UTC.zip",
+    "nested_entry": "303 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:04:13).zip",
+    "config_sha256": "d55b60e9e11d04d7bc5eb9b787861d8b179302a4c53f1b860d9a775b6089981b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-304 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-07-55)-2025-01-13-14-08-01-UTC.zip",
+    "nested_entry": "304 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:07:55).zip",
+    "config_sha256": "9aba49ac7bebb0ce6c27590ac8081b0af4a5b062aa85c88715187cf58b05d417",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-305 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-11-37)-2025-01-13-14-11-43-UTC.zip",
+    "nested_entry": "305 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:11:37).zip",
+    "config_sha256": "fc29a8b8e9da0a96df746066f7fb44b54d09f7ce0c3bbd9a799cc5e31b8c88f4",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-306 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-15-21)-2025-01-13-14-15-27-UTC.zip",
+    "nested_entry": "306 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:15:21).zip",
+    "config_sha256": "ffd1fe68dc96419f88e54f9cd9c1275672b183637e6833cc3429fcae4e4f50b2",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-307 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-19-02)-2025-01-13-14-19-08-UTC.zip",
+    "nested_entry": "307 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:19:02).zip",
+    "config_sha256": "85e6fa555ca87318297ec80c7508f22375361e88a6d5661e39a5923ce1a10667",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-308 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-22-45)-2025-01-13-14-22-51-UTC.zip",
+    "nested_entry": "308 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:22:45).zip",
+    "config_sha256": "9dcfd73d78444d95c4d6ea91f9295b025c3174ac9147f1f44004f07e0020d06c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-309 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-26-29)-2025-01-13-14-26-35-UTC.zip",
+    "nested_entry": "309 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:26:29).zip",
+    "config_sha256": "fbf0d5dd5d716f9ae3b766e2c969c02844196a3e1150aaa5ef81f757cf348e0f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-310 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14-57-17)-2025-01-13-14-57-23-UTC.zip",
+    "nested_entry": "310 - baremetal _OAI_UserspaceApplication (copy from Jan 13 14:57:17).zip",
+    "config_sha256": "08acd74473f68bec0d4cf40bdff7be733c4b0214d29600c122669fb3b5387ff6",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-311 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-00-59)-2025-01-13-15-01-04-UTC.zip",
+    "nested_entry": "311 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:00:59).zip",
+    "config_sha256": "349d898513497f53cdd8a8eeef2e03d917b241e73e011a312a696bc23445baab",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-312 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-04-40)-2025-01-13-15-04-45-UTC.zip",
+    "nested_entry": "312 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:04:40).zip",
+    "config_sha256": "01ff47320fe43e459b0db51b78b70d1492bd497118af715121b985490f9b13ca",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-313 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-08-21)-2025-01-13-15-08-27-UTC.zip",
+    "nested_entry": "313 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:08:21).zip",
+    "config_sha256": "fcba0f157aeceae246a2d6fb4b360f27e4243d79db40bb7b6d416d9e0a427c5e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-314 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-12-07)-2025-01-13-15-12-13-UTC.zip",
+    "nested_entry": "314 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:12:07).zip",
+    "config_sha256": "65e7949f7b7aeeed12c3d0dcf49565c9c34d99ab29db6af8ab3200f59baa9417",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-315 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-15-50)-2025-01-13-15-15-56-UTC.zip",
+    "nested_entry": "315 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:15:50).zip",
+    "config_sha256": "897349afc8526feab4eec3334abef86f8e6d5445e8d6f0b5f27d979799deda94",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-316 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-19-34)-2025-01-13-15-19-40-UTC.zip",
+    "nested_entry": "316 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:19:34).zip",
+    "config_sha256": "9fcb4084ddca4f5629f5b1523a32f67d8bd4c146b397eb0f7aad550cb9d8e7d1",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-317 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-23-17)-2025-01-13-15-23-23-UTC.zip",
+    "nested_entry": "317 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:23:17).zip",
+    "config_sha256": "420e5f1b6b2c1195778bba9eb7aab7535eb69a92cc4c2516d84910e00970bff3",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-318 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-27-01)-2025-01-13-15-27-07-UTC.zip",
+    "nested_entry": "318 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:27:01).zip",
+    "config_sha256": "c3ee21fc86fd7e285078226dc66e7ef2afb693433b31014d5ca0ec34d6c6e56f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-319 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-30-44)-2025-01-13-15-30-50-UTC.zip",
+    "nested_entry": "319 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:30:44).zip",
+    "config_sha256": "52b2e93e81a4ad7d63f97d860479d6020299ae8fa797d3bbb12c020ea1d3e438",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-320 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-34-27)-2025-01-13-15-34-33-UTC.zip",
+    "nested_entry": "320 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:34:27).zip",
+    "config_sha256": "cff1af8afad9ec0735c5956ff89ce17a43637012a78ff3da14f2f21f0880d601",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-321 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-38-11)-2025-01-13-15-38-17-UTC.zip",
+    "nested_entry": "321 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:38:11).zip",
+    "config_sha256": "d38a4b28c4ab6a9cbef939b434cbfc8d46487299701d049a98384004d4b96725",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-322 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-41-55)-2025-01-13-15-42-01-UTC.zip",
+    "nested_entry": "322 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:41:55).zip",
+    "config_sha256": "503279719fce4d12a874ec8251fc97b6db88e42b84bf126e5eade17098f19892",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-323 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-45-39)-2025-01-13-15-45-44-UTC.zip",
+    "nested_entry": "323 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:45:39).zip",
+    "config_sha256": "916d3862ab41aacffdb169c111e3592eec748d5c02c77c129d53cb6bc07bdafb",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-324 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-49-20)-2025-01-13-15-49-27-UTC.zip",
+    "nested_entry": "324 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:49:20).zip",
+    "config_sha256": "126c4a31a955b781832c2b5a9a41484660ba04258f8748e05530e57e55e17130",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-325 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-53-00)-2025-01-13-15-53-06-UTC.zip",
+    "nested_entry": "325 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:53:00).zip",
+    "config_sha256": "2ec2115316451fcf0c2c55f475bf4891c5a97dad158ec3a62e71730a7f2eaeca",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-326 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15-56-44)-2025-01-13-15-56-50-UTC.zip",
+    "nested_entry": "326 - baremetal _OAI_UserspaceApplication (copy from Jan 13 15:56:44).zip",
+    "config_sha256": "5ed1caab5195f6096102805651d44a5722bfda898f5e1c5a2daf5a6d17804f7f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-327 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-00-27)-2025-01-13-16-00-33-UTC.zip",
+    "nested_entry": "327 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:00:27).zip",
+    "config_sha256": "e9be5ab81954261309ea1b46ea5b43777aafbea63154f7d9d33854429ba85315",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-328 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-04-07)-2025-01-13-16-04-13-UTC.zip",
+    "nested_entry": "328 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:04:07).zip",
+    "config_sha256": "f95b442b84ebce9fa86d05970f23bdad2c2cfbd5b857baa1bebbada8ea4c8743",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-329 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-07-49)-2025-01-13-16-07-55-UTC.zip",
+    "nested_entry": "329 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:07:49).zip",
+    "config_sha256": "7238436e570ada101650000ab68d42970ec9d6483755deb01daf8bf6cba415e1",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-330 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-11-32)-2025-01-13-16-11-39-UTC.zip",
+    "nested_entry": "330 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:11:32).zip",
+    "config_sha256": "ba53f4e7d81389714d69f167efcf6dc3c710794674efd3eb2baafd5d746765e1",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-331 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-15-16)-2025-01-13-16-15-22-UTC.zip",
+    "nested_entry": "331 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:15:16).zip",
+    "config_sha256": "90501c3c505b22f9f6d61b97f27d78cfb8c60ffaef25a150011541f647f32857",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-332 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-30-56)-2025-01-13-16-31-02-UTC.zip",
+    "nested_entry": "332 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:30:56).zip",
+    "config_sha256": "5d08ddd92e988bf36b98690ab778d95f5dac4727108806d4ce9a8f0bc2f23370",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-333 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-34-37)-2025-01-13-16-34-43-UTC.zip",
+    "nested_entry": "333 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:34:37).zip",
+    "config_sha256": "3970c47048bcf7b9da4c6638622e159ef7a452971e6afe865f0b23d25816681e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-334 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-38-18)-2025-01-13-16-38-24-UTC.zip",
+    "nested_entry": "334 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:38:18).zip",
+    "config_sha256": "d854dbc58003ebfad8ce6a27ef35e486d18251971915773051e27e47395f831a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-335 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-42-00)-2025-01-13-16-42-06-UTC.zip",
+    "nested_entry": "335 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:42:00).zip",
+    "config_sha256": "7bd0f778f7c9b33e167013b948b722fe5e9adae9e4330e2927b742071b9595fc",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-336 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-45-41)-2025-01-13-16-45-47-UTC.zip",
+    "nested_entry": "336 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:45:41).zip",
+    "config_sha256": "b210021e6c87eaaf36189649a646b7003a80af2041d400c4ca6159b2c93bf8a2",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-337 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-49-23)-2025-01-13-16-49-29-UTC.zip",
+    "nested_entry": "337 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:49:23).zip",
+    "config_sha256": "ef844ff5754ca4a9b9ff82fbf3e73fbf7a2033cdc3dc7a65f693da20370e032b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-338 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-53-04)-2025-01-13-16-53-10-UTC.zip",
+    "nested_entry": "338 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:53:04).zip",
+    "config_sha256": "777308a94f285cf6aa0a6f8aa59e123bb6953c754864587e7e73cf7b7682d335",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-339 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16-56-46)-2025-01-13-16-56-52-UTC.zip",
+    "nested_entry": "339 - baremetal _OAI_UserspaceApplication (copy from Jan 13 16:56:46).zip",
+    "config_sha256": "1eaabc20881c71b118e38b672ad994d06d58cd5b1dde2463de3df3beabb015d1",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-340 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-00-28)-2025-01-13-17-00-34-UTC.zip",
+    "nested_entry": "340 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:00:28).zip",
+    "config_sha256": "1059dfe398bc1afa37f33addf295495089d7984312b0fbc29b8f3c1132d49a8f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-341 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-04-13)-2025-01-13-17-04-19-UTC.zip",
+    "nested_entry": "341 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:04:13).zip",
+    "config_sha256": "a794dbae0ed786f6f9a635d896248c31a361724488c4e5be53e433d6f4d48b62",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-342 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-07-58)-2025-01-13-17-08-05-UTC.zip",
+    "nested_entry": "342 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:07:58).zip",
+    "config_sha256": "6c28a39c5cd26b3ef435f2dd5d3f6ed4e53d8f005fad58ef5d138216db7a7f9a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-343 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-11-39)-2025-01-13-17-11-44-UTC.zip",
+    "nested_entry": "343 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:11:39).zip",
+    "config_sha256": "681b6e0dd06f8bc3ead1b1df926c7ad1cfa5d518c6cd4482f8c7a6d9a905e9c0",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-344 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-15-17)-2025-01-13-17-15-23-UTC.zip",
+    "nested_entry": "344 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:15:17).zip",
+    "config_sha256": "ee11bc2e638575b234161c9e03d7ce235e18c75504bd251f396101a34436ec9b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-345 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-19-01)-2025-01-13-17-19-07-UTC.zip",
+    "nested_entry": "345 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:19:01).zip",
+    "config_sha256": "67fca515daefa75e55a5660e390a43a53dd5a183975ff40eb188d2e7e02fe334",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-346 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-22-44)-2025-01-13-17-22-50-UTC.zip",
+    "nested_entry": "346 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:22:44).zip",
+    "config_sha256": "ab52cc5254e59eb179b4e63f4c75376c5848a8f561f972a9f3852dede9e1bf6c",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-347 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-26-28)-2025-01-13-17-26-34-UTC.zip",
+    "nested_entry": "347 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:26:28).zip",
+    "config_sha256": "ec298a571a4ac5b8b3936b85ea87d03af58dc7f1a7e55cf7056319fe1fd934f6",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-348 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-30-12)-2025-01-13-17-30-17-UTC.zip",
+    "nested_entry": "348 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:30:12).zip",
+    "config_sha256": "43c1fde83676c8ce282583a10b8eeea2fff3c8b82b37ab153176869333cb4be8",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-349 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-33-50)-2025-01-13-17-33-56-UTC.zip",
+    "nested_entry": "349 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:33:50).zip",
+    "config_sha256": "7f31d3b0727a5b1e3f5fbbe669ea309f71e0e89f1ebdaaba587817c533f0e616",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-350 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-37-33)-2025-01-13-17-37-39-UTC.zip",
+    "nested_entry": "350 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:37:33).zip",
+    "config_sha256": "c4a8e3ea59b2821af7edbca2d524281a86504f41ed61d89ab9b027fe8e9743a0",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-351 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-41-16)-2025-01-13-17-41-22-UTC.zip",
+    "nested_entry": "351 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:41:16).zip",
+    "config_sha256": "f1723626fb5946231d9125b0f6c9c2ab3d5c9064f8b017383ce6640043969fe1",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-352 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-44-55)-2025-01-13-17-45-00-UTC.zip",
+    "nested_entry": "352 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:44:55).zip",
+    "config_sha256": "29590e2513d0bdb1c5120541e50c3bdfb1a96d857b56508017cd34f449a5a326",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-353 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17-48-39)-2025-01-13-17-48-44-UTC.zip",
+    "nested_entry": "353 - baremetal _OAI_UserspaceApplication (copy from Jan 13 17:48:39).zip",
+    "config_sha256": "0fd94e55b076b2b176c100345bc703c155226f18cd61a628c3ee4800a042377b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-354 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-20-52)-2025-01-13-18-20-57-UTC.zip",
+    "nested_entry": "354 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:20:52).zip",
+    "config_sha256": "0ea3d5c3c37e1c35eab27e1d809ab08251bf38ae5361aa70d5fdc5f03cf0765e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-355 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-24-31)-2025-01-13-18-24-37-UTC.zip",
+    "nested_entry": "355 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:24:31).zip",
+    "config_sha256": "a619427646fa91724155007c9bdf84a2f28f5e73c21f6594bcc5619d6180de5e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-356 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-28-11)-2025-01-13-18-28-17-UTC.zip",
+    "nested_entry": "356 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:28:11).zip",
+    "config_sha256": "febc228a43025f8323049cee04cf700993964a538e11c965093eb0369c8c005a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-357 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-31-51)-2025-01-13-18-31-56-UTC.zip",
+    "nested_entry": "357 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:31:51).zip",
+    "config_sha256": "c793ad8c77063eaebedd05113d09492fb81afa20eca5371cc8a43375a6ddefa0",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-358 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-35-30)-2025-01-13-18-35-36-UTC.zip",
+    "nested_entry": "358 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:35:30).zip",
+    "config_sha256": "c30c6810397edde6fbcae84593bff064fbc998013ce05a976dc6314e919bd836",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-359 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-39-10)-2025-01-13-18-39-16-UTC.zip",
+    "nested_entry": "359 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:39:10).zip",
+    "config_sha256": "8d87014a8945a953d364c3d6fe4702ef5d0c08cc5414a44abfba540e460432ee",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-360 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-42-50)-2025-01-13-18-42-56-UTC.zip",
+    "nested_entry": "360 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:42:50).zip",
+    "config_sha256": "003fd0c83e0bf8fecad22d5a436ffabe3daa01e431441ccf70a2c5b08e7bbe3e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-361 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-46-31)-2025-01-13-18-46-36-UTC.zip",
+    "nested_entry": "361 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:46:31).zip",
+    "config_sha256": "9d7823ebcc3e1cbc5c153869b55208546e7335bc6a30073c2fc756b490b2ee57",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-362 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-50-13)-2025-01-13-18-50-18-UTC.zip",
+    "nested_entry": "362 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:50:13).zip",
+    "config_sha256": "5f1cf9599844018f5eac88e2af4759efdb24ae07f56ca08d60781ed7fc5b43e4",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-363 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-53-53)-2025-01-13-18-53-58-UTC.zip",
+    "nested_entry": "363 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:53:53).zip",
+    "config_sha256": "92ab6206457d6577249bc789c572d0e88e879bb43dc08d20657727329128864b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-364 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18-57-33)-2025-01-13-18-57-38-UTC.zip",
+    "nested_entry": "364 - baremetal _OAI_UserspaceApplication (copy from Jan 13 18:57:33).zip",
+    "config_sha256": "4127126838e0b2341e22a6dd9740dcdfdc7089377834bd5143b4e0751df3ff58",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-365 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-01-12)-2025-01-13-19-01-18-UTC.zip",
+    "nested_entry": "365 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:01:12).zip",
+    "config_sha256": "21e1c4726a65e323f93a10c8c802fd65c2bba1f9a4fb25a16066ef2e55b432da",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-366 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-04-52)-2025-01-13-19-04-58-UTC.zip",
+    "nested_entry": "366 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:04:52).zip",
+    "config_sha256": "4d0a886b394cea20dec869366a72a94191759f2e916897ef9b13e0d320544629",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-367 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-08-32)-2025-01-13-19-08-38-UTC.zip",
+    "nested_entry": "367 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:08:32).zip",
+    "config_sha256": "d00e7a93e2698c136f9006d23a47bb147b40af9adea9cd2bcb96af50feb4fd67",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-368 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-12-12)-2025-01-13-19-12-17-UTC.zip",
+    "nested_entry": "368 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:12:12).zip",
+    "config_sha256": "5b0b5251d9fab05e67a3a8a514106cbff832c404a7b3c196a840c111b1578924",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-369 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-15-51)-2025-01-13-19-15-57-UTC.zip",
+    "nested_entry": "369 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:15:51).zip",
+    "config_sha256": "11357725aff7a606e67294875927327d7581d9d66c535e999b723ede5a76a4aa",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-370 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-19-31)-2025-01-13-19-19-37-UTC.zip",
+    "nested_entry": "370 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:19:31).zip",
+    "config_sha256": "a44bdf7428d2d956002065c5d4f2d0f2b7ecc6218a74b7ec6daaee298cb3003a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-371 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-23-13)-2025-01-13-19-23-19-UTC.zip",
+    "nested_entry": "371 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:23:13).zip",
+    "config_sha256": "7b3d1597a32f62480de70b5af2af29895ed7fae315be7516b8aa734aa8941886",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-372 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-26-53)-2025-01-13-19-26-59-UTC.zip",
+    "nested_entry": "372 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:26:53).zip",
+    "config_sha256": "ac7e17f66c9e714bb75276416b526472e1c334bfc940e9b914792bd8ab0acbcc",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-373 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-30-33)-2025-01-13-19-30-39-UTC.zip",
+    "nested_entry": "373 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:30:33).zip",
+    "config_sha256": "5ad5467bff303063891f515645dd2d718f9e94eeccd3e42ed17ee8a658befd48",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-374 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-34-13)-2025-01-13-19-34-19-UTC.zip",
+    "nested_entry": "374 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:34:13).zip",
+    "config_sha256": "12b73c829a7c661f9adeb6595142ac3271537bb20a4b36c23951948e74ddb678",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-375 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-37-53)-2025-01-13-19-37-58-UTC.zip",
+    "nested_entry": "375 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:37:53).zip",
+    "config_sha256": "0244cce4171d24b27ca1bff5351eeaf7b9224d13779ce59ad38057567f0a0eae",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-376 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-44-36)-2025-01-13-19-44-42-UTC.zip",
+    "nested_entry": "376 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:44:36).zip",
+    "config_sha256": "6cf9866d8888a2f884d9d1204d3493c820aca30a0cd7e865b88840c83c65224e",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-377 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-48-16)-2025-01-13-19-48-22-UTC.zip",
+    "nested_entry": "377 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:48:16).zip",
+    "config_sha256": "003fdbfffde13d6d2aae1ee95b74d6b61b911d5767575653d03ab08adebf28ef",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-378 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-51-55)-2025-01-13-19-52-01-UTC.zip",
+    "nested_entry": "378 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:51:55).zip",
+    "config_sha256": "3ff3a396c27c4a98ea0b721fa83930aacf122b440785e26454fd8b798012cb2a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-379 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-55-35)-2025-01-13-19-55-41-UTC.zip",
+    "nested_entry": "379 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:55:35).zip",
+    "config_sha256": "5e4b9460b22323959f80c8e9e40889c8b5f3ec91b9d6318a33ea12e2d0b83238",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-380 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19-59-15)-2025-01-13-19-59-20-UTC.zip",
+    "nested_entry": "380 - baremetal _OAI_UserspaceApplication (copy from Jan 13 19:59:15).zip",
+    "config_sha256": "079c2f7da628f5ac583add7ebe7539351f24101d6acd7c24cc82d6bfc6f7a12a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-381 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-02-54)-2025-01-13-20-03-00-UTC.zip",
+    "nested_entry": "381 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:02:54).zip",
+    "config_sha256": "90607c90a6d98982d042f4f5a976b2fb6acb8e2bfb35b48e3c5018772d96f1a4",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-382 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-06-34)-2025-01-13-20-06-39-UTC.zip",
+    "nested_entry": "382 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:06:34).zip",
+    "config_sha256": "30193ae506d1a98d34661d32a933df2f12a91d7615c73378082c8b68251dc003",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-383 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-10-13)-2025-01-13-20-10-19-UTC.zip",
+    "nested_entry": "383 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:10:13).zip",
+    "config_sha256": "3310d4039b6f43c1d7895eb2447738ed8c3803ab5bd9b7a63f390965d4afae4f",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-384 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-13-53)-2025-01-13-20-13-58-UTC.zip",
+    "nested_entry": "384 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:13:53).zip",
+    "config_sha256": "6ebe0f82122bdc398028b6ae7429a7a190970ab7cd28d2738a3ffc429d389049",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-385 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-17-32)-2025-01-13-20-17-38-UTC.zip",
+    "nested_entry": "385 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:17:32).zip",
+    "config_sha256": "cf164c2397bebb61610b8a79329bc96055d8f80a5c6f048229661d9c4112d2b9",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-386 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-21-12)-2025-01-13-20-21-18-UTC.zip",
+    "nested_entry": "386 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:21:12).zip",
+    "config_sha256": "a6fde664eef69524a131a2469ad5f66a75298d6bd36f05d25d3e6209dd7acbfc",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-387 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-24-51)-2025-01-13-20-24-57-UTC.zip",
+    "nested_entry": "387 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:24:51).zip",
+    "config_sha256": "1562b57f8ec99650ed4e5d3fb9ef6c05e5bb0ea83c52ebf15117bf545ebac1bf",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-388 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-28-31)-2025-01-13-20-28-37-UTC.zip",
+    "nested_entry": "388 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:28:31).zip",
+    "config_sha256": "c9851ef9b11bfe5bd0885c9e977254c4eb4df6a93b57f368f5617c893d600501",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-389 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-32-13)-2025-01-13-20-32-19-UTC.zip",
+    "nested_entry": "389 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:32:13).zip",
+    "config_sha256": "8502073578b662eef2199bb59e51aca56011d8c0c534ad7db74633ede52bf723",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-390 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-35-54)-2025-01-13-20-35-59-UTC.zip",
+    "nested_entry": "390 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:35:54).zip",
+    "config_sha256": "2129b92ed72b627fe4752e009b42e45af0a5e76cbd39e48950846942def1b80a",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-391 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-39-33)-2025-01-13-20-39-39-UTC.zip",
+    "nested_entry": "391 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:39:33).zip",
+    "config_sha256": "b5b31b5f470eb9cbd88a643d56b8afc70747dde7b37934408791cecac7443e0b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-392 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-43-13)-2025-01-13-20-43-18-UTC.zip",
+    "nested_entry": "392 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:43:13).zip",
+    "config_sha256": "5b0712ca4f3ec9dff7b73cf3351fab8cf96ce3416c60cd776fe89067bc3629b8",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-393 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-46-52)-2025-01-13-20-46-58-UTC.zip",
+    "nested_entry": "393 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:46:52).zip",
+    "config_sha256": "0c5384075f1044fb824b13d2776c75bc1f8dd70cb334b31a5b205f580c496c17",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-394 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-50-32)-2025-01-13-20-50-37-UTC.zip",
+    "nested_entry": "394 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:50:32).zip",
+    "config_sha256": "517ef8adc711cff287b4bc502e541c68aa3d96795e07cc9544f546cc6007beb6",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-395 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-54-11)-2025-01-13-20-54-17-UTC.zip",
+    "nested_entry": "395 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:54:11).zip",
+    "config_sha256": "fe2c7a657cf6c8a8a1c2f279acca3047e7e021c59ed32f4a471291ada9d6e676",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-396 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20-57-51)-2025-01-13-20-57-56-UTC.zip",
+    "nested_entry": "396 - baremetal _OAI_UserspaceApplication (copy from Jan 13 20:57:51).zip",
+    "config_sha256": "ee29b675cb77c9b137f8f6c1d37aabbf291422971f904d05c43bff71852a1d2b",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  },
+  {
+    "mode": "usr",
+    "archive": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-397 - baremetal _OAI_UserspaceApplication (copy from Jan 13 21-01-30)-2025-01-13-21-01-36-UTC.zip",
+    "nested_entry": "397 - baremetal _OAI_UserspaceApplication (copy from Jan 13 21:01:30).zip",
+    "config_sha256": "81ab64a0ff33faab62f2d62fcb5a27cc609432455bd4093c2f8429ae59ef5c37",
+    "stateless_udp_directions": [
+      {
+        "field": ".Config.nodes.dn.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "downlink"
+      },
+      {
+        "field": ".Config.nodes.ue.ranges[0].userPlane.tigerObjective[0].statelessUDP.direction",
+        "value": "uplink"
+      }
+    ],
+    "note": "Configured entries including possible inactive protocol objects; not full tester metric semantics"
+  }
+]

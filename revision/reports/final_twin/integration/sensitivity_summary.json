@@ -1,0 +1,27 @@
+{
+  "scopes": {
+    "synthetic": {
+      "points": 1009,
+      "lowest_power_action_changes_with_usr_nn": 181,
+      "usr_order_changes_with_nn": 555,
+      "ambiguous_under_error_scenario": 417,
+      "qos_reference_classification_disagreements": 34,
+      "invalid_selected_outputs": 0
+    },
+    "netflix_validation": {
+      "points": 504,
+      "lowest_power_action_changes_with_usr_nn": 153,
+      "usr_order_changes_with_nn": 277,
+      "ambiguous_under_error_scenario": 343,
+      "qos_reference_classification_disagreements": 9,
+      "invalid_selected_outputs": 0
+    }
+  },
+  "error_scenario": "95th absolute validation residual at bracketing load levels, multiplied by instances; independent adversarial signs; not a calibrated interval or operational probability",
+  "limitations": [
+    "errors shared across actions can be correlated; worst-case signs may not be jointly attainable",
+    "profiling measurements and workload/synthetic surrogate outcomes are separate evidence",
+    "energy rankings are pointwise power/SEC rankings, not controller-policy energy results",
+    "QoS alternatives and conditional tails are diagnostics, not new reward targets or safety guards"
+  ]
+}

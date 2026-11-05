@@ -1,0 +1,18 @@
+{
+  "selected_family": "boosted_poisson",
+  "signed_residuals": {
+    "n": 336,
+    "mae_mbps": 8.353153828365365,
+    "rmse_mbps": 10.545565181429266,
+    "bias_mbps": 1.4745614986395128,
+    "r2": 0.9582828952643028,
+    "median_error_mbps": 2.2392538203629133,
+    "p05_error_mbps": -15.16028159574909,
+    "p95_error_mbps": 18.11852532758826,
+    "p95_absolute_error_mbps": 21.08278734252601,
+    "max_absolute_error_mbps": 32.03078716457654
+  },
+  "empirical_fraction_covered_by_proposed_mae_margin": 0.5833333333333334,
+  "future_coverage_guarantee": false,
+  "final_refit_distribution_may_differ": true
+}

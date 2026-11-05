@@ -1,0 +1,31 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "prior_revision_files_checked": 169,
+  "prior_revision_files_changed": [],
+  "original_profiling_artifacts_verified": 12,
+  "all_recorded_notebook_and_measurement_hashes_verified": true,
+  "git_heads_and_tags_read_only_snapshot": [
+    "ae06f2fdb26f70afe3ee4eb10508c0000d4857ff refs/heads/ActualSwitchCost",
+    "c0734715418d3f6d10785e5174aebb4bac24d0da refs/heads/archive/comcom-original",
+    "c0734715418d3f6d10785e5174aebb4bac24d0da refs/heads/main",
+    "c0734715418d3f6d10785e5174aebb4bac24d0da refs/heads/revision/comcom-clean-evaluation",
+    "7463b9c7d2876d09ab7cd1efee4b77beb4380ac2 refs/tags/comcom-submitted-2026"
+  ],
+  "tracked_and_staged_changes": [],
+  "profiling_surrogate_fits": 0,
+  "rl_training": false,
+  "historical_label_updates": false,
+  "PCA_reconstruction": "Executed original notebook PCA/standardizer/minmax calculations separately per measurement mode, for label reconstruction only; no saved surrogates changed",
+  "traffic_data_read": false,
+  "commit_or_push": false,
+  "tests": "11 passed in 0.87s",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.reconstruct_qos --output-dir revision/reports/task2f",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest revision/tests/test_qos_reconstruction.py -q -p no:cacheprovider"
+  ],
+  "initial_harness_failures": [
+    "Relative output path normalization, fixed before scoring",
+    "rg permission-error status handling; now retained as an explicitly incomplete filesystem search"
+  ]
+}

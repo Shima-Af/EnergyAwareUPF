@@ -1,0 +1,39 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "prior_files_checked": 335,
+  "prior_files_changed": [],
+  "original_profiling_artifacts_checked": 12,
+  "tracked_changes": "",
+  "status_short": "?? revision/",
+  "frozen_twin_id": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+  "pilot_code_hashes_verified": {
+    "pilot.py": "544e77c54ea995843bf0cd19e2c4dd851ceb5c5e7b1b6aa9fe6bf1ae2582ea3d",
+    "pipeline.py": "5666633f659b6d397e20a2a84f49d251a4a2aaf96b5c824ed9d997dec23b6d2b",
+    "common.py": "5f46cb8e04b681deff1fc6e82899daac9039b742ff736867976ab31d4fbc6a7f",
+    "forecast.py": "97b60d575b2cbd40da29dd3745bdcd7a6790af269abb09cd0e542c2ead59eb0e",
+    "sensitivity.py": "2c30957306bbe604d5baaec903aadbe5a69c9941ede266aa9b4b1ceeb70c1b04",
+    "__init__.py": "34c0e239bb5e7e7a58a5ccbcbbf388d7f106778b7dbb2bb5dc3864f849023b12"
+  },
+  "policy_bundles_checked": 16,
+  "forecast_fits_checked": 7,
+  "forecast_rows": 2424,
+  "maximum_forecast_target_source_index": 2519,
+  "cold_start_rows": 96,
+  "full_preflight_tests": {
+    "passed": 238,
+    "warnings": 28,
+    "sha256": "7ef8b1569f4f4e3912eedc6696a1f1c396347ba432aae694774c30ff28c287e7"
+  },
+  "full_postpilot_tests": {
+    "passed": 241,
+    "warnings": 28,
+    "sha256": "1f6eb42efdf1940afae389f04b7ef285282b2e26c00d229dfc49ac66eec71eff"
+  },
+  "scientific_controller_runs": 4,
+  "training_interactions_per_run": 32768,
+  "traffic_final_test_controller_evaluation": false,
+  "manuscript_modified": false,
+  "commit_or_push": false,
+  "report_sha256": "939d219f2602974b911944a4c1ea0e55a1664b2b17e7ac3c6abd5cebb2727553"
+}

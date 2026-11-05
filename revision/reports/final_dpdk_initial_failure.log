@@ -1,0 +1,14 @@
+2026-10-22 18:08:46.799758: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/EnergyAwareUPF/revision/profiling/final_dpdk_power.py", line 113, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/profiling/final_dpdk_power.py", line 72, in main
+    path=directory/f'{m.name}.json';write_json(path,artifact(m,train,cfg,CONFIG));paths[m.name]=path
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/profiling/refit_usr_power.py", line 104, in artifact
+    'schema_version': 1, 'target_units': 'process_attributed_W', 'input_units': config['input_units'],
+                                                                                ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'input_units'

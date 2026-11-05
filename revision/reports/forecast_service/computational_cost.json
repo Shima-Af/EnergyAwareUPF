@@ -1,0 +1,20 @@
+{
+  "netflix": {
+    "learned_artifacts": 15,
+    "neural_optimization_stages": 20,
+    "boosted_fits": 5,
+    "neural_epochs_total": 749,
+    "total_fit_seconds": 429.7765259761363,
+    "maximum_neural_epoch_budget": 1200,
+    "minimum_history_slots": 672
+  },
+  "youtube": {
+    "learned_artifacts": 15,
+    "neural_optimization_stages": 20,
+    "boosted_fits": 5,
+    "neural_epochs_total": 638,
+    "total_fit_seconds": 412.1972870439058,
+    "maximum_neural_epoch_budget": 1200,
+    "minimum_history_slots": 672
+  }
+}

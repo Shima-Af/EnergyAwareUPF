@@ -1,0 +1,16 @@
+2026-10-22 15:33:28.066681: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+original_hidden_softplus 42 epoch 100 best validation RMSE 0.26626606202948855
+original_hidden_softplus 42 epoch 200 best validation RMSE 0.26404715307554844
+original_hidden_softplus 42 epoch 300 best validation RMSE 0.2635033290598396
+Completed original_hidden_softplus_seed_42 epochs 311 selected 231 RMSE 0.2635033290598396
+original_hidden_softplus 123 epoch 100 best validation RMSE 0.2654824373556089
+original_hidden_softplus 123 epoch 200 best validation RMSE 0.2645419388370133
+original_hidden_softplus 123 epoch 300 best validation RMSE 0.26439357590688883
+Completed original_hidden_softplus_seed_123 epochs 387 selected 307 RMSE 0.2643752242318319
+plain_hidden_softplus 42 epoch 100 best validation RMSE 0.2647627998908783
+Completed plain_hidden_softplus_seed_42 epochs 108 selected 28 RMSE 0.2647627998908783
+plain_hidden_softplus 123 epoch 100 best validation RMSE 0.2640345659511411
+plain_hidden_softplus 123 epoch 200 best validation RMSE 0.2638726851458751
+Completed plain_hidden_softplus_seed_123 epochs 287 selected 207 RMSE 0.2638549787593204
+FROZEN SELECTION: original_hidden_softplus_seed_42
+Selected-network internal-test scoring complete; no traffic or controller outcomes used.

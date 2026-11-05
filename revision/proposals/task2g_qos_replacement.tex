@@ -1,0 +1,68 @@
+% PROPOSAL ONLY. This file is not included by the manuscript.
+% Replace the score definition in Section 5 and reconcile the separate
+% profiling/5QI paragraph, metric names, captions and claims listed in TASK2G_REPORT.md.
+
+The profiling target is a study-specific composite quality score, rather than
+an indicator of formal 5QI compliance. Historical score labels were reconstructed
+from the surviving scoring notebook and the measurement tables. For profiling
+observation $i$, let $a_i$ be the recorded per-direction offered-load objective
+and let $r_i^{
+\mathrm{DN,rx}}$ be the stored DN-side receive-throughput counter, both in Mbps.
+Let $d_i$ denote \texttt{downlink\_delay\_ms}, $j_i$ denote
+\texttt{RAN\_jitter} in microseconds, and $\ell_i$ denote the stored fraction
+\texttt{RAN\_PLR\_interval}. The receive-counter direction and the loss-denominator
+construction have not been authenticated end to end; this definition preserves
+the recorded measurement fields without relabelling them as an exclusively
+downlink service measurement.
+
+Define $\operatorname{clip}(x;a,b)=\min\{b,\max\{a,x\}\}$. The component scores are
+\begin{align}
+ S_i^{\mathrm{thr}} & = \operatorname{clip}\!\left(
+       \frac{r_i^{\mathrm{DN,rx}}}{a_i+\varepsilon};0,1\right),
+       &&\varepsilon=10^{-9}\ \mathrm{Mbps}, \nonumber\\
+ S_i^{\mathrm{lat}} & =1-\frac{\operatorname{clip}(d_i;0,40)}{40},
+       &&d_i\text{ in ms}, \nonumber\\
+ S_i^{\mathrm{jit}} & =1-\frac{\operatorname{clip}(j_i;0,10)}{10},
+       &&j_i\text{ in }\mu\mathrm{s}, \nonumber\\
+ S_i^{\mathrm{loss}} & =1-\frac{\operatorname{clip}(100\ell_i;0,5)}{5},
+       &&100\ell_i\text{ in percent}.
+ \label{eq:qos_components_recovered}
+\end{align}
+The historical weighted score is
+\begin{equation}
+ Q_i=0.40S_i^{\mathrm{thr}}+0.20S_i^{\mathrm{lat}}
+       +0.20S_i^{\mathrm{jit}}+0.20S_i^{\mathrm{loss}}.
+ \label{eq:qos_weighted}
+\end{equation}
+The numerical values 40~ms, 10~$\mu$s and 5\% are score-normalization caps used
+in the experiments; they are not asserted to be standardized service budgets.
+The previously stated three-component weights and 5QI-derived interpretation
+were a methodological reporting discrepancy. The experimental labels use the
+four-component definition above and are retained unchanged.
+
+The twin's QoS regressors approximate this composite score from per-instance
+offered load. Thus, for an executed configuration with mode $m_t$ and $k_t$
+balanced instances, the quantity used by the controller is the model prediction
+$\widehat Q_t=q_{m_t}(\rho_t/k_t)$. We report the frequency and severity of
+\emph{predicted composite-score shortfalls} below $\tau=0.90$; separate profiling
+validation compares predictions with the measured score labels. The reward uses
+a soft penalty on these modeled shortfalls. Neither a prediction above $\tau$
+nor the reward formulation establishes an end-to-end delay, packet-error-rate,
+session-continuity or formal 5QI guarantee. The exploratory PCA-derived score
+\texttt{QoS\_dd} is not the target of the QoS profiling models.
+
+% Separate replacement for the profiling-direction/5QI paragraph:
+% The profiling exports contain DN- and RAN-side transmit/receive counters.
+% The recorded per-direction offered objective is used as the model input.
+% The study evaluates the recovered composite score defined above, rather than
+% a standardized 5QI conformance test. Device/flow attribution and loss-counter
+% construction are limitations; do not describe the whole campaign as downlink-only.
+% Standardized QoS characteristics can remain background context with
+% \cite{3gpp23501}, but the score's caps are not derived from that table.
+
+% Grouped-protocol paragraph: use only after the planned experiments have run.
+% For each UPF mode, we use complete sweeps 1--3 for parameter learning,
+% sweep 4 for checkpoint and model selection, and sweep 5 for internal testing.
+% Input normalizers are fitted on training sweeps only. The internal-test
+% results do not select models or extend the candidate search. These exposed
+% same-campaign measurements do not constitute a fresh physical holdout.

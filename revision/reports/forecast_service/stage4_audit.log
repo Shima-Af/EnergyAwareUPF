@@ -1,0 +1,117 @@
+2026-10-23 15:49:44.637951: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+{
+  "parameters": 123265,
+  "prefixes": [
+    {
+      "origin": 192,
+      "gradient_targets": 76,
+      "gradient_last_index": 171,
+      "stopping_targets": [
+        172,
+        192
+      ],
+      "most_recent_observed_rows_not_used_for_gradient": 20,
+      "epochs_run": 16,
+      "selected_epoch": 1,
+      "scale_mbps": 344.4108736905899,
+      "evaluation_rows": 416,
+      "actual_mean_mbps": 137.13762651861776,
+      "prediction_mean_mbps": 226.5204732968257,
+      "actual_above_fit_max_rows": 4,
+      "n": 416,
+      "mae_mbps": 100.04444853995665,
+      "rmse_mbps": 117.74090278256662,
+      "bias_mbps": 89.38284677820792,
+      "r2": -1.3834811049085394
+    },
+    {
+      "origin": 608,
+      "gradient_targets": 409,
+      "gradient_last_index": 504,
+      "stopping_targets": [
+        505,
+        608
+      ],
+      "most_recent_observed_rows_not_used_for_gradient": 103,
+      "epochs_run": 25,
+      "selected_epoch": 10,
+      "scale_mbps": 400.0,
+      "evaluation_rows": 416,
+      "actual_mean_mbps": 147.8550995288023,
+      "prediction_mean_mbps": 140.63430478939642,
+      "actual_above_fit_max_rows": 0,
+      "n": 416,
+      "mae_mbps": 39.54629369121499,
+      "rmse_mbps": 56.18379647628915,
+      "bias_mbps": -7.220794739405864,
+      "r2": 0.579127572011325
+    },
+    {
+      "origin": 1024,
+      "gradient_targets": 742,
+      "gradient_last_index": 837,
+      "stopping_targets": [
+        838,
+        1024
+      ],
+      "most_recent_observed_rows_not_used_for_gradient": 186,
+      "epochs_run": 48,
+      "selected_epoch": 33,
+      "scale_mbps": 400.0,
+      "evaluation_rows": 416,
+      "actual_mean_mbps": 143.80479148297903,
+      "prediction_mean_mbps": 151.6305568585029,
+      "actual_above_fit_max_rows": 0,
+      "n": 416,
+      "mae_mbps": 25.879549579777184,
+      "rmse_mbps": 32.822312724843414,
+      "bias_mbps": 7.825765375523861,
+      "r2": 0.8063071003707647
+    },
+    {
+      "origin": 1440,
+      "gradient_targets": 1075,
+      "gradient_last_index": 1170,
+      "stopping_targets": [
+        1171,
+        1440
+      ],
+      "most_recent_observed_rows_not_used_for_gradient": 269,
+      "epochs_run": 24,
+      "selected_epoch": 9,
+      "scale_mbps": 400.0,
+      "evaluation_rows": 416,
+      "actual_mean_mbps": 119.59038736205406,
+      "prediction_mean_mbps": 140.49471028034503,
+      "actual_above_fit_max_rows": 0,
+      "n": 416,
+      "mae_mbps": 29.786904555986624,
+      "rmse_mbps": 37.17962294076237,
+      "bias_mbps": 20.904322918290973,
+      "r2": 0.6725892663293663
+    },
+    {
+      "origin": 1856,
+      "gradient_targets": 1408,
+      "gradient_last_index": 1503,
+      "stopping_targets": [
+        1504,
+        1856
+      ],
+      "most_recent_observed_rows_not_used_for_gradient": 352,
+      "epochs_run": 27,
+      "selected_epoch": 12,
+      "scale_mbps": 400.0,
+      "evaluation_rows": 160,
+      "actual_mean_mbps": 122.6264282650865,
+      "prediction_mean_mbps": 156.41446602344513,
+      "actual_above_fit_max_rows": 0,
+      "n": 160,
+      "mae_mbps": 35.960411375880355,
+      "rmse_mbps": 43.61777916854469,
+      "bias_mbps": 33.78803775835864,
+      "r2": 0.36277476725114544
+    }
+  ],
+  "max_reload_difference": 5.684341886080802e-14
+}

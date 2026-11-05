@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "name": "training_mean_constant",
+  "domain_mbps": [
+    0.01,
+    5000.0
+  ],
+  "fit_sweeps": [
+    1,
+    2,
+    3
+  ],
+  "fit_rows": 2736,
+  "target": "QoS_w",
+  "mean": 0.734544364815172,
+  "protocol_sha256": "7fde2fb911239cce4aaf40b61dab5fcf546dc7d9184e2842a65896a8a520bf1f",
+  "source_sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20"
+}

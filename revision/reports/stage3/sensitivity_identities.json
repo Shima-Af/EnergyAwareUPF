@@ -1,0 +1,17 @@
+{
+  "baseline_id": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+  "alternative_artifacts": {
+    "/home/ubuntu/EnergyAwareUPF/revision/reports/task2d/selection_frozen.json": "188576da57482f7dc5df3eee1c394c0e36caac5669af2c0d5384a52dfeefeb93",
+    "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/training_load_mean_pwl.json": "ba0b88c172c7bb69fe6a22386a16fb6611d044c8be5a751e7d0b0098a5820627",
+    "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/training_load_mean_pwl.json": "10596b633fab5443bf6808f51fac36b84060a019d3d83d6bb9e31414c1d7ec10",
+    "/home/ubuntu/EnergyAwareUPF/revision/models/task2d/original_hidden_softplus_seed_42/manifest.json": "eaae6a49398590dcc86da0caaab2c1ec4c69b7b74d5edd5345a8cbaca5c367b8",
+    "/home/ubuntu/EnergyAwareUPF/revision/models/task2d/original_hidden_softplus_seed_42/model.keras": "8a666dd38652bfe7d9c6c2ee39a44623892c6052ee01836523c6ed65ed8d17c6"
+  },
+  "scenario_ids": {
+    "usr_neural_power": "3ccd21161ab3e8ef088f79c85e78c591e6db0e927262cb0cae18b0a884627c78",
+    "load_mean_qos": "1a8273479c39800e7969dd19688938a494bd1ef973b3e706112bf844cdfd99a4",
+    "both": "d26998dd03487f693ce2180d58369cd5852e47a6b2bc66553f630a8d8ff856ea"
+  },
+  "forecast_sha256": "b12350c930d9aedfe3376203efc4943e5a9025632febc8215eab5d191649c0ce",
+  "implementation_sha256": "2c30957306bbe604d5baaec903aadbe5a69c9941ede266aa9b4b1ceeb70c1b04"
+}

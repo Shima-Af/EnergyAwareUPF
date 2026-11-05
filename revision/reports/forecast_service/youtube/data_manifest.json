@@ -1,0 +1,16 @@
+{
+  "authorized_prefix_rows": 2520,
+  "training_rows": 2016,
+  "validation_rows": 504,
+  "authorized_prefix_sha256": "6b8c8aab6c2f8cd00f166437e8ef56c089daa1dd29a5a8b0697bc32f09b93e1e",
+  "training_prefix_sha256": "57b987c2c835c0199de8667948ceb7fc4e95bb984c4b01476455155c8d9051a3",
+  "workload_scale_multiplier": 0.19358590710547752,
+  "training_peak_mbps": 295.39541701064746,
+  "training_start": "2019-04-01T00:00:00",
+  "training_end_inclusive": "2019-04-21T23:45:00",
+  "validation_start": "2019-04-22T00:00:00",
+  "validation_end_inclusive": "2019-04-27T05:45:00",
+  "source": "data/processed/processed_traffic_youtube_aggregated_scaled.csv",
+  "archived_forecasts_used": false,
+  "final_test_rows_parsed": 0
+}

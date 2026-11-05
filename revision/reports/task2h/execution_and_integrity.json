@@ -1,0 +1,29 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "prior_revision_files_checked": 213,
+  "prior_revision_files_changed": [],
+  "original_profiling_artifacts_verified": 12,
+  "all_original_measurement_hashes_verified": true,
+  "all_eight_candidate_artifact_code_and_protocol_hashes_verified": true,
+  "scientific_nn_fits_started": 8,
+  "scientific_nn_fits_completed": 8,
+  "scientific_nn_fits_failed": 0,
+  "additional_nn_fits_in_tests": 0,
+  "simple_references_fit": 4,
+  "scientific_training_epochs": 1430,
+  "max_epoch_budget": 4800,
+  "tests": "50 passed in 2.84s (18 new plus 32 data/selection tests)",
+  "tracked_and_staged_changes": [],
+  "default_twin_replaced": false,
+  "controller_training": false,
+  "traffic_data_read": false,
+  "risk_tolerance_invented": false,
+  "commit_or_push": false,
+  "numerical_note": "USR validation predictions at the same load differ by at most one float32 epsilon-scale step (5.96e-8) across batch positions; decomposition retains cross term, scores/selection unchanged.",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.profiling.train_grouped_qos --output-dir revision/reports/task2h --model-dir revision/models/task2h",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.summarize_grouped_qos",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest revision/tests/test_grouped_qos.py revision/tests/test_data.py revision/tests/test_selection.py -q -p no:cacheprovider"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "configuration": {
+    "id": "comcom.forecasting-service.v1",
+    "workloads": [
+      "netflix",
+      "youtube"
+    ],
+    "authorization_change": "YouTube-specific forecast fitting on its training dates is now explicitly authorized. The prior transfer-only controller protocol is not silently changed.",
+    "datasets": {
+      "netflix": "data/processed/processed_traffic_normalized.csv",
+      "youtube": "data/processed/processed_traffic_youtube_aggregated_scaled.csv"
+    },
+    "read_stop_exclusive": 2520,
+    "train_stop_exclusive": 2016,
+    "validation_half_open": [
+      2016,
+      2520
+    ],
+    "forecast_window": 96,
+    "horizon_intervals": 1,
+    "slot_seconds": 900,
+    "workload_scaling": "Preserve the prior common Netflix-training-peak-to-400 multiplier, computed from Traffic_bps/1e6. Apply this same multiplier to both workloads; never consume archived forecast/scaled columns.",
+    "families": [
+      "persistence",
+      "seasonal_daily",
+      "lstm",
+      "gru",
+      "boosted_poisson"
+    ],
+    "development_origins": [
+      672,
+      1008,
+      1344
+    ],
+    "development_block_slots": 336,
+    "calibration_half_open": [
+      1680,
+      2016
+    ],
+    "minimum_learned_history_slots": 672,
+    "minimum_history_rationale": "One complete week before fitting, compared with only two days at the original first prefix; a declared practical minimum, not a proven sufficient sample size. Earliest inner gradient training retains five days.",
+    "selection": "Minimum pooled rolling-development RMSE across 672:1680; exact ties prefer persistence, seasonal_daily, boosted_poisson, gru, lstm. No family change after seeing 1680:2016 calibration or external validation.",
+    "prequential_training_provider": "Persistence for 96:1008 including the first development block. At later origins use the lowest pooled RMSE on completed earlier development blocks only; at1680 use the already frozen family. No backfilled winner labels.",
+    "cold_start": "Persistence until the minimum learned history; keep all original 1920 scored training timestamps. First development block uses persistence until comparative evidence exists.",
+    "neural": {
+      "seed": 42,
+      "max_epochs": 60,
+      "patience": 10,
+      "min_delta_scaled_mse": 1e-06,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "inner_holdout_slots": 96,
+      "refit": "Select epoch on last96 earlier-prefix targets, then reinitialize same seed and refit all available prefix targets for that many epochs. No forecast-block outcomes select epochs.",
+      "calendar_features": 6,
+      "lstm": "Existing Stage4 SpatialDropout .1, LSTM128/LSTM64 dropout .2, Dense64 ReLU/dropout .2, softplus head; recurrent dropout0",
+      "gru": "GRU32, Dense16 ReLU, softplus; no additional search"
+    },
+    "boosted": {
+      "loss": "poisson",
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "max_depth": 3,
+      "min_samples_leaf": 20,
+      "learning_rate": 0.05,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 42,
+      "features": "96 ordered load lags plus six decision calendar features, last4/16/96 means and last completed increment. All deterministic functions of the same causal information."
+    },
+    "full_prefix_diagnostics": "Fit all three learned families at2016 with training-only epoch selection. Frozen family alone defines the service. Other full-prefix fits provide prespecified secondary validation diagnostics only.",
+    "search_budget": "Per workload three learned families at origins672/1008/1344/1680 and full2016: 15 artifact fits. Each neural artifact has at most60 inner-stopping epochs and at most60 full-prefix refit epochs. Total40 neural optimization stages,10 boosted fits across both workloads; no expansion.",
+    "uncertainty": "Report fold/block and day errors descriptively; no calibrated physical confidence or equivalence claim from three development blocks.",
+    "hysteresis_proposal": {
+      "k": 1.0,
+      "k_origin": "Declared unit multiplier, not optimized; the paper's approximate26/24.70 ratio is recorded descriptively, not assumed an authenticated historical k.",
+      "primary_mae": "Selected family OOF MAE on the separate training calibration block1680:2016",
+      "formula": "proposed_margin_mbps = 1.0 * calibration_out_of_fold_MAE_mbps",
+      "literal_paper_comparison": "Also report selected final provider training in-sample MAE and implied in-sample margin; using OOF error is an explicit correction for optimism. No baseline is modified."
+    },
+    "no_controller_replay": true,
+    "no_final_test_targets": true,
+    "no_search_expansion": true
+  },
+  "source_hashes": {
+    "revision/FULL_TRAINING_EVALUATION.md": "120e2a713c63da8d9091a0eed8daae080a8003731651babf4a481db83be9b113",
+    "revision/FINAL_BASELINE_COMPARISON.md": "a1ed11ce507b3d50c4e6830c0a3ca64258145cdf40115a630607d2603b173966",
+    "Paper artifacts/manuscript_energyawareupf.tex": "848d907f645476ee0500f48e8a3c8afcd327a67c6c2c406cb4142a5154500c9d",
+    "revision/reference/Dynamic_UPF_Cyprus_2025_SLICES.pdf": "e26ef6eebf3ad96ba01f8bac619f69c96da2dc9bbc1b44ff76586ea6c0ef50ea",
+    "revision/stage4/forecast.py": "368a0240d9b1fb715f5b7e6d9b1dfd70a3040afbb9129e910b225ec9eba94184",
+    "revision/stage3/forecast.py": "97b60d575b2cbd40da29dd3745bdcd7a6790af269abb09cd0e542c2ead59eb0e",
+    "revision/stage4/protocol.json": "ed88fe7e985495ffc244a7f6ab642bc21ceba7dc53c43686e449f12a51b97bb3",
+    "revision/reports/stage5/baseline_frozen.json": "7b4701ab7792d8c0126221b064cbbe6d752b9c66354657da8a9e91bac08d316f"
+  },
+  "implementation_hashes": {
+    "revision/forecast_service/__init__.py": "6d56030662980af38b3f768e2d77898eae4b0302afbe4da173328481c46aa481",
+    "revision/forecast_service/core.py": "66c148df77abecdbfbcbbbe947debf2be548de83a0d81f72e51b70782004960c",
+    "revision/forecast_service/run.py": "5f65862c90cfde0b5e0f2d7ac3deed144a821401c7ed0a083f640b46f8375149",
+    "revision/forecast_service/freeze.py": "3f0b6724ec76db141e4df13f38ea8c36153f46a98a50844b6548e50b0a8ae554",
+    "revision/forecast_service/protocol.json": "c70366f947621b12fab6e72b4e659b9ca52164d7774a7c73c12942e7d3004a6f"
+  },
+  "preflight_log_sha256": "057e605d41e1190e474884bc38990887fd71cadc176121c1532e4eb6f4810122",
+  "runtime": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "dependencies": {
+      "numpy": "2.4.2",
+      "tensorflow": "2.20.0",
+      "keras": "3.13.2",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3",
+      "h5py": "3.15.1"
+    },
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "TF_ENABLE_ONEDNN_OPTS": "0",
+      "TF_DETERMINISTIC_OPS": "1",
+      "TF_NUM_INTEROP_THREADS": "1",
+      "TF_NUM_INTRAOP_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "TF_CPP_MIN_LOG_LEVEL": "2"
+    },
+    "tensorflow_build": {
+      "cpu_compiler": "clang 18",
+      "cuda_compute_capabilities": [
+        "sm_60",
+        "sm_70",
+        "sm_80",
+        "sm_89",
+        "compute_90"
+      ],
+      "cuda_version": "12.5.1",
+      "cudnn_version": "9",
+      "is_cuda_build": true,
+      "is_rocm_build": false,
+      "is_tensorrt_build": false
+    },
+    "visible_devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ],
+    "intra_op_threads": 1,
+    "inter_op_threads": 1,
+    "tensor_float_32_enabled": false,
+    "model_call": "model(one_float32_sample, training=False); compile=False on load",
+    "batch_policy": "one sample per forward pass, independent of caller batching",
+    "input_pipeline": "float32(load/k) -> float32 log1p -> saved input scaler",
+    "output_pipeline": "float32 model output -> saved target inverse scaler; no clipping",
+    "serialized_tensorflow_version": null,
+    "serialized_tensorflow_version_note": "Not recorded in the .keras metadata; not inferred from Keras version"
+  },
+  "git_branch": "revision/comcom-clean-evaluation",
+  "git_head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "training_started": false,
+  "candidate_results_seen": false,
+  "no_final_test_rows_requested": true,
+  "source_direction_and_units": "Read raw Traffic_bps/1e6, preserve common Netflix-training workload scale. No physically invented cap or resampling."
+}

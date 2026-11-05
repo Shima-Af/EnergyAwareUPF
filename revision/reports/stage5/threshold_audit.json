@@ -1,0 +1,49 @@
+{
+  "slices_regions_with_hysteresis": [
+    {
+      "left": 0.02,
+      "right": 15.781867362113358,
+      "action": 1,
+      "request_interior_lower_mbps": 0.02,
+      "request_interior_upper_mbps": -10.218132637886642,
+      "empty_request_interior": true,
+      "boundary_policy": "Strict beyond crossover margin; domain endpoints inclusive"
+    },
+    {
+      "left": 15.781867362113358,
+      "right": 87.37003738279041,
+      "action": 2,
+      "request_interior_lower_mbps": 41.78186736211336,
+      "request_interior_upper_mbps": 61.370037382790414,
+      "empty_request_interior": false,
+      "boundary_policy": "Strict beyond crossover margin; domain endpoints inclusive"
+    },
+    {
+      "left": 87.37003738279041,
+      "right": 400.0,
+      "action": 0,
+      "request_interior_lower_mbps": 113.37003738279041,
+      "request_interior_upper_mbps": 400.0,
+      "empty_request_interior": false,
+      "boundary_policy": "Strict beyond crossover margin; domain endpoints inclusive"
+    }
+  ],
+  "historical_utility_regions": [
+    {
+      "left": 0.02,
+      "right": 89.11195633363653,
+      "action": 1
+    },
+    {
+      "left": 89.11195633363653,
+      "right": 400.0,
+      "action": 0
+    }
+  ],
+  "slices_old_95_6_reused": false,
+  "comcom_old_thresholds_reused": false,
+  "historical_margin_executed": false,
+  "strong_rule_unchanged": true,
+  "strong_rule_traffic_thresholds": "Not a fixed-threshold algorithm; feasibility and current-relative power deadband evaluated at every forecast",
+  "control_parameter_tuning": false
+}

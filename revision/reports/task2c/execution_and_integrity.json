@@ -1,0 +1,35 @@
+{
+  "python_executable": "/home/ubuntu/EnergyAwareUPF/.venv/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "numpy_build": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/include\n    lib directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.31.dev  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=64\n    pc file directory: /project/.openblas\n    version: 0.3.31.dev\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/include\n    lib directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.31.dev  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=64\n    pc file directory: /project/.openblas\n    version: 0.3.31.dev\nCompilers:\n  c:\n    commands: cc\n    linker: ld.bfd\n    name: gcc\n    version: 14.2.1\n  c++:\n    commands: c++\n    linker: ld.bfd\n    name: gcc\n    version: 14.2.1\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.2.4\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: linux\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: linux\nPython Information:\n  path: /tmp/build-env-jif3r6om/bin/python\n  version: '3.12'\nSIMD Extensions:\n  baseline:\n  - X86_V2\n  found:\n  - X86_V3\n  - X86_V4\n  - AVX512_ICL\n  not found:\n  - AVX512_SPR\n\n",
+  "threadpool_libraries": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 32,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-096271d3.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "fit_blas_thread_limit": 1,
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "preexisting_revision_files_checked": 70,
+  "preexisting_revision_files_changed": [],
+  "original_profiling_artifacts_verified": 12,
+  "external_processed_raw_and_catalog_hashes_verified": true,
+  "tracked_and_staged_changes": [],
+  "commands": [
+    ".venv/bin/python -m revision.profiling.refit_usr_power --output-dir revision/reports/task2c --model-dir revision/models/task2c",
+    ".venv/bin/python -m revision.diagnostics.compare_power_replacement --model revision/models/task2c/selected_usr_power.json --selection revision/reports/task2c/selection_frozen.json --output-dir revision/reports/task2c/diagnostic",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest revision/tests -q -p no:cacheprovider",
+    ".venv/bin/python -m revision.diagnostics.plot_power_refit"
+  ],
+  "no_rl_training": true,
+  "traffic_final_test_outcomes_accessed": false,
+  "default_twin_replaced": false,
+  "committed_or_pushed": false
+}

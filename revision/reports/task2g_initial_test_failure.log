@@ -1,0 +1,16 @@
+...F...                                                                  [100%]
+=================================== FAILURES ===================================
+__________ test_two_point_five_percent_loss_can_pass_composite_target __________
+
+    def test_two_point_five_percent_loss_can_pass_composite_target():
+        spec=json.loads(SPEC.read_text())
+        frame=pd.DataFrame({'DN_Rx_Mbits/s':[100.+1e-9],'Objective Throughput (DL/UL)':[100.],
+           'downlink_delay_ms':[0.],'RAN_jitter':[0.],'RAN_PLR_interval':[.025]})
+        assert from_spec(frame,spec)[0]==pytest.approx(.9)
+>       assert .025/1e-6==25000
+E       assert (0.025 / 1e-06) == 25000
+
+revision/tests/test_qos_specification.py:47: AssertionError
+=========================== short test summary info ============================
+FAILED revision/tests/test_qos_specification.py::test_two_point_five_percent_loss_can_pass_composite_target
+1 failed, 6 passed in 0.36s

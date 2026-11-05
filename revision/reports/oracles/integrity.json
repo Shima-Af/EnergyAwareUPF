@@ -1,0 +1,19 @@
+{
+  "preserved_file_count": 5203,
+  "changed_prior_files": [],
+  "tracked_status": "",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "branch": "revision/comcom-clean-evaluation",
+  "final_test_evaluated": false,
+  "policy_training": false,
+  "policy_replays": false,
+  "committed": false,
+  "pushed": false,
+  "original_twin_reward_baseline_definitions_unchanged": true,
+  "verification": "All prior scientific SHA-256 values; all 174 saved trajectories checked against actual prefix loads, frozen cache, actuator and reward; all 12 oracle solutions repeated",
+  "tests": {
+    "passed": 45,
+    "seconds": 6.85,
+    "log": "revision/reports/oracles/tests.log"
+  }
+}

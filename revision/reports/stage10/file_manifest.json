@@ -1,0 +1,20 @@
+{
+  "files": {
+    "revision/FINAL_COMCOM_CORRECTED_CAMPAIGN.md": "d33d9bd005efb8047bb067410d3d390a97206dd045ceac12cb2a836c6302f646",
+    "revision/reports/stage10/final_tests.log": "89e850eba122fef55881fd11b456f2eaf45390e14f6b2ad74c07bedc3c3a46e3",
+    "revision/reports/stage10/integrity.json": "501827cddfae91031f7ca978290cf6e6840e78a1bf5f76a6a73ffece17af75c0",
+    "revision/reports/stage10/reference_manifest.json": "9c0ec89cde51b22e9a9f4a5380485ff2c395d70e254ed23ef1e298500cef4bd6",
+    "revision/reports/stage10/source_identity_complete.json": "3ddbe18ba838270d6944e4a7960c58c4e0add6bfd744b10489ddaa0e678b66aa",
+    "revision/reports/stage10/tests.log": "bb694b324b4319c91905d69899df9d978b64574c7f7a4facbb9d0c4f432e021b",
+    "revision/reports/stage10/training_field_evidence.json": "664ff94b751e04c81ca9230b9be730e729cb3a437eccd72591785be1d16c3e57",
+    "revision/reports/stage10_prior_sha256.json": "2a9fb06c184c47f7ec26a9f706330a015327752ea5a34ab2d672d7e5ae834f63",
+    "revision/stage10/__init__.py": "b5cfc7c299b074c528cce925e605d3c7d516abe6bd3136ab393b3b3c6553f276",
+    "revision/stage10/primitives.py": "2ba3fb76c7a949700f33e5faad8611483061d5b66fc440a793ee7ca08d7f9cec",
+    "revision/tests/test_stage10_primitives.py": "32eb5a1660821110aa7d4f19a2e22caec3b1138d4b372b41894340705e53e081"
+  },
+  "excludes": [
+    "this manifest",
+    "incidental bytecode"
+  ],
+  "new_file_count_including_manifest": 12
+}

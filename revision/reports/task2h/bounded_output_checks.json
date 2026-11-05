@@ -1,0 +1,102 @@
+{
+  "DPDK": [
+    {
+      "model": "original_hidden_sigmoid_seed_42",
+      "grid_points": 22000,
+      "minimum": 0.8680083751678467,
+      "maximum": 0.9886668920516968,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "original_hidden_sigmoid_seed_123",
+      "grid_points": 22000,
+      "minimum": 0.8501021265983582,
+      "maximum": 0.9850936532020569,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "plain_hidden_sigmoid_seed_42",
+      "grid_points": 22000,
+      "minimum": 0.8632611632347107,
+      "maximum": 0.9855044484138489,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "plain_hidden_sigmoid_seed_123",
+      "grid_points": 22000,
+      "minimum": 0.8627622127532959,
+      "maximum": 0.9915828108787537,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "training_mean_constant",
+      "grid_points": 22000,
+      "minimum": 0.9485099069610511,
+      "maximum": 0.9485099069610511,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "training mean or convex interpolation of bounded training load means"
+    },
+    {
+      "model": "training_load_mean_pwl",
+      "grid_points": 22000,
+      "minimum": 0.8194640917487975,
+      "maximum": 0.9839559905319224,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "training mean or convex interpolation of bounded training load means"
+    }
+  ],
+  "USR": [
+    {
+      "model": "original_hidden_sigmoid_seed_42",
+      "grid_points": 22000,
+      "minimum": 0.24744650721549988,
+      "maximum": 0.9434289932250977,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "original_hidden_sigmoid_seed_123",
+      "grid_points": 22000,
+      "minimum": 0.23170307278633118,
+      "maximum": 0.9421328902244568,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "plain_hidden_sigmoid_seed_42",
+      "grid_points": 22000,
+      "minimum": 0.22973193228244781,
+      "maximum": 0.9394620060920715,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "plain_hidden_sigmoid_seed_123",
+      "grid_points": 22000,
+      "minimum": 0.23349837958812714,
+      "maximum": 0.9381641149520874,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "sigmoid head in score units"
+    },
+    {
+      "model": "training_mean_constant",
+      "grid_points": 22000,
+      "minimum": 0.734544364815172,
+      "maximum": 0.734544364815172,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "training mean or convex interpolation of bounded training load means"
+    },
+    {
+      "model": "training_load_mean_pwl",
+      "grid_points": 22000,
+      "minimum": 0.2284496952017438,
+      "maximum": 0.943730046780001,
+      "all_finite_bounded": true,
+      "continuous_domain_construction": "training mean or convex interpolation of bounded training load means"
+    }
+  ]
+}

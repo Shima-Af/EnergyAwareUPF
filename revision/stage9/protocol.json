@@ -1,0 +1,85 @@
+{
+  "id": "comcom.trace_derived_qos_activation.v1",
+  "selection": "Fixed factors and rules before scenario inference; no controller results used",
+  "workloads": [
+    "netflix",
+    "youtube"
+  ],
+  "authorized_prefix_stop": 2520,
+  "train_scored_half_open": [
+    96,
+    2016
+  ],
+  "validation_half_open": [
+    2016,
+    2520
+  ],
+  "scaling_reference": "Unchanged Stage6/7 common Netflix-training multiplier; all factors multiply that study workload",
+  "common_total_domain_mbps": [
+    0.02,
+    5000.0
+  ],
+  "threshold": 0.9,
+  "scenarios": {
+    "original": {
+      "kind": "scale",
+      "factor": 1.0,
+      "medium_reference": true
+    },
+    "low_peak10_reference": {
+      "kind": "scale",
+      "factor": 0.025
+    },
+    "low_peak40_reference": {
+      "kind": "scale",
+      "factor": 0.1
+    },
+    "high_peak800_reference": {
+      "kind": "scale",
+      "factor": 2.0
+    },
+    "high_peak1600_reference": {
+      "kind": "scale",
+      "factor": 4.0
+    },
+    "high_peak3200_reference": {
+      "kind": "scale",
+      "factor": 8.0
+    },
+    "mixed_daily": {
+      "kind": "mixed",
+      "factors": [
+        0.1,
+        1.0,
+        4.0
+      ],
+      "block_slots": 96,
+      "rule": "factor[(source_index//96)%3], same absolute-index rule across partitions"
+    },
+    "rapid_real_day": {
+      "kind": "rapid",
+      "factor": 4.0,
+      "window_slots": 96,
+      "training_selector": "Maximum sum of absolute successive original-load changes in a contiguous 96-slot training-scored window, earliest start on ties",
+      "validation_selector": "First full 96-slot validation window with the training-selected start clock time; no validation magnitude selection"
+    }
+  },
+  "inference": "Frozen component weights/transforms, vectorized diagnostic calls; singleton adapter checks at measured/domain/threshold anchors, stratified scenario samples, and all near-threshold inputs; disclose numeric profile differences",
+  "grid": "Diagnostic loads only, never invented workload samples: log/linear grid plus all analytic ReLU breakpoints and threshold roots",
+  "profiling_data": {
+    "directory": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed",
+    "dpdk": {
+      "file": "dpdk_processed.csv",
+      "sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484"
+    },
+    "usr": {
+      "file": "oai_processed.csv",
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20"
+    }
+  },
+  "physical_validity": "Declared interpolation is not certification; no formal acceptable error or false-safe tolerance approved; high scenarios exploratory only",
+  "no_forecast_reuse": true,
+  "training_authorized": false,
+  "controller_evaluation": false,
+  "final_test_access": false
+}

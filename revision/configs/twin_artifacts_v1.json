@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "mode": "dpdk",
+      "target": "qos",
+      "role": "model",
+      "path": "saved_models/prediction_models/dpdk_upf_performance_model.keras",
+      "sha256": "932f690117d10b433346a25f619194e94b1db663173702e2b0565845012367d1",
+      "serialization": {
+        "keras_version": "3.11.3",
+        "date_saved": "2025-09-30@12:35:51"
+      }
+    },
+    {
+      "mode": "dpdk",
+      "target": "qos",
+      "role": "input_scaler",
+      "path": "saved_models/prediction_models/dpdk_perf_scaler_X.pkl",
+      "sha256": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    },
+    {
+      "mode": "dpdk",
+      "target": "qos",
+      "role": "target_scaler",
+      "path": "saved_models/prediction_models/dpdk_perf_scaler_y.pkl",
+      "sha256": "2d872d2b130eda5f3339a4fbed4eba973ce8c360ff2dd219caf5a955dbab1cbc",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    },
+    {
+      "mode": "dpdk",
+      "target": "power",
+      "role": "model",
+      "path": "saved_models/prediction_models/dpdk_upf_power_model.keras",
+      "sha256": "eec63019f99daffedce84cbaf4fb261a35a734ac1c1e801ca3f6290fc67d0d7b",
+      "serialization": {
+        "keras_version": "3.11.3",
+        "date_saved": "2025-09-30@12:33:27"
+      }
+    },
+    {
+      "mode": "dpdk",
+      "target": "power",
+      "role": "input_scaler",
+      "path": "saved_models/prediction_models/dpdk_scaler_X.pkl",
+      "sha256": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    },
+    {
+      "mode": "dpdk",
+      "target": "power",
+      "role": "target_scaler",
+      "path": "saved_models/prediction_models/dpdk_scaler_y.pkl",
+      "sha256": "1bdb218dafa423eebd40e669c444174d8dec7e878b25a039289139063e9e130c",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    },
+    {
+      "mode": "usr",
+      "target": "qos",
+      "role": "model",
+      "path": "saved_models/prediction_models/oai_upf_performance_model.keras",
+      "sha256": "c92b3d9741feb9cd240b8a1e2e72a9c332958cde619d27867b80935ede06f092",
+      "serialization": {
+        "keras_version": "3.11.3",
+        "date_saved": "2025-09-30@12:36:50"
+      }
+    },
+    {
+      "mode": "usr",
+      "target": "qos",
+      "role": "input_scaler",
+      "path": "saved_models/prediction_models/oai_perf_scaler_X.pkl",
+      "sha256": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    },
+    {
+      "mode": "usr",
+      "target": "qos",
+      "role": "target_scaler",
+      "path": "saved_models/prediction_models/oai_perf_scaler_y.pkl",
+      "sha256": "e0b3aa30b33b050cc0469176bb27ddcd5017d783163175d7c7f43792b58cc7e2",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    },
+    {
+      "mode": "usr",
+      "target": "power",
+      "role": "model",
+      "path": "saved_models/prediction_models/oai_upf_power_model.keras",
+      "sha256": "8ea0bdf2461d8a27f2c1613500ea8d22487c6b0c27ca4f9f1b9a0afade64720a",
+      "serialization": {
+        "keras_version": "3.11.3",
+        "date_saved": "2025-09-30@12:33:55"
+      }
+    },
+    {
+      "mode": "usr",
+      "target": "power",
+      "role": "input_scaler",
+      "path": "saved_models/prediction_models/oai_scaler_X.pkl",
+      "sha256": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    },
+    {
+      "mode": "usr",
+      "target": "power",
+      "role": "target_scaler",
+      "path": "saved_models/prediction_models/oai_scaler_y.pkl",
+      "sha256": "62522eb7a5459f4ad25136cd92a0c44e147e8c04b4ab6c26e1d49c2dcf85d105",
+      "serialization": {
+        "sklearn_version": "1.7.2"
+      }
+    }
+  ],
+  "inference_policy": "cpu_float32_single_sample_v1",
+  "balanced_load_assumption": "load/k; power=k*per_instance_power; qos=per_instance_qos"
+}

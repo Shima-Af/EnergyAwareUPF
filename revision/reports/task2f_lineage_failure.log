@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/reconstruct_qos.py", line 274, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/reconstruct_qos.py", line 271, in main
+    run(args.output_dir)
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/reconstruct_qos.py", line 149, in run
+    lineage=source_history(output)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/reconstruct_qos.py", line 110, in source_history
+    if result.returncode not in (0,1):raise ValueError('Exact-name filesystem search failed')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Exact-name filesystem search failed

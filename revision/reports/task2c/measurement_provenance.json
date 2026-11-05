@@ -1,0 +1,39 @@
+{
+  "processed_source": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/oai_processed.csv",
+  "processed_sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+  "matching_copies": [
+    {
+      "path": "/home/ubuntu/xRL_UpfSelection/data/processed/oai_processed.csv",
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20"
+    },
+    {
+      "path": "/home/ubuntu/dynamic-upf-selection-rl/data/processed/oai_processed.csv",
+      "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20"
+    }
+  ],
+  "raw_source": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/scaphandre/usr/scaph_process_power_consumption_microwatts.csv",
+  "raw_sha256": "f2fce13d10d2ba8de769cee1b79f7dffcfeae2cafc5311e8514bb0193977f8de",
+  "raw_rows": 9483,
+  "raw_pid": 525735,
+  "raw_executable": "/openair-upf/bin/oai_upf",
+  "raw_metric": "scaph_process_power_consumption_microwatts",
+  "target_conversion": "raw microwatts / 1e6 -> process-attributed watts",
+  "all_processed_power_labels_traced": 4564,
+  "nearest_timestamp_values_match": 4533,
+  "other_nearby_value_matches": 31,
+  "max_absolute_matching_timestamp_offset_seconds": 2.257999897,
+  "match_value_tolerance_w": 1e-12,
+  "match_tolerance_note": "Floating-point serialization check only; not a physical error acceptance threshold",
+  "catalog": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/configs/test_cases.csv",
+  "catalog_sha256": "6d410ec08aa6595fba6359cc5747cba9c573806bf899e9ff331fc1a5eadd0407",
+  "all_110_cases_match_catalog": true,
+  "packet_bitrate_label_max_error_mbps": 0.0,
+  "input_definition": "Mbps_per_direction_as_recorded_in_original_campaign",
+  "uncertainties": [
+    "Exact historical LoadCore/Scaphandre join, trimming and aggregation code not authenticated",
+    "Some labels match a previous rather than the closest raw sample; zeros can match multiple samples",
+    "Input is the campaign DL/UL objective, not an authenticated aggregate DL+UL variable; historical mapping retained",
+    "No new physical campaign, packet-size diversity, true idle point, or calibrated metering uncertainty",
+    "Grouped limited exports are not substituted for the source CSV"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "tracked_changes": "",
+  "status_short": "?? revision/",
+  "preservation_snapshots": {
+    "stage4_prior_sha256.json": {
+      "checked": 490,
+      "changed": [],
+      "sha256": "a546fa53d0e4fae6888af2478de0aa16dd3e2e122176f12140812643490d31e7"
+    },
+    "stage4_initial_campaign_sha256.json": {
+      "checked": 1239,
+      "changed": [],
+      "sha256": "ae141d6898ea19bd6777a13feb70b759553627d862406b51dd9783fe21ba8794"
+    }
+  },
+  "primary_runs": 10,
+  "initial_rng_affected_runs_preserved": 10,
+  "primary_interactions": 3000000,
+  "all_scientific_controller_interactions_including_affected": 6000000,
+  "primary_checkpoint_pairs": 140,
+  "all_checkpoint_pairs": 280,
+  "scientific_forecast_fits": 7,
+  "corrected_forecast_artifacts_identical_copies": true,
+  "rng_isolation_implementation_sha256": "6d9cdeb35d782e99234ef2496edb79f7694e69bee4f3520dae656692b9561893",
+  "full_preflight_log_sha256": "8bf7c7c6c14232468b8c21d68caefe40ad00653c13d9bc94b4d63b319bef7611",
+  "full_posttraining_log_sha256": "29cb1bc6957e9d0fe540c2542972e4a679febdab43e11440fa76cc9f290e4320",
+  "posttraining_result": "256 passed, 28 warnings in 29.98s",
+  "report_sha256": "120e2a713c63da8d9091a0eed8daae080a8003731651babf4a481db83be9b113",
+  "final_test_controller_outcomes_accessed": false,
+  "manuscript_edit": false,
+  "commit_or_push": false
+}

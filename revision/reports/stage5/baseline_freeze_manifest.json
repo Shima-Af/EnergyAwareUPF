@@ -1,0 +1,201 @@
+{
+  "freeze_id": "19fee5087a8820fe47292e3dce5d7437ec3f26b7317b92a1d6fa7fedb16f9990",
+  "version": "comcom.baseline_freeze.v1",
+  "definition_freeze_sha256": "7b4701ab7792d8c0126221b064cbbe6d752b9c66354657da8a9e91bac08d316f",
+  "definition_frozen_before_validation_replay": true,
+  "git_branch": "revision/comcom-clean-evaluation",
+  "git_head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "source_and_input_hashes": {
+    "revision/stage5/protocol.json": "96b032e670f342d70573a212c77df4029265d2be18fb7dc2ac0e4a031be3bf43",
+    "revision/stage5/plots.py": "24173778b1b39b6b6bfc0d12d456b947d0ad7fb65542149c3bfc1f229a4a6d3c",
+    "revision/stage5/baselines.py": "bc28d8cda4e5720bbe7fa4b304783fcd8e42b94ef32dedeba16dce9e4c93f5d5",
+    "revision/stage5/freeze.py": "4919bbd5dcca3b21662feeb1b256f0a2be2381e31af80c75b4e79c655eaff244",
+    "revision/stage5/evaluate.py": "7e184531ba6a8025240be0e2015b8fdb737c9dddaa7e126d0f2bff5f0afa59d9",
+    "revision/stage5/__init__.py": "27cb6f9c3064c876dadd142cb24d3650e9c4c2eb5852a92a574cd983b46507ca",
+    "revision/reports/stage4_rng_isolated/forecasts.csv": "f8092889f30879176b9814ddc7fc4a0dcdc6c61cf5e9eea27437d462a9a12178",
+    "revision/stage3/pipeline.py": "5666633f659b6d397e20a2a84f49d251a4a2aaf96b5c824ed9d997dec23b6d2b",
+    "revision/stage3/protocol.json": "d9fecbe62616b2ed743ea2dda2a4e69daac8bd99dcb03d725b8925bed52cbfeb",
+    "revision/stage4/train.py": "36ce8a863300278b1e101dab0efd15400c83baaec8828dea8e5affe8d6a1c397",
+    "revision/evaluation/contract.py": "608378645c801db135ca3de9bbeb6b3fe1a37daa107818a1412fb92108c3132e",
+    "revision/reports/stage5/sources/main_evaluation_baseline-rule.py": "7ac600bbf329aac5e9000d41a665c5bf779abd01a95ad8414e6f9580e1be3dc2",
+    "revision/reports/stage5/sources/main_manuscript_energyawareupf.tex": "848d907f645476ee0500f48e8a3c8afcd327a67c6c2c406cb4142a5154500c9d",
+    "revision/reports/stage5/sources/main_config.yaml": "474c5c212c4166f30f003a183f4cc09f98eaf8187b87345cf6e70172f8985206",
+    "revision/reports/stage5/sources/main_baseline_rule.py": "ce360ad2c11c4861c5a78b51436d4fe8b29cd35651027f2ff44fe073b2e748cc",
+    "revision/reports/stage5/sources/Dynamic_UPF_IFIP_2025.pdf": "8bd93dbfaa6106abbe5770a255bd51d050dafcbd60dc21d33f7322361dd61da0",
+    "revision/reports/stage5/sources/slices_published.txt": "8e820fbc7fe41e69cb20148e8dd01033c8fc08f763df8c12c4eacb85440c6a2b",
+    "revision/reports/stage5/sources/main_compile_baselines_table.py": "cbde2e71c824e68ee2f0cae4f72cdb6376326f363a46938117f2e8cb63fc9c0a"
+  },
+  "user_uploaded_source": {
+    "path": "revision/reference/Dynamic_UPF_Cyprus_2025_SLICES.pdf",
+    "sha256": "e26ef6eebf3ad96ba01f8bac619f69c96da2dc9bbc1b44ff76586ea6c0ef50ea",
+    "origin": "User uploaded during Stage 5; inspected read-only"
+  },
+  "existing_selected_policy_bundles": {
+    "ppo_42": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/selection.json",
+      "selection_sha256": "73f987e5cb5486e478b8a7635f4de331c9ce54d7d9cc9cf2d4a1b63f29076266",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304/bundle.json": "4d13ddfde41991c5835692559c3e8a0e9aa0f7cfa242d208c966e416a20297a3",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304/policy.zip": "4cf7d202805ecc1d8d64fcc0ff734d1e2df90f86f5ea174b91f5d6229155437e",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_42/checkpoint_98304/normalizer.pkl": "be19c2b3872ee0e7e959182d1a32e22ed7561d562dd6a88d4a3ad70f62c6dab2"
+      }
+    },
+    "ppo_123": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/selection.json",
+      "selection_sha256": "0143ebf0d507582ffed0f5e447c3a19727ea9e15652e74e9abc1f1d6d68d878b",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608/bundle.json": "fd8be630c15a6077e1d0896615fd4d8b67f0962fa968b57bd1090da2890d8789",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608/policy.zip": "c681bf3446e8174798357dfb97e5d13e5c69d255b54003d87b700ecc7446ab70",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_123/checkpoint_196608/normalizer.pkl": "a65327fcb12e4a0a8316773e7c8cd92bb6991c1b4f78ae0601d4b8f10c577dd1"
+      }
+    },
+    "ppo_456": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/selection.json",
+      "selection_sha256": "37f54beefb04205898e0d3c785d329d2ff7febf0210e63d05e1c5de093c44d2b",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576/bundle.json": "096eb597a194aea7993d322378e9d6b2b51911ecf236a2ff3630c1f9fb6d9452",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576/policy.zip": "48878982f06752b90197f842e8261f698b9c1132dc7254974102595e9f56cac5",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_456/checkpoint_24576/normalizer.pkl": "56377aba8dbe7f59dd5f10bf5407ebda9715d527fac153ae45ffaaddde82f30b"
+      }
+    },
+    "ppo_789": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/selection.json",
+      "selection_sha256": "64d753b05734ae65af5ed13f4c33c2bb2f47383affd42e7e41a4d0af12a5ffa5",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576/bundle.json": "80fec136b8c928f8b927c4065807f76844fa7591889da018eb263a8260f09448",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576/policy.zip": "c0cea3fb91c4fc8f243a56dc74bf7f721e6e1faaa3c85b20f4ad2d70c5fe625d",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_789/checkpoint_24576/normalizer.pkl": "5cb010a8f716fe417c5e6d084315ab580c4de38b343649f5ce0234abd65d1eb2"
+      }
+    },
+    "ppo_1024": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/selection.json",
+      "selection_sha256": "8518b089faad78136a5816dead685567dda1978829cb11377bc46e1e8ebc17db",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768/bundle.json": "f3124247e03f485562382c6dba7b57f1425f9d48d2c4505d733f345187b97803",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768/policy.zip": "7c6fa4c69feb9e6e5b49343b60bb8ad007e6039a0d70eb2a70a4da2f256c66b8",
+        "revision/models/stage4_rng_isolated/controllers/ppo/seed_1024/checkpoint_32768/normalizer.pkl": "42803f2b60cbca26bf9bc851057f21bc4853bd9b9c60e65f4dcb0400581c839e"
+      }
+    },
+    "recurrent_ppo_42": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/selection.json",
+      "selection_sha256": "2aec5a9248545a54cddfe8620ee36c6b9fa6f1a035dec78eaed3fbee93537e8a",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912/bundle.json": "e63d25293ca5c102e3eab7f78b1275a6fcefc9097340b94558b8494ebf285ac6",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912/policy.zip": "c8da81012e73388b724cbd9012630a69b6843d67a0564639e1bfaa8d04ebb277",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_42/checkpoint_294912/normalizer.pkl": "210ffd12db9e795e21fa0180dde244a81c3f52bf290c90dbe0d019b28f9963f8"
+      }
+    },
+    "recurrent_ppo_123": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/selection.json",
+      "selection_sha256": "e1d8b177c592bdc6289a18c4cec70d4afcd22ecc2f6954f77217cae82e8e9f23",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000/bundle.json": "fe788ddb067fac290fd8555e683e4317b312388b2dd556daf25b11e4e99b7cab",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000/policy.zip": "5584e1b421090d8f1b7292c3b04587f7380e0c8a0974d0ec3dbcd67f2b40d883",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_123/checkpoint_300000/normalizer.pkl": "1096d3df2cd0eb3fdadea824418981b7b34448e607b10015a18cdbf118c53cea"
+      }
+    },
+    "recurrent_ppo_456": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/selection.json",
+      "selection_sha256": "d424ddad0563bc3c2c3667b9b9dcc37d1330155578588f954649db2e4046d4ce",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576/bundle.json": "418992195e207a18fa3414e8bdd1ae3dc9c6900a9e6ca97724b67f9727ff24de",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576/policy.zip": "c5cfa5f5222f79892efca350cf3b7646a9e92ea51771c93ea0dd331066f43653",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_456/checkpoint_24576/normalizer.pkl": "679ec6f48d3c24c78081b7231146675abb2b0f5dfd7655a2806c0f0d2bc6ac82"
+      }
+    },
+    "recurrent_ppo_789": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/selection.json",
+      "selection_sha256": "5f30428353ec84cf5ff0d4e80652801b69c8f57bba63fedfeb76f41306de65a0",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336/bundle.json": "c159ad44aca22d2292376bee31498f4ca086f3ee71b8efeb6d045931e6447539",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336/policy.zip": "9ec8f5f6d50cd6c7a6cfc4958f30bb7b10b699acb4afd5fe4d8599e6d8762506",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_789/checkpoint_270336/normalizer.pkl": "4d90e487be30ed968c2c7f82723ab95c6c1d1df5d79bc976ed47f9929b3f76aa"
+      }
+    },
+    "recurrent_ppo_1024": {
+      "selection_path": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/selection.json",
+      "selection_sha256": "0b15d010fbe7fca634b507bd9b7ba4ae2efb7cf6d86ace0b7eefe6472a3b0ed5",
+      "selected_checkpoint": "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184",
+      "artifacts": {
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184/bundle.json": "38901195744dbddd07b89f3b30feb30008bb9686834176a6eec67eea3f7bd66c",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184/policy.zip": "a021ed066303ef85673e5e983520919e50d8b6dd8b9b5f05f6f6206e312ba782",
+        "revision/models/stage4_rng_isolated/controllers/recurrent_ppo/seed_1024/checkpoint_221184/normalizer.pkl": "6b24f89a8d3eb28c0c130b1b3ceebc2233afe8dad907f9504026a3ec7999e338"
+      }
+    }
+  },
+  "new_files": {
+    "revision/FINAL_BASELINE_COMPARISON.md": "a1ed11ce507b3d50c4e6830c0a3ca64258145cdf40115a630607d2603b173966",
+    "revision/tests/test_stage5.py": "9f22cb47b983ed1707155e69b66f1081e22d5e8fa9af04a8ecd12924ed8bce43",
+    "revision/stage5/plots.py": "24173778b1b39b6b6bfc0d12d456b947d0ad7fb65542149c3bfc1f229a4a6d3c",
+    "revision/stage5/seal.py": "08d6f2274308706636d4562050152206dd00088032ebe6a195748ae2ae82eaab",
+    "revision/stage5/protocol.json": "96b032e670f342d70573a212c77df4029265d2be18fb7dc2ac0e4a031be3bf43",
+    "revision/stage5/baselines.py": "bc28d8cda4e5720bbe7fa4b304783fcd8e42b94ef32dedeba16dce9e4c93f5d5",
+    "revision/stage5/freeze.py": "4919bbd5dcca3b21662feeb1b256f0a2be2381e31af80c75b4e79c655eaff244",
+    "revision/stage5/write_report.py": "1cf633e6a2ac5db989a27e120a88a02fc9575cc73ed961beca432f65872e65ef",
+    "revision/stage5/README.md": "f1a292d73984190d6379a593674f936c7e99a99166a26069170f644665655973",
+    "revision/stage5/evaluate.py": "7e184531ba6a8025240be0e2015b8fdb737c9dddaa7e126d0f2bff5f0afa59d9",
+    "revision/stage5/THRESHOLD_HYSTERESIS_AUDIT.md": "6d2d384fdfd2b65efe78f3902fa1582230d35648bc3f17cd6bb8164cd0c859f8",
+    "revision/stage5/__init__.py": "27cb6f9c3064c876dadd142cb24d3650e9c4c2eb5852a92a574cd983b46507ca",
+    "revision/reference/Dynamic_UPF_Cyprus_2025_SLICES.pdf": "e26ef6eebf3ad96ba01f8bac619f69c96da2dc9bbc1b44ff76586ea6c0ef50ea",
+    "revision/reports/stage5_prior_sha256.json": "6873f0a58a9dbd814f9ddd9769ad233240d3957b4d06a55cc4a90c7a78e2716b",
+    "revision/reports/stage5/baseline_frozen.json": "7b4701ab7792d8c0126221b064cbbe6d752b9c66354657da8a9e91bac08d316f",
+    "revision/reports/stage5/profiling_freeze.log": "ae572bd9b3db192c6e35e33e0d6697a0264ffb94a23d7a9b46fd00b0266bd4ab",
+    "revision/reports/stage5/comparison.json": "4246eb6a7f02df63b0b83d16d87167fa5b0be05bec5fd0e327fc851f99e35584",
+    "revision/reports/stage5/recurrent_ppo_42_steps.csv": "69af0600c4fbdd1a81a86363aa44d5959d959ae08483432deb264724fe400bfc",
+    "revision/reports/stage5/ppo_456_steps.csv": "427f847f434403b8db32659eb56a96c0b064d2ed06a54f22d69bb2f97c188fde",
+    "revision/reports/stage5/static_2_steps.csv": "ace6ea09e482b2ef50f3a78f100644843ec2b8c510a0b36b1ea510ee88793433",
+    "revision/reports/stage5/threshold_audit.json": "134f2f26e87ea1667bfde47d4deaabd3e3a87ab768c50e54ab52b111992f20f6",
+    "revision/reports/stage5/ppo_123_steps.csv": "faa7bb3b6d48f0ef441c4b3096e26b2f63fa55465e9afba0d52ab04901c68345",
+    "revision/reports/stage5/recurrent_ppo_789_steps.csv": "cfa29fe799d5a38b54799e7cd30b47c75124057620afbbf6c66cf40c31592901",
+    "revision/reports/stage5/ppo_1024_steps.csv": "293147bd6f2d835da9d445b54de62531ff9b2cf94f93322f0b6103a7041433bf",
+    "revision/reports/stage5/ppo_789_steps.csv": "29000b7e81f87cfbe5b747490ead77987c8796288f0931649094256e0eddccd1",
+    "revision/reports/stage5/strong_rule_stage4_steps.csv": "c1767851a7ba7d33b221217d8dc51f579fc18cf97b405b92979d7fa8fec2dc9e",
+    "revision/reports/stage5/plots.log": "3ab32fb4fe06bb68301679732345c00c78eb9e16068d39945bd173b3ded65580",
+    "revision/reports/stage5/static_1_steps.csv": "0321cdb918d6b16c19d59df7969bf4366617cc909fa91b3b8201e9f72a91b315",
+    "revision/reports/stage5/integrity.json": "7c7d741cd02a76dbf2b15a9fe94e43d2f44efe0f1a6ec3ceecd25c27c344a654",
+    "revision/reports/stage5/historical_source_inventory.json": "8dad48a29a0aafd40efa9d3d743e8de96669d1b65ce10b22cf6df8e98b13ad35",
+    "revision/reports/stage5/recurrent_ppo_123_steps.csv": "dec0dbce62d81041b8cfef75432dcf799f32839152b08a805b5a07ffbd963fdd",
+    "revision/reports/stage5/comcom_historical_steps.csv": "e098b610de8cdae1a36e0eb80e58e466b51bf8492572a41746d692a068803d5f",
+    "revision/reports/stage5/family_summary.json": "0c1dbc94c1bdaa5d947a7e90ac48b5e5416ded61ed5e224b5b87dfb6d32dae25",
+    "revision/reports/stage5/slices_extended_manual_steps.csv": "956d08c84297efaccc87ee5e0ff644abd192724b5bdd629f78228c1c21cdd0fe",
+    "revision/reports/stage5/evaluation.log": "c1eb271093bdb6d6908126c68fdaa340fc1f0c50437fc0d61a9616ee93a7c6e0",
+    "revision/reports/stage5/tests.log": "43c1827b03a174bb8701a22093c2fc71aea831040c5ee6bf866e7a1fddaba405",
+    "revision/reports/stage5/recurrent_ppo_456_steps.csv": "fc9557c63e5e7707753fc22128baac237bdbee6b9a90da3c9f71f8f5d026658b",
+    "revision/reports/stage5/static_0_steps.csv": "91c46832f6da981b264118d19af3bbf58086050c05210f88d1ff8c07269ad535",
+    "revision/reports/stage5/profiling_curves.csv": "b021ff1b5400cc31be2ac61ed43c1501c824ac3992a139229a2380fd0c729277",
+    "revision/reports/stage5/ppo_42_steps.csv": "5c7c2aec2509d5bf15ee6c30c4f77410a64a348314ddfa0265a2ed0564e8200f",
+    "revision/reports/stage5/preflight_tests.log": "ae2bdf2acb4e1775e0a14c8f5aca0e25cae66db135a930bf39d92b5c1e7d3dfe",
+    "revision/reports/stage5/uploaded_source_reconciliation.json": "e783be0a96ce6e9b4f87e14254ee5dff46fd9e99d5523b0784a082c12bfd2963",
+    "revision/reports/stage5/recurrent_ppo_1024_steps.csv": "7af416dd8c3778681915159427569552a3cf247969ca03cbe1f03eeee2b7220b",
+    "revision/reports/stage5/comparison.csv": "fab0ec90bb2f4d74bd2641f9a2249d451e5f9d7f6c228722ff6be98332ec860f",
+    "revision/reports/stage5/hysteresis_regions.csv": "22ff2ff3e9019f8de08cea1210854805490a54bcb1c8989743cd437d4dfc187d",
+    "revision/reports/stage5/sources/main_evaluation_baseline-rule.py": "7ac600bbf329aac5e9000d41a665c5bf779abd01a95ad8414e6f9580e1be3dc2",
+    "revision/reports/stage5/sources/slices_uploaded.txt": "9ee59a3fa06810a339bfccd9545bec4933f17f2df77c6810969b2f8e0a849432",
+    "revision/reports/stage5/sources/main_manuscript_energyawareupf.tex": "848d907f645476ee0500f48e8a3c8afcd327a67c6c2c406cb4142a5154500c9d",
+    "revision/reports/stage5/sources/main_config.yaml": "474c5c212c4166f30f003a183f4cc09f98eaf8187b87345cf6e70172f8985206",
+    "revision/reports/stage5/sources/main_utils.py": "5fdc0616c8973981460036f682c9b184355c7c6164e1fbebf405267b83bd576c",
+    "revision/reports/stage5/sources/main_baseline_rule.py": "ce360ad2c11c4861c5a78b51436d4fe8b29cd35651027f2ff44fe073b2e748cc",
+    "revision/reports/stage5/sources/Dynamic_UPF_IFIP_2025.pdf": "8bd93dbfaa6106abbe5770a255bd51d050dafcbd60dc21d33f7322361dd61da0",
+    "revision/reports/stage5/sources/slices_published.txt": "8e820fbc7fe41e69cb20148e8dd01033c8fc08f763df8c12c4eacb85440c6a2b",
+    "revision/reports/stage5/sources/main_compile_baselines_table.py": "cbde2e71c824e68ee2f0cae4f72cdb6376326f363a46938117f2e8cb63fc9c0a",
+    "revision/reports/stage5/sources/main_results__baseline__rule_thresholds.json": "4e826749c763cb836e465c0197217e4714ab2dd23d347967d8814cf9f69441ba",
+    "revision/reports/stage5/sources/main_experiments__results__Baselines__rule_thresholds.json": "b577de862cab079257e37c947a78bc282a0f7661fe332fead296b9bdca2135a6",
+    "revision/reports/stage5/figures/energy_comparison.pdf": "0f936bb366e635ef2b248a71fc534834075df118a9aee9f6dc07556a95ad24a1",
+    "revision/reports/stage5/figures/configuration_timelines.pdf": "4b327e1117ae0c39538989da7cf8cfae6151659c753982173714e241d86daa80",
+    "revision/reports/stage5/figures/threshold_hysteresis.png": "0f3f13ecab6b74d812959ab33bda662731665d3076363f0e19fe99014c755a66",
+    "revision/reports/stage5/figures/threshold_hysteresis.pdf": "1502f9245965aa28d9c396525bb2fbb9686c17b9a6c2c8ccd6a062cc450eac3b",
+    "revision/reports/stage5/figures/energy_comparison.png": "55edbee4c33ee8ae236989b24f50f758814df59c140ab3c508ab372ba03e5f31",
+    "revision/reports/stage5/figures/configuration_timelines.png": "d363fba04bdb99903a4a7b82c53a8ce8237c3195c7cb42fbd0d548ec1622693f"
+  },
+  "new_file_count_excluding_this_manifest": 62,
+  "self_hash_note": "This manifest excludes itself. Freeze identity hashes canonical payload before adding freeze_id."
+}

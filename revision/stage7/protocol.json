@@ -1,0 +1,163 @@
+{
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "algorithms": [
+    "ppo",
+    "recurrent_ppo"
+  ],
+  "n_envs": 4,
+  "n_steps": 1024,
+  "batch_size": 64,
+  "n_epochs": 10,
+  "learning_rate": 0.0001,
+  "gamma": 0.995,
+  "gae_lambda": 0.9,
+  "ent_coef": 0.15,
+  "clip_range": 0.2,
+  "target_kl": 0.03,
+  "checkpoint_selection": "Netflix validation total reward; earlier step breaks ties; no YouTube selection",
+  "recurrent_hidden": 128,
+  "shared_lstm": true,
+  "rule": {
+    "selection": "forecast_score_feasibility_then_minimum_power",
+    "target": 0.9,
+    "fallback": "maximum_predicted_qos_then_minimum_power",
+    "relative_power_deadband": 0.02
+  },
+  "final_test_allowed": false,
+  "risk_acceptance_threshold": null,
+  "no_search_expansion": true,
+  "id": "comcom.observation-ablation.v1",
+  "requested_timesteps": 300000,
+  "checkpoint_timesteps": [
+    24576,
+    32768,
+    49152,
+    73728,
+    98304,
+    122880,
+    147456,
+    172032,
+    196608,
+    221184,
+    245760,
+    270336,
+    294912,
+    300000
+  ],
+  "exact_budget": "Regular 1024-step rollouts; last rollout 248 steps/environment, 992 interactions, trained normally. No discarded samples or 303104-step overshoot.",
+  "interpretation": {
+    "late_curve_points": 3,
+    "matched_training_budget": 32768,
+    "selection_and_endpoint_reported": true,
+    "historical_stage4_reference_only": true
+  },
+  "restrictions": [
+    "no_forecast_refit",
+    "no_twin_reward_change",
+    "no_final_test",
+    "no_manuscript_commit_push"
+  ],
+  "schemas": [
+    "instant",
+    "history",
+    "forecast",
+    "hybrid"
+  ],
+  "history_slots": 96,
+  "forecast_horizon_slots": 1,
+  "forecast_input_slots": 96,
+  "workers": 12,
+  "policy_fits": 40,
+  "forecast_services": {
+    "netflix": "revision/reports/forecast_service/netflix/service.json",
+    "youtube": "revision/reports/forecast_service/youtube/service.json"
+  },
+  "forecast_ledgers": {
+    "netflix": "revision/reports/forecast_service/netflix/forecasts.csv",
+    "youtube": "revision/reports/forecast_service/youtube/forecasts.csv"
+  },
+  "primary_pairs": [
+    [
+      "ppo_hybrid",
+      "ppo_history"
+    ],
+    [
+      "recurrent_ppo_hybrid",
+      "recurrent_ppo_history"
+    ],
+    [
+      "recurrent_ppo_hybrid",
+      "ppo_hybrid"
+    ],
+    [
+      "recurrent_ppo_history",
+      "ppo_history"
+    ]
+  ],
+  "primary_interaction": "(recurrent_ppo_hybrid-ppo_hybrid)-(recurrent_ppo_history-ppo_history)",
+  "statistics": {
+    "primary_endpoint": "Selected-checkpoint Netflix validation energy Wh",
+    "paired_design": "Prespecified seed blocks across eight configurations on identical workload; dimension/algorithm changes do not create identical random streams. Five seeds are independent within each configuration, not physical replications.",
+    "primary_test": "Exact two-sided sign-flip test on mean paired differences; symmetry/exchangeability assumption disclosed; five primary tests including interaction; Holm adjustment.",
+    "interval": "95% Student-t interval for mean seed-block energy difference, descriptive and normal-difference conditional with n5; not workload/model uncertainty.",
+    "secondary": "Instant-vs-forecast and all SEC/reward/endpoint/YouTube comparisons descriptive; no extra significance claims",
+    "equivalence_margin": null
+  },
+  "baseline_versions": [
+    "slices_extended_manual_26",
+    "slices_recalibrated_v2",
+    "strong_rule_stage4",
+    "comcom_historical"
+  ],
+  "recalibrated_margins": {
+    "netflix": 14.268830938789403,
+    "youtube": 8.353153828365365
+  },
+  "transfer": "Evaluate all frozen Netflix selections and endpoints on YouTube validation only after all40 selections are frozen; target-specific external forecasting, no controller fitting/selection on YouTube.",
+  "performance_accounting": "CPU process time and wall time, whole-worker peak RSS, model parameter bytes, per-call inference latency on selected validation trajectory. CPU1 thread/worker; no end-to-end NWDAF deployment claim.",
+  "comparison_to_stage4": "Historical reference only: W95 vs W96 and forecast/provider-selection/cold-start changes confound direct attribution to improved forecast quality.",
+  "historical_stage4_forecast": {
+    "seed": 42,
+    "max_epochs": 100,
+    "patience": 15,
+    "min_delta_scaled_mse": 1e-06,
+    "lr_patience": 6,
+    "lr_factor": 0.5,
+    "min_lr": 1e-05,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "candidates": [
+      "lstm_load",
+      "lstm_calendar"
+    ],
+    "prefix_boundaries": [
+      192,
+      608,
+      1024,
+      1440,
+      1856,
+      2016
+    ],
+    "prefix_internal_training_fraction": 0.8,
+    "cold_start_indices_half_open": [
+      96,
+      192
+    ],
+    "units": [
+      128,
+      64
+    ],
+    "window": 96,
+    "output": "softplus_scaled_load",
+    "recurrent_dropout": 0.0,
+    "dropout": 0.2,
+    "selection": "validation_rmse; prefix early stopping uses only earlier prefix internal validation"
+  },
+  "forecast": "frozen_stage6_service_no_refit"
+}

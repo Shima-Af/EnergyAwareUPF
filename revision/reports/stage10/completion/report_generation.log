@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 159, in _get_module_details
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/EnergyAwareUPF/revision/stage10/completion/write_report.py", line 167
+    f"`Emax_train={reward['energy_scale_wh']:.15g} Wh` comes from **69,120** '
+    ^
+SyntaxError: unterminated f-string literal (detected at line 167)

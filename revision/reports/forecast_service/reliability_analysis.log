@@ -1,0 +1,473 @@
+2026-10-23 15:57:02.807878: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+/home/ubuntu/EnergyAwareUPF/revision/stage3/common.py:30: RuntimeWarning: divide by zero encountered in scalar divide
+  'bias_mbps':float(e.mean()),'r2':float(1-(e**2).sum()/((y-y.mean())**2).sum())}
+/home/ubuntu/EnergyAwareUPF/revision/stage3/common.py:30: RuntimeWarning: divide by zero encountered in scalar divide
+  'bias_mbps':float(e.mean()),'r2':float(1-(e**2).sum()/((y-y.mean())**2).sum())}
+/home/ubuntu/EnergyAwareUPF/revision/stage3/common.py:30: RuntimeWarning: divide by zero encountered in scalar divide
+  'bias_mbps':float(e.mean()),'r2':float(1-(e**2).sum()/((y-y.mean())**2).sum())}
+/home/ubuntu/EnergyAwareUPF/revision/stage3/common.py:30: RuntimeWarning: divide by zero encountered in scalar divide
+  'bias_mbps':float(e.mean()),'r2':float(1-(e**2).sum()/((y-y.mean())**2).sum())}
+/home/ubuntu/EnergyAwareUPF/revision/stage3/common.py:30: RuntimeWarning: divide by zero encountered in scalar divide
+  'bias_mbps':float(e.mean()),'r2':float(1-(e**2).sum()/((y-y.mean())**2).sum())}
+{
+  "comparisons": {
+    "netflix": {
+      "development": {
+        "persistence": {
+          "n": 1008,
+          "mae_mbps": 15.713092576854027,
+          "rmse_mbps": 21.807951847481142,
+          "bias_mbps": 0.08018784485922299,
+          "r2": 0.9170749437917453,
+          "median_error_mbps": 0.4348739951314968,
+          "p05_error_mbps": -35.18811036360054,
+          "p95_error_mbps": 33.76779668758579,
+          "p95_absolute_error_mbps": 45.2492227533089,
+          "max_absolute_error_mbps": 99.1220531626063
+        },
+        "seasonal_daily": {
+          "n": 1008,
+          "mae_mbps": 27.931253293151805,
+          "rmse_mbps": 40.17876707835634,
+          "bias_mbps": 4.284252307620958,
+          "r2": 0.7185189079659379,
+          "median_error_mbps": 1.3341591295147097,
+          "p05_error_mbps": -60.2203060471813,
+          "p95_error_mbps": 73.8672281105801,
+          "p95_absolute_error_mbps": 88.95588822495687,
+          "max_absolute_error_mbps": 175.99130951048443
+        },
+        "lstm": {
+          "n": 1008,
+          "mae_mbps": 30.052274643886385,
+          "rmse_mbps": 38.82324543930519,
+          "bias_mbps": 13.871707684972097,
+          "r2": 0.7371913287258034,
+          "median_error_mbps": 14.046523082671875,
+          "p05_error_mbps": -45.02000263885078,
+          "p95_error_mbps": 78.79970530448979,
+          "p95_absolute_error_mbps": 83.55937936353746,
+          "max_absolute_error_mbps": 129.4115256618859
+        },
+        "gru": {
+          "n": 1008,
+          "mae_mbps": 22.24720231192653,
+          "rmse_mbps": 29.361833849757815,
+          "bias_mbps": 6.910975629883267,
+          "r2": 0.8496780610213359,
+          "median_error_mbps": 6.554561113664345,
+          "p05_error_mbps": -39.96058964407189,
+          "p95_error_mbps": 54.996485745818,
+          "p95_absolute_error_mbps": 61.6950460456946,
+          "max_absolute_error_mbps": 111.79328530544058
+        },
+        "boosted_poisson": {
+          "n": 1008,
+          "mae_mbps": 14.877297419558376,
+          "rmse_mbps": 19.919237993490828,
+          "bias_mbps": 1.9931199813512261,
+          "r2": 0.9308166708776843,
+          "median_error_mbps": 2.1741272423332276,
+          "p05_error_mbps": -29.962878656185353,
+          "p95_error_mbps": 35.16732061929375,
+          "p95_absolute_error_mbps": 40.88302137119078,
+          "max_absolute_error_mbps": 91.69805144639437
+        }
+      },
+      "calibration": {
+        "persistence": {
+          "n": 336,
+          "mae_mbps": 15.0353558557495,
+          "rmse_mbps": 20.30226521645371,
+          "bias_mbps": -0.1783885883529983,
+          "r2": 0.8825734158373747,
+          "median_error_mbps": 0.6121522254224061,
+          "p05_error_mbps": -33.98248334241424,
+          "p95_error_mbps": 28.418086616310834,
+          "p95_absolute_error_mbps": 43.37467289075428,
+          "max_absolute_error_mbps": 75.51798374021054
+        },
+        "seasonal_daily": {
+          "n": 336,
+          "mae_mbps": 26.53211927208898,
+          "rmse_mbps": 35.27688844822356,
+          "bias_mbps": 0.5637051103753139,
+          "r2": 0.6454659288954554,
+          "median_error_mbps": -2.839060157959892,
+          "p05_error_mbps": -55.882019367036875,
+          "p95_error_mbps": 66.10854389687776,
+          "p95_absolute_error_mbps": 72.18888002341791,
+          "max_absolute_error_mbps": 123.54272330674247
+        },
+        "lstm": {
+          "n": 336,
+          "mae_mbps": 29.09867803631479,
+          "rmse_mbps": 39.082219385862125,
+          "bias_mbps": 15.044318424381695,
+          "r2": 0.5648531232566523,
+          "median_error_mbps": 9.978774526192154,
+          "p05_error_mbps": -34.60345483993162,
+          "p95_error_mbps": 84.10461757387895,
+          "p95_absolute_error_mbps": 84.10461757387895,
+          "max_absolute_error_mbps": 138.14379461765844
+        },
+        "gru": {
+          "n": 336,
+          "mae_mbps": 19.142213589686897,
+          "rmse_mbps": 23.983137659773796,
+          "bias_mbps": 14.549572000478726,
+          "r2": 0.8361337803991027,
+          "median_error_mbps": 13.838937650559359,
+          "p05_error_mbps": -15.684742845465912,
+          "p95_error_mbps": 47.40228938444293,
+          "p95_absolute_error_mbps": 48.17582104493475,
+          "max_absolute_error_mbps": 70.18018805541631
+        },
+        "boosted_poisson": {
+          "n": 336,
+          "mae_mbps": 14.268830938789403,
+          "rmse_mbps": 18.547245755461688,
+          "bias_mbps": 2.7981950383617207,
+          "r2": 0.9019976957196381,
+          "median_error_mbps": 3.1283739141180895,
+          "p05_error_mbps": -27.61023271743789,
+          "p95_error_mbps": 33.40952626538007,
+          "p95_absolute_error_mbps": 37.75498692734669,
+          "max_absolute_error_mbps": 65.52253905317328
+        }
+      },
+      "secondary_validation": {
+        "persistence": {
+          "n": 504,
+          "mae_mbps": 15.27421084777909,
+          "rmse_mbps": 20.810623352032184,
+          "bias_mbps": 0.24748577809960023,
+          "r2": 0.9214018673243052,
+          "median_error_mbps": 1.239465227952726,
+          "p05_error_mbps": -35.4373964824165,
+          "p95_error_mbps": 33.596127657349705,
+          "p95_absolute_error_mbps": 42.82905688690974,
+          "max_absolute_error_mbps": 86.53103643744893
+        },
+        "seasonal_daily": {
+          "n": 504,
+          "mae_mbps": 19.712853384158294,
+          "rmse_mbps": 25.86468887907411,
+          "bias_mbps": -2.2263993251287633,
+          "r2": 0.8785894105581192,
+          "median_error_mbps": -1.1339210298833784,
+          "p05_error_mbps": -45.92747128601461,
+          "p95_error_mbps": 43.72672937325244,
+          "p95_absolute_error_mbps": 52.319152333541005,
+          "max_absolute_error_mbps": 102.64000254519007
+        },
+        "lstm": {
+          "n": 504,
+          "mae_mbps": 28.313114384882592,
+          "rmse_mbps": 36.19050437270791,
+          "bias_mbps": -2.7413274145953954,
+          "r2": 0.7622988287955752,
+          "median_error_mbps": 4.659147933452747,
+          "p05_error_mbps": -76.05071984390793,
+          "p95_error_mbps": 44.5870181706841,
+          "p95_absolute_error_mbps": 76.05071984390788,
+          "max_absolute_error_mbps": 145.00604800313727
+        },
+        "gru": {
+          "n": 504,
+          "mae_mbps": 13.709878729535166,
+          "rmse_mbps": 17.907721393749014,
+          "bias_mbps": -2.2095278711238313,
+          "r2": 0.9418000370423323,
+          "median_error_mbps": -1.0988274511159588,
+          "p05_error_mbps": -33.68075216806888,
+          "p95_error_mbps": 22.370668668234995,
+          "p95_absolute_error_mbps": 35.054064163183234,
+          "max_absolute_error_mbps": 82.06406191915289
+        },
+        "boosted_poisson": {
+          "n": 504,
+          "mae_mbps": 12.659981218877036,
+          "rmse_mbps": 16.848565422297888,
+          "bias_mbps": 0.4310872271894645,
+          "r2": 0.9484809427400895,
+          "median_error_mbps": 2.256821017889873,
+          "p05_error_mbps": -29.11493115701112,
+          "p95_error_mbps": 25.734468649021437,
+          "p95_absolute_error_mbps": 32.228550425619076,
+          "max_absolute_error_mbps": 68.47510780381029
+        }
+      },
+      "prequential_training_service": {
+        "n": 1920,
+        "mae_mbps": 15.426802224816553,
+        "rmse_mbps": 20.794659241404613,
+        "bias_mbps": 1.5347001986839524,
+        "r2": 0.9232294317071936,
+        "median_error_mbps": 2.073570568171263,
+        "p05_error_mbps": -32.30113803049906,
+        "p95_error_mbps": 34.627320509616254,
+        "p95_absolute_error_mbps": 41.81653622468939,
+        "max_absolute_error_mbps": 101.04511775388869
+      },
+      "selected_family": "boosted_poisson",
+      "old_stage4_training_ledger_descriptive": {
+        "n": 1920,
+        "mae_mbps": 46.06068561089725,
+        "rmse_mbps": 66.33370456078569,
+        "bias_mbps": 26.879732304474373,
+        "r2": 0.21880466045120317,
+        "median_error_mbps": 19.669707945216487,
+        "p05_error_mbps": -53.9589337883388,
+        "p95_error_mbps": 157.89191865174985,
+        "p95_absolute_error_mbps": 166.71468036011277,
+        "max_absolute_error_mbps": 248.89565301401728
+      }
+    },
+    "youtube": {
+      "development": {
+        "persistence": {
+          "n": 1008,
+          "mae_mbps": 10.762814854447157,
+          "rmse_mbps": 14.30381339092731,
+          "bias_mbps": 0.020209528485201095,
+          "r2": 0.9516433921369885,
+          "median_error_mbps": 0.42353411986507616,
+          "p05_error_mbps": -24.82334187860568,
+          "p95_error_mbps": 21.652255552597214,
+          "p95_absolute_error_mbps": 28.772275525010116,
+          "max_absolute_error_mbps": 81.03130747078593
+        },
+        "seasonal_daily": {
+          "n": 1008,
+          "mae_mbps": 21.356673924574284,
+          "rmse_mbps": 33.222767771680715,
+          "bias_mbps": 1.139397482627526,
+          "r2": 0.7391302164287737,
+          "median_error_mbps": 1.0812386579166393,
+          "p05_error_mbps": -53.368372095367,
+          "p95_error_mbps": 51.372569332083614,
+          "p95_absolute_error_mbps": 75.44548569216866,
+          "max_absolute_error_mbps": 177.3422520541805
+        },
+        "lstm": {
+          "n": 1008,
+          "mae_mbps": 21.833031700106314,
+          "rmse_mbps": 29.280468465479693,
+          "bias_mbps": 7.745114364017818,
+          "r2": 0.7973679217991825,
+          "median_error_mbps": 6.8283681870670705,
+          "p05_error_mbps": -36.58004491108123,
+          "p95_error_mbps": 48.194504974868345,
+          "p95_absolute_error_mbps": 56.210986651233874,
+          "max_absolute_error_mbps": 126.50431371923571
+        },
+        "gru": {
+          "n": 1008,
+          "mae_mbps": 16.62641271359666,
+          "rmse_mbps": 24.72285245572081,
+          "bias_mbps": 6.8182131048982715,
+          "r2": 0.8555394343698617,
+          "median_error_mbps": 5.657536134074277,
+          "p05_error_mbps": -28.687013476237066,
+          "p95_error_mbps": 39.5514288824284,
+          "p95_absolute_error_mbps": 47.1556563565598,
+          "max_absolute_error_mbps": 121.65343218192356
+        },
+        "boosted_poisson": {
+          "n": 1008,
+          "mae_mbps": 10.159851579262584,
+          "rmse_mbps": 14.191888112923955,
+          "bias_mbps": 1.7971054300120628,
+          "r2": 0.9523971983133663,
+          "median_error_mbps": 1.9778473115394206,
+          "p05_error_mbps": -20.86356734884731,
+          "p95_error_mbps": 22.562806631676793,
+          "p95_absolute_error_mbps": 28.147244021086472,
+          "max_absolute_error_mbps": 91.9822628414618
+        }
+      },
+      "calibration": {
+        "persistence": {
+          "n": 336,
+          "mae_mbps": 8.812118386356945,
+          "rmse_mbps": 11.300883334918575,
+          "bias_mbps": -0.025987940099374825,
+          "r2": 0.9520929728232128,
+          "median_error_mbps": 0.12636349124196045,
+          "p05_error_mbps": -19.237794072443474,
+          "p95_error_mbps": 17.692747537358073,
+          "p95_absolute_error_mbps": 21.152401282616218,
+          "max_absolute_error_mbps": 40.45993990491394
+        },
+        "seasonal_daily": {
+          "n": 336,
+          "mae_mbps": 15.786815391614493,
+          "rmse_mbps": 20.4089717705235,
+          "bias_mbps": 4.804881407702266,
+          "r2": 0.8437512006067012,
+          "median_error_mbps": 4.557041775113753,
+          "p05_error_mbps": -27.454555788161166,
+          "p95_error_mbps": 40.58709559808423,
+          "p95_absolute_error_mbps": 41.171485765361574,
+          "max_absolute_error_mbps": 63.23370891809536
+        },
+        "lstm": {
+          "n": 336,
+          "mae_mbps": 19.49599486870258,
+          "rmse_mbps": 24.236792423378766,
+          "bias_mbps": 14.122598250777777,
+          "r2": 0.779644078436068,
+          "median_error_mbps": 13.435222593121011,
+          "p05_error_mbps": -20.5289920180808,
+          "p95_error_mbps": 45.9565731068999,
+          "p95_absolute_error_mbps": 45.96381759972429,
+          "max_absolute_error_mbps": 65.42588264464149
+        },
+        "gru": {
+          "n": 336,
+          "mae_mbps": 13.205743071832492,
+          "rmse_mbps": 16.76184042572749,
+          "bias_mbps": 6.971907672498735,
+          "r2": 0.8946055255375475,
+          "median_error_mbps": 6.6865954442351985,
+          "p05_error_mbps": -19.149665545118154,
+          "p95_error_mbps": 32.0551211597013,
+          "p95_absolute_error_mbps": 32.89607494420397,
+          "max_absolute_error_mbps": 54.7035775125112
+        },
+        "boosted_poisson": {
+          "n": 336,
+          "mae_mbps": 8.353153828365365,
+          "rmse_mbps": 10.545565181429266,
+          "bias_mbps": 1.4745614986395128,
+          "r2": 0.9582828952643028,
+          "median_error_mbps": 2.2392538203629133,
+          "p05_error_mbps": -15.16028159574909,
+          "p95_error_mbps": 18.11852532758826,
+          "p95_absolute_error_mbps": 21.08278734252601,
+          "max_absolute_error_mbps": 32.03078716457654
+        }
+      },
+      "secondary_validation": {
+        "persistence": {
+          "n": 504,
+          "mae_mbps": 10.172133009793964,
+          "rmse_mbps": 13.068219957254415,
+          "bias_mbps": 0.22686273187211806,
+          "r2": 0.9538753138319893,
+          "median_error_mbps": 0.5812045175900362,
+          "p05_error_mbps": -21.150830332980036,
+          "p95_error_mbps": 21.218301167958867,
+          "p95_absolute_error_mbps": 25.26753006607163,
+          "max_absolute_error_mbps": 52.91235183078649
+        },
+        "seasonal_daily": {
+          "n": 504,
+          "mae_mbps": 13.43943739790137,
+          "rmse_mbps": 17.796631960904485,
+          "bias_mbps": -3.837023673917612,
+          "r2": 0.91445863200454,
+          "median_error_mbps": -2.444824103619796,
+          "p05_error_mbps": -36.597432473792175,
+          "p95_error_mbps": 23.533313841103826,
+          "p95_absolute_error_mbps": 38.91186420530922,
+          "max_absolute_error_mbps": 68.5895094730281
+        },
+        "lstm": {
+          "n": 504,
+          "mae_mbps": 15.681077639792223,
+          "rmse_mbps": 19.09875463552345,
+          "bias_mbps": 5.204207277129794,
+          "r2": 0.901483119522367,
+          "median_error_mbps": 6.881167635781111,
+          "p05_error_mbps": -27.101898754967007,
+          "p95_error_mbps": 30.674678525830096,
+          "p95_absolute_error_mbps": 36.29641039747109,
+          "max_absolute_error_mbps": 57.230319336114626
+        },
+        "gru": {
+          "n": 504,
+          "mae_mbps": 10.735204086709658,
+          "rmse_mbps": 13.786500683207917,
+          "bias_mbps": 1.889981993249711,
+          "r2": 0.9486655815690763,
+          "median_error_mbps": 2.3811117093056122,
+          "p05_error_mbps": -22.513342251787957,
+          "p95_error_mbps": 24.01179400611239,
+          "p95_absolute_error_mbps": 27.823937068271984,
+          "max_absolute_error_mbps": 43.96632272244452
+        },
+        "boosted_poisson": {
+          "n": 504,
+          "mae_mbps": 8.33151337313344,
+          "rmse_mbps": 10.895034009892075,
+          "bias_mbps": 0.24583223504288207,
+          "r2": 0.967940427019716,
+          "median_error_mbps": 1.013187098654793,
+          "p05_error_mbps": -19.14135837219587,
+          "p95_error_mbps": 16.776004836842915,
+          "p95_absolute_error_mbps": 21.49649654681884,
+          "max_absolute_error_mbps": 41.23431455586146
+        }
+      },
+      "prequential_training_service": {
+        "n": 1920,
+        "mae_mbps": 10.404698588947884,
+        "rmse_mbps": 13.661970681001318,
+        "bias_mbps": 0.2645302239112811,
+        "r2": 0.954681838491955,
+        "median_error_mbps": 1.016614409992016,
+        "p05_error_mbps": -22.75772975154016,
+        "p95_error_mbps": 21.39116434254221,
+        "p95_absolute_error_mbps": 27.52506819651593,
+        "max_absolute_error_mbps": 81.03130747078593
+      },
+      "selected_family": "boosted_poisson"
+    }
+  },
+  "costs": {
+    "netflix": {
+      "learned_artifacts": 15,
+      "neural_optimization_stages": 20,
+      "boosted_fits": 5,
+      "neural_epochs_total": 749,
+      "total_fit_seconds": 429.7765259761363,
+      "maximum_neural_epoch_budget": 1200,
+      "minimum_history_slots": 672
+    },
+    "youtube": {
+      "learned_artifacts": 15,
+      "neural_optimization_stages": 20,
+      "boosted_fits": 5,
+      "neural_epochs_total": 638,
+      "total_fit_seconds": 412.1972870439058,
+      "maximum_neural_epoch_budget": 1200,
+      "minimum_history_slots": 672
+    }
+  },
+  "historical_reference": [
+    {
+      "workload": "netflix",
+      "reference": "old Stage4 Netflix-trained, validation-selected calendar LSTM",
+      "role": "secondary_validation_descriptive_only",
+      "workload_specific_training": true,
+      "n": 504,
+      "mae_mbps": 20.506870539163533,
+      "rmse_mbps": 25.690383914959238,
+      "bias_mbps": 7.062607810452368,
+      "r2": 0.8802202950772433
+    },
+    {
+      "workload": "youtube",
+      "reference": "old Stage4 Netflix-trained, validation-selected calendar LSTM",
+      "role": "secondary_validation_descriptive_only",
+      "workload_specific_training": false,
+      "n": 504,
+      "mae_mbps": 26.871425170763445,
+      "rmse_mbps": 34.27589539160706,
+      "bias_mbps": 10.989490925908314,
+      "r2": 0.6826940833039072
+    }
+  ]
+}

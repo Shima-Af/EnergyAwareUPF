@@ -1,0 +1,27 @@
+{
+  "installation_policy": "wheels unpacked in /tmp; no installed environment modified",
+  "wheels": [
+    {
+      "wheel": "/tmp/comcom-task2a-compat-wheels/scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "sha256": "e5bf3d930aee75a65478df91ac1225ff89cd28e9ac7bd1196853a9229b6adb0b",
+      "unpacked_to": "/tmp/comcom-task2a-compat/sklearn172"
+    },
+    {
+      "wheel": "/tmp/comcom-task2a-compat-wheels/keras-3.11.3-py3-none-any.whl",
+      "sha256": "f484f050e05ee400455b05ec8c36ed35edc34de94256b6073f56cfe68f65491f",
+      "unpacked_to": "/tmp/comcom-task2a-compat/keras3113"
+    }
+  ],
+  "variants": {
+    "compat_sklearn172": [
+      "/tmp/comcom-task2a-compat/sklearn172"
+    ],
+    "compat_keras3113": [
+      "/tmp/comcom-task2a-compat/keras3113"
+    ],
+    "compat_both": [
+      "/tmp/comcom-task2a-compat/keras3113",
+      "/tmp/comcom-task2a-compat/sklearn172"
+    ]
+  }
+}

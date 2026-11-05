@@ -1,0 +1,30 @@
+{
+  "low": {
+    "k": 1.0,
+    "margin_mbps": 1.4349327637564262,
+    "source": "Netlix training calibration rows1680..2015; provider fitted before1680",
+    "manual_margin_unchanged_mbps": 26.0,
+    "controller_outcomes_used": false
+  },
+  "mixed": {
+    "k": 1.0,
+    "margin_mbps": 29.362579416409663,
+    "source": "Netlix training calibration rows1680..2015; provider fitted before1680",
+    "manual_margin_unchanged_mbps": 26.0,
+    "controller_outcomes_used": false
+  },
+  "moderate_overload": {
+    "k": 1.0,
+    "margin_mbps": 28.698655275128527,
+    "source": "Netlix training calibration rows1680..2015; provider fitted before1680",
+    "manual_margin_unchanged_mbps": 26.0,
+    "controller_outcomes_used": false
+  },
+  "original": {
+    "k": 1.0,
+    "margin_mbps": 14.349327637564263,
+    "source": "Netlix training calibration rows1680..2015; provider fitted before1680",
+    "manual_margin_unchanged_mbps": 26.0,
+    "controller_outcomes_used": false
+  }
+}

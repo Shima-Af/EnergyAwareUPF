@@ -1,0 +1,42 @@
+{
+  "protocol_id": "comcom-corrected-foundation-v1-proposal",
+  "status": "foundation_only_no_controller_campaign_authorized",
+  "datasets": {
+    "netflix": "data/processed/processed_traffic_normalized.csv",
+    "youtube": "data/processed/processed_traffic_youtube_aggregated_scaled.csv"
+  },
+  "slot_minutes": 15,
+  "timestamp_semantics": "interval_start_source_clock_timezone_unverified",
+  "split": {
+    "start": "2019-04-01T00:00:00",
+    "validation_start": "2019-04-22T00:00:00",
+    "final_test_start": "2019-04-27T06:00:00",
+    "end_exclusive": "2019-05-06T00:00:00"
+  },
+  "data_spec": {
+    "history_slots": 95,
+    "forecast_input_slots": 96,
+    "forecast_horizon_slots": 1
+  },
+  "load_scale": {
+    "fit_dataset": "netflix",
+    "fit_partition": "train",
+    "reference_peak_mbps": 400.0,
+    "clip": false
+  },
+  "input_normalization": "training_minmax_no_clipping",
+  "transfer": "youtube_is_reporting_only_reuse_netflix_transforms_no_fitting_or_selection",
+  "selection_objective": "total_reward",
+  "contract": {
+    "cooldown_slots": 4,
+    "initial_action": 0,
+    "qos_target": 0.9,
+    "sec_epsilon_mbps": 0.000001,
+    "sec_weight": 100.0,
+    "qos_weight": 30.0,
+    "switch_to_dpdk_cost": 0.03,
+    "usr_launch_cost": 0.012,
+    "usr_scale_down_cost": 0.003,
+    "gamma": 0.995
+  }
+}

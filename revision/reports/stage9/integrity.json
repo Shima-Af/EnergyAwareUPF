@@ -1,0 +1,26 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "tracked_status": "",
+  "preserved_file_count": 5230,
+  "changed_prior_files": [],
+  "prior_snapshot_sha256": "27adecff29c8d9b25fbada6e628e97958e789ae033bb89e1b0775aa703303545",
+  "tests": {
+    "passed": 17,
+    "seconds": 3.25,
+    "log": "revision/reports/stage9/final_tests.log",
+    "initial_passed": 16
+  },
+  "final_test_targets_accessed": false,
+  "final_test_evaluated": false,
+  "model_training": false,
+  "controller_training": false,
+  "controller_evaluations": false,
+  "twin_changed": false,
+  "forecaster_changed": false,
+  "reward_changed": false,
+  "committed": false,
+  "pushed": false,
+  "inference_profile": "Frozen component batch diagnostics with 404 singleton load checks, all near-threshold scenario inputs included; recorded numerical differences, zero checked class disagreements",
+  "report_sha256": "b1d96793029d25e74c035fa47a2e47643223232f77ce48ebf65edc651b56f61f"
+}

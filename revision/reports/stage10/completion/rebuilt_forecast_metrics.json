@@ -1,0 +1,122 @@
+[
+  {
+    "workload": "netflix",
+    "scenario": "original",
+    "role": "train",
+    "n": 1920,
+    "mae": 15.338903771551482,
+    "rmse": 20.50891966676345,
+    "bias": 1.6848455422127413,
+    "r2": 0.9253247462037024
+  },
+  {
+    "workload": "netflix",
+    "scenario": "original",
+    "role": "validation",
+    "n": 504,
+    "mae": 12.711767805178512,
+    "rmse": 16.822576338752537,
+    "bias": 0.6208303292557488,
+    "r2": 0.9486397574985953
+  },
+  {
+    "workload": "netflix",
+    "scenario": "low",
+    "role": "train",
+    "n": 1920,
+    "mae": 1.5338903771551482,
+    "rmse": 2.0508919666763448,
+    "bias": 0.16848455422127365,
+    "r2": 0.9253247462037024
+  },
+  {
+    "workload": "netflix",
+    "scenario": "low",
+    "role": "validation",
+    "n": 504,
+    "mae": 1.271176780517851,
+    "rmse": 1.6822576338752537,
+    "bias": 0.06208303292557412,
+    "r2": 0.9486397574985953
+  },
+  {
+    "workload": "netflix",
+    "scenario": "moderate_overload",
+    "role": "train",
+    "n": 1920,
+    "mae": 30.677807543102965,
+    "rmse": 41.0178393335269,
+    "bias": 3.3696910844254826,
+    "r2": 0.9253247462037024
+  },
+  {
+    "workload": "netflix",
+    "scenario": "moderate_overload",
+    "role": "validation",
+    "n": 504,
+    "mae": 25.423535610357025,
+    "rmse": 33.645152677505074,
+    "bias": 1.2416606585114975,
+    "r2": 0.9486397574985953
+  },
+  {
+    "workload": "netflix",
+    "scenario": "mixed",
+    "role": "train",
+    "n": 1920,
+    "mae": 33.50155528503096,
+    "rmse": 67.82119907158038,
+    "bias": 1.5497757618326795,
+    "r2": 0.9448742486871418
+  },
+  {
+    "workload": "netflix",
+    "scenario": "mixed",
+    "role": "validation",
+    "n": 504,
+    "mae": 20.33645756792636,
+    "rmse": 37.662802705056805,
+    "bias": 3.504424553157598,
+    "r2": 0.9761258903733117
+  },
+  {
+    "workload": "youtube",
+    "scenario": "original",
+    "role": "validation",
+    "n": 504,
+    "mae": 10.446667933531476,
+    "rmse": 12.977857366311026,
+    "bias": 2.2162327653272262,
+    "r2": 0.954510983594233
+  },
+  {
+    "workload": "youtube",
+    "scenario": "low",
+    "role": "validation",
+    "n": 504,
+    "mae": 1.0446667933531475,
+    "rmse": 1.2977857366311027,
+    "bias": 0.22162327653272199,
+    "r2": 0.9545109835942331
+  },
+  {
+    "workload": "youtube",
+    "scenario": "moderate_overload",
+    "role": "validation",
+    "n": 504,
+    "mae": 20.89333586706295,
+    "rmse": 25.955714732622052,
+    "bias": 4.4324655306544525,
+    "r2": 0.954510983594233
+  },
+  {
+    "workload": "youtube",
+    "scenario": "mixed",
+    "role": "validation",
+    "n": 504,
+    "mae": 18.776930144687487,
+    "rmse": 34.36633610647474,
+    "bias": 4.539644449726914,
+    "r2": 0.9756068283456578
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "dpdk": {
+    "source": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/dpdk_processed.csv",
+    "sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+    "n": 4594,
+    "reconstructed_formula": "RAN_pks_lost_interval / (RAN_Tx_pks + RAN_pks_lost_interval), zero denominator -> zero",
+    "matches_at_1e_12": 4594,
+    "max_abs_error": 8.326672684688674e-17,
+    "raw_rate_header": "GTPu Packets Tx/s",
+    "rate_comparable": 4593,
+    "stored_RAN_Tx_equals_raw_packet_rate": 4593,
+    "raw_interval_lost_comparable": 4483,
+    "raw_loss_delta_matches": 4482,
+    "first_rows_with_zero_interval_numerator": 110,
+    "comparable_sample_seconds": {
+      "3.0": 4483
+    },
+    "physical_ratio_authenticated": false,
+    "limitation": "Addition mixes packets/second with packets per sample; same-time/direction expected-packet denominator not established. Numerical reconstruction is not authenticated original code or physically valid loss ratio."
+  },
+  "usr": {
+    "source": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/oai_processed.csv",
+    "sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+    "n": 4564,
+    "reconstructed_formula": "RAN_pks_lost_interval / (RAN_Tx_pks + RAN_pks_lost_interval), zero denominator -> zero",
+    "matches_at_1e_12": 4564,
+    "max_abs_error": 1.1102230246251565e-16,
+    "raw_rate_header": "GTPu Packets Tx/s",
+    "rate_comparable": 4564,
+    "stored_RAN_Tx_equals_raw_packet_rate": 4564,
+    "raw_interval_lost_comparable": 4454,
+    "raw_loss_delta_matches": 4449,
+    "first_rows_with_zero_interval_numerator": 110,
+    "comparable_sample_seconds": {
+      "3.0": 4454
+    },
+    "physical_ratio_authenticated": false,
+    "limitation": "Addition mixes packets/second with packets per sample; same-time/direction expected-packet denominator not established. Numerical reconstruction is not authenticated original code or physically valid loss ratio."
+  }
+}

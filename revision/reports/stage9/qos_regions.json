@@ -1,0 +1,171 @@
+{
+  "common_total_domain_mbps": [
+    0.02,
+    5000
+  ],
+  "per_instance_domain_mbps": [
+    0.01,
+    5000
+  ],
+  "note": "Analytic real-coefficient intervals; float32 transition brackets supplied, not physical confidence bounds. Endpoint Q=.90 is safe.",
+  "roots": {
+    "dpdk": [
+      0.5977287243984919
+    ],
+    "usr": [
+      2.5388205075158723,
+      3.062158010075049,
+      4.652050427672994,
+      427.7038408446004
+    ]
+  },
+  "transition_brackets": {
+    "dpdk": [
+      {
+        "analytic_root_mbps": 0.5977287243984919,
+        "float32_transition_bracket_mbps": [
+          0.5977292328814915,
+          0.5977292328815262
+        ],
+        "lower_safe": false,
+        "upper_safe": true
+      }
+    ],
+    "usr": [
+      {
+        "analytic_root_mbps": 2.5388205075158723,
+        "float32_transition_bracket_mbps": [
+          2.538825430575181,
+          2.538825430575329
+        ],
+        "lower_safe": false,
+        "upper_safe": true
+      },
+      {
+        "analytic_root_mbps": 3.062158010075049,
+        "float32_transition_bracket_mbps": [
+          3.062157330761492,
+          3.0621573307616705
+        ],
+        "lower_safe": true,
+        "upper_safe": false
+      },
+      {
+        "analytic_root_mbps": 4.652050427672994,
+        "float32_transition_bracket_mbps": [
+          4.652049569039025,
+          4.652049569039296
+        ],
+        "lower_safe": false,
+        "upper_safe": true
+      },
+      {
+        "analytic_root_mbps": 427.7038408446004,
+        "float32_transition_bracket_mbps": [
+          427.703853700684,
+          427.7038537007089
+        ],
+        "lower_safe": true,
+        "upper_safe": false
+      }
+    ]
+  },
+  "structural_checks": {
+    "dpdk": {
+      "pieces": 104,
+      "max_abs_difference": 8.027018094658445e-08
+    },
+    "usr": {
+      "pieces": 132,
+      "max_abs_difference": 1.7767069693253035e-07
+    }
+  },
+  "regions": [
+    {
+      "lower_mbps": 0.02,
+      "upper_mbps": 0.5977287243984919,
+      "safe_actions": [],
+      "risk_region": "all_unsafe"
+    },
+    {
+      "lower_mbps": 0.5977287243984919,
+      "upper_mbps": 2.5388205075158723,
+      "safe_actions": [
+        0
+      ],
+      "risk_region": "avoidable"
+    },
+    {
+      "lower_mbps": 2.5388205075158723,
+      "upper_mbps": 3.062158010075049,
+      "safe_actions": [
+        0,
+        1
+      ],
+      "risk_region": "avoidable"
+    },
+    {
+      "lower_mbps": 3.062158010075049,
+      "upper_mbps": 4.652050427672994,
+      "safe_actions": [
+        0
+      ],
+      "risk_region": "avoidable"
+    },
+    {
+      "lower_mbps": 4.652050427672994,
+      "upper_mbps": 5.077641015031745,
+      "safe_actions": [
+        0,
+        1
+      ],
+      "risk_region": "avoidable"
+    },
+    {
+      "lower_mbps": 5.077641015031745,
+      "upper_mbps": 6.124316020150098,
+      "safe_actions": [
+        0,
+        1,
+        2
+      ],
+      "risk_region": "all_safe"
+    },
+    {
+      "lower_mbps": 6.124316020150098,
+      "upper_mbps": 9.304100855345988,
+      "safe_actions": [
+        0,
+        1
+      ],
+      "risk_region": "avoidable"
+    },
+    {
+      "lower_mbps": 9.304100855345988,
+      "upper_mbps": 427.7038408446004,
+      "safe_actions": [
+        0,
+        1,
+        2
+      ],
+      "risk_region": "all_safe"
+    },
+    {
+      "lower_mbps": 427.7038408446004,
+      "upper_mbps": 855.4076816892008,
+      "safe_actions": [
+        0,
+        2
+      ],
+      "risk_region": "avoidable"
+    },
+    {
+      "lower_mbps": 855.4076816892008,
+      "upper_mbps": 5000.0,
+      "safe_actions": [
+        0
+      ],
+      "risk_region": "avoidable"
+    }
+  ]
+}

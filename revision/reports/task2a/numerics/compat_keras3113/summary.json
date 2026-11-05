@@ -1,0 +1,135 @@
+{
+  "profile": "cpu_predict32",
+  "status": "completed",
+  "reference_path": "/home/ubuntu/EnergyAwareUPF/profiling_model_predictions_vs_target.csv",
+  "reference_sha256": "061c5405d8f5d8f8bbece4ac40cd77cffb40a8c00938f26603aac8b90f599e37",
+  "source": "archived profiling predictions, not traffic final-test evaluation",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "TF_ENABLE_ONEDNN_OPTS": "0",
+    "TF_DETERMINISTIC_OPS": "1",
+    "TF_NUM_INTEROP_THREADS": "1",
+    "TF_NUM_INTRAOP_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "TF_CPP_MIN_LOG_LEVEL": "2",
+    "TF_FORCE_GPU_ALLOW_GROWTH": "true"
+  },
+  "device_requested": "/CPU:0",
+  "logical_devices": [
+    "LogicalDevice(name='/device:CPU:0', device_type='CPU')"
+  ],
+  "tf32_enabled": false,
+  "dependencies": {
+    "tensorflow": "2.20.0",
+    "keras": "3.11.3",
+    "numpy": "2.4.2",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "artifact_sha256": {
+    "saved_models/prediction_models/dpdk_upf_performance_model.keras": "932f690117d10b433346a25f619194e94b1db663173702e2b0565845012367d1",
+    "saved_models/prediction_models/dpdk_perf_scaler_X.pkl": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500",
+    "saved_models/prediction_models/dpdk_perf_scaler_y.pkl": "2d872d2b130eda5f3339a4fbed4eba973ce8c360ff2dd219caf5a955dbab1cbc",
+    "saved_models/prediction_models/dpdk_upf_power_model.keras": "eec63019f99daffedce84cbaf4fb261a35a734ac1c1e801ca3f6290fc67d0d7b",
+    "saved_models/prediction_models/dpdk_scaler_X.pkl": "05d6ba18143cb25d5fd77703efaafe18cf0eb39e36f76c01f6ebea66157cd500",
+    "saved_models/prediction_models/dpdk_scaler_y.pkl": "1bdb218dafa423eebd40e669c444174d8dec7e878b25a039289139063e9e130c",
+    "saved_models/prediction_models/oai_upf_performance_model.keras": "c92b3d9741feb9cd240b8a1e2e72a9c332958cde619d27867b80935ede06f092",
+    "saved_models/prediction_models/oai_perf_scaler_X.pkl": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723",
+    "saved_models/prediction_models/oai_perf_scaler_y.pkl": "e0b3aa30b33b050cc0469176bb27ddcd5017d783163175d7c7f43792b58cc7e2",
+    "saved_models/prediction_models/oai_upf_power_model.keras": "8ea0bdf2461d8a27f2c1613500ea8d22487c6b0c27ca4f9f1b9a0afade64720a",
+    "saved_models/prediction_models/oai_scaler_X.pkl": "8fc7c5f7cc3a26c84e7d4399a1a94560c0e247aa8f2776e4c1392edf74a81723",
+    "saved_models/prediction_models/oai_scaler_y.pkl": "62522eb7a5459f4ad25136cd92a0c44e147e8c04b4ab6c26e1d49c2dcf85d105"
+  },
+  "warnings": [
+    {
+      "path": "saved_models/prediction_models/dpdk_perf_scaler_X.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    },
+    {
+      "path": "saved_models/prediction_models/dpdk_perf_scaler_y.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    },
+    {
+      "path": "saved_models/prediction_models/dpdk_scaler_X.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    },
+    {
+      "path": "saved_models/prediction_models/dpdk_scaler_y.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    },
+    {
+      "path": "saved_models/prediction_models/oai_perf_scaler_X.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    },
+    {
+      "path": "saved_models/prediction_models/oai_perf_scaler_y.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    },
+    {
+      "path": "saved_models/prediction_models/oai_scaler_X.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    },
+    {
+      "path": "saved_models/prediction_models/oai_scaler_y.pkl",
+      "category": "InconsistentVersionWarning",
+      "message": "Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations"
+    }
+  ],
+  "groups": {
+    "dpdk_power": {
+      "rows": 919,
+      "unique_loads": 22,
+      "exact_matches": 919,
+      "max_abs_delta": 0.0,
+      "mean_delta": 0.0,
+      "rmse_delta": 0.0,
+      "invalid_output_rows": 0,
+      "batch_vs_single_input_log1p_max_delta": 0.0,
+      "input_scaler_matches_explicit_saved_statistics_bitwise": false,
+      "inverse_scaler_matches_explicit_saved_statistics_bitwise": false
+    },
+    "dpdk_qos": {
+      "rows": 919,
+      "unique_loads": 22,
+      "exact_matches": 0,
+      "max_abs_delta": 1.6808509826660156e-05,
+      "mean_delta": -5.4545708657348763e-08,
+      "rmse_delta": 4.516345207446815e-06,
+      "invalid_output_rows": 0,
+      "batch_vs_single_input_log1p_max_delta": 0.0,
+      "input_scaler_matches_explicit_saved_statistics_bitwise": false,
+      "inverse_scaler_matches_explicit_saved_statistics_bitwise": false
+    },
+    "usr_power": {
+      "rows": 913,
+      "unique_loads": 22,
+      "exact_matches": 0,
+      "max_abs_delta": 0.0003101825714111328,
+      "mean_delta": -8.710947903719816e-05,
+      "rmse_delta": 0.00018012579270223542,
+      "invalid_output_rows": 100,
+      "batch_vs_single_input_log1p_max_delta": 0.0,
+      "input_scaler_matches_explicit_saved_statistics_bitwise": false,
+      "inverse_scaler_matches_explicit_saved_statistics_bitwise": false
+    },
+    "usr_qos": {
+      "rows": 913,
+      "unique_loads": 22,
+      "exact_matches": 0,
+      "max_abs_delta": 0.00010603666305541992,
+      "mean_delta": 1.6274418261591733e-06,
+      "rmse_delta": 2.848751561205542e-05,
+      "invalid_output_rows": 0,
+      "batch_vs_single_input_log1p_max_delta": 0.0,
+      "input_scaler_matches_explicit_saved_statistics_bitwise": false,
+      "inverse_scaler_matches_explicit_saved_statistics_bitwise": false
+    }
+  }
+}

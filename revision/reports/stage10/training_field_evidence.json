@@ -1,0 +1,86 @@
+[
+  {
+    "mode": "DPDK",
+    "training_rows": 2760,
+    "group_column": "Test Set",
+    "sweeps": [
+      1,
+      2,
+      3
+    ],
+    "source_sha256": "dcd7ed0d22a1d7368331c7d81032c418c9f5c5a8d5685cc834a80348fa18d484",
+    "fields": {
+      "downlink_delay_ms": {
+        "min": 0.0,
+        "median": 0.026,
+        "max": 86.409,
+        "nonfinite_or_missing": 0
+      },
+      "RAN_jitter": {
+        "min": 0.0,
+        "median": 1.0,
+        "max": 52.0,
+        "nonfinite_or_missing": 0
+      },
+      "RAN_PLR_interval": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 1.0,
+        "nonfinite_or_missing": 0
+      },
+      "RAN_pks_lost_interval": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 443233.0,
+        "nonfinite_or_missing": 0
+      }
+    },
+    "delay_above_0_2ms": 170,
+    "delay_above_40ms": 42,
+    "loss_above_5_packets": 43,
+    "loss_above_5percent": 41,
+    "jitter_above_10us": 15
+  },
+  {
+    "mode": "USR",
+    "training_rows": 2736,
+    "group_column": "Test Set",
+    "sweeps": [
+      1,
+      2,
+      3
+    ],
+    "source_sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+    "fields": {
+      "downlink_delay_ms": {
+        "min": 0.0,
+        "median": 0.0845,
+        "max": 8585.112,
+        "nonfinite_or_missing": 0
+      },
+      "RAN_jitter": {
+        "min": 0.0,
+        "median": 5.0,
+        "max": 199441.0,
+        "nonfinite_or_missing": 0
+      },
+      "RAN_PLR_interval": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 1.0,
+        "nonfinite_or_missing": 0
+      },
+      "RAN_pks_lost_interval": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 6271874.0,
+        "nonfinite_or_missing": 0
+      }
+    },
+    "delay_above_0_2ms": 916,
+    "delay_above_40ms": 461,
+    "loss_above_5_packets": 824,
+    "loss_above_5percent": 741,
+    "jitter_above_10us": 1022
+  }
+]

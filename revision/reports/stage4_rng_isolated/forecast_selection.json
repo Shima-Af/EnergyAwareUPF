@@ -1,0 +1,24 @@
+{
+  "selected": "lstm_calendar",
+  "validation_metrics": {
+    "lstm_load": {
+      "n": 504,
+      "mae_mbps": 22.00649082030899,
+      "rmse_mbps": 30.978306347968427,
+      "bias_mbps": -13.595280492274982,
+      "r2": 0.8258364010007884
+    },
+    "lstm_calendar": {
+      "n": 504,
+      "mae_mbps": 20.506870539163533,
+      "rmse_mbps": 25.690383914959238,
+      "bias_mbps": 7.062607810452368,
+      "r2": 0.8802202950772433
+    }
+  },
+  "selection_uses_validation_only": true,
+  "manifest_path": "revision/models/stage4/forecast/lstm_calendar/manifest.json",
+  "manifest_sha256": "abdae7e60e8e9c839437b71e8bb235e84f8d00ef31932c4a0dcbb3bdc388a34b",
+  "no_controller_selection": true,
+  "no_search_expansion": true
+}

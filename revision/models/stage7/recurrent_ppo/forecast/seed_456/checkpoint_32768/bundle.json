@@ -1,0 +1,45 @@
+{
+  "algorithm": "recurrent_ppo",
+  "schema": "forecast",
+  "seed": 456,
+  "timesteps": 32768,
+  "phase": "after_optimizer_update",
+  "twin_id": "80866f0adf81c3f144190fe49d8cf74e2d5eefe95c90b63a2924fb8da67c465e",
+  "training_workload": "netflix",
+  "forecast_sha256": "eaa848ef9bdeb01ab2e272df2712e662fbd1e779ed9d4c96d93d391c75fa13cd",
+  "protocol_sha256": "39513b19285c618323f39457194b16cbdcc917fbe71e546e7d725d7bf95ed0f6",
+  "contract": {
+    "cooldown_slots": 4,
+    "initial_action": 0,
+    "qos_target": 0.9,
+    "sec_epsilon_mbps": 1e-06,
+    "sec_weight": 100.0,
+    "qos_weight": 30.0,
+    "switch_to_dpdk_cost": 0.03,
+    "usr_launch_cost": 0.012,
+    "usr_scale_down_cost": 0.003,
+    "gamma": 0.995
+  },
+  "features": [
+    "completed_load",
+    "previous_qos",
+    "previous_power",
+    "previous_sec",
+    "previous_valid",
+    "configuration_dpdk",
+    "configuration_usr1",
+    "configuration_usr2",
+    "cooldown",
+    "time_sin",
+    "time_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "causal_target_forecast"
+  ],
+  "normalizer_count": 32772.000100000005,
+  "norm_reward": false,
+  "artifacts": {
+    "policy.zip": "1ed9b609687b13d98b1ec845485472f5050f94eaa05a011e36a371a7dd561d8c",
+    "normalizer.pkl": "c17417cae1c1cc86dce3b291b23fe913c5fdb46eba5b4a1e259f9aeaad5709b3"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "DPDK": {
+    "train": {
+      "n": 2760,
+      "target_sst": 27.49429784647065,
+      "actual_model_sse": 23.70502593175567,
+      "within_load_sse": 22.100507464792422,
+      "load_mean_misfit_sse": 1.6045184669632473,
+      "numerical_prediction_cross_term": -1.1102230246251565e-15,
+      "within_load_fraction_target_variation": 0.8038214901214286,
+      "within_load_fraction_model_sse": 0.9323131528485776,
+      "in_sample_load_mean_r2_ceiling": 0.19617850987857144,
+      "max_same_load_prediction_span": 0.0,
+      "interpretation": "In-sample target-variability decomposition, not an independent fitted predictor. Cross term retains float32 batch-position effects; actual predictions are unchanged."
+    },
+    "validation": {
+      "n": 916,
+      "target_sst": 6.949028422493584,
+      "actual_model_sse": 5.922000793516709,
+      "within_load_sse": 5.607337208340093,
+      "load_mean_misfit_sse": 0.3146635851766142,
+      "numerical_prediction_cross_term": -2.96637714392034e-16,
+      "within_load_fraction_target_variation": 0.806923913304122,
+      "within_load_fraction_model_sse": 0.9468653253945688,
+      "in_sample_load_mean_r2_ceiling": 0.19307608669587795,
+      "max_same_load_prediction_span": 0.0,
+      "interpretation": "In-sample target-variability decomposition, not an independent fitted predictor. Cross term retains float32 batch-position effects; actual predictions are unchanged."
+    },
+    "internal_test": {
+      "n": 918,
+      "target_sst": 6.680614757661355,
+      "actual_model_sse": 6.305964997430921,
+      "within_load_sse": 5.977651110285706,
+      "load_mean_misfit_sse": 0.32831388714521575,
+      "numerical_prediction_cross_term": 2.914335439641036e-16,
+      "within_load_fraction_target_variation": 0.8947756048094992,
+      "within_load_fraction_model_sse": 0.9479359800952,
+      "in_sample_load_mean_r2_ceiling": 0.10522439519050075,
+      "max_same_load_prediction_span": 0.0,
+      "interpretation": "In-sample target-variability decomposition, not an independent fitted predictor. Cross term retains float32 batch-position effects; actual predictions are unchanged."
+    }
+  },
+  "USR": {
+    "train": {
+      "n": 2736,
+      "target_sst": 184.2062673050828,
+      "actual_model_sse": 19.915892460088884,
+      "within_load_sse": 18.899855992150794,
+      "load_mean_misfit_sse": 1.016036467938095,
+      "numerical_prediction_cross_term": -7.216449660063518e-16,
+      "within_load_fraction_target_variation": 0.10260159042715312,
+      "within_load_fraction_model_sse": 0.9489836335492265,
+      "in_sample_load_mean_r2_ceiling": 0.8973984095728469,
+      "max_same_load_prediction_span": 0.0,
+      "interpretation": "In-sample target-variability decomposition, not an independent fitted predictor. Cross term retains float32 batch-position effects; actual predictions are unchanged."
+    },
+    "validation": {
+      "n": 915,
+      "target_sst": 60.579993427390626,
+      "actual_model_sse": 5.568313697688587,
+      "within_load_sse": 5.278082754913981,
+      "load_mean_misfit_sse": 0.29023090261208473,
+      "numerical_prediction_cross_term": 4.0162521312142596e-08,
+      "within_load_fraction_target_variation": 0.0871258390154851,
+      "within_load_fraction_model_sse": 0.9478781263894882,
+      "in_sample_load_mean_r2_ceiling": 0.9128741609845149,
+      "max_same_load_prediction_span": 5.96046448031462e-08,
+      "interpretation": "In-sample target-variability decomposition, not an independent fitted predictor. Cross term retains float32 batch-position effects; actual predictions are unchanged."
+    },
+    "internal_test": {
+      "n": 913,
+      "target_sst": 66.3726471328092,
+      "actual_model_sse": 6.341640562672505,
+      "within_load_sse": 5.297162703515385,
+      "load_mean_misfit_sse": 1.0444778591571195,
+      "numerical_prediction_cross_term": 4.128641872824801e-16,
+      "within_load_fraction_target_variation": 0.07980942349513284,
+      "within_load_fraction_model_sse": 0.8352984769737636,
+      "in_sample_load_mean_r2_ceiling": 0.9201905765048671,
+      "max_same_load_prediction_span": 0.0,
+      "interpretation": "In-sample target-variability decomposition, not an independent fitted predictor. Cross term retains float32 batch-position effects; actual predictions are unchanged."
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "groups": {
+    "dpdk": {
+      "same_recorded_load_and_DL_KPIs_but_different_labels_groups": 544,
+      "rows_in_those_groups": 3199,
+      "maximum_qos_span": 0.40000000000000013,
+      "interpretation": "Omitted components, hidden precision or pipeline mismatch remain possible; this does not authenticate a different scoring formula"
+    },
+    "usr": {
+      "same_recorded_load_and_DL_KPIs_but_different_labels_groups": 392,
+      "rows_in_those_groups": 1898,
+      "maximum_qos_span": 0.40000000000000013,
+      "interpretation": "Omitted components, hidden precision or pipeline mismatch remain possible; this does not authenticate a different scoring formula"
+    }
+  },
+  "raw_export_inventory": [
+    {
+      "mode": "dpdk",
+      "directory": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk",
+      "zip_files": 110,
+      "representative_zip": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/dpdk/CSVs-174 - baremetal _SD-Core_DPDK (copy from Jan  3 16-25-29)-2025-01-03-16-25-35-UTC.zip",
+      "sha256": "be8ca6424cdc60cabf5f3718a56bbfbeddccce692c82d20ba40ffecc5940c0d2",
+      "nonempty_delay_jitter_headers": [
+        {
+          "entry": "Fullcoreapplicationtraffic_OneWayDelayAverage_RAN.csv",
+          "header": "Timestamp epoch ms,timestamp,Average"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_UplinkDataOneWayDelayDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_OneWayDelayAverage_DN.csv",
+          "header": "Timestamp epoch ms,timestamp,Average"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DelayVariationJitterAverage_DN.csv",
+          "header": "Timestamp epoch ms,timestamp,Avg us"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DownlinkOneWayDelayDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_UplinkDataJitterDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DownlinkDelayVariationJitterDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DelayVariationJitterAverage_RAN.csv",
+          "header": "Timestamp epoch ms,timestamp,Avg us"
+        }
+      ],
+      "authenticated_processed_KPI_join": false
+    },
+    {
+      "mode": "usr",
+      "directory": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr",
+      "zip_files": 110,
+      "representative_zip": "/home/ubuntu/UpfProfilingCampaign/UpfProfilingCampaign/data/raw/loadcore/usr/CSVs-288 - baremetal _OAI_UserspaceApplication (copy from Jan 13 13-08-48)-2025-01-13-13-08-54-UTC.zip",
+      "sha256": "8e17f3421943fc31c908fbe9c85972adfeb84ebc8ab39a2fab21d60c97b133a3",
+      "nonempty_delay_jitter_headers": [
+        {
+          "entry": "Fullcoreapplicationtraffic_OneWayDelayAverage_RAN.csv",
+          "header": "Timestamp epoch ms,timestamp,Average"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DownlinkDelayVariationJitterDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_UplinkDataOneWayDelayDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DelayVariationJitterAverage_RAN.csv",
+          "header": "Timestamp epoch ms,timestamp,Avg us"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_OneWayDelayAverage_DN.csv",
+          "header": "Timestamp epoch ms,timestamp,Average"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_UplinkDataJitterDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DownlinkOneWayDelayDistribution.csv",
+          "header": "Timestamp epoch ms,timestamp,0us - 125us,10ms - 15ms,125us - 250us,15ms - 20ms,1ms - 5ms,20ms - inf,250us - 500us,500us - 1ms,5ms - 10ms"
+        },
+        {
+          "entry": "Fullcoreapplicationtraffic_DelayVariationJitterAverage_DN.csv",
+          "header": "Timestamp epoch ms,timestamp,Avg us"
+        }
+      ],
+      "authenticated_processed_KPI_join": false
+    }
+  ],
+  "manuscript_formula_check_note": "Manuscript gives weights/thresholds but not a complete component-scoring implementation. The numerical check applies notebook-style bounded linear scores and an explicitly assumed microseconds-to-ms jitter conversion, not every possible bounded function.",
+  "newer_campaign_pipeline_not_substituted": true
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "workload": "netflix",
+    "scenario": "original",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "original",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "low_peak10_reference",
+    "role": "train",
+    "checked_loads": 19,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "low_peak10_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "low_peak40_reference",
+    "role": "train",
+    "checked_loads": 14,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "low_peak40_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "high_peak800_reference",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "high_peak800_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "high_peak1600_reference",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "high_peak1600_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "high_peak3200_reference",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "high_peak3200_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "mixed_daily",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "mixed_daily",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "rapid_real_day",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "netflix",
+    "scenario": "rapid_real_day",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "original",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "original",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "low_peak10_reference",
+    "role": "train",
+    "checked_loads": 16,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "low_peak10_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "low_peak40_reference",
+    "role": "train",
+    "checked_loads": 15,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "low_peak40_reference",
+    "role": "validation",
+    "checked_loads": 13,
+    "max_power_difference_w": 1.7881393432617188e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "high_peak800_reference",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "high_peak800_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "high_peak1600_reference",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "high_peak1600_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "high_peak3200_reference",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "high_peak3200_reference",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 5.960464477539063e-08,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "mixed_daily",
+    "role": "train",
+    "checked_loads": 14,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "mixed_daily",
+    "role": "validation",
+    "checked_loads": 13,
+    "max_power_difference_w": 1.7881393432617188e-07,
+    "max_qos_difference": 5.960464477539063e-08,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "rapid_real_day",
+    "role": "train",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  },
+  {
+    "workload": "youtube",
+    "scenario": "rapid_real_day",
+    "role": "validation",
+    "checked_loads": 12,
+    "max_power_difference_w": 1.1920928955078125e-07,
+    "max_qos_difference": 1.1920928955078125e-07,
+    "class_disagreements": 0
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "incident": "Legacy preflight unit helpers construct old full-file Timeline objects while validating historical Stage4 artifacts.",
+  "affected_preflight_files": [
+    "revision/tests/test_stage4.py"
+  ],
+  "helper": "revision.stage4.common.inputs -> revision.stage3.common.inputs -> Timeline.read_csv (full original CSV) -> prepare",
+  "what_happened": "The legacy helper parses all source traffic rows, including the final-test suffix, to compute old timeline/horizon identities. No final-test values were printed, deliberately inspected, scored, supplied to a policy/forecast fit or used to select models.",
+  "scope": "Three preflight invocations included these old artifact checks; their original logs are preserved. Stage7 scientific data preparation/training/evaluation independently uses forecast_service.raw_prefix with stop2520 and verified authorized-prefix fingerprints.",
+  "final_test_controller_or_forecast_performance_evaluated": false,
+  "final_test_targets_used_for_parameter_or_selection_learning": false,
+  "literal_no_target_access_requirement_satisfied": false,
+  "stage7_scientific_pipeline_final_test_rows_parsed": 0,
+  "scientific_effect": "No demonstrated effect on trained parameters or checkpoint selection; this is an accidental access-boundary failure, not final-performance exposure. Do not claim final targets were never parsed during this task.",
+  "remediation": "Exclude legacy real-data identity checks from remaining test execution. Use Stage7 prefix-only fixtures and direct artifact/protocol integrity checks. Preserve all files and add explicit disclosure to final report.",
+  "protocol_note": "The original pre-fit no_final_test_access declaration is retained as the intended restriction; this addendum qualifies the whole-task claim. It does not change any scientific model, horizon, forecast or selector."
+}

@@ -1,0 +1,1200 @@
+[
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Rx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 910,
+    "matches_at_1e-10": 2143,
+    "mae": 0.005613077034113961,
+    "maximum_absolute_difference": 0.5635707369806107,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Rx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 916,
+    "matches_at_1e-10": 2150,
+    "mae": 0.004904527992146197,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Rx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 2,
+    "mae": 0.03687764847870142,
+    "maximum_absolute_difference": 0.6433539199999245,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Rx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 2,
+    "mae": 0.03687764847870142,
+    "maximum_absolute_difference": 0.6433539199999245,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Rx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 2697,
+    "matches_at_1e-10": 4545,
+    "mae": 0.0019197565735311582,
+    "maximum_absolute_difference": 0.19798410744944317,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Rx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 2744,
+    "matches_at_1e-10": 4594,
+    "mae": 4.464213065387071e-17,
+    "maximum_absolute_difference": 1.1102230246251565e-16,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Rx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 1,
+    "matches_at_1e-10": 5,
+    "mae": 0.03446148838703609,
+    "maximum_absolute_difference": 0.43988000000000005,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Rx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 1,
+    "matches_at_1e-10": 5,
+    "mae": 0.03446148838703609,
+    "maximum_absolute_difference": 0.43988000000000005,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Tx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 911,
+    "matches_at_1e-10": 2144,
+    "mae": 0.006160561049787186,
+    "maximum_absolute_difference": 0.5852768169806863,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Tx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 936,
+    "matches_at_1e-10": 2170,
+    "mae": 0.004240804476256072,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Tx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 2,
+    "mae": 0.037329023548793486,
+    "maximum_absolute_difference": 0.6650600000000002,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_RAN_Tx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 2,
+    "mae": 0.037329023548793486,
+    "maximum_absolute_difference": 0.6650600000000002,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Tx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 2054,
+    "matches_at_1e-10": 3575,
+    "mae": 0.015205284606329953,
+    "maximum_absolute_difference": 0.5852754569806062,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Tx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 2072,
+    "matches_at_1e-10": 3595,
+    "mae": 0.013285652299233694,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Tx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 1,
+    "matches_at_1e-10": 5,
+    "mae": 0.0457393419601742,
+    "maximum_absolute_difference": 0.8198850000000001,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_DN_Tx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 1,
+    "matches_at_1e-10": 5,
+    "mae": 0.0457393419601742,
+    "maximum_absolute_difference": 0.8198850000000001,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_combined_direction_mean",
+    "target": "QoS_w",
+    "mapping": {
+      "interpretation": "mean of direction-specific received Mbps, delay, jitter and loss fractions; equal per-direction objectives; caps/weights unchanged"
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 2,
+    "mae": 0.023101773374525954,
+    "maximum_absolute_difference": 0.4002224999749999,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_without_throughput_no_renormalization",
+    "target": "QoS_w",
+    "mapping": {
+      "interpretation": "component omission diagnostic; weighted residual must equal 0.4*S_th"
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 171,
+    "matches_at_1e-10": 187,
+    "mae": 0.3823747378689391,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "manuscript_linear_DL",
+    "target": "QoS_w",
+    "mapping": {
+      "weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "mapping": [
+        "downlink_delay_ms",
+        "RAN_jitter",
+        "RAN_PLR_interval"
+      ],
+      "caps": [
+        300,
+        100,
+        1e-06
+      ],
+      "note": "Notebook-style bounded linear interpretation; manuscript does not completely specify component functions; raw jitter assumed us and converted to ms"
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 58,
+    "matches_at_1e-10": 93,
+    "mae": 0.04446005137455319,
+    "maximum_absolute_difference": 0.600179,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "manuscript_linear_UL",
+    "target": "QoS_w",
+    "mapping": {
+      "weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "mapping": [
+        "uplink_delay_ms",
+        "DN_jitter",
+        "DN_PLR_interval"
+      ],
+      "caps": [
+        300,
+        100,
+        1e-06
+      ],
+      "note": "Notebook-style bounded linear interpretation; manuscript does not completely specify component functions; raw jitter assumed us and converted to ms"
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 1,
+    "matches_at_1e-10": 1,
+    "mae": 0.047541386607955476,
+    "maximum_absolute_difference": 0.8399653333333333,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "DPDK",
+    "candidate": "notebook_pca_per_mode_all_rows",
+    "target": "QoS_w",
+    "mapping": {
+      "mapping": {
+        "delivered": "DN_Rx_Mbits/s",
+        "objective": "Objective Throughput (DL/UL)",
+        "delay": "downlink_delay_ms",
+        "jitter": "RAN_jitter",
+        "loss": "RAN_PLR_interval",
+        "loss_multiplier": 100.0,
+        "caps": [
+          40.0,
+          10.0,
+          5.0
+        ],
+        "weights": [
+          0.4,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "fit": "StandardScaler over four component scores, PCA(1, random_state=0), sign toward S_th, MinMax over PC1, separately per mode on all rows"
+    },
+    "comparable_rows": 4594,
+    "bitwise_equal_float_values": 58,
+    "matches_at_1e-10": 93,
+    "mae": 0.04338597987560429,
+    "maximum_absolute_difference": 0.5666987334573526,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Rx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 368,
+    "matches_at_1e-10": 1214,
+    "mae": 0.042066378028636636,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Rx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 406,
+    "matches_at_1e-10": 1257,
+    "mae": 0.06722571424205816,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Rx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 1,
+    "mae": 0.08967384442298108,
+    "maximum_absolute_difference": 0.600495,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Rx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 1,
+    "mae": 0.046254671949614905,
+    "maximum_absolute_difference": 0.600495,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Rx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 2297,
+    "matches_at_1e-10": 3180,
+    "mae": 0.04883829969270885,
+    "maximum_absolute_difference": 0.19799037609218695,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Rx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 3159,
+    "matches_at_1e-10": 4564,
+    "mae": 2.7305740989463587e-17,
+    "maximum_absolute_difference": 1.1102230246251565e-16,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Rx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 17,
+    "matches_at_1e-10": 19,
+    "mae": 0.1509335167741346,
+    "maximum_absolute_difference": 0.5544615607316272,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Rx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Rx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 17,
+    "matches_at_1e-10": 19,
+    "mae": 0.0957885661170045,
+    "maximum_absolute_difference": 0.5198050000000001,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Tx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 365,
+    "matches_at_1e-10": 1211,
+    "mae": 0.07817380017006514,
+    "maximum_absolute_difference": 0.5654503268846625,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Tx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 406,
+    "matches_at_1e-10": 1258,
+    "mae": 0.02961595621793476,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Tx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 1,
+    "mae": 0.17986626909232967,
+    "maximum_absolute_difference": 0.8548950000000001,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_RAN_Tx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "RAN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 1,
+    "mae": 0.12480988740719147,
+    "maximum_absolute_difference": 0.8,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Tx_Mbits/s_DL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 1971,
+    "matches_at_1e-10": 2710,
+    "mae": 0.08657124024407255,
+    "maximum_absolute_difference": 0.5654502468845825,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Tx_Mbits/s_DL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "downlink_delay_ms",
+      "jitter": "RAN_jitter",
+      "loss": "RAN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 1994,
+    "matches_at_1e-10": 2733,
+    "mae": 0.03773294712454668,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Tx_Mbits/s_UL_loss_x1",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 1.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 16,
+    "matches_at_1e-10": 19,
+    "mae": 0.18749796393113918,
+    "maximum_absolute_difference": 0.9198050000000002,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_DN_Tx_Mbits/s_UL_loss_x100",
+    "target": "QoS_w",
+    "mapping": {
+      "delivered": "DN_Tx_Mbits/s",
+      "objective": "Objective Throughput (DL/UL)",
+      "delay": "uplink_delay_ms",
+      "jitter": "DN_jitter",
+      "loss": "DN_PLR_interval",
+      "loss_multiplier": 100.0,
+      "caps": [
+        40.0,
+        10.0,
+        5.0
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 16,
+    "matches_at_1e-10": 19,
+    "mae": 0.13235162152335245,
+    "maximum_absolute_difference": 0.9198050000000002,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_combined_direction_mean",
+    "target": "QoS_w",
+    "mapping": {
+      "interpretation": "mean of direction-specific received Mbps, delay, jitter and loss fractions; equal per-direction objectives; caps/weights unchanged"
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 22,
+    "matches_at_1e-10": 24,
+    "mae": 0.04465041817283475,
+    "maximum_absolute_difference": 0.4001191666333388,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_without_throughput_no_renormalization",
+    "target": "QoS_w",
+    "mapping": {
+      "interpretation": "component omission diagnostic; weighted residual must equal 0.4*S_th"
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 136,
+    "matches_at_1e-10": 159,
+    "mae": 0.3588213270403905,
+    "maximum_absolute_difference": 0.40000000000000013,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "manuscript_linear_DL",
+    "target": "QoS_w",
+    "mapping": {
+      "weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "mapping": [
+        "downlink_delay_ms",
+        "RAN_jitter",
+        "RAN_PLR_interval"
+      ],
+      "caps": [
+        300,
+        100,
+        1e-06
+      ],
+      "note": "Notebook-style bounded linear interpretation; manuscript does not completely specify component functions; raw jitter assumed us and converted to ms"
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 1,
+    "matches_at_1e-10": 1,
+    "mae": 0.14403851291061398,
+    "maximum_absolute_difference": 0.7437360000000002,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "manuscript_linear_UL",
+    "target": "QoS_w",
+    "mapping": {
+      "weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "mapping": [
+        "uplink_delay_ms",
+        "DN_jitter",
+        "DN_PLR_interval"
+      ],
+      "caps": [
+        300,
+        100,
+        1e-06
+      ],
+      "note": "Notebook-style bounded linear interpretation; manuscript does not completely specify component functions; raw jitter assumed us and converted to ms"
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 0,
+    "matches_at_1e-10": 0,
+    "mae": 0.20727179045399083,
+    "maximum_absolute_difference": 0.9986186666666668,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  },
+  {
+    "mode": "USR",
+    "candidate": "notebook_pca_per_mode_all_rows",
+    "target": "QoS_w",
+    "mapping": {
+      "mapping": {
+        "delivered": "DN_Rx_Mbits/s",
+        "objective": "Objective Throughput (DL/UL)",
+        "delay": "downlink_delay_ms",
+        "jitter": "RAN_jitter",
+        "loss": "RAN_PLR_interval",
+        "loss_multiplier": 100.0,
+        "caps": [
+          40.0,
+          10.0,
+          5.0
+        ],
+        "weights": [
+          0.4,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "fit": "StandardScaler over four component scores, PCA(1, random_state=0), sign toward S_th, MinMax over PC1, separately per mode on all rows"
+    },
+    "comparable_rows": 4564,
+    "bitwise_equal_float_values": 19,
+    "matches_at_1e-10": 19,
+    "mae": 0.044081775989375585,
+    "maximum_absolute_difference": 0.10750207167445486,
+    "tolerance_note": "Absolute serialization/numerical reconstruction tolerance, not scientific model accuracy"
+  }
+]

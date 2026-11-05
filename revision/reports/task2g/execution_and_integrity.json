@@ -1,0 +1,39 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "prior_revision_files_checked": 196,
+  "prior_revision_files_changed": [],
+  "original_profiling_artifacts_verified": 12,
+  "source_data_hashes_and_group_counts_verified": {
+    "DPDK": {
+      "train": 2760,
+      "validation": 916,
+      "internal_test": 918
+    },
+    "USR": {
+      "train": 2736,
+      "validation": 915,
+      "internal_test": 913
+    }
+  },
+  "qos_specification_sha256": "4a54e006f89f9aab47b3f663e71ff16b9325d237c4a21a4a1541dd298374778a",
+  "qos_validation_protocol_sha256": "7fde2fb911239cce4aaf40b61dab5fcf546dc7d9184e2842a65896a8a520bf1f",
+  "latex_proposal_sha256": "0965afd313046bc00a8285270d80547fb83990bebec64a6f99d64fabd12d6733",
+  "manuscript_sha256": "848d907f645476ee0500f48e8a3c8afcd327a67c6c2c406cb4142a5154500c9d",
+  "tracked_and_staged_changes": [],
+  "profiling_fits": 0,
+  "controller_fits": 0,
+  "default_twin_changed": false,
+  "historical_label_changes": false,
+  "traffic_outcomes_accessed": false,
+  "commit_or_push": false,
+  "tests": "7 passed in 0.28s",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.qos_semantics --output-dir revision/reports/task2g",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest revision/tests/test_qos_specification.py -q -p no:cacheprovider"
+  ],
+  "initial_failures_retained": [
+    "Exact timestamp matching incomplete; gaps now explicitly counted without imputation",
+    "Synthetic floating-point equality assertion replaced by numerical approximation"
+  ]
+}

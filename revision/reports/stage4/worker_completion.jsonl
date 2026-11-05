@@ -1,0 +1,10 @@
+{"algorithm": "ppo", "seed": 42, "exit_code": 0, "log": "revision/reports/stage4/ppo_seed_42.log"}
+{"algorithm": "ppo", "seed": 123, "exit_code": 0, "log": "revision/reports/stage4/ppo_seed_123.log"}
+{"algorithm": "recurrent_ppo", "seed": 123, "exit_code": 0, "log": "revision/reports/stage4/recurrent_ppo_seed_123.log"}
+{"algorithm": "recurrent_ppo", "seed": 42, "exit_code": 0, "log": "revision/reports/stage4/recurrent_ppo_seed_42.log"}
+{"algorithm": "ppo", "seed": 456, "exit_code": 0, "log": "revision/reports/stage4/ppo_seed_456.log"}
+{"algorithm": "recurrent_ppo", "seed": 456, "exit_code": 0, "log": "revision/reports/stage4/recurrent_ppo_seed_456.log"}
+{"algorithm": "ppo", "seed": 789, "exit_code": 0, "log": "revision/reports/stage4/ppo_seed_789.log"}
+{"algorithm": "ppo", "seed": 1024, "exit_code": 0, "log": "revision/reports/stage4/ppo_seed_1024.log"}
+{"algorithm": "recurrent_ppo", "seed": 789, "exit_code": 0, "log": "revision/reports/stage4/recurrent_ppo_seed_789.log"}
+{"algorithm": "recurrent_ppo", "seed": 1024, "exit_code": 0, "log": "revision/reports/stage4/recurrent_ppo_seed_1024.log"}

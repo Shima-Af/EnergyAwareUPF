@@ -1,0 +1,16 @@
+{"mode": "DPDK", "architecture": "original_hidden_sigmoid", "seed": 42, "status": "started"}
+{"mode": "DPDK", "architecture": "original_hidden_sigmoid", "seed": 42, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/original_hidden_sigmoid_seed_42/manifest.json", "epochs": 111}
+{"mode": "DPDK", "architecture": "original_hidden_sigmoid", "seed": 123, "status": "started"}
+{"mode": "DPDK", "architecture": "original_hidden_sigmoid", "seed": 123, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/original_hidden_sigmoid_seed_123/manifest.json", "epochs": 165}
+{"mode": "DPDK", "architecture": "plain_hidden_sigmoid", "seed": 42, "status": "started"}
+{"mode": "DPDK", "architecture": "plain_hidden_sigmoid", "seed": 42, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/plain_hidden_sigmoid_seed_42/manifest.json", "epochs": 133}
+{"mode": "DPDK", "architecture": "plain_hidden_sigmoid", "seed": 123, "status": "started"}
+{"mode": "DPDK", "architecture": "plain_hidden_sigmoid", "seed": 123, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/dpdk/plain_hidden_sigmoid_seed_123/manifest.json", "epochs": 137}
+{"mode": "USR", "architecture": "original_hidden_sigmoid", "seed": 42, "status": "started"}
+{"mode": "USR", "architecture": "original_hidden_sigmoid", "seed": 42, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/original_hidden_sigmoid_seed_42/manifest.json", "epochs": 121}
+{"mode": "USR", "architecture": "original_hidden_sigmoid", "seed": 123, "status": "started"}
+{"mode": "USR", "architecture": "original_hidden_sigmoid", "seed": 123, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/original_hidden_sigmoid_seed_123/manifest.json", "epochs": 167}
+{"mode": "USR", "architecture": "plain_hidden_sigmoid", "seed": 42, "status": "started"}
+{"mode": "USR", "architecture": "plain_hidden_sigmoid", "seed": 42, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/plain_hidden_sigmoid_seed_42/manifest.json", "epochs": 309}
+{"mode": "USR", "architecture": "plain_hidden_sigmoid", "seed": 123, "status": "started"}
+{"mode": "USR", "architecture": "plain_hidden_sigmoid", "seed": 123, "status": "completed", "manifest": "/home/ubuntu/EnergyAwareUPF/revision/models/task2h/usr/plain_hidden_sigmoid_seed_123/manifest.json", "epochs": 287}

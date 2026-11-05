@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/qos_semantics.py", line 105, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/qos_semantics.py", line 102, in main
+    path.mkdir(parents=True,exist_ok=False);run(path)
+                                            ^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/diagnostics/qos_semantics.py", line 53, in run
+    raise ValueError('Incomplete exact timestamp raw-counter match')
+ValueError: Incomplete exact timestamp raw-counter match

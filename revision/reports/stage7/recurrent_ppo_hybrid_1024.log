@@ -1,0 +1,15 @@
+2026-10-23 17:38:36.611930: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+recurrent_ppo hybrid 1024 24576 Wh 90.23908796927506
+recurrent_ppo hybrid 1024 32768 Wh 88.31907162349286
+recurrent_ppo hybrid 1024 49152 Wh 89.4432297979951
+recurrent_ppo hybrid 1024 73728 Wh 94.65879400472902
+recurrent_ppo hybrid 1024 98304 Wh 88.9687917645255
+recurrent_ppo hybrid 1024 122880 Wh 88.3142910086589
+recurrent_ppo hybrid 1024 147456 Wh 88.19252548757102
+recurrent_ppo hybrid 1024 172032 Wh 87.96910694882091
+recurrent_ppo hybrid 1024 196608 Wh 88.43925001049512
+recurrent_ppo hybrid 1024 221184 Wh 88.0599349749435
+recurrent_ppo hybrid 1024 245760 Wh 88.65863721960716
+recurrent_ppo hybrid 1024 270336 Wh 88.32626486085374
+recurrent_ppo hybrid 1024 294912 Wh 88.875587444133
+recurrent_ppo hybrid 1024 300000 Wh 89.15240861011317

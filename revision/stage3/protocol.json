@@ -1,0 +1,18 @@
+{
+ "id":"comcom.controller-pilot.v1", "seeds":[42,123], "algorithms":["ppo","recurrent_ppo"],
+ "requested_timesteps":32768, "n_envs":4, "n_steps":1024, "batch_size":64,
+ "n_epochs":10, "learning_rate":0.0001, "gamma":0.995,"gae_lambda":0.90,
+ "ent_coef":0.15,"clip_range":0.2,"target_kl":0.03,
+ "eval_every_timesteps":8192,"checkpoint_selection":"validation_total_reward",
+ "schema":"hybrid","recurrent_hidden":128,"shared_lstm":true,
+ "forecast":{"seed":42,"epochs":8,"batch_size":128,"learning_rate":0.001,
+ "candidates":["lstm_load","lstm_calendar"],"units":[128,64],"dense_units":64,
+ "dropout":0.2,"recurrent_dropout":0.0,"output":"softplus_scaled_load",
+ "prefix_boundaries":[192,608,1024,1440,1856,2016],"cold_start":"persistence_for_training_indices_96_to_191_only",
+ "selection":"validation_rmse","window":96},
+ "rule":{"selection":"forecast_score_feasibility_then_minimum_power","target":0.9,
+ "fallback":"maximum_predicted_qos_then_minimum_power","relative_power_deadband":0.02},
+ "sensitivity":"frozen_policy_replay_with_changed_outcomes_and_previous_telemetry_no_retraining",
+ "final_test_allowed":false,"risk_acceptance_threshold":null,
+ "no_search_expansion":true
+}

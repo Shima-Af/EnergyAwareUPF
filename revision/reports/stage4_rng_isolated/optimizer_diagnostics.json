@@ -1,0 +1,132 @@
+{
+  "ppo_42": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.5609726971015331,
+      "train/approx_kl": 0.000168984639458,
+      "train/clip_fraction": 0.0,
+      "train/value_loss": 3.278214524127543,
+      "train/policy_gradient_loss": -0.00023646962217700003,
+      "train/explained_variance": 0.9716494679450981
+    },
+    "maximum_approx_kl": 0.00782486796379,
+    "maximum_clip_fraction": 0.09006347656250001,
+    "optimizer_updates_logged": 74
+  },
+  "ppo_123": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.7553454674780361,
+      "train/approx_kl": 0.000111547240521,
+      "train/clip_fraction": 0.0,
+      "train/value_loss": 6.584492003917694,
+      "train/policy_gradient_loss": -0.00050402158813,
+      "train/explained_variance": 0.946937203407287
+    },
+    "maximum_approx_kl": 0.008440466597676001,
+    "maximum_clip_fraction": 0.07395019531250001,
+    "optimizer_updates_logged": 74
+  },
+  "ppo_456": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.7033721473067991,
+      "train/approx_kl": 0.0006371556664810001,
+      "train/clip_fraction": 0.0,
+      "train/value_loss": 3.2856375657022,
+      "train/policy_gradient_loss": -0.000991400927887,
+      "train/explained_variance": 0.9748311042785641
+    },
+    "maximum_approx_kl": 0.008473034948110001,
+    "maximum_clip_fraction": 0.068994140625,
+    "optimizer_updates_logged": 74
+  },
+  "ppo_789": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.790336355939507,
+      "train/approx_kl": 0.000350766233168,
+      "train/clip_fraction": 0.0,
+      "train/value_loss": 3.33917078860104,
+      "train/policy_gradient_loss": -0.00045595665869700003,
+      "train/explained_variance": 0.975892841815948
+    },
+    "maximum_approx_kl": 0.009499830193817001,
+    "maximum_clip_fraction": 0.0608642578125,
+    "optimizer_updates_logged": 74
+  },
+  "ppo_1024": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.6283998996019361,
+      "train/approx_kl": 0.00011409603757700001,
+      "train/clip_fraction": 0.0,
+      "train/value_loss": 4.053104234673083,
+      "train/policy_gradient_loss": -0.00011332258000000001,
+      "train/explained_variance": 0.9463526010513301
+    },
+    "maximum_approx_kl": 0.008914834819734001,
+    "maximum_clip_fraction": 0.0679931640625,
+    "optimizer_updates_logged": 74
+  },
+  "recurrent_ppo_42": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.833105038319315,
+      "train/approx_kl": 0.011165146715939002,
+      "train/clip_fraction": 0.029017857142857,
+      "train/value_loss": 233.88184317494077,
+      "train/policy_gradient_loss": -0.002451676667468,
+      "train/explained_variance": 0.47153747081756503
+    },
+    "maximum_approx_kl": 0.022881567478179002,
+    "maximum_clip_fraction": 0.1264892578125,
+    "optimizer_updates_logged": 74
+  },
+  "recurrent_ppo_123": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.7638121906667941,
+      "train/approx_kl": 0.007427086122334001,
+      "train/clip_fraction": 0.0703125,
+      "train/value_loss": 216.6357402183581,
+      "train/policy_gradient_loss": -0.011518471878662001,
+      "train/explained_variance": 0.44488239288330006
+    },
+    "maximum_approx_kl": 0.022466205060482,
+    "maximum_clip_fraction": 0.1403564453125,
+    "optimizer_updates_logged": 74
+  },
+  "recurrent_ppo_456": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.8268234115093941,
+      "train/approx_kl": 0.011460676789283001,
+      "train/clip_fraction": 0.09257812500000001,
+      "train/value_loss": 360.4087631369941,
+      "train/policy_gradient_loss": -0.012835346604697002,
+      "train/explained_variance": -0.0015681982040400002
+    },
+    "maximum_approx_kl": 0.037224166095256,
+    "maximum_clip_fraction": 0.140809911242603,
+    "optimizer_updates_logged": 74
+  },
+  "recurrent_ppo_789": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.7320130493491881,
+      "train/approx_kl": 0.01104568876326,
+      "train/clip_fraction": 0.0724609375,
+      "train/value_loss": 379.8779936544597,
+      "train/policy_gradient_loss": -0.013544350070878002,
+      "train/explained_variance": 0.007742285728454001
+    },
+    "maximum_approx_kl": 0.053984601050615005,
+    "maximum_clip_fraction": 0.11862792968750001,
+    "optimizer_updates_logged": 74
+  },
+  "recurrent_ppo_1024": {
+    "last_optimizer_metrics": {
+      "train/entropy_loss": -0.748690133728086,
+      "train/approx_kl": 0.006331224925816,
+      "train/clip_fraction": 0.06279296875,
+      "train/value_loss": 156.9653564077802,
+      "train/policy_gradient_loss": -0.009162732533877001,
+      "train/explained_variance": 0.693750381469726
+    },
+    "maximum_approx_kl": 0.021935736760497003,
+    "maximum_clip_fraction": 0.1077880859375,
+    "optimizer_updates_logged": 74
+  }
+}

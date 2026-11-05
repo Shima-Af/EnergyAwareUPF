@@ -1,0 +1,20 @@
+{
+  "status": "incomplete_material_scientific_blocker",
+  "preserved_file_count": 5266,
+  "changed_prior_files": [],
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "tracked_status": "",
+  "external_sources_unchanged": true,
+  "model_training": false,
+  "controller_training": false,
+  "final_test_access": false,
+  "final_test_evaluation": false,
+  "committed": false,
+  "pushed": false,
+  "tests": {
+    "passed": 13,
+    "seconds": 0.02,
+    "log": "revision/reports/stage10/final_tests.log"
+  }
+}

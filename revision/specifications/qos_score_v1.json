@@ -1,0 +1,27 @@
+{
+  "specification_id": "comcom.recovered_composite_qos.v1",
+  "status": "author_selected_historical_definition_2026-10-22",
+  "purpose": "Preserve actual experimental QoS_w labels; correct the methodological description transparently",
+  "target_column": "QoS_w",
+  "target_units": "dimensionless composite optimization score in [0,1]",
+  "reference_notebook": "revision/reference/03_QoS.ipynb",
+  "reference_notebook_sha256": "ef3655a87bac78b022d83d872d61bc2202a98cc7de47f0399a7c05e3e2a0851c",
+  "reconstruction_evidence": "revision/reports/task2f/candidate_results.json",
+  "components": [
+    {"id": "throughput", "weight": 0.40, "numerator_column": "DN_Rx_Mbits/s", "denominator_column": "Objective Throughput (DL/UL)", "units": "Mbps / Mbps", "denominator_epsilon_mbps": 1e-9, "formula": "clip(numerator / (denominator + epsilon), 0, 1)", "interpretation": "received DN-side throughput relative to the recorded per-direction offered objective; exact end-to-end UL/DL attribution not authenticated"},
+    {"id": "delay", "weight": 0.20, "column": "downlink_delay_ms", "units": "ms", "normalization_cap": 40.0, "formula": "1 - clip(x, 0, cap) / cap", "interpretation": "stored downlink-delay summary; its historical aggregation is not an end-to-end tail-delay guarantee"},
+    {"id": "jitter", "weight": 0.20, "column": "RAN_jitter", "units": "microseconds", "normalization_cap": 10.0, "input_multiplier": 1.0, "formula": "1 - clip(x, 0, cap) / cap", "interpretation": "RAN-side Avg us export; no milliseconds conversion in score construction"},
+    {"id": "packet_loss", "weight": 0.20, "column": "RAN_PLR_interval", "stored_units": "fraction", "score_input_units": "percent", "input_multiplier": 100.0, "normalization_cap": 5.0, "formula": "1 - clip(100 * stored_fraction, 0, 5) / 5", "interpretation": "historical interval loss fraction; denominator and counter-reset handling require explicit verification"}
+  ],
+  "aggregation": "Normalize the supplied weights by their sum, then sum component_score * normalized_weight",
+  "weight_sum": 1.0,
+  "formula_changes_for_controller_performance": false,
+  "threshold": {"value": 0.90, "exact_measured_safe_definition": "QoS_w >= 0.90", "prediction_safe_definition": "predicted_QoS_w >= 0.90", "violation_severity": "max(0, 0.90 - measured_QoS_w)", "semantics": "composite-score target; not a formal 5QI or individual-KPI service guarantee"},
+  "normalization_caps_are": "score saturation points, not standardized service budgets",
+  "pca_score": {"column": "QoS_dd", "used_as_surrogate_training_target": false, "status": "historical exploratory alternative; retain unchanged"},
+  "historical_missing_value_behavior": "NumPy arithmetic propagates NaNs; the notebook specifies no imputation or missing-row repair",
+  "future_validation_input_policy": "Fail explicitly on missing or nonfinite inputs; do not impute, alter, or overwrite historical labels",
+  "observed_per_instance_offered_load_domain_mbps": [0.01, 5000.0],
+  "zero_load": "not measured; no new zero-load score or deployment claim is defined",
+  "not_guaranteed": ["standardized 5QI compliance", "end-to-end packet delay distribution", "packet error rate below 1e-6", "complete offered-throughput delivery", "service continuity during switching", "actual measured QoS from a surrogate prediction alone"]
+}

@@ -1,0 +1,242 @@
+{
+  "ppo_instant_42": {
+    "final_entropy_estimate": 0.9879187736660241,
+    "maximum_mean_approx_kl": 0.009452546946704,
+    "final_value_loss": 125.59334246516228,
+    "optimizer_updates": 74
+  },
+  "ppo_instant_123": {
+    "final_entropy_estimate": 0.98397070467472,
+    "maximum_mean_approx_kl": 0.008868034929037,
+    "final_value_loss": 119.34857475161553,
+    "optimizer_updates": 74
+  },
+  "ppo_instant_456": {
+    "final_entropy_estimate": 1.029156842082738,
+    "maximum_mean_approx_kl": 0.008694599382579,
+    "final_value_loss": 134.8804788172245,
+    "optimizer_updates": 74
+  },
+  "ppo_instant_789": {
+    "final_entropy_estimate": 1.02563152462244,
+    "maximum_mean_approx_kl": 0.008786896243691,
+    "final_value_loss": 135.09763646125793,
+    "optimizer_updates": 74
+  },
+  "ppo_instant_1024": {
+    "final_entropy_estimate": 1.008600532636046,
+    "maximum_mean_approx_kl": 0.008993467316031001,
+    "final_value_loss": 131.89769262075424,
+    "optimizer_updates": 74
+  },
+  "ppo_history_42": {
+    "final_entropy_estimate": 0.6106554398313161,
+    "maximum_mean_approx_kl": 0.008620157837867001,
+    "final_value_loss": 3.121679361164569,
+    "optimizer_updates": 74
+  },
+  "ppo_history_123": {
+    "final_entropy_estimate": 0.7292889207601541,
+    "maximum_mean_approx_kl": 0.008668087422847,
+    "final_value_loss": 3.721392282098532,
+    "optimizer_updates": 74
+  },
+  "ppo_history_456": {
+    "final_entropy_estimate": 0.792991369962692,
+    "maximum_mean_approx_kl": 0.008230540901422001,
+    "final_value_loss": 6.9793058624491096,
+    "optimizer_updates": 74
+  },
+  "ppo_history_789": {
+    "final_entropy_estimate": 0.8080892302095891,
+    "maximum_mean_approx_kl": 0.009844904765486,
+    "final_value_loss": 6.7709296712651845,
+    "optimizer_updates": 74
+  },
+  "ppo_history_1024": {
+    "final_entropy_estimate": 0.693305588886141,
+    "maximum_mean_approx_kl": 0.010204430669546,
+    "final_value_loss": 4.355375173687935,
+    "optimizer_updates": 74
+  },
+  "ppo_forecast_42": {
+    "final_entropy_estimate": 1.026540495827794,
+    "maximum_mean_approx_kl": 0.008295102976262,
+    "final_value_loss": 115.62947084009647,
+    "optimizer_updates": 74
+  },
+  "ppo_forecast_123": {
+    "final_entropy_estimate": 1.001194844022393,
+    "maximum_mean_approx_kl": 0.0082325078547,
+    "final_value_loss": 109.71689825952053,
+    "optimizer_updates": 74
+  },
+  "ppo_forecast_456": {
+    "final_entropy_estimate": 1.012288302928209,
+    "maximum_mean_approx_kl": 0.009336319752037001,
+    "final_value_loss": 127.79927017688752,
+    "optimizer_updates": 74
+  },
+  "ppo_forecast_789": {
+    "final_entropy_estimate": 1.014162664115428,
+    "maximum_mean_approx_kl": 0.00822028517723,
+    "final_value_loss": 112.80688314437866,
+    "optimizer_updates": 74
+  },
+  "ppo_forecast_1024": {
+    "final_entropy_estimate": 1.025790775567293,
+    "maximum_mean_approx_kl": 0.010010993108153001,
+    "final_value_loss": 100.76050274074078,
+    "optimizer_updates": 74
+  },
+  "ppo_hybrid_42": {
+    "final_entropy_estimate": 0.6686539847403761,
+    "maximum_mean_approx_kl": 0.009372565895318001,
+    "final_value_loss": 5.1400810483843085,
+    "optimizer_updates": 74
+  },
+  "ppo_hybrid_123": {
+    "final_entropy_estimate": 0.6650624498724931,
+    "maximum_mean_approx_kl": 0.00846685282886,
+    "final_value_loss": 5.606036978214979,
+    "optimizer_updates": 74
+  },
+  "ppo_hybrid_456": {
+    "final_entropy_estimate": 0.598313353210687,
+    "maximum_mean_approx_kl": 0.011310894042253002,
+    "final_value_loss": 6.203545025363565,
+    "optimizer_updates": 74
+  },
+  "ppo_hybrid_789": {
+    "final_entropy_estimate": 0.605126005411148,
+    "maximum_mean_approx_kl": 0.009787322953343001,
+    "final_value_loss": 4.918422080762684,
+    "optimizer_updates": 74
+  },
+  "ppo_hybrid_1024": {
+    "final_entropy_estimate": 0.7058941002935171,
+    "maximum_mean_approx_kl": 0.008693673647940001,
+    "final_value_loss": 3.215947991982102,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_instant_42": {
+    "final_entropy_estimate": 0.50129092792049,
+    "maximum_mean_approx_kl": 0.011812412180006001,
+    "final_value_loss": 336.0414816987701,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_instant_123": {
+    "final_entropy_estimate": 0.550306944176554,
+    "maximum_mean_approx_kl": 0.032921325415372,
+    "final_value_loss": 342.32773434803823,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_instant_456": {
+    "final_entropy_estimate": 0.5814317860640581,
+    "maximum_mean_approx_kl": 0.013695091940462001,
+    "final_value_loss": 346.30778652834704,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_instant_789": {
+    "final_entropy_estimate": 0.49634458348155003,
+    "maximum_mean_approx_kl": 0.016824750229716003,
+    "final_value_loss": 320.20473981164395,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_instant_1024": {
+    "final_entropy_estimate": 0.622844875790178,
+    "maximum_mean_approx_kl": 0.026049450039863004,
+    "final_value_loss": 351.3761684180237,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_history_42": {
+    "final_entropy_estimate": 0.804818986542522,
+    "maximum_mean_approx_kl": 0.032355476170778004,
+    "final_value_loss": 159.3560931683518,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_history_123": {
+    "final_entropy_estimate": 0.7300058979541061,
+    "maximum_mean_approx_kl": 0.017126742750406,
+    "final_value_loss": 327.5764204003848,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_history_456": {
+    "final_entropy_estimate": 0.768595517426729,
+    "maximum_mean_approx_kl": 0.0245923101902,
+    "final_value_loss": 388.1119455192238,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_history_789": {
+    "final_entropy_estimate": 0.7203191533684731,
+    "maximum_mean_approx_kl": 0.019366525113582,
+    "final_value_loss": 184.32164188036694,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_history_1024": {
+    "final_entropy_estimate": 0.7879556469619271,
+    "maximum_mean_approx_kl": 0.046024791896343,
+    "final_value_loss": 77.11694991737605,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_forecast_42": {
+    "final_entropy_estimate": 0.38285986294504204,
+    "maximum_mean_approx_kl": 0.009150188416242001,
+    "final_value_loss": 323.53708391794936,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_forecast_123": {
+    "final_entropy_estimate": 0.499816642794758,
+    "maximum_mean_approx_kl": 0.013101937249302,
+    "final_value_loss": 354.38400037484246,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_forecast_456": {
+    "final_entropy_estimate": 0.43000030294060704,
+    "maximum_mean_approx_kl": 0.014067105948925001,
+    "final_value_loss": 350.38383855461143,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_forecast_789": {
+    "final_entropy_estimate": 0.48577101770788406,
+    "maximum_mean_approx_kl": 0.035235494375228,
+    "final_value_loss": 330.2830082126893,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_forecast_1024": {
+    "final_entropy_estimate": 0.6097885652445251,
+    "maximum_mean_approx_kl": 0.01203934289515,
+    "final_value_loss": 347.0107834068593,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_hybrid_42": {
+    "final_entropy_estimate": 0.8250144928693771,
+    "maximum_mean_approx_kl": 0.020592581480741,
+    "final_value_loss": 344.4068747404963,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_hybrid_123": {
+    "final_entropy_estimate": 0.819566202163696,
+    "maximum_mean_approx_kl": 0.027253234758973004,
+    "final_value_loss": 322.86934837475417,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_hybrid_456": {
+    "final_entropy_estimate": 0.8222479696543711,
+    "maximum_mean_approx_kl": 0.043322041630744004,
+    "final_value_loss": 344.43348025488405,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_hybrid_789": {
+    "final_entropy_estimate": 0.7856926102191211,
+    "maximum_mean_approx_kl": 0.045544996857643,
+    "final_value_loss": 308.3943362833932,
+    "optimizer_updates": 74
+  },
+  "recurrent_ppo_hybrid_1024": {
+    "final_entropy_estimate": 0.8646795995533461,
+    "maximum_mean_approx_kl": 0.01869617588818,
+    "final_value_loss": 322.7084629099816,
+    "optimizer_updates": 74
+  }
+}

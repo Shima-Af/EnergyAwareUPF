@@ -1,0 +1,315 @@
+2026-10-23 19:13:57.246340: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+{
+  "netflix": {
+    "binary": {
+      "reward_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 88.37600878635367,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006452982524217766,
+        "aggregate_sec_j_per_mbit": 0.005305474235037533,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -325.45231922057536,
+        "discounted_return": -122.4437175050354,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 6,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9176135063171387,
+        "mean_predicted_qos": 0.9682757078655182,
+        "action_counts": [
+          339,
+          165,
+          0
+        ],
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "energy_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 88.35294359214481,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006452843614654113,
+        "aggregate_sec_j_per_mbit": 0.005304089562938377,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -325.4873181785673,
+        "discounted_return": -122.46308354113644,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 7,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9176135063171387,
+        "mean_predicted_qos": 0.9686932167600072,
+        "action_counts": [
+          344,
+          160,
+          0
+        ],
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "qos_constrained_energy_oracle": {
+        "slots": 504,
+        "energy_wh": 88.35294359214481,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006452843614654113,
+        "aggregate_sec_j_per_mbit": 0.005304089562938377,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -325.4873181785673,
+        "discounted_return": -122.46308354113644,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 7,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9176135063171387,
+        "mean_predicted_qos": 0.9686932167600072,
+        "action_counts": [
+          344,
+          160,
+          0
+        ],
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      }
+    },
+    "ternary": {
+      "reward_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 87.63018990478025,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006308253466104471,
+        "aggregate_sec_j_per_mbit": 0.0052607005129094156,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -318.22997469166535,
+        "discounted_return": -119.53581267444605,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 12,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9648966750218755,
+        "action_counts": [
+          339,
+          0,
+          165
+        ],
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "energy_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 87.62664934944725,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006309894532520581,
+        "aggregate_sec_j_per_mbit": 0.005260487962859295,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -318.3666844390373,
+        "discounted_return": -119.6086914337893,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9653112571390848,
+        "action_counts": [
+          344,
+          0,
+          160
+        ],
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      },
+      "qos_constrained_energy_oracle": {
+        "slots": 504,
+        "energy_wh": 87.62664934944725,
+        "offered_mbit": 59967048.66263901,
+        "mean_sec_j_per_mbit": 0.006309894532520581,
+        "aggregate_sec_j_per_mbit": 0.005260487962859295,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -318.3666844390373,
+        "discounted_return": -119.6086914337893,
+        "type_switches": 13,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 13,
+        "usr_instances_launched": 14,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9078869819641113,
+        "mean_predicted_qos": 0.9653112571390848,
+        "action_counts": [
+          344,
+          0,
+          160
+        ],
+        "horizon_identity": "ada5dd111aed0086912877c442060bff1e208b1ef6e9e1707c0ab7a43748fee5"
+      }
+    }
+  },
+  "youtube": {
+    "binary": {
+      "reward_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 85.72115313453016,
+        "offered_mbit": 55705582.6340866,
+        "mean_sec_j_per_mbit": 0.006401359943999797,
+        "aggregate_sec_j_per_mbit": 0.0055397706422242255,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -322.8505411775898,
+        "discounted_return": -122.93218230060897,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 6,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9168330430984497,
+        "mean_predicted_qos": 0.9688189495650549,
+        "action_counts": [
+          356,
+          148,
+          0
+        ],
+        "horizon_identity": "fc2b55c72e6d55b2b92d056c2ef38a0e79203d0097bb2bd52d5871e124886c79"
+      },
+      "energy_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 85.72115313453016,
+        "offered_mbit": 55705582.6340866,
+        "mean_sec_j_per_mbit": 0.006401359943999797,
+        "aggregate_sec_j_per_mbit": 0.0055397706422242255,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -322.8505411775898,
+        "discounted_return": -122.93218230060897,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 6,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9168330430984497,
+        "mean_predicted_qos": 0.9688189495650549,
+        "action_counts": [
+          356,
+          148,
+          0
+        ],
+        "horizon_identity": "fc2b55c72e6d55b2b92d056c2ef38a0e79203d0097bb2bd52d5871e124886c79"
+      },
+      "qos_constrained_energy_oracle": {
+        "slots": 504,
+        "energy_wh": 85.72115313453016,
+        "offered_mbit": 55705582.6340866,
+        "mean_sec_j_per_mbit": 0.006401359943999797,
+        "aggregate_sec_j_per_mbit": 0.0055397706422242255,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -322.8505411775898,
+        "discounted_return": -122.93218230060897,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 6,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9168330430984497,
+        "mean_predicted_qos": 0.9688189495650549,
+        "action_counts": [
+          356,
+          148,
+          0
+        ],
+        "horizon_identity": "fc2b55c72e6d55b2b92d056c2ef38a0e79203d0097bb2bd52d5871e124886c79"
+      }
+    },
+    "ternary": {
+      "reward_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 85.05955335080435,
+        "offered_mbit": 55705582.6340866,
+        "mean_sec_j_per_mbit": 0.006237754433215375,
+        "aggregate_sec_j_per_mbit": 0.0054970144388279156,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -314.6768234340549,
+        "discounted_return": -119.58353819487823,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 12,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9068260192871094,
+        "mean_predicted_qos": 0.9652068523897065,
+        "action_counts": [
+          354,
+          0,
+          150
+        ],
+        "horizon_identity": "fc2b55c72e6d55b2b92d056c2ef38a0e79203d0097bb2bd52d5871e124886c79"
+      },
+      "energy_optimal_oracle": {
+        "slots": 504,
+        "energy_wh": 85.05955335080435,
+        "offered_mbit": 55705582.6340866,
+        "mean_sec_j_per_mbit": 0.006237754433215375,
+        "aggregate_sec_j_per_mbit": 0.0054970144388279156,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -314.6768234340549,
+        "discounted_return": -119.58353819487823,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 12,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9068260192871094,
+        "mean_predicted_qos": 0.9652068523897065,
+        "action_counts": [
+          354,
+          0,
+          150
+        ],
+        "horizon_identity": "fc2b55c72e6d55b2b92d056c2ef38a0e79203d0097bb2bd52d5871e124886c79"
+      },
+      "qos_constrained_energy_oracle": {
+        "slots": 504,
+        "energy_wh": 85.05955335080435,
+        "offered_mbit": 55705582.6340866,
+        "mean_sec_j_per_mbit": 0.006237754433215375,
+        "aggregate_sec_j_per_mbit": 0.0054970144388279156,
+        "qos_violation_rate": 0.0,
+        "mean_qos_shortfall": 0.0,
+        "total_reward": -314.6768234340549,
+        "discounted_return": -119.58353819487823,
+        "type_switches": 11,
+        "scale_up_events": 0,
+        "scale_down_events": 0,
+        "reconfigurations": 11,
+        "usr_instances_launched": 12,
+        "blocked_requests": 0,
+        "min_predicted_qos": 0.9068260192871094,
+        "mean_predicted_qos": 0.9652068523897065,
+        "action_counts": [
+          354,
+          0,
+          150
+        ],
+        "horizon_identity": "fc2b55c72e6d55b2b92d056c2ef38a0e79203d0097bb2bd52d5871e124886c79"
+      }
+    }
+  }
+}

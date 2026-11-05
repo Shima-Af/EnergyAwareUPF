@@ -1,0 +1,26 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "prior_revision_files_checked": 109,
+  "prior_revision_files_changed": [],
+  "original_profiling_artifacts_verified": 12,
+  "external_processed_raw_catalog_and_copy_hashes_verified": true,
+  "selected_manifest_sha256": "eaae6a49398590dcc86da0caaab2c1ec4c69b7b74d5edd5345a8cbaca5c367b8",
+  "selected_model_sha256": "8a666dd38652bfe7d9c6c2ee39a44623892c6052ee01836523c6ed65ed8d17c6",
+  "all_four_candidate_model_config_and_code_hashes_verified": true,
+  "tracked_and_staged_changes": [],
+  "default_twin_replaced": false,
+  "traffic_files_used_for_diagnostics": false,
+  "traffic_final_test_outcomes_accessed": false,
+  "scientific_profiling_candidate_runs": 4,
+  "synthetic_unit_test_fits": 2,
+  "scientific_candidate_epochs_run": 1093,
+  "rl_training": false,
+  "commit_or_push": false,
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.profiling.train_neural_power --output-dir revision/reports/task2d --model-dir revision/models/task2d",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.neural_power_comparisons --output-dir revision/reports/task2d/comparisons",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest revision/tests -q -p no:cacheprovider",
+    "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m revision.diagnostics.plot_neural_power"
+  ]
+}

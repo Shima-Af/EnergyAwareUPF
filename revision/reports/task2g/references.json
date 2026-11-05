@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "title": "ETSI TS 123 501 V18.5.0 (2024-05), 3GPP TS 23.501 Release 18",
+      "url": "https://www.etsi.org/deliver/etsi_TS/123500_123599/123501/18.05.00_60/ts_123501v180500p.pdf",
+      "sections": [
+        "5.7.3",
+        "5.7.4",
+        "Table 5.7.4-1"
+      ],
+      "purpose": "Distinguish standardized QoS characteristics from historical study-specific composite caps; table has no 100ms jitter characteristic"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+mode,source_row,column,displayed,later_value,matches_display_precision
+DPDK,0,timestamp,2025-01-03 16:25:39,2025-01-03 16:25:39,True
+DPDK,0,RAN_Tx_pks,0.0,0.0,True
+DPDK,0,RAN_Rx_pks,0.0,0.0,True
+DPDK,0,DN_Rx_pks,1.0,1.0,True
+DPDK,0,DN_Tx_pks,1.0,1.0,True
+DPDK,0,DN_pks_lost,0.0,0.0,True
+DPDK,0,RAN_pks_lost,0.0,0.0,True
+DPDK,0,DN_jitter,1447.0,1447.0,True
+DPDK,0,RAN_jitter,52.0,52.0,True
+DPDK,0,Test Case,TC1,TC1,True
+DPDK,0,Test Set,1,1,True
+DPDK,0,Objective Throughput (DL/UL),0.01,0.01,True
+DPDK,0,Packet Size,1250,1250,True
+DPDK,0,Packet Rate,1,1,True
+DPDK,0,total_throughput_mbps,0.019,0.019,True
+DPDK,0,total_packets_per_second,1.0,1.0,True
+DPDK,0,DN_pks_lost_interval,0.0,0.0,True
+DPDK,0,RAN_pks_lost_interval,0.0,0.0,True
+DPDK,0,DN_PLR_interval,0.0,0.0,True
+DPDK,0,RAN_PLR_interval,0.0,0.0,True
+DPDK,1,timestamp,2025-01-03 16:25:42,2025-01-03 16:25:42,True
+DPDK,1,RAN_Tx_pks,1.0,1.0,True
+DPDK,1,RAN_Rx_pks,1.0,1.0,True
+DPDK,1,DN_Rx_pks,1.0,1.0,True
+DPDK,1,DN_Tx_pks,1.0,1.0,True
+DPDK,1,DN_pks_lost,0.0,0.0,True
+DPDK,1,RAN_pks_lost,0.0,0.0,True
+DPDK,1,DN_jitter,579.0,579.0,True
+DPDK,1,RAN_jitter,22.0,22.0,True
+DPDK,1,Test Case,TC1,TC1,True
+DPDK,1,Test Set,1,1,True
+DPDK,1,Objective Throughput (DL/UL),0.01,0.01,True
+DPDK,1,Packet Size,1250,1250,True
+DPDK,1,Packet Rate,1,1,True
+DPDK,1,total_throughput_mbps,0.020,0.02,True
+DPDK,1,total_packets_per_second,2.0,2.0,True
+DPDK,1,DN_pks_lost_interval,0.0,0.0,True
+DPDK,1,RAN_pks_lost_interval,0.0,0.0,True
+DPDK,1,DN_PLR_interval,0.0,0.0,True
+DPDK,1,RAN_PLR_interval,0.0,0.0,True
+DPDK,2,timestamp,2025-01-03 16:25:45,2025-01-03 16:25:45,True
+DPDK,2,RAN_Tx_pks,0.0,0.0,True
+DPDK,2,RAN_Rx_pks,0.0,0.0,True
+DPDK,2,DN_Rx_pks,1.0,1.0,True
+DPDK,2,DN_Tx_pks,1.0,1.0,True
+DPDK,2,DN_pks_lost,0.0,0.0,True
+DPDK,2,RAN_pks_lost,0.0,0.0,True
+DPDK,2,DN_jitter,364.0,364.0,True
+DPDK,2,RAN_jitter,15.0,15.0,True
+DPDK,2,Test Case,TC1,TC1,True
+DPDK,2,Test Set,1,1,True
+DPDK,2,Objective Throughput (DL/UL),0.01,0.01,True
+DPDK,2,Packet Size,1250,1250,True
+DPDK,2,Packet Rate,1,1,True
+DPDK,2,total_throughput_mbps,0.020,0.02,True
+DPDK,2,total_packets_per_second,1.0,1.0,True
+DPDK,2,DN_pks_lost_interval,0.0,0.0,True
+DPDK,2,RAN_pks_lost_interval,0.0,0.0,True
+DPDK,2,DN_PLR_interval,0.0,0.0,True
+DPDK,2,RAN_PLR_interval,0.0,0.0,True
+DPDK,3,timestamp,2025-01-03 16:25:48,2025-01-03 16:25:48,True
+DPDK,3,RAN_Tx_pks,0.0,0.0,True
+DPDK,3,RAN_Rx_pks,0.0,0.0,True
+DPDK,3,DN_Rx_pks,1.0,1.0,True
+DPDK,3,DN_Tx_pks,1.0,1.0,True
+DPDK,3,DN_pks_lost,0.0,0.0,True
+DPDK,3,RAN_pks_lost,0.0,0.0,True
+DPDK,3,DN_jitter,267.0,267.0,True
+DPDK,3,RAN_jitter,13.0,13.0,True
+DPDK,3,Test Case,TC1,TC1,True
+DPDK,3,Test Set,1,1,True
+DPDK,3,Objective Throughput (DL/UL),0.01,0.01,True
+DPDK,3,Packet Size,1250,1250,True
+DPDK,3,Packet Rate,1,1,True
+DPDK,3,total_throughput_mbps,0.019,0.019,True
+DPDK,3,total_packets_per_second,1.0,1.0,True
+DPDK,3,DN_pks_lost_interval,0.0,0.0,True
+DPDK,3,RAN_pks_lost_interval,0.0,0.0,True
+DPDK,3,DN_PLR_interval,0.0,0.0,True
+DPDK,3,RAN_PLR_interval,0.0,0.0,True
+DPDK,4,timestamp,2025-01-03 16:25:51,2025-01-03 16:25:51,True
+DPDK,4,RAN_Tx_pks,1.0,1.0,True
+DPDK,4,RAN_Rx_pks,1.0,1.0,True
+DPDK,4,DN_Rx_pks,1.0,1.0,True
+DPDK,4,DN_Tx_pks,1.0,1.0,True
+DPDK,4,DN_pks_lost,0.0,0.0,True
+DPDK,4,RAN_pks_lost,0.0,0.0,True
+DPDK,4,DN_jitter,210.0,210.0,True
+DPDK,4,RAN_jitter,11.0,11.0,True
+DPDK,4,Test Case,TC1,TC1,True
+DPDK,4,Test Set,1,1,True
+DPDK,4,Objective Throughput (DL/UL),0.01,0.01,True
+DPDK,4,Packet Size,1250,1250,True
+DPDK,4,Packet Rate,1,1,True
+DPDK,4,total_throughput_mbps,0.020,0.02,True
+DPDK,4,total_packets_per_second,2.0,2.0,True
+DPDK,4,DN_pks_lost_interval,0.0,0.0,True
+DPDK,4,RAN_pks_lost_interval,0.0,0.0,True
+DPDK,4,DN_PLR_interval,0.0,0.0,True
+DPDK,4,RAN_PLR_interval,0.0,0.0,True
+USR,0,timestamp,2025-01-13 13:09:06,2025-01-13 13:09:06,True
+USR,0,RAN_Tx_pks,0.0,0.0,True
+USR,0,RAN_Rx_pks,0.0,0.0,True
+USR,0,DN_Rx_pks,1.0,1.0,True
+USR,0,DN_Tx_pks,1.0,1.0,True
+USR,0,DN_pks_lost,0.0,0.0,True
+USR,0,RAN_pks_lost,0.0,0.0,True
+USR,0,DN_jitter,355.0,355.0,True
+USR,0,RAN_jitter,596.0,596.0,True
+USR,0,Test Case,TC1,TC1,True
+USR,0,Test Set,1,1,True
+USR,0,Objective Throughput (DL/UL),0.01,0.01,True
+USR,0,Packet Size,1250,1250,True
+USR,0,Packet Rate,1,1,True
+USR,0,total_packets_per_second,1.0,1.0,True
+USR,0,total_throughput_mbps,0.019,0.019,True
+USR,0,DN_pks_lost_interval,0.0,0.0,True
+USR,0,RAN_pks_lost_interval,0.0,0.0,True
+USR,0,DN_PLR_interval,0.0,0.0,True
+USR,0,RAN_PLR_interval,0.0,0.0,True
+USR,1,timestamp,2025-01-13 13:09:09,2025-01-13 13:09:09,True
+USR,1,RAN_Tx_pks,1.0,1.0,True
+USR,1,RAN_Rx_pks,1.0,1.0,True
+USR,1,DN_Rx_pks,1.0,1.0,True
+USR,1,DN_Tx_pks,1.0,1.0,True
+USR,1,DN_pks_lost,0.0,0.0,True
+USR,1,RAN_pks_lost,0.0,0.0,True
+USR,1,DN_jitter,152.0,152.0,True
+USR,1,RAN_jitter,279.0,279.0,True
+USR,1,Test Case,TC1,TC1,True
+USR,1,Test Set,1,1,True
+USR,1,Objective Throughput (DL/UL),0.01,0.01,True
+USR,1,Packet Size,1250,1250,True
+USR,1,Packet Rate,1,1,True
+USR,1,total_packets_per_second,2.0,2.0,True
+USR,1,total_throughput_mbps,0.021,0.0209999999999999,True
+USR,1,DN_pks_lost_interval,0.0,0.0,True
+USR,1,RAN_pks_lost_interval,0.0,0.0,True
+USR,1,DN_PLR_interval,0.0,0.0,True
+USR,1,RAN_PLR_interval,0.0,0.0,True
+USR,2,timestamp,2025-01-13 13:09:12,2025-01-13 13:09:12,True
+USR,2,RAN_Tx_pks,0.0,0.0,True
+USR,2,RAN_Rx_pks,0.0,0.0,True
+USR,2,DN_Rx_pks,1.0,1.0,True
+USR,2,DN_Tx_pks,1.0,1.0,True
+USR,2,DN_pks_lost,0.0,0.0,True
+USR,2,RAN_pks_lost,0.0,0.0,True
+USR,2,DN_jitter,103.0,103.0,True
+USR,2,RAN_jitter,167.0,167.0,True
+USR,2,Test Case,TC1,TC1,True
+USR,2,Test Set,1,1,True
+USR,2,Objective Throughput (DL/UL),0.01,0.01,True
+USR,2,Packet Size,1250,1250,True
+USR,2,Packet Rate,1,1,True
+USR,2,total_packets_per_second,1.0,1.0,True
+USR,2,total_throughput_mbps,0.019,0.019,True
+USR,2,DN_pks_lost_interval,0.0,0.0,True
+USR,2,RAN_pks_lost_interval,0.0,0.0,True
+USR,2,DN_PLR_interval,0.0,0.0,True
+USR,2,RAN_PLR_interval,0.0,0.0,True
+USR,3,timestamp,2025-01-13 13:09:15,2025-01-13 13:09:15,True
+USR,3,RAN_Tx_pks,0.0,0.0,True
+USR,3,RAN_Rx_pks,0.0,0.0,True
+USR,3,DN_Rx_pks,1.0,1.0,True
+USR,3,DN_Tx_pks,1.0,1.0,True
+USR,3,DN_pks_lost,0.0,0.0,True
+USR,3,RAN_pks_lost,0.0,0.0,True
+USR,3,DN_jitter,82.0,82.0,True
+USR,3,RAN_jitter,129.0,129.0,True
+USR,3,Test Case,TC1,TC1,True
+USR,3,Test Set,1,1,True
+USR,3,Objective Throughput (DL/UL),0.01,0.01,True
+USR,3,Packet Size,1250,1250,True
+USR,3,Packet Rate,1,1,True
+USR,3,total_packets_per_second,1.0,1.0,True
+USR,3,total_throughput_mbps,0.019,0.019,True
+USR,3,DN_pks_lost_interval,0.0,0.0,True
+USR,3,RAN_pks_lost_interval,0.0,0.0,True
+USR,3,DN_PLR_interval,0.0,0.0,True
+USR,3,RAN_PLR_interval,0.0,0.0,True
+USR,4,timestamp,2025-01-13 13:09:18,2025-01-13 13:09:18,True
+USR,4,RAN_Tx_pks,0.0,0.0,True
+USR,4,RAN_Rx_pks,0.0,0.0,True
+USR,4,DN_Rx_pks,0.0,0.0,True
+USR,4,DN_Tx_pks,0.0,0.0,True
+USR,4,DN_pks_lost,0.0,0.0,True
+USR,4,RAN_pks_lost,0.0,0.0,True
+USR,4,DN_jitter,69.0,69.0,True
+USR,4,RAN_jitter,103.0,103.0,True
+USR,4,Test Case,TC1,TC1,True
+USR,4,Test Set,1,1,True
+USR,4,Objective Throughput (DL/UL),0.01,0.01,True
+USR,4,Packet Size,1250,1250,True
+USR,4,Packet Rate,1,1,True
+USR,4,total_packets_per_second,0.0,0.0,True
+USR,4,total_throughput_mbps,0.019,0.019,True
+USR,4,DN_pks_lost_interval,0.0,0.0,True
+USR,4,RAN_pks_lost_interval,0.0,0.0,True
+USR,4,DN_PLR_interval,0.0,0.0,True
+USR,4,RAN_PLR_interval,0.0,0.0,True

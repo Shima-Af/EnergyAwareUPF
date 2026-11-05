@@ -1,0 +1,135 @@
+{
+  "path": "/home/ubuntu/EnergyAwareUPF/revision/reference/03_QoS.ipynb",
+  "sha256": "ef3655a87bac78b022d83d872d61bc2202a98cc7de47f0399a7c05e3e2a0851c",
+  "cells": [
+    {
+      "index": 0,
+      "type": "code",
+      "execution_count": 2,
+      "source": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nfrom sklearn.decomposition import PCA\nfrom sklearn.preprocessing import StandardScaler, MinMaxScaler",
+      "outputs": []
+    },
+    {
+      "index": 1,
+      "type": "code",
+      "execution_count": 25,
+      "source": "# Load the processed data\ndpdk_df = pd.read_csv('../data/processed/dpdk_df_processed.csv')\noai_df = pd.read_csv('../data/processed/oai_df_processed.csv')\n\n# Display the first few rows of each dataframe\nprint(\"DPDK Data:\")\ndisplay(dpdk_df.head())\n\nprint(\"\\nOAI Data:\")\ndisplay(oai_df.head())",
+      "outputs": [
+        {
+          "type": "stream",
+          "text": "DPDK Data:\n",
+          "text_plain": "",
+          "mime_types": []
+        },
+        {
+          "type": "display_data",
+          "text": "",
+          "text_plain": "             timestamp  RAN_Tx_pks  RAN_Rx_pks  DN_Rx_pks  DN_Tx_pks  \\\n0  2025-01-03 16:25:39         0.0         0.0        1.0        1.0   \n1  2025-01-03 16:25:42         1.0         1.0        1.0        1.0   \n2  2025-01-03 16:25:45         0.0         0.0        1.0        1.0   \n3  2025-01-03 16:25:48         0.0         0.0        1.0        1.0   \n4  2025-01-03 16:25:51         1.0         1.0        1.0        1.0   \n\n   DN_pks_lost  RAN_pks_lost  DN_jitter  RAN_jitter Test Case  ...  Test Set  \\\n0          0.0           0.0     1447.0        52.0       TC1  ...         1   \n1          0.0           0.0      579.0        22.0       TC1  ...         1   \n2          0.0           0.0      364.0        15.0       TC1  ...         1   \n3          0.0           0.0      267.0        13.0       TC1  ...         1   \n4          0.0           0.0      210.0        11.0       TC1  ...         1   \n\n   Objective Throughput (DL/UL)  Packet Size  Packet Rate  \\\n0                          0.01         1250            1   \n1                          0.01         1250            1   \n2                          0.01         1250            1   \n3                          0.01         1250            1   \n4                          0.01         1250            1   \n\n   total_throughput_mbps  total_packets_per_second  DN_pks_lost_interval  \\\n0                  0.019                       1.0                   0.0   \n1                  0.020                       2.0                   0.0   \n2                  0.020                       1.0                   0.0   \n3                  0.019                       1.0                   0.0   \n4                  0.020                       2.0                   0.0   \n\n   RAN_pks_lost_interval  DN_PLR_interval  RAN_PLR_interval  \n0                    0.0              0.0               0.0  \n1                    0.0              0.0               0.0  \n2                    0.0              0.0               0.0  \n3                    0.0              0.0               0.0  \n4                    0.0              0.0               0.0  \n\n[5 rows x 28 columns]",
+          "mime_types": [
+            "application/vnd.microsoft.datawrangler.viewer.v0+json",
+            "text/html",
+            "text/plain"
+          ]
+        },
+        {
+          "type": "stream",
+          "text": "\nOAI Data:\n",
+          "text_plain": "",
+          "mime_types": []
+        },
+        {
+          "type": "display_data",
+          "text": "",
+          "text_plain": "             timestamp  RAN_Tx_pks  RAN_Rx_pks  DN_Rx_pks  DN_Tx_pks  \\\n0  2025-01-13 13:09:06         0.0         0.0        1.0        1.0   \n1  2025-01-13 13:09:09         1.0         1.0        1.0        1.0   \n2  2025-01-13 13:09:12         0.0         0.0        1.0        1.0   \n3  2025-01-13 13:09:15         0.0         0.0        1.0        1.0   \n4  2025-01-13 13:09:18         0.0         0.0        0.0        0.0   \n\n   DN_pks_lost  RAN_pks_lost  DN_jitter  RAN_jitter Test Case  ...  Test Set  \\\n0          0.0           0.0      355.0       596.0       TC1  ...         1   \n1          0.0           0.0      152.0       279.0       TC1  ...         1   \n2          0.0           0.0      103.0       167.0       TC1  ...         1   \n3          0.0           0.0       82.0       129.0       TC1  ...         1   \n4          0.0           0.0       69.0       103.0       TC1  ...         1   \n\n   Objective Throughput (DL/UL)  Packet Size  Packet Rate  \\\n0                          0.01         1250            1   \n1                          0.01         1250            1   \n2                          0.01         1250            1   \n3                          0.01         1250            1   \n4                          0.01         1250            1   \n\n   total_packets_per_second  total_throughput_mbps  DN_pks_lost_interval  \\\n0                       1.0                  0.019                   0.0   \n1                       2.0                  0.021                   0.0   \n2                       1.0                  0.019                   0.0   \n3                       1.0                  0.019                   0.0   \n4                       0.0                  0.019                   0.0   \n\n   RAN_pks_lost_interval  DN_PLR_interval  RAN_PLR_interval  \n0                    0.0              0.0               0.0  \n1                    0.0              0.0               0.0  \n2                    0.0              0.0               0.0  \n3                    0.0              0.0               0.0  \n4                    0.0              0.0               0.0  \n\n[5 rows x 28 columns]",
+          "mime_types": [
+            "application/vnd.microsoft.datawrangler.viewer.v0+json",
+            "text/html",
+            "text/plain"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "type": "code",
+      "execution_count": 26,
+      "source": "print(\"DPDK Columns:\")\nprint(dpdk_df.columns)\n\nprint(\"\\nOAI Columns:\")\nprint(oai_df.columns)",
+      "outputs": [
+        {
+          "type": "stream",
+          "text": "DPDK Columns:\nIndex(['timestamp', 'RAN_Tx_pks', 'RAN_Rx_pks', 'DN_Rx_pks', 'DN_Tx_pks',\n       'DN_pks_lost', 'RAN_pks_lost', 'DN_jitter', 'RAN_jitter', 'Test Case',\n       'cpu_usage_percentage', 'DN_Tx_Mbits/s', 'DN_Rx_Mbits/s',\n       'RAN_Tx_Mbits/s', 'RAN_Rx_Mbits/s', 'uplink_delay_ms',\n       'downlink_delay_ms', 'power_consumption_watts', 'Test Set',\n       'Objective Throughput (DL/UL)', 'Packet Size', 'Packet Rate',\n       'total_throughput_mbps', 'total_packets_per_second',\n       'DN_pks_lost_interval', 'RAN_pks_lost_interval', 'DN_PLR_interval',\n       'RAN_PLR_interval'],\n      dtype='object')\n\nOAI Columns:\nIndex(['timestamp', 'RAN_Tx_pks', 'RAN_Rx_pks', 'DN_Rx_pks', 'DN_Tx_pks',\n       'DN_pks_lost', 'RAN_pks_lost', 'DN_jitter', 'RAN_jitter', 'Test Case',\n       'cpu_usage_percentage', 'DN_Tx_Mbits/s', 'DN_Rx_Mbits/s',\n       'RAN_Tx_Mbits/s', 'RAN_Rx_Mbits/s', 'uplink_delay_ms',\n       'downlink_delay_ms', 'power_consumption_watts', 'Test Set',\n       'Objective Throughput (DL/UL)', 'Packet Size', 'Packet Rate',\n       'total_packets_per_second', 'total_throughput_mbps',\n       'DN_pks_lost_interval', 'RAN_pks_lost_interval', 'DN_PLR_interval',\n       'RAN_PLR_interval'],\n      dtype='object')\n",
+          "text_plain": "",
+          "mime_types": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "type": "markdown",
+      "execution_count": null,
+      "source": "QoS : Data-Driven",
+      "outputs": []
+    },
+    {
+      "index": 4,
+      "type": "code",
+      "execution_count": 14,
+      "source": "def bounded_score_low_is_bad(x, cap):\n    x = np.clip(x, 0, cap)\n    return 1.0 - (x / cap)\n\ndef throughput_fulfillment(delivered, objective, eps=1e-9):\n    return np.clip(delivered / (objective + eps), 0.0, 1.0)\n\ndef compute_component_scores(df, *, \n                             delivered_col=\"Avg DL Throughput (Mbps)\",\n                             objective_col=\"Avg Objective Throughput (Mbps)\",\n                             delay_col=\"Avg DL Delay (ms)\",\n                             jitter_col=\"Avg DL Jitter (us)\",\n                             loss_frac_col=\"Total Packet Loss (%)\",  # e.g., lost/tx\n                             D_max=40.0, J_max=10.0, L_max=5):\n    S_th   = throughput_fulfillment(df[delivered_col].values, df[objective_col].values)\n    S_lat  = bounded_score_low_is_bad(df[delay_col].values,  D_max)\n    S_jit  = bounded_score_low_is_bad(df[jitter_col].values, J_max)\n    S_loss = bounded_score_low_is_bad(df[loss_frac_col].values, L_max)\n    return np.vstack([S_th, S_lat, S_jit, S_loss]).T  # shape: (n,4)\n\ndef weighted_qos(S, w=(0.40, 0.20, 0.20, 0.20)):\n    W = np.asarray(w)/np.sum(w)\n    return (S * W).sum(axis=1)\n\ndef data_driven_qos(S, random_state=0):\n    scaler_z = StandardScaler()\n    Z = scaler_z.fit_transform(S)\n    pca = PCA(n_components=1, random_state=random_state)\n    pc1 = pca.fit_transform(Z).ravel()\n    # Flip so higher is better: correlate with S_th (col 0)\n    if np.corrcoef(pc1, S[:,0])[0,1] < 0:\n        pc1 = -pc1\n    scaler_s = MinMaxScaler()\n    q_dd = scaler_s.fit_transform(pc1.reshape(-1,1)).ravel()\n    return q_dd, {\"scaler_z\": scaler_z, \"pca\": pca, \"scaler_s\": scaler_s}\n",
+      "outputs": []
+    },
+    {
+      "index": 5,
+      "type": "code",
+      "execution_count": 24,
+      "source": "# Create a figure with two subplots\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 7), sharey=True)\n\nobjective_throughput_col = 'Avg Objective Throughput (Mbps)'\n\n# Plot for Data-Driven QoS\nax1.scatter(dpdk_df[objective_throughput_col], dpdk_df['QoS_dd'], label='DPDK', alpha=0.7)\nax1.scatter(oai_df[objective_throughput_col], oai_df['QoS_dd'], label='OAI', alpha=0.7)\nax1.set_title('Data-Driven QoS vs. Objective Throughput')\nax1.set_xlabel('Objective Throughput (Mbps)')\nax1.set_ylabel('QoS Score')\nax1.legend()\nax1.grid(True)\nax1.set_xscale('log')\n# Plot for Weighted QoS\nax2.scatter(dpdk_df[objective_throughput_col], dpdk_df['QoS_w'], label='DPDK', alpha=0.7)\nax2.scatter(oai_df[objective_throughput_col], oai_df['QoS_w'], label='OAI', alpha=0.7)\nax2.set_title('Weighted QoS vs. Objective Throughput')\nax2.set_xlabel('Objective Throughput (Mbps)')\nax2.legend()\nax2.grid(True)\nax2.set_xscale('log')\n# Show the plots\nplt.tight_layout()\nplt.show()",
+      "outputs": [
+        {
+          "type": "display_data",
+          "text": "",
+          "text_plain": "<Figure size 1800x700 with 2 Axes>",
+          "mime_types": [
+            "image/png",
+            "text/plain"
+          ],
+          "image_path": "revision/reports/task2f/notebook_outputs/cell_5_output_0.png"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "type": "code",
+      "execution_count": 16,
+      "source": "# Group by objective throughput and calculate the mean QoS for both methods\ndpdk_avg_qos = dpdk_df.groupby(objective_throughput_col)[['QoS_w', 'QoS_dd']].mean()\noai_avg_qos = oai_df.groupby(objective_throughput_col)[['QoS_w', 'QoS_dd']].mean()\n\n# Create a figure with two subplots\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 7), sharey=True)\n\n# Plot for DPDK\nax1.plot(dpdk_avg_qos.index, dpdk_avg_qos['QoS_w'], label='Weighted QoS', marker='o', linestyle='-')\nax1.plot(dpdk_avg_qos.index, dpdk_avg_qos['QoS_dd'], label='Data-Driven QoS', marker='x', linestyle='--')\nax1.set_title('DPDK: Average QoS vs. Objective Throughput')\nax1.set_xlabel('Objective Throughput (Mbps)')\nax1.set_ylabel('Average QoS Score')\nax1.legend()\nax1.grid(True)\nax1.set_xscale('log')\n\n# Plot for OAI\nax2.plot(oai_avg_qos.index, oai_avg_qos['QoS_w'], label='Weighted QoS', marker='o', linestyle='-')\nax2.plot(oai_avg_qos.index, oai_avg_qos['QoS_dd'], label='Data-Driven QoS', marker='x', linestyle='--')\nax2.set_title('OAI: Average QoS vs. Objective Throughput')\nax2.set_xlabel('Objective Throughput (Mbps)')\nax2.legend()\nax2.grid(True)\nax2.set_xscale('log')\n\n# Show the plots\nplt.tight_layout()\nplt.show()",
+      "outputs": [
+        {
+          "type": "display_data",
+          "text": "",
+          "text_plain": "<Figure size 1800x700 with 2 Axes>",
+          "mime_types": [
+            "image/png",
+            "text/plain"
+          ],
+          "image_path": "revision/reports/task2f/notebook_outputs/cell_6_output_0.png"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "type": "code",
+      "execution_count": 22,
+      "source": "# Create a figure with two subplots, this time separating by QoS method\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 7), sharey=True)\n\n# Plot for Weighted QoS\nax1.plot(dpdk_avg_qos.index, dpdk_avg_qos['QoS_w'], label='DPDK', marker='o', linestyle='-')\nax1.plot(oai_avg_qos.index, oai_avg_qos['QoS_w'], label='OAI', marker='x', linestyle='--')\nax1.set_title('Weighted QoS: DPDK vs. OAI')\nax1.set_xlabel('Objective Throughput (Mbps)')\nax1.set_ylabel('Average QoS Score')\nax1.legend()\nax1.grid(True)\nax1.set_xscale('log')\n# ax1.set_yscale('log')\n# Plot for Data-Driven QoS\nax2.plot(dpdk_avg_qos.index, dpdk_avg_qos['QoS_dd'], label='DPDK', marker='o', linestyle='-')\nax2.plot(oai_avg_qos.index, oai_avg_qos['QoS_dd'], label='OAI', marker='x', linestyle='--')\nax2.set_title('Data-Driven QoS: DPDK vs. OAI')\nax2.set_xlabel('Objective Throughput (Mbps)')\nax2.legend()\nax2.grid(True)\nax2.set_xscale('log')\n# ax2.set_yscale('log')\n# Show the plots\nplt.tight_layout()\nplt.show()",
+      "outputs": [
+        {
+          "type": "display_data",
+          "text": "",
+          "text_plain": "<Figure size 1800x700 with 2 Axes>",
+          "mime_types": [
+            "image/png",
+            "text/plain"
+          ],
+          "image_path": "revision/reports/task2f/notebook_outputs/cell_7_output_0.png"
+        }
+      ]
+    }
+  ]
+}

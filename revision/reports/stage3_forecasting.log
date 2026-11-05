@@ -1,0 +1,9 @@
+2026-10-23 10:52:49.865298: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Forecast candidate lstm_load {'n': 504, 'mae_mbps': 34.74467186318176, 'rmse_mbps': 45.53398813390595, 'bias_mbps': -4.800617384690589, 'r2': 0.6237180117168746}
+Forecast candidate lstm_calendar {'n': 504, 'mae_mbps': 23.105853134886242, 'rmse_mbps': 28.508475404922333, 'bias_mbps': 9.134475844088554, 'r2': 0.8525006742729483}
+Walk-forward forecast complete 192 608
+Walk-forward forecast complete 608 1024
+Walk-forward forecast complete 1024 1440
+Walk-forward forecast complete 1440 1856
+Walk-forward forecast complete 1856 2016
+Forecast pipeline completed lstm_calendar {'train': {'n': 1920, 'mae_mbps': 38.01716639480819, 'rmse_mbps': 51.35876691779685, 'bias_mbps': 9.330034553667565, 'r2': 0.5317041429689421}, 'train_persistence_reference': {'n': 1920, 'mae_mbps': 15.943238521792845, 'rmse_mbps': 21.79565773902163, 'bias_mbps': 0.03064361885479772, 'r2': 0.9156604851745052}, 'validation': {'n': 504, 'mae_mbps': 23.105853134886242, 'rmse_mbps': 28.508475404922333, 'bias_mbps': 9.134475844088554, 'r2': 0.8525006742729483}, 'validation_persistence_reference': {'n': 504, 'mae_mbps': 15.27421084777909, 'rmse_mbps': 20.81062335203218, 'bias_mbps': 0.24748577809960018, 'r2': 0.9214018673243052}}

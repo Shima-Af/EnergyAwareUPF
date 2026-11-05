@@ -1,0 +1,97 @@
+{
+  "config": {
+    "task": "2C_minimal_usr_power_refit_diagnostic_only",
+    "source_csv": "/home/ubuntu/DDT_UPF_Selection_DRL/data/processed/oai_processed.csv",
+    "source_sha256": "72e8772f555babfec66b695fe0b31a7366ebc13b3b125413f8d7823b000f5d20",
+    "input_column": "Objective Throughput (DL/UL)",
+    "target_column": "power_consumption_watts",
+    "input_units": "Mbps_per_direction_as_recorded_in_original_campaign",
+    "target_units": "process_attributed_W",
+    "split": {
+      "train": [
+        1,
+        2,
+        3
+      ],
+      "validation": [
+        4
+      ],
+      "internal_test": [
+        5
+      ]
+    },
+    "domain_mbps": [
+      0.01,
+      5000.0
+    ],
+    "low_load_max_mbps": 20.0,
+    "candidates": [
+      {
+        "name": "nonnegative_affine",
+        "family": "affine"
+      },
+      {
+        "name": "nonnegative_pwl_7",
+        "family": "piecewise_linear",
+        "knots_mbps": [
+          0.01,
+          1.0,
+          10.0,
+          100.0,
+          400.0,
+          1000.0,
+          5000.0
+        ]
+      },
+      {
+        "name": "nonnegative_pwl_training_levels",
+        "family": "piecewise_linear",
+        "knots_mbps": "unique_training_load_levels"
+      }
+    ],
+    "fit_objective": "unweighted_training_row_squared_error_in_watts",
+    "solver": "scipy.optimize.nnls",
+    "selection_objective": "validation_row_rmse_w",
+    "tie_break": "fewest_parameters_then_name_for_exact_score_ties",
+    "refit_on_train_plus_validation": false,
+    "uncertainty": "three_leave_one_training_sweep_out_refits_of_selected_complexity_not_a_confidence_interval",
+    "default_twin_replacement": false,
+    "traffic_results_used_for_selection": false
+  },
+  "config_sha256": "bfec19aad03ec88dd255013962c8f70b0d90b8ea8d2f8ba69dec17932cae735a",
+  "partitions": {
+    "train": {
+      "sweeps": [
+        1,
+        2,
+        3
+      ],
+      "rows": 2736,
+      "case_blocks": 66,
+      "load_levels": 22,
+      "first_timestamp": "2025-01-13 13:09:06",
+      "last_timestamp": "2025-01-13 17:50:51"
+    },
+    "validation": {
+      "sweeps": [
+        4
+      ],
+      "rows": 915,
+      "case_blocks": 22,
+      "load_levels": 22,
+      "first_timestamp": "2025-01-13 18:21:03",
+      "last_timestamp": "2025-01-13 19:40:06"
+    },
+    "internal_test": {
+      "sweeps": [
+        5
+      ],
+      "rows": 913,
+      "case_blocks": 22,
+      "load_levels": 22,
+      "first_timestamp": "2025-01-13 19:44:48",
+      "last_timestamp": "2025-01-13 21:03:42"
+    }
+  },
+  "new_independent_campaign": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "comcom.noncompensatory_kpi_study_policy.v1",
+  "selection": "Explicit user decision; not a candidate in a QoS-definition comparison",
+  "aggregation": "Q = min(T,D,J,L); Q >= 0.90 required",
+  "target": 0.9,
+  "components": {
+    "throughput": {"formula": "clip(received_mbps/offered_mbps,0,1)", "minimum_fraction": 0.9, "direction_authentication": "pending complete tester metric interpretation"},
+    "delay": {"formula": "1-clip(downlink_delay_ms,0,40)/40", "budget_ms": 4.0},
+    "jitter": {"formula": "1-clip(RAN_jitter_us,0,10)/10", "budget_us": 1.0},
+    "loss": {"formula": "1-clip(100*verified_loss_fraction,0,5)/5", "budget_fraction": 0.005, "authentication": "blocked: historical stored ratio mixes interval counts and packet rates"}
+  },
+  "throughput_numerics": "Require positive offered load; no zero-load imputation. Remove historical 1e-9 denominator epsilon to express the approved positive-load 90% ratio directly. No trained labels are generated until provenance gate passes.",
+  "severity": "max(0,1-received_fraction/0.9,delay_ms/4-1,jitter_us/1-1,loss_fraction/0.005-1)",
+  "severity_role": "Continuous maximum normalized physical-budget exceedance; no compensation; not a finalized reward coefficient",
+  "claim_scope": "Explicit study-policy budgets, not externally validated 5QI guarantees",
+  "loss_count_substitution_allowed": false,
+  "profiling_split": {"train_sweeps": [1,2,3], "validation_sweep": 4, "internal_test_sweep": 5},
+  "training_gate": "Authenticate throughput metric/direction and dimensionally valid packet-loss fraction before creating the full four-KPI training targets",
+  "old_weighted_score_retained_for_provenance_only": true
+}

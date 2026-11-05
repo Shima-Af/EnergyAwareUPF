@@ -1,0 +1,45 @@
+{
+  "branch": "revision/comcom-clean-evaluation",
+  "head": "c0734715418d3f6d10785e5174aebb4bac24d0da",
+  "tracked_changes_from_head": "",
+  "status_short": "?? revision/",
+  "prior_revision_files_checked": 268,
+  "prior_revision_files_changed": [],
+  "prior_snapshot_sha256": "4fc3eb6389e2c8b84f92f0c55f5eeb5950c912883ce3e0e40d433349232ec157",
+  "original_profiling_artifacts_checked": 12,
+  "selected_artifact_and_implementation_checks": "all frozen SHA-256 identities match",
+  "profiling_sources": "both external processed CSV hashes unchanged",
+  "full_revision_test_result": {
+    "passed": 218,
+    "warnings": 28,
+    "seconds": 22.43,
+    "log": "revision/reports/final_twin_tests_full.log",
+    "sha256": "180a612ead0388308cd9c2c37c3b4b8b4b110b253a44d0c4b3e3b51f8f7c0ef7"
+  },
+  "commands": [
+    ".venv/bin/python -m revision.profiling.final_dpdk_power",
+    ".venv/bin/python -m revision.diagnostics.finalize_twin",
+    ".venv/bin/python -m revision.diagnostics.trace_dpdk_power",
+    ".venv/bin/python -m revision.diagnostics.plot_final_twin",
+    ".venv/bin/python -m pytest revision/tests -q -p no:cacheprovider"
+  ],
+  "execution_environment": "PYTHONDONTWRITEBYTECODE=1; deterministic CPU runtime from revision.evaluation.twin",
+  "scientific_neural_training_this_task": {
+    "dpdk_power_seeds": [
+      42,
+      123
+    ],
+    "epochs": [
+      143,
+      135
+    ]
+  },
+  "initial_failure": "missing descriptive input_units metadata before any neural training; evidence retained",
+  "unit_test_training": "two preexisting two-epoch synthetic neural fits; no scientific search",
+  "controller_training": false,
+  "traffic_final_test_controller_evaluation": false,
+  "manuscript_changes": false,
+  "git_commit_or_push": false,
+  "report_sha256": "21aae2110601d18cbbd49654c82614795953fc339c64e4781a412c5befdf1c2d",
+  "bytecode_policy": "incidental __pycache__ files excluded from scientific file manifest; prior recorded artifacts preserved"
+}

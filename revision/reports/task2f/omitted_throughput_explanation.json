@@ -1,0 +1,14 @@
+[
+  {
+    "mode": "DPDK",
+    "previous_same_DL_KPI_discrepancy_groups": 544,
+    "maximum_within_group_label_span_after_subtracting_throughput_component": 3.3306690738754696e-16,
+    "interpretation": "The omitted throughput component accounts for the Task 2E same-DL-KPI label differences to floating precision"
+  },
+  {
+    "mode": "USR",
+    "previous_same_DL_KPI_discrepancy_groups": 392,
+    "maximum_within_group_label_span_after_subtracting_throughput_component": 3.3306690738754696e-16,
+    "interpretation": "The omitted throughput component accounts for the Task 2E same-DL-KPI label differences to floating precision"
+  }
+]

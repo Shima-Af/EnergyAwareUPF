@@ -1,0 +1,19 @@
+
+==================================== ERRORS ====================================
+________________ ERROR collecting revision/tests/test_stage3.py ________________
+revision/tests/test_stage3.py:10: in <module>
+    from revision.stage3.common import inputs,OUT,MODELS,CFG
+revision/stage3/__init__.py:7: in <module>
+    _runtime()
+revision/evaluation/twin.py:82: in _runtime
+    raise RuntimeError("TensorFlow was imported before the twin CPU profile; use a fresh process")
+E   RuntimeError: TensorFlow was imported before the twin CPU profile; use a fresh process
+------------------------------- Captured stderr --------------------------------
+2026-10-23 10:58:25.818039: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-23 10:58:25.865275: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-23 10:58:27.034537: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+=========================== short test summary info ============================
+ERROR revision/tests/test_stage3.py - RuntimeError: TensorFlow was imported b...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 4.75s

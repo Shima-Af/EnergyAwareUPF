@@ -1,0 +1,66 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/EnergyAwareUPF/revision/evaluation/numerical_probe.py", line 139, in <module>
+    main()
+  File "/home/ubuntu/EnergyAwareUPF/revision/evaluation/numerical_probe.py", line 126, in main
+    summary, rows = probe(args.profile, args.reference)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/revision/evaluation/numerical_probe.py", line 47, in probe
+    value = (tf.keras.models.load_model(item["absolute_path"], compile=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/saving/saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/saving/saving_lib.py", line 365, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/saving/saving_lib.py", line 442, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/saving/saving_lib.py", line 431, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/saving/serialization_lib.py", line 733, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/models/sequential.py", line 371, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/saving/serialization_lib.py", line 745, in deserialize_keras_object
+    instance.build_from_config(build_config)
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/layers/layer.py", line 484, in build_from_config
+    self.build(config["input_shape"])
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/layers/layer.py", line 232, in build_wrapper
+    original_build_method(*args, **kwargs)
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/layers/core/dense.py", line 135, in build
+    self._kernel = self.add_weight(
+                   ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/layers/layer.py", line 578, in add_weight
+    variable = backend.Variable(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/backend/common/variables.py", line 206, in __init__
+    self._initialize_with_initializer(initializer)
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 52, in _initialize_with_initializer
+    self._initialize(lambda: initializer(self._shape, dtype=self._dtype))
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 42, in _initialize
+    self._value = tf.Variable(
+                  ^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 52, in <lambda>
+    self._initialize(lambda: initializer(self._shape, dtype=self._dtype))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/initializers/random_initializers.py", line 306, in __call__
+    return random.uniform(
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/random.py", line 33, in uniform
+    seed = _cast_seed(draw_seed(seed))
+                      ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/random/seed_generator.py", line 156, in draw_seed
+    return convert_to_tensor([seed, 0], dtype=random_seed_dtype())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/EnergyAwareUPF/.venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 151, in convert_to_tensor
+    x = tf.convert_to_tensor(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+tensorflow.python.framework.errors_impl.InternalError: cudaSetDevice() on GPU:0 failed. Status: operation not supported

@@ -1,0 +1,509 @@
+                                     IFIP Networking 2025 - Limassol, Cyprus - 26-30 May 2025
+
+
+
+
+      Dynamic Energy-Efficient User Plane Function
+               Selection in 5G Networks
+                  1st Shima Afshar Borji                        2nd Roberto Bruschi                  3rd Cristina Emilia Costa
+               DITEN - University of Genoa                  DITEN - University of Genoa               CNIT – S2N National Lab
+                       Genoa, Italy                          CNIT – S2N National Lab                       Genoa, Italy
+              shima.afshar.borji@edu.unige.it                       Genoa, Italy                          ccosta@cnit.it
+                                                              roberto.bruschi@unige.it
+
+         4th Chiara Lombardo
+     DITEN - University of Genoa
+      CNIT – S2N National Lab
+             Genoa, Italy
+       chiara.lombardo@unige.it
+
+
+
+        Abstract—User Plane Function (UPF) is the most de-              deployment of edge computing resources, and the com-
+     manding component in the 5G Core for computational re-             plexity of the 5G Core (5GC) contribute substantially to
+     sources and energy consumption. Static UPF deployments             this energy footprint, causing challenges for operational
+     struggle with dynamic traffic patterns, leading to significant
+     energy waste during off-peak hours or potential perfor-            costs and environmental sustainability [2]. Enhancing
+     mance bottlenecks during peak times. This paper proposes           energy efficiency is essential for the sustainable oper-
+     a framework for dynamic selection of heterogeneous UPF             ation of future mobile networks.
+     implementations that leverages traffic p rediction a nd UPF           Within the 5GC, the User Plane Function (UPF) is
+     profiling t o o ptimize e nergy e fficiency wh ile maintaining
+     service performance. We profile t wo d istinct U PF imple-         a critical component responsible for packet routing,
+     mentations characterizing their power consumption and              forwarding, Quality of Service (QoS) handling, and
+     performance across various offered loads. A lightweight            usage reporting. Its central role in data plane processing
+     Long Short-Term Memory (LSTM) model is employed to                 makes it a significant contributor to overall core network
+     predict near-term traffic l oad b ased o n h istorical patterns.   energy consumption [3]. The challenge is amplified by
+     A utility function, weighting both predicted performance
+     score and power efficiency, g uides t he s election between        the highly dynamic nature of mobile network traffic,
+     the two UPFs. Switching logic incorporating hysteresis             which varies significantly based on the time of day, user
+     and hold-down timers are exploited to minimize exces-              mobility, and specific events. Many current deployments
+     sive transitions. Simulation results over a 7-day period           utilize static UPF configurations, often dimensioned for
+     using scaled historical traffic d ata d emonstrate t hat the       peak loads. This leads to substantial energy waste during
+     proposed dynamic strategy can achieve energy savings of
+     approximately 10.46% compared to the best static UPF               periods of low traffic when resources are underutilized.
+     deployment without significantly i mpacting performance.              Furthermore, the 5G ecosystem allows for diverse
+     The framework provides a practical approach to enhancing           UPF implementations, ranging from software-based
+     the energy efficiency a nd s ustainability o f 5 G network         user-space applications to high-performance kernel-
+     operations.
+                                                                        bypass solutions utilizing frameworks like the Data Plane
+        Index Terms—5G, User Plane Function (UPF), En-
+     ergy Efficiency, N etwork F unction V irtualization (NFV),         Development Kit (DPDK) and potentially programmable
+     Network Traffic F orecasting, L STM, D ynamic Resource             P4-based options [4]. Each implementation presents
+     Allocation.                                                        a unique trade-off between performance and energy
+                                                                        consumption. Static allocation fails to leverage these
+                          I. I NTRODUCTION                              differences dynamically based on real-time network con-
+                                                                        ditions. While some research has explored dynamic UPF
+        The implementation of 5G and beyond networks                    placement and chaining [5], [6], a practical framework
+     promises significant c onnectivity w ith h igher d ata rates,      integrating prediction with selection between distinct im-
+     lower latency, and increased capacity. However, this               plementation types based on energy-performance profiles
+     advancement comes at the cost of significantly in-                 needs further investigation.
+     creased energy consumption within the network infras-                 To address these challenges, this paper proposes and
+     tructure [1]. The growing number of base stations, the             evaluates a framework for dynamic, energy-efficient UPF
+                                                                        selection. Our approach combines:
+
+ISBN 978-3-903176-72-0 © 2025 IFIP
+
+                                                                    91
+                              IFIP Networking 2025 - Limassol, Cyprus - 26-30 May 2025
+
+
+
+   1) UPF Profiling: Experimental assessment of power               and flexibility. However, P4-based UPFs are not
+       consumption and performance metrics for different            yet common in practical deployments due to their
+       UPF implementations (OpenAirInterface (OAI)                  reliance on specialized hardware [4].
+       user-space and SD-Core’s DPDK-based ) under               These different implementations can be managed in a
+       varying offered traffic loads.                         static or dynamic way depending on whether the network
+   2) Traffic Forecasting: Utilizing a lightweight Long       needs to respond to changing traffic conditions. Dynamic
+       Short-Term Memory (LSTM) model trained on              approaches allow for optimizing a key performance in-
+       historical data to predict near-term traffic demand.   dicator (KPI), such as energy consumption, throughput,
+   3) Utility-Based Decision Engine: Employing a util-        or cost. For this reason, previous studies have recog-
+       ity function that weights performance (derived         nized the potential benefits of dynamically managing
+       from multiple QoS metrics) and power efficiency        UPF resources. Work by Alevizaki et al. [5] explored
+       (derived from power consumption models) to de-         dynamic UPF allocation enabled by optical network
+       termine the optimal UPF for the predicted traffic.     nodes. Leyva-Pupo and Cervelló-Pastor [9] addressed
+   4) Controlled Selection Logic: Integrating hysteresis      the placement and chaining problem of UPFs. While
+       margins and hold-down timers to prevent excessive      these studies highlight the need for flexible UPF man-
+       switching while considering the non-negligible         agement, they mainly focus on network-wide resource
+       costs associated with restarting UPF instances.        orchestration rather than the practical selection between
+   We simulate this framework using scaled historical         available UPF software implementations with distinct
+traffic data and evaluate its effectiveness in terms of       energy-performance characteristics. Our work specifi-
+energy savings, performance impact, and switching fre-        cally targets this practical selection challenge, using
+quency compared to static baseline scenarios. The results     traffic prediction to choose between implementations.
+demonstrate the potential for significant energy reduction
+through intelligent and adaptive UPF management.                                III. M ETHODOLOGY
+   The remainder of this paper is organized as follows:         This section details the framework developed to
+Section II provides the related work. Section III details     dynamically select UPF implementations (OAI User-
+the proposed framework, including profiling, model-           Space vs. SD-Core DPDK-based ) in a 5G network
+ing, prediction, and the decision algorithm. Section IV       environment, aiming to minimize energy consumption
+presents the simulation results and analysis. Finally,        while maintaining acceptable performance levels. The
+Section V concludes the paper and discusses future            methodology integrates traffic prediction, UPF perfor-
+work.                                                         mance/power profiling, a utility-based decision engine,
+                                                              and simulation-based evaluation and optimization.
+       II. BACKGROUND AND R ELATED W ORK
+                                                              A. System Setup
+   The UPF can be implemented in different ways, now
+usually in the form of lightweight virtualized entities          To establish the performance and energy character-
+(i.e., containers). Several approaches exist for configur-    istics of different UPF implementations, empirical data
+ing UPFs, each with specific trade-offs in performance,       was collected within a fully operational 5G test environ-
+flexibility, and energy consumption [4]:                      ment deployed on bare-metal servers. This infrastructure
+   • User-Space Applications: Often developed for
+                                                              featured:
+       flexibility and ease of deployment, potentially run-      • SD-Core UPF: A high-throughput, DPDK-based
+
+       ning within standard operating system environ-               UPF from the SD-Core project, leveraging hard-
+       ments. Solutions like the OAI core network provide           ware acceleration on an AMD EPYC 9474F pro-
+       examples [7]. These may have lower performance               cessor with 512GB RAM and a 100Gbps Net-
+       but potentially lower baseline energy consumption            work Interface Card (NIC). This corresponds to the
+       compared to highly optimized solutions.                      ”DPDK-UPF” referred to in this study.
+   • DPDK: These implementations bypass the kernel’s             • User-Space UPF: A software-based UPF deployed
+
+       networking stack to achieve high packet processing           by OpenAirInterface Core, handling packets in
+       throughput and low latency. Projects like SD-Core            user-space on an Intel Xeon E5-2680 v4 proces-
+       provide DPDK-based UPF models [8]. They typi-                sor with 256GB RAM and a 40Gbps NIC. This
+       cally offer superior performance at high loads but           corresponds to the ”OAI-UPF” referred to in this
+       may consume more power, especially at idle or low            study.
+       loads, due to polling mode drivers that continuously      Traffic loads were generated using Keysight Load-
+       utilize dedicated CPU cores at 100% workload.          Core [10], leveraging two dedicated agents to simulate
+   • Hardware Accelerated Data Planes (P4): P4                network behavior. The first agent, acting as the Next-
+       allows for programming the forwarding behavior         Generation Radio Access Network (NGRAN) simulator
+       of network devices, enabling high performance          (as shown in Figure. 1), emulated User Equipment (UE)
+
+
+                                                          92
+                                                   IFIP Networking 2025 - Limassol, Cyprus - 26-30 May 2025
+
+
+
+and Radio Access Network (RAN) behavior, while the                                            C. Energy Efficiency Score
+second agent functioned as the Data Network (DN)                                                Power consumption (W ) was normalised across
+simulator. This setup enabled stress-testing of UPF per-                                      the global minimum (Wmin,global ) and maximum
+formance across diverse scenarios, with traffic loads                                         (Wmax,global ) power values observed for both UPFs
+systematically varied. Power consumption was moni-                                            within the relevant operational throughput range. Lower
+tored via Scaphandre [11], while network performance                                          power yields a higher score:
+metrics (including throughput, uplink/downlink delay,
+                                                                                                                        Wmax,global − W (T )
+uplink/downlink jitter, and packet loss) were collected                                              Eu (T ) = 100 ×                                 (4)
+from the LoadCore platform to correlate energy usage                                                                   Wmax,global − Wmin,global
+with operational efficiency.                                                                  This score was clipped to [0, 100].
+                                                                                              D. Utility Function Definition
+                                                            5G Control
+                                             AMF      SMF
+                                                              Plane
+                                                                                                To directly model the trade-off between performance
+                                N1/N2
+                                                                                              and energy efficiency, a Utility function was defined.
+                                                      N4                                      This combines the Performance Score with a nor-
+        UE                RAN                         UPF                     DN              malized Energy Efficiency Score.
+                                        N3                         N6
+                                                                                                The overall utility is a weighted sum:
+             NGRAN simulator                                             DN simulator
+
+                                                                                                          Uu (T ) = α · Pu (T ) + β · Eu (T )        (5)
+                                                     Scaphandre
+
+
+                                                                          Prometheus
+                                                                                              where α, β ∈ [0, 1]: Weights for performance vs. en-
+                                        Monitoring
+                                                                                              ergy (α + β = 1) and represent prioritisation between
+                                                                                              performance or power efficiency.
+               Fig. 1. Simplified Testbed Setup Diagram.
+                                                                                              E. Traffic Data and Preprocessing
+                                                                                                 The historical network traffic data used in this study
+B. Performance Score Formulation                                                              is sourced from the NetMob 2023 dataset [12], which
+  To quantify the overall QoS, a composite                                                    offers high-resolution, service-level mobile traffic infor-
+Performance Score, Pu (T ) ; ranging from                                                     mation collected across 20 metropolitan areas in France
+0 to 100, with higher values indicating superior                                              over a 77-day period in 2019. This dataset provides
+quality, was formulated. This score combines multiple                                         traffic demand measurements at 15-minute intervals,
+performance metrics, each normalized and weighted                                             capturing real-world patterns of various mobile applica-
+according to its importance.                                                                  tions. For this analysis, the focus is on video streaming
+  Each metric M was normalized to a 0–100 scale                                               services, such as Netflix.
+based on its observed minimum (MinM ) and maximum                                                Given that the dataset contains normalised traffic
+(MaxM ) values across the profiling data for both UPFs.                                       values—lacking explicit units to preserve confidential-
+                                                                                              ity—the time series data were scaled to align with the
+  • For ”higher-is-better” metrics (e.g., throughput):
+                                                                                              minimum capacity of the UPF. This scaling assumes
+                                                      M − MinM                                that only traffic manageable by the UPF with the lowest
+                    NormM = 100 ×                                                       (1)   capacity will be steered, ensuring consistency between
+                                                     MaxM − MinM
+                                                                                              the dataset’s magnitude and the system’s operational
+  •   For ”lower-is-better” metrics (e.g., delay, loss, jitter,                               thresholds.
+      CPU):
+                                                                                              F. Traffic Forecasting Model
+                                                      MaxM − M
+                    NormM = 100 ×                                                       (2)      To predict near-term traffic demand, an LSTM model
+                                                     MaxM − MinM
+                                                                                              was developed and employed. The model architecture
+  Each normalised metric was assigned a weight                                                consists of
+(wM ) reflecting
+       P          its contribution to overall perfor-                                            • An LSTM layer with 50 units, designed to process
+mance ( wM = 1.0). For each UPF type u ∈                                                           sequences of historical traffic data. Based on the
+{OAI-UPF, DPDK-UPF}, we define the final score as:                                                 training data shape, input sequences representing
+                    X                                                                              the past 24 hours (96 intervals of 15 minutes) were
+         Pu (T ) =     (wMu × NormMu (T ))        (3)
+                                                                                                   used.
+                                  Mu
+                                                                                                 • A dropout layer following the LSTM layer to
+   where the sum is over all selected Mu evaluated at                                              mitigate overfitting.
+throughput T using the polynomial models. Initially,                                             • A final dense (fully connected) layer with a single
+certain particular weights were used; later, they were                                             output unit, providing the traffic prediction for the
+optimised.                                                                                         next 15-minute interval.
+
+
+                                                                                          93
+                               IFIP Networking 2025 - Limassol, Cyprus - 26-30 May 2025
+
+
+
+   It was trained on scaled real traffic data derived from         The switching decision rule then becomes:
+the NetMob 2023 dataset (as described in Section III-E),                    (
+                                                                              DPDK-UPF, if T̂i > Tcrossover + mhyst
+using past traffic patterns to predict the load for the          UPFideal =
+subsequent interval. Performance during training was                          OAI-UPF,     if T̂i < Tcrossover − mhyst
+monitored using metrics such as Mean Absolute Error                                                                  (7)
+(MAE). This predictive model provides the crucial input
+for our dynamic UPF selection algorithm.                        H. Evaluation Metrics
+   We chose a standard LSTM over more complex vari-                The dynamic strategy is compared against static
+ants to maintain low computational overhead and fast            always-OAI and always-DPDK baselines using total
+inference for near-real-time decision-making. Since the         energy consumed (Wh), average performance score, en-
+goal of this work is to enable an efficient and responsive      ergy saving (%), performance change (%) and switch
+UPF selection mechanism, a lightweight LSTM model               count. Comparisons are relative to the most energy-
+offered the best trade-off between predictive perfor-           efficient static baseline. Additionally, the simulation
+mance and operational simplicity.                               (Section III-G) was run iteratively across a range of β
+G. Dynamic UPF Selection Algorithm & Simulation                 as thoroughly explained in Section IV-C, to determine
+                                                                the optimal trade-off between performance and energy
+   The simulation proceeds interval by interval, corre-
+                                                                efficiency.
+sponding to the 15-minute granularity of the traffic data.
+In essence, for each interval i the three steps in the                               IV. R ESULTS
+following are performed.
+   Traffic Prediction: The LSTM model forecasts the               This section presents the results obtained by applying
+expected traffic load (Tpredicted ) for the upcoming interval   the methodology described in Section III.
+based on the historical data observed up to interval i−1.
+This employs a rolling forecast methodology, where the          A. UPF Profiling and Model Fitting
+input sequence for the model is updated with the actual           The profiling confirmed distinct energy-performance
+observed value for the interval i before predicting the         characteristics for the User-space UPF and DPDK-based
+interval i + 1.                                                 UPF implementations. Polynomial regression generated
+   Candidate UPF Selection: The decision engine eval-           functions that accurately modelled the observed data.
+uates the utility function U(Tpredicted ) for both OAI-UPF      Key observations include:
+and DPDK-UPF using the predicted traffic and the opti-
+                                                                  • Performance: DPDK-UPF generally offered lower
+mal weights α, β found during the optimization phase
+                                                                    average delay, particularly at higher offered loads.
+(Section IV-C). The UPF implementation resulting in
+                                                                    OAI-UPF’s delay increased more significantly as
+the higher utility score is determined as the theoretically
+                                                                    load increased. OAI-UPF can only handle loads up
+ideal UPF (UPFideal ) for the predicted conditions.
+                                                                    to 600 Mbps. In terms of CPU utilization , as
+   Selection Control Mechanism: To prevent excessive
+                                                                    expected, DPDK-UPF is always at 100% , while
+switching due to prediction noise or traffic fluctuations
+                                                                    OAI-UPF CPU load increases as the traffic load
+near the decision threshold and to account for the
+                                                                    increases.
+overhead of UPF transitions, two control mechanisms
+                                                                  • Performance Score: The overall performance score
+are applied before initiating a switch from the currently
+                                                                    reflected these trade-offs, with OAI-UPF typically
+active UPF (UPFcurrent ) to UPFideal :
+                                                                    scoring slightly higher at low loads (below approx.
+  •   Hold-down Timer: A switch is only considered                  27 Mbps) and DPDK-UPF scoring higher at high
+      if the UPFcurrent has been active for a minimum               loads.
+      duration of Ihold intervals. This prevents rapid            • Power Consumption: OAI-UPF exhibited signifi-
+      oscillations.                                                 cantly lower idle power and lower power consump-
+  •   Hysteresis Margin: A switch is only triggered if              tion at low offered loads (below approx. 90 Mbps).
+      the predicted traffic T̂i not only crosses the utility        DPDK-UPF showed higher idle power but scaled
+      crossover threshold (Tcrossover ), but also exceeds it        more efficiently at higher throughputs, consuming
+      by a defined margin (mhyst ). This margin helps filter        less power.
+      out small fluctuations due to prediction noise.           Figures 2 and 3 visualize these trends. Polynomial
+      The hysteresis margin is defined as:                      power and performance scores are plotted against offer
+                                                                loads for each UPF. The DPDK-UPF is ideal for high-
+                       mhyst = k · MAEin                 (6)
+                                                                throughput applications due to its stability and low
+      where k is a tunable sensitivity constant and MAEin       variance. The OAI-UPF is more efficient at idle or
+      is the in-sample Mean Absolute Error of the traffic       light loads but volatile and inefficient at higher loads,
+      predictor.                                                confirming their different operational profiles.
+
+
+                                                            94
+                                IFIP Networking 2025 - Limassol, Cyprus - 26-30 May 2025
+
+
+
+                                                                  the key findings compared to static baselines. Figure 4
+                                                                  shows the traffic, predictions, and dynamic UPF selec-
+                                                                  tion over the simulation period.
+                                                                     The results demonstrate that the dynamic strategy
+                                                                  achieved an energy saving of 10.46% compared to the
+                                                                  most efficient static baseline (DPDK-UPF). This saving
+                                                                  was accompanied by a performance increase of 2.36%.
+                                                                  The system performed 14 switches over the 168-hour
+                                                                  (7 days) simulation period (an average of two switches
+                                                                  per day). The visualization in Figure 4 shows that the
+                                                                  majority of switches occurred during early morning
+                                                                  hours, typically between 3:00 AM and 8:00 AM.
+Fig. 2. Empirical measurements and polynomial approximations of
+Performance (deg. 3) and Power consumption (deg. 1) for DPDK-     E. Sensitivity Analysis
+UPF
+                                                                     The optimization results show the sensitivity to utility
+                                                                  weights. Prioritizing performance (higher α) reduced en-
+                                                                  ergy savings but maintained higher average performance
+                                                                  scores. Although the performance change for these UPFs
+                                                                  is not significant and remains less than 5% even while
+                                                                  solely prioritizing power efficiency (β = 1), even show-
+                                                                  ing a positive change compared to the best baseline,
+                                                                  the results are shown for said weights in Figures 5 and
+                                                                  6. Sensitivity to selection control parameters was also
+                                                                  observed; for instance, increasing the hold-down timer
+                                                                  reduced the switch count but potentially delayed transi-
+                                                                  tions to a more energy-efficient UPF, slightly decreasing
+                                                                  overall savings. The chosen optimal parameters represent
+Fig. 3. Empirical measurements and polynomial approximations of   a specific balance based on the defined performance
+Performance (deg. 4) and Power consumption (deg. 4) for OAI-UPF   constraints.
+                                                                          V. C ONCLUSION AND F UTURE W ORK
+B. Traffic Forecasting                                               This paper proposed a dynamic, energy-efficient
+   The LSTM model was trained on 2688 intervals of                UPF selection framework for 5G networks using traf-
+scaled historical data. Figure 4 illustrates the model’s          fic prediction and UPF profiling. We compared user-
+one-step-ahead predictions against the actual scaled traf-        space OAI-UPF and DPDK-UPF, modeled their energy-
+fic during the test period. MAE for these predictions was         performance trade-offs with polynomial functions, and
+25.04 Mbps. The in-sample MAE on the training set,                used a lightweight LSTM to forecast traffic. A utility
+used for setting the hysteresis margin, was 24.70 Mbps.           function balancing performance and energy guided the
+                                                                  switching, supported by practical controls such as hys-
+C. Optimal Utility Weights and Crossover
+                                                                  teresis and hold-down period.
+   The optimization process iterated through β values                Simulation results show that dynamic UPF selection
+from 0 to 1 with a 0.1 step. Maximizing energy savings            can save 10.46% energy with a slight performance
+while satisfying the performance constraint (Avg. Perf.           improvement of 2.36% compared to static deployments.
+Score ≥ 70 / Perf. Change ≥ -5%), yielded the optimal                As future work, we plan to consider the real-world
+weights:                                                          impact of switching between UPFs, such as momentary
+   • Optimal Weight_Performance (α): 0.2                          packet loss and the extra power used when starting or
+   • Optimal Weight_Power (β): 0.8                                stopping containers, so that these effects are reflected
+For these weights, the utility crossover point (Tcrossover )      in the selection process and lead to even more practical
+was found to be 95.6 Mbps.                                        decisions.
+                                                                     Overall, this work presents a practical methodology
+D. Simulation Results with Optimal Weights
+                                                                  and highlights the potential of intelligent UPF selection
+  The dynamic UPF selection algorithm was simulated               to enhance energy efficiency in 5G core networks.
+over the 672 interval (168 hours) test period using the
+optimal utility weights (α = 0.2, β = 0.8), the LSTM                                ACKNOWLEDGMENT
+predictor, a hysteresis margin of 26 Mbps, and a hold-              This work has been partially supported by the Horizon
+down timer of 4 intervals (1 hour). Table I summarizes            Europe Research and Innovation Action 6Green (Grant
+
+
+                                                              95
+                                                                                                                                 IFIP Networking 2025 - Limassol, Cyprus - 26-30 May 2025
+
+
+
+                                                                                                                                          TABLE I
+                                                                                                         S IMULATION R ESULTS S UMMARY WITH O PTIMAL U TILITY W EIGHTS (α=0.2,β=0.8)
+
+                                                                           Metric                                                                            Dynamic Strategy                                                      Always-OAI                  Always-DPDK                Comparison vs Best
+                                                                                                                                                                                                                                    Baseline                     Baseline                    (DPDK-UPF)
+                                                                           Total Energy (Wh)                                                                                  123.29                                                225.63                       137.69                    10.46% Saving
+                                                                           Avg. Performance Score                                                                             86.15                                                  82.04                        84.17                    +2.36% Change
+
+
+                                                                                                                                       Predictive UPF Selection (Utility Weights P:0.2/E:0.8, Margin:26, Hold:4)
+                                                                                                   500
+
+
+                                                                                                   400
+                                                                               Throughput (Mbps)
+
+
+
+
+                                                                                                                                                                                                                                                                                                 OAI Active
+                                                                                                   300                                                                                                                                                                                           DPDK Active
+                                                                                                                                                                                                                                                                                                 Actual Traffic
+                                                                                                                                                                                                                                                                                                 Predicted Traffic
+                                                                                                                                                                                                                                                                                                 T-crossover
+                                                                                                   200                                                                                                                                                                                           (+/-)Magin
+
+
+                                                                                                   100
+
+
+                                                                                                     0
+                                                                                                                 9                              0                       -01                          -02                                03                 4              05              6
+                                                                                                            4-2                        4-3                      5                                 -05                               05-                5-0           -05
+                                                                                                                                                                                                                                                                         -            5-0
+                                                                                                         9-0                       9-0                       9-0                          9                                       9-               9-0              9             9-0
+                                                                                                   201                          201                    201                             201                                    201               201             201            201
+                                                                                                                                                                                                                        Time
+
+Fig. 4. Actual traffic (from the NetMob dataset) and predicted traffic over the 7-day test period. The selected UPF (in the background), the
+T-crossover, and the upper and lower margins are reported aswell.
+
+
+
+Agreement no. 101096925), by the European Union                                                                                                                                                                                                                                    R EFERENCES
+under the Italian National Recovery and Resilience Plan                                                                                                                                                                                       [1] Y. Ding, H. Duan, M. Xie, R. Mao, J. J. Wang, and W. Zhang,
+(NRRP) of NextGenerationEU, within the partnership on                                                                                                                                                                                             “Carbon emissions and mitigation potentials of 5g base station
+“Telecommunications of the Future” (PE00000001 –                                                                                                                                                                                                  in china,” Resources, Conservation and Recycling, vol. 182, p.
+                                                                                                                                                                                                                                                  106330, 2022.
+program “RESTART”), and the project “SoBigData.it                                                                                                                                                                                             [2] A. Mughees, M. Tahir, M. A. Sheikh, and A. Ahad, “Towards
+– Strengthening the Italian RI for Social Mining and                                                                                                                                                                                              energy efficient 5g networks using machine learning: Taxonomy,
+Big Data Analytics” (Prot. IR0000013 – Call n. 3264                                                                                                                                                                                               research challenges, and future research directions,” IEEE Ac-
+                                                                                                                                                                                                                                                  cess, vol. 8, pp. 187 498–187 522, 2020.
+of 12/28/2021).                                                                                                                                                                                                                               [3] A. Bellin, N. D. Cicco, D. Munaretto, and F. Granelli, “Power
+                                                                                                                                                                                                                                                  consumption-aware 5g edge upf selection using deep reinforce-
+                                                                                                                                                                                                                                                  ment learning,” in Proceedings of the IEEE Conference on
+                                                                           Power Consumption: Dynamic vs. Always-OAI vs. Always-DPDK                                                                                                              Network Function Virtualization and Software Defined Networks
+                             3.5                                                                                                                                                                     Always-OAI                                   (NFV-SDN), 2024, pp. 1–6.
+                                                                                                                                                                                                     Always-DPDK
+                                                                                                                                                                                                     Dynamic Solution
+                             3.0                                                                                                                                                                                                              [4] J. Rischke, C. Vielhaus, P. Sossalla, J. Wang, and F. H. P.
+  Power Consumption [Watt]
+
+
+
+
+                             2.5
+                                                                                                                                                                                                                                                  Fitzek, “Comparison of upf acceleration technologies and their
+                             2.0
+                                                                                                                                                                                                                                                  tail-latency for urllc,” in 2022 IEEE Conference on Network
+                                                                                                                                                                                                                                                  Function Virtualization and Software Defined Networks (NFV-
+                             1.5
+                                                                                                                                                                                                                                                  SDN). IEEE, 2022, pp. 146–151.
+                             1.0                                                                                                                                                                                                              [5] V. M. Alevizaki, A. I. Manolopoulos, M. Anastasopoulos, and
+                             0.5                                                                                                                                                                                                                  A. Tzanakaki, “Dynamic user plane function allocation in 5g
+                             0.0                                                                                                                                                                                                                  networks enabled by optical network nodes,” in 2021 European
+                                             9                    0                        1                          -02                   -03                     4                         5                          6
+                              201
+                                 9-0
+                                         4-2
+                                                     201
+                                                         9-0
+                                                              4-3
+                                                                            201
+                                                                               9-0
+                                                                                    5-0
+                                                                                                               201
+                                                                                                                  9-05
+                                                                                                                                   201
+                                                                                                                                       9 -05
+                                                                                                                                                       201
+                                                                                                                                                          9-0
+                                                                                                                                                             5-0
+                                                                                                                                                                               201
+                                                                                                                                                                                     9-0
+                                                                                                                                                                                        5-0
+                                                                                                                                                                                                           201
+                                                                                                                                                                                                                 9-0
+                                                                                                                                                                                                                    5-0                           Conference on Optical Communication (ECOC). IEEE, 2021,
+                                                                                                                                Time                                                                                                              pp. 1–4.
+                                                                                                                                                                                                                                              [6] I. Leyva-Pupo and C. Cervelló-Pastor, “Efficient solutions to the
+Fig. 5. Visualization of dynamic solution’s power consumption com-                                                                                                                                                                                placement and chaining problem of user plane functions in 5g
+pared to static baseline.                                                                                                                                                                                                                         networks,” Journal of Network and Computer Applications, vol.
+                                                                                                                                                                                                                                                  197, p. 103253, 2022.
+                                                                                                                                                                                                                                              [7] OpenAirInterface, “Openairinterface: 5g software alliance for
+                                                                 Performance Score: Dynamic vs. Always-OAI vs. Always-DPDK
+                             90.0
+                                                                                                                                                                                                                                                  democratising wireless innovation,” https://openairinterface.org.
+                                                                                                                                                                                                                                              [8] O. N. F. (ONF), “Sd-core,” https://opennetworking.org/sd-core/.
+Performance Score [0-100]
+
+
+
+
+                             87.5
+                                                                                                                                                                                                                                              [9] I. Leyva-Pupo and C. Cervelló-Pastor, “An intelligent scheduling
+                             85.0
+                                                                                                                                                                                                                                                  for 5g user plane function placement and chaining reconfigura-
+                             82.5
+                                                                                                                                                                                                                                                  tion,” Computer Networks, 2023.
+                             80.0                                                                                                                                                                                                            [10] Keysight, “P8900s loadcore – core network solutions,”
+                             77.5                                                                                                                                                                                                                 https://www.keysight.com/us/en/product/P8900S/loadcore-core-
+                             75.0                                                                                                                                                              Always-OAI                                         network-solutions.html.
+                                                                                                                                                                                               Always-DPDK
+                             72.5                                                                                                                                                              Dynamic Solution                              [11] B.     Petit,   “scaphandre,”    2023.    [Online].     Available:
+                                           4-2
+                                                 9
+                                                                 4-3
+                                                                       0
+                                                                                     5-0
+                                                                                              1
+                                                                                                                         5-0
+                                                                                                                            2
+                                                                                                                                               5-0
+                                                                                                                                                   3
+                                                                                                                                                              -05
+                                                                                                                                                                 -04                     5-0
+                                                                                                                                                                                              5
+                                                                                                                                                                                                                       5-0
+                                                                                                                                                                                                                          6                       https://github.com/hubblo-org/scaphandre
+                                      9-0                     9-0                 9-0                                 9-0               9-0                  9                        9-0                         9-0
+                                   201                  201                   201                                201                 201                 201                    201                         201
+                                                                                                                                Time                                                                                                         [12] O. E. Martı́nez-Durive, S. Mishra, C. Ziemlicki, S. Rubrichi,
+                                                                                                                                                                                                                                                  Z. Smoreda, and M. Fiore, “The netmob23 dataset: A high-
+Fig. 6. Visualization of dynamic solution’s performance score com-                                                                                                                                                                                resolution multi-region service-level mobile data traffic cartog-
+pared to static baseline.                                                                                                                                                                                                                         raphy,” 2023.
+
+
+
+
+                                                                                                                                                                                                                                       96
+

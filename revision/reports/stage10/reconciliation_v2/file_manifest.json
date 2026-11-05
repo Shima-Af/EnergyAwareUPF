@@ -1,0 +1,28 @@
+{
+  "created_or_modified": {
+    "revision/FINAL_COMCOM_CORRECTED_CAMPAIGN.md": "3e3e849060915be2b28dd2274101323b4f58b79d33243d007f742efe2892bae4",
+    "revision/reports/stage10/reconciliation_v2/authentication.log": "fe86af4730e082b438c947b119e62f8f91fa4aae3dca6f9da7392189645ec164",
+    "revision/reports/stage10/reconciliation_v2/authoritative_pdf_manifest.json": "d54aaf7ff885f12df153805e102dbf056c224939f6175107a3ff2cfd729ee80a",
+    "revision/reports/stage10/reconciliation_v2/final_tests.log": "316dff144480d3c5409a169f48f63aa01e669b719f39ad1359bc50fef2f9b4e8",
+    "revision/reports/stage10/reconciliation_v2/integrity.json": "9fe925dcf48a8ffc44cc5494a385db8c6d00816eab4a1ff064ca3041feb2678a",
+    "revision/reports/stage10/reconciliation_v2/loss_examples.csv": "641d9ba296e85dba9dfd9afe397e3f4a8dd44644a59a83c347b76ad14a92f92a",
+    "revision/reports/stage10/reconciliation_v2/loss_reconstruction.json": "c74e6d648b3f051ac52359cd7636998b484f30d85e504d22a60941952a1ad66b",
+    "revision/reports/stage10/reconciliation_v2/prior_sha256.json": "98f185ef65b9c3a0cf4a8baeb198aed649f17a31d4d647c669777dc12ecdf5da",
+    "revision/reports/stage10/reconciliation_v2/raw_export_inventory.json": "a5229116e4de41de3f9ad7015349f526076bff4245671bb5a2d4714432a355fb",
+    "revision/reports/stage10/reconciliation_v2/report_before_budget_decision.md": "d33d9bd005efb8047bb067410d3d390a97206dd045ceac12cb2a836c6302f646",
+    "revision/reports/stage10/reconciliation_v2/tester_config_inventory.json": "af8f9f48030d7b98dd58669986a602fe8e39d5cd04ce46640b0055d4fd7d04c4",
+    "revision/reports/stage10/reconciliation_v2/tests.log": "8cd449065033f435536d0367c1b8f789e79da23ab030f35a7ba6049dad06e2cf",
+    "revision/stage10/authenticate_measurements.py": "90e732c315f1f7003e13179f5072f72f79e01bc5eef388b39abaebecdeaa9127",
+    "revision/stage10/policy_v1.json": "0e6881f5beeaf5a15a48b998a8dde52b6c8f38dfcd028601851d97932642234b",
+    "revision/stage10/selected_policy.py": "00a4d146b0376f4370686a2e6715b1b801afcea2e0a1a72e8ef7e8039e57b7e7",
+    "revision/tests/test_stage10_selected_policy.py": "e0a00887ae9b56e155eb93f6c34099afa61d9f88ec750fd3a82193f0126cdbe0"
+  },
+  "excludes": [
+    "this manifest",
+    "incidental bytecode"
+  ],
+  "earlier_preserved_evidence": {
+    "revision/reports/stage10/reconciliation_v2/submitted_mappo.txt": "911a78fd386264d94f3394324505757dfbb95a987b6a8d3438f6aab01eed8d9e",
+    "revision/reports/stage10/reconciliation_v2/authoritative_thesis.txt": "10792b09fd156bef8aa5fa7eb38dea5c94fddc6f23fe784327c7a0980d09c5f2"
+  }
+}

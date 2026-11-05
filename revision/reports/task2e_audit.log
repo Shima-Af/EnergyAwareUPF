@@ -1,0 +1,7 @@
+2026-10-22 16:01:40.420548: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Audited dpdk historical val RMSE 0.08465652816436958
+/home/ubuntu/EnergyAwareUPF/revision/diagnostics/qos_reliability.py:109: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  a = pd.to_datetime(block.loc[block.index.isin(train_idx),'timestamp']).astype('int64').to_numpy()
+/home/ubuntu/EnergyAwareUPF/revision/diagnostics/qos_reliability.py:110: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  b = pd.to_datetime(block.loc[block.index.isin(val_idx),'timestamp']).astype('int64').to_numpy()
+Audited usr historical val RMSE 0.07847765228323492
